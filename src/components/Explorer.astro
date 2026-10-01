@@ -1,0 +1,248 @@
+---
+import { getImage } from 'astro:assets';
+import PlaceCard from './PlaceCard.astro';
+import Icon from './Icon.astro';
+import type { Trip } from '../data/types';
+import { placeById } from '../data/places';
+import { recommendedRank } from '../lib/filter';
+import { imagesFor } from '../lib/images';
+import { availabilityLine, drive, lowestPrice, money } from '../lib/format';
+import { url } from '../lib/paths';
+
+interface Props { trip: Trip }
+const { trip } = Astro.props;
+const picks = trip.topPicks.map((p) => p.placeId);
+const rank = recommendedRank(trip.options, picks);
+const rows = trip.options.map((o) => ({ option: o, place: placeById[o.placeId], rank: rank.get(o.placeId)! })).sort((a, b) => a.rank - b.rank);
+
+const mapData = await Promise.all(rows.map(async ({ place, option, rank }) => {
+  const first = imagesFor(place.id)[0];
+  const thumb = first ? (await getImage({ src: first.src, width: 480, format: 'webp' })).src : null;
+  const price = lowestPrice(option);
+  return {
+    id: place.id, rank, name: place.name, coords: place.coords, href: url(`places/${place.id}/`), thumb,
+    price, priceLabel: price !== null ? money(Math.round(price)) : '★ ' + place.google.rating.toFixed(1),
+    rating: place.google.rating, reviews: place.google.reviews, activities: place.activities,
+    line: `${drive(option.driveMin)} · ${availabilityLine(option)}`, option,
+  };
+}));
+
+const chips = {
+  lodging: [
+    { v: 'cabin', label: 'Cabins', icon: 'cabin' },
+    { v: 'glamping', label: 'Glamping', icon: 'glamping' },
+    { v: 'cottage', label: 'Cottages', icon: 'cottage' },
+    { v: 'tent', label: 'Tent sites', icon: 'tent' },
+  ],
+  activities: [
+    { v: 'biking', label: 'Biking', icon: 'biking' },
+    { v: 'fishing', label: 'Fishing', icon: 'fishing' },
+    { v: 'waterfalls', label: 'Waterfalls', icon: 'waterfalls' },
+    { v: 'nightlife', label: 'Nightlife', icon: 'nightlife' },
+    { v: 'wineries', label: 'Wineries', icon: 'wineries' },
+    { v: 'foliage', label: 'Fall foliage', icon: 'foliage' },
+  ],
+};
+---
+<section class="explorer" data-explorer data-origin={JSON.stringify(trip.origin)}>
+  <div class="filters" data-filters>
+    <div class="container filter-row">
+      <div class="chips" role="group" aria-label="Filters">
+        <button class="chip" data-roof aria-pressed="false"><Icon name="cabin" size={16} />Has a roof</button>
+        <span class="sep" aria-hidden="true"></span>
+        {chips.lodging.map((c) => <button class="chip" data-lodging={c.v} aria-pressed="false"><Icon name={c.icon} size={16} />{c.label}</button>)}
+        <span class="sep" aria-hidden="true"></span>
+        {chips.activities.map((c) => <button class="chip" data-activity={c.v} aria-pressed="false"><Icon name={c.icon} size={16} />{c.label}</button>)}
+        <span class="sep" aria-hidden="true"></span>
+        <button class="chip" data-drive="90" aria-pressed="false"><Icon name="car" size={16} />Under 90 min</button>
+      </div>
+      <label class="sort">
+        <span class="sr-only">Sort</span>
+        <select data-sort>
+          <option value="recommended">Recommended</option>
+          <option value="price">Lowest price</option>
+          <option value="drive">Shortest drive</option>
+          <option value="rating">Highest rated</option>
+        </select>
+      </label>
+      <button class="btn btn-outline btn-sm map-toggle-desk" data-map-toggle aria-pressed="true"><Icon name="map" size={16} /><span>Hide map</span></button>
+    </div>
+  </div>
+
+  <div class="split" data-split>
+    <div class="list container-ish">
+      <p class="count" data-count aria-live="polite">{rows.length} places</p>
+      <div class="grid" data-grid>
+        {rows.map((r, i) => <PlaceCard place={r.place} option={r.option} badge={picks.includes(r.place.id) ? `Top pick #${picks.indexOf(r.place.id) + 1}` : undefined} eager={i < 3} />)}
+      </div>
+      <div class="empty" data-empty hidden>
+        <h3>No exact matches</h3>
+        <p class="muted">Try removing some filters.</p>
+        <button class="btn btn-outline" data-clear>Clear all filters</button>
+      </div>
+    </div>
+    <aside class="map-pane" data-map-pane>
+      <div class="map" data-map role="region" aria-label="Map of places"></div>
+    </aside>
+  </div>
+
+  <button class="map-fab" data-map-fab><span data-fab-label>Map</span><Icon name="map" size={16} /></button>
+  <script type="application/json" data-rows set:html={JSON.stringify(mapData)} />
+</section>
+
+<style>
+  .filters { position: sticky; top: 80px; z-index: 40; background: var(--bg); border-bottom: 1px solid var(--rule); }
+  .filter-row { display: flex; align-items: center; gap: 12px; padding-top: 14px; padding-bottom: 14px; max-width: none; }
+  .chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; padding: 2px; mask-image: linear-gradient(90deg, #000 calc(100% - 40px), transparent); }
+  .chips::-webkit-scrollbar { display: none; }
+  .sep { flex: none; width: 1px; background: var(--rule); margin: 4px 4px; }
+  .sort select { height: 36px; border-radius: var(--radius-pill); border: 1px solid var(--rule-strong); background: var(--surface-2); color: var(--ink); padding: 0 32px 0 14px; font: inherit; font-size: 14px; appearance: none; background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%); background-position: calc(100% - 17px) 15px, calc(100% - 12px) 15px; background-size: 5px 5px; background-repeat: no-repeat; cursor: pointer; }
+  .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 42%); }
+  .split.no-map { grid-template-columns: 1fr; }
+  .split.no-map .map-pane { display: none; }
+  .list { padding: 20px var(--gutter) 40px; }
+  .count { font-weight: 600; margin: 0 0 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 36px 24px; }
+  .split.no-map .grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  .grid > :global(.card.hl) :global(.media) { box-shadow: 0 0 0 3px var(--ink); }
+  .empty { text-align: center; padding: 64px 0; }
+  .map-pane { position: sticky; top: 145px; height: calc(100dvh - 145px); }
+  .map { width: 100%; height: 100%; background: var(--surface); }
+  .map-fab { display: none; }
+
+  :global(.price-pin) { background: var(--surface-2); color: var(--ink); border-radius: var(--radius-pill); padding: 5px 10px; font: 700 14px/1 var(--font); box-shadow: 0 1px 4px rgba(0,0,0,.28), 0 0 0 1px rgba(0,0,0,.06); white-space: nowrap; transform: translate(-50%, -50%); width: max-content; transition: transform .15s; cursor: pointer; }
+  :global(.price-pin.pick) { background: var(--ink); color: var(--bg); }
+  :global(.price-pin.active), :global(.price-pin:hover) { background: var(--accent); color: var(--accent-ink); transform: translate(-50%, -50%) scale(1.12); z-index: 1000; }
+  :global(.home-pin) { width: 18px; height: 18px; border-radius: 50%; background: var(--pine); border: 3px solid #fff; box-shadow: 0 0 0 6px rgba(31,111,80,.25); transform: translate(-50%, -50%); }
+  :global(.leaflet-popup-content-wrapper) { padding: 0; border-radius: var(--radius); overflow: hidden; background: var(--surface-2); color: var(--ink); }
+  :global(.leaflet-popup-content) { margin: 0; width: 260px !important; font: 14px/1.4 var(--font); }
+  :global(.leaflet-popup-tip) { background: var(--surface-2); }
+  :global(.mini) { display: block; text-decoration: none; color: inherit; }
+  :global(.mini img) { width: 100%; height: 150px; object-fit: cover; }
+  :global(.mini div) { padding: 10px 12px 12px; }
+  :global(.mini b) { display: block; font-size: 15px; }
+  :global(.mini .m) { color: var(--muted); }
+  :global(.leaflet-container) { font-family: var(--font); }
+  :global(.tiles) { filter: saturate(.75) contrast(.95); }
+  :global(.tiles-dark) { filter: invert(1) hue-rotate(180deg) brightness(.9) contrast(.9) saturate(.5); }
+  :global(.leaflet-container a.leaflet-popup-close-button) { color: #fff; text-shadow: 0 0 4px rgba(0,0,0,.6); }
+
+  @media (max-width: 1127px) {
+    .split, .split.no-map { grid-template-columns: 1fr; }
+    .map-toggle-desk { display: none; }
+    .map-pane { display: none; position: fixed; inset: 145px 0 0 0; height: auto; z-index: 30; }
+    .split.show-map-mobile .map-pane { display: block; }
+    .split.show-map-mobile .list { visibility: hidden; height: 0; overflow: hidden; padding: 0; }
+    .map-fab { display: inline-flex; align-items: center; gap: 8px; position: fixed; left: 50%; bottom: 24px; translate: -50% 0; z-index: 45; height: 48px; padding: 0 20px; border: 0; border-radius: var(--radius-pill); background: var(--ink); color: var(--bg); font-weight: 600; box-shadow: var(--shadow); cursor: pointer; }
+  }
+  @media (max-width: 760px) {
+    .filters { top: 64px; }
+    .map-pane { top: 129px; inset: 129px 0 0 0; }
+    .filter-row { flex-wrap: wrap; gap: 10px; }
+    .chips { flex-basis: 100%; order: 2; }
+  }
+</style>
+
+<script>
+  import L from 'leaflet';
+  import 'leaflet/dist/leaflet.css';
+  import { matches, parseFilters, serializeFilters, sortRows, type Filters, type SortKey } from '../lib/filter';
+  import { wireCarousels } from '../lib/carousel';
+  import { wireHearts } from '../lib/wishlist';
+  import type { Activity, Lodging, TripOption } from '../data/types';
+
+  type R = { id: string; rank: number; name: string; coords: [number, number]; href: string; thumb: string | null; price: number | null; priceLabel: string; rating: number; reviews: number; activities: Activity[]; line: string; option: TripOption };
+
+  const root = document.querySelector<HTMLElement>('[data-explorer]')!;
+  const data: R[] = JSON.parse(root.querySelector('[data-rows]')!.textContent!);
+  const grid = root.querySelector<HTMLElement>('[data-grid]')!;
+  const split = root.querySelector<HTMLElement>('[data-split]')!;
+  const cards = new Map([...grid.querySelectorAll<HTMLElement>('[data-card]')].map((c) => [c.dataset.card!, c]));
+  const origin = JSON.parse(root.dataset.origin!) as { name: string; coords: [number, number] };
+
+  wireCarousels(root);
+  wireHearts(root);
+
+  // ---- state <-> URL
+  let { filters, sort } = parseFilters(new URLSearchParams(location.search));
+  if (new URLSearchParams(location.search).get('lodging') === 'glamping' && !filters.lodging.length) filters.lodging = ['glamping'];
+
+  const rowsFor = () => data.map((d) => ({ place: { id: d.id, activities: d.activities, google: { rating: d.rating, reviews: d.reviews } } as any, option: d.option, rank: d.rank }));
+
+  function render() {
+    const visible = sortRows(rowsFor().filter((r) => matches(r, filters)), sort as SortKey, filters.lodging);
+    const ids = new Set(visible.map((r) => r.place.id));
+    visible.forEach((r) => grid.append(cards.get(r.place.id)!));
+    cards.forEach((c, id) => (c.hidden = !ids.has(id)));
+    root.querySelector('[data-count]')!.textContent = `${ids.size} ${ids.size === 1 ? 'place' : 'places'}`;
+    root.querySelector<HTMLElement>('[data-empty]')!.hidden = ids.size > 0;
+    markers.forEach((m, id) => (ids.has(id) ? m.addTo(map) : m.remove()));
+    syncChips();
+    history.replaceState(null, '', location.pathname + serializeFilters(filters, sort as SortKey));
+  }
+
+  function syncChips() {
+    root.querySelectorAll<HTMLElement>('[data-lodging]').forEach((b) => b.setAttribute('aria-pressed', String(filters.lodging.includes(b.dataset.lodging as Lodging))));
+    root.querySelectorAll<HTMLElement>('[data-activity]').forEach((b) => b.setAttribute('aria-pressed', String(filters.activities.includes(b.dataset.activity as Activity))));
+    root.querySelector('[data-roof]')!.setAttribute('aria-pressed', String(!!filters.roofOnly));
+    root.querySelector('[data-drive]')!.setAttribute('aria-pressed', String(!!filters.maxDrive));
+    root.querySelector<HTMLSelectElement>('[data-sort]')!.value = sort;
+  }
+
+  const toggle = <T,>(arr: T[], v: T) => (arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
+  root.querySelectorAll<HTMLElement>('[data-lodging]').forEach((b) => b.addEventListener('click', () => { filters = { ...filters, lodging: toggle(filters.lodging, b.dataset.lodging as Lodging) }; render(); }));
+  root.querySelectorAll<HTMLElement>('[data-activity]').forEach((b) => b.addEventListener('click', () => { filters = { ...filters, activities: toggle(filters.activities, b.dataset.activity as Activity) }; render(); }));
+  root.querySelector('[data-roof]')!.addEventListener('click', () => { filters = { ...filters, roofOnly: !filters.roofOnly }; render(); });
+  root.querySelector('[data-drive]')!.addEventListener('click', () => { filters = { ...filters, maxDrive: filters.maxDrive ? undefined : 90 }; render(); });
+  root.querySelector<HTMLSelectElement>('[data-sort]')!.addEventListener('change', (e) => { sort = (e.target as HTMLSelectElement).value as SortKey; render(); });
+  root.querySelector('[data-clear]')!.addEventListener('click', () => { filters = { lodging: [], activities: [] } as Filters; render(); });
+
+  // ---- map
+  const dark = () => document.documentElement.dataset.theme === 'dark' || (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+  const map = L.map(root.querySelector<HTMLElement>('[data-map]')!, { zoomControl: true, scrollWheelZoom: true, attributionControl: true });
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 19, className: dark() ? 'tiles-dark' : 'tiles',
+  }).addTo(map);
+
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+  const markers = new Map<string, L.Marker>();
+  data.forEach((d) => {
+    const icon = L.divIcon({ className: '', html: `<div class="price-pin${d.rank < 3 ? ' pick' : ''}" data-pin="${d.id}">${esc(d.priceLabel)}</div>`, iconSize: [0, 0] });
+    const m = L.marker(d.coords, { icon, title: d.name, riseOnHover: true });
+    m.bindPopup(`<a class="mini" href="${d.href}">${d.thumb ? `<img src="${d.thumb}" alt="">` : ''}<div><b>${esc(d.name)}</b><span class="m">★ ${d.rating.toFixed(1)} · ${esc(d.line)}</span>${d.price !== null ? `<br><b style="display:inline">${esc(d.priceLabel)}</b> night` : ''}</div></a>`, { closeButton: true, offset: [0, -8], maxWidth: 260 });
+    markers.set(d.id, m.addTo(map));
+  });
+  L.marker(origin.coords, { icon: L.divIcon({ className: '', html: '<div class="home-pin"></div>', iconSize: [0, 0] }), title: `Start: ${origin.name}`, zIndexOffset: -100 })
+    .bindTooltip(`Start: ${origin.name}`, { direction: 'top', offset: [0, -10] }).addTo(map);
+  map.fitBounds(L.latLngBounds([...data.map((d) => d.coords), origin.coords]), { padding: [40, 40] });
+
+  const pin = (id: string) => document.querySelector<HTMLElement>(`[data-pin="${id}"]`);
+  cards.forEach((card, id) => {
+    card.addEventListener('mouseenter', () => { pin(id)?.classList.add('active'); markers.get(id)?.setZIndexOffset(1000); });
+    card.addEventListener('mouseleave', () => { pin(id)?.classList.remove('active'); markers.get(id)?.setZIndexOffset(0); });
+  });
+  markers.forEach((m, id) => {
+    m.on('mouseover', () => cards.get(id)?.classList.add('hl'));
+    m.on('mouseout', () => cards.get(id)?.classList.remove('hl'));
+  });
+
+  // ---- map visibility
+  const deskBtn = root.querySelector<HTMLButtonElement>('[data-map-toggle]')!;
+  deskBtn.addEventListener('click', () => {
+    const hide = !split.classList.contains('no-map');
+    split.classList.toggle('no-map', hide);
+    deskBtn.querySelector('span')!.textContent = hide ? 'Show map' : 'Hide map';
+    deskBtn.setAttribute('aria-pressed', String(!hide));
+    setTimeout(() => map.invalidateSize(), 50);
+  });
+  const fab = root.querySelector<HTMLButtonElement>('[data-map-fab]')!;
+  fab.addEventListener('click', () => {
+    const on = split.classList.toggle('show-map-mobile');
+    root.querySelector('[data-fab-label]')!.textContent = on ? 'List' : 'Map';
+    window.scrollTo({ top: 0 });
+    setTimeout(() => { map.invalidateSize(); map.fitBounds(L.latLngBounds(data.map((d) => d.coords)), { padding: [40, 40] }); }, 50);
+  });
+
+  render();
+</script>

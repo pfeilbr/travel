@@ -1,0 +1,75 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Explorer from '../../../components/Explorer.astro';
+import Icon from '../../../components/Icon.astro';
+import { trips } from '../../../data/trips';
+import { placeById } from '../../../data/places';
+import { dateRange, nights } from '../../../lib/format';
+import { url } from '../../../lib/paths';
+import type { Trip } from '../../../data/types';
+
+export function getStaticPaths() {
+  return trips.map((trip) => ({ params: { slug: trip.slug }, props: { trip } }));
+}
+const { trip } = Astro.props as { trip: Trip };
+const n = nights(trip.start, trip.end);
+const checked = new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+---
+<Layout title={`${trip.title}: ${dateRange(trip.start, trip.end)}`} description={trip.blurb}>
+  <section class="container trip-head">
+    <a class="back" href={url('trips/')}><Icon name="chev-left" size={14} /> Trips</a>
+    <h1>{trip.title}</h1>
+    <div class="meta">
+      <span><Icon name="calendar" size={16} />{dateRange(trip.start, trip.end)} · {n} night{n > 1 ? 's' : ''}</span>
+      <span><Icon name="users" size={16} />{trip.party}</span>
+      <span><Icon name="pin" size={16} />From {trip.origin.name}</span>
+      <span class="badge badge-pine"><Icon name="check" size={13} />Availability checked live {checked}</span>
+    </div>
+    <p class="muted blurb">{trip.blurb}</p>
+  </section>
+
+  <Explorer trip={trip} />
+
+  <section class="container picks">
+    <h2>Our top picks</h2>
+    <ol>
+      {trip.topPicks.map((p, i) => (
+        <li>
+          <span class="num">{i + 1}</span>
+          <div><a href={url(`places/${p.placeId}/`)}><strong>{placeById[p.placeId].name}</strong></a><p class="muted">{p.why}</p></div>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="container notes">
+    <div>
+      <h2>Good to know</h2>
+      <ul>{trip.gotchas.map((g) => <li>{g}</li>)}</ul>
+    </div>
+    <div>
+      <h2>Sources</h2>
+      <ul>{trip.sources.map((s) => <li><a href={s.url} rel="noopener">{s.label}</a></li>)}</ul>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .trip-head { padding-top: 28px; padding-bottom: 12px; }
+  .back { display: inline-flex; align-items: center; gap: 4px; font-size: 14px; color: var(--muted); text-decoration: none; margin-bottom: 10px; }
+  .back:hover { color: var(--ink); }
+  h1 { font-family: var(--font-display); font-weight: 700; margin-bottom: 12px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; font-size: 15px; }
+  .meta > span { display: inline-flex; align-items: center; gap: 6px; }
+  .blurb { margin: 12px 0 0; max-width: 70ch; }
+  .picks { padding-top: 48px; }
+  .picks ol { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .picks li { display: flex; gap: 14px; padding: 20px; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--surface-2); }
+  .picks a { text-decoration: none; }
+  .picks a:hover { text-decoration: underline; }
+  .picks p { margin: 4px 0 0; font-size: 15px; }
+  .num { flex: none; width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font-weight: 700; }
+  .notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; padding-top: 48px; }
+  .notes ul { padding-left: 18px; color: var(--ink-2); }
+  .notes li { margin-bottom: 8px; }
+</style>
