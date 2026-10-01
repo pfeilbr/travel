@@ -32,11 +32,17 @@ describe('filters', () => {
     expect(sortRows(rows, 'rating')[0].place.id).toBe('watkins-glen');
     expect(sortRows(rows, 'price', ['cabin'])[0].place.id).toBe('robert-h-treman');
   });
+  it('filters by region', () => {
+    const ids = rows.filter((r) => matches(r, { ...none, regions: ['Adirondacks', 'Lake Ontario'] })).map((r) => r.place.id).sort();
+    expect(ids).toEqual(['nicks-lake', 'selkirk-shores']);
+  });
   it('round-trips URL params', () => {
     const f = { lodging: ['cabin' as const], activities: ['biking' as const], maxDrive: 120, roofOnly: true };
     const s = serializeFilters(f, 'price');
     expect(parseFilters(new URLSearchParams(s))).toEqual({ filters: f, sort: 'price' });
     expect(serializeFilters({ lodging: [], activities: [] }, 'recommended')).toBe('');
+    const g = { lodging: [], activities: [], maxDrive: undefined, roofOnly: false, regions: ['Finger Lakes'] };
+    expect(parseFilters(new URLSearchParams(serializeFilters(g, 'recommended')))).toEqual({ filters: g, sort: 'recommended' });
   });
 });
 

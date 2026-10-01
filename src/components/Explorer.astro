@@ -22,7 +22,7 @@ const mapData = await Promise.all(rows.map(async ({ place, option, rank }) => {
   return {
     id: place.id, rank, name: place.name, coords: place.coords, href: url(`places/${place.id}/`), thumb,
     price, priceLabel: price !== null ? money(Math.round(price)) : '★ ' + place.google.rating.toFixed(1),
-    rating: place.google.rating, reviews: place.google.reviews, activities: place.activities,
+    rating: place.google.rating, reviews: place.google.reviews, activities: place.activities, region: place.region,
     line: `${drive(option.driveMin)} · ${availabilityLine(option)}`, option,
   };
 }));
@@ -48,6 +48,7 @@ const chips = {
   <div class="filters" data-filters>
     <div class="container filter-row">
       <div class="chips" role="group" aria-label="Filters">
+        <button class="chip region-chip" data-region-chip hidden aria-pressed="true"><span data-region-label></span> ✕</button>
         <button class="chip" data-roof aria-pressed="false"><Icon name="cabin" size={16} />Has a roof</button>
         <span class="sep" aria-hidden="true"></span>
         {chips.lodging.map((c) => <button class="chip" data-lodging={c.v} aria-pressed="false"><Icon name={c.icon} size={16} />{c.label}</button>)}
@@ -151,7 +152,7 @@ const chips = {
   import { wireHearts } from '../lib/wishlist';
   import type { Activity, Lodging, TripOption } from '../data/types';
 
-  type R = { id: string; rank: number; name: string; coords: [number, number]; href: string; thumb: string | null; price: number | null; priceLabel: string; rating: number; reviews: number; activities: Activity[]; line: string; option: TripOption };
+  type R = { id: string; region: string; rank: number; name: string; coords: [number, number]; href: string; thumb: string | null; price: number | null; priceLabel: string; rating: number; reviews: number; activities: Activity[]; line: string; option: TripOption };
 
   const root = document.querySelector<HTMLElement>('[data-explorer]')!;
   const data: R[] = JSON.parse(root.querySelector('[data-rows]')!.textContent!);
@@ -167,7 +168,7 @@ const chips = {
   let { filters, sort } = parseFilters(new URLSearchParams(location.search));
   if (new URLSearchParams(location.search).get('lodging') === 'glamping' && !filters.lodging.length) filters.lodging = ['glamping'];
 
-  const rowsFor = () => data.map((d) => ({ place: { id: d.id, activities: d.activities, google: { rating: d.rating, reviews: d.reviews } } as any, option: d.option, rank: d.rank }));
+  const rowsFor = () => data.map((d) => ({ place: { id: d.id, region: d.region, activities: d.activities, google: { rating: d.rating, reviews: d.reviews } } as any, option: d.option, rank: d.rank }));
 
   function render() {
     const visible = sortRows(rowsFor().filter((r) => matches(r, filters)), sort as SortKey, filters.lodging);
@@ -187,6 +188,9 @@ const chips = {
     root.querySelector('[data-roof]')!.setAttribute('aria-pressed', String(!!filters.roofOnly));
     root.querySelector('[data-drive]')!.setAttribute('aria-pressed', String(!!filters.maxDrive));
     root.querySelector<HTMLSelectElement>('[data-sort]')!.value = sort;
+    const rc = root.querySelector<HTMLElement>('[data-region-chip]')!;
+    rc.hidden = !filters.regions?.length;
+    root.querySelector('[data-region-label]')!.textContent = filters.regions?.join(', ') ?? '';
   }
 
   const toggle = <T,>(arr: T[], v: T) => (arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
@@ -195,6 +199,7 @@ const chips = {
   root.querySelector('[data-roof]')!.addEventListener('click', () => { filters = { ...filters, roofOnly: !filters.roofOnly }; render(); });
   root.querySelector('[data-drive]')!.addEventListener('click', () => { filters = { ...filters, maxDrive: filters.maxDrive ? undefined : 90 }; render(); });
   root.querySelector<HTMLSelectElement>('[data-sort]')!.addEventListener('change', (e) => { sort = (e.target as HTMLSelectElement).value as SortKey; render(); });
+  root.querySelector('[data-region-chip]')!.addEventListener('click', () => { filters = { ...filters, regions: [] }; render(); });
   root.querySelector('[data-clear]')!.addEventListener('click', () => { filters = { lodging: [], activities: [] } as Filters; render(); });
 
   // ---- map

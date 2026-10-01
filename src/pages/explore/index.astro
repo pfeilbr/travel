@@ -1,4 +1,24 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Explorer from '../../components/Explorer.astro';
+import Icon from '../../components/Icon.astro';
+import { trips } from '../../data/trips';
+import { dateRange } from '../../lib/format';
+import { url } from '../../lib/paths';
+
+const trip = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0];
 ---
-<Layout title="Explore"><section class="container" style="padding:64px 0"><h1>Explore</h1><p class="muted">Coming together.</p></section></Layout>
+<Layout title="Explore" description="Browse campgrounds, cabins and glamping with live availability, prices and Google ratings.">
+  <section class="container head">
+    <h1>Explore places</h1>
+    <p class="muted">
+      <Icon name="calendar" size={15} /> Availability and prices for <a href={url(`trips/${trip.slug}/`)}>{dateRange(trip.start, trip.end)}</a>, checked live {new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}.
+    </p>
+  </section>
+  <Explorer trip={trip} />
+</Layout>
+<style>
+  .head { padding-top: 28px; padding-bottom: 4px; }
+  .head h1 { font-size: 28px; margin-bottom: 4px; }
+  .head p { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin: 0; font-size: 15px; }
+</style>
