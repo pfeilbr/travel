@@ -1,4 +1,82 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Icon from '../../components/Icon.astro';
 ---
-<Layout title="Account"><section class="container" style="padding:64px 0"><h1>Account</h1><p class="muted">Coming together.</p></section></Layout>
+<Layout title="Account">
+  <section class="container acct" data-acct>
+    <h1>Account</h1>
+    <div data-out>
+      <p class="muted">Log in to manage your profile.</p>
+      <button class="btn btn-primary" data-login>Log in</button>
+    </div>
+    <div data-in hidden>
+      <p class="muted"><span data-email></span> · signed in with <span data-provider></span></p>
+      <form class="card" data-profile>
+        <h2>Profile</h2>
+        <label>Display name<input name="display_name" maxlength="80" /></label>
+        <label>Home base<input name="home_base" maxlength="120" placeholder="Verona, NY" /></label>
+        <p class="ok" data-ok hidden><Icon name="check" size={14} /> Saved</p>
+        <p class="error" data-error hidden></p>
+        <button class="btn btn-primary">Save</button>
+      </form>
+      <form class="card" data-password hidden>
+        <h2>Set a new password</h2>
+        <label>New password<input name="password" type="password" minlength="8" autocomplete="new-password" /></label>
+        <p class="ok" data-pw-ok hidden><Icon name="check" size={14} /> Password updated</p>
+        <p class="error" data-pw-error hidden></p>
+        <button class="btn btn-outline">Update password</button>
+      </form>
+      <button class="btn btn-ghost" data-signout>Log out</button>
+    </div>
+  </section>
+</Layout>
+<style>
+  .acct { padding-top: 32px; max-width: 640px; min-height: 60vh; }
+  .card { display: grid; gap: 14px; padding: 24px; border: 1px solid var(--rule); border-radius: var(--radius); margin-bottom: 20px; }
+  .card h2 { font-size: 18px; margin: 0; }
+  label { display: grid; gap: 4px; font-size: 13px; font-weight: 600; }
+  input { font: inherit; font-weight: 400; padding: 10px 12px; border: 1px solid var(--rule-strong); border-radius: 10px; background: var(--surface-2); color: var(--ink); }
+  .ok { color: var(--pine); display: flex; gap: 6px; align-items: center; margin: 0; font-size: 14px; }
+  .error { color: var(--danger); margin: 0; font-size: 14px; }
+  .card .btn { justify-self: start; }
+</style>
+<script>
+  import { onUser, supabase } from '../../lib/supabase';
+  import { openAuth } from '../../lib/auth-modal';
+  const root = document.querySelector<HTMLElement>('[data-acct]')!;
+  const q = <T extends HTMLElement>(s: string) => root.querySelector<T>(s)!;
+  q('[data-login]').addEventListener('click', () => openAuth('login'));
+  q('[data-signout]').addEventListener('click', async () => { await supabase()?.auth.signOut(); location.href = import.meta.env.BASE_URL; });
+
+  onUser(async (u) => {
+    q('[data-out]').hidden = !!u;
+    q('[data-in]').hidden = !u;
+    if (!u) return;
+    q('[data-email]').textContent = u.email ?? '';
+    const prov = (u.app_metadata?.providers as string[] | undefined) ?? [u.app_metadata?.provider ?? 'email'];
+    q('[data-provider]').textContent = prov.map((p) => p === 'email' ? 'email' : p[0].toUpperCase() + p.slice(1)).join(', ');
+    q('[data-password]').hidden = !prov.includes('email');
+    const { data } = await supabase()!.from('profiles').select('display_name, home_base').eq('id', u.id).maybeSingle();
+    const f = q<HTMLFormElement>('[data-profile]');
+    (f.elements.namedItem('display_name') as HTMLInputElement).value = data?.display_name ?? '';
+    (f.elements.namedItem('home_base') as HTMLInputElement).value = data?.home_base ?? '';
+  });
+
+  q<HTMLFormElement>('[data-profile]').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target as HTMLFormElement)) as Record<string, string>;
+    const sb = supabase()!;
+    const { data: { user } } = await sb.auth.getUser();
+    const { error } = await sb.from('profiles').update({ display_name: d.display_name.trim() || null, home_base: d.home_base.trim() || null }).eq('id', user!.id);
+    q('[data-error]').hidden = !error; q('[data-error]').textContent = error?.message ?? '';
+    q('[data-ok]').hidden = !!error;
+  });
+  q<HTMLFormElement>('[data-password]').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const pw = String(new FormData(e.target as HTMLFormElement).get('password') ?? '');
+    if (pw.length < 8) { q('[data-pw-error]').textContent = 'At least 8 characters.'; q('[data-pw-error]').hidden = false; return; }
+    const { error } = await supabase()!.auth.updateUser({ password: pw });
+    q('[data-pw-error]').hidden = !error; q('[data-pw-error]').textContent = error?.message ?? '';
+    q('[data-pw-ok]').hidden = !!error;
+  });
+</script>

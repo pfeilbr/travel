@@ -1,4 +1,125 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
+import Icon from '../../components/Icon.astro';
+import { trips } from '../../data/trips';
+import { places, placeById } from '../../data/places';
+import { imagesFor } from '../../lib/images';
+import { dateRange } from '../../lib/format';
+import { url } from '../../lib/paths';
+const sorted = [...trips].sort((a, b) => b.start.localeCompare(a.start));
 ---
-<Layout title="Trips"><section class="container" style="padding:64px 0"><h1>Trips</h1><p class="muted">Coming together.</p></section></Layout>
+<Layout title="Trips">
+  <section class="container page">
+    <h1>Trips</h1>
+
+    <h2 class="sub">Checked live</h2>
+    <div class="cards">
+      {sorted.map((t) => {
+        const img = imagesFor(t.topPicks[0]?.placeId ?? '')[0];
+        return (
+          <a class="trip" href={url(`trips/${t.slug}/`)}>
+            {img ? <Image src={img.src} alt={img.alt} widths={[480, 800]} sizes="(max-width: 760px) 100vw, 400px" /> : <div class="fill"></div>}
+            <div class="tb">
+              <span class="muted when"><Icon name="calendar" size={14} />{dateRange(t.start, t.end)}</span>
+              <h3>{t.title}</h3>
+              <p class="muted">{t.options.length} places · top pick: {placeById[t.topPicks[0].placeId].name}</p>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+
+    <div class="plans" data-plans>
+      <div class="plans-head">
+        <h2 class="sub">Your trip plans</h2>
+        <button class="btn btn-outline btn-sm" data-new><Icon name="calendar" size={16} />New plan</button>
+      </div>
+      <p class="muted" data-out>Log in to keep your own trip plans: dates, where you're staying and notes.</p>
+      <form class="plan-form" data-form hidden>
+        <label>Name<input name="title" required maxlength="120" placeholder="Ithaca weekend" /></label>
+        <div class="two">
+          <label>Start<input type="date" name="start_date" /></label>
+          <label>End<input type="date" name="end_date" /></label>
+        </div>
+        <label>Where
+          <select name="place_id"><option value="">Not decided</option>{places.map((p) => <option value={p.id}>{p.name}</option>)}</select>
+        </label>
+        <label>Notes<textarea name="notes" rows="3" maxlength="5000" placeholder="Cabin #003, bring sleeping bags, dinner at Moosewood…"></textarea></label>
+        <p class="error" data-error hidden></p>
+        <div class="row"><button class="btn btn-primary">Save plan</button><button type="button" class="btn btn-ghost" data-cancel>Cancel</button></div>
+      </form>
+      <ul class="plan-list" data-list></ul>
+      <script type="application/json" data-names set:html={JSON.stringify(Object.fromEntries(places.map((p) => [p.id, p.name])))} />
+    </div>
+  </section>
+</Layout>
+<style>
+  .page { padding-top: 32px; }
+  .sub { font-size: 22px; margin: 28px 0 16px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+  .trip { display: block; border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; text-decoration: none; background: var(--surface-2); transition: box-shadow .2s; }
+  .trip:hover { box-shadow: var(--shadow); }
+  .trip :global(img), .fill { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: linear-gradient(135deg, var(--pine), #0f2a20); }
+  .tb { padding: 16px 18px 18px; }
+  .when { display: inline-flex; gap: 6px; align-items: center; font-size: 14px; }
+  .tb h3 { margin: 6px 0 2px; font-size: 18px; }
+  .tb p { margin: 0; font-size: 14px; }
+  .plans { margin-top: 40px; padding-top: 8px; border-top: 1px solid var(--rule); }
+  .plans-head { display: flex; justify-content: space-between; align-items: center; }
+  .plan-form { display: grid; gap: 12px; max-width: 560px; padding: 20px; border: 1px solid var(--rule); border-radius: var(--radius); margin-bottom: 20px; }
+  .plan-form label { display: grid; gap: 4px; font-size: 13px; font-weight: 600; }
+  .plan-form input, .plan-form select, .plan-form textarea { font: inherit; font-weight: 400; padding: 10px 12px; border: 1px solid var(--rule-strong); border-radius: 10px; background: var(--surface-2); color: var(--ink); }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .row { display: flex; gap: 8px; }
+  .error { color: var(--danger); font-size: 14px; }
+  .plan-list { list-style: none; padding: 0; display: grid; gap: 12px; }
+  .plan-list :global(li) { display: flex; justify-content: space-between; gap: 16px; padding: 16px 18px; border: 1px solid var(--rule); border-radius: var(--radius); }
+  .plan-list :global(.pm) { color: var(--muted); font-size: 14px; }
+  .plan-list :global(.pn) { margin: 6px 0 0; white-space: pre-line; font-size: 14px; }
+  .plan-list :global(button) { flex: none; align-self: flex-start; border: 0; background: none; color: var(--muted); text-decoration: underline; cursor: pointer; font-size: 14px; }
+</style>
+<script>
+  import { getUser, onUser, supabase } from '../../lib/supabase';
+  import { openAuth } from '../../lib/auth-modal';
+
+  const root = document.querySelector<HTMLElement>('[data-plans]')!;
+  const form = root.querySelector<HTMLFormElement>('[data-form]')!;
+  const list = root.querySelector<HTMLElement>('[data-list]')!;
+  const err = root.querySelector<HTMLElement>('[data-error]')!;
+  const names: Record<string, string> = JSON.parse(root.querySelector('[data-names]')!.textContent!);
+  const base = import.meta.env.BASE_URL;
+  const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+  const fmt = (d: string | null) => d ? new Date(d + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+
+  async function load() {
+    const sb = supabase();
+    root.querySelector<HTMLElement>('[data-out]')!.hidden = !!getUser();
+    if (!sb || !getUser()) { list.innerHTML = ''; return; }
+    const { data } = await sb.from('trip_plans').select('*').order('start_date', { ascending: true, nullsFirst: false });
+    list.innerHTML = (data ?? []).map((p) => `<li><div><b>${esc(p.title)}</b><div class="pm">${[p.start_date && `${fmt(p.start_date)}${p.end_date ? ' – ' + fmt(p.end_date) : ''}`, p.place_id && `<a href="${base}places/${p.place_id}/">${esc(names[p.place_id] ?? p.place_id)}</a>`].filter(Boolean).join(' · ')}</div>${p.notes ? `<p class="pn">${esc(p.notes)}</p>` : ''}</div><button data-del="${p.id}">Delete</button></li>`).join('')
+      || '<li class="muted">No plans yet.</li>';
+    list.querySelectorAll<HTMLButtonElement>('[data-del]').forEach((b) => b.addEventListener('click', async () => {
+      if (!confirm('Delete this plan?')) return;
+      await sb.from('trip_plans').delete().eq('id', b.dataset.del!);
+      load();
+    }));
+  }
+
+  root.querySelector('[data-new]')!.addEventListener('click', () => {
+    if (!getUser()) return openAuth('login', 'Log in to save trip plans.');
+    form.hidden = false;
+    (form.elements.namedItem('title') as HTMLInputElement).focus();
+  });
+  root.querySelector('[data-cancel]')!.addEventListener('click', () => { form.reset(); form.hidden = true; });
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    err.hidden = true;
+    const d = Object.fromEntries(new FormData(form)) as Record<string, string>;
+    const row = { title: d.title.trim(), start_date: d.start_date || null, end_date: d.end_date || null, place_id: d.place_id || null, notes: d.notes.trim() || null };
+    const { error } = await supabase()!.from('trip_plans').insert(row);
+    if (error) { err.textContent = error.message.includes('check') ? 'End date must be on or after the start date.' : error.message; err.hidden = false; return; }
+    form.reset(); form.hidden = true; load();
+  });
+  onUser(() => load());
+</script>

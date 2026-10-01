@@ -1,4 +1,65 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import PlaceCard from '../../components/PlaceCard.astro';
+import Icon from '../../components/Icon.astro';
+import { places } from '../../data/places';
+import { trips } from '../../data/trips';
+import { url } from '../../lib/paths';
+
+const trip = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0];
+const optionFor = (id: string) => trip.options.find((o) => o.placeId === id);
 ---
-<Layout title="Wishlists"><section class="container" style="padding:64px 0"><h1>Wishlists</h1><p class="muted">Coming together.</p></section></Layout>
+<Layout title="Wishlists">
+  <section class="container wl" data-wl>
+    <h1>Wishlists</h1>
+
+    <div class="state" data-out>
+      <span class="ic"><Icon name="heart" size={28} /></span>
+      <h2>Log in to view your wishlists</h2>
+      <p class="muted">Save places you love by tapping the heart. They'll show up here on any device.</p>
+      <button class="btn btn-primary" data-login>Log in</button>
+    </div>
+
+    <div class="state" data-empty hidden>
+      <span class="ic"><Icon name="heart" size={28} /></span>
+      <h2>Create your first wishlist</h2>
+      <p class="muted">As you explore, tap the heart on places you like and they'll land in Favorites.</p>
+      <a class="btn btn-primary" href={url('explore/')}>Start exploring</a>
+    </div>
+
+    <div data-in hidden>
+      <h2 class="list-name"><Icon name="heart" size={22} /> Favorites <span class="muted" data-n></span></h2>
+      <div class="grid">
+        {places.map((p) => <div data-item={p.id} hidden><PlaceCard place={p} option={optionFor(p.id)} /></div>)}
+      </div>
+    </div>
+  </section>
+</Layout>
+<style>
+  .wl { padding-top: 32px; min-height: 60vh; }
+  .state { max-width: 480px; padding: 48px 0; }
+  .ic { display: inline-grid; place-items: center; width: 56px; height: 56px; border-radius: 16px; background: var(--surface); color: var(--accent); margin-bottom: 16px; }
+  .list-name { display: flex; align-items: center; gap: 10px; margin: 16px 0 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 36px 24px; }
+</style>
+<script>
+  import { onUser } from '../../lib/supabase';
+  import { onSaved, wireHearts } from '../../lib/wishlist';
+  import { wireCarousels } from '../../lib/carousel';
+  import { openAuth } from '../../lib/auth-modal';
+
+  const root = document.querySelector<HTMLElement>('[data-wl]')!;
+  wireCarousels(root);
+  wireHearts(root);
+  root.querySelector('[data-login]')!.addEventListener('click', () => openAuth('login'));
+  let signedIn = false;
+  const paint = (s: Set<string>) => {
+    root.querySelectorAll<HTMLElement>('[data-item]').forEach((el) => (el.hidden = !s.has(el.dataset.item!)));
+    root.querySelector<HTMLElement>('[data-out]')!.hidden = signedIn;
+    root.querySelector<HTMLElement>('[data-empty]')!.hidden = !signedIn || s.size > 0;
+    root.querySelector<HTMLElement>('[data-in]')!.hidden = !signedIn || s.size === 0;
+    root.querySelector('[data-n]')!.textContent = `· ${s.size} saved`;
+  };
+  onUser((u) => { signedIn = !!u; });
+  onSaved(paint);
+</script>

@@ -1,4 +1,38 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
+import { allCredits } from '../../lib/images';
+import { placeById } from '../../data/places';
+const groups = allCredits();
 ---
-<Layout title="Credits"><section class="container" style="padding:64px 0"><h1>Credits</h1><p class="muted">Coming together.</p></section></Layout>
+<Layout title="Photo credits">
+  <section class="container page">
+    <h1>Photo credits</h1>
+    <p class="muted">All photos are freely licensed from Wikimedia Commons and used under their licenses. Thank you to the photographers.</p>
+    {groups.length === 0 && <p>No photos yet.</p>}
+    {groups.map((g) => (
+      <section>
+        <h2>{placeById[g.id]?.name ?? (g.id === 'hero' ? 'Homepage' : g.id)}</h2>
+        <ul>
+          {g.images.map((img) => (
+            <li>
+              <Image src={img.src} alt="" width={160} height={107} />
+              <div>
+                <b>{img.alt}</b>{img.nearby && <span class="muted"> (nearby)</span>}
+                <div class="muted">By <a href={img.sourceUrl} rel="noopener">{img.author || 'unknown'}</a> · {img.licenseUrl ? <a href={img.licenseUrl} rel="noopener license">{img.license}</a> : img.license}</div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </section>
+</Layout>
+<style>
+  .page { padding-top: 32px; }
+  section section { margin-top: 32px; }
+  h2 { font-size: 20px; }
+  ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+  li { display: flex; gap: 14px; align-items: center; font-size: 14px; }
+  li :global(img) { width: 96px; height: 64px; object-fit: cover; border-radius: 8px; flex: none; }
+</style>
