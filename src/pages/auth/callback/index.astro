@@ -1,0 +1,37 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+<Layout title="Signing you in">
+  <section class="container cb">
+    <div class="spinner" aria-hidden="true"></div>
+    <h1 data-msg>Signing you in…</h1>
+    <p class="muted" data-sub>One moment.</p>
+  </section>
+</Layout>
+<style>
+  .cb { min-height: 50vh; display: grid; place-content: center; text-align: center; gap: 8px; }
+  .spinner { width: 36px; height: 36px; margin: 0 auto 12px; border: 3px solid var(--rule); border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+<script>
+  import { supabase } from '../../../lib/supabase';
+  const base = import.meta.env.BASE_URL;
+  const params = new URLSearchParams(location.search);
+  const sb = supabase();
+  const fail = (m: string) => {
+    document.querySelector('[data-msg]')!.textContent = 'Sign-in didn’t finish';
+    document.querySelector('[data-sub]')!.textContent = m;
+    document.querySelector('.spinner')?.remove();
+  };
+  (async () => {
+    if (!sb) return fail('Sign-in isn’t switched on yet.');
+    const errDesc = params.get('error_description') || new URLSearchParams(location.hash.slice(1)).get('error_description');
+    if (errDesc) return fail(errDesc);
+    // supabase-js exchanges ?code= automatically (detectSessionInUrl); wait for it.
+    const { data } = await sb.auth.getSession();
+    if (!data.session) return fail('The link may have expired. Try again.');
+    let next = params.get('next') ? base + params.get('next') : base;
+    try { next = sessionStorage.getItem('auth:return') || next; sessionStorage.removeItem('auth:return'); } catch {}
+    location.replace(next);
+  })();
+</script>

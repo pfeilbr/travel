@@ -1,0 +1,34 @@
+---
+import { url } from '../lib/paths';
+---
+<footer class="site-footer">
+  <div class="container cols">
+    <div>
+      <h4>Explore</h4>
+      <a href={url('explore/')}>All places</a>
+      <a href={url('explore/?lodging=cabin')}>Cabins</a>
+      <a href={url('explore/?lodging=glamping')}>Glamping</a>
+    </div>
+    <div>
+      <h4>Plan</h4>
+      <a href={url('trips/')}>Trips</a>
+      <a href={url('wishlists/')}>Wishlists</a>
+    </div>
+    <div>
+      <h4>About</h4>
+      <a href="https://github.com/pfeilbr/travel">Source on GitHub</a>
+      <a href={url('credits/')}>Photo credits</a>
+    </div>
+  </div>
+  <div class="container legal">
+    <span>© {new Date().getFullYear()} Waypoint · Availability and prices change constantly. Always confirm with the booking site.</span>
+  </div>
+</footer>
+<style>
+  .site-footer { margin-top: 96px; background: var(--surface); border-top: 1px solid var(--rule); font-size: 14px; }
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; padding-top: 48px; padding-bottom: 32px; }
+  h4 { margin: 0 0 12px; font-size: 14px; }
+  a { display: block; text-decoration: none; color: var(--ink-2); padding: 4px 0; }
+  a:hover { text-decoration: underline; }
+  .legal { border-top: 1px solid var(--rule); padding-top: 20px; padding-bottom: 28px; color: var(--muted); }
+</style>

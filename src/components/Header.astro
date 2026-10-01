@@ -1,0 +1,122 @@
+---
+import Logo from './Logo.astro';
+import { url } from '../lib/paths';
+interface Props { overlay?: boolean }
+const { overlay = false } = Astro.props;
+---
+<header class:list={['site-header', { overlay }]} data-header>
+  <div class="container bar">
+    <Logo />
+    <nav class="primary" aria-label="Primary">
+      <a href={url('explore/')}>Explore</a>
+      <a href={url('trips/')}>Trips</a>
+      <a href={url('wishlists/')}>Wishlists</a>
+    </nav>
+    <div class="right">
+      <div class="menu-wrap">
+        <button class="user-btn" aria-haspopup="menu" aria-expanded="false" data-menu-btn aria-label="Account menu">
+          <svg viewBox="0 0 32 32" width="16" height="16" aria-hidden="true"><path d="M2 16h28M2 24h28M2 8h28" stroke="currentColor" stroke-width="3" fill="none"/></svg>
+          <span class="avatar" data-avatar>
+            <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M16 .7a15.3 15.3 0 1 1 0 30.6 15.3 15.3 0 0 1 0-30.6Zm0 19.8c-3.4 0-6.5 1.4-8.6 3.8a12.6 12.6 0 0 0 17.2 0c-2.1-2.4-5.2-3.8-8.6-3.8Zm0-13.4a5.2 5.2 0 1 0 0 10.4 5.2 5.2 0 0 0 0-10.4Z"/></svg>
+          </span>
+        </button>
+        <div class="menu" role="menu" hidden data-menu>
+          <div data-signed-out>
+            <button role="menuitem" class="strong" data-open-auth="signup">Sign up</button>
+            <button role="menuitem" data-open-auth="login">Log in</button>
+          </div>
+          <div data-signed-in hidden>
+            <div class="who" data-who></div>
+            <a role="menuitem" href={url('wishlists/')} class="strong">Wishlists</a>
+            <a role="menuitem" href={url('trips/')} class="strong">Trips</a>
+            <a role="menuitem" href={url('account/')}>Account</a>
+          </div>
+          <hr />
+          <a role="menuitem" href={url('explore/')}>Explore places</a>
+          <button role="menuitem" data-theme-toggle>Toggle dark mode</button>
+          <button role="menuitem" data-signed-in hidden data-sign-out>Log out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header { position: sticky; top: 0; z-index: 50; background: var(--bg); border-bottom: 1px solid var(--rule); }
+  .site-header.overlay { position: absolute; left: 0; right: 0; background: transparent; border-bottom-color: transparent; color: #fff; }
+  .site-header.overlay.scrolled { position: fixed; background: var(--bg); color: var(--ink); border-bottom-color: var(--rule); }
+  .site-header.overlay:not(.scrolled) :global(.logo) { color: #fff; }
+  .bar { display: flex; align-items: center; justify-content: space-between; height: 80px; gap: 16px; }
+  .primary { display: flex; gap: 4px; }
+  .primary a { text-decoration: none; padding: 10px 16px; border-radius: var(--radius-pill); font-weight: 500; font-size: 15px; }
+  .primary a:hover { background: color-mix(in srgb, currentColor 8%, transparent); }
+  .right { display: flex; align-items: center; gap: 8px; }
+  .menu-wrap { position: relative; }
+  .user-btn { display: flex; align-items: center; gap: 10px; height: 44px; padding: 0 6px 0 14px; border-radius: var(--radius-pill); border: 1px solid var(--rule-strong); background: var(--surface-2); color: var(--ink); cursor: pointer; }
+  .user-btn:hover { box-shadow: var(--shadow); }
+  .avatar { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; color: var(--muted); overflow: hidden; }
+  .avatar :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  .avatar :global(.initial) { width: 100%; height: 100%; display: grid; place-items: center; background: var(--ink); color: var(--bg); font-weight: 700; font-size: 14px; }
+  .menu { position: absolute; right: 0; top: calc(100% + 8px); width: 240px; padding: 8px 0; background: var(--surface-2); color: var(--ink); border-radius: var(--radius); box-shadow: var(--shadow-lg); border: 1px solid var(--rule); }
+  .menu a, .menu button { display: block; width: 100%; text-align: left; padding: 11px 16px; background: none; border: 0; text-decoration: none; font-size: 14px; cursor: pointer; }
+  .menu a:hover, .menu button:hover { background: var(--surface); }
+  .menu .strong { font-weight: 600; }
+  .menu hr { border: 0; border-top: 1px solid var(--rule); margin: 8px 0; }
+  .who { padding: 8px 16px 10px; font-size: 13px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  @media (max-width: 760px) { .primary { display: none; } .bar { height: 64px; } }
+</style>
+
+<script>
+  import { onUser, supabase, displayName, avatarUrl } from '../lib/supabase';
+  import { openAuth } from '../lib/auth-modal';
+
+  const header = document.querySelector<HTMLElement>('[data-header]')!;
+  const btn = header.querySelector<HTMLButtonElement>('[data-menu-btn]')!;
+  const menu = header.querySelector<HTMLElement>('[data-menu]')!;
+
+  const setOpen = (open: boolean) => { menu.hidden = !open; btn.setAttribute('aria-expanded', String(open)); };
+  btn.addEventListener('click', (e) => { e.stopPropagation(); setOpen(menu.hidden); });
+  document.addEventListener('click', (e) => { if (!menu.contains(e.target as Node)) setOpen(false); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+
+  header.querySelectorAll<HTMLElement>('[data-open-auth]').forEach((el) =>
+    el.addEventListener('click', () => { setOpen(false); openAuth(el.dataset.openAuth as 'login' | 'signup'); }));
+
+  header.querySelector('[data-theme-toggle]')!.addEventListener('click', () => {
+    const root = document.documentElement;
+    const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch {}
+  });
+
+  header.querySelector('[data-sign-out]')!.addEventListener('click', async () => {
+    await supabase()?.auth.signOut();
+    setOpen(false);
+  });
+
+  onUser((user) => {
+    header.querySelectorAll<HTMLElement>('[data-signed-in]').forEach((el) => (el.hidden = !user));
+    header.querySelectorAll<HTMLElement>('[data-signed-out]').forEach((el) => (el.hidden = !!user));
+    const avatar = header.querySelector<HTMLElement>('[data-avatar]')!;
+    if (user) {
+      header.querySelector('[data-who]')!.textContent = user.email ?? '';
+      const src = avatarUrl(user);
+      avatar.innerHTML = '';
+      if (src) {
+        const img = document.createElement('img');
+        img.src = src; img.alt = ''; img.referrerPolicy = 'no-referrer';
+        avatar.append(img);
+      } else {
+        const s = document.createElement('span');
+        s.className = 'initial'; s.textContent = displayName(user).charAt(0).toUpperCase();
+        avatar.append(s);
+      }
+    }
+  });
+
+  // Transparent header over a hero becomes solid on scroll.
+  if (header.classList.contains('overlay')) {
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+    addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  }
+</script>

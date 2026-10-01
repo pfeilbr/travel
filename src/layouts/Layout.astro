@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import AuthModal from '../components/AuthModal.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  overlayHeader?: boolean;
+}
+const { title, description = 'Trips, places and plans — camping, cabins and getaways, checked live.', image, overlayHeader = false } = Astro.props;
+const fullTitle = title === 'Waypoint' ? title : `${title} · Waypoint`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    {image && <meta property="og:image" content={new URL(image, Astro.site)} />}
+    <meta name="theme-color" content="#e4572e" />
+    <link rel="icon" href={import.meta.env.BASE_URL + 'favicon.svg'} type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script is:inline>
+      try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
+    </script>
+  </head>
+  <body>
+    <Header overlay={overlayHeader} />
+    <main><slot /></main>
+    <Footer />
+    <AuthModal />
+  </body>
+</html>

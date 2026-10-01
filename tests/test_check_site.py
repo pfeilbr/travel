@@ -7,7 +7,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from check_site import check_site  # noqa: E402
 
-REPO_SITE = Path(__file__).resolve().parents[1] / "site"
+DIST = Path(__file__).resolve().parents[1] / "dist"
 
 
 def _write(root: Path, rel: str, text: str) -> None:
@@ -17,8 +17,16 @@ def _write(root: Path, rel: str, text: str) -> None:
 
 
 class CheckSiteTest(unittest.TestCase):
-    def test_repo_site_is_valid(self):
-        self.assertEqual(check_site(REPO_SITE), [])
+    @unittest.skipUnless(DIST.is_dir(), "run `npm run build` first")
+    def test_built_site_is_valid(self):
+        self.assertEqual(check_site(DIST, "/travel"), [])
+
+    def test_base_prefixed_links(self):
+        with TemporaryDirectory() as d:
+            root = Path(d)
+            _write(root, "index.html", '<title>x</title><a href="/travel/a/">a</a><a href="/elsewhere/">b</a>')
+            _write(root, "a/index.html", "<title>a</title>")
+            self.assertEqual(check_site(root, "/travel"), ["index.html: broken link -> /elsewhere/"])
 
     def test_valid_links_pass(self):
         with TemporaryDirectory() as d:

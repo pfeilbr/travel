@@ -1,0 +1,14 @@
+---
+import { url } from '../lib/paths';
+---
+<a href={url()} class="logo" aria-label="Waypoint home">
+  <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+    <path d="M16 2c-6.1 0-11 4.8-11 10.8C5 21 16 30 16 30s11-9 11-17.2C27 6.8 22.1 2 16 2Z" fill="var(--accent)"/>
+    <path d="m9.5 17 4.2-6.2 2.6 3.6 1.7-2.2 4.5 4.8z" fill="#fff"/>
+  </svg>
+  <span>waypoint</span>
+</a>
+<style>
+  .logo { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--accent); font-weight: 800; font-size: 21px; letter-spacing: -0.03em; }
+  @media (max-width: 560px) { .logo span { display: none; } }
+</style>

@@ -17,19 +17,32 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # Public (browser-safe) Supabase settings, from repo Actions *variables*.
+      PUBLIC_SUPABASE_URL: ${{ vars.PUBLIC_SUPABASE_URL }}
+      PUBLIC_SUPABASE_ANON_KEY: ${{ vars.PUBLIC_SUPABASE_ANON_KEY }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Test
+      - run: npm ci
+      - name: Unit tests (JS)
+        run: npm test
+      - name: Build
+        run: npm run build
+      - name: Unit tests (Python) + built-site checks
         run: python -m unittest discover -s tests -v
-      - name: Validate site
-        run: python scripts/check_site.py site
+      - name: Validate links
+        run: python scripts/check_site.py dist --base /travel
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: dist
 
   deploy:
     needs: build
