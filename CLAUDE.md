@@ -43,3 +43,25 @@ instead. If raw private notes are needed for planning, keep them in a git-ignore
 - Preview locally with `python3 -m http.server 8000 -d site`.
 - Anything done more than once becomes a script in `scripts/` with a test in `tests/`
   (stdlib only; no dependencies unless clearly worth it).
+
+## Campground availability lookups (NY State Parks + DEC on ReserveAmerica)
+
+Look up only — never book, sign in, or enter payment.
+
+- Park page: `https://newyorkstateparks.reserveamerica.com/camping/x/r/campgroundDetails.do?contractCode=NY&parkId=<id>`
+  (the slug can be anything). Verified IDs: Green Lakes 165, Selkirk Shores 82, Glimmerglass 78,
+  Nicks Lake 699, Sampson 232, Robert H. Treman 221, Moreau Lake 311, Keuka Lake 228, Watkins Glen 254.
+- URL date params (`arvdate`, `lengthOfStay`) and setting the hidden `campingDate` field directly don't
+  run a search. What works in the built-in browser, run as JS on the park page:
+  ```js
+  document.querySelector('.adp-icon-btn').click(); await new Promise(r=>setTimeout(r,500));
+  document.querySelector('td[aria-label="October 04, 2026"]').click();
+  lengthOfStay.value='1'; lengthOfStay.dispatchEvent(new Event('change',{bubbles:true}));
+  search_avail.click();
+  ```
+  After the reload, the line "N site(s) available out of M" plus the per-type chips (e.g. "Cabin (3) Campsite (48)")
+  give the counts. Each available row's "From $X*" is the base rate before the reservation and vehicle fees.
+- A site's detail page (`campsiteDetails.do?...&siteId=`) shows "Use Fees (N night)", which is a quick way to check
+  whether a short stay actually prices.
+- Campspot (e.g. Seneca Lake Resorts): `https://www.campspot.com/book/<park>/search/<arrive>/<depart>/guests0,2,0/list` works directly.
+- webrez (Firelight Camps) sits behind a Cloudflare human check. Don't bypass it; mark it "check manually".
