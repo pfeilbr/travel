@@ -1,0 +1,524 @@
+{
+ "_comment": "Input for scripts/fetch_images.py. sources: Commons categories (depth = subcategory recursion) or searches (namespace 6); 'nearby' marks a fallback place and names it. include: pinned File: titles (first), as strings or {title, nearby?, alt?}. exclude: File: titles to skip. alt: per-title alt text overrides. prefer: words that boost ranking.",
+ "places": {
+  "green-lakes": {
+   "sources": [
+    {
+     "category": "Category:Green Lakes State Park",
+     "depth": 1
+    },
+    {
+     "search": "\"Green Lakes State Park\""
+    },
+    {
+     "search": "Green Lake Fayetteville"
+    }
+   ],
+   "prefer": [
+    "green lake",
+    "round lake",
+    "autumn"
+   ],
+   "include": [
+    {
+     "title": "File:Round Lake (2) - Fayetteville NY.jpg",
+     "alt": "Fall foliage reflected in Round Lake at Green Lakes State Park"
+    },
+    {
+     "title": "File:Round-Lake-GLSP-2016-09.jpg",
+     "alt": "Wooded shoreline mirrored in Round Lake at Green Lakes State Park"
+    },
+    {
+     "title": "File:GreenLakesStatePark.JPG",
+     "alt": "Turquoise shallows of Green Lake framed by cedars"
+    },
+    {
+     "title": "File:GreenLakesDeadmanPoint.jpg",
+     "alt": "Clear green water off Deadman's Point on Green Lake"
+    },
+    {
+     "title": "File:The beach at Green Lake, in Green Lake State Park, New York State (60799).jpg",
+     "alt": "Swimmers at the sandy beach on Green Lake on a summer day"
+    }
+   ],
+   "exclude": [],
+   "alt": {}
+  },
+  "selkirk-shores": {
+   "sources": [
+    {
+     "search": "\"Selkirk Shores\""
+    },
+    {
+     "search": "Selkirk Shores State Park"
+    },
+    {
+     "category": "Category:Selkirk Light",
+     "depth": 0,
+     "nearby": "Selkirk Lighthouse, Port Ontario"
+    },
+    {
+     "search": "Lake Ontario Pulaski",
+     "nearby": "Lake Ontario near Pulaski"
+    },
+    {
+     "search": "Port Ontario Salmon River",
+     "nearby": "Port Ontario"
+    },
+    {
+     "search": "Lake Ontario Oswego County shore",
+     "nearby": "Lake Ontario shore"
+    }
+   ],
+   "prefer": [
+    "lake ontario",
+    "sunset",
+    "beach"
+   ],
+   "include": [
+    {
+     "title": "File:Selkirk Lighthouse New York (8142223678).jpg",
+     "nearby": "Selkirk Lighthouse, Port Ontario",
+     "alt": "Stone Selkirk Lighthouse at the mouth of the Salmon River"
+    },
+    {
+     "title": "File:Salmon River fishing 2007.jpg",
+     "nearby": "Salmon River, Port Ontario",
+     "alt": "Anglers wading the lower Salmon River in October"
+    },
+    {
+     "title": "File:Sandy Pond Beach, New York, 20090523.JPG",
+     "nearby": "Sandy Pond Beach",
+     "alt": "Dunes and beach grass along the Lake Ontario shore"
+    },
+    {
+     "title": "File:Selkirk Lighthouse 2.jpg",
+     "nearby": "Selkirk Lighthouse, Port Ontario",
+     "alt": "Selkirk Lighthouse with its red lantern room"
+    },
+    {
+     "title": "File:Selkirk Light (37601775685).jpg",
+     "nearby": "Selkirk Lighthouse, Port Ontario",
+     "alt": "Selkirk Lighthouse beside the harbor road"
+    }
+   ],
+   "exclude": [],
+   "alt": {}
+  },
+  "glimmerglass": {
+   "sources": [
+    {
+     "category": "Category:Glimmerglass State Park",
+     "depth": 2
+    },
+    {
+     "category": "Category:Hyde Hall",
+     "depth": 0
+    },
+    {
+     "search": "\"Glimmerglass State Park\""
+    },
+    {
+     "search": "Otsego Lake Cooperstown"
+    },
+    {
+     "search": "\"Otsego Lake\"",
+     "nearby": "Otsego Lake"
+    }
+   ],
+   "prefer": [
+    "otsego",
+    "glimmerglass",
+    "hyde hall"
+   ],
+   "include": [
+    {
+     "title": "File:Otsego Lake.jpg",
+     "alt": "Otsego Lake stretching south between wooded hills"
+    },
+    {
+     "title": "File:One of the First Covered Bridges in the Country.jpg",
+     "alt": "Hyde Hall Covered Bridge over Shadow Brook in early autumn"
+    },
+    {
+     "title": "File:Sunrise at New York.jpg",
+     "nearby": "Cooperstown",
+     "alt": "Pink sunrise over Otsego Lake"
+    },
+    {
+     "title": "File:Hyde Hall 01.JPG",
+     "alt": "Hyde Hall mansion and its lawn in Glimmerglass State Park"
+    },
+    {
+     "title": "File:Hyde Hall Covered Bridge - south view.jpg",
+     "alt": "Weathered Hyde Hall Covered Bridge spanning Shadow Brook"
+    }
+   ],
+   "exclude": [],
+   "alt": {}
+  },
+  "nicks-lake": {
+   "sources": [
+    {
+     "search": "\"Nicks Lake\""
+    },
+    {
+     "category": "Category:Old Forge, New York",
+     "depth": 0,
+     "nearby": "Old Forge"
+    },
+    {
+     "category": "Category:Fulton Chain Lakes",
+     "depth": 1,
+     "nearby": "Fulton Chain of Lakes"
+    }
+   ],
+   "prefer": [
+    "autumn",
+    "fall",
+    "lake"
+   ],
+   "include": [
+    {
+     "title": "File:HARDWOOD TREES SHOW THEIR FALL COLOR AT SEVENTH LAKE, IN THE ADIRONDACK FOREST PRESERVE - NARA - 554648.jpg",
+     "nearby": "Fulton Chain of Lakes",
+     "alt": "Fall color on the hills around Seventh Lake"
+    },
+    {
+     "title": "File:Fourth Lake from Rocky Mountain.jpg",
+     "nearby": "Fulton Chain of Lakes",
+     "alt": "View over Fourth Lake from Rocky Mountain"
+    },
+    {
+     "title": "File:Boat access at 8th Lake Campground.jpg",
+     "nearby": "Fulton Chain of Lakes",
+     "alt": "Boat launch at Eighth Lake Campground in autumn"
+    },
+    {
+     "title": "File:Lake Kan-Ac-To 2012.jpg",
+     "nearby": "Old Forge",
+     "alt": "Calm lake with a dock and evergreens"
+    },
+    {
+     "title": "File:50169291163 ea3da65725 ofourth lake.jpg",
+     "nearby": "Fulton Chain of Lakes",
+     "alt": "Sunset over Fourth Lake"
+    }
+   ],
+   "exclude": [],
+   "alt": {}
+  },
+  "sampson": {
+   "sources": [
+    {
+     "search": "\"Sampson State Park\""
+    },
+    {
+     "category": "Category:Seneca Lake",
+     "depth": 1,
+     "nearby": "Seneca Lake"
+    }
+   ],
+   "prefer": [
+    "sampson",
+    "seneca lake",
+    "sunset"
+   ],
+   "include": [
+    {
+     "title": "File:Seneca Lake Sampson.JPG",
+     "alt": "Dusk over Seneca Lake from Sampson State Park"
+    },
+    {
+     "title": "File:Sunrise over Seneca Lake - New York - US.jpg",
+     "nearby": "Seneca Lake",
+     "alt": "Orange sunrise over Seneca Lake"
+    },
+    {
+     "title": "File:Seneca Lake in Dresden, YatesCo NY 02.JPG",
+     "nearby": "Dresden, Seneca Lake",
+     "alt": "Seneca Lake shoreline under a blue sky"
+    },
+    {
+     "title": "File:Village Marina, Watkins Glen, New York 01.jpg",
+     "nearby": "Watkins Glen, Seneca Lake",
+     "alt": "Sailboats at the marina with fall hills behind"
+    },
+    {
+     "title": "File:Isolated dock 01.jpg",
+     "nearby": "Seneca Lake",
+     "alt": "Small boat dock on clear, calm Seneca Lake"
+    }
+   ],
+   "exclude": [],
+   "alt": {}
+  },
+  "firelight-camps": {
+   "sources": [
+    {
+     "search": "\"Firelight Camps\""
+    },
+    {
+     "category": "Category:Buttermilk Falls State Park",
+     "depth": 1,
+     "nearby": "Buttermilk Falls State Park"
+    }
+   ],
+   "prefer": [
+    "buttermilk falls",
+    "autumn"
+   ],
+   "include": [
+    {
+     "title": "File:Parque estatal de Buttermilk Falls 1.jpg",
+     "nearby": "Buttermilk Falls State Park",
+     "alt": "Buttermilk Falls cascading into its pool in autumn"
+    },
+    {
+     "title": "File:Parque estatal de Buttermilk Falls 2.jpg",
+     "nearby": "Buttermilk Falls State Park",
+     "alt": "Buttermilk Falls seen through yellow fall leaves"
+    },
+    {
+     "title": "File:Parque estatal de Buttermilk Falls 3.jpg",
+     "nearby": "Buttermilk Falls State Park",
+     "alt": "Small waterfall along the Buttermilk Creek gorge trail"
+    },
+    {
+     "title": "File:Parque estatal de Buttermilk Falls 4.jpg",
+     "nearby": "Buttermilk Falls State Park",
+     "alt": "Water spilling over a shale ledge in the gorge"
+    },
+    {
+     "title": "File:Buttermilk Falls, Ithaca, NY, April.jpg",
+     "nearby": "Buttermilk Falls State Park",
+     "alt": "Buttermilk Falls in spring"
+    }
+   ],
+   "exclude": [],
+   "alt": {}
+  },
+  "robert-h-treman": {
+   "sources": [
+    {
+     "category": "Category:Robert H. Treman State Park",
+     "depth": 1
+    }
+   ],
+   "prefer": [
+    "lucifer",
+    "enfield",
+    "lower falls",
+    "autumn"
+   ],
+   "include": [
+    {
+     "title": "File:Wkm-boldfrontiers-0014-lucifer-morning-glow-falls.jpg",
+     "alt": "Lucifer Falls in morning light with autumn color"
+    },
+    {
+     "title": "File:Lower Enfield Glen waterfall at Enfield Gorge at Robert Treman State Park, Ithaca NY 2668.jpg",
+     "alt": "Lower Falls and the swimming hole at Robert H. Treman State Park"
+    },
+    {
+     "title": "File:Parque estatal Robert H. Treman 09.jpg",
+     "alt": "Sunlit waterfall in Enfield Glen"
+    },
+    {
+     "title": "File:Upper Falls Enfield Gorge at Robert Treman State Park, Ithaca NY 2550.jpg",
+     "alt": "Cascades above a green pool in Enfield Gorge"
+    },
+    {
+     "title": "File:Enfield Gorge at Robert Treman State Park, Ithaca NY 2625.jpg",
+     "alt": "Enfield Creek tumbling over rock ledges"
+    }
+   ],
+   "exclude": [],
+   "alt": {}
+  },
+  "keuka-lake": {
+   "sources": [
+    {
+     "search": "\"Keuka Lake State Park\""
+    },
+    {
+     "category": "Category:Keuka Lake",
+     "depth": 1
+    },
+    {
+     "search": "Bluff Point Keuka"
+    }
+   ],
+   "prefer": [
+    "keuka",
+    "bluff point",
+    "sunset",
+    "autumn"
+   ],
+   "include": [
+    {
+     "title": "File:Keuka Lake from State Park 01.JPG",
+     "alt": "Keuka Lake and vineyard hills from Keuka Lake State Park"
+    },
+    {
+     "title": "File:Bluffpoint.jpg",
+     "alt": "Bluff Point rising between the two branches of Keuka Lake"
+    },
+    {
+     "title": "File:Keuka Lake, NY (35128577611).jpg",
+     "alt": "Sunset over a wooden dock on Keuka Lake"
+    },
+    {
+     "title": "File:Keuka Lake (37732410972).jpg",
+     "alt": "Red barn above Keuka Lake in the fall"
+    },
+    {
+     "title": "File:Keuka Lake from State Park 02.JPG",
+     "alt": "Clear blue Keuka Lake from the state park shore"
+    }
+   ],
+   "exclude": [],
+   "alt": {}
+  },
+  "watkins-glen": {
+   "sources": [
+    {
+     "category": "Category:Watkins Glen State Park",
+     "depth": 2
+    }
+   ],
+   "prefer": [
+    "rainbow falls",
+    "cavern cascade",
+    "gorge",
+    "autumn"
+   ],
+   "include": [
+    {
+     "title": "File:Watkins Glen State Park - 054 - Gorge Trail - Rainbow Falls and Rainbow Bridge.jpg",
+     "alt": "Rainbow Falls and Rainbow Bridge on the Gorge Trail"
+    },
+    {
+     "title": "File:Rainbow Falls Watkins Glen State Park, Watkins Glen NY 2519.jpg",
+     "alt": "Gorge Trail passing behind Rainbow Falls"
+    },
+    {
+     "title": "File:Watkins Glen State Park - 20200625 - 59.jpg",
+     "alt": "Stone path winding through the mossy gorge"
+    },
+    {
+     "title": "File:Watkins Glen State Park - 026 - Gorge Trail between Mile Point Bridge and Frowning Cliff.jpg",
+     "alt": "Turquoise pools in the gorge with fallen autumn leaves"
+    },
+    {
+     "title": "File:Rainbow Falls Glen of Pools Watkins Glen State Park, Watkins Glen NY 2494.jpg",
+     "alt": "Swirling plunge pool carved in the Glen of Pools"
+    }
+   ],
+   "exclude": [],
+   "alt": {}
+  },
+  "moreau-lake": {
+   "sources": [
+    {
+     "category": "Category:Moreau Lake State Park",
+     "depth": 1
+    },
+    {
+     "search": "\"Moreau Lake\""
+    },
+    {
+     "search": "Moreau State Park"
+    }
+   ],
+   "prefer": [
+    "moreau lake",
+    "autumn",
+    "sunset"
+   ],
+   "include": [
+    {
+     "title": "File:Moreau Lake Birds.jpg",
+     "alt": "Geese on the grassy shore of Moreau Lake in summer"
+    },
+    {
+     "title": "File:Moreau Lake State Park - New York - 6700522617.jpg",
+     "alt": "Golden evening light on the pines at Moreau Lake in winter"
+    },
+    {
+     "title": "File:Saratoga Spa State Park.jpg",
+     "nearby": "Saratoga Spa State Park",
+     "alt": "Late-fall color in Saratoga Spa State Park"
+    },
+    {
+     "title": "File:Saratoga Spa State Park1.jpg",
+     "nearby": "Saratoga Spa State Park",
+     "alt": "Cascade under a stone arch in Saratoga Spa State Park in autumn"
+    },
+    {
+     "title": "File:Saratoga Spa State Park2.jpg",
+     "nearby": "Saratoga Spa State Park",
+     "alt": "Autumn trees along a Saratoga Spa State Park trail"
+    }
+   ],
+   "exclude": [
+    "File:Moreau Lake State Park - New York - 6700427001.jpg",
+    "File:Moreau Lake State Park - New York - 6700429819.jpg",
+    "File:Moreau Lake State Park - New York - 6700485819.jpg"
+   ],
+   "alt": {}
+  },
+  "hero": {
+   "count": 4,
+   "sources": [
+    {
+     "category": "Category:Taughannock Falls",
+     "depth": 0
+    },
+    {
+     "category": "Category:Lake Placid (lake)",
+     "depth": 0
+    },
+    {
+     "search": "Adirondacks autumn foliage"
+    },
+    {
+     "search": "Cayuga Lake sunset"
+    },
+    {
+     "search": "Adirondack fall foliage"
+    },
+    {
+     "category": "Category:Seneca Lake at sunrise",
+     "depth": 0
+    }
+   ],
+   "prefer": [
+    "autumn",
+    "fall",
+    "foliage",
+    "sunset"
+   ],
+   "include": [
+    {
+     "title": "File:Taughannock Falls In Heart (125223867).jpeg",
+     "alt": "Taughannock Falls framed by peak fall foliage"
+    },
+    {
+     "title": "File:Fall in the Adirondack Mountains.jpg",
+     "alt": "Fall foliage across the Adirondack Mountains"
+    },
+    {
+     "title": "File:Small Island in Lower Saranac Lake.jpg",
+     "alt": "Autumn island reflected in Lower Saranac Lake"
+    },
+    {
+     "title": "File:Sunrise over Seneca Lake - New York - US.jpg",
+     "alt": "Sunrise over Seneca Lake in the Finger Lakes"
+    }
+   ],
+   "exclude": [],
+   "alt": {}
+  }
+ }
+}
