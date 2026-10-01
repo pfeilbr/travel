@@ -41,3 +41,5 @@ main.wide { max-width: 1200px; }
 table { border-collapse: collapse; width: 100%; min-width: 900px; font-size: 14px; }
 th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--rule); }
 th { position: sticky; top: 0; background: var(--bg); }
+table.compact { min-width: 0; }
+table.compact th { position: static; width: 90px; }
