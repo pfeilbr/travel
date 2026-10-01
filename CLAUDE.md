@@ -1,67 +1,74 @@
 # CLAUDE.md
 
-Everything travel and the things that go with it — trips and itineraries, destination guides,
-packing lists, gear, interactive tools, points/loyalty and other reference material — published
-as a static site to GitHub Pages
-(https://pfeilbr.github.io/travel/) from the **public** repo `pfeilbr/travel`.
+**Waypoint**: everything travel and the things that go with it (trips with live availability, places with
+photos and ratings, guides, gear). It's an Astro static web app on GitHub Pages
+(https://pfeilbr.github.io/travel/) from the **public** repo `pfeilbr/travel`, with **Supabase** (free tier) for
+auth (email + password, magic link, Google, Apple) and data (wishlists, reviews, trip plans).
 
-## How publishing works
+## Architecture
 
-- `site/` is the published root. No build step, no static-site generator: plain HTML/CSS/JS.
-- `.github/workflows/pages.yml` runs on every push to `main`: unit tests -> `scripts/check_site.py`
-  -> upload `site/` -> deploy. Pages source is "GitHub Actions" (not a branch).
-- After pushing, verify the deploy: `gh run watch --repo pfeilbr/travel $(gh run list --repo pfeilbr/travel -L1 --json databaseId -q '.[0].databaseId') --exit-status`,
-  then fetch the live URL and confirm the change is there.
+- `src/pages` are routes. The site is served under `/travel/` (`astro.config.mjs` `base`). Build internal links
+  with `url()` from `src/lib/paths.ts`, never hard-coded `/…`.
+- Content is typed TypeScript in `src/data/` (`places.ts`, `trips.ts`, types in `types.ts`). A place is reusable;
+  a trip holds the date-specific live availability and prices for a set of places.
+- Photos: `scripts/fetch_images.py` (config `scripts/image_sources.json`) downloads freely licensed Wikimedia
+  Commons images to `src/assets/places/<id>/` and writes credits to `src/data/images.json`. Only free licenses;
+  always credit (lightbox, place page, `/credits/`). Never use Google/Tripadvisor/booking-site photos.
+- Google ratings: record `rating`, `reviews` count, `asOf` date and a `maps.google.com/?cid=` link. Review
+  themes are **our paraphrase**, never verbatim review text.
+- Client code talks to Supabase directly (`src/lib/supabase.ts`). Security is row-level security in
+  `supabase/migrations`. The site must still build and work (signed out) with no Supabase env.
+- Schema changes go in new timestamped files in `supabase/migrations/`, plus pgTAP tests in `supabase/tests/`.
+  Never edit a migration that has been applied to the hosted project.
 
-## Conventions
+## Verify before every commit
 
-- Content lives in sections, one folder per page with an `index.html`; supporting files (images,
-  data) sit alongside it:
-  - `site/trips/<yyyy-mm-place>/` — a specific trip (e.g. `2026-11-lisbon`)
-  - `site/guides/<topic>/` — destination guides, how-tos, lessons learned
-  - `site/gear/<topic>/` — gear reviews, packing lists
-  - `site/tools/<name>/` — interactive pages (calculators, checklists, maps)
-  - `site/reference/<topic>/` — points/loyalty, visas, airlines, airports, apps
-  Add a new section only when nothing above fits.
-- Every new page gets linked from `site/index.html` under its section. Every page needs a `<title>`.
-- Use relative links (`../../assets/style.css`), never root-absolute (`/assets/...`): the site is
-  served under `/travel/`, so root-absolute paths break on Pages.
-- Shared styles in `site/assets/style.css`; colors are CSS variables with a dark-mode override.
-  Pages must work at phone width.
-- External scripts only from a CDN (cdnjs/jsdelivr/unpkg); keep everything else self-contained.
+```
+npm test && npx astro check && npm run build && python3 -m unittest discover -s tests && python3 scripts/check_site.py dist --base /travel
+```
 
-## Privacy — this repo is public
+Preview with the `web` launch config (`npm run dev`, http://localhost:4321/travel/). Commit and push small
+changes as you go, then confirm the Pages deploy and the Database workflow pass
+(`gh run list --repo pfeilbr/travel -L3`) and check the live URL.
 
-Never commit booking/confirmation numbers, passport or ID details, loyalty account numbers,
-phone numbers, home addresses, or exact private lodging addresses. Summarize ("hotel near X")
-instead. If raw private notes are needed for planning, keep them in a git-ignored `private/` folder.
+## UX bar
 
-## Workflow
+Take cues from Airbnb and Hipcamp: photo-first cards, one accent color (`--accent` ember), rounded corners,
+generous whitespace, sticky booking card, filter chips, list + map. Design tokens live in
+`src/styles/global.css`, with dark mode via `prefers-color-scheme` / `[data-theme]`. Everything must work at
+375px wide.
 
-- Small change -> `python3 -m unittest discover -s tests -v && python3 scripts/check_site.py site`
-  -> commit -> push -> verify the live page.
-- Preview locally with `python3 -m http.server 8000 -d site`.
-- Anything done more than once becomes a script in `scripts/` with a test in `tests/`
-  (stdlib only; no dependencies unless clearly worth it).
+## Adding a trip (availability check)
+
+1. Add or update places in `src/data/places.ts` (coords, Google rating with today's `asOf`, review themes).
+2. Run live availability (below) and add a `Trip` in `src/data/trips.ts`.
+3. `python3 scripts/fetch_images.py --only <new ids>` for photos. Look at them and curate the `exclude`/`include` lists.
 
 ## Campground availability lookups (NY State Parks + DEC on ReserveAmerica)
 
-Look up only — never book, sign in, or enter payment.
+Look up only. Never book, sign in, or enter payment.
 
-- Park page: `https://newyorkstateparks.reserveamerica.com/camping/x/r/campgroundDetails.do?contractCode=NY&parkId=<id>`
-  (the slug can be anything). Verified IDs: Green Lakes 165, Selkirk Shores 82, Glimmerglass 78,
-  Nicks Lake 699, Sampson 232, Robert H. Treman 221, Moreau Lake 311, Keuka Lake 228, Watkins Glen 254.
-- URL date params (`arvdate`, `lengthOfStay`) and setting the hidden `campingDate` field directly don't
-  run a search. What works in the built-in browser, run as JS on the park page:
+- Park page: `https://newyorkstateparks.reserveamerica.com/camping/x/r/campgroundDetails.do?contractCode=NY&parkId=<id>`.
+  Verified IDs: Green Lakes 165, Selkirk Shores 82, Glimmerglass 78, Nicks Lake 699, Sampson 232, Robert H. Treman 221,
+  Moreau Lake 311, Keuka Lake 228, Watkins Glen 254.
+- URL date params don't run a search, and neither does setting hidden fields. This works as JS in the built-in browser:
   ```js
   document.querySelector('.adp-icon-btn').click(); await new Promise(r=>setTimeout(r,500));
   document.querySelector('td[aria-label="October 04, 2026"]').click();
   lengthOfStay.value='1'; lengthOfStay.dispatchEvent(new Event('change',{bubbles:true}));
   search_avail.click();
   ```
-  After the reload, the line "N site(s) available out of M" plus the per-type chips (e.g. "Cabin (3) Campsite (48)")
-  give the counts. Each available row's "From $X*" is the base rate before the reservation and vehicle fees.
-- A site's detail page (`campsiteDetails.do?...&siteId=`) shows "Use Fees (N night)", which is a quick way to check
-  whether a short stay actually prices.
-- Campspot (e.g. Seneca Lake Resorts): `https://www.campspot.com/book/<park>/search/<arrive>/<depart>/guests0,2,0/list` works directly.
-- webrez (Firelight Camps) sits behind a Cloudflare human check. Don't bypass it; mark it "check manually".
+  Read "N site(s) available out of M" and the per-type chips. "From $X*" is the base rate before fees.
+- A site detail page (`campsiteDetails.do?...&siteId=`) shows "Use Fees (N night)", which confirms short stays price,
+  and lists cabin amenities.
+- Campspot: `https://www.campspot.com/book/<park>/search/<arrive>/<depart>/guests0,2,0/list` works directly.
+- webrez (Firelight Camps) is behind a Cloudflare human check, so don't try to get past it. Google Maps' hotel panel
+  (set check-in/out) shows partner prices instead.
+- Google Maps ratings: open `google.com/maps/search/<name>`, read rating, count and coordinates; the Reviews tab
+  has recent text to paraphrase.
+
+## Privacy: this repo is public
+
+Never commit booking/confirmation numbers, passport/ID details, loyalty numbers, phone numbers of private
+people, home addresses, or secrets. Supabase keys: only the public anon/publishable key ever reaches the browser
+(derived in CI); the access token, DB password and OAuth secrets live only in GitHub Actions secrets.
