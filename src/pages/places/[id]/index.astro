@@ -1,0 +1,300 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Icon from '../../../components/Icon.astro';
+import PhotoMosaic from '../../../components/PhotoMosaic.astro';
+import CommunityReviews from '../../../components/CommunityReviews.astro';
+import { places } from '../../../data/places';
+import { trips } from '../../../data/trips';
+import type { Lodging, Place } from '../../../data/types';
+import { imagesFor } from '../../../lib/images';
+import { LODGING_LABEL, dateRange, drive, lowestPrice, money } from '../../../lib/format';
+import { url } from '../../../lib/paths';
+
+export function getStaticPaths() {
+  return places.map((place) => ({ params: { id: place.id }, props: { place } }));
+}
+const { place } = Astro.props as { place: Place };
+const images = imagesFor(place.id);
+
+// Latest trip that includes this place supplies live availability.
+const trip = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt)).find((t) => t.options.some((o) => o.placeId === place.id));
+const option = trip?.options.find((o) => o.placeId === place.id);
+const from = option ? lowestPrice(option) : null;
+const checked = trip && new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+const seasonEnds = place.seasonEnds && new Date(place.seasonEnds + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+
+const ACT: Record<string, string> = {
+  biking: 'Biking', fishing: 'Fishing', hiking: 'Hiking trails', waterfalls: 'Waterfalls', swimming: 'Swimming', kayaking: 'Paddling',
+  nightlife: 'Nightlife nearby', wineries: 'Wineries nearby', restaurants: 'Restaurants nearby', history: 'History', foliage: 'Fall foliage',
+};
+const NEARBY_ICON: Record<string, string> = { eat: 'restaurants', drink: 'nightlife', do: 'pin', hike: 'hiking', bike: 'biking', fish: 'fishing', shop: 'bag' };
+const lodgingOrder: Lodging[] = ['glamping', 'cabin', 'cottage', 'tent'];
+const hero = images[0];
+---
+<Layout title={place.name} description={`${place.tagline}. ${place.summary}`} image={hero?.src.src}>
+  <div class="container page">
+    <header class="title">
+      <h1>{place.name}</h1>
+      <div class="sub">
+        <a class="rating" href={place.google.url} rel="noopener" title="Read reviews on Google Maps">
+          <Icon name="star" size={14} />{place.google.rating.toFixed(1)}
+          <span class="u">{place.google.reviews.toLocaleString()} Google reviews</span>
+        </a>
+        <span aria-hidden="true">·</span>
+        <span>{place.town}, {place.region}</span>
+        <span class="spacer"></span>
+        <button class="act" data-share><Icon name="share" size={16} /><span>Share</span></button>
+        <button class="act heart-act" data-save={place.id} data-name={place.name} aria-pressed="false"><Icon name="heart" size={16} /><span>Save</span></button>
+      </div>
+    </header>
+
+    <PhotoMosaic images={images} name={place.name} />
+
+    <div class="layout">
+      <div class="main">
+        <section class="intro">
+          <h2>{place.kind} in {place.town}, NY</h2>
+          <p class="muted facts">
+            {place.lodging.map((l) => LODGING_LABEL[l].toLowerCase() + 's').join(' · ')}
+            {option && <> · {drive(option.driveMin)} from {trip!.origin.name}</>}
+          </p>
+        </section>
+
+        <section class="highlights">
+          <div class="hl"><Icon name="star" size={24} /><div><b>Rated {place.google.rating.toFixed(1)} on Google</b><p class="muted">From {place.google.reviews.toLocaleString()} reviews, read {new Date(place.google.asOf + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}.</p></div></div>
+          {option?.cabinSites && option.available.cabin ? (
+            <div class="hl"><Icon name="cabin" size={24} /><div><b>{option.available.cabin} cabin{option.available.cabin === 1 ? '' : 's'} open on your dates</b><p class="muted">Sites #{option.cabinSites.join(', #')}.</p></div></div>
+          ) : null}
+          {seasonEnds && <div class="hl"><Icon name="calendar" size={24} /><div><b>Camping open through {seasonEnds}</b><p class="muted">Book soon. The season is winding down.</p></div></div>}
+        </section>
+
+        <section>
+          <p class="lead">{place.tagline}.</p>
+          <p>{place.summary}</p>
+        </section>
+
+        <section>
+          <h2>What this place offers</h2>
+          <ul class="offers">
+            {place.activities.map((a) => <li><Icon name={a} size={22} />{ACT[a]}</li>)}
+            {place.lodging.map((l) => <li><Icon name={l} size={22} />{LODGING_LABEL[l]}s</li>)}
+          </ul>
+        </section>
+
+        {place.cabinDetails && (
+          <section>
+            <h2>Inside the cabins</h2>
+            <dl class="cabin">
+              <div><dt>Inside</dt><dd>{place.cabinDetails.inside}</dd></div>
+              <div><dt>Outside</dt><dd>{place.cabinDetails.outside}</dd></div>
+              <div><dt>Bring</dt><dd>{place.cabinDetails.bring}</dd></div>
+              <div><dt>Rules</dt><dd>{place.cabinDetails.rules}</dd></div>
+            </dl>
+          </section>
+        )}
+
+        <section>
+          <div class="g-head">
+            <h2><Icon name="star" size={22} /> {place.google.rating.toFixed(1)} · {place.google.reviews.toLocaleString()} reviews</h2>
+            <span class="muted src">on Google Maps</span>
+          </div>
+          <div class="themes">
+            <div><h3>What people love</h3><ul class="ticks">{place.reviewThemes.loved.map((t) => <li><Icon name="check" size={18} />{t}</li>)}</ul></div>
+            <div><h3>Heads-up</h3><ul class="ticks warn">{place.reviewThemes.watchFor.map((t) => <li><Icon name="info" size={18} />{t}</li>)}</ul></div>
+          </div>
+          <p class="muted small">These themes are our summary of recent Google reviews, not quotes.</p>
+          <a class="btn btn-outline" href={place.google.url} rel="noopener">Read all {place.google.reviews.toLocaleString()} reviews on Google</a>
+        </section>
+
+        {place.nearby && (
+          <section>
+            <h2>{place.nearby.title}</h2>
+            {place.nearby.note && <p class="muted">{place.nearby.note}</p>}
+            <ul class="nearby">
+              {place.nearby.items.map((n) => (
+                <li>
+                  <span class="ni"><Icon name={NEARBY_ICON[n.kind]} size={20} /></span>
+                  <div>
+                    <b>{n.url ? <a href={n.url} rel="noopener">{n.name}</a> : n.name}</b>{n.distance && <span class="muted"> · {n.distance}</span>}
+                    <p class="muted">{n.what}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        <section>
+          <h2>Where you'll be</h2>
+          <p class="muted">{place.town}, New York · <a href={place.google.url} rel="noopener">Open in Google Maps</a></p>
+          <div class="mini-map" data-mini-map data-lat={place.coords[0]} data-lng={place.coords[1]}></div>
+        </section>
+
+        <CommunityReviews placeId={place.id} placeName={place.name} />
+
+        {option && option.notes.length > 0 && (
+          <section>
+            <h2>Things to know</h2>
+            <ul class="know">{option.notes.map((n) => <li>{n}</li>)}</ul>
+          </section>
+        )}
+
+        {images.length > 0 && (
+          <section class="credits">
+            <h3>Photo credits</h3>
+            <p class="muted small">
+              {images.map((img, i) => <>{i > 0 && ' · '}<a href={img.sourceUrl} rel="noopener">{img.author || 'Wikimedia Commons'}</a> ({img.license}){img.nearby && ', nearby'}</>)}
+              . Via Wikimedia Commons.
+            </p>
+          </section>
+        )}
+      </div>
+
+      <aside class="side">
+        <div class="book">
+          {option ? (
+            <>
+              <div class="price-line">
+                {from !== null ? <><strong>{money(from)}</strong> <span class="muted">night · from</span></> : <strong>Check availability</strong>}
+              </div>
+              <div class="dates">
+                <div><span>Check-in</span>{new Date(trip!.start + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'numeric', day: 'numeric', year: 'numeric' })}</div>
+                <div><span>Checkout</span>{new Date(trip!.end + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'numeric', day: 'numeric', year: 'numeric' })}</div>
+                <div class="full"><span>Guests</span>{trip!.party}</div>
+              </div>
+              <ul class="avail">
+                {lodgingOrder.filter((k) => option.available[k] !== undefined).map((k) => {
+                  const c = option.available[k]!;
+                  const open = c === 'available' || (typeof c === 'number' && c > 0);
+                  return (
+                    <li class:list={{ closed: !open }}>
+                      <Icon name={k} size={18} />
+                      <span>{LODGING_LABEL[k]}{typeof c === 'number' && c > 0 && <span class="muted"> · {c} open</span>}{!open && <span class="muted"> · none</span>}{c === 'available' && <span class="muted"> · open</span>}</span>
+                      <b>{option.price[k] !== undefined ? money(option.price[k]!) : '—'}</b>
+                    </li>
+                  );
+                })}
+              </ul>
+              <a class="btn btn-primary btn-block" href={place.booking.url} rel="noopener">Check &amp; book on {place.booking.label}</a>
+              <p class="fine">You won't be charged here. Booking happens on {place.booking.label}.</p>
+              {option.priceNote && <p class="fine">{option.priceNote}</p>}
+              <p class="fine checked"><Icon name="check" size={13} /> Checked live {checked} for {dateRange(trip!.start, trip!.end)}. Rates exclude fees.</p>
+            </>
+          ) : (
+            <>
+              <div class="price-line"><strong>Plan a stay</strong></div>
+              <a class="btn btn-primary btn-block" href={place.booking.url} rel="noopener">Check availability</a>
+            </>
+          )}
+        </div>
+        {trip && <a class="trip-link" href={url(`trips/${trip.slug}/`)}><Icon name="chev-left" size={14} /> All options for {dateRange(trip.start, trip.end)}</a>}
+      </aside>
+    </div>
+  </div>
+
+  <div class="mobile-book">
+    <div>{from !== null ? <><strong>{money(from)}</strong> night</> : <strong>{place.name}</strong>}{trip && <div class="muted small">{dateRange(trip.start, trip.end)}</div>}</div>
+    <a class="btn btn-primary" href={place.booking.url} rel="noopener">Book</a>
+  </div>
+</Layout>
+
+<style>
+  .page { padding-top: 24px; }
+  .title h1 { font-size: clamp(24px, 3vw, 30px); margin-bottom: 6px; }
+  .sub { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 15px; margin-bottom: 20px; }
+  .sub .rating { text-decoration: none; }
+  .sub .u { text-decoration: underline; font-weight: 600; margin-left: 4px; }
+  .spacer { flex: 1; }
+  .act { display: inline-flex; align-items: center; gap: 6px; border: 0; background: none; padding: 8px 10px; border-radius: 8px; text-decoration: underline; font-weight: 600; font-size: 14px; cursor: pointer; }
+  .act:hover { background: var(--surface); }
+  .heart-act[aria-pressed="true"] :global(svg) { fill: var(--accent); stroke: var(--accent); }
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 372px; gap: 80px; margin-top: 40px; }
+  .main > section { padding: 32px 0; border-bottom: 1px solid var(--rule); }
+  .main > section:first-child { padding-top: 0; }
+  .intro h2 { font-size: 22px; margin-bottom: 4px; }
+  .facts { margin: 0; }
+  .highlights { display: grid; gap: 24px; }
+  .hl { display: flex; gap: 20px; align-items: flex-start; }
+  .hl p { margin: 2px 0 0; font-size: 14px; }
+  .lead { font-size: 18px; font-weight: 600; }
+  .offers { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .offers li { display: flex; align-items: center; gap: 14px; }
+  .cabin { display: grid; gap: 14px; margin: 0; }
+  .cabin div { display: grid; grid-template-columns: 90px 1fr; gap: 12px; }
+  .cabin dt { font-weight: 600; }
+  .cabin dd { margin: 0; color: var(--ink-2); }
+  .g-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .g-head h2 { display: inline-flex; align-items: center; gap: 8px; margin: 0; }
+  .src { font-size: 14px; }
+  .themes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 48px; margin: 20px 0 8px; }
+  .themes h3 { font-size: 16px; }
+  .ticks { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .ticks li { display: flex; gap: 10px; align-items: flex-start; }
+  .ticks :global(svg) { flex: none; margin-top: 2px; color: var(--pine); }
+  .ticks.warn :global(svg) { color: #c26a00; }
+  .small { font-size: 13px; }
+  .nearby { list-style: none; padding: 0; margin: 16px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px 32px; }
+  .nearby li { display: flex; gap: 14px; }
+  .ni { flex: none; width: 40px; height: 40px; border-radius: 10px; background: var(--surface); display: grid; place-items: center; }
+  .nearby p { margin: 2px 0 0; font-size: 14px; }
+  .nearby a { text-decoration: none; }
+  .nearby a:hover { text-decoration: underline; }
+  .mini-map { height: 380px; border-radius: var(--radius); overflow: hidden; background: var(--surface); margin-top: 12px; }
+  .know { padding-left: 18px; color: var(--ink-2); }
+  .know li { margin-bottom: 6px; }
+  .credits { border-bottom: 0 !important; }
+  .side { position: relative; }
+  .book { position: sticky; top: 112px; padding: 24px; border: 1px solid var(--rule); border-radius: var(--radius); box-shadow: var(--shadow); background: var(--surface-2); }
+  .price-line { font-size: 22px; margin-bottom: 18px; }
+  .price-line .muted { font-size: 16px; }
+  .dates { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--rule-strong); border-radius: 10px; overflow: hidden; font-size: 14px; margin-bottom: 16px; }
+  .dates > div { padding: 10px 12px; }
+  .dates > div + div { border-left: 1px solid var(--rule-strong); }
+  .dates .full { grid-column: span 2; border-left: 0 !important; border-top: 1px solid var(--rule-strong); }
+  .dates span { display: block; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
+  .avail { list-style: none; padding: 0; margin: 0 0 18px; display: grid; gap: 10px; }
+  .avail li { display: grid; grid-template-columns: 22px 1fr auto; gap: 10px; align-items: center; font-size: 15px; }
+  .avail li.closed { opacity: .5; }
+  .fine { font-size: 13px; color: var(--muted); text-align: center; margin: 10px 0 0; }
+  .checked { display: flex; gap: 6px; justify-content: center; align-items: center; color: var(--pine); }
+  .trip-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 16px; font-size: 14px; color: var(--muted); }
+  .mobile-book { display: none; }
+  @media (max-width: 960px) {
+    .layout { grid-template-columns: 1fr; gap: 0; margin-top: 24px; }
+    .side { order: -1; margin-bottom: 8px; }
+    .book { position: static; box-shadow: none; }
+    .mobile-book { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; justify-content: space-between; align-items: center; padding: 12px var(--gutter); background: var(--surface-2); border-top: 1px solid var(--rule); }
+    :global(.site-footer) { padding-bottom: 72px; }
+  }
+  @media (max-width: 560px) { .offers { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  import L from 'leaflet';
+  import 'leaflet/dist/leaflet.css';
+  import { wireHearts } from '../../../lib/wishlist';
+
+  wireHearts();
+
+  document.querySelector('[data-share]')?.addEventListener('click', async () => {
+    const data = { title: document.title, url: location.href };
+    try {
+      if (navigator.share) await navigator.share(data);
+      else { await navigator.clipboard.writeText(location.href); const s = document.querySelector('[data-share] span')!; s.textContent = 'Link copied'; setTimeout(() => (s.textContent = 'Share'), 2000); }
+    } catch {}
+  });
+
+  const el = document.querySelector<HTMLElement>('[data-mini-map]');
+  if (el) {
+    const ll: [number, number] = [Number(el.dataset.lat), Number(el.dataset.lng)];
+    const dark = document.documentElement.dataset.theme === 'dark' || (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+    const map = L.map(el, { scrollWheelZoom: false }).setView(ll, 13);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19, className: dark ? 'tiles-dark' : '' }).addTo(map);
+    L.circle(ll, { radius: 450, color: '#e4572e', weight: 2, fillOpacity: .15 }).addTo(map);
+    L.marker(ll, { icon: L.divIcon({ className: '', html: '<div style="width:44px;height:44px;border-radius:50%;background:#e4572e;display:grid;place-items:center;transform:translate(-50%,-50%);box-shadow:0 4px 12px rgba(0,0,0,.3)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 4 2.5 20h19zM12 4v16"/></svg></div>', iconSize: [0, 0] }) }).addTo(map);
+  }
+</script>
+
+<style is:global>
+  .tiles-dark { filter: invert(1) hue-rotate(180deg) brightness(.9) contrast(.9) saturate(.5); }
+</style>

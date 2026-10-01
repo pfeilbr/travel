@@ -66,7 +66,8 @@ create policy "Own wishlist items" on public.wishlist_items for all
 -- Reviews ---------------------------------------------------------------
 create table public.reviews (
   id uuid primary key default gen_random_uuid(),
-  user_id uuid not null default auth.uid() references auth.users (id) on delete cascade,
+  -- FK to profiles (not auth.users) so the API can embed the author's public name/avatar.
+  user_id uuid not null default auth.uid() references public.profiles (id) on delete cascade,
   place_id text not null check (place_id ~ '^[a-z0-9-]{1,80}$'),
   rating smallint not null check (rating between 1 and 5),
   body text not null check (char_length(body) between 1 and 2000),
