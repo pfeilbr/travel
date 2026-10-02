@@ -254,68 +254,6 @@ const resorts: Resort[] = [
     },
     google: { rating: 4.7, url: cid('11369746449679501314'), asOf: ASOF },
   },
-  {
-    id: 'elk-ridge',
-    name: 'Elk Ridge Ski Area',
-    region: 'arizona',
-    area: 'Bill Williams Mountain',
-    town: 'Williams',
-    coords: [35.2153, -112.1925],
-    size: 'local',
-    tagline: 'Williams’ old family ski hill, closed for now',
-    summary: 'A small north-facing ski and sledding hill on Bill Williams Mountain, 15 minutes south of Williams, with 37 acres of terrain and a tubing run. Snowbowl’s owner, Mountain Capital Partners, bought it in 2017 and got a new Forest Service permit in 2020, but it hasn’t reopened. For skiing near Williams, plan on Snowbowl, about an hour east.',
-    url: 'https://www.fs.usda.gov/r03/kaibab/recreation/elk-ridge-ski-area',
-    snowReportUrl: 'https://www.fs.usda.gov/r03/kaibab/recreation/elk-ridge-ski-area',
-    passes: [],
-    season: {
-      opens: '2026-12-15',
-      closes: '2027-03-07',
-      note: 'Not expected to operate in 2026-27. It last ran in the 2016-17 winter; Kaibab National Forest lists the site as closed and its old website is offline. The dates shown are its historical natural-snow window (mid-December to early March). Snowfall shown is the Williams town average; the hill sits higher.',
-    },
-    stats: {
-      summitFt: 8045,
-      baseFt: 7566,
-      verticalFt: 479,
-      acres: 37,
-      trails: 13,
-      lifts: 2,
-      snowfallIn: 65,
-      snowmakingPct: 0,
-      terrain: { beginner: 20, intermediate: 50, advanced: 30 },
-    },
-    activities: [],
-    lodging: [
-      { name: 'Grand Canyon Railway Hotel', kind: 'hotel', what: 'Large hotel beside the Williams depot, where the Grand Canyon and Polar Express trains leave.', url: 'https://www.thetrain.com/lodging/the-grand-canyon-railway-hotel/', distance: '~15 min drive' },
-      { name: 'Red Garter Inn', kind: 'inn', what: 'An 1897 saloon and bordello on Route 66, restored as a four-room boutique inn.', url: 'https://www.redgarter.com/', distance: '~15 min drive' },
-      { name: 'Historic Grand Canyon Hotel', kind: 'hotel', what: 'Family-owned downtown hotel that bills itself as Arizona’s oldest, with refreshed rooms that keep their 19th-century quirks.', url: 'https://thegrandcanyonhotel.com/', distance: '~15 min drive' },
-    ],
-    thingsToDo: [
-      { name: 'Grand Canyon Railway', kind: 'other', what: 'Vintage train from the Williams depot to the Grand Canyon’s South Rim.', url: 'https://www.thetrain.com/', distance: '~15 min' },
-      { name: 'Grand Canyon South Rim', kind: 'other', what: 'About an hour north by car, and quiet in winter.', url: 'https://www.nps.gov/grca/index.htm', distance: '~1 hr' },
-      { name: 'Bearizona Wildlife Park', kind: 'other', what: 'Drive-through wildlife park on Route 66 at the edge of town. Check winter hours.', url: 'https://www.bearizona.com/', distance: '~15 min' },
-      { name: 'Arizona Snowbowl', kind: 'other', what: 'The nearest operating ski area, with snowmaking and a Nov 20 target opening.', url: 'https://www.snowbowl.ski/', distance: '~1 hr' },
-      { name: 'Downtown Williams on Route 66', kind: 'shop', what: 'Vintage motels, diners and shops along the old highway.', url: 'https://experiencewilliams.com/', distance: '~15 min' },
-    ],
-    apres: [
-      { name: 'Grand Canyon Brewing + Distillery', what: 'Williams brewery and distillery with a taproom near downtown.', url: 'https://www.grandcanyonbrewery.com/' },
-      { name: 'Sultana Bar', what: 'The self-styled “world famous” Route 66 bar in downtown Williams.' },
-    ],
-    events: [
-      polarExpress,
-      { name: 'Route 66 New Year’s Eve car drop', kind: 'new-years', date: '2026-12-31', when: 'Dec 31, 8 pm–1 am', what: 'Williams drops a restored 1928 Ford Model A at midnight above a vintage gas station, with fireworks, a beer garden and hot cocoa.', url: 'https://experiencewilliams.com/new-years-eve-williams-arizona/', confirmed: true },
-      { ...pineconeDrop, when: 'Dec 31: noon, 10 pm and midnight (annual), ~45 min away' },
-    ],
-    getting: {
-      airport: 'Flagstaff Pulliam Airport',
-      code: 'FLG',
-      driveMin: 45,
-      from: [
-        { city: 'Phoenix', hours: 2.75 },
-        { city: 'Las Vegas', hours: 3.5 },
-      ],
-    },
-    google: { rating: 3.9, url: cid('2744699533430438376'), asOf: ASOF },
-  },
 ];
 
 export default resorts;
