@@ -1,4 +1,30 @@
 {
+  "arapahoe-basin": [
+    {
+      "alt": "Skiers ski past the Zuma ski lift in the Montezuma Bowl area at Arapahoe Basin Ski Area in Colorado.",
+      "author": "Runningonbrains",
+      "file": "src/assets/places/arapahoe-basin/1.jpg",
+      "height": 960,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arapahoe_Basin_Montezuma_Bowl.jpg",
+      "title": "File:Arapahoe Basin Montezuma Bowl.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "The north side of Arapahoe Basin ski area as seen from an unnamed peak on the Continental Divide",
+      "author": "Runningonbrains",
+      "file": "src/assets/places/arapahoe-basin/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arapahoe_Basin_summer_2026.jpg",
+      "title": "File:Arapahoe Basin summer 2026.jpg",
+      "width": 1280
+    }
+  ],
   "arizona-snowbowl": [
     {
       "alt": "Fall color at the Arizona Snowbowl, October 5, 2016.",
@@ -269,7 +295,6 @@
       "width": 1280
     }
   ],
-  "camelback": [],
   "cannon": [
     {
       "alt": "Cannon Mountain Ski Area Chairlift View Franconia Range White Mountains New Hampshire",
@@ -707,6 +732,32 @@
       "width": 1280
     }
   ],
+  "june-mountain": [
+    {
+      "alt": "June Mtn Ski Trip",
+      "author": "mjhbower",
+      "file": "src/assets/places/june-mountain/1.jpg",
+      "height": 720,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:June_Mountain_Ski_Area_-_52674395449.jpg",
+      "title": "File:June Mountain Ski Area - 52674395449.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "June Mtn Ski Trip",
+      "author": "mjhbower",
+      "file": "src/assets/places/june-mountain/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:June_Mountain_Ski_Area_-_52674542265.jpg",
+      "title": "File:June Mountain Ski Area - 52674542265.jpg",
+      "width": 1280
+    }
+  ],
   "keuka-lake": [
     {
       "alt": "Keuka Lake and vineyard hills from Keuka Lake State Park",
@@ -1053,6 +1104,20 @@
       "width": 1280
     }
   ],
+  "mountain-high": [
+    {
+      "alt": "USMC-100129-M-3459B-002",
+      "author": "Courtesy of Single Marine Program",
+      "file": "src/assets/places/mountain-high/1.jpg",
+      "height": 775,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:USMC-100129-M-3459B-002.jpg",
+      "title": "File:USMC-100129-M-3459B-002.jpg",
+      "width": 1280
+    }
+  ],
   "mt-lemmon": [
     {
       "alt": "Early winter Mt Lemmon ski lift (2,791m/9,157ft) waiting for snowpack",
@@ -1245,7 +1310,6 @@
       "width": 1280
     }
   ],
-  "pats-peak": [],
   "ragged-mountain": [
     {
       "alt": "Southward view of Orange Mountain and Ragged Mountain from Cardigan Mountain in New Hampshire.",
@@ -1269,6 +1333,44 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ragged_Mountain_(New_Hampshire)_east_side_from_Elbow_Pond.jpg",
       "title": "File:Ragged Mountain (New Hampshire) east side from Elbow Pond.jpg",
+      "width": 1280
+    }
+  ],
+  "red-mountain": [
+    {
+      "alt": "View from Red Mountain Ski Resort",
+      "author": "kcxd",
+      "file": "src/assets/places/red-mountain/1.jpg",
+      "height": 900,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Red_Mountain_Ski_Resort_02.jpg",
+      "title": "File:View from Red Mountain Ski Resort 02.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "View from Red Mountain Ski Resort",
+      "author": "kcxd",
+      "file": "src/assets/places/red-mountain/2.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Red_Mountain_Ski_Resort_04.jpg",
+      "title": "File:View from Red Mountain Ski Resort 04.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "a short visit to Rossland BC, and the Red Mountain Ski Resort...Robin does his thing near the top of Granite Mtn-3...",
+      "author": "Murray Foubister",
+      "file": "src/assets/places/red-mountain/3.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_short_visit_to_Rossland_BC,_and_the_Red_Mountain_Ski_Resort_-_Robin_does_his_thing_near_the_top_of_Granite_Mtn-3_-_(19692498602).jpg",
+      "title": "File:A short visit to Rossland BC, and the Red Mountain Ski Resort - Robin does his thing near the top of Granite Mtn-3 - (19692498602).jpg",
       "width": 1280
     }
   ],
@@ -1396,7 +1498,6 @@
       "width": 1600
     }
   ],
-  "saskadena-six": [],
   "selkirk-shores": [
     {
       "alt": "Stone Selkirk Lighthouse at the mouth of the Salmon River (nearby Selkirk Lighthouse, Port Ontario)",
@@ -1497,6 +1598,7 @@
       "width": 1280
     }
   ],
+  "ski-cooper": [],
   "ski-sawmill": [],
   "stratton": [
     {
@@ -1768,6 +1870,44 @@
       "width": 1280
     }
   ],
+  "whitefish": [
+    {
+      "alt": "The Summit Nature Center ()",
+      "author": "Forest Service - Northern Region",
+      "file": "src/assets/places/whitefish/1.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Summit_Nature_Center_(7563586976).jpg",
+      "title": "File:The Summit Nature Center (7563586976).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "The Summit Nature Center ()",
+      "author": "Forest Service - Northern Region",
+      "file": "src/assets/places/whitefish/2.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Summit_Nature_Center_(7563587690).jpg",
+      "title": "File:The Summit Nature Center (7563587690).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "The Summit Nature Center ()",
+      "author": "Forest Service - Northern Region",
+      "file": "src/assets/places/whitefish/3.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Summit_Nature_Center_(7563588470).jpg",
+      "title": "File:The Summit Nature Center (7563588470).jpg",
+      "width": 1280
+    }
+  ],
   "whitetail": [
     {
       "alt": "The mogul-filled Exhibition expert ski slope as seen from the ski lift at Whitetail Mountain Resort.",
@@ -1792,6 +1932,32 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitetail_Mountain.jpg",
       "title": "File:Whitetail Mountain.jpg",
       "width": 1280
+    }
+  ],
+  "whitewater": [
+    {
+      "alt": "Inland Temperate Spruce Rainforest near Whitewater Ski Resort in Nelson, British Columbia.",
+      "author": "Treefender K",
+      "file": "src/assets/places/whitewater/1.jpg",
+      "height": 960,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inland_Temperate_Spruce_Rainforest.jpg",
+      "title": "File:Inland Temperate Spruce Rainforest.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Sand to Snow National Monument",
+      "author": "blmcalifornia",
+      "file": "src/assets/places/whitewater/2.jpg",
+      "height": 576,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/50976304@N07/53496749483",
+      "title": "Openverse:7c6584c8-4217-4138-a677-e1d531bcee60",
+      "width": 1024
     }
   ]
 }

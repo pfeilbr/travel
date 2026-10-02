@@ -787,7 +787,7 @@
     "ski"
    ],
    "min_width": 1000,
-   "count": 1,
+   "count": 2,
    "sources": [
     {
      "search": "Pats Peak",
@@ -808,7 +808,18 @@
     "winter",
     "pats peak"
    ],
-   "include": [],
+   "include": [
+    {
+     "title": "File:Henniker in Winter.jpg",
+     "nearby": "Henniker",
+     "alt": "Snowy Henniker, the town at the foot of Pats Peak"
+    },
+    {
+     "title": "File:Henniker Covered Bridge.jpg",
+     "nearby": "Henniker",
+     "alt": "The covered bridge in Henniker"
+    }
+   ],
    "exclude": [],
    "alt": {},
    "must": [
@@ -1152,6 +1163,10 @@
    "count": 1,
    "sources": [
     {
+     "search": "Suicide Six ski",
+     "limit": 30
+    },
+    {
      "search": "Suicide Six ski area Woodstock Vermont",
      "limit": 25
     },
@@ -1170,7 +1185,12 @@
     "winter",
     "saskadena six"
    ],
-   "include": [],
+   "include": [
+    {
+     "title": "File:Suicide Six ski resort base lodge interior.jpg",
+     "alt": "Inside the base lodge at Saskadena Six (formerly Suicide Six)"
+    }
+   ],
    "exclude": [],
    "alt": {},
    "must": [
@@ -2193,6 +2213,10 @@
    "count": 2,
    "sources": [
     {
+     "search": "Camelback Mountain Resort Tannersville",
+     "limit": 30
+    },
+    {
      "search": "Camelback Mountain Resort Tannersville ski",
      "limit": 25
     },
@@ -2212,7 +2236,16 @@
     "winter",
     "camelback"
    ],
-   "include": [],
+   "include": [
+    {
+     "title": "File:Camelback Resort in Winter.jpg",
+     "alt": "Camelback Resort’s slopes and lodge in winter"
+    },
+    {
+     "title": "File:2025-07-22 15 28 08 View up towards the summit of Camelback Mountain from the end of Resort Drive at Camelback Road in Pocono Township, Monroe County, Pennsylvania.jpg",
+     "alt": "Camelback Mountain’s ski trails seen from Resort Drive in summer"
+    }
+   ],
    "exclude": [],
    "alt": {},
    "must": [
