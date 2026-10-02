@@ -237,7 +237,7 @@ const resorts: Resort[] = [
     lodging: [
       { name: 'Canyon Creek Inn', kind: 'inn', what: 'Comfy, clean small motel in Wrightwood village, among the restaurants and shops.', url: 'https://canyoncreekinn.com/', distance: '10 min drive' },
       { name: 'Grand Pine Cabins', kind: 'cabin', what: 'Renovated bungalows, suites and studios on the site of the old Pines Motel in downtown Wrightwood.', url: 'https://www.grandpinecabins.com/', distance: '10 min drive' },
-      { name: 'Wrightwood Vacation Homes', kind: 'cabin', what: 'Locally managed cabin and home rentals, some walkable to town and sleeping up to 12.', url: 'http://www.wrightwoodvacationhomes.com/', distance: '10 min drive' },
+      { name: 'Wrightwood Vacation Homes', kind: 'cabin', what: 'Locally managed cabin and home rentals, some walkable to town and sleeping up to 12.', url: 'https://www.wrightwoodvacationhomes.com/', distance: '10 min drive' },
     ],
     thingsToDo: [
       { name: 'Yeti’s Snow Play', kind: 'tubing', what: 'Tubing lanes and a sledding area at the East Resort, open mid-November to mid-March.', url: `${MH}/mountain/events-and-activities/yeti-snow-play`, distance: 'East Resort' },

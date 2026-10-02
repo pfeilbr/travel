@@ -5699,6 +5699,329 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "mammoth": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "mammoth",
+    "mammoth mountain",
+    "mammoth lakes"
+   ],
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Mammoth Mountain Ski Area",
+     "depth": 0
+    },
+    {
+     "openverse": "Mammoth ski",
+     "must": [
+      "mammoth",
+      "mammoth mountain",
+      "mammoth lakes"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mammoth"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "june-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "june",
+    "june mountain",
+    "june lake"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:June Mountain",
+     "depth": 0
+    },
+    {
+     "openverse": "June ski",
+     "must": [
+      "june",
+      "june mountain",
+      "june lake"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "june"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "big-bear": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "big bear",
+    "big bear mountain resort",
+    "big bear lake"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Bear Mountain (ski area)",
+     "depth": 0
+    },
+    {
+     "openverse": "Big Bear ski",
+     "must": [
+      "big bear",
+      "big bear mountain resort",
+      "big bear lake"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "big bear"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mountain-high": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "high",
+    "mountain high",
+    "wrightwood"
+   ],
+   "count": 1,
+   "sources": [
+    {
+     "search": "Mountain High ski Wrightwood",
+     "limit": 25
+    },
+    {
+     "openverse": "High ski",
+     "must": [
+      "high",
+      "mountain high",
+      "wrightwood"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "high"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "snow-valley": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "snow valley",
+    "running springs"
+   ],
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Snow Valley Mountain Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Snow Valley ski",
+     "must": [
+      "snow valley",
+      "running springs"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "snow valley"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bear-valley": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "bear valley"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Bear Valley Mountain Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Bear Valley ski",
+     "must": [
+      "bear valley"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "bear valley"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "dodge-ridge": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "dodge ridge",
+    "pinecrest"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "search": "Dodge Ridge ski",
+     "limit": 25
+    },
+    {
+     "openverse": "Dodge Ridge ski",
+     "must": [
+      "dodge ridge",
+      "pinecrest"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "dodge ridge"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "china-peak": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "china peak",
+    "lakeshore"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "search": "China Peak ski",
+     "limit": 25
+    },
+    {
+     "openverse": "China Peak ski",
+     "must": [
+      "china peak",
+      "lakeshore"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "china peak"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mt-shasta-ski-park": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "mt. shasta",
+    "mt. shasta ski park",
+    "mccloud"
+   ],
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Mount Shasta Ski Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Mt. Shasta ski",
+     "must": [
+      "mt. shasta",
+      "mt. shasta ski park",
+      "mccloud"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mt. shasta"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }
