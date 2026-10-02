@@ -14,12 +14,31 @@ auth (email + password, magic link, Google, Apple) and data (wishlists, reviews,
 - Photos: `scripts/fetch_images.py` (config `scripts/image_sources.json`) downloads freely licensed Wikimedia
   Commons images to `src/assets/places/<id>/` and writes credits to `src/data/images.json`. Only free licenses;
   always credit (lightbox, place page, `/credits/`). Never use Google/Tripadvisor/booking-site photos.
+  Commons sometimes answers 429 from cloud IPs; the script backs off, and an `{"openverse": "...", "must": [...],
+  "fallback": true}` source pulls CC BY/BY-SA/CC0 Flickr photos via Openverse only when Commons comes up short
+  (anonymous limit ~200 queries/day). Ski entries set `"winter": true` (snow keywords rank higher),
+  `"keep_subcats": ["ski"]` and `"min_width": 1000`.
 - Google ratings: record `rating`, `reviews` count, `asOf` date and a `maps.google.com/?cid=` link. Review
   themes are **our paraphrase**, never verbatim review text.
 - Client code talks to Supabase directly (`src/lib/supabase.ts`). Security is row-level security in
   `supabase/migrations`. The site must still build and work (signed out) with no Supabase env.
 - Schema changes go in new timestamped files in `supabase/migrations/`, plus pgTAP tests in `supabase/tests/`.
   Never edit a migration that has been applied to the hosted project.
+
+## Ski section
+
+- Data: `src/data/ski/types.ts` (schema), `regions.ts` (11 regions, grouped Northeast / Rockies / Pacific & Southwest /
+  Canada), `resorts/*.ts` (one file per batch, picked up by a glob in `src/data/ski/index.ts`). Resort ids share the
+  place-id namespace (wishlists, reviews) and must not collide; `tests/js/ski-data.test.ts` checks ids, coords,
+  dates, URLs and stats.
+- Each resort records official URLs (site, snow report, trail map, webcams), 2026-27 passes and season dates, stats,
+  lowest lift ticket, activities, lodging, things to do, après, events, getting there, Google rating and paraphrased
+  review themes. Events use `confirmed: false` (shown as "Usually") until the resort posts this season's date.
+- Prices are in the region's currency (CAD for Québec and BC). Keep `asOf` dates current when re-checking.
+- Live weather is client-side Open-Meteo (`src/lib/ski.ts` URL builders, `src/lib/ski-live.ts` cached batch loader).
+  It is a model forecast, never presented as a measured snow report.
+- Adding a resort: append to the right `resorts/*.ts`, add an `image_sources.json` entry (Commons category if one
+  exists, plus an Openverse fallback), run `python3 scripts/fetch_images.py --only <id>` and look at the photos.
 
 ## Verify before every commit
 

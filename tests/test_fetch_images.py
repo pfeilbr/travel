@@ -160,6 +160,48 @@ class SelectionTest(unittest.TestCase):
             self.assertTrue(fi.needs_download(dest, {"title": "File:A.jpg"}, "File:A.jpg", True))
 
 
+OV = {
+    "id": "abc-123", "title": "Lone Peak from the tram", "url": "https://live.staticflickr.com/1/2_b.jpg",
+    "width": 1024, "height": 683, "filetype": "jpg", "license": "by-sa", "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/", "creator": "Jim",
+    "foreign_landing_url": "https://www.flickr.com/photos/x/2", "provider": "flickr",
+    "tags": [{"name": "skiing"}, {"name": "montana"}],
+}
+
+
+class OpenverseTest(unittest.TestCase):
+    def test_license_codes(self):
+        self.assertEqual(fi.openverse_license("by-sa", "2.0"), "CC BY-SA 2.0")
+        self.assertEqual(fi.openverse_license("by", "4.0"), "CC BY 4.0")
+        self.assertEqual(fi.openverse_license("cc0", "1.0"), "CC0")
+        self.assertEqual(fi.openverse_license("pdm", None), "Public domain")
+        self.assertIsNone(fi.normalize_license(fi.openverse_license("by-nc", "2.0")))
+
+    def test_page_shape_and_entry(self):
+        p = fi.openverse_page(OV)
+        self.assertEqual(p["title"], "Openverse:abc-123")
+        self.assertTrue(fi.is_candidate(p, min_width=1000))
+        self.assertFalse(fi.is_candidate(p))  # below the Commons 1200px floor
+        e = fi.build_entry("big-sky", 1, p)
+        self.assertEqual(e["license"], "CC BY-SA 2.0")
+        self.assertEqual(e["author"], "Jim")
+        self.assertEqual(e["sourceUrl"], "https://www.flickr.com/photos/x/2")
+        self.assertEqual(e["alt"], "Lone Peak from the tram")
+        self.assertEqual((e["width"], e["height"]), (1024, 683))
+        self.assertIsNone(fi.openverse_page({**OV, "width": None}))
+
+    def test_mentions_filters_off_topic_results(self):
+        p = fi.openverse_page(OV)
+        self.assertTrue(fi.mentions(p, ["lone peak", "big sky"]))
+        self.assertTrue(fi.mentions(p, ["Montana"]))  # tags count
+        self.assertFalse(fi.mentions(p, ["stowe"]))
+        self.assertTrue(fi.mentions(p, []))
+
+    def test_winter_scoring(self):
+        snowy = page(title="File:Ski slopes in snow.jpg", description="Skiers on the slope", categories="")
+        self.assertGreater(fi.score(snowy, winter=True), fi.score(snowy))
+
+
 class OutputTest(unittest.TestCase):
     def test_render_json_is_deterministic_and_sorted(self):
         data = {"b": [fi.build_entry("b", 1, page())], "a": []}
@@ -174,7 +216,8 @@ class OutputTest(unittest.TestCase):
             fi.image_path(pid, 1)
             self.assertTrue(place["sources"], pid)
             for src in place["sources"]:
-                self.assertTrue(("category" in src) ^ ("search" in src), (pid, src))
+                kinds = [k for k in ("category", "search", "openverse") if k in src]
+                self.assertEqual(len(kinds), 1, (pid, src))
 
     def test_repo_images_json_matches_files(self):
         data_file = REPO / "src" / "data" / "images.json"

@@ -13,6 +13,14 @@ with Supabase for user accounts and data.
   fishing, waterfalls…), sorting, and a split list + map view with price pins. Filters live in the URL, so links are shareable.
 - **Place pages:** photo mosaic and lightbox, a sticky booking card with live availability by lodging type, Google rating and
   review themes, cabin details, what's nearby, a map, and community reviews.
+- **Ski section (`/ski/`):** a Camping | Ski switch in the header. Resorts across Vermont, New Hampshire, New York,
+  Pennsylvania, Utah, Colorado, Montana, California & Tahoe, Arizona, Québec and British Columbia: a hub with a region bar,
+  region pages (tips, which pass works, holiday events, list + map), an all-resorts explorer (filter by pass, sleigh rides,
+  snowmobiling, ice skating, scenic lifts, nightlife…; sort by vertical, snowfall, price or live new snow), resort pages
+  (stats and terrain mix, live snow and weather, where to stay, things to do, après, Christmas/New Year's and other events,
+  getting there, reviews) and a holiday calendar (`/ski/holidays/`).
+- **Live snow:** the browser asks [Open-Meteo](https://open-meteo.com/) (free, no key) for the 7-day snowfall forecast and
+  last week's snow at each mountain's elevation. It's a model forecast; each resort links its official snow report.
 - **Accounts (Supabase Auth):** email + password, magic link, Google and Apple. Users get wishlists (heart any place),
   their own reviews, and trip plans.
 
@@ -23,7 +31,8 @@ with Supabase for user accounts and data.
 | Frontend | [Astro](https://astro.build) static build, vanilla TypeScript islands, Leaflet + OpenStreetMap |
 | Hosting | GitHub Pages (`.github/workflows/pages.yml`) |
 | Auth + DB | Supabase free tier: Postgres with SQL migrations and row-level security |
-| Photos | Wikimedia Commons (free licenses, credited), fetched by `scripts/fetch_images.py` |
+| Photos | Wikimedia Commons (free licenses, credited), fetched by `scripts/fetch_images.py`; Openverse (CC Flickr photos) as a fallback |
+| Weather | Open-Meteo forecast API, called from the browser |
 | Tests | Vitest (`tests/js`), Python unittest (`tests/*.py`), pgTAP RLS tests (`supabase/tests`) |
 
 ## Layout
@@ -31,8 +40,11 @@ with Supabase for user accounts and data.
 ```
 src/
   pages/            routes: / explore/ trips/[slug]/ places/[id]/ wishlists/ account/ credits/ auth/callback/
+                    ski/ ski/explore/ ski/holidays/ ski/[region]/ ski/resorts/[id]/
   components/       Header, AuthModal, PlaceCard, Explorer (filters + map), PhotoMosaic, CommunityReviews…
+                    ski/ResortCard, ski/SkiExplorer, ski/SnowReport, ski/RegionTabs
   data/             places.ts, trips.ts (typed content), images.json (generated photo credits)
+                    ski/types.ts, ski/regions.ts, ski/resorts/*.ts (one file per research batch)
   lib/              supabase client, wishlist, filter/format helpers, paths
   assets/places/    downloaded photos (optimized at build)
 supabase/

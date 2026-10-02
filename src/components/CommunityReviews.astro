@@ -1,7 +1,7 @@
 ---
 import Icon from './Icon.astro';
-interface Props { placeId: string; placeName: string }
-const { placeId, placeName } = Astro.props;
+interface Props { placeId: string; placeName: string; prompt?: string }
+const { placeId, placeName, prompt = 'How was the site, the cabin, the trails? Anything future visitors should know?' } = Astro.props;
 ---
 <section class="community" data-community data-place={placeId} data-name={placeName}>
   <div class="head">
@@ -18,7 +18,7 @@ const { placeId, placeName } = Astro.props;
       ))}
     </div>
     <label class="area"><span class="sr-only">Your review</span>
-      <textarea name="body" rows="4" maxlength="2000" required placeholder="How was the site, the cabin, the trails? Anything future visitors should know?"></textarea>
+      <textarea name="body" rows="4" maxlength="2000" required placeholder={prompt}></textarea>
     </label>
     <label class="visited">When did you go? <input type="month" name="visited" /></label>
     <p class="error" data-error hidden></p>

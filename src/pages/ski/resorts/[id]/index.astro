@@ -1,0 +1,380 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Icon from '../../../../components/Icon.astro';
+import PhotoMosaic from '../../../../components/PhotoMosaic.astro';
+import CommunityReviews from '../../../../components/CommunityReviews.astro';
+import ResortCard from '../../../../components/ski/ResortCard.astro';
+import SnowReport from '../../../../components/ski/SnowReport.astro';
+import { resorts, skiRegionById } from '../../../../data/ski';
+import type { EventKind, LodgeKind, Resort, ThingKind } from '../../../../data/ski/types';
+import { imagesFor } from '../../../../lib/images';
+import { ACTIVITY, EVENT_LABEL, HOLIDAY_KINDS, PASS_LABEL, SIZE_LABEL, ft, nearest, price, seasonLine, shortDate } from '../../../../lib/ski';
+import { url } from '../../../../lib/paths';
+import { drive } from '../../../../lib/format';
+
+export function getStaticPaths() {
+  return resorts.map((resort) => ({ params: { id: resort.id }, props: { resort } }));
+}
+const { resort: r } = Astro.props as { resort: Resort };
+const region = skiRegionById[r.region];
+const images = imagesFor(r.id);
+const hero = images[0];
+const cur = region.currency;
+const s = r.stats;
+const near = nearest(r, resorts, 4);
+const holiday = r.events.filter((e) => HOLIDAY_KINDS.includes(e.kind)).sort((a, b) => a.date.localeCompare(b.date));
+const other = r.events.filter((e) => !HOLIDAY_KINDS.includes(e.kind)).sort((a, b) => a.date.localeCompare(b.date));
+const EVENT_ICON: Record<EventKind, string> = { christmas: 'tree', 'new-years': 'sparkle', opening: 'flag', festival: 'sparkle', race: 'flag', music: 'music', 'pond-skim': 'swimming', other: 'calendar' };
+const THING_ICON = (k: ThingKind) => (k in ACTIVITY ? ACTIVITY[k as keyof typeof ACTIVITY].icon : ({ eat: 'restaurants', drink: 'nightlife', shop: 'bag', museum: 'history', other: 'pin' } as Record<string, string>)[k]);
+const LODGE_ORDER: LodgeKind[] = ['ski-in/ski-out', 'slopeside', 'base village', 'lodge', 'hotel', 'condo', 'inn', 'b&b', 'cabin', 'hostel'];
+const lodging = [...r.lodging].sort((a, b) => LODGE_ORDER.indexOf(a.kind) - LODGE_ORDER.indexOf(b.kind));
+const terrain = [
+  { k: 'Beginner', v: s.terrain.beginner, cls: 'green' },
+  { k: 'Intermediate', v: s.terrain.intermediate, cls: 'blue' },
+  { k: 'Advanced', v: s.terrain.advanced, cls: 'black' },
+];
+const statRows = [
+  { icon: 'vertical', k: 'Vertical drop', v: ft(s.verticalFt) },
+  { icon: 'mountain', k: 'Summit', v: ft(s.summitFt) },
+  { icon: 'expand', k: 'Skiable terrain', v: `${s.acres.toLocaleString('en-US')} acres` },
+  { icon: 'map', k: 'Trails', v: String(s.trails) },
+  { icon: 'lift', k: 'Lifts', v: String(s.lifts) },
+  { icon: 'snowflake', k: 'Average snowfall', v: `${s.snowfallIn}″ a year` },
+  ...(s.longestRunMi ? [{ icon: 'ski', k: 'Longest run', v: `${s.longestRunMi} mi` }] : []),
+  ...(s.snowmakingPct ? [{ icon: 'cloud', k: 'Snowmaking', v: `${s.snowmakingPct}% of terrain` }] : []),
+];
+---
+<Layout title={`${r.name} ski guide`} description={`${r.tagline}. ${r.summary}`} image={hero?.src.src}>
+  <div class="container page">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href={url('ski/')}>Ski</a><Icon name="chev-right" size={12} /><a href={url(`ski/${region.id}/`)}>{region.name}</a><Icon name="chev-right" size={12} /><span>{r.name}</span></nav>
+    <header class="title">
+      <h1>{r.name}</h1>
+      <div class="sub">
+        {r.google && <a class="rating" href={r.google.url} rel="noopener" title="Read reviews on Google Maps"><Icon name="star" size={14} />{r.google.rating.toFixed(1)} <span class="u">on Google</span></a>}
+        {r.google && <span aria-hidden="true">·</span>}
+        <span>{r.town} · {r.area}</span>
+        <span class="spacer"></span>
+        <button class="act" data-share><Icon name="share" size={16} /><span>Share</span></button>
+        <button class="act heart-act" data-save={r.id} data-name={r.name} aria-pressed="false"><Icon name="heart" size={16} /><span>Save</span></button>
+      </div>
+    </header>
+
+    <PhotoMosaic images={images} name={r.name} />
+
+    <div class="layout">
+      <div class="main">
+        <section class="intro">
+          <h2>{SIZE_LABEL[r.size]} ski resort in {r.town}</h2>
+          <p class="muted facts">{ft(s.verticalFt)} vertical · {s.acres.toLocaleString('en-US')} acres · {s.trails} trails · {s.lifts} lifts</p>
+        </section>
+
+        <section class="highlights">
+          {r.passes.length > 0 && <div class="hl"><Icon name="ticket" size={24} /><div><b>On the {r.passes.map((p) => PASS_LABEL[p]).join(' and ')} pass{r.passes.length > 1 ? 'es' : ''}</b><p class="muted">For the 2026–27 season. Check blackout dates on holiday weeks.</p></div></div>}
+          <div class="hl"><Icon name="calendar" size={24} /><div><b>Season {seasonLine(r.season)}</b><p class="muted">{r.season.note ?? 'Target dates; weather decides.'}</p></div></div>
+          {holiday.length > 0 && <div class="hl"><Icon name="tree" size={24} /><div><b>{holiday.length} Christmas and New Year’s event{holiday.length > 1 ? 's' : ''}</b><p class="muted"><a href="#events">{holiday.map((e) => e.name).slice(0, 2).join(', ')}{holiday.length > 2 ? ' and more' : ''}</a></p></div></div>}
+        </section>
+
+        <section>
+          <p class="lead">{r.tagline}.</p>
+          <p>{r.summary}</p>
+        </section>
+
+        <SnowReport resort={r} />
+
+        <section>
+          <h2>The mountain</h2>
+          <dl class="stats">
+            {statRows.map((x) => <div><dt><Icon name={x.icon} size={18} />{x.k}</dt><dd>{x.v}</dd></div>)}
+          </dl>
+          <h3 class="terrain-h">Terrain mix</h3>
+          <div class="terrain" role="img" aria-label={terrain.map((t) => `${t.k} ${t.v}%`).join(', ')}>
+            {terrain.filter((t) => t.v > 0).map((t) => <span class:list={['seg', t.cls]} style={`flex-grow:${t.v}`}></span>)}
+          </div>
+          <ul class="legend">{terrain.map((t) => <li><span class:list={['sw', t.cls]}></span>{t.k} <b>{t.v}%</b></li>)}</ul>
+        </section>
+
+        <section>
+          <h2>What’s here besides skiing</h2>
+          <ul class="offers">
+            {r.activities.map((a) => <li><Icon name={ACTIVITY[a].icon} size={22} />{ACTIVITY[a].label}</li>)}
+          </ul>
+        </section>
+
+        {(holiday.length > 0 || other.length > 0) && (
+          <section id="events">
+            <h2>Holidays and events</h2>
+            <p class="muted">2026–27 dates where they’re posted. “Usually” means the date follows past years. Confirm before you go.</p>
+            <ul class="events">
+              {[...holiday, ...other].map((e) => (
+                <li class:list={{ holiday: HOLIDAY_KINDS.includes(e.kind) }}>
+                  <span class="ei"><Icon name={EVENT_ICON[e.kind]} size={20} /></span>
+                  <div>
+                    <div class="eh"><span class="kind">{EVENT_LABEL[e.kind]}</span><span class="date">{e.when}</span>{!e.confirmed && <span class="usually">Usually</span>}</div>
+                    <b>{e.url ? <a href={e.url} rel="noopener">{e.name}</a> : e.name}</b>
+                    <p class="muted">{e.what}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <a class="more" href={url(`ski/holidays/?region=${r.region}`)}>All holiday events in {region.name} <Icon name="chev-right" size={14} /></a>
+          </section>
+        )}
+
+        <section id="stay">
+          <h2>Where to stay</h2>
+          <ul class="lodging">
+            {lodging.map((l) => (
+              <li>
+                <span class="kind-tag">{l.kind}</span>
+                <b><a href={l.url} rel="noopener">{l.name}</a></b>
+                <p class="muted">{l.what}</p>
+                <div class="lmeta">
+                  {l.distance && <span><Icon name="pin" size={14} />{l.distance}</span>}
+                  {l.priceFrom !== undefined && <span><b>{price(l.priceFrom, cur)}</b> / night{l.priceNote ? ` · ${l.priceNote}` : ''}</span>}
+                </div>
+              </li>
+            ))}
+          </ul>
+          <p class="muted small">Rates are typical winter lows before taxes and fees, and change constantly. Book on the property’s own site.</p>
+        </section>
+
+        <section>
+          <h2>Things to do</h2>
+          <ul class="nearby">
+            {r.thingsToDo.map((n) => (
+              <li>
+                <span class="ni"><Icon name={THING_ICON(n.kind)} size={20} /></span>
+                <div>
+                  <b>{n.url ? <a href={n.url} rel="noopener">{n.name}</a> : n.name}</b>{n.distance && <span class="muted"> · {n.distance}</span>}
+                  <p class="muted">{n.what}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {r.apres.length > 0 && (
+          <section>
+            <h2>Après and nightlife</h2>
+            <ul class="nearby">
+              {r.apres.map((n) => (
+                <li>
+                  <span class="ni"><Icon name="nightlife" size={20} /></span>
+                  <div><b>{n.url ? <a href={n.url} rel="noopener">{n.name}</a> : n.name}</b><p class="muted">{n.what}</p></div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {r.google && (
+          <section>
+            <div class="g-head">
+              <h2><Icon name="star" size={22} /> {r.google.rating.toFixed(1)} on Google</h2>
+              <span class="muted src">read {shortDate(r.google.asOf, true)}</span>
+            </div>
+            {r.reviewThemes && (
+              <>
+                <div class="themes">
+                  <div><h3>What skiers love</h3><ul class="ticks">{r.reviewThemes.loved.map((t) => <li><Icon name="check" size={18} />{t}</li>)}</ul></div>
+                  <div><h3>Heads-up</h3><ul class="ticks warn">{r.reviewThemes.watchFor.map((t) => <li><Icon name="info" size={18} />{t}</li>)}</ul></div>
+                </div>
+                <p class="muted small">These themes are our summary of recent skier reviews, not quotes.</p>
+              </>
+            )}
+            <a class="btn btn-outline" href={r.google.url} rel="noopener">Read reviews on Google Maps</a>
+          </section>
+        )}
+
+        <section>
+          <h2>Getting there</h2>
+          <ul class="getting">
+            <li><Icon name="plane" size={20} /><span><b>{r.getting.airport} ({r.getting.code})</b> · about {drive(r.getting.driveMin)} drive</span></li>
+            {r.getting.from?.map((f) => <li><Icon name="car" size={20} /><span>{f.city} · about {f.hours} hr</span></li>)}
+          </ul>
+          <div class="mini-map" data-mini-map data-lat={r.coords[0]} data-lng={r.coords[1]} data-name={r.name}></div>
+          <p class="muted small"><a href={`https://www.google.com/maps/dir/?api=1&destination=${r.coords[0]},${r.coords[1]}`} rel="noopener">Directions in Google Maps</a></p>
+        </section>
+
+        <CommunityReviews placeId={r.id} placeName={r.name} prompt="How was the snow, the lift lines, the après? Anything future skiers should know?" />
+
+        {images.length > 0 && (
+          <section class="credits">
+            <h3>Photo credits</h3>
+            <p class="muted small">
+              {images.map((img, i) => <>{i > 0 && ' · '}<a href={img.sourceUrl} rel="noopener">{img.author || 'Wikimedia Commons'}</a> ({img.license}){img.nearby && ', nearby'}</>)}
+              . Via Wikimedia Commons.
+            </p>
+          </section>
+        )}
+      </div>
+
+      <aside class="side">
+        <div class="book">
+          <div class="price-line">
+            {r.ticket ? <><span class="muted">Lift tickets from</span> <strong>{price(r.ticket.from, cur)}</strong></> : <strong>Lift tickets</strong>}
+          </div>
+          {r.ticket?.note && <p class="fine">{r.ticket.note}</p>}
+          <dl class="facts-box">
+            <div><dt>Season</dt><dd>{seasonLine(r.season)}</dd></div>
+            <div><dt>Passes</dt><dd>{r.passes.length ? r.passes.map((p) => PASS_LABEL[p]).join(', ') : 'Independent'}</dd></div>
+            <div><dt>Vertical</dt><dd>{ft(s.verticalFt)}</dd></div>
+            <div><dt>Snow / yr</dt><dd>{s.snowfallIn}″</dd></div>
+          </dl>
+          <a class="btn btn-primary btn-block" href={r.url} rel="noopener">Tickets &amp; lodging on {new URL(r.url).hostname.replace(/^www\./, '')}</a>
+          <a class="btn btn-outline btn-block" href={r.snowReportUrl} rel="noopener"><Icon name="snowflake" size={16} />Official snow report</a>
+          <div class="jump"><a href="#snow">Live forecast</a><a href="#stay">Where to stay</a>{r.events.length > 0 && <a href="#events">Events</a>}</div>
+          <p class="fine">Prices are walk-up or online lows in {cur === 'CAD' ? 'Canadian dollars' : 'US dollars'} and vary by date. You won’t be charged here.</p>
+        </div>
+        <a class="trip-link" href={url(`ski/${region.id}/`)}><Icon name="chev-left" size={14} /> All {region.name} resorts</a>
+      </aside>
+    </div>
+
+    {near.length > 0 && (
+      <section class="near">
+        <h2>Nearby mountains</h2>
+        <div class="rail">{near.map((n) => <ResortCard resort={n} />)}</div>
+      </section>
+    )}
+  </div>
+
+  <div class="mobile-book">
+    <div>{r.ticket ? <><strong>{price(r.ticket.from, cur)}</strong> lift</> : <strong>{r.name}</strong>}<div class="muted small">{seasonLine(r.season)}</div></div>
+    <a class="btn btn-outline" href="#snow">Snow</a>
+    <a class="btn btn-primary" href={r.url} rel="noopener">Tickets</a>
+  </div>
+</Layout>
+
+<style>
+  .page { padding-top: 20px; }
+  .crumbs { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); margin-bottom: 10px; flex-wrap: wrap; }
+  .crumbs a { color: inherit; }
+  .title h1 { font-size: clamp(24px, 3vw, 30px); margin-bottom: 6px; }
+  .sub { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 15px; margin-bottom: 20px; }
+  .sub .rating { text-decoration: none; }
+  .sub .u { text-decoration: underline; font-weight: 600; margin-left: 2px; }
+  .spacer { flex: 1; }
+  .act { display: inline-flex; align-items: center; gap: 6px; border: 0; background: none; padding: 8px 10px; border-radius: 8px; text-decoration: underline; font-weight: 600; font-size: 14px; cursor: pointer; }
+  .act:hover { background: var(--surface); }
+  .heart-act[aria-pressed="true"] :global(svg) { fill: var(--accent); stroke: var(--accent); }
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 372px; gap: 80px; margin-top: 40px; }
+  .main > :global(section) { padding: 32px 0; border-bottom: 1px solid var(--rule); }
+  .main > :global(section:first-child) { padding-top: 0; }
+  .intro h2 { font-size: 22px; margin-bottom: 4px; }
+  .facts { margin: 0; }
+  .highlights { display: grid; gap: 24px; }
+  .hl { display: flex; gap: 20px; align-items: flex-start; }
+  .hl p { margin: 2px 0 0; font-size: 14px; }
+  .lead { font-size: 18px; font-weight: 600; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0 32px; margin: 16px 0 0; }
+  .stats div { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .stats dt { display: flex; align-items: center; gap: 10px; color: var(--ink-2); }
+  .stats dd { margin: 0; font-weight: 700; text-align: right; }
+  .terrain-h { margin-top: 28px; font-size: 16px; }
+  .terrain { display: flex; gap: 2px; height: 14px; border-radius: 4px; overflow: hidden; }
+  .seg { min-width: 4px; }
+  .green { background: #2e9e5b; } .blue { background: #2f6fdb; } .black { background: #222; }
+  :global([data-theme="dark"]) .black { background: #d9d9d4; }
+  @media (prefers-color-scheme: dark) { :global(:root:not([data-theme="light"])) .black { background: #d9d9d4; } }
+  .legend { list-style: none; padding: 0; margin: 10px 0 0; display: flex; gap: 20px; flex-wrap: wrap; font-size: 14px; color: var(--ink-2); }
+  .legend li { display: flex; align-items: center; gap: 8px; }
+  .sw { width: 12px; height: 12px; border-radius: 3px; }
+  .legend .sw.green { border-radius: 50%; }
+  .legend .sw.black { transform: rotate(45deg) scale(.85); }
+  .offers { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .offers li { display: flex; align-items: center; gap: 14px; }
+  .events { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 14px; }
+  .events li { display: flex; gap: 14px; padding: 16px; border: 1px solid var(--rule); border-radius: var(--radius); }
+  .events li.holiday { background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 7%, var(--surface-2)), var(--surface-2)); border-color: color-mix(in srgb, var(--accent) 25%, var(--rule)); }
+  .ei { flex: none; width: 40px; height: 40px; border-radius: 10px; background: var(--surface); display: grid; place-items: center; }
+  .holiday .ei { background: color-mix(in srgb, var(--accent) 14%, var(--surface-2)); color: var(--accent); }
+  .eh { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12px; font-weight: 700; margin-bottom: 2px; }
+  .kind { text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  .date { color: var(--ink); }
+  .usually { font-weight: 600; color: var(--muted); border: 1px solid var(--rule-strong); border-radius: 6px; padding: 0 6px; }
+  .events p { margin: 2px 0 0; font-size: 14px; }
+  .events a, .lodging a, .nearby a { text-decoration: none; }
+  .events a:hover, .lodging a:hover, .nearby a:hover { text-decoration: underline; }
+  .more { display: inline-flex; align-items: center; gap: 4px; margin-top: 16px; font-weight: 600; font-size: 15px; }
+  .lodging { list-style: none; padding: 0; margin: 16px 0 8px; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .lodging li { padding: 16px; border: 1px solid var(--rule); border-radius: var(--radius); display: flex; flex-direction: column; gap: 4px; }
+  .kind-tag { align-self: flex-start; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--pine); background: var(--pine-soft); padding: 2px 8px; border-radius: 6px; margin-bottom: 4px; }
+  .lodging p { margin: 0; font-size: 14px; flex: 1; }
+  .lmeta { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; color: var(--ink-2); margin-top: 8px; }
+  .lmeta span { display: inline-flex; align-items: center; gap: 4px; }
+  .small { font-size: 13px; }
+  .nearby { list-style: none; padding: 0; margin: 16px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px 32px; }
+  .nearby li { display: flex; gap: 14px; }
+  .ni { flex: none; width: 40px; height: 40px; border-radius: 10px; background: var(--surface); display: grid; place-items: center; }
+  .nearby p { margin: 2px 0 0; font-size: 14px; }
+  .g-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .g-head h2 { display: inline-flex; align-items: center; gap: 8px; margin: 0; }
+  .src { font-size: 14px; }
+  .themes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 48px; margin: 20px 0 8px; }
+  .themes h3 { font-size: 16px; }
+  .ticks { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .ticks li { display: flex; gap: 10px; align-items: flex-start; }
+  .ticks :global(svg) { flex: none; margin-top: 2px; color: var(--pine); }
+  .ticks.warn :global(svg) { color: #c26a00; }
+  .getting { list-style: none; padding: 0; margin: 12px 0; display: grid; gap: 10px; }
+  .getting li { display: flex; gap: 12px; align-items: center; }
+  .mini-map { height: 340px; border-radius: var(--radius); overflow: hidden; background: var(--surface); margin-top: 12px; }
+  .credits { border-bottom: 0 !important; }
+  .side { position: relative; }
+  .book { position: sticky; top: 112px; padding: 24px; border: 1px solid var(--rule); border-radius: var(--radius); box-shadow: var(--shadow); background: var(--surface-2); display: grid; gap: 12px; }
+  .price-line { font-size: 22px; }
+  .price-line .muted { font-size: 15px; }
+  .facts-box { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--rule-strong); border-radius: 10px; overflow: hidden; font-size: 14px; margin: 0; }
+  .facts-box div { padding: 10px 12px; border-bottom: 1px solid var(--rule-strong); }
+  .facts-box div:nth-child(odd) { border-right: 1px solid var(--rule-strong); }
+  .facts-box div:nth-last-child(-n+2) { border-bottom: 0; }
+  .facts-box dt { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
+  .facts-box dd { margin: 0; }
+  .jump { display: flex; justify-content: center; gap: 14px; font-size: 14px; font-weight: 600; }
+  .fine { font-size: 13px; color: var(--muted); margin: 0; text-align: center; }
+  .trip-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 16px; font-size: 14px; font-weight: 600; }
+  .near { margin-top: 48px; }
+  .rail { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+  @media (max-width: 1000px) { .rail { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 72%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; } .rail > :global(*) { scroll-snap-align: start; } }
+  .mobile-book { display: none; }
+  @media (max-width: 1000px) {
+    .layout { grid-template-columns: 1fr; gap: 0; }
+    .side { display: none; }
+    .mobile-book { display: flex; align-items: center; gap: 8px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; padding: 12px var(--gutter); background: var(--bg); border-top: 1px solid var(--rule); }
+    .mobile-book > div { flex: 1; min-width: 0; }
+    .mobile-book .btn { height: 44px; padding: 0 16px; }
+  }
+  @media (max-width: 560px) { .offers { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  import L from 'leaflet';
+  import 'leaflet/dist/leaflet.css';
+  import { wireHearts } from '../../../../lib/wishlist';
+  import { wireCarousels } from '../../../../lib/carousel';
+
+  wireHearts();
+  wireCarousels();
+
+  document.querySelector('[data-share]')?.addEventListener('click', async () => {
+    const data = { title: document.title, url: location.href };
+    try { if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(location.href); alert('Link copied'); } } catch {}
+  });
+
+  const el = document.querySelector<HTMLElement>('[data-mini-map]');
+  if (el) {
+    const ll: [number, number] = [Number(el.dataset.lat), Number(el.dataset.lng)];
+    const dark = document.documentElement.dataset.theme === 'dark' || (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+    const map = L.map(el, { scrollWheelZoom: false }).setView(ll, 11);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19, className: dark ? 'tiles-dark' : 'tiles',
+    }).addTo(map);
+    L.marker(ll, { icon: L.divIcon({ className: '', html: '<div class="ski-dot"></div>', iconSize: [0, 0] }), title: el.dataset.name }).addTo(map);
+  }
+</script>
+
+<style is:global>
+  .tiles { filter: saturate(.75) contrast(.95); }
+  .tiles-dark { filter: invert(1) hue-rotate(180deg) brightness(.9) contrast(.9) saturate(.5); }
+  .ski-dot { width: 22px; height: 22px; border-radius: 50%; background: var(--accent); border: 4px solid #fff; box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent) 25%, transparent); transform: translate(-50%, -50%); }
+</style>

@@ -8,6 +8,8 @@ import { places, placeById } from '../data/places';
 import { imagesFor } from '../lib/images';
 import { dateRange, hasRoof } from '../lib/format';
 import { url } from '../lib/paths';
+import { resorts, skiRegions } from '../data/ski';
+import { HOLIDAY_KINDS, eventsOf, sortResorts } from '../lib/ski';
 
 const trip = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0];
 const heroImgs = imagesFor('hero');
@@ -17,6 +19,9 @@ const regions = [...new Set(places.map((p) => p.region))].sort();
 const openCabins = trip.options.reduce((n, o) => n + (typeof o.available.cabin === 'number' ? o.available.cabin : 0), 0);
 const roofs = trip.options.filter(hasRoof).length;
 const collage = trip.topPicks.map((p) => imagesFor(p.placeId)[0]).filter(Boolean).slice(0, 3);
+
+const skiCollage = sortResorts(resorts, 'recommended').map((r) => imagesFor(r.id)[0]).filter(Boolean).slice(0, 3);
+const skiHolidays = eventsOf(resorts, HOLIDAY_KINDS).length;
 
 const vibes = [
   { label: 'Cabins with heat', sub: 'Roof, bed, outlet', q: 'lodging=cabin', img: imagesFor('robert-h-treman')[1] ?? imagesFor('robert-h-treman')[0], icon: 'cabin' },
@@ -97,6 +102,30 @@ const vibes = [
     </div>
   </section>
 
+  {resorts.length > 0 && (
+    <section class="container">
+      <a class="feature ski" href={url('ski/')}>
+        <div class="feature-body">
+          <span class="badge snow-badge"><Icon name="snowflake" size={13} />New · Ski season 2026–27</span>
+          <h2>Ready for ski season?</h2>
+          <p class="muted">{resorts.length} resorts from Vermont and the Adirondacks to Utah, Colorado, Tahoe and Whistler: live snow forecasts, where to stay, après, sleigh rides and the Christmas and New Year’s events.</p>
+          <ul class="stats">
+            <li><b>{resorts.length}</b><span>resorts</span></li>
+            <li><b>{skiRegions.length}</b><span>regions</span></li>
+            <li><b>{skiHolidays}</b><span>holiday events</span></li>
+          </ul>
+          <span class="btn btn-primary">Explore ski resorts <Icon name="chev-right" size={16} /></span>
+        </div>
+        <div class="collage">
+          {skiCollage.length ? skiCollage.map((img) => <Image src={img!.src} alt={img!.alt} widths={[480, 800]} sizes="(max-width: 760px) 100vw, 30vw" />) : <div class="ski-fill"></div>}
+        </div>
+      </a>
+      <div class="region-chips">
+        {skiRegions.map((r) => <a class="chip" href={url(`ski/${r.id}/`)}>{r.name}</a>)}
+      </div>
+    </section>
+  )}
+
   <section class="container">
     <div class="sec-head"><h2>Browse by vibe</h2></div>
     <div class="vibes">
@@ -168,6 +197,14 @@ const vibes = [
   .stats span { font-size: 13px; color: var(--muted); }
   .feature:hover .btn-primary { background: var(--accent-hover); }
   @media (max-width: 860px) { .feature { grid-template-columns: 1fr; } .collage { min-height: 220px; } }
+  .feature.ski { grid-template-columns: 1fr 1.2fr; box-shadow: var(--shadow); }
+  .feature.ski .collage { grid-template-columns: 1fr 2fr; }
+  .feature.ski .collage :global(img:first-child) { grid-row: span 2; }
+  .ski-fill { grid-column: 1 / -1; grid-row: 1 / -1; background: linear-gradient(160deg, #6f9fc9, #2f5f8a 55%, #1d3550); }
+  .snow-badge { background: var(--snow-soft); color: var(--snow-ink); box-shadow: none; }
+  .region-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+  .region-chips .chip { text-decoration: none; }
+  @media (max-width: 860px) { .feature.ski { grid-template-columns: 1fr; } .feature.ski .collage { order: -1; } }
 
   section.container:not(.band):not(.why) { margin-top: 72px; }
   .sec-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
