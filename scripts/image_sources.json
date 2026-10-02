@@ -541,7 +541,7 @@
      "limit": 30
     },
     {
-     "openverse": "Arizona Snowbowl ski",
+     "openverse": "Arizona Snowbowl skiing",
      "must": [
       "arizona snowbowl",
       "flagstaff"
@@ -576,7 +576,7 @@
      "depth": 0
     },
     {
-     "openverse": "Sunrise Park ski",
+     "openverse": "Sunrise Park skiing",
      "must": [
       "sunrise park",
       "sunrise park resort",
@@ -613,7 +613,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mount Lemmon ski",
+     "openverse": "Mount Lemmon skiing",
      "must": [
       "mount lemmon",
       "mount lemmon ski valley",
@@ -650,7 +650,7 @@
      "depth": 0
     },
     {
-     "openverse": "Big Sky ski",
+     "openverse": "Big Sky skiing",
      "must": [
       "big sky",
       "big sky resort"
@@ -685,7 +685,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mount Sunapee ski",
+     "openverse": "Mount Sunapee skiing",
      "must": [
       "mount sunapee",
       "newbury"
@@ -720,7 +720,7 @@
      "depth": 0
     },
     {
-     "openverse": "Gunstock ski",
+     "openverse": "Gunstock skiing",
      "must": [
       "gunstock",
       "gunstock mountain resort",
@@ -757,7 +757,7 @@
      "depth": 0
     },
     {
-     "openverse": "Ragged ski",
+     "openverse": "Ragged skiing",
      "must": [
       "ragged",
       "ragged mountain resort",
@@ -794,7 +794,7 @@
      "limit": 25
     },
     {
-     "openverse": "Pats Peak ski",
+     "openverse": "Pats Peak skiing",
      "must": [
       "pats peak",
       "henniker"
@@ -840,7 +840,7 @@
      "depth": 0
     },
     {
-     "openverse": "Crotched ski",
+     "openverse": "Crotched skiing",
      "must": [
       "crotched",
       "crotched mountain",
@@ -877,7 +877,7 @@
      "limit": 25
     },
     {
-     "openverse": "Whaleback ski",
+     "openverse": "Whaleback skiing",
      "must": [
       "whaleback",
       "whaleback mountain",
@@ -914,7 +914,7 @@
      "depth": 0
     },
     {
-     "openverse": "Killington ski",
+     "openverse": "Killington skiing",
      "must": [
       "killington",
       "killington resort"
@@ -949,7 +949,7 @@
      "limit": 25
     },
     {
-     "openverse": "Pico ski",
+     "openverse": "Pico skiing",
      "must": [
       "pico",
       "pico mountain",
@@ -986,7 +986,7 @@
      "depth": 0
     },
     {
-     "openverse": "Okemo ski",
+     "openverse": "Okemo skiing",
      "must": [
       "okemo",
       "okemo mountain resort",
@@ -1023,7 +1023,7 @@
      "limit": 25
     },
     {
-     "openverse": "Mount Snow ski",
+     "openverse": "Mount Snow skiing",
      "must": [
       "mount snow",
       "west dover"
@@ -1058,7 +1058,7 @@
      "depth": 0
     },
     {
-     "openverse": "Stratton ski",
+     "openverse": "Stratton skiing",
      "must": [
       "stratton",
       "stratton mountain resort"
@@ -1093,7 +1093,7 @@
      "depth": 0
     },
     {
-     "openverse": "Bromley ski",
+     "openverse": "Bromley skiing",
      "must": [
       "bromley",
       "bromley mountain",
@@ -1130,7 +1130,7 @@
      "depth": 0
     },
     {
-     "openverse": "Magic ski",
+     "openverse": "Magic skiing",
      "must": [
       "magic",
       "magic mountain",
@@ -1171,7 +1171,7 @@
      "limit": 25
     },
     {
-     "openverse": "Saskadena Six ski",
+     "openverse": "Saskadena Six skiing",
      "must": [
       "saskadena six",
       "south pomfret"
@@ -1211,7 +1211,7 @@
      "depth": 0
     },
     {
-     "openverse": "Seven Springs ski",
+     "openverse": "Seven Springs skiing",
      "must": [
       "seven springs",
       "seven springs mountain resort",
@@ -1248,7 +1248,7 @@
      "depth": 0
     },
     {
-     "openverse": "Hidden Valley ski",
+     "openverse": "Hidden Valley skiing",
      "must": [
       "hidden valley",
       "hidden valley resort"
@@ -1283,7 +1283,7 @@
      "limit": 25
     },
     {
-     "openverse": "Laurel ski",
+     "openverse": "Laurel skiing",
      "must": [
       "laurel",
       "laurel mountain",
@@ -1320,7 +1320,7 @@
      "depth": 0
     },
     {
-     "openverse": "Blue Knob All Seasons ski",
+     "openverse": "Blue Knob All Seasons skiing",
      "must": [
       "blue knob all seasons",
       "blue knob all seasons resort",
@@ -1357,7 +1357,7 @@
      "depth": 0
     },
     {
-     "openverse": "Whitetail ski",
+     "openverse": "Whitetail skiing",
      "must": [
       "whitetail",
       "whitetail resort",
@@ -1394,7 +1394,7 @@
      "depth": 0
     },
     {
-     "openverse": "Liberty ski",
+     "openverse": "Liberty skiing",
      "must": [
       "liberty",
       "liberty mountain resort",
@@ -1431,7 +1431,7 @@
      "depth": 0
     },
     {
-     "openverse": "Roundtop ski",
+     "openverse": "Roundtop skiing",
      "must": [
       "roundtop",
       "roundtop mountain resort",
@@ -1468,7 +1468,7 @@
      "limit": 25
     },
     {
-     "openverse": "Ski Sawmill ski",
+     "openverse": "Ski Sawmill skiing",
      "must": [
       "ski sawmill",
       "morris"
@@ -1503,7 +1503,7 @@
      "depth": 0
     },
     {
-     "openverse": "Tussey ski",
+     "openverse": "Tussey skiing",
      "must": [
       "tussey",
       "tussey mountain",
@@ -1540,7 +1540,7 @@
      "depth": 0
     },
     {
-     "openverse": "Whistler Blackcomb ski",
+     "openverse": "Whistler Blackcomb skiing",
      "must": [
       "whistler blackcomb",
       "whistler"
@@ -1575,7 +1575,7 @@
      "depth": 0
     },
     {
-     "openverse": "Cypress ski",
+     "openverse": "Cypress skiing",
      "must": [
       "cypress",
       "cypress mountain",
@@ -1612,7 +1612,7 @@
      "depth": 0
     },
     {
-     "openverse": "Grouse ski",
+     "openverse": "Grouse skiing",
      "must": [
       "grouse",
       "grouse mountain",
@@ -1649,7 +1649,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mt Seymour ski",
+     "openverse": "Mt Seymour skiing",
      "must": [
       "mt seymour",
       "north vancouver"
@@ -1684,7 +1684,7 @@
      "limit": 25
     },
     {
-     "openverse": "Mount Washington ski",
+     "openverse": "Mount Washington skiing",
      "must": [
       "mount washington",
       "mount washington alpine resort",
@@ -1721,7 +1721,7 @@
      "depth": 0
     },
     {
-     "openverse": "Sun Peaks ski",
+     "openverse": "Sun Peaks skiing",
      "must": [
       "sun peaks",
       "sun peaks resort"
@@ -1756,7 +1756,7 @@
      "depth": 0
     },
     {
-     "openverse": "Big White ski",
+     "openverse": "Big White skiing",
      "must": [
       "big white",
       "big white ski resort",
@@ -1793,7 +1793,7 @@
      "depth": 0
     },
     {
-     "openverse": "SilverStar ski",
+     "openverse": "SilverStar skiing",
      "must": [
       "silverstar",
       "silverstar mountain resort",
@@ -1830,7 +1830,7 @@
      "limit": 25
     },
     {
-     "openverse": "Apex ski",
+     "openverse": "Apex skiing",
      "must": [
       "apex",
       "apex mountain resort",
@@ -1867,7 +1867,7 @@
      "depth": 0
     },
     {
-     "openverse": "Palisades Tahoe ski",
+     "openverse": "Palisades Tahoe skiing",
      "must": [
       "palisades tahoe",
       "olympic valley"
@@ -1902,7 +1902,7 @@
      "depth": 0
     },
     {
-     "openverse": "Northstar California ski",
+     "openverse": "Northstar California skiing",
      "must": [
       "northstar california",
       "truckee"
@@ -1937,7 +1937,7 @@
      "depth": 0
     },
     {
-     "openverse": "Heavenly ski",
+     "openverse": "Heavenly skiing",
      "must": [
       "heavenly",
       "south lake tahoe"
@@ -1972,7 +1972,7 @@
      "depth": 0
     },
     {
-     "openverse": "Kirkwood ski",
+     "openverse": "Kirkwood skiing",
      "must": [
       "kirkwood"
      ],
@@ -2005,7 +2005,7 @@
      "depth": 0
     },
     {
-     "openverse": "Sierra-at-Tahoe ski",
+     "openverse": "Sierra-at-Tahoe skiing",
      "must": [
       "sierra-at-tahoe",
       "twin bridges"
@@ -2040,7 +2040,7 @@
      "depth": 0
     },
     {
-     "openverse": "Sugar Bowl ski",
+     "openverse": "Sugar Bowl skiing",
      "must": [
       "sugar bowl",
       "norden"
@@ -2075,7 +2075,7 @@
      "limit": 25
     },
     {
-     "openverse": "Homewood ski",
+     "openverse": "Homewood skiing",
      "must": [
       "homewood",
       "homewood mountain resort"
@@ -2110,7 +2110,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mt. Rose Ski Tahoe ski",
+     "openverse": "Mt. Rose Ski Tahoe skiing",
      "must": [
       "mt. rose ski tahoe",
       "reno"
@@ -2145,7 +2145,7 @@
      "limit": 25
     },
     {
-     "openverse": "Diamond Peak ski",
+     "openverse": "Diamond Peak skiing",
      "must": [
       "diamond peak",
       "incline village"
@@ -2180,7 +2180,7 @@
      "depth": 0
     },
     {
-     "openverse": "Boreal ski",
+     "openverse": "Boreal skiing",
      "must": [
       "boreal",
       "boreal mountain",
@@ -2221,7 +2221,7 @@
      "limit": 25
     },
     {
-     "openverse": "Camelback ski",
+     "openverse": "Camelback skiing",
      "must": [
       "camelback",
       "camelback resort",
@@ -2267,7 +2267,7 @@
      "limit": 25
     },
     {
-     "openverse": "Blue ski",
+     "openverse": "Blue skiing",
      "must": [
       "blue",
       "blue mountain resort",
@@ -2304,7 +2304,7 @@
      "limit": 25
     },
     {
-     "openverse": "Jack Frost ski",
+     "openverse": "Jack Frost skiing",
      "must": [
       "jack frost",
       "white haven"
@@ -2339,7 +2339,7 @@
      "limit": 25
     },
     {
-     "openverse": "Big Boulder ski",
+     "openverse": "Big Boulder skiing",
      "must": [
       "big boulder",
       "lake harmony"
@@ -2374,7 +2374,7 @@
      "limit": 25
     },
     {
-     "openverse": "Shawnee ski",
+     "openverse": "Shawnee skiing",
      "must": [
       "shawnee",
       "shawnee mountain",
@@ -2411,7 +2411,7 @@
      "limit": 25
     },
     {
-     "openverse": "Elk ski",
+     "openverse": "Elk skiing",
      "must": [
       "elk",
       "elk mountain",
@@ -2448,7 +2448,7 @@
      "depth": 0
     },
     {
-     "openverse": "Montage ski",
+     "openverse": "Montage skiing",
      "must": [
       "montage",
       "montage mountain",
@@ -2485,7 +2485,7 @@
      "depth": 0
     },
     {
-     "openverse": "Bear Creek ski",
+     "openverse": "Bear Creek skiing",
      "must": [
       "bear creek",
       "bear creek mountain resort",
@@ -2522,7 +2522,7 @@
      "depth": 0
     },
     {
-     "openverse": "Stowe ski",
+     "openverse": "Stowe skiing",
      "must": [
       "stowe",
       "stowe mountain resort"
@@ -2557,7 +2557,7 @@
      "limit": 25
     },
     {
-     "openverse": "Smugglers’ Notch ski",
+     "openverse": "Smugglers’ Notch skiing",
      "must": [
       "smugglers’ notch",
       "smugglers’ notch resort",
@@ -2594,7 +2594,7 @@
      "limit": 25
     },
     {
-     "openverse": "Jay Peak ski",
+     "openverse": "Jay Peak skiing",
      "must": [
       "jay peak",
       "jay peak resort",
@@ -2631,7 +2631,7 @@
      "depth": 0
     },
     {
-     "openverse": "Sugarbush ski",
+     "openverse": "Sugarbush skiing",
      "must": [
       "sugarbush",
       "sugarbush resort",
@@ -2668,7 +2668,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mad River Glen ski",
+     "openverse": "Mad River Glen skiing",
      "must": [
       "mad river glen",
       "fayston"
@@ -2703,7 +2703,7 @@
      "depth": 0
     },
     {
-     "openverse": "Bolton Valley ski",
+     "openverse": "Bolton Valley skiing",
      "must": [
       "bolton valley",
       "bolton"
@@ -2738,7 +2738,7 @@
      "depth": 0
     },
     {
-     "openverse": "Burke ski",
+     "openverse": "Burke skiing",
      "must": [
       "burke",
       "burke mountain",
@@ -2775,7 +2775,7 @@
      "limit": 25
     },
     {
-     "openverse": "Middlebury College Snow Bowl ski",
+     "openverse": "Middlebury College Snow Bowl skiing",
      "must": [
       "middlebury college snow bowl",
       "hancock"
@@ -2810,7 +2810,7 @@
      "depth": 0
     },
     {
-     "openverse": "Loon ski",
+     "openverse": "Loon skiing",
      "must": [
       "loon",
       "loon mountain resort",
@@ -2847,7 +2847,7 @@
      "depth": 0
     },
     {
-     "openverse": "Cannon ski",
+     "openverse": "Cannon skiing",
      "must": [
       "cannon",
       "cannon mountain",
@@ -2884,7 +2884,7 @@
      "limit": 25
     },
     {
-     "openverse": "Bretton Woods ski",
+     "openverse": "Bretton Woods skiing",
      "must": [
       "bretton woods"
      ],
@@ -2917,7 +2917,7 @@
      "depth": 0
     },
     {
-     "openverse": "Waterville Valley ski",
+     "openverse": "Waterville Valley skiing",
      "must": [
       "waterville valley",
       "waterville valley resort"
@@ -2952,7 +2952,7 @@
      "limit": 25
     },
     {
-     "openverse": "Attitash ski",
+     "openverse": "Attitash skiing",
      "must": [
       "attitash",
       "attitash mountain resort",
@@ -2989,7 +2989,7 @@
      "limit": 25
     },
     {
-     "openverse": "Wildcat ski",
+     "openverse": "Wildcat skiing",
      "must": [
       "wildcat",
       "wildcat mountain",
@@ -3026,7 +3026,7 @@
      "limit": 25
     },
     {
-     "openverse": "Cranmore ski",
+     "openverse": "Cranmore skiing",
      "must": [
       "cranmore",
       "cranmore mountain resort",
@@ -3063,7 +3063,7 @@
      "limit": 25
     },
     {
-     "openverse": "Black ski",
+     "openverse": "Black skiing",
      "must": [
       "black",
       "black mountain",
@@ -3100,7 +3100,7 @@
      "limit": 25
     },
     {
-     "openverse": "King Pine ski",
+     "openverse": "King Pine skiing",
      "must": [
       "king pine",
       "king pine ski area",
@@ -3137,7 +3137,7 @@
      "depth": 0
     },
     {
-     "openverse": "Snowbasin ski",
+     "openverse": "Snowbasin skiing",
      "must": [
       "snowbasin",
       "huntsville"
@@ -3172,7 +3172,7 @@
      "depth": 0
     },
     {
-     "openverse": "Powder ski",
+     "openverse": "Powder skiing",
      "must": [
       "powder",
       "powder mountain",
@@ -3209,7 +3209,7 @@
      "limit": 25
     },
     {
-     "openverse": "Nordic Valley ski",
+     "openverse": "Nordic Valley skiing",
      "must": [
       "nordic valley",
       "eden"
@@ -3244,7 +3244,7 @@
      "depth": 0
     },
     {
-     "openverse": "Beaver ski",
+     "openverse": "Beaver skiing",
      "must": [
       "beaver",
       "beaver mountain",
@@ -3281,7 +3281,7 @@
      "limit": 25
     },
     {
-     "openverse": "Cherry Peak ski",
+     "openverse": "Cherry Peak skiing",
      "must": [
       "cherry peak",
       "cherry peak resort",
@@ -3318,7 +3318,7 @@
      "depth": 0
     },
     {
-     "openverse": "Brian Head ski",
+     "openverse": "Brian Head skiing",
      "must": [
       "brian head",
       "brian head resort"
@@ -3353,7 +3353,7 @@
      "limit": 25
     },
     {
-     "openverse": "Woodward Park City ski",
+     "openverse": "Woodward Park City skiing",
      "must": [
       "woodward park city",
       "park city"
@@ -3388,7 +3388,7 @@
      "depth": 0
     },
     {
-     "openverse": "Telluride ski",
+     "openverse": "Telluride skiing",
      "must": [
       "telluride",
       "telluride ski resort"
@@ -3423,7 +3423,7 @@
      "depth": 0
     },
     {
-     "openverse": "Crested Butte ski",
+     "openverse": "Crested Butte skiing",
      "must": [
       "crested butte",
       "crested butte mountain resort",
@@ -3460,7 +3460,7 @@
      "depth": 0
     },
     {
-     "openverse": "Purgatory ski",
+     "openverse": "Purgatory skiing",
      "must": [
       "purgatory",
       "purgatory resort",
@@ -3497,7 +3497,7 @@
      "depth": 0
     },
     {
-     "openverse": "Wolf Creek ski",
+     "openverse": "Wolf Creek skiing",
      "must": [
       "wolf creek",
       "wolf creek ski area",
@@ -3534,7 +3534,7 @@
      "depth": 0
     },
     {
-     "openverse": "Monarch ski",
+     "openverse": "Monarch skiing",
      "must": [
       "monarch",
       "monarch mountain",
@@ -3571,7 +3571,7 @@
      "limit": 25
     },
     {
-     "openverse": "Powderhorn ski",
+     "openverse": "Powderhorn skiing",
      "must": [
       "powderhorn",
       "powderhorn mountain resort",
@@ -3608,7 +3608,7 @@
      "limit": 25
     },
     {
-     "openverse": "Silverton ski",
+     "openverse": "Silverton skiing",
      "must": [
       "silverton",
       "silverton mountain"
@@ -3643,7 +3643,7 @@
      "depth": 0
     },
     {
-     "openverse": "Vail ski",
+     "openverse": "Vail skiing",
      "must": [
       "vail"
      ],
@@ -3676,7 +3676,7 @@
      "depth": 0
     },
     {
-     "openverse": "Beaver Creek ski",
+     "openverse": "Beaver Creek skiing",
      "must": [
       "beaver creek",
       "avon"
@@ -3711,7 +3711,7 @@
      "depth": 0
     },
     {
-     "openverse": "Breckenridge ski",
+     "openverse": "Breckenridge skiing",
      "must": [
       "breckenridge"
      ],
@@ -3744,7 +3744,7 @@
      "depth": 0
     },
     {
-     "openverse": "Keystone ski",
+     "openverse": "Keystone skiing",
      "must": [
       "keystone"
      ],
@@ -3777,7 +3777,7 @@
      "depth": 0
     },
     {
-     "openverse": "Copper ski",
+     "openverse": "Copper skiing",
      "must": [
       "copper",
       "copper mountain"
@@ -3812,7 +3812,7 @@
      "depth": 0
     },
     {
-     "openverse": "Arapahoe Basin ski",
+     "openverse": "Arapahoe Basin skiing",
      "must": [
       "arapahoe basin",
       "keystone"
@@ -3847,7 +3847,7 @@
      "depth": 0
     },
     {
-     "openverse": "Loveland ski",
+     "openverse": "Loveland skiing",
      "must": [
       "loveland",
       "georgetown"
@@ -3882,7 +3882,7 @@
      "depth": 0
     },
     {
-     "openverse": "Winter Park ski",
+     "openverse": "Winter Park skiing",
      "must": [
       "winter park"
      ],
@@ -3915,7 +3915,7 @@
      "depth": 0
     },
     {
-     "openverse": "Eldora ski",
+     "openverse": "Eldora skiing",
      "must": [
       "eldora",
       "nederland"
@@ -3950,7 +3950,7 @@
      "depth": 0
     },
     {
-     "openverse": "Ski Cooper ski",
+     "openverse": "Ski Cooper skiing",
      "must": [
       "ski cooper",
       "leadville"
@@ -3985,7 +3985,7 @@
      "depth": 0
     },
     {
-     "openverse": "Whitefish ski",
+     "openverse": "Whitefish skiing",
      "must": [
       "whitefish",
       "whitefish mountain resort"
@@ -4020,7 +4020,7 @@
      "limit": 25
     },
     {
-     "openverse": "Bridger Bowl ski",
+     "openverse": "Bridger Bowl skiing",
      "must": [
       "bridger bowl",
       "bozeman"
@@ -4055,7 +4055,7 @@
      "limit": 25
     },
     {
-     "openverse": "Red Lodge ski",
+     "openverse": "Red Lodge skiing",
      "must": [
       "red lodge",
       "red lodge mountain"
@@ -4090,7 +4090,7 @@
      "limit": 25
     },
     {
-     "openverse": "Montana Snowbowl ski",
+     "openverse": "Montana Snowbowl skiing",
      "must": [
       "montana snowbowl",
       "missoula"
@@ -4125,7 +4125,7 @@
      "limit": 25
     },
     {
-     "openverse": "Discovery ski",
+     "openverse": "Discovery skiing",
      "must": [
       "discovery",
       "discovery ski area",
@@ -4162,7 +4162,7 @@
      "limit": 25
     },
     {
-     "openverse": "Lost Trail Powder ski",
+     "openverse": "Lost Trail Powder skiing",
      "must": [
       "lost trail powder",
       "lost trail powder mountain",
@@ -4199,7 +4199,7 @@
      "limit": 25
     },
     {
-     "openverse": "Great Divide ski",
+     "openverse": "Great Divide skiing",
      "must": [
       "great divide",
       "great divide ski area",
@@ -4236,7 +4236,7 @@
      "limit": 25
     },
     {
-     "openverse": "Showdown Montana ski",
+     "openverse": "Showdown Montana skiing",
      "must": [
       "showdown montana",
       "neihart"
@@ -4271,7 +4271,7 @@
      "limit": 25
     },
     {
-     "openverse": "Blacktail ski",
+     "openverse": "Blacktail skiing",
      "must": [
       "blacktail",
       "blacktail mountain ski area",
@@ -4308,7 +4308,7 @@
      "limit": 25
     },
     {
-     "openverse": "Woods Valley ski",
+     "openverse": "Woods Valley skiing",
      "must": [
       "woods valley",
       "woods valley ski area",
@@ -4345,7 +4345,7 @@
      "limit": 25
     },
     {
-     "openverse": "Snow Ridge ski",
+     "openverse": "Snow Ridge skiing",
      "must": [
       "snow ridge",
       "snow ridge ski resort",
@@ -4382,7 +4382,7 @@
      "limit": 25
     },
     {
-     "openverse": "Song ski",
+     "openverse": "Song skiing",
      "must": [
       "song",
       "song mountain",
@@ -4419,7 +4419,7 @@
      "limit": 25
     },
     {
-     "openverse": "Labrador ski",
+     "openverse": "Labrador skiing",
      "must": [
       "labrador",
       "labrador mountain",
@@ -4456,7 +4456,7 @@
      "limit": 25
     },
     {
-     "openverse": "Greek Peak ski",
+     "openverse": "Greek Peak skiing",
      "must": [
       "greek peak",
       "greek peak mountain resort",
@@ -4493,7 +4493,7 @@
      "depth": 0
     },
     {
-     "openverse": "Bristol ski",
+     "openverse": "Bristol skiing",
      "must": [
       "bristol",
       "bristol mountain",
@@ -4530,7 +4530,7 @@
      "limit": 25
     },
     {
-     "openverse": "Holiday Valley ski",
+     "openverse": "Holiday Valley skiing",
      "must": [
       "holiday valley",
       "ellicottville"
@@ -4565,7 +4565,7 @@
      "limit": 25
     },
     {
-     "openverse": "Peek’n Peak ski",
+     "openverse": "Peek’n Peak skiing",
      "must": [
       "peek’n peak",
       "peek’n peak resort",
@@ -4602,7 +4602,7 @@
      "limit": 25
     },
     {
-     "openverse": "Swain ski",
+     "openverse": "Swain skiing",
      "must": [
       "swain",
       "swain resort"
@@ -4637,7 +4637,7 @@
      "limit": 25
     },
     {
-     "openverse": "Kissing Bridge ski",
+     "openverse": "Kissing Bridge skiing",
      "must": [
       "kissing bridge",
       "glenwood"
@@ -4672,7 +4672,7 @@
      "depth": 0
     },
     {
-     "openverse": "Park City ski",
+     "openverse": "Park City skiing",
      "must": [
       "park city",
       "park city mountain"
@@ -4707,7 +4707,7 @@
      "depth": 0
     },
     {
-     "openverse": "Deer Valley ski",
+     "openverse": "Deer Valley skiing",
      "must": [
       "deer valley",
       "deer valley resort",
@@ -4744,7 +4744,7 @@
      "depth": 0
     },
     {
-     "openverse": "Snowbird ski",
+     "openverse": "Snowbird skiing",
      "must": [
       "snowbird"
      ],
@@ -4777,7 +4777,7 @@
      "depth": 0
     },
     {
-     "openverse": "Alta ski",
+     "openverse": "Alta skiing",
      "must": [
       "alta",
       "alta ski area"
@@ -4812,7 +4812,7 @@
      "depth": 0
     },
     {
-     "openverse": "Brighton ski",
+     "openverse": "Brighton skiing",
      "must": [
       "brighton",
       "brighton resort"
@@ -4847,7 +4847,7 @@
      "depth": 0
     },
     {
-     "openverse": "Solitude ski",
+     "openverse": "Solitude skiing",
      "must": [
       "solitude",
       "solitude mountain resort"
@@ -4882,7 +4882,7 @@
      "depth": 0
     },
     {
-     "openverse": "Sundance ski",
+     "openverse": "Sundance skiing",
      "must": [
       "sundance",
       "sundance mountain resort"
@@ -4921,7 +4921,7 @@
      "depth": 0
     },
     {
-     "openverse": "Aspen ski",
+     "openverse": "Aspen skiing",
      "must": [
       "aspen",
       "aspen mountain"
@@ -4956,7 +4956,7 @@
      "depth": 0
     },
     {
-     "openverse": "Aspen Highlands ski",
+     "openverse": "Aspen Highlands skiing",
      "must": [
       "aspen highlands",
       "aspen"
@@ -4991,7 +4991,7 @@
      "depth": 0
     },
     {
-     "openverse": "Buttermilk ski",
+     "openverse": "Buttermilk skiing",
      "must": [
       "buttermilk",
       "aspen"
@@ -5026,7 +5026,7 @@
      "depth": 0
     },
     {
-     "openverse": "Snowmass ski",
+     "openverse": "Snowmass skiing",
      "must": [
       "snowmass",
       "snowmass village"
@@ -5062,7 +5062,7 @@
      "depth": 0
     },
     {
-     "openverse": "Sunlight ski",
+     "openverse": "Sunlight skiing",
      "must": [
       "sunlight",
       "sunlight mountain resort",
@@ -5098,7 +5098,7 @@
      "depth": 0
     },
     {
-     "openverse": "Steamboat ski",
+     "openverse": "Steamboat skiing",
      "must": [
       "steamboat",
       "steamboat springs"
@@ -5133,7 +5133,7 @@
      "depth": 0
     },
     {
-     "openverse": "Revelstoke ski",
+     "openverse": "Revelstoke skiing",
      "must": [
       "revelstoke",
       "revelstoke mountain resort"
@@ -5169,7 +5169,7 @@
      "depth": 0
     },
     {
-     "openverse": "Kicking Horse ski",
+     "openverse": "Kicking Horse skiing",
      "must": [
       "kicking horse",
       "kicking horse mountain resort",
@@ -5205,7 +5205,7 @@
      "limit": 25
     },
     {
-     "openverse": "Fernie ski",
+     "openverse": "Fernie skiing",
      "must": [
       "fernie",
       "fernie alpine resort"
@@ -5241,7 +5241,7 @@
      "limit": 25
     },
     {
-     "openverse": "RED ski",
+     "openverse": "RED skiing",
      "must": [
       "red",
       "red mountain resort",
@@ -5278,7 +5278,7 @@
      "limit": 25
     },
     {
-     "openverse": "Whitewater ski",
+     "openverse": "Whitewater skiing",
      "must": [
       "whitewater",
       "whitewater mountain resort",
@@ -5314,7 +5314,7 @@
      "depth": 0
     },
     {
-     "openverse": "Panorama ski",
+     "openverse": "Panorama skiing",
      "must": [
       "panorama",
       "panorama mountain resort"
@@ -5349,7 +5349,7 @@
      "limit": 25
     },
     {
-     "openverse": "Kimberley ski",
+     "openverse": "Kimberley skiing",
      "must": [
       "kimberley",
       "kimberley alpine resort"
@@ -5385,7 +5385,7 @@
      "depth": 0
     },
     {
-     "openverse": "Whiteface ski",
+     "openverse": "Whiteface skiing",
      "must": [
       "whiteface",
       "whiteface mountain",
@@ -5422,7 +5422,7 @@
      "depth": 0
     },
     {
-     "openverse": "Gore ski",
+     "openverse": "Gore skiing",
      "must": [
       "gore",
       "gore mountain",
@@ -5459,7 +5459,7 @@
      "limit": 25
     },
     {
-     "openverse": "West ski",
+     "openverse": "West skiing",
      "must": [
       "west",
       "west mountain",
@@ -5496,7 +5496,7 @@
      "limit": 25
     },
     {
-     "openverse": "Titus ski",
+     "openverse": "Titus skiing",
      "must": [
       "titus",
       "titus mountain",
@@ -5533,7 +5533,7 @@
      "limit": 25
     },
     {
-     "openverse": "McCauley ski",
+     "openverse": "McCauley skiing",
      "must": [
       "mccauley",
       "mccauley mountain",
@@ -5570,7 +5570,7 @@
      "limit": 25
     },
     {
-     "openverse": "Oak ski",
+     "openverse": "Oak skiing",
      "must": [
       "oak",
       "oak mountain",
@@ -5606,7 +5606,7 @@
      "depth": 0
     },
     {
-     "openverse": "Hunter ski",
+     "openverse": "Hunter skiing",
      "must": [
       "hunter",
       "hunter mountain"
@@ -5641,7 +5641,7 @@
      "limit": 25
     },
     {
-     "openverse": "Windham ski",
+     "openverse": "Windham skiing",
      "must": [
       "windham",
       "windham mountain club"
@@ -5677,7 +5677,7 @@
      "limit": 25
     },
     {
-     "openverse": "Belleayre ski",
+     "openverse": "Belleayre skiing",
      "must": [
       "belleayre",
       "belleayre mountain",
@@ -5714,7 +5714,7 @@
      "limit": 25
     },
     {
-     "openverse": "Plattekill ski",
+     "openverse": "Plattekill skiing",
      "must": [
       "plattekill",
       "plattekill mountain",
@@ -5751,7 +5751,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mammoth ski",
+     "openverse": "Mammoth skiing",
      "must": [
       "mammoth",
       "mammoth mountain",
@@ -5788,7 +5788,7 @@
      "depth": 0
     },
     {
-     "openverse": "June ski",
+     "openverse": "June skiing",
      "must": [
       "june",
       "june mountain",
@@ -5825,7 +5825,7 @@
      "depth": 0
     },
     {
-     "openverse": "Big Bear ski",
+     "openverse": "Big Bear skiing",
      "must": [
       "big bear",
       "big bear mountain resort",
@@ -5862,7 +5862,7 @@
      "limit": 25
     },
     {
-     "openverse": "High ski",
+     "openverse": "High skiing",
      "must": [
       "high",
       "mountain high",
@@ -5898,7 +5898,7 @@
      "depth": 0
     },
     {
-     "openverse": "Snow Valley ski",
+     "openverse": "Snow Valley skiing",
      "must": [
       "snow valley",
       "running springs"
@@ -5932,7 +5932,7 @@
      "depth": 0
     },
     {
-     "openverse": "Bear Valley ski",
+     "openverse": "Bear Valley skiing",
      "must": [
       "bear valley"
      ],
@@ -5966,7 +5966,7 @@
      "limit": 25
     },
     {
-     "openverse": "Dodge Ridge ski",
+     "openverse": "Dodge Ridge skiing",
      "must": [
       "dodge ridge",
       "pinecrest"
@@ -6001,7 +6001,7 @@
      "limit": 25
     },
     {
-     "openverse": "China Peak ski",
+     "openverse": "China Peak skiing",
      "must": [
       "china peak",
       "lakeshore"
@@ -6037,7 +6037,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mt. Shasta ski",
+     "openverse": "Mt. Shasta skiing",
      "must": [
       "mt. shasta",
       "mt. shasta ski park",
@@ -6073,7 +6073,7 @@
      "depth": 0
     },
     {
-     "openverse": "Tremblant ski",
+     "openverse": "Tremblant skiing",
      "must": [
       "tremblant",
       "mont-tremblant"
@@ -6108,7 +6108,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mont-Sainte-Anne ski",
+     "openverse": "Mont-Sainte-Anne skiing",
      "must": [
       "mont-sainte-anne",
       "beaupré"
@@ -6143,7 +6143,7 @@
      "depth": 0
     },
     {
-     "openverse": "Le Massif de Charlevoix ski",
+     "openverse": "Le Massif de Charlevoix skiing",
      "must": [
       "le massif de charlevoix",
       "petite-rivière-saint-françois"
@@ -6178,7 +6178,7 @@
      "limit": 25
     },
     {
-     "openverse": "Stoneham ski",
+     "openverse": "Stoneham skiing",
      "must": [
       "stoneham",
       "stoneham-et-tewkesbury"
@@ -6213,7 +6213,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mont Sutton ski",
+     "openverse": "Mont Sutton skiing",
      "must": [
       "mont sutton",
       "sutton"
@@ -6248,7 +6248,7 @@
      "depth": 0
     },
     {
-     "openverse": "Bromont, montagne d’expériences ski",
+     "openverse": "Bromont, montagne d’expériences skiing",
      "must": [
       "bromont, montagne d’expériences",
       "bromont"
@@ -6283,7 +6283,7 @@
      "limit": 25
     },
     {
-     "openverse": "Owl’s Head ski",
+     "openverse": "Owl’s Head skiing",
      "must": [
       "owl’s head",
       "mansonville"
@@ -6318,7 +6318,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mont-Orford ski",
+     "openverse": "Mont-Orford skiing",
      "must": [
       "mont-orford",
       "orford"
@@ -6353,7 +6353,7 @@
      "depth": 0
     },
     {
-     "openverse": "Sommet Saint-Sauveur ski",
+     "openverse": "Sommet Saint-Sauveur skiing",
      "must": [
       "sommet saint-sauveur",
       "saint-sauveur"
@@ -6388,7 +6388,7 @@
      "limit": 25
     },
     {
-     "openverse": "Mont Blanc ski",
+     "openverse": "Mont Blanc skiing",
      "must": [
       "mont blanc",
       "mont-blanc"
@@ -6423,7 +6423,7 @@
      "limit": 25
     },
     {
-     "openverse": "Val Saint-Côme ski",
+     "openverse": "Val Saint-Côme skiing",
      "must": [
       "val saint-côme",
       "saint-côme"

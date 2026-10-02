@@ -99,6 +99,13 @@ class ThumbAndEntryTest(unittest.TestCase):
         self.assertEqual(fi.thumb_info(info), ("https://u/x.jpg", 1300, 900))
         self.assertIsNone(fi.thumb_info({}))
 
+    def test_small_original_uses_standard_960_thumb(self):
+        info = {"url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Big_Sky_resort.jpg", "width": 1200, "height": 800}
+        self.assertEqual(fi.thumb_info(info), (
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Big_Sky_resort.jpg/960px-Big_Sky_resort.jpg", 960, 640))
+        small = {"url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/x.jpg", "width": 900, "height": 600}
+        self.assertEqual(fi.thumb_info(small)[1], 900)  # already below 960: original as is
+
     def test_build_entry_shape(self):
         e = fi.build_entry("robert-h-treman", 2, page())
         self.assertEqual(set(e), {"file", "title", "alt", "author", "license", "licenseUrl",

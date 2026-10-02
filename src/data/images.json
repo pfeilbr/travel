@@ -1,5 +1,4 @@
 {
-  "apex-mountain": [],
   "arapahoe-basin": [
     {
       "alt": "Skiers ski past the Zuma ski lift in the Montezuma Bowl area at Arapahoe Basin Ski Area in Colorado.",
@@ -90,6 +89,20 @@
       "width": 1280
     }
   ],
+  "bear-creek": [
+    {
+      "alt": "Bear Creek Mountain Resort Bear Creek Village Near Macungie, PA",
+      "author": "Writerchic99 ( talk ) ( Uploads )",
+      "file": "src/assets/places/bear-creek/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bear-creek.JPG",
+      "title": "File:Bear-creek.JPG",
+      "width": 1280
+    }
+  ],
   "beaver-creek": [
     {
       "alt": "500px provided description: Beaver Creek, Colorado.",
@@ -177,32 +190,6 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lone_Peak_seen_from_Big_Sky_Resort,_2018.jpg",
       "title": "File:Lone Peak seen from Big Sky Resort, 2018.jpg",
-      "width": 1280
-    }
-  ],
-  "big-white": [
-    {
-      "alt": "The Gem Lake Express at Big White Ski Resort",
-      "author": "Hamedog at en.wikipedia",
-      "file": "src/assets/places/big-white/1.jpg",
-      "height": 960,
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gem_Lake_Express.jpg",
-      "title": "File:Gem Lake Express.jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Sking a black diamond",
-      "author": "The original uploader was Mikeh0303 at English Wikipedia .",
-      "file": "src/assets/places/big-white/2.jpg",
-      "height": 960,
-      "license": "CC BY 2.5",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1Mikeblackdimond.jpg",
-      "title": "File:1Mikeblackdimond.jpg",
       "width": 1280
     }
   ],
@@ -336,20 +323,6 @@
       "width": 1280
     }
   ],
-  "bretton-woods": [
-    {
-      "alt": "Top of the Bethlehem Express High Speed Quad at Bretton Woods Resort, NH.",
-      "author": "Storylanding",
-      "file": "src/assets/places/bretton-woods/1.jpg",
-      "height": 960,
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bretton_Woods_Resort.jpg",
-      "title": "File:Bretton Woods Resort.jpg",
-      "width": 1280
-    }
-  ],
   "brighton": [
     {
       "alt": "Brighton Resort, Brighton, United States",
@@ -402,7 +375,6 @@
       "width": 1280
     }
   ],
-  "bromley": [],
   "buttermilk": [
     {
       "alt": "View from Buttermilk, near Aspen, Colorado, in winter.",
@@ -452,21 +424,6 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trails_Glades_Cannon_Mountain_Ski_Area_White_Mountains_Franconia_New_Hampshire.jpg",
       "title": "File:Trails Glades Cannon Mountain Ski Area White Mountains Franconia New Hampshire.jpg",
-      "width": 1280
-    }
-  ],
-  "cherry-peak": [],
-  "cranmore": [
-    {
-      "alt": "Cranmore Mountain Resort (منتجع تزلج فى نيوهامشير)",
-      "author": "Davidafranklin",
-      "file": "src/assets/places/cranmore/1.jpg",
-      "height": 721,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cranmore_Mountain_Resort.jpg",
-      "title": "File:Cranmore Mountain Resort.jpg",
       "width": 1280
     }
   ],
@@ -578,7 +535,6 @@
       "width": 1024
     }
   ],
-  "fernie": [],
   "firelight-camps": [
     {
       "alt": "Buttermilk Falls cascading into its pool in autumn (nearby Buttermilk Falls State Park)",
@@ -919,21 +875,6 @@
       "width": 1280
     }
   ],
-  "homewood": [
-    {
-      "alt": "Homewood, CA",
-      "author": "User:JGonera (WMF)",
-      "file": "src/assets/places/homewood/1.jpg",
-      "height": 960,
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Tahoe_in_winter_seen_from_Homewood,_California.jpg",
-      "title": "File:Lake Tahoe in winter seen from Homewood, California.jpg",
-      "width": 1280
-    }
-  ],
-  "jack-frost": [],
   "june-mountain": [
     {
       "alt": "June Mtn Ski Trip",
@@ -1086,7 +1027,6 @@
       "width": 1280
     }
   ],
-  "king-pine": [],
   "kirkwood": [
     {
       "alt": "Snowboarder and skier from a ski lift, Kirkwood, California, 2009",
@@ -1125,7 +1065,6 @@
       "width": 1280
     }
   ],
-  "kissing-bridge": [],
   "laurel-mountain": [
     {
       "alt": "Laurel mountain ski area",
@@ -1204,7 +1143,6 @@
       "width": 1280
     }
   ],
-  "mad-river-glen": [],
   "magic-mountain": [
     {
       "alt": "Magic Mountain Ski Area",
@@ -1373,16 +1311,28 @@
   ],
   "mount-washington-bc": [
     {
-      "alt": "Mount Washington from Forbidden Plateau in the Summer",
-      "author": "YubYub41",
+      "alt": "Mount Washington Skiing (5556047971)",
+      "author": "Doug Hay",
       "file": "src/assets/places/mount-washington-bc/1.jpg",
-      "height": 960,
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "height": 720,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Washington_Summer.jpg",
-      "title": "File:Mount Washington Summer.jpg",
-      "width": 1280
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=179698439",
+      "title": "Openverse:fdbe3551-7a03-4c4d-9273-ade95e921f24",
+      "width": 960
+    },
+    {
+      "alt": "Mount Washington Skiing",
+      "author": "Doug Hay",
+      "file": "src/assets/places/mount-washington-bc/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/7671700@N08/5556047971",
+      "title": "Openverse:35434970-e042-4829-935d-04794521b019",
+      "width": 1024
     }
   ],
   "mountain-high": [
@@ -1515,7 +1465,6 @@
       "width": 1600
     }
   ],
-  "nordic-valley": [],
   "northstar": [
     {
       "alt": "The Summit Smokehouse, at the peak of Mt.",
@@ -1656,7 +1605,6 @@
       "width": 1280
     }
   ],
-  "peek-n-peak": [],
   "pico": [
     {
       "alt": "Montanha do Pico, aspectos 5 ilha do Pico, Açores, Portugal",
@@ -1680,20 +1628,6 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Peak_Where_The_Sun_Touches_(Pico_Mountain).jpg",
       "title": "File:The Peak Where The Sun Touches (Pico Mountain).jpg",
-      "width": 1280
-    }
-  ],
-  "purgatory": [
-    {
-      "alt": "Purgatory, CO Aspens at Sunset, by John Fowler (snowpeak)",
-      "author": "John Fowler snowpeak",
-      "file": "src/assets/places/purgatory/1.jpg",
-      "height": 857,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aspens_at_Sunset,_Purgatory.jpg",
-      "title": "File:Aspens at Sunset, Purgatory.jpg",
       "width": 1280
     }
   ],
@@ -2013,21 +1947,6 @@
       "width": 1280
     }
   ],
-  "showdown": [],
-  "sierra-at-tahoe": [
-    {
-      "alt": "Sierra-at-Tahoe 2",
-      "author": "LittleT889",
-      "file": "src/assets/places/sierra-at-tahoe/1.jpg",
-      "height": 960,
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sierra-at-Tahoe_2.jpg",
-      "title": "File:Sierra-at-Tahoe 2.jpg",
-      "width": 1280
-    }
-  ],
   "silverstar": [
     {
       "alt": "Ski Lift at Silver Star Resort in summer 2013",
@@ -2066,22 +1985,6 @@
       "width": 1280
     }
   ],
-  "ski-cooper": [],
-  "ski-sawmill": [],
-  "smugglers-notch": [
-    {
-      "alt": "Soldiers climbing Smugglers' Notch",
-      "author": "Tech. Sgt. Sarah Mattison",
-      "file": "src/assets/places/smugglers-notch/1.jpg",
-      "height": 854,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soldiers_climbing_Smugglers'_Notch.jpg",
-      "title": "File:Soldiers climbing Smugglers' Notch.jpg",
-      "width": 1280
-    }
-  ],
   "solitude": [
     {
       "alt": "500px provided description: Cold morning at spruces camp ground just west of Solitude Ski Resort in Big Cottonwood Canyon.",
@@ -2108,13 +2011,23 @@
       "width": 1280
     }
   ],
-  "song-mountain": [],
-  "stowe": [],
   "stratton": [
+    {
+      "alt": "stratton mountain vermont ski trails",
+      "author": "Art01852",
+      "file": "src/assets/places/stratton/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/31491248@N00/388193674",
+      "title": "Openverse:b45e2e82-aaa4-4022-ab2d-117aee9e5d07",
+      "width": 1024
+    },
     {
       "alt": "Outside the Starting Gate Ski Shop in Wardsboro, VT, was this pile of old ski boots.",
       "author": "Rudi Riet from Washington, DC, United States",
-      "file": "src/assets/places/stratton/1.jpg",
+      "file": "src/assets/places/stratton/2.jpg",
       "height": 960,
       "license": "CC BY-SA 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
@@ -2122,6 +2035,18 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stack_of_boots_(3074940137).jpg",
       "title": "File:Stack of boots (3074940137).jpg",
       "width": 1280
+    },
+    {
+      "alt": "Stratton, VT, from the summit of Sunapee",
+      "author": "randomduck",
+      "file": "src/assets/places/stratton/3.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/96463101@N00/119508523",
+      "title": "Openverse:c3f179e9-e4f0-4483-a5a3-4ae7c0ca6b25",
+      "width": 1024
     }
   ],
   "sugar-bowl": [
@@ -2252,7 +2177,6 @@
       "width": 1280
     }
   ],
-  "titus-mountain": [],
   "tussey-mountain": [
     {
       "alt": "2024-09-04 17 13 01 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania",

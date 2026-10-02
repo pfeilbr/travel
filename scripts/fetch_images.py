@@ -135,8 +135,15 @@ def license_info(ext: dict) -> tuple[str, str] | None:
     return label, url
 
 
+FALLBACK_THUMB = 960  # the next standard width down
+
+
 def thumb_info(imageinfo: dict) -> tuple[str, int, int] | None:
-    """Pick the download URL and its dimensions: the 1600px thumb, else the original."""
+    """Pick the download URL and its dimensions: the standard-width thumb, else the original.
+
+    Commons hands back the original file when it is narrower than THUMB_WIDTH; Wikimedia throttles
+    original downloads hard, so ask for the standard 960px thumbnail instead when the file allows it.
+    """
     url = imageinfo.get("thumburl") or imageinfo.get("url")
     if not url:
         return None
@@ -144,6 +151,10 @@ def thumb_info(imageinfo: dict) -> tuple[str, int, int] | None:
     height = imageinfo.get("thumbheight") or imageinfo.get("height")
     if not width or not height:
         return None
+    m = re.match(r"(https://upload\.wikimedia\.org/wikipedia/commons/)([0-9a-f]/[0-9a-f]{2})/([^/?]+)$", url)
+    if m and int(width) > FALLBACK_THUMB:
+        url = f"{m[1]}thumb/{m[2]}/{m[3]}/{FALLBACK_THUMB}px-{m[3]}"
+        width, height = FALLBACK_THUMB, round(int(height) * FALLBACK_THUMB / int(width))
     return url, int(width), int(height)
 
 
@@ -463,8 +474,9 @@ def openverse_search(query: str, page_size: int = 20) -> list[dict]:
     if wait > 0:
         time.sleep(wait)
     _last_openverse = time.time()
-    q = urllib.parse.urlencode({"q": query, "license": "by,by-sa,cc0,pdm", "category": "photograph",
-                                "aspect_ratio": "wide", "page_size": str(page_size), "mature": "false"})
+    # Category/aspect filters drop most matches (tags are sparse); is_candidate checks shape locally.
+    q = urllib.parse.urlencode({"q": query, "license": "by,by-sa,cc0,pdm", "page_size": str(page_size),
+                                "mature": "false"})
     d = json.loads(_request(f"{OPENVERSE}?{q}", tries=2))
     return [p for p in (openverse_page(r) for r in d.get("results", [])) if p]
 
