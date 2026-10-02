@@ -242,7 +242,7 @@ const resorts: Resort[] = [
     ticket: { from: 125, note: '2025-26 online price for Dec 22–23; dynamic pricing varies by date, so buy ahead' },
     activities: ['night-skiing', 'terrain-park', 'tubing', 'kids'],
     lodging: [
-      { name: 'Whitetail Mountainside Village', kind: 'condo', what: 'Condos, apartments and townhomes next to the slopes, some ski-in/ski-out, with kitchens and laundry.', url: 'http://www.rentwhitetail.com/', distance: 'Slopeside' },
+      { name: 'Whitetail Mountainside Village', kind: 'condo', what: 'Condos, apartments and townhomes next to the slopes, some ski-in/ski-out, with kitchens and laundry.', url: 'https://www.rentwhitetail.com/', distance: 'Slopeside' },
       { name: 'Mercersburg Inn', kind: 'inn', what: 'Historic mansion with 17 rooms, fireplaces, a full breakfast and Byron’s Dining Room.', url: 'https://www.mercersburginn.com/', distance: '15 min drive' },
       { name: 'SpringHill Suites Hagerstown', kind: 'hotel', what: 'All-suite chain hotel with breakfast and an indoor pool.', url: 'https://www.marriott.com/en-us/hotels/hgrsh-springhill-suites-hagerstown/overview/', distance: '30 min drive' },
     ],
