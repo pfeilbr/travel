@@ -141,7 +141,85 @@
       "width": 1280
     }
   ],
+  "brighton": [
+    {
+      "alt": "Brighton Resort, Brighton, United States",
+      "author": "Tyson Dudley ty_dudley",
+      "file": "src/assets/places/brighton/1.jpg",
+      "height": 853,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skiing_in_Utah_(Unsplash).jpg",
+      "title": "File:Skiing in Utah (Unsplash).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Hike Lake Mary dam and reservoir.",
+      "author": "Intermountain Forest Service, USDA Region 4 Photography",
+      "file": "src/assets/places/brighton/2.jpg",
+      "height": 848,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brighton_Skii_lodge_Lake_Mary_dam_and_reservoir_DSC_0502_(22783476930).jpg",
+      "title": "File:Brighton Skii lodge Lake Mary dam and reservoir DSC 0502 (22783476930).jpg",
+      "width": 1280
+    }
+  ],
+  "bristol-mountain": [
+    {
+      "alt": "High speed chairlift at en:Bristol Mountain ski resort in NY.",
+      "author": "B137",
+      "file": "src/assets/places/bristol-mountain/1.jpg",
+      "height": 960,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galaxy_lift_Bristol.jpg",
+      "title": "File:Galaxy lift Bristol.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "The only snow on the mountain at the time was snow from artificial snowmaking.",
+      "author": "B137",
+      "file": "src/assets/places/bristol-mountain/2.jpg",
+      "height": 960,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trails_closed_sparse_snow_at_alpine_ski_mountain_Feb_2017_NY.jpg",
+      "title": "File:Trails closed sparse snow at alpine ski mountain Feb 2017 NY.jpg",
+      "width": 1280
+    }
+  ],
   "camelback": [],
+  "cannon": [
+    {
+      "alt": "Cannon Mountain Ski Area Chairlift View Franconia Range White Mountains New Hampshire",
+      "author": "EgorovaSvetlana",
+      "file": "src/assets/places/cannon/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cannon_Mountain_Ski_Area_Chairlift_View_Franconia_Range_White_Mountains_New_Hampshire.jpg",
+      "title": "File:Cannon Mountain Ski Area Chairlift View Franconia Range White Mountains New Hampshire.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Trails Glades Cannon Mountain Ski Area White Mountains Franconia New Hampshire",
+      "author": "EgorovaSvetlana",
+      "file": "src/assets/places/cannon/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trails_Glades_Cannon_Mountain_Ski_Area_White_Mountains_Franconia_New_Hampshire.jpg",
+      "title": "File:Trails Glades Cannon Mountain Ski Area White Mountains Franconia New Hampshire.jpg",
+      "width": 1280
+    }
+  ],
   "crotched-mountain": [
     {
       "alt": "Groomed Trails",
@@ -384,6 +462,20 @@
       "width": 1600
     }
   ],
+  "grouse-mountain": [
+    {
+      "alt": "Grouse on the ski run",
+      "author": "Ruth and Dave",
+      "file": "src/assets/places/grouse-mountain/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/95142644@N00/52127928996",
+      "title": "Openverse:051310b2-7d6e-4bfb-810f-c8ccfd2ef218",
+      "width": 1024
+    }
+  ],
   "gunstock": [
     {
       "alt": "Snowmaking Gunstock Mountain Resort Gilford New Hampshire",
@@ -496,6 +588,32 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_over_Seneca_Lake_-_New_York_-_US.jpg",
       "title": "File:Sunrise over Seneca Lake - New York - US.jpg",
       "width": 1600
+    }
+  ],
+  "hidden-valley-pa": [
+    {
+      "alt": "Hidden Valley Grooming",
+      "author": "LValleyGirl26",
+      "file": "src/assets/places/hidden-valley-pa/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hidden_Valley_Grooming.jpg",
+      "title": "File:Hidden Valley Grooming.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Tyrol Lodge, Hidden Valley, 1947",
+      "author": "Darchitectbuff",
+      "file": "src/assets/places/hidden-valley-pa/2.jpg",
+      "height": 813,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:TyrolLodge.jpg",
+      "title": "File:TyrolLodge.jpg",
+      "width": 1280
     }
   ],
   "homewood": [
@@ -651,6 +769,7 @@
       "width": 1280
     }
   ],
+  "kissing-bridge": [],
   "laurel-mountain": [
     {
       "alt": "Laurel mountain ski area",
@@ -1301,6 +1420,7 @@
       "width": 1280
     }
   ],
+  "ski-sawmill": [],
   "stratton": [
     {
       "alt": "Outside the Starting Gate Ski Shop in Wardsboro, VT, was this pile of old ski boots.",
@@ -1414,6 +1534,20 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:SPR_Summer_Activities-6.jpg",
       "title": "File:SPR Summer Activities-6.jpg",
+      "width": 1280
+    }
+  ],
+  "tussey-mountain": [
+    {
+      "alt": "2024-09-04 17 13 01 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania",
+      "author": "Famartin",
+      "file": "src/assets/places/tussey-mountain/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-09-04_17_13_01_View_towards_the_Tussey_Mountain_Ski_Area_from_the_Blue_Trail_between_station_7_and_station_8_within_the_Mount_Nittany_Conservancy_in_College_Township,_Centre_County,_Pennsylvania.jpg",
+      "title": "File:2024-09-04 17 13 01 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania.jpg",
       "width": 1280
     }
   ],
