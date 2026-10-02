@@ -551,6 +551,46 @@
       "width": 1600
     }
   ],
+  "pats-peak": [
+    {
+      "alt": "NOIRLab Director Pat McCarthy speaking (4W8A5975-CC)",
+      "author": "NOIRLab/NSF/AURA/R. Sparks",
+      "file": "src/assets/places/pats-peak/1.jpg",
+      "height": 853,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NOIRLab_Director_Pat_McCarthy_speaking_(4W8A5975-CC).jpg",
+      "title": "File:NOIRLab Director Pat McCarthy speaking (4W8A5975-CC).jpg",
+      "width": 1280
+    }
+  ],
+  "ragged-mountain": [
+    {
+      "alt": "Southward view of Orange Mountain and Ragged Mountain from Cardigan Mountain in New Hampshire.",
+      "author": "MConradWard",
+      "file": "src/assets/places/ragged-mountain/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orange_Mountain_%26_Ragged_Mountain_from_Cardigan_Mountain.jpg",
+      "title": "File:Orange Mountain & Ragged Mountain from Cardigan Mountain.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "View of Ragged Mountain from south shore of Elbow Pond.",
+      "author": "Tom Morgan",
+      "file": "src/assets/places/ragged-mountain/2.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ragged_Mountain_(New_Hampshire)_east_side_from_Elbow_Pond.jpg",
+      "title": "File:Ragged Mountain (New Hampshire) east side from Elbow Pond.jpg",
+      "width": 1280
+    }
+  ],
   "robert-h-treman": [
     {
       "alt": "Lucifer Falls in morning light with autumn color",
