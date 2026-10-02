@@ -339,6 +339,32 @@
       "width": 1600
     }
   ],
+  "hidden-valley-pa": [
+    {
+      "alt": "Hidden Valley Grooming",
+      "author": "LValleyGirl26",
+      "file": "src/assets/places/hidden-valley-pa/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hidden_Valley_Grooming.jpg",
+      "title": "File:Hidden Valley Grooming.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Tyrol Lodge, Hidden Valley, 1947",
+      "author": "Darchitectbuff",
+      "file": "src/assets/places/hidden-valley-pa/2.jpg",
+      "height": 813,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:TyrolLodge.jpg",
+      "title": "File:TyrolLodge.jpg",
+      "width": 1280
+    }
+  ],
   "keuka-lake": [
     {
       "alt": "Keuka Lake and vineyard hills from Keuka Lake State Park",
@@ -805,6 +831,7 @@
       "width": 1600
     }
   ],
+  "saskadena-six": [],
   "selkirk-shores": [
     {
       "alt": "Stone Selkirk Lighthouse at the mouth of the Salmon River (nearby Selkirk Lighthouse, Port Ontario)",
