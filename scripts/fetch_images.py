@@ -27,6 +27,7 @@ keys so the output is stable. Stdlib only.
 from __future__ import annotations
 
 import argparse
+import fcntl
 import html
 import json
 import re
@@ -588,6 +589,19 @@ def process_place(place_id: str, place: dict, old: list[dict], force: bool, root
     return entries
 
 
+def save_entry(data_file: Path, pid: str, entries: list[dict], places: dict) -> None:
+    """Merge one place's entries into images.json under a lock, so parallel runs on different ids are safe."""
+    data_file.parent.mkdir(parents=True, exist_ok=True)
+    with open(data_file.with_suffix(".lock"), "w") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        current = json.loads(data_file.read_text(encoding="utf-8")) if data_file.exists() else {}
+        current = {k: v for k, v in current.items() if k in places}
+        current[pid] = entries
+        tmp = data_file.with_suffix(".tmp")
+        tmp.write_text(render_json(current), encoding="utf-8")
+        tmp.replace(data_file)
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--only", help="comma-separated place ids")
@@ -609,12 +623,11 @@ def main(argv: list[str] | None = None) -> int:
     existing = json.loads(data_file.read_text(encoding="utf-8")) if data_file.exists() else {}
     result = {k: v for k, v in existing.items() if k in places}
     for pid in only:
-        print(f"{pid}:")
+        print(f"{pid}:", flush=True)
         result[pid] = process_place(pid, places[pid], existing.get(pid, []), args.force, root,
                                     args.candidates)
         if not args.candidates:  # save as we go so an interrupted run keeps its progress
-            data_file.parent.mkdir(parents=True, exist_ok=True)
-            data_file.write_text(render_json(result), encoding="utf-8")
+            save_entry(data_file, pid, result[pid], places)
     if not args.candidates:
         print(f"wrote {DATA_PATH}")
     return 0
