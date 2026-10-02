@@ -519,6 +519,156 @@
    ],
    "exclude": [],
    "alt": {}
+  },
+  "arizona-snowbowl": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Arizona_Snowbowl",
+     "depth": 1
+    },
+    {
+     "search": "Arizona Snowbowl skiing",
+     "limit": 30
+    },
+    {
+     "search": "Arizona Snowbowl San Francisco Peaks winter",
+     "limit": 30
+    },
+    {
+     "openverse": "Arizona Snowbowl ski",
+     "must": [
+      "arizona snowbowl",
+      "flagstaff"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "arizona snowbowl"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "sunrise-park": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Sunrise_Park_Resort",
+     "depth": 1
+    },
+    {
+     "search": "Sunrise Park Resort Arizona",
+     "limit": 30
+    },
+    {
+     "search": "Sunrise ski area White Mountains Arizona",
+     "limit": 30
+    },
+    {
+     "openverse": "Sunrise Park ski",
+     "must": [
+      "sunrise park",
+      "sunrise park resort",
+      "greer"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "sunrise park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mt-lemmon": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Mount_Lemmon_Ski_Valley",
+     "depth": 1
+    },
+    {
+     "search": "Mount Lemmon Ski Valley",
+     "limit": 30
+    },
+    {
+     "search": "Mount Lemmon snow Summerhaven",
+     "limit": 30
+    },
+    {
+     "openverse": "Mount Lemmon ski",
+     "must": [
+      "mount lemmon",
+      "mount lemmon ski valley",
+      "summerhaven"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mount lemmon"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "big-sky": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "search": "\"Big Sky Resort\"",
+     "limit": 30
+    },
+    {
+     "openverse": "Big Sky ski",
+     "must": [
+      "big sky",
+      "big sky resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "big sky"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }

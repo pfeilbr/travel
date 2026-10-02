@@ -1,4 +1,30 @@
 {
+  "arizona-snowbowl": [
+    {
+      "alt": "Fall color at the Arizona Snowbowl, October 5, 2016.",
+      "author": "Coconino National Forest",
+      "file": "src/assets/places/arizona-snowbowl/1.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_the_Arizona_Snowbowl_(29530992623).jpg",
+      "title": "File:View from the Arizona Snowbowl (29530992623).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Fall color at Aspen Corner on Snowbowl Road, October 5, 2016.",
+      "author": "Coconino National Forest",
+      "file": "src/assets/places/arizona-snowbowl/2.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowbowl_Road_Aspen_Corner_(29530983353).jpg",
+      "title": "File:Snowbowl Road Aspen Corner (29530983353).jpg",
+      "width": 1280
+    }
+  ],
   "firelight-camps": [
     {
       "alt": "Buttermilk Falls cascading into its pool in autumn (nearby Buttermilk Falls State Park)",
