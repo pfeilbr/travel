@@ -2987,6 +2987,228 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "telluride": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Telluride Ski Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Telluride ski",
+     "must": [
+      "telluride",
+      "telluride ski resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "telluride"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "crested-butte": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Crested Butte Mountain Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Crested Butte ski",
+     "must": [
+      "crested butte",
+      "crested butte mountain resort",
+      "mt. crested butte"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "crested butte"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "purgatory": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Purgatory Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Purgatory ski",
+     "must": [
+      "purgatory",
+      "purgatory resort",
+      "durango"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "purgatory"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "wolf-creek": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Wolf Creek Ski Area",
+     "depth": 0
+    },
+    {
+     "openverse": "Wolf Creek ski",
+     "must": [
+      "wolf creek",
+      "wolf creek ski area",
+      "pagosa springs"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "wolf creek"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "monarch-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Monarch Mountain (ski area)",
+     "depth": 0
+    },
+    {
+     "openverse": "Monarch ski",
+     "must": [
+      "monarch",
+      "monarch mountain",
+      "salida"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "monarch"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "powderhorn": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Powderhorn ski Grand Mesa",
+     "limit": 25
+    },
+    {
+     "openverse": "Powderhorn ski",
+     "must": [
+      "powderhorn",
+      "powderhorn mountain resort",
+      "mesa"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "powderhorn"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "silverton-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Silverton Mountain ski area",
+     "limit": 25
+    },
+    {
+     "openverse": "Silverton ski",
+     "must": [
+      "silverton",
+      "silverton mountain"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "silverton"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }

@@ -1010,6 +1010,44 @@
       "width": 1024
     }
   ],
+  "whistler-blackcomb": [
+    {
+      "alt": "MSH: My winter is your summer.",
+      "author": "Ruth Hartnup from Vancouver, Canada",
+      "file": "src/assets/places/whistler-blackcomb/1.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_loneliness_of_the_long_distance_snowboarder_(2575684626).jpg",
+      "title": "File:The loneliness of the long distance snowboarder (2575684626).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Four weeks ago this was covered in snow.",
+      "author": "Ruth Hartnup from Vancouver, Canada",
+      "file": "src/assets/places/whistler-blackcomb/2.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Start_of_a_summer_skiing_day_(2572297071).jpg",
+      "title": "File:Start of a summer skiing day (2572297071).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "October snow, Whistler Peak",
+      "author": "Ruth Hartnup from Vancouver, Canada",
+      "file": "src/assets/places/whistler-blackcomb/3.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:October_snow,_Whistler_Peak_(3987455206).jpg",
+      "title": "File:October snow, Whistler Peak (3987455206).jpg",
+      "width": 1280
+    }
+  ],
   "whitetail": [
     {
       "alt": "The mogul-filled Exhibition expert ski slope as seen from the ski lift at Whitetail Mountain Resort.",

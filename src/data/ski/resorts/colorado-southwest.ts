@@ -426,7 +426,7 @@ const resorts: Resort[] = [
       summitFt: 13487,
       baseFt: 10400,
       verticalFt: 3087,
-      acres: 26819,
+      acres: 1819, // lift-served; the official 26,819 includes heli-ski terrain
       trails: 69,
       lifts: 1,
       snowfallIn: 400,
