@@ -25,6 +25,44 @@
       "width": 1280
     }
   ],
+  "aspen-highlands": [
+    {
+      "alt": "Aspen Highlands Aspen Mountain",
+      "author": "This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "file": "src/assets/places/aspen-highlands/1.jpg",
+      "height": 854,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_spring_skiing_on_Steeplechase.jpg",
+      "title": "File:Aspen Highlands spring skiing on Steeplechase.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Spring skiing on Aspen Mountain Highlights - The Broadway run",
+      "author": "This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "file": "src/assets/places/aspen-highlands/2.jpg",
+      "height": 792,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_spring_skiing.jpg",
+      "title": "File:Aspen Highlands spring skiing.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "ALL THE LIFTS AT ASPEN ARE CHAIRLIFTS. THIS ONE IS GOING UP 11,800 FEET ON ASPEN HIGHLANDS MOUNTAIN, HIGHEST SKI AREA... - NARA - 554248",
+      "author": "Hoffman, Ron, Photographer ( NARA record: 8464743 )",
+      "file": "src/assets/places/aspen-highlands/3.jpg",
+      "height": 867,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ALL_THE_LIFTS_AT_ASPEN_ARE_CHAIRLIFTS._THIS_ONE_IS_GOING_UP_11,800_FEET_ON_ASPEN_HIGHLANDS_MOUNTAIN,_HIGHEST_SKI_AREA..._-_NARA_-_554248.jpg",
+      "title": "File:ALL THE LIFTS AT ASPEN ARE CHAIRLIFTS. THIS ONE IS GOING UP 11,800 FEET ON ASPEN HIGHLANDS MOUNTAIN, HIGHEST SKI AREA... - NARA - 554248.jpg",
+      "width": 1280
+    }
+  ],
   "beaver-creek": [
     {
       "alt": "500px provided description: Beaver Creek, Colorado.",
@@ -138,6 +176,44 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ski_lodge_in_Boreal.jpg",
       "title": "File:Ski lodge in Boreal.jpg",
+      "width": 1280
+    }
+  ],
+  "breckenridge": [
+    {
+      "alt": "View of Breckenridge Ski Area from the west peak of Dercum Mountain, as the start of Ranger run just west of the Summit House",
+      "author": "Ahodges7",
+      "file": "src/assets/places/breckenridge/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Breckenridge_Ski_Area_from_Dercum_Mountain,_Keystone_Ski_Area.jpg",
+      "title": "File:Breckenridge Ski Area from Dercum Mountain, Keystone Ski Area.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "A view of Peak 8 from Quicksilver Super6 at w:Breckenridge Ski Resort .",
+      "author": "DReifGalaxyM31",
+      "file": "src/assets/places/breckenridge/2.jpg",
+      "height": 720,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peak_8_from_Peak_9.JPG",
+      "title": "File:Peak 8 from Peak 9.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Peak 9 at w:Breckenridge Ski Resort .",
+      "author": "DReifGalaxyM31",
+      "file": "src/assets/places/breckenridge/3.jpg",
+      "height": 720,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peak_9.JPG",
+      "title": "File:Peak 9.JPG",
       "width": 1280
     }
   ],
@@ -276,6 +352,7 @@
       "width": 1280
     }
   ],
+  "fernie": [],
   "firelight-camps": [
     {
       "alt": "Buttermilk Falls cascading into its pool in autumn (nearby Buttermilk Falls State Park)",
@@ -1548,6 +1625,32 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-09-04_17_13_01_View_towards_the_Tussey_Mountain_Ski_Area_from_the_Blue_Trail_between_station_7_and_station_8_within_the_Mount_Nittany_Conservancy_in_College_Township,_Centre_County,_Pennsylvania.jpg",
       "title": "File:2024-09-04 17 13 01 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania.jpg",
+      "width": 1280
+    }
+  ],
+  "waterville-valley": [
+    {
+      "alt": "Clouds behind Green Peak at Waterville Valley.",
+      "author": "MConradWard",
+      "file": "src/assets/places/waterville-valley/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waterville_Valley_Ski_Resort_1.jpg",
+      "title": "File:Waterville Valley Ski Resort 1.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Waterville Valley Resort Resort ride and ski",
+      "author": "EgorovaSvetlana",
+      "file": "src/assets/places/waterville-valley/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waterville_Valley_Resort_Resort_ski.jpg",
+      "title": "File:Waterville Valley Resort Resort ski.jpg",
       "width": 1280
     }
   ],
