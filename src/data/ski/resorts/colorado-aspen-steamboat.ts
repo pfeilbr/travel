@@ -132,7 +132,7 @@ const resorts: Resort[] = [
       { name: 'The Ritz-Carlton Club, Aspen Highlands', kind: 'ski-in/ski-out', what: 'Residence-style suites in Highlands Village, a few steps from the lifts.', url: 'https://www.ritzcarltonclub.com/accommodations/ritz-carlton-club-destinations/aspen-highlands-colorado/', distance: 'Slopeside' },
       { name: 'Aspen Meadows Resort', kind: 'hotel', what: 'A 98-suite resort designed by Herbert Bayer on the Aspen Institute campus in the West End.', url: 'https://www.aspenmeadows.com/', distance: '10 min drive' },
       { name: 'Annabelle Inn', kind: 'inn', what: 'European-style ski lodge on Main Street with free breakfast, two outdoor hot tubs and a fire pit.', url: 'https://www.annabelleinn.com/', distance: '10 min drive' },
-      { name: 'St. Moritz Lodge', kind: 'lodge', what: 'West End budget lodge with breakfast, a heated pool and a free winter happy hour, on the bus route to Highlands.', url: 'https://www.stmoritzlodge.com/', distance: '10 min drive' },
+      { name: 'St. Moritz Lodge', kind: 'lodge', what: 'West End budget lodge with breakfast, a heated pool and a free winter happy hour.', url: 'https://www.stmoritzlodge.com/', distance: '10 min drive' },
     ],
     thingsToDo: [
       { name: 'Cloud Nine Alpine Bistro', kind: 'eat', what: 'Alpine hut with fondue, wine and Maroon Bells views. Its lunch turns into a champagne party, so book ahead.', url: as('/visit/dining/aspen-highlands/cloud-nine-alpine-bistro'), distance: 'On mountain' },
@@ -239,7 +239,7 @@ const resorts: Resort[] = [
     ticket: aspenTicket,
     activities: ['terrain-park', 'tubing', 'mountain-coaster', 'scenic-lift', 'ice-skating', 'snowshoeing', 'nordic', 'kids', 'spa'],
     lodging: [
-      { name: 'Viceroy Snowmass', kind: 'ski-in/ski-out', what: 'Upscale hotel and residences in Base Village with a spa and a big heated pool.', url: 'https://www.viceroyhotelsandresorts.com/snowmass', distance: 'Slopeside' },
+      { name: 'Viceroy Snowmass', kind: 'ski-in/ski-out', what: 'Upscale hotel and residences in Base Village, steps from the lifts.', url: 'https://www.viceroyhotelsandresorts.com/snowmass', distance: 'Slopeside' },
       { name: 'Limelight Snowmass', kind: 'slopeside', what: 'Relaxed, family-friendly hotel at the base of the Elk Camp Gondola in Base Village.', url: 'https://www.limelighthotels.com/snowmass', distance: 'Slopeside' },
       { name: 'Stonebridge Inn', kind: 'hotel', what: 'Updated hotel a short walk from the slopes, with breakfast at Heather’s, a heated pool, hot tubs and free airport and town shuttles.', url: 'https://www.stonebridgeinn.com/', distance: 'Short walk' },
     ],
@@ -249,7 +249,7 @@ const resorts: Resort[] = [
       { name: 'Elk Camp Gondola sightseeing', kind: 'scenic-lift', what: 'Non-skiers can ride up for lunch, views of the Maroon Bells, the coaster and tubing.', url: as('/visit/tickets-and-passes/sightseeing-and-tickets'), distance: 'Base Village' },
       { name: 'Snowcat dinner at The Cabin', kind: 'eat', what: 'A snowcat ride up to the mid-mountain Cabin for a rustic dinner.', url: as('/visit/activities/winter/snowcat-dinners'), distance: 'On mountain' },
       { name: 'ACES snowshoe tour', kind: 'snowshoeing', what: 'Two-hour naturalist-led snowshoe walk along a creek in the ski area.', url: as('/visit/activities/winter/snowshoe-tours'), distance: 'On mountain' },
-      { name: 'Base Village ice rink', kind: 'ice-skating', what: 'Outdoor rink in Base Village with skate rentals, disco nights and a curling series.', url: 'https://www.gosnowmass.com/activity/ice-skating/', distance: 'Base Village' },
+      { name: 'Base Village ice rink', kind: 'ice-skating', what: 'Outdoor rink in Base Village with disco skate nights and a curling series.', url: 'https://www.gosnowmass.com/activity/ice-skating/', distance: 'Base Village' },
       { name: 'Cross-country skiing', kind: 'nordic', what: 'Free groomed nordic trails around Snowmass Village, linked to the valley-wide network.', url: as('/visit/activities/winter/cross-country-skiing'), distance: '5 min drive' },
       { name: 'Anderson Ranch Arts Center', kind: 'museum', what: 'Respected art school with galleries and talks on a ranch campus.', url: 'https://www.andersonranch.org/', distance: '5 min drive' },
     ],
@@ -296,10 +296,10 @@ const resorts: Resort[] = [
     ticket: { from: 74, note: 'Online adult price, weekday or weekend (2025-26). The Sunny 6 Pack of transferable tickets starts at $349 through Nov 30.' },
     activities: ['terrain-park', 'snowmobiling', 'nordic', 'snowshoeing', 'hot-springs', 'spa', 'kids'],
     lodging: [
-      { name: 'The Brettelberg Condominiums', kind: 'ski-in/ski-out', what: 'The only ski-in/ski-out lodging at Sunlight, simple condos right on the slopes.', url: 'https://www.brettelberg.com/', distance: 'Slopeside' },
+      { name: 'The Brettelberg Condominiums', kind: 'ski-in/ski-out', what: 'Condos on the slopes, and the only ski-in/ski-out lodging at Sunlight.', url: 'https://www.brettelberg.com/', distance: 'Slopeside' },
       { name: 'Glenwood Hot Springs Lodge', kind: 'hotel', what: 'Hotel next to the giant hot springs pool, sold in Sunlight’s ski-and-swim packages.', url: 'https://www.hotspringspool.com/stay/', distance: '25 min drive' },
       { name: 'Hotel Colorado', kind: 'hotel', what: 'Grand 1893 hotel downtown; the Sunlight ski shuttle stops at the front door.', url: 'https://www.hotelcolorado.com/', distance: '25 min drive' },
-      { name: 'Hotel Maxwell Anderson', kind: 'hotel', what: 'Boutique hotel in the old Hotel Denver building by the train station, above the Glenwood Canyon Brewpub.', url: 'https://maxwellandersonhotel.com/', distance: '25 min drive' },
+      { name: 'Hotel Maxwell Anderson', kind: 'hotel', what: 'Boutique hotel in the former Hotel Denver, across from the train station, with the Glenwood Canyon Brewpub downstairs.', url: 'https://maxwellandersonhotel.com/', distance: '25 min drive' },
       { name: 'Glenwood Springs Cedar Lodge', kind: 'hotel', what: 'Value motel on Grand Avenue with indoor and outdoor pools, hot tubs and kitchen suites, steps from the free city bus.', url: 'https://glenwoodspringscedarlodge.com/', distance: '20 min drive' },
     ],
     thingsToDo: [
@@ -354,14 +354,14 @@ const resorts: Resort[] = [
     ticket: { from: 199, note: '2025-26 mid-December weekday rate online; dynamic, and weekends ran about $279. A day ticket includes night skiing that evening.' },
     activities: ['night-skiing', 'terrain-park', 'tubing', 'ice-skating', 'scenic-lift', 'snowshoeing', 'nordic', 'snowmobiling', 'cat-skiing', 'hot-springs', 'nightlife', 'kids'],
     lodging: [
-      { name: 'One Steamboat Place', kind: 'ski-in/ski-out', what: 'Luxury residences right at the gondola, with a pool and hot tubs.', url: 'https://www.onesteamboatplace.com/', distance: 'Slopeside' },
-      { name: 'Steamboat Grand', kind: 'slopeside', what: 'The resort’s big hotel and condo building, across the plaza from the gondola.', url: sb('/plan-your-trip/lodging/steamboat-grand'), distance: 'Short walk to the gondola' },
+      { name: 'One Steamboat Place', kind: 'ski-in/ski-out', what: 'Luxury residences right at the gondola.', url: 'https://www.onesteamboatplace.com/', distance: 'Slopeside' },
+      { name: 'Steamboat Grand', kind: 'slopeside', what: 'The resort’s own big hotel and condo building, a short walk from the gondola.', url: sb('/plan-your-trip/lodging/steamboat-grand'), distance: 'Short walk to the gondola' },
       { name: 'Hotel Bristol', kind: 'inn', what: 'Small historic hotel on Lincoln Avenue downtown, close to restaurants and bars.', url: 'https://steamboathotelbristol.com/', distance: '10 min drive or free city bus' },
       { name: 'Rabbit Ears Motel', kind: 'hotel', what: 'Classic downtown motel with the famous neon rabbit sign, across from Old Town Hot Springs.', url: 'https://www.rabbitearsmotel.com/', distance: '10 min drive or free city bus' },
-      { name: 'The Nordic Lodge', kind: 'hotel', what: 'Simple, well-rated budget lodge on Lincoln Avenue.', url: 'https://www.nordiclodgeofsteamboat.com/', distance: '10 min drive or free city bus' },
+      { name: 'The Nordic Lodge', kind: 'hotel', what: 'Simple, well-rated lodge downtown on Lincoln Avenue.', url: 'https://www.nordiclodgeofsteamboat.com/', distance: '10 min drive or free city bus' },
     ],
     thingsToDo: [
-      { name: 'Strawberry Park Hot Springs', kind: 'hot-springs', what: 'Rock-lined natural pools in the woods north of town. Reservations required, cash only, $30 adults, and adults only after dark (clothing optional).', url: 'https://www.strawberryhotsprings.com/', distance: '30 min drive' },
+      { name: 'Strawberry Park Hot Springs', kind: 'hot-springs', what: 'Rock-lined natural pools in the woods north of town, with shuttles from town. Reservations required, cash only, $30 adults, and adults only after dark (clothing optional).', url: 'https://www.strawberryhotsprings.com/', distance: '30 min drive' },
       { name: 'Old Town Hot Springs', kind: 'hot-springs', what: 'Downtown pools and waterslides, an easy family soak.', url: 'https://oldtownhotsprings.org/', distance: '10 min drive' },
       { name: 'Howelsen Hill', kind: 'night-skiing', what: 'Colorado’s oldest operating ski area (since 1915), with ski jumps, weeknight skiing until 8 pm and Tube Howelsen ($40 an hour). Opens Nov 28.', url: 'https://www.steamboatsprings.net/131/Howelsen-Hill-Ski-Area', distance: '10 min drive' },
       { name: 'Skeeter’s Ice Rink', kind: 'ice-skating', what: 'Outdoor rink at the base area for an evening skate.', url: sb('/things-to-do/activities/ice-skating'), distance: 'At the base' },
@@ -373,7 +373,7 @@ const resorts: Resort[] = [
     apres: [
       { name: 'T Bar', what: 'Slopeside shack bar at the base, a laid-back first stop off the hill.' },
       { name: 'Timber & Torch', what: 'The resort’s base-area restaurant and bar, open into the night-skiing hours.', url: sb('/things-to-do/dining/timber-and-torch') },
-      { name: 'Gondola Pub & Grill', what: 'Pub by the gondola with drink specials and a sunny patio.', url: 'https://www.gondolapubandgrill.com/' },
+      { name: 'Gondola Pub & Grill', what: 'Pub at the base by the gondola, an easy first stop off the hill.', url: 'https://www.gondolapubandgrill.com/' },
       { name: 'Schmiggity’s', what: 'Downtown live music and dance bar for later in the night.', url: 'https://www.schmiggitys.com/' },
     ],
     events: [
