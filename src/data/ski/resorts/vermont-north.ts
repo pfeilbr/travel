@@ -806,7 +806,7 @@ const resorts: Resort[] = [
     },
     stats: {
       summitFt: 3150,
-      baseFt: 2100,
+      baseFt: 1446,
       verticalFt: 1704,
       acres: 300,
       trails: 71,

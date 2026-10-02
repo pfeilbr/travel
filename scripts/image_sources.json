@@ -1381,6 +1381,1107 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "whistler-blackcomb": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Whistler_Blackcomb",
+     "depth": 0
+    },
+    {
+     "openverse": "Whistler Blackcomb ski",
+     "must": [
+      "whistler blackcomb",
+      "whistler"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "whistler blackcomb"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "cypress-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Cypress_Mountain_Ski_Area",
+     "depth": 0
+    },
+    {
+     "openverse": "Cypress ski",
+     "must": [
+      "cypress",
+      "cypress mountain",
+      "west vancouver"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "cypress"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "grouse-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Grouse_Mountain",
+     "depth": 0
+    },
+    {
+     "openverse": "Grouse ski",
+     "must": [
+      "grouse",
+      "grouse mountain",
+      "north vancouver"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "grouse"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mt-seymour": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Mount_Seymour_Provincial_Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Mt Seymour ski",
+     "must": [
+      "mt seymour",
+      "north vancouver"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mt seymour"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mount-washington-bc": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Mount Washington Alpine Resort",
+     "limit": 25
+    },
+    {
+     "openverse": "Mount Washington ski",
+     "must": [
+      "mount washington",
+      "mount washington alpine resort",
+      "courtenay"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mount washington"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "sun-peaks": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Sun_Peaks_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Sun Peaks ski",
+     "must": [
+      "sun peaks",
+      "sun peaks resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "sun peaks"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "big-white": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Big_White_Ski_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Big White ski",
+     "must": [
+      "big white",
+      "big white ski resort",
+      "kelowna"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "big white"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "silverstar": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Silver_Star_Mountain_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "SilverStar ski",
+     "must": [
+      "silverstar",
+      "silverstar mountain resort",
+      "vernon"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "silverstar"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "apex-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Apex Mountain Resort Penticton",
+     "limit": 25
+    },
+    {
+     "openverse": "Apex ski",
+     "must": [
+      "apex",
+      "apex mountain resort",
+      "penticton"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "apex"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "palisades-tahoe": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Palisades_Tahoe",
+     "depth": 0
+    },
+    {
+     "openverse": "Palisades Tahoe ski",
+     "must": [
+      "palisades tahoe",
+      "olympic valley"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "palisades tahoe"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "northstar": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Northstar_California",
+     "depth": 0
+    },
+    {
+     "openverse": "Northstar California ski",
+     "must": [
+      "northstar california",
+      "truckee"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "northstar california"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "heavenly": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Heavenly_Mountain_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Heavenly ski",
+     "must": [
+      "heavenly",
+      "south lake tahoe"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "heavenly"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "kirkwood": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Kirkwood_Mountain_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Kirkwood ski",
+     "must": [
+      "kirkwood"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "kirkwood"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "sierra-at-tahoe": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Sierra-at-Tahoe",
+     "depth": 0
+    },
+    {
+     "openverse": "Sierra-at-Tahoe ski",
+     "must": [
+      "sierra-at-tahoe",
+      "twin bridges"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "sierra-at-tahoe"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "sugar-bowl": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Sugar_Bowl_Ski_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Sugar Bowl ski",
+     "must": [
+      "sugar bowl",
+      "norden"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "sugar bowl"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "homewood": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Homewood Mountain Resort ski Lake Tahoe",
+     "limit": 25
+    },
+    {
+     "openverse": "Homewood ski",
+     "must": [
+      "homewood",
+      "homewood mountain resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "homewood"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mt-rose": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Mount_Rose_Ski_Tahoe",
+     "depth": 0
+    },
+    {
+     "openverse": "Mt. Rose Ski Tahoe ski",
+     "must": [
+      "mt. rose ski tahoe",
+      "reno"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mt. rose ski tahoe"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "diamond-peak": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Diamond Peak ski resort Incline Village",
+     "limit": 25
+    },
+    {
+     "openverse": "Diamond Peak ski",
+     "must": [
+      "diamond peak",
+      "incline village"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "diamond peak"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "boreal": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Boreal_Mountain_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Boreal ski",
+     "must": [
+      "boreal",
+      "boreal mountain",
+      "soda springs"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "boreal"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "camelback": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Camelback Mountain Resort Tannersville ski",
+     "limit": 25
+    },
+    {
+     "openverse": "Camelback ski",
+     "must": [
+      "camelback",
+      "camelback resort",
+      "tannersville"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "camelback"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "blue-mountain-pa": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Blue Mountain Resort Palmerton Pennsylvania ski",
+     "limit": 25
+    },
+    {
+     "openverse": "Blue ski",
+     "must": [
+      "blue",
+      "blue mountain resort",
+      "palmerton"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "blue"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "jack-frost": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Jack Frost Mountain ski Pennsylvania",
+     "limit": 25
+    },
+    {
+     "openverse": "Jack Frost ski",
+     "must": [
+      "jack frost",
+      "white haven"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "jack frost"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "big-boulder": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Big Boulder ski area Lake Harmony",
+     "limit": 25
+    },
+    {
+     "openverse": "Big Boulder ski",
+     "must": [
+      "big boulder",
+      "lake harmony"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "big boulder"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "shawnee-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Shawnee Mountain Ski Area",
+     "limit": 25
+    },
+    {
+     "openverse": "Shawnee ski",
+     "must": [
+      "shawnee",
+      "shawnee mountain",
+      "east stroudsburg"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "shawnee"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "elk-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Elk Mountain ski Union Dale Pennsylvania",
+     "limit": 25
+    },
+    {
+     "openverse": "Elk ski",
+     "must": [
+      "elk",
+      "elk mountain",
+      "union dale"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "elk"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "montage-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Montage Mountain",
+     "depth": 0
+    },
+    {
+     "openverse": "Montage ski",
+     "must": [
+      "montage",
+      "montage mountain",
+      "scranton"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "montage"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bear-creek": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Bear Creek Mountain Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Bear Creek ski",
+     "must": [
+      "bear creek",
+      "bear creek mountain resort",
+      "macungie"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "bear creek"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "stowe": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Stowe_Mountain_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Stowe ski",
+     "must": [
+      "stowe",
+      "stowe mountain resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "stowe"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "smugglers-notch": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "search": "Smugglers' Notch Resort skiing",
+     "limit": 25
+    },
+    {
+     "openverse": "Smugglers’ Notch ski",
+     "must": [
+      "smugglers’ notch",
+      "smugglers’ notch resort",
+      "jeffersonville"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "smugglers’ notch"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "jay-peak": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "search": "Jay Peak Resort skiing",
+     "limit": 25
+    },
+    {
+     "openverse": "Jay Peak ski",
+     "must": [
+      "jay peak",
+      "jay peak resort",
+      "jay"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "jay peak"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "sugarbush": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Sugarbush_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Sugarbush ski",
+     "must": [
+      "sugarbush",
+      "sugarbush resort",
+      "warren"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "sugarbush"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mad-river-glen": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Mad_River_Glen",
+     "depth": 0
+    },
+    {
+     "openverse": "Mad River Glen ski",
+     "must": [
+      "mad river glen",
+      "fayston"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mad river glen"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bolton-valley": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Bolton_Valley",
+     "depth": 0
+    },
+    {
+     "openverse": "Bolton Valley ski",
+     "must": [
+      "bolton valley",
+      "bolton"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "bolton valley"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "burke": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Burke_Mountain",
+     "depth": 0
+    },
+    {
+     "openverse": "Burke ski",
+     "must": [
+      "burke",
+      "burke mountain",
+      "east burke"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "burke"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "middlebury-snow-bowl": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Middlebury College Snow Bowl",
+     "limit": 25
+    },
+    {
+     "openverse": "Middlebury College Snow Bowl ski",
+     "must": [
+      "middlebury college snow bowl",
+      "hancock"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "middlebury college snow bowl"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }

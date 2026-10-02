@@ -25,6 +25,44 @@
       "width": 1280
     }
   ],
+  "big-sky": [
+    {
+      "alt": "This is the Lone Peak Tram in January of 2018.",
+      "author": "Rickmouser45",
+      "file": "src/assets/places/big-sky/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lone_Peak_Tram,_January_2018.jpg",
+      "title": "File:Lone Peak Tram, January 2018.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "A picture of Lone Peak Montana, the principal mountain of the Big Sky ski resort in Montana, USA.",
+      "author": "Goldman60",
+      "file": "src/assets/places/big-sky/2.jpg",
+      "height": 960,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lone_Peak,_Big_Sky,_Montana.jpg",
+      "title": "File:Lone Peak, Big Sky, Montana.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "This is a photo of Lone Peak seen from the Big Sky Resort hotels in January of 2018.",
+      "author": "Rickmouser45",
+      "file": "src/assets/places/big-sky/3.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lone_Peak_seen_from_Big_Sky_Resort,_2018.jpg",
+      "title": "File:Lone Peak seen from Big Sky Resort, 2018.jpg",
+      "width": 1280
+    }
+  ],
   "firelight-camps": [
     {
       "alt": "Buttermilk Falls cascading into its pool in autumn (nearby Buttermilk Falls State Park)",
@@ -211,6 +249,32 @@
       "width": 1600
     }
   ],
+  "gunstock": [
+    {
+      "alt": "Snowmaking Gunstock Mountain Resort Gilford New Hampshire",
+      "author": "EgorovaSvetlana",
+      "file": "src/assets/places/gunstock/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowmaking_Gunstock_Mountain_Resort_Gilford_New_Hampshire.jpg",
+      "title": "File:Snowmaking Gunstock Mountain Resort Gilford New Hampshire.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Chairlift Gunstock Mountain Resort Gilford New Hampshire",
+      "author": "EgorovaSvetlana",
+      "file": "src/assets/places/gunstock/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chairlift_Gunstock_Mountain_Resort_Gilford_New_Hampshire.jpg",
+      "title": "File:Chairlift Gunstock Mountain Resort Gilford New Hampshire.jpg",
+      "width": 1280
+    }
+  ],
   "hero": [
     {
       "alt": "Taughannock Falls framed by peak fall foliage",
@@ -383,6 +447,32 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saratoga_Spa_State_Park2.jpg",
       "title": "File:Saratoga Spa State Park2.jpg",
       "width": 1600
+    }
+  ],
+  "mount-sunapee": [
+    {
+      "alt": "Mount Sunapee .",
+      "author": "User:Josephbrophy",
+      "file": "src/assets/places/mount-sunapee/1.jpg",
+      "height": 851,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MountSunapeefromLake.jpg",
+      "title": "File:MountSunapeefromLake.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mount Sunapee.",
+      "author": "User:Josephbrophy",
+      "file": "src/assets/places/mount-sunapee/2.jpg",
+      "height": 851,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MountSunapeeWinter.jpg",
+      "title": "File:MountSunapeeWinter.jpg",
+      "width": 1280
     }
   ],
   "mt-lemmon": [

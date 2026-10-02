@@ -466,7 +466,7 @@ const resorts: Resort[] = [
       note: 'Targets Nov 20. Usually one of the last Tahoe resorts to close, mid-April or later.',
     },
     stats: {
-      summitFt: 9700, baseFt: 8260, verticalFt: 1800, acres: 1200, trails: 70, lifts: 7,
+      summitFt: 9700, baseFt: 7900, verticalFt: 1800, acres: 1200, trails: 70, lifts: 7,
       snowfallIn: 350, longestRunMi: 2.5,
       terrain: { beginner: 20, intermediate: 30, advanced: 50 },
     },

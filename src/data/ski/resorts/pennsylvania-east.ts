@@ -174,7 +174,7 @@ const resorts: Resort[] = [
         name: 'The Harry Packer Mansion Inn',
         kind: 'b&b',
         what: 'Victorian mansion inn above Jim Thorpe, with antique-filled rooms in the main house and carriage house.',
-        url: 'http://www.hpmansion.com/',
+        url: 'https://www.hpmansion.com/',
         distance: '30 min drive',
       },
     ],
@@ -183,7 +183,7 @@ const resorts: Resort[] = [
       { name: 'Lehigh Gorge Scenic Railway', kind: 'other', what: 'Diesel train rides from Jim Thorpe along the Lehigh River. Santa trains run late November to Christmas Eve.', url: 'https://www.lgsry.com/', distance: '30 min drive' },
       { name: 'Winter Light Spectacular', kind: 'other', what: 'Walk-through holiday lights at the Lehigh Valley Zoo, with fire pits and Santa photos. Nov 13 to Jan 2 this season.', url: 'https://www.lvzoo.org/winter-light-spectacular/', distance: '25 min drive' },
       { name: 'Penn’s Peak', kind: 'other', what: 'Mountaintop concert hall near Jim Thorpe with a restaurant and bar and big views.', url: 'https://www.pennspeak.com/', distance: '20 min drive' },
-      { name: 'Molly Maguire’s Irish Pub', kind: 'eat', what: 'Pub food and pints on Jim Thorpe’s main square.', url: 'http://www.jimthorpedining.com/', distance: '30 min drive' },
+      { name: 'Molly Maguire’s Irish Pub', kind: 'eat', what: 'Pub food and pints on Jim Thorpe’s main square.', url: 'https://www.jimthorpedining.com/', distance: '30 min drive' },
     ],
     apres: [
       { name: 'Last Run Lounge', what: 'In the Summit Lodge, with drinks, food and live music every Saturday and Sunday all winter.', url: 'https://www.skibluemt.com/last-run-lounge/' },
@@ -260,7 +260,7 @@ const resorts: Resort[] = [
         name: 'Lake Harmony Inn',
         kind: 'inn',
         what: 'Small waterfront inn on Lake Harmony with simple rooms and a three-bedroom suite, a walk from bars and restaurants.',
-        url: 'http://lakeharmonyinn.com/',
+        url: 'https://lakeharmonyinn.com/',
         distance: '15 min drive',
       },
       {
@@ -286,7 +286,7 @@ const resorts: Resort[] = [
     ],
     apres: [
       { name: 'Boulder View Tavern', what: 'Tavern with an outdoor bar and patio over Big Boulder Lake, local taps and cocktails.', url: 'https://www.boulderviewtavern.com/' },
-      { name: 'Molly Maguire’s Irish Pub', what: 'Pub food and pints on the square in Jim Thorpe.', url: 'http://www.jimthorpedining.com/' },
+      { name: 'Molly Maguire’s Irish Pub', what: 'Pub food and pints on the square in Jim Thorpe.', url: 'https://www.jimthorpedining.com/' },
     ],
     events: [
       { name: 'Lehigh Gorge Santa Claus trains', kind: 'christmas', date: '2026-11-27', end: '2026-12-24', when: 'Select days Nov 27–Dec 24, 10:30 am, 1 pm and 3:30 pm', what: 'Santa and his elves ride along on an 80-minute round trip from Jim Thorpe. Adults from $25.', url: 'https://www.lgsry.com/holiday-trains', confirmed: true },
@@ -350,7 +350,7 @@ const resorts: Resort[] = [
         name: 'Lake Harmony Inn',
         kind: 'inn',
         what: 'Small waterfront inn about half a mile from Big Boulder, with simple rooms and a three-bedroom suite.',
-        url: 'http://lakeharmonyinn.com/',
+        url: 'https://lakeharmonyinn.com/',
         distance: '2 min drive',
       },
       {
@@ -371,7 +371,7 @@ const resorts: Resort[] = [
         name: 'The Harry Packer Mansion Inn',
         kind: 'b&b',
         what: 'Victorian mansion inn above Jim Thorpe, with antique-filled rooms in the main house and carriage house.',
-        url: 'http://www.hpmansion.com/',
+        url: 'https://www.hpmansion.com/',
         distance: '30 min drive',
       },
     ],
@@ -383,7 +383,7 @@ const resorts: Resort[] = [
     ],
     apres: [
       { name: 'Boulder View Tavern', what: 'Right by the hill, with an outdoor bar and patio over Big Boulder Lake, local taps and cocktails.', url: 'https://www.boulderviewtavern.com/' },
-      { name: 'Molly Maguire’s Irish Pub', what: 'Pub food and pints on the square in Jim Thorpe.', url: 'http://www.jimthorpedining.com/' },
+      { name: 'Molly Maguire’s Irish Pub', what: 'Pub food and pints on the square in Jim Thorpe.', url: 'https://www.jimthorpedining.com/' },
     ],
     events: [
       { name: 'Lehigh Gorge Santa Claus trains', kind: 'christmas', date: '2026-11-27', end: '2026-12-24', when: 'Select days Nov 27–Dec 24, 10:30 am, 1 pm and 3:30 pm', what: 'Santa and his elves ride along on an 80-minute round trip from Jim Thorpe. Adults from $25.', url: 'https://www.lgsry.com/holiday-trains', confirmed: true },
@@ -541,7 +541,7 @@ const resorts: Resort[] = [
         name: 'Endless Mountain Resort',
         kind: 'condo',
         what: 'Two-bedroom rental residences about 3 miles from the slopes, the closest place to stay.',
-        url: 'http://www.endlessmountainresort.com/',
+        url: 'https://www.endlessmountainresort.com/',
         distance: '5 min drive',
       },
       {
