@@ -6055,6 +6055,391 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "tremblant": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "tremblant",
+    "mont-tremblant"
+   ],
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Mont Tremblant Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Tremblant ski",
+     "must": [
+      "tremblant",
+      "mont-tremblant"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "tremblant"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mont-sainte-anne": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "mont-sainte-anne",
+    "beaupré"
+   ],
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Mont Sainte-Anne",
+     "depth": 0
+    },
+    {
+     "openverse": "Mont-Sainte-Anne ski",
+     "must": [
+      "mont-sainte-anne",
+      "beaupré"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mont-sainte-anne"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "le-massif": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "le massif de charlevoix",
+    "petite-rivière-saint-françois"
+   ],
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Le Massif",
+     "depth": 0
+    },
+    {
+     "openverse": "Le Massif de Charlevoix ski",
+     "must": [
+      "le massif de charlevoix",
+      "petite-rivière-saint-françois"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "le massif de charlevoix"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "stoneham": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "stoneham",
+    "stoneham-et-tewkesbury"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "search": "Stoneham ski resort Quebec",
+     "limit": 25
+    },
+    {
+     "openverse": "Stoneham ski",
+     "must": [
+      "stoneham",
+      "stoneham-et-tewkesbury"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "stoneham"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mont-sutton": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "mont sutton",
+    "sutton"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Mont Sutton",
+     "depth": 0
+    },
+    {
+     "openverse": "Mont Sutton ski",
+     "must": [
+      "mont sutton",
+      "sutton"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mont sutton"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bromont": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "bromont, montagne d’expériences",
+    "bromont"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Mont Brome",
+     "depth": 0
+    },
+    {
+     "openverse": "Bromont, montagne d’expériences ski",
+     "must": [
+      "bromont, montagne d’expériences",
+      "bromont"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "bromont, montagne d’expériences"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "owls-head": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "owl’s head",
+    "mansonville"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "search": "Owl's Head ski Quebec",
+     "limit": 25
+    },
+    {
+     "openverse": "Owl’s Head ski",
+     "must": [
+      "owl’s head",
+      "mansonville"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "owl’s head"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mont-orford": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "mont-orford",
+    "orford"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Mont Orford",
+     "depth": 0
+    },
+    {
+     "openverse": "Mont-Orford ski",
+     "must": [
+      "mont-orford",
+      "orford"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mont-orford"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "sommet-saint-sauveur": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "sommet saint-sauveur",
+    "saint-sauveur"
+   ],
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Mont Saint-Sauveur",
+     "depth": 0
+    },
+    {
+     "openverse": "Sommet Saint-Sauveur ski",
+     "must": [
+      "sommet saint-sauveur",
+      "saint-sauveur"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "sommet saint-sauveur"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mont-blanc": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "mont blanc",
+    "mont-blanc"
+   ],
+   "count": 1,
+   "sources": [
+    {
+     "search": "Ski Mont Blanc Quebec",
+     "limit": 25
+    },
+    {
+     "openverse": "Mont Blanc ski",
+     "must": [
+      "mont blanc",
+      "mont-blanc"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mont blanc"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "val-saint-come": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "val saint-côme",
+    "saint-côme"
+   ],
+   "count": 1,
+   "sources": [
+    {
+     "search": "Val Saint-Côme ski",
+     "limit": 25
+    },
+    {
+     "openverse": "Val Saint-Côme ski",
+     "must": [
+      "val saint-côme",
+      "saint-côme"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "val saint-côme"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }
