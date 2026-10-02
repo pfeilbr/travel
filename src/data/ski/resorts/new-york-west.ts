@@ -14,7 +14,7 @@ const resorts: Resort[] = [
     size: 'local',
     tagline: 'Family hill north of Rome with night skiing and live music',
     summary:
-      'A 500-foot family hill just north of Rome, about 30 minutes from Verona, with a busy learning area, snow tubing and night skiing Wednesday to Saturday. The Hemlock Room bar has live music most ski nights, and a new quad chair is expected for 2026-27. Best for families, lessons and after-work laps.',
+      'A 500-foot family hill just north of Rome, about 30 minutes from Verona, with a busy learning area, snow tubing and night skiing Wednesday to Saturday. The Hemlock Room bar has live music several nights a week, and a new quad chair is expected for 2026-27. Best for families, lessons and after-work laps.',
     url: 'https://woodsvalleyskiarea.com/',
     snowReportUrl: 'https://woodsvalleyskiarea.com/mountain-report/',
     trailMapUrl: 'https://woodsvalleyskiarea.com/trail-map/',
@@ -41,7 +41,7 @@ const resorts: Resort[] = [
     activities: ['night-skiing', 'terrain-park', 'tubing', 'kids'],
     lodging: [
       { name: 'The Lodge at Headwaters', kind: 'hotel', what: 'Modern hotel in Boonville, handy for both Woods Valley and Snow Ridge.', url: 'https://www.thelodgeatheadwaters.com/', distance: '20 min drive' },
-      { name: 'The Hotel Utica', kind: 'hotel', what: 'Restored 1912 hotel in downtown Utica, near the brewery and the Comets’ arena.', url: 'https://www.hotelutica.com/', distance: '35 min drive' },
+      { name: 'The Hotel Utica', kind: 'hotel', what: 'Historic hotel in downtown Utica, near the brewery and the Comets’ arena.', url: 'https://www.hotelutica.com/', distance: '35 min drive' },
       { name: 'Turning Stone Resort Casino', kind: 'hotel', what: 'Big resort in Verona with several hotels, a spa, golf and restaurants.', url: 'https://www.turningstone.com/', distance: '35 min drive' },
     ],
     thingsToDo: [
@@ -53,13 +53,13 @@ const resorts: Resort[] = [
       { name: 'Utica Comets', kind: 'other', what: 'AHL hockey downtown at the Adirondack Bank Center.', url: 'https://www.uticacomets.com/', distance: '35 min drive' },
     ],
     apres: [
-      { name: 'The Hemlock Room', what: 'The lodge bar and restaurant, with live music on most ski nights and weekends.', url: 'https://woodsvalleyskiarea.com/hemlock-room/' },
+      { name: 'The Hemlock Room', what: 'The lodge bar and restaurant, with live music several nights a week in season.', url: 'https://woodsvalleyskiarea.com/hemlock-room/' },
       { name: 'Copper City Brewing', what: 'Rome taproom for a pint on the way home.', url: 'https://www.coppercitybrewing.com/' },
     ],
     events: [
       { name: 'Opening day', kind: 'opening', date: '2026-12-05', when: 'Dec 5 (tentative)', what: 'Tentative opening day on the resort calendar, with early-season weekend hours to start.', url: 'https://woodsvalleyskiarea.com/google-calendar/', confirmed: true },
       { name: 'New Year’s Eve live music', kind: 'new-years', date: '2026-12-31', when: 'Dec 31', what: 'Live band in the Hemlock Room on New Year’s Eve; the act is still to be announced.', url: 'https://woodsvalleyskiarea.com/google-calendar/', confirmed: true },
-      { name: 'Pepper Memorial Slalom', kind: 'race', date: '2027-03-20', when: 'Late March (annual)', what: 'Spring slalom race held in memory of a local skier.', confirmed: false },
+      { name: 'Pepper Memorial Slalom', kind: 'race', date: '2027-03-20', when: 'Late March (annual)', what: 'Spring slalom race on the hill.', confirmed: false },
       { name: 'Pond Skimming', kind: 'pond-skim', date: '2027-03-28', when: 'Late March (Mar 29 last season)', what: 'End-of-season pond skim near the base.', url: 'https://woodsvalleyskiarea.com/google-calendar/', confirmed: false },
     ],
     getting: {
@@ -194,7 +194,7 @@ const resorts: Resort[] = [
     lodging: [
       { name: 'Hope Lake Lodge', kind: 'lodge', what: 'Greek Peak’s suite hotel with kitchens, an indoor waterpark and a spa.', url: 'https://www.greekpeak.net/plan-your-stay/', distance: '20 min drive' },
       { name: 'The Parkview Hotel', kind: 'hotel', what: 'Downtown Syracuse hotel that offers a SkiCNY ski-and-stay rate.', url: 'https://www.theparkviewhotel.com/', distance: '30 min drive' },
-      { name: 'Marriott Syracuse Downtown', kind: 'hotel', what: 'The restored 1924 Hotel Syracuse, close to Armory Square restaurants.', url: 'https://www.marriottsyracusedowntown.com/', distance: '30 min drive' },
+      { name: 'Marriott Syracuse Downtown', kind: 'hotel', what: 'The restored historic Hotel Syracuse, close to Armory Square restaurants.', url: 'https://www.marriottsyracusedowntown.com/', distance: '30 min drive' },
     ],
     thingsToDo: [
       { name: 'Heuga’s Alpine', kind: 'eat', what: 'Alpine-style restaurant and bar at the base of Song, open year-round.', url: 'https://www.heugasalpine.com/', distance: 'At the base' },
@@ -236,7 +236,7 @@ const resorts: Resort[] = [
     size: 'local',
     tagline: 'Central New York’s night-skiing hill',
     summary:
-      'Labrador is Song’s sister hill in the hills above Truxton, larger by acreage, with 700 feet of vertical, a terrain park and more than 15 lit trails open until 9 pm most nights. A full SkiCNY pass covers both hills. The Puffinbird pub upstairs serves food and craft beer. Best for night skiers and Syracuse-area families.',
+      'Labrador is Song’s sister hill in the hills above Truxton, larger by acreage, with 700 feet of vertical, a terrain park and more than 15 lit trails open until 9 pm Tuesday to Saturday. A full SkiCNY pass covers both hills, and the Puffinbird pub serves food and craft beer. Best for night skiers and Syracuse-area families.',
     url: 'https://www.skicny.com/labrador/',
     snowReportUrl: 'https://www.skicny.com/labrador/ski-report/',
     trailMapUrl: 'https://www.skicny.com/labrador/trail-map/',
@@ -481,25 +481,25 @@ const resorts: Resort[] = [
       { name: 'Tamarack Club', kind: 'ski-in/ski-out', what: 'Hotel rooms to three-bedroom condos at the main base area, with Edna’s restaurant and the Oasis spa.', url: 'https://www.holidayvalley.com/lodging/tamarack-club/', distance: 'Ski-in, ski-out' },
       { name: 'The Inn at Holiday Valley', kind: 'slopeside', what: 'Hotel on the slopes and golf course with a pool, lobby bar and some fireplace suites.', url: 'https://www.holidayvalley.com/lodging/inn-at-holiday-valley/', distance: 'Slopeside' },
       { name: 'Holiday Valley Rental Management', kind: 'condo', what: 'More than 200 condos, townhouses and chalets on the slopes and around town.', url: 'https://www.holidayvalley.com/lodging/rental-management/', distance: 'Slopeside to 5 min' },
-      { name: 'Wingate by Wyndham Ellicottville', kind: 'hotel', what: 'Chain hotel in the village, walkable to bars and restaurants.', url: 'https://www.wyndhamhotels.com/wingate/ellicottville-new-york/wingate-by-wyndham-ellicottville/overview', distance: '5 min drive' },
+      { name: 'Wingate by Wyndham Ellicottville', kind: 'hotel', what: 'Chain hotel in Ellicottville, close to the village bars and restaurants.', url: 'https://www.wyndhamhotels.com/wingate/ellicottville-new-york/wingate-by-wyndham-ellicottville/overview', distance: '5 min drive' },
     ],
     thingsToDo: [
       { name: 'Holiday Valley Tubing Company', kind: 'tubing', what: 'Up to 20 lanes, 900 feet long, with an LED light show on Friday and Saturday nights.', url: 'https://www.holidayvalley.com/activities/tubing/', distance: '10 min drive' },
       { name: 'Sky Flyer Mountain Coaster', kind: 'mountain-coaster', what: 'A six-minute, 4,800-foot coaster that runs in winter too.', url: 'https://www.holidayvalley.com/activities/mountain-coaster/', distance: 'On site' },
       { name: 'Ellicottville Oasis Spa', kind: 'spa', what: 'Massage and facials inside the Tamarack Club.', url: 'https://www.evilleoasis.com/', distance: 'On site' },
       { name: 'Cross-country and snowshoe trails', kind: 'nordic', what: 'Packed trails along the summit ridge and around the golf course.', url: 'https://www.holidayvalley.com/activities/cross-country-skiing/', distance: 'On site' },
-      { name: 'Ellicottville Brewing Company', kind: 'drink', what: 'The village brewpub, a fixture since 1995.', url: 'https://ellicottvillebrewing.com/', distance: '5 min drive' },
-      { name: 'Ellicottville Distillery', kind: 'drink', what: 'Small-batch spirits and a tasting room in the village.', url: 'https://www.ellicottvilledistillery.com/', distance: '5 min drive' },
+      { name: 'Ellicottville Brewing Company', kind: 'drink', what: 'The village brewpub and a local institution.', url: 'https://ellicottvillebrewing.com/', distance: '5 min drive' },
+      { name: 'Ellicottville Distillery', kind: 'drink', what: 'Craft distillery with a tasting room.', url: 'https://www.ellicottvilledistillery.com/', distance: '5 min drive' },
       { name: 'Seneca Allegany Casino', kind: 'other', what: 'Casino, restaurants and shows in Salamanca.', url: 'https://www.senecaalleganycasino.com/', distance: '25 min drive' },
     ],
     apres: [
-      { name: 'Yodeler Lodge', what: 'On-mountain lodge with live music on weekends and holidays.', url: 'https://www.holidayvalley.com/dining/' },
+      { name: 'Yodeler Lodge', what: 'Lodge at the base of the Yodeler lift with live music on busy weekends.', url: 'https://www.holidayvalley.com/dining/' },
       { name: 'Cabana Bar', what: 'Covered outdoor bar in the base area with mountain views and live entertainment.', url: 'https://www.holidayvalley.com/dining/cabana-bar/' },
       { name: 'Ellicottville Brewing Company', what: 'Packed village brewpub after the lifts close.', url: 'https://ellicottvillebrewing.com/' },
       { name: 'Balloons', what: 'Ellicottville’s long-running bar and live-music club.', url: 'https://www.balloonsrestaurant.com/' },
     ],
     events: [
-      { name: 'Christmas Day skiing', kind: 'christmas', date: '2026-12-25', when: 'Dec 25, noon–10 pm (last season’s hours)', what: 'Lifts, tubing and the coaster open at noon on Christmas Day, with skiing into the night.', url: 'https://www.holidayvalley.com/blog/christmas-week-hours/', confirmed: false },
+      { name: 'Christmas Day skiing', kind: 'christmas', date: '2026-12-25', when: 'Dec 25, noon–10 pm (recent seasons)', what: 'Lifts, tubing and the coaster open at noon on Christmas Day, with skiing into the night.', url: 'https://www.holidayvalley.com/blog/christmas-week-hours/', confirmed: false },
       { name: 'New Year’s Eve torchlight parade and fireworks', kind: 'new-years', date: '2026-12-31', when: 'Dec 31 (annual)', what: 'Groomer parade, torchlight parade and fireworks, with Cindy’s lift open until 11 pm.', url: 'https://www.holidayvalley.com/blog/christmas-week-hours/', confirmed: false },
       { name: 'Beer & Wine Festival', kind: 'festival', date: '2026-11-07', when: 'Nov 7', what: 'Local beer and wine tastings with live music, the last big party before ski season.', url: 'https://www.holidayvalley.com/event/beer-and-wine-2026/', confirmed: true },
       { name: 'Winter Carnival and Mardi Gras Parade', kind: 'festival', date: '2027-03-13', end: '2027-03-14', when: 'A mid-March weekend (Mar 14–15 last season)', what: 'Costume parade, beer slalom, Dummy Downhill, a Yodeler snow bar and the Mardi Gras parade through the village.', url: 'https://www.holidayvalley.com/event/winter-carnival-2026/', confirmed: false },
@@ -530,7 +530,7 @@ const resorts: Resort[] = [
     size: 'mid',
     tagline: 'Tudor-style resort and spa on a gentle snowbelt hill',
     summary:
-      'Peek’n Peak is a full resort on a small hill near Findley Lake, with a Tudor-style inn, condos, a spa and three terrain parks at the base. The 400-foot vertical suits beginners and families, and the whole mountain is lit for night skiing. Lake Erie snow helps; Erie, Pa., is about 35 minutes away and Buffalo about 90.',
+      'Peek’n Peak is a full resort on a small hill near Findley Lake, with a Tudor-style inn, condos and a spa at the base and three terrain parks. The 400-foot vertical suits beginners and families, and nearly all of it is lit for night skiing. Lake Erie snow helps; Erie, Pa., is about 35 minutes away and Buffalo about 90.',
     url: 'https://www.pknpk.com/',
     snowReportUrl: 'https://www.pknpk.com/conditions-report/',
     passes: ['indy'],
@@ -568,7 +568,7 @@ const resorts: Resort[] = [
     ],
     apres: [
       { name: 'Bistro 210', what: 'Restaurant and bar in the Inn, with holiday dinners and music nights.', url: 'https://www.pknpk.com/dining-shopping/' },
-      { name: 'Sugar Shack', what: 'Casual on-mountain spot for a drink and a snack between runs.', url: 'https://www.pknpk.com/dining-shopping/' },
+      { name: 'Sugar Shack', what: 'Casual spot for a drink and a snack between runs.', url: 'https://www.pknpk.com/dining-shopping/' },
     ],
     events: [
       { name: 'Wurst Party Ever', kind: 'festival', date: '2026-11-07', when: 'Nov 7, 5–9 pm', what: 'German beer, sausages and lederhosen to warm up for the season.', url: 'https://www.pknpk.com/special-events/wurst-party-ever-2026/', confirmed: true },
@@ -671,7 +671,7 @@ const resorts: Resort[] = [
     size: 'local',
     tagline: 'Buffalo’s wide, 700-acre local hill',
     summary:
-      'Kissing Bridge spreads 39 trails across three areas (North, Central and South) in the Colden snowbelt, about 35 minutes south of Buffalo. The vertical is modest at 550 feet, but night skiing is a big part of it, and new owners have been adding snowmaking, food and events since 2024-25. Good for Buffalo families and after-work skiing.',
+      'Kissing Bridge spreads 39 trails across three areas (North, Central and South) in the Colden snowbelt, about 35 minutes south of Buffalo. The vertical is modest at 550 feet, but night skiing is a big part of it, and new management has been adding snowmaking, food and events since 2024-25. Good for Buffalo families and after-work skiing.',
     url: 'https://www.kissingbridge.com/',
     snowReportUrl: 'https://www.kissingbridge.com/on-the-slopes/slope-conditions',
     trailMapUrl: 'https://www.kissingbridge.com/on-the-slopes/trail-map',
@@ -727,7 +727,7 @@ const resorts: Resort[] = [
     },
     google: { rating: 4.3, url: cid('6702638020709826290'), asOf: ASOF },
     reviewThemes: {
-      loved: ['Rarely crowded and easy for beginners and intermediates', 'New owners are investing in snowmaking and food', 'Affordable passes for western New York'],
+      loved: ['Rarely crowded and easy for beginners and intermediates', 'New management is investing in snowmaking and food', 'Affordable passes for western New York'],
       watchFor: ['Much of the terrain can stay closed early in the season or in thin years', 'Older lifts and modest facilities'],
     },
   },

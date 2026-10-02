@@ -230,7 +230,7 @@ const resorts: Resort[] = [
         name: 'Mittersill Alpine Resort',
         kind: 'condo',
         what: 'Austrian-style 1940s resort by Cannon’s Mittersill side, now mostly one- and two-bedroom units with full kitchens.',
-        url: 'http://www.mittersillresort.com/',
+        url: 'https://www.mittersillresort.com/',
         distance: '5 min drive',
       },
       {

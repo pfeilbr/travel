@@ -448,7 +448,7 @@ const resorts: Resort[] = [
     ],
     apres: [
       { name: 'Lacey Rose Saloon', what: 'Craft cocktails and steaks in the 140-year-old saloon of the Grand Imperial Hotel.', url: 'https://laceyrosesaloon.com/' },
-      { name: 'Alpine Tavern', what: 'Casual bar with pool, nachos and the game on.', url: 'https://alpinetaverncolorado.com/' },
+      { name: 'Alpine Tavern', what: 'Casual bar with pool, nachos and the game on.' },
     ],
     events: [
       { name: 'Opening Day', kind: 'opening', date: '2026-12-31', when: 'Dec 31', what: 'The guided season opens on New Year’s Eve, along with heli-skiing.', url: 'https://silvertonmountain.com/event/opening-day-2026/', confirmed: true },
