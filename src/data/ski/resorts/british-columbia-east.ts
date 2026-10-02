@@ -71,10 +71,6 @@ const resorts: Resort[] = [
     ],
     getting: { airport: 'Kelowna International', code: 'YLW', driveMin: 150, from: [{ city: 'Calgary', hours: 4.5 }, { city: 'Vancouver', hours: 6 }] },
     google: { rating: 4.7, url: cid('7921539357697685564'), asOf: ASOF },
-    reviewThemes: {
-      loved: ['The vertical is the headline: long top-to-bottom laps that wear out your legs', 'Frequent deep snow and excellent tree skiing', 'A friendly, unpretentious town with good food and beer'],
-      watchFor: ['Terrain leans steep, so true beginners have few options', 'Gondola and chair lines build on powder weekends'],
-    },
   },
   {
     id: 'kicking-horse',
@@ -119,7 +115,7 @@ const resorts: Resort[] = [
     thingsToDo: [
       { name: 'CMH Purcell day heli-skiing', kind: 'heli-skiing', what: 'Day heli-skiing on a 495,000-acre tenure in the Purcells and Selkirks, in small groups of up to eight.', url: 'https://www.cmhheli.com/', distance: '10 min drive' },
       { name: 'Golden Snowmobile Rentals', kind: 'snowmobiling', what: 'Guided trail tours for families and backcountry rides for all levels, on new machines.', url: 'https://goldensnowmobilerentals.com/', distance: 'Golden' },
-      { name: 'Dawn Mountain Nordic Centre', kind: 'nordic', what: '33 km of groomed classic and skate trails plus a 4 km snowshoe loop, with a heated chalet. Pay the trail fee at the kiosk.', url: 'http://goldennordicclub.ca/', distance: '1 km from the resort' },
+      { name: 'Dawn Mountain Nordic Centre', kind: 'nordic', what: '33 km of groomed classic and skate trails plus a 4 km snowshoe loop, with a heated chalet. Pay the trail fee at the kiosk.', url: 'https://goldennordicclub.ca/', distance: '1 km from the resort' },
       { name: 'Tubing at Kicking Horse', kind: 'tubing', what: 'Tube lanes in the base plaza served by the Jelly Bean lift. Tickets at Guest Services.', url: 'https://kickinghorseresort.com/purchase/tubing/', distance: 'At the base' },
       { name: 'Eagle’s Eye Restaurant', kind: 'eat', what: 'Canada’s highest restaurant, at the top of the gondola. Lunch needs a lift ticket; dinner reservations include the ride up.', url: 'https://kickinghorseresort.com/purchase/eagles-eye-restaurant/', distance: 'Top of the gondola' },
       { name: 'Northern Lights Wildlife Wolf Centre', kind: 'other', what: 'Meet resident wolves and learn about them, just outside Golden.', url: 'https://northernlightswildlife.com/', distance: '15 min drive' },
@@ -139,10 +135,6 @@ const resorts: Resort[] = [
     ],
     getting: { airport: 'Calgary International', code: 'YYC', driveMin: 165, from: [{ city: 'Calgary', hours: 2.75 }, { city: 'Banff', hours: 1.5 }] },
     google: { rating: 4.6, url: cid('3138882638525164137'), asOf: ASOF },
-    reviewThemes: {
-      loved: ['Steep chutes and big bowls off the ridge for experts', 'The gondola ride and the views from Eagle’s Eye', 'Light, dry snow and short lines'],
-      watchFor: ['Few easy ways down from the top; most terrain is advanced', 'The base area is quiet, and most dining and nightlife is in Golden'],
-    },
   },
   {
     id: 'fernie',
@@ -193,7 +185,7 @@ const resorts: Resort[] = [
     ],
     apres: [
       { name: 'Griz Bar', what: 'The on-hill classic: pub food, the Kokanee deck, live music weekend afternoons 3–6 pm and Saturday nights.', url: 'https://skifernie.com/discover-fernie/restaurants/griz-bar/' },
-      { name: 'The Northern Bar & Stage', what: 'Downtown bar and live-music venue, the late-night stop in town.', url: 'http://www.northernbarandstage.com/' },
+      { name: 'The Northern Bar & Stage', what: 'Downtown bar and live-music venue, the late-night stop in town.', url: 'https://www.northernbarandstage.com/' },
       { name: 'Fernie Brewing Co.', what: 'Sample local beer in the tasting room on the way back into town.', url: 'https://ferniebrewing.com/' },
     ],
     events: [
@@ -204,10 +196,6 @@ const resorts: Resort[] = [
     ],
     getting: { airport: 'Canadian Rockies International (Cranbrook)', code: 'YXC', driveMin: 75, from: [{ city: 'Calgary', hours: 3.5 }, { city: 'Spokane', hours: 4.5 }] },
     google: { rating: 4.6, url: cid('5467337791845971356'), asOf: ASOF },
-    reviewThemes: {
-      loved: ['The bowls and tree skiing after a storm', 'Huge variety of terrain for strong skiers', 'Fernie town has real character and good après'],
-      watchFor: ['Some older, slower lifts until the new express chairs arrive', 'Warm spells can bring rain or heavy snow to the lower mountain'],
-    },
   },
   {
     id: 'red-mountain',
@@ -268,10 +256,6 @@ const resorts: Resort[] = [
     ],
     getting: { airport: 'Spokane International', code: 'GEG', driveMin: 150, from: [{ city: 'Spokane', hours: 2.5 }, { city: 'Vancouver', hours: 7 }] },
     google: { rating: 4.7, url: cid('4572312381559422687'), asOf: ASOF },
-    reviewThemes: {
-      loved: ['Steep, well-spaced tree runs across several peaks', 'Low-key, no-frills vibe and great après at Rafters', 'Short lift lines and good value'],
-      watchFor: ['Few easy groomers; most terrain is advanced', 'A long drive from the nearest big airports'],
-    },
   },
   {
     id: 'whitewater',
@@ -296,7 +280,7 @@ const resorts: Resort[] = [
     stats: {
       summitFt: 6768,
       baseFt: 5348,
-      verticalFt: 2014,
+      verticalFt: 1420, // lift-served; ~2,000 ft counting hike-to terrain
       acres: 1557,
       trails: 113,
       lifts: 5,
@@ -333,10 +317,6 @@ const resorts: Resort[] = [
     ],
     getting: { airport: 'West Kootenay Regional (Castlegar)', code: 'YCG', driveMin: 45, from: [{ city: 'Spokane', hours: 3.5 }, { city: 'Vancouver', hours: 7.5 }] },
     google: { rating: 4.7, url: cid('6296122793009953925'), asOf: ASOF },
-    reviewThemes: {
-      loved: ['Deep, frequent snow and glades close to the lifts', 'The homemade food in the lodge', 'A friendly, local feel, with Nelson’s cafés and bars nearby'],
-      watchFor: ['A small lift network, so lines build on powder weekends', 'No cell service on the mountain and a winding access road'],
-    },
   },
   {
     id: 'panorama',
@@ -397,10 +377,6 @@ const resorts: Resort[] = [
     ],
     getting: { airport: 'Canadian Rockies International (Cranbrook)', code: 'YXC', driveMin: 105, from: [{ city: 'Calgary', hours: 3.5 }] },
     google: { rating: 4.5, url: cid('8603694057286137070'), asOf: ASOF },
-    reviewThemes: {
-      loved: ['Long, wide groomers and big top-to-bottom vertical', 'An easy ski-in/ski-out village for families', 'Taynton Bowl when you want something steeper'],
-      watchFor: ['Snow on the lower mountain can be thin early and late in the season', 'The village is quiet at night, with limited dining'],
-    },
   },
   {
     id: 'kimberley',
@@ -463,10 +439,6 @@ const resorts: Resort[] = [
     ],
     getting: { airport: 'Canadian Rockies International (Cranbrook)', code: 'YXC', driveMin: 20, from: [{ city: 'Calgary', hours: 4.5 }] },
     google: { rating: 4.5, url: cid('3831933893576862995'), asOf: ASOF },
-    reviewThemes: {
-      loved: ['Uncrowded slopes and short lines', 'Sunny days and well-groomed cruisers for families', 'Night skiing on a long, lit run'],
-      watchFor: ['Less snow than the big Powder Highway resorts', 'Some older, slower lifts'],
-    },
   },
 ];
 

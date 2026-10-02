@@ -519,6 +519,44 @@
       "width": 1280
     }
   ],
+  "kirkwood": [
+    {
+      "alt": "Snowboarder and skier from a ski lift, Kirkwood, California, 2009",
+      "author": "glenngould",
+      "file": "src/assets/places/kirkwood/1.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowboarder_and_skier_from_a_ski_lift,_Kirkwood,_California,_2009.jpeg",
+      "title": "File:Snowboarder and skier from a ski lift, Kirkwood, California, 2009.jpeg",
+      "width": 1280
+    },
+    {
+      "alt": "Bear Valley, Kirkwood, Tahoe near season open 2017 (cropped)",
+      "author": "Dicklyon",
+      "file": "src/assets/places/kirkwood/2.jpg",
+      "height": 660,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bear_Valley,_Kirkwood,_Tahoe_near_season_open_2017_(cropped).jpg",
+      "title": "File:Bear Valley, Kirkwood, Tahoe near season open 2017 (cropped).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Party snowshoeing in Kirkwood Mountain Resort, facing northeast towards Caples Lake, Alpine County, California.",
+      "author": "ilya_ktsn from Sunnyvale, USA",
+      "file": "src/assets/places/kirkwood/3.jpg",
+      "height": 851,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowshoeing_in_Kirkwood,_Alpine_County,_California.jpg",
+      "title": "File:Snowshoeing in Kirkwood, Alpine County, California.jpg",
+      "width": 1280
+    }
+  ],
   "montage-mountain": [
     {
       "alt": "View of lodge and Montage ski mountain",
@@ -1013,6 +1051,20 @@
       "width": 1280
     }
   ],
+  "stratton": [
+    {
+      "alt": "Outside the Starting Gate Ski Shop in Wardsboro, VT, was this pile of old ski boots.",
+      "author": "Rudi Riet from Washington, DC, United States",
+      "file": "src/assets/places/stratton/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stack_of_boots_(3074940137).jpg",
+      "title": "File:Stack of boots (3074940137).jpg",
+      "width": 1280
+    }
+  ],
   "sun-peaks": [
     {
       "alt": "Sun Peaks Ski Resort...amongst the snow ghosts",
@@ -1111,6 +1163,44 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rainbow_Falls_Glen_of_Pools_Watkins_Glen_State_Park,_Watkins_Glen_NY_2494.jpg",
       "title": "File:Rainbow Falls Glen of Pools Watkins Glen State Park, Watkins Glen NY 2494.jpg",
       "width": 1600
+    }
+  ],
+  "whistler-blackcomb": [
+    {
+      "alt": "MSH: My winter is your summer.",
+      "author": "Ruth Hartnup from Vancouver, Canada",
+      "file": "src/assets/places/whistler-blackcomb/1.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_loneliness_of_the_long_distance_snowboarder_(2575684626).jpg",
+      "title": "File:The loneliness of the long distance snowboarder (2575684626).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Four weeks ago this was covered in snow.",
+      "author": "Ruth Hartnup from Vancouver, Canada",
+      "file": "src/assets/places/whistler-blackcomb/2.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Start_of_a_summer_skiing_day_(2572297071).jpg",
+      "title": "File:Start of a summer skiing day (2572297071).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "October snow, Whistler Peak",
+      "author": "Ruth Hartnup from Vancouver, Canada",
+      "file": "src/assets/places/whistler-blackcomb/3.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:October_snow,_Whistler_Peak_(3987455206).jpg",
+      "title": "File:October snow, Whistler Peak (3987455206).jpg",
+      "width": 1280
     }
   ],
   "whitetail": [

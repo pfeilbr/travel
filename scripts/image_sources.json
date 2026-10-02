@@ -5082,6 +5082,257 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "revelstoke": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "revelstoke",
+    "revelstoke mountain resort"
+   ],
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Revelstoke Mountain Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Revelstoke ski",
+     "must": [
+      "revelstoke",
+      "revelstoke mountain resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "revelstoke"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "kicking-horse": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "kicking horse",
+    "kicking horse mountain resort",
+    "golden"
+   ],
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Kicking Horse Mountain Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Kicking Horse ski",
+     "must": [
+      "kicking horse",
+      "kicking horse mountain resort",
+      "golden"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "kicking horse"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "fernie": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "fernie",
+    "fernie alpine resort"
+   ],
+   "count": 3,
+   "sources": [
+    {
+     "search": "Fernie Alpine Resort",
+     "limit": 25
+    },
+    {
+     "openverse": "Fernie ski",
+     "must": [
+      "fernie",
+      "fernie alpine resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "fernie"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "red-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "red",
+    "red mountain resort",
+    "rossland"
+   ],
+   "count": 3,
+   "sources": [
+    {
+     "search": "Red Mountain Resort Rossland",
+     "limit": 25
+    },
+    {
+     "openverse": "RED ski",
+     "must": [
+      "red",
+      "red mountain resort",
+      "rossland"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "red"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "whitewater": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "whitewater",
+    "whitewater mountain resort",
+    "nelson"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "search": "Whitewater Ski Resort Nelson",
+     "limit": 25
+    },
+    {
+     "openverse": "Whitewater ski",
+     "must": [
+      "whitewater",
+      "whitewater mountain resort",
+      "nelson"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "whitewater"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "panorama": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "panorama",
+    "panorama mountain resort"
+   ],
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Panorama Mountain Village",
+     "depth": 0
+    },
+    {
+     "openverse": "Panorama ski",
+     "must": [
+      "panorama",
+      "panorama mountain resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "panorama"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "kimberley": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "kimberley",
+    "kimberley alpine resort"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "search": "Kimberley Alpine Resort",
+     "limit": 25
+    },
+    {
+     "openverse": "Kimberley ski",
+     "must": [
+      "kimberley",
+      "kimberley alpine resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "kimberley"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }
