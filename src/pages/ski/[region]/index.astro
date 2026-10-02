@@ -71,6 +71,28 @@ const passCover = PASSES.map((p) => ({ p, names: list.filter((r) => r.passes.inc
   </section>
 
   <SkiExplorer resorts={list} region={region.id} mapLabel={`Map of ${region.name} ski resorts`} />
+
+  <section class="container reports">
+    <details>
+      <summary><Icon name="snowflake" size={18} /> Snow reports, webcams and trail maps <span class="muted">· {list.length} {list.length === 1 ? 'resort' : 'resorts'}</span></summary>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Resort</th><th>Opens</th><th>Snow report</th><th>Webcams</th><th>Trail map</th></tr></thead>
+          <tbody>
+            {sortResorts(list, 'opening').map((r) => (
+              <tr>
+                <td><a href={url(`ski/resorts/${r.id}/`)}>{r.name}</a></td>
+                <td>{new Date(r.season.opens + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })}</td>
+                <td><a href={r.snowReportUrl} rel="noopener">Report</a></td>
+                <td>{r.webcamUrl ? <a href={r.webcamUrl} rel="noopener">Webcams</a> : <span class="muted">—</span>}</td>
+                <td>{r.trailMapUrl ? <a href={r.trailMapUrl} rel="noopener">Map</a> : <span class="muted">—</span>}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </section>
 </Layout>
 
 <style>
@@ -104,4 +126,14 @@ const passCover = PASSES.map((p) => ({ p, names: list.filter((r) => r.passes.inc
   .small { font-size: 13px; margin: 10px 0 0; }
   .more { display: inline-flex; align-items: center; gap: 4px; margin-top: 12px; font-weight: 600; font-size: 14px; }
   @media (max-width: 900px) { .overview { grid-template-columns: 1fr; gap: 24px; } }
+  .reports { margin-top: 16px; }
+  .reports details { border: 1px solid var(--rule); border-radius: var(--radius); padding: 4px 20px; }
+  .reports summary { display: flex; align-items: center; gap: 10px; padding: 14px 0; font-weight: 700; cursor: pointer; list-style: none; }
+  .reports summary::-webkit-details-marker { display: none; }
+  .reports summary .muted { font-weight: 500; }
+  .table-wrap { overflow-x: auto; margin: 0 -20px; padding: 0 20px 16px; }
+  .reports table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 520px; }
+  .reports th { text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); }
+  .reports td { padding: 10px 12px 10px 0; border-bottom: 1px solid var(--rule); }
+  .reports tr:last-child td { border-bottom: 0; }
 </style>
