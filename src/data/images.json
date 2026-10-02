@@ -63,6 +63,20 @@
       "width": 1280
     }
   ],
+  "crotched-mountain": [
+    {
+      "alt": "Top of the Lift",
+      "author": "Accidental Nomad",
+      "file": "src/assets/places/crotched-mountain/1.jpg",
+      "height": 718,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/49333279@N04/54272324696",
+      "title": "Openverse:9bf0b61e-48bb-469c-8a34-9ac2e12b9f63",
+      "width": 1024
+    }
+  ],
   "firelight-camps": [
     {
       "alt": "Buttermilk Falls cascading into its pool in autumn (nearby Buttermilk Falls State Park)",
@@ -387,6 +401,44 @@
       "width": 1600
     }
   ],
+  "killington": [
+    {
+      "alt": "Skiers riding the ski lift up the slopes in Killington, Vermont during the winter.",
+      "author": "https://getaway-vacations.com/",
+      "file": "src/assets/places/killington/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Killington_Ski_Lift.jpg",
+      "title": "File:Killington Ski Lift.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "View of Snowshed Base, Killington Grand Hotel, and other hotels/condos along the East Mountain Road, from Skye Peak in Killington Ski Resort",
+      "author": "NHRHS2010",
+      "file": "src/assets/places/killington/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_East_Mountain_Road.jpg",
+      "title": "File:View of East Mountain Road.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Boardercross Course Snowshed Double Killington Ski Area Green Mountains Rutland County Central Vermont",
+      "author": "EgorovaSvetlana",
+      "file": "src/assets/places/killington/3.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boardercross_Course_Snowshed_Double_Killington_Ski_Area_Green_Mountains_Rutland_County_Central_Vermont.jpg",
+      "title": "File:Boardercross Course Snowshed Double Killington Ski Area Green Mountains Rutland County Central Vermont.jpg",
+      "width": 1280
+    }
+  ],
   "moreau-lake": [
     {
       "alt": "Geese on the grassy shore of Moreau Lake in summer",
@@ -549,6 +601,44 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:50169291163_ea3da65725_ofourth_lake.jpg",
       "title": "File:50169291163 ea3da65725 ofourth lake.jpg",
       "width": 1600
+    }
+  ],
+  "okemo": [
+    {
+      "alt": "Okemo, peak",
+      "author": "Henry P. Gray",
+      "file": "src/assets/places/okemo/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okemo,_peak_-_panoramio.jpg",
+      "title": "File:Okemo, peak - panoramio.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Skiing - panoramio",
+      "author": "Henry P. Gray",
+      "file": "src/assets/places/okemo/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skiing_-_panoramio.jpg",
+      "title": "File:Skiing - panoramio.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "snowy peak",
+      "author": "Henry P. Gray",
+      "file": "src/assets/places/okemo/3.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowy_peak_-_panoramio.jpg",
+      "title": "File:Snowy peak - panoramio.jpg",
+      "width": 1280
     }
   ],
   "pats-peak": [
@@ -777,6 +867,20 @@
       "width": 1600
     }
   ],
+  "stratton": [
+    {
+      "alt": "Outside the Starting Gate Ski Shop in Wardsboro, VT, was this pile of old ski boots.",
+      "author": "Rudi Riet from Washington, DC, United States",
+      "file": "src/assets/places/stratton/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stack_of_boots_(3074940137).jpg",
+      "title": "File:Stack of boots (3074940137).jpg",
+      "width": 1280
+    }
+  ],
   "sunrise-park": [
     {
       "alt": "Top of the ski lift on Sunrise Peak at Sunrise Park Resort in summer.",
@@ -863,6 +967,46 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rainbow_Falls_Glen_of_Pools_Watkins_Glen_State_Park,_Watkins_Glen_NY_2494.jpg",
       "title": "File:Rainbow Falls Glen of Pools Watkins Glen State Park, Watkins Glen NY 2494.jpg",
       "width": 1600
+    }
+  ],
+  "whaleback": [
+    {
+      "alt": "Whaleback summit",
+      "author": "ihamr",
+      "file": "src/assets/places/whaleback/1.jpg",
+      "height": 556,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/163621777@N08/54036978237",
+      "title": "Openverse:6c1c95ac-687f-4766-aff3-9f71608a5c78",
+      "width": 1024
+    }
+  ],
+  "whitetail": [
+    {
+      "alt": "The mogul-filled Exhibition expert ski slope as seen from the ski lift at Whitetail Mountain Resort.",
+      "author": "G. Edward Johnson",
+      "file": "src/assets/places/whitetail/1.jpg",
+      "height": 964,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Exhibition_ski_slope_Whitetail_PA_2026-02-13_10-55-47_1.jpg",
+      "title": "File:Exhibition ski slope Whitetail PA 2026-02-13 10-55-47 1.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "The mountain for skiing at Whitetail Resort near Mercersburg, Pennsylvania.",
+      "author": "NotSoGerman",
+      "file": "src/assets/places/whitetail/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitetail_Mountain.jpg",
+      "title": "File:Whitetail Mountain.jpg",
+      "width": 1280
     }
   ]
 }

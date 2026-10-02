@@ -105,7 +105,7 @@ const resorts: Resort[] = [
       {
         name: 'SledVentures',
         kind: 'snowmobiling',
-        what: 'Snowmobile rentals on Route 3 in Lincoln.',
+        what: 'Snowmobile rentals and guided tours from Lincoln.',
         url: 'https://www.nhsledventures.com/',
         distance: '5 min drive',
       },
@@ -266,7 +266,7 @@ const resorts: Resort[] = [
       {
         name: 'Franconia Village XC Ski Center',
         kind: 'nordic',
-        what: 'Cross-country and snowshoe trails based at the Franconia Inn.',
+        what: 'About 30 km of groomed and ungroomed cross-country trails based at the Franconia Inn.',
         url: 'https://www.franconiainn.com/xc-ski',
         distance: '10 min drive',
       },
@@ -844,7 +844,7 @@ const resorts: Resort[] = [
         name: 'Attitash Mountain Village',
         kind: 'base village',
         what: 'More than 350 rooms, suites and townhouses at the base, many with kitchens and fireplaces, plus pools and hot tubs.',
-        url: 'https://attitashmtvillage.com/',
+        url: 'https://attitashvillage.com/',
         distance: 'At the base',
       },
       {
@@ -887,7 +887,7 @@ const resorts: Resort[] = [
       {
         name: 'Nestlenook Farm',
         kind: 'sleigh-rides',
-        what: 'Horse-drawn sleigh rides and outdoor skating in Jackson.',
+        what: 'Austrian-sleigh rides on a lit 1.5-mile trail (from Nov 27, 2026) and skating on 3-acre Emerald Lake when it freezes.',
         url: 'https://www.nestlenookfarmnh.com/',
         distance: '15 min drive',
       },
@@ -1060,7 +1060,7 @@ const resorts: Resort[] = [
       {
         name: 'Nestlenook Farm',
         kind: 'sleigh-rides',
-        what: 'Horse-drawn sleigh rides and outdoor skating in Jackson.',
+        what: 'Austrian-sleigh rides on a lit 1.5-mile trail (from Nov 27, 2026) and skating on 3-acre Emerald Lake when it freezes.',
         url: 'https://www.nestlenookfarmnh.com/',
         distance: '15 min drive',
       },
@@ -1406,7 +1406,7 @@ const resorts: Resort[] = [
       {
         name: 'Nestlenook Farm',
         kind: 'sleigh-rides',
-        what: 'Horse-drawn sleigh rides and outdoor skating.',
+        what: 'Austrian-sleigh rides on a lit 1.5-mile trail (from Nov 27, 2026) and skating on 3-acre Emerald Lake when it freezes.',
         url: 'https://www.nestlenookfarmnh.com/',
         distance: '5 min drive',
       },
@@ -1564,7 +1564,7 @@ const resorts: Resort[] = [
       {
         name: 'Snowvillage Inn',
         kind: 'inn',
-        what: 'Country inn in nearby Eaton.',
+        what: 'Romantic country inn in nearby Eaton with Max’s Restaurant & Pub.',
         url: 'https://www.snowvillageinn.com/',
         distance: '15 min drive',
       },

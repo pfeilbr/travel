@@ -5,6 +5,8 @@ import { ACTIVITY, PASSES } from '../../src/lib/ski';
 
 const iso = /^\d{4}-\d{2}-\d{2}$/;
 const https = (u: string) => /^https:\/\/[^\s]+$/.test(u);
+// Some small inns and outfitters have no TLS; third-party links may be plain http.
+const web = (u: string) => /^https?:\/\/[^\s]+$/.test(u);
 // Rough bounding boxes (lat/lng) so a swapped or mistyped coordinate fails loudly.
 const BOX: Record<string, [number, number, number, number]> = {
   vermont: [42.7, 45.1, -73.5, -71.4], 'new-hampshire': [42.6, 45.4, -72.6, -70.6], 'new-york': [40.4, 45.1, -79.9, -71.8],
@@ -66,13 +68,13 @@ describe('ski resorts', () => {
     if (r.ticket) expect(r.ticket.from).toBeGreaterThan(0);
 
     expect(r.lodging.length).toBeGreaterThan(0);
-    for (const l of r.lodging) expect(https(l.url), l.url).toBe(true);
-    for (const t of [...r.thingsToDo, ...r.apres]) if (t.url) expect(https(t.url), t.url).toBe(true);
+    for (const l of r.lodging) expect(web(l.url), l.url).toBe(true);
+    for (const t of [...r.thingsToDo, ...r.apres]) if (t.url) expect(web(t.url), t.url).toBe(true);
     for (const e of r.events) {
       expect(e.date, e.name).toMatch(iso);
       if (e.end) expect(e.end >= e.date, e.name).toBe(true);
       expect(e.date >= '2026-09-01' && e.date <= '2027-08-31', `${e.name} ${e.date}`).toBe(true);
-      if (e.url) expect(https(e.url), e.url).toBe(true);
+      if (e.url) expect(web(e.url), e.url).toBe(true);
     }
     if (r.google) {
       expect(r.google.rating).toBeGreaterThanOrEqual(1);

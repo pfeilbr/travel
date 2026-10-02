@@ -2482,6 +2482,511 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "loon": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Loon Mountain",
+     "depth": 0
+    },
+    {
+     "openverse": "Loon ski",
+     "must": [
+      "loon",
+      "loon mountain resort",
+      "lincoln"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "loon"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "cannon": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Cannon Mountain Ski Area",
+     "depth": 0
+    },
+    {
+     "openverse": "Cannon ski",
+     "must": [
+      "cannon",
+      "cannon mountain",
+      "franconia"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "cannon"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bretton-woods": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "search": "Bretton Woods ski area New Hampshire",
+     "limit": 25
+    },
+    {
+     "openverse": "Bretton Woods ski",
+     "must": [
+      "bretton woods"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "bretton woods"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "waterville-valley": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Waterville Valley Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Waterville Valley ski",
+     "must": [
+      "waterville valley",
+      "waterville valley resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "waterville valley"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "attitash": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Attitash ski",
+     "limit": 25
+    },
+    {
+     "openverse": "Attitash ski",
+     "must": [
+      "attitash",
+      "attitash mountain resort",
+      "bartlett"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "attitash"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "wildcat": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Wildcat Mountain ski New Hampshire",
+     "limit": 25
+    },
+    {
+     "openverse": "Wildcat ski",
+     "must": [
+      "wildcat",
+      "wildcat mountain",
+      "pinkham notch"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "wildcat"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "cranmore": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Cranmore Mountain North Conway",
+     "limit": 25
+    },
+    {
+     "openverse": "Cranmore ski",
+     "must": [
+      "cranmore",
+      "cranmore mountain resort",
+      "north conway"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "cranmore"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "black-mountain-nh": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Black Mountain ski Jackson New Hampshire",
+     "limit": 25
+    },
+    {
+     "openverse": "Black ski",
+     "must": [
+      "black",
+      "black mountain",
+      "jackson"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "black"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "king-pine": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "King Pine ski area Madison New Hampshire",
+     "limit": 25
+    },
+    {
+     "openverse": "King Pine ski",
+     "must": [
+      "king pine",
+      "king pine ski area",
+      "east madison"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "king pine"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "snowbasin": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Snowbasin",
+     "depth": 0
+    },
+    {
+     "openverse": "Snowbasin ski",
+     "must": [
+      "snowbasin",
+      "huntsville"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "snowbasin"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "powder-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Powder_Mountain",
+     "depth": 0
+    },
+    {
+     "openverse": "Powder ski",
+     "must": [
+      "powder",
+      "powder mountain",
+      "eden"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "powder"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "nordic-valley": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Nordic Valley ski Eden Utah",
+     "limit": 25
+    },
+    {
+     "openverse": "Nordic Valley ski",
+     "must": [
+      "nordic valley",
+      "eden"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "nordic valley"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "beaver-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Beaver_Mountain",
+     "depth": 0
+    },
+    {
+     "openverse": "Beaver ski",
+     "must": [
+      "beaver",
+      "beaver mountain",
+      "garden city"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "beaver"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "cherry-peak": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Cherry Peak Resort Richmond Utah",
+     "limit": 25
+    },
+    {
+     "openverse": "Cherry Peak ski",
+     "must": [
+      "cherry peak",
+      "cherry peak resort",
+      "richmond"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "cherry peak"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "brian-head": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Brian_Head,_Utah",
+     "depth": 0
+    },
+    {
+     "openverse": "Brian Head ski",
+     "must": [
+      "brian head",
+      "brian head resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "brian head"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "woodward-park-city": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Woodward Park City Utah",
+     "limit": 25
+    },
+    {
+     "openverse": "Woodward Park City ski",
+     "must": [
+      "woodward park city",
+      "park city"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "woodward park city"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }

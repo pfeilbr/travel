@@ -75,10 +75,6 @@ const resorts: Resort[] = [
       ],
     },
     google: { rating: 4.7, url: 'https://maps.google.com/?cid=17777146693740589167', asOf: ASOF },
-    reviewThemes: {
-      loved: ['Long, uncrowded top-to-bottom runs on a fast lift network', 'Lodges and food feel upscale for a ski area', 'Free parking and an easier drive than the Cottonwoods'],
-      watchFor: ['Weekend and holiday traffic backs up on the road in', 'Upper-mountain lifts close in high wind'],
-    },
   },
   {
     id: 'powder-mountain',
@@ -146,10 +142,6 @@ const resorts: Resort[] = [
       ],
     },
     google: { rating: 4.4, url: 'https://maps.google.com/?cid=17024799382592858918', asOf: ASOF },
-    reviewThemes: {
-      loved: ['Fresh tracks last for days after a storm', 'Huge variety of tree and powder terrain', 'Night skiing on Sundown stretches the day'],
-      watchFor: ['The steep road up needs AWD or chains in storms, and weekend parking is paid', 'Lots of traversing between pods'],
-    },
   },
   {
     id: 'nordic-valley',
@@ -217,10 +209,6 @@ const resorts: Resort[] = [
       ],
     },
     google: { rating: 4.1, url: 'https://maps.google.com/?cid=7240803193691347642', asOf: ASOF },
-    reviewThemes: {
-      loved: ['Cheap tickets and a free pass for kids 12 and under', 'Patient instructors; a good place to learn', 'Short, easy drive from Ogden'],
-      watchFor: ['Low elevation means thin or late snow in warm winters', 'Food is mostly a snack shack and food trucks'],
-    },
   },
   {
     id: 'beaver-mountain',
@@ -283,10 +271,6 @@ const resorts: Resort[] = [
       ],
     },
     google: { rating: 4.8, url: 'https://maps.google.com/?cid=103975375585680743', asOf: ASOF },
-    reviewThemes: {
-      loved: ['Old-school, family-run feel and friendly staff', 'Deep snow, short lines and low prices', 'Lots of tree skiing for its size'],
-      watchFor: ['Older, slower chairlifts', 'Remote canyon drive; check the road in storms'],
-    },
   },
   {
     id: 'cherry-peak',
@@ -301,7 +285,7 @@ const resorts: Resort[] = [
     url: 'https://www.skicpr.com/',
     snowReportUrl: 'https://www.skicpr.com/ski-report',
     trailMapUrl: 'https://www.skicpr.com/trail-map',
-    webcamUrl: 'http://www.ixnay.net/cams/cherrypeak/index.php',
+    webcamUrl: 'https://www.ixnay.net/cams/cherrypeak/index.php',
     passes: ['indy'],
     season: {
       opens: '2026-12-18',
@@ -349,10 +333,6 @@ const resorts: Resort[] = [
       ],
     },
     google: { rating: 4.2, url: 'https://maps.google.com/?cid=6389422363448181708', asOf: ASOF },
-    reviewThemes: {
-      loved: ['Cheap tickets and passes', 'Night skiing close to Logan', 'Friendly, low-key local feel'],
-      watchFor: ['Small terrain and slow fixed-grip chairs', 'Lower elevation means variable snow that can turn icy at night'],
-    },
   },
   {
     id: 'brian-head',
@@ -423,54 +403,6 @@ const resorts: Resort[] = [
       ],
     },
     google: { rating: 4.6, url: 'https://maps.google.com/?cid=4547195856580746454', asOf: ASOF },
-    reviewThemes: {
-      loved: ['Reliable snow thanks to the high base', 'Red-rock views from the top that no other resort has', 'Easy, family-friendly terrain, and kids ski free'],
-      watchFor: ['Holiday weekends get busy with Las Vegas and Southern California crowds', 'Two separate base areas mean shuttling or driving between them'],
-    },
-  },
-  {
-    id: 'eagle-point',
-    name: 'Eagle Point',
-    region: 'utah',
-    area: 'Tushar Mountains',
-    town: 'Beaver',
-    coords: [38.3203, -112.3839],
-    size: 'mid',
-    tagline: 'Closed for 2026-27 after the Cottonwood Fire',
-    summary: 'A quiet Tushar Mountains resort with a 9,100-foot base, usually open Friday to Sunday with no lift lines. The June 2026 Cottonwood Fire damaged four of its five lifts, burned about half the ski terrain and destroyed Canyonside Lodge and 145 homes and condos, so Eagle Point won’t open this winter. The owners hope to return for 2027-28.',
-    url: 'https://www.eaglepointresort.com/',
-    snowReportUrl: 'https://www.eaglepointresort.com/snow-report',
-    passes: [],
-    season: {
-      opens: '2027-12-17',
-      closes: '2028-04-02',
-      note: 'Closed for all of 2026-27 after fire and flood damage; road access is currently an unpaved route. No reopening date yet. These dates are only Eagle Point’s usual mid-December to early-April pattern for a hoped-for 2027-28 return.',
-    },
-    stats: {
-      summitFt: 10600,
-      baseFt: 9100,
-      verticalFt: 1500,
-      acres: 650,
-      trails: 40,
-      lifts: 5,
-      snowfallIn: 350,
-      terrain: { beginner: 20, intermediate: 40, advanced: 40 },
-    },
-    activities: [],
-    lodging: [],
-    thingsToDo: [],
-    apres: [],
-    events: [],
-    getting: {
-      airport: 'Cedar City Regional',
-      code: 'CDC',
-      driveMin: 75,
-      from: [
-        { city: 'Las Vegas', hours: 3.75 },
-        { city: 'Salt Lake City', hours: 3.5 },
-      ],
-    },
-    google: { rating: 4.4, url: 'https://maps.google.com/?cid=14701684051493694056', asOf: ASOF },
   },
   {
     id: 'woodward-park-city',
@@ -531,10 +463,6 @@ const resorts: Resort[] = [
       ],
     },
     google: { rating: 4.3, url: 'https://maps.google.com/?cid=8739391841269612965', asOf: ASOF },
-    reviewThemes: {
-      loved: ['A great place for kids to learn park skills with coaching', 'The Indoor Hub keeps everyone busy on stormy or warm days', 'Long, well-run tubing lanes'],
-      watchFor: ['Tiny hill with little terrain beyond the parks', 'Busy and pricey on weekends and holidays'],
-    },
   },
 ];
 
