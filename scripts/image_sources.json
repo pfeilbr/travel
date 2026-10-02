@@ -3209,6 +3209,1129 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "vail": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Vail Ski Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Vail ski",
+     "must": [
+      "vail"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "vail"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "beaver-creek": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Beaver Creek, Colorado",
+     "depth": 0
+    },
+    {
+     "openverse": "Beaver Creek ski",
+     "must": [
+      "beaver creek",
+      "avon"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "beaver creek"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "breckenridge": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Breckenridge Ski Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Breckenridge ski",
+     "must": [
+      "breckenridge"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "breckenridge"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "keystone": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Keystone Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Keystone ski",
+     "must": [
+      "keystone"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "keystone"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "copper-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Copper Mountain (Colorado)",
+     "depth": 0
+    },
+    {
+     "openverse": "Copper ski",
+     "must": [
+      "copper",
+      "copper mountain"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "copper"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "arapahoe-basin": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Arapahoe Basin",
+     "depth": 0
+    },
+    {
+     "openverse": "Arapahoe Basin ski",
+     "must": [
+      "arapahoe basin",
+      "keystone"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "arapahoe basin"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "loveland": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Loveland Ski Area",
+     "depth": 0
+    },
+    {
+     "openverse": "Loveland ski",
+     "must": [
+      "loveland",
+      "georgetown"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "loveland"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "winter-park": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Winter Park Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Winter Park ski",
+     "must": [
+      "winter park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "winter park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "eldora": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Eldora Mountain Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Eldora ski",
+     "must": [
+      "eldora",
+      "nederland"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "eldora"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "ski-cooper": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Ski Cooper",
+     "depth": 0
+    },
+    {
+     "openverse": "Ski Cooper ski",
+     "must": [
+      "ski cooper",
+      "leadville"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "ski cooper"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "whitefish": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Whitefish Mountain Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Whitefish ski",
+     "must": [
+      "whitefish",
+      "whitefish mountain resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "whitefish"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bridger-bowl": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Bridger Bowl ski area",
+     "limit": 25
+    },
+    {
+     "openverse": "Bridger Bowl ski",
+     "must": [
+      "bridger bowl",
+      "bozeman"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "bridger bowl"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "red-lodge-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Red Lodge Mountain ski area",
+     "limit": 25
+    },
+    {
+     "openverse": "Red Lodge ski",
+     "must": [
+      "red lodge",
+      "red lodge mountain"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "red lodge"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "montana-snowbowl": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Montana Snowbowl",
+     "limit": 25
+    },
+    {
+     "openverse": "Montana Snowbowl ski",
+     "must": [
+      "montana snowbowl",
+      "missoula"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "montana snowbowl"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "discovery-montana": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Discovery Ski Area Montana",
+     "limit": 25
+    },
+    {
+     "openverse": "Discovery ski",
+     "must": [
+      "discovery",
+      "discovery ski area",
+      "philipsburg"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "discovery"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "lost-trail": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Lost Trail Powder Mountain",
+     "limit": 25
+    },
+    {
+     "openverse": "Lost Trail Powder ski",
+     "must": [
+      "lost trail powder",
+      "lost trail powder mountain",
+      "sula"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "lost trail powder"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "great-divide": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Great Divide Ski Area Montana",
+     "limit": 25
+    },
+    {
+     "openverse": "Great Divide ski",
+     "must": [
+      "great divide",
+      "great divide ski area",
+      "marysville"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "great divide"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "showdown": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Showdown Ski Area Montana",
+     "limit": 25
+    },
+    {
+     "openverse": "Showdown Montana ski",
+     "must": [
+      "showdown montana",
+      "neihart"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "showdown montana"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "blacktail-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Blacktail Mountain Ski Area",
+     "limit": 25
+    },
+    {
+     "openverse": "Blacktail ski",
+     "must": [
+      "blacktail",
+      "blacktail mountain ski area",
+      "lakeside"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "blacktail"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "woods-valley": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Woods Valley Ski Area",
+     "limit": 25
+    },
+    {
+     "openverse": "Woods Valley ski",
+     "must": [
+      "woods valley",
+      "woods valley ski area",
+      "westernville"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "woods valley"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "snow-ridge": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Snow Ridge Ski Resort Turin",
+     "limit": 25
+    },
+    {
+     "openverse": "Snow Ridge ski",
+     "must": [
+      "snow ridge",
+      "snow ridge ski resort",
+      "turin"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "snow ridge"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "song-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Song Mountain Tully",
+     "limit": 25
+    },
+    {
+     "openverse": "Song ski",
+     "must": [
+      "song",
+      "song mountain",
+      "tully"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "song"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "labrador-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Labrador Mountain Truxton",
+     "limit": 25
+    },
+    {
+     "openverse": "Labrador ski",
+     "must": [
+      "labrador",
+      "labrador mountain",
+      "truxton"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "labrador"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "greek-peak": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Greek Peak Mountain Resort",
+     "limit": 25
+    },
+    {
+     "openverse": "Greek Peak ski",
+     "must": [
+      "greek peak",
+      "greek peak mountain resort",
+      "cortland"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "greek peak"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bristol-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Bristol Mountain Ski Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Bristol ski",
+     "must": [
+      "bristol",
+      "bristol mountain",
+      "canandaigua"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "bristol"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "holiday-valley": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Holiday Valley ski Ellicottville",
+     "limit": 25
+    },
+    {
+     "openverse": "Holiday Valley ski",
+     "must": [
+      "holiday valley",
+      "ellicottville"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "holiday valley"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "peek-n-peak": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Peek'n Peak",
+     "limit": 25
+    },
+    {
+     "openverse": "Peek’n Peak ski",
+     "must": [
+      "peek’n peak",
+      "peek’n peak resort",
+      "clymer"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "peek’n peak"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "swain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Swain ski resort",
+     "limit": 25
+    },
+    {
+     "openverse": "Swain ski",
+     "must": [
+      "swain",
+      "swain resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "swain"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "kissing-bridge": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Kissing Bridge ski Glenwood",
+     "limit": 25
+    },
+    {
+     "openverse": "Kissing Bridge ski",
+     "must": [
+      "kissing bridge",
+      "glenwood"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "kissing bridge"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "park-city": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Park City Mountain Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Park City ski",
+     "must": [
+      "park city",
+      "park city mountain"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "park city"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "deer-valley": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Deer Valley",
+     "depth": 0
+    },
+    {
+     "openverse": "Deer Valley ski",
+     "must": [
+      "deer valley",
+      "deer valley resort",
+      "park city"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "deer valley"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "snowbird": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Snowbird, Utah",
+     "depth": 0
+    },
+    {
+     "openverse": "Snowbird ski",
+     "must": [
+      "snowbird"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "snowbird"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "alta": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Alta Ski Area",
+     "depth": 0
+    },
+    {
+     "openverse": "Alta ski",
+     "must": [
+      "alta",
+      "alta ski area"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "alta"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "brighton": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Brighton Ski Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Brighton ski",
+     "must": [
+      "brighton",
+      "brighton resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "brighton"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "solitude": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Solitude Mountain Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Solitude ski",
+     "must": [
+      "solitude",
+      "solitude mountain resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "solitude"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "sundance": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Sundance Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Sundance ski",
+     "must": [
+      "sundance",
+      "sundance mountain resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "sundance"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }

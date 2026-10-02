@@ -77,6 +77,34 @@
       "width": 1024
     }
   ],
+  "cypress-mountain": [
+    {
+      "alt": "Cypress Mountain, a day snow shoeing.",
+      "author": "cogdogblog",
+      "file": "src/assets/places/cypress-mountain/1.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2014-365-362_Snow_on_the_Mountain_(16132788051).jpg",
+      "title": "File:2014-365-362 Snow on the Mountain (16132788051).jpg",
+      "width": 1280
+    }
+  ],
+  "diamond-peak": [
+    {
+      "alt": "Diamond Peak Ski Resort at Incline Village Lake Tahoe by Don Ramey Logan",
+      "author": "Don Ramey Logan",
+      "file": "src/assets/places/diamond-peak/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diamond_Peak_Ski_Resort_at_Incline_Village_Lake_Tahoe_by_Don_Ramey_Logan.jpg",
+      "title": "File:Diamond Peak Ski Resort at Incline Village Lake Tahoe by Don Ramey Logan.jpg",
+      "width": 1280
+    }
+  ],
   "firelight-camps": [
     {
       "alt": "Buttermilk Falls cascading into its pool in autumn (nearby Buttermilk Falls State Park)",
@@ -365,6 +393,20 @@
       "width": 1280
     }
   ],
+  "homewood": [
+    {
+      "alt": "Homewood, CA",
+      "author": "User:JGonera (WMF)",
+      "file": "src/assets/places/homewood/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Tahoe_in_winter_seen_from_Homewood,_California.jpg",
+      "title": "File:Lake Tahoe in winter seen from Homewood, California.jpg",
+      "width": 1280
+    }
+  ],
   "keuka-lake": [
     {
       "alt": "Keuka Lake and vineyard hills from Keuka Lake State Park",
@@ -567,6 +609,20 @@
       "width": 1280
     }
   ],
+  "mt-seymour": [
+    {
+      "alt": "Runner Peak and Mount Elsay from Elsay Lake Trail.",
+      "author": "Stephen Hui",
+      "file": "src/assets/places/mt-seymour/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Runner_Peak_and_Mount_Elsay.jpg",
+      "title": "File:Runner Peak and Mount Elsay.jpg",
+      "width": 1280
+    }
+  ],
   "nicks-lake": [
     {
       "alt": "Fall color on the hills around Seventh Lake (nearby Fulton Chain of Lakes)",
@@ -664,6 +720,44 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowy_peak_-_panoramio.jpg",
       "title": "File:Snowy peak - panoramio.jpg",
+      "width": 1280
+    }
+  ],
+  "palisades-tahoe": [
+    {
+      "alt": "Gondel zum Winter Olympics High Camp von 1960 im Palisades Tahoe Ferienort in Kalifornien.",
+      "author": "Frank Schulenburg",
+      "file": "src/assets/places/palisades-tahoe/1.jpg",
+      "height": 871,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Squaw_Valley_Gondola.jpg",
+      "title": "File:Squaw Valley Gondola.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "An elevated view of Palisades Tahoe, a California ski resort.",
+      "author": "9yz",
+      "file": "src/assets/places/palisades-tahoe/2.jpg",
+      "height": 796,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palisades_Tahoe_Village_Elevated.jpg",
+      "title": "File:Palisades Tahoe Village Elevated.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "North aspect of Washeshu Peak at the Palisades Tahoe ski area in California, USA.",
+      "author": "John M",
+      "file": "src/assets/places/palisades-tahoe/3.jpg",
+      "height": 833,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Washeshu_Peak.jpg",
+      "title": "File:Washeshu Peak.jpg",
       "width": 1280
     }
   ],
@@ -931,6 +1025,20 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:SPR_Summer_Activities-57.jpg",
       "title": "File:SPR Summer Activities-57.jpg",
+      "width": 1280
+    }
+  ],
+  "tussey-mountain": [
+    {
+      "alt": "2024-09-04 17 13 01 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania",
+      "author": "Famartin",
+      "file": "src/assets/places/tussey-mountain/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-09-04_17_13_01_View_towards_the_Tussey_Mountain_Ski_Area_from_the_Blue_Trail_between_station_7_and_station_8_within_the_Mount_Nittany_Conservancy_in_College_Township,_Centre_County,_Pennsylvania.jpg",
+      "title": "File:2024-09-04 17 13 01 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania.jpg",
       "width": 1280
     }
   ],
