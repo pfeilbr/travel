@@ -669,6 +669,540 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "mount-sunapee": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Mount Sunapee",
+     "depth": 1
+    },
+    {
+     "search": "Mount Sunapee ski",
+     "limit": 30
+    },
+    {
+     "search": "Mount Sunapee Resort Newbury",
+     "limit": 30
+    },
+    {
+     "openverse": "Mount Sunapee ski",
+     "must": [
+      "mount sunapee",
+      "newbury"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mount sunapee"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "gunstock": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Gunstock Mountain Resort Gilford New Hampshire",
+     "depth": 1
+    },
+    {
+     "search": "Gunstock Mountain Resort",
+     "limit": 30
+    },
+    {
+     "search": "Gunstock ski Gilford",
+     "limit": 30
+    },
+    {
+     "openverse": "Gunstock ski",
+     "must": [
+      "gunstock",
+      "gunstock mountain resort",
+      "gilford"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "gunstock"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "ragged-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Ragged Mountain (New Hampshire)",
+     "depth": 1
+    },
+    {
+     "search": "Ragged Mountain Resort Danbury",
+     "limit": 30
+    },
+    {
+     "search": "Ragged Mountain New Hampshire ski",
+     "limit": 30
+    },
+    {
+     "openverse": "Ragged ski",
+     "must": [
+      "ragged",
+      "ragged mountain resort",
+      "danbury"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "ragged"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "pats-peak": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Pats Peak",
+     "limit": 30
+    },
+    {
+     "search": "Pats Peak Henniker ski",
+     "limit": 30
+    },
+    {
+     "openverse": "Pats Peak ski",
+     "must": [
+      "pats peak",
+      "henniker"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "pats peak"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "crotched-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Crotched Mountain Ski & Ride",
+     "depth": 1
+    },
+    {
+     "search": "Crotched Mountain ski",
+     "limit": 30
+    },
+    {
+     "search": "Crotched Mountain Bennington",
+     "limit": 30
+    },
+    {
+     "openverse": "Crotched ski",
+     "must": [
+      "crotched",
+      "crotched mountain",
+      "bennington"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "crotched"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "whaleback": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Whaleback Mountain Enfield",
+     "limit": 30
+    },
+    {
+     "search": "Whaleback ski area New Hampshire",
+     "limit": 30
+    },
+    {
+     "openverse": "Whaleback ski",
+     "must": [
+      "whaleback",
+      "whaleback mountain",
+      "enfield"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "whaleback"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "killington": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Killington_Ski_Resort",
+     "depth": 1
+    },
+    {
+     "search": "Killington ski resort Vermont",
+     "limit": 30
+    },
+    {
+     "search": "Killington Peak winter",
+     "limit": 30
+    },
+    {
+     "openverse": "Killington ski",
+     "must": [
+      "killington",
+      "killington resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "killington"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "pico": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "search": "Pico Mountain ski Vermont",
+     "limit": 30
+    },
+    {
+     "search": "Pico Peak Killington winter",
+     "limit": 30
+    },
+    {
+     "openverse": "Pico ski",
+     "must": [
+      "pico",
+      "pico mountain",
+      "killington"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "pico"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "okemo": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Okemo_Mountain",
+     "depth": 1
+    },
+    {
+     "search": "Okemo Mountain Resort ski",
+     "limit": 30
+    },
+    {
+     "search": "Okemo Ludlow Vermont winter",
+     "limit": 30
+    },
+    {
+     "openverse": "Okemo ski",
+     "must": [
+      "okemo",
+      "okemo mountain resort",
+      "ludlow"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "okemo"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mount-snow": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "search": "Mount Snow ski resort Vermont",
+     "limit": 30
+    },
+    {
+     "search": "Mount Snow West Dover winter",
+     "limit": 30
+    },
+    {
+     "openverse": "Mount Snow ski",
+     "must": [
+      "mount snow",
+      "west dover"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mount snow"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "stratton": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Stratton_Mountain_Resort",
+     "depth": 1
+    },
+    {
+     "search": "Stratton Mountain ski resort Vermont",
+     "limit": 30
+    },
+    {
+     "search": "Stratton Village Vermont winter",
+     "limit": 30
+    },
+    {
+     "openverse": "Stratton ski",
+     "must": [
+      "stratton",
+      "stratton mountain resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "stratton"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bromley": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Bromley_Mountain_Ski_Resort",
+     "depth": 1
+    },
+    {
+     "search": "Bromley Mountain ski Vermont",
+     "limit": 30
+    },
+    {
+     "search": "Bromley Mountain Peru Vermont winter",
+     "limit": 30
+    },
+    {
+     "openverse": "Bromley ski",
+     "must": [
+      "bromley",
+      "bromley mountain",
+      "peru"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "bromley"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "magic-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Magic_Mountain_Ski_Area",
+     "depth": 1
+    },
+    {
+     "search": "Magic Mountain ski area Londonderry Vermont",
+     "limit": 30
+    },
+    {
+     "search": "Magic Mountain Vermont ski",
+     "limit": 30
+    },
+    {
+     "openverse": "Magic ski",
+     "must": [
+      "magic",
+      "magic mountain",
+      "londonderry"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "magic"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "saskadena-six": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Suicide Six ski area Woodstock Vermont",
+     "limit": 30
+    },
+    {
+     "search": "Saskadena Six ski",
+     "limit": 30
+    },
+    {
+     "openverse": "Saskadena Six ski",
+     "must": [
+      "saskadena six",
+      "south pomfret"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "saskadena six"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }
