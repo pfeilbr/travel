@@ -385,6 +385,20 @@
       "width": 1600
     }
   ],
+  "mt-lemmon": [
+    {
+      "alt": "Early winter Mt Lemmon ski lift (2,791m/9,157ft) waiting for snowpack",
+      "author": "All Fronts Quiet",
+      "file": "src/assets/places/mt-lemmon/1.jpg",
+      "height": 857,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Early_winter_Mt_Lemmon_ski_lift_(2,791m-9,157ft)_waiting_for_snowpack_-_panoramio.jpg",
+      "title": "File:Early winter Mt Lemmon ski lift (2,791m-9,157ft) waiting for snowpack - panoramio.jpg",
+      "width": 1280
+    }
+  ],
   "nicks-lake": [
     {
       "alt": "Fall color on the hills around Seventh Lake (nearby Fulton Chain of Lakes)",
@@ -631,6 +645,32 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Selkirk_Light_(37601775685).jpg",
       "title": "File:Selkirk Light (37601775685).jpg",
       "width": 1600
+    }
+  ],
+  "sunrise-park": [
+    {
+      "alt": "Top of the ski lift on Sunrise Peak at Sunrise Park Resort in summer.",
+      "author": "Dbferal",
+      "file": "src/assets/places/sunrise-park/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_peak_lift.jpg",
+      "title": "File:Sunrise peak lift.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "3D Archery at Sunrise Park Resort",
+      "author": "Mtntas12",
+      "file": "src/assets/places/sunrise-park/2.jpg",
+      "height": 854,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SPR_Summer_Activities-57.jpg",
+      "title": "File:SPR Summer Activities-57.jpg",
+      "width": 1280
     }
   ],
   "watkins-glen": [

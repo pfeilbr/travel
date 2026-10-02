@@ -15,7 +15,7 @@ const resorts: Resort[] = [
     size: 'major',
     tagline: 'Vermont’s highest peak and a polished ski village',
     summary:
-      'Two mountains linked by a gondola: Mount Mansfield, with the steep Front Four and long cruisers, and Spruce Peak, with sunny learning terrain and the slopeside village. Stowe village, sleigh rides and some of Vermont’s best-known breweries are a short drive down Mountain Road. It suits strong skiers and anyone who wants a full resort trip, if you can live with weekend crowds and big-resort prices.',
+      'Two mountains linked by a gondola: Mount Mansfield, with the steep Front Four and long cruisers, and Spruce Peak, with learning terrain and the slopeside village. Stowe village, sleigh rides and some of Vermont’s best-known breweries are a short drive down Mountain Road. It suits strong skiers and anyone who wants a full resort trip, if you can live with weekend crowds and big-resort prices.',
     url: 'https://www.stowe.com/',
     snowReportUrl: 'https://www.stowe.com/the-mountain/mountain-conditions/snow-and-weather-report.aspx',
     trailMapUrl: 'https://www.stowe.com/the-mountain/about-the-mountain/trail-maps.aspx',
@@ -109,7 +109,7 @@ const resorts: Resort[] = [
       {
         name: 'The Spa at Spruce Peak',
         kind: 'spa',
-        what: 'Full-service spa at The Lodge, open to non-guests for treatments.',
+        what: 'Full-service spa at The Lodge at Spruce Peak, for a post-ski massage.',
         url: 'https://www.sprucepeak.com/spa',
         distance: 'At the base',
       },
@@ -123,7 +123,7 @@ const resorts: Resort[] = [
       {
         name: 'Vermont Ski & Snowboard Museum',
         kind: 'museum',
-        what: 'Small museum in Stowe village on Vermont’s ski history, from rope tows to the 10th Mountain Division.',
+        what: 'Exhibits on Vermont’s ski and snowboard history, in Stowe village.',
         url: 'https://www.vtssm.org/',
         distance: '15 min drive',
       },
@@ -270,7 +270,7 @@ const resorts: Resort[] = [
       {
         name: 'Sterling Ridge Resort',
         kind: 'cabin',
-        what: 'Log cabins and cottages on a quiet hillside outside Jeffersonville.',
+        what: 'Cabin resort on a quiet hillside outside Jeffersonville.',
         url: 'https://www.sterlingridgeresort.com/',
         distance: '10 min drive',
       },
@@ -306,7 +306,7 @@ const resorts: Resort[] = [
       {
         name: 'Smugglers’ Notch Distillery',
         kind: 'drink',
-        what: 'Award-winning small distillery with a tasting room on Route 15.',
+        what: 'Small distillery with a tasting room on Route 15.',
         url: 'https://www.smugglersnotchdistillery.com/',
         distance: '10 min drive',
       },
@@ -380,7 +380,7 @@ const resorts: Resort[] = [
     size: 'major',
     tagline: 'The East’s snowiest peak, plus an indoor waterpark',
     summary:
-      'By its own count Jay gets more snow than anywhere else in eastern North America, and deep glades and a liberal in-bounds policy make it a powder-hunter’s mountain. The Pump House waterpark, an NHL-size ice arena and slopeside hotels fill the off-slope hours. It’s remote, near the Quebec border, and the summit tram can go on wind hold.',
+      'By its own count Jay gets more snow than anywhere else in eastern North America, and deep glades and a liberal in-bounds policy make it a powder-hunter’s mountain. The Pump House waterpark, an NHL-size ice arena and slopeside hotels fill the off-slope hours. It’s remote, near the Quebec border, and the summit is often windy and fogged in.',
     url: 'https://jaypeakresort.com/',
     snowReportUrl: 'https://jaypeakresort.com/skiing-riding/snow-report-maps/snow-report',
     trailMapUrl: 'https://jaypeakresort.com/skiing-riding/snow-report-maps/trail-map',
@@ -430,7 +430,7 @@ const resorts: Resort[] = [
       {
         name: 'Jay Village Inn',
         kind: 'inn',
-        what: 'Casual inn and restaurant in Jay village, below the access road.',
+        what: 'Casual inn and restaurant on Route 242 in Jay village.',
         url: 'https://www.thejayvillageinn.com/',
         distance: '10 min drive',
       },
@@ -521,7 +521,7 @@ const resorts: Resort[] = [
     size: 'major',
     tagline: 'Two mountains, Castlerock steeps and a valley of inns',
     summary:
-      'Lincoln Peak and Mt. Ellen are linked by the Slide Brook Express, with classic New England trails, Castlerock’s expert terrain and the wild Slide Brook Basin between them. The Mad River Valley around it is full of inns, breweries and farm restaurants. It’s on the Ikon Pass, and a $99 advance ticket makes 2026-27 good value.',
+      'Lincoln Peak and Mt. Ellen are linked by the Slide Brook Express, with classic New England trails, Castlerock’s expert terrain and the wild Slide Brook Basin between them. The Mad River Valley around it is full of inns, breweries and good restaurants. It’s on the Ikon Pass, and a $99 advance ticket makes 2026-27 good value.',
     url: 'https://www.sugarbush.com/',
     snowReportUrl: 'https://www.sugarbush.com/mountain/conditions',
     trailMapUrl: 'https://www.sugarbush.com/mountain/terrain-and-maps',
@@ -562,7 +562,7 @@ const resorts: Resort[] = [
       {
         name: 'The Pitcher Inn',
         kind: 'inn',
-        what: 'Luxury inn with themed rooms in tiny Warren village.',
+        what: 'Luxury inn in tiny Warren village.',
         url: 'https://www.pitcherinn.com/',
         distance: '10 min drive',
       },
@@ -576,7 +576,7 @@ const resorts: Resort[] = [
       {
         name: 'Hyde Away Inn',
         kind: 'inn',
-        what: 'Casual ski lodge with a restaurant and pub on Route 17, between Sugarbush and Mad River Glen.',
+        what: 'Casual ski lodge with a restaurant on Route 17, between Sugarbush and Mad River Glen.',
         url: 'https://www.hydeawayinn.com/',
         distance: '15 min drive',
       },
@@ -606,7 +606,7 @@ const resorts: Resort[] = [
       {
         name: 'Lawson’s Finest Liquids',
         kind: 'drink',
-        what: 'Taproom of the much-loved Vermont brewery, with a fireplace and food.',
+        what: 'Taproom and shop of the much-loved Vermont brewery.',
         url: 'https://www.lawsonsfinest.com/',
         distance: '15 min drive',
       },
@@ -621,7 +621,7 @@ const resorts: Resort[] = [
     apres: [
       { name: 'Castlerock Pub', what: 'Lincoln Peak pub with local beers like Lawson’s and Hill Farmstead and better-than-bar food.', url: 'https://www.sugarbush.com/things-to-do/resort-dining/castlerock-pub' },
       { name: 'The Wünderbar', what: 'Retro lodge bar at the Lincoln Peak base, billed as the first bar at a ski resort.', url: 'https://www.sugarbush.com/things-to-do/resort-dining/wunderbar' },
-      { name: 'Hyde Away', what: 'Easygoing pub and restaurant on Route 17.', url: 'https://www.hydeawayinn.com/' },
+      { name: 'Hyde Away', what: 'Easygoing inn restaurant on Route 17, popular with both mountains’ crowds.', url: 'https://www.hydeawayinn.com/' },
     ],
     events: [
       {
@@ -687,14 +687,14 @@ const resorts: Resort[] = [
       {
         name: 'Mad River Barn',
         kind: 'lodge',
-        what: 'Old-style ski lodge with a pub upstairs and a dining room, close to the Single Chair.',
+        what: 'Ski lodge with a pub upstairs and a dining room, close to the Single Chair.',
         url: 'https://madriverbarn.com/',
         distance: '5 min drive',
       },
       {
         name: 'Hyde Away Inn',
         kind: 'inn',
-        what: 'Casual ski lodge with a restaurant and pub on Route 17.',
+        what: 'Casual ski lodge with a restaurant on Route 17.',
         url: 'https://www.hydeawayinn.com/',
         distance: '5 min drive',
       },
@@ -708,7 +708,7 @@ const resorts: Resort[] = [
       {
         name: 'The Pitcher Inn',
         kind: 'inn',
-        what: 'Luxury inn with themed rooms in Warren village.',
+        what: 'Luxury inn in Warren village.',
         url: 'https://www.pitcherinn.com/',
         distance: '20 min drive',
       },
@@ -827,7 +827,7 @@ const resorts: Resort[] = [
       {
         name: 'Grünberg Haus Inn & Cabins',
         kind: 'b&b',
-        what: 'Austrian-style B&B with cabins in the woods near Waterbury.',
+        what: 'B&B with cabins in the woods near Waterbury.',
         url: 'https://www.grunberghaus.com/',
         distance: '25 min drive',
       },
@@ -871,7 +871,7 @@ const resorts: Resort[] = [
     ],
     apres: [
       { name: 'James Moore Tavern', what: 'Slopeside pub with local beers, burgers, sunset views and music in the Fireside Room.', url: 'https://www.boltonvalley.com/things-to-do/apres-dining/' },
-      { name: 'Prohibition Pig', what: 'Waterbury brewery and barbecue restaurant on the drive home.', url: 'https://www.prohibitionpig.com/' },
+      { name: 'Prohibition Pig', what: 'Waterbury restaurant and brewery on the drive home.', url: 'https://www.prohibitionpig.com/' },
     ],
     events: [
       {
@@ -961,14 +961,14 @@ const resorts: Resort[] = [
       {
         name: 'The Inn at Mountain View Farm',
         kind: 'inn',
-        what: 'Restored farm estate on Darling Hill with wide views.',
+        what: 'Inn on a hilltop farm on Darling Hill Road.',
         url: 'https://www.innmtnview.com/',
         distance: '10 min drive',
       },
       {
         name: 'The Wildflower Inn',
         kind: 'inn',
-        what: 'Family-friendly hilltop inn with a restaurant and pub on Darling Hill.',
+        what: 'Hilltop inn with a restaurant and pub on Darling Hill Road.',
         url: 'https://www.wildflowerinn.com/',
         distance: '15 min drive',
       },
@@ -977,7 +977,7 @@ const resorts: Resort[] = [
       {
         name: 'Kingdom Trails',
         kind: 'fat-biking',
-        what: 'The famous trail network grooms routes for winter fat biking and snowshoeing.',
+        what: 'The well-known trail network keeps winter trails for fat biking and snowshoeing.',
         url: 'https://www.kingdomtrails.org/',
         distance: '5 min drive',
       },
@@ -998,14 +998,14 @@ const resorts: Resort[] = [
       {
         name: 'Fairbanks Museum & Planetarium',
         kind: 'museum',
-        what: 'Victorian natural history museum and planetarium in St. Johnsbury, packed with curiosities.',
+        what: 'Natural history museum and planetarium in St. Johnsbury, founded in 1891 and packed with curiosities.',
         url: 'https://www.fairbanksmuseum.org/',
         distance: '20 min drive',
       },
       {
         name: 'Dog Mountain',
         kind: 'other',
-        what: 'Stephen Huneck’s gallery and dog chapel on a hilltop with trails; snowshoeing in winter, dogs welcome.',
+        what: 'Stephen Huneck’s gallery on a hilltop with trails and dog ponds; snowshoeing in winter, dogs welcome.',
         url: 'https://www.dogmt.com/',
         distance: '20 min drive',
       },
@@ -1020,7 +1020,7 @@ const resorts: Resort[] = [
     apres: [
       { name: 'The Bear Den', what: 'Fireside bar in the Mid-Burke Lodge, the heart of the Burke crowd.', url: 'https://skiburke.com/plan-your-trip/dining' },
       { name: 'The View Pub', what: 'Second floor of the Burke Hotel, with Vermont craft beer and views of Willoughby Gap.', url: 'https://skiburke.com/plan-your-trip/dining' },
-      { name: 'Burke Publick House', what: 'Pub in East Burke village with local brews and live music.', url: 'https://www.burkepub.com/' },
+      { name: 'Burke Publick House', what: 'Pub in East Burke village for a local beer after the lifts close.', url: 'https://www.burkepub.com/' },
     ],
     events: [
       {
@@ -1086,28 +1086,28 @@ const resorts: Resort[] = [
       {
         name: 'Waybury Inn',
         kind: 'inn',
-        what: 'Old stagecoach inn and pub on Route 125 in East Middlebury, on the way up to the mountain.',
+        what: 'Inn and restaurant with 200 years of history on Route 125, on the way up to the mountain. Its exterior was used in TV’s Newhart.',
         url: 'https://www.wayburyinn.com/',
         distance: '15 min drive',
       },
       {
         name: 'Blueberry Hill Inn',
         kind: 'inn',
-        what: 'Remote country inn in Goshen with its own Nordic trails.',
+        what: 'Remote country inn in Goshen with ski and snowshoe trails out the door and a wood-fired sauna.',
         url: 'https://www.blueberryhillinn.com/',
         distance: '20 min drive',
       },
       {
         name: 'The Middlebury Inn',
         kind: 'hotel',
-        what: 'Historic hotel on the town green in Middlebury.',
+        what: 'Historic hotel on Court Square in downtown Middlebury.',
         url: 'https://www.middleburyinn.com/',
         distance: '25 min drive',
       },
       {
         name: 'Swift House Inn',
         kind: 'inn',
-        what: 'Quiet inn in a set of historic houses a short walk from downtown Middlebury.',
+        what: 'Inn a short walk from downtown Middlebury.',
         url: 'https://swifthouseinn.com/',
         distance: '25 min drive',
       },
@@ -1116,28 +1116,28 @@ const resorts: Resort[] = [
       {
         name: 'Rikert Outdoor Center',
         kind: 'nordic',
-        what: 'Middlebury College’s Nordic center at Bread Loaf, with groomed trails, rentals and snowshoeing.',
+        what: 'Middlebury College’s Nordic center in Ripton, with groomed trails, rentals and snowshoeing.',
         url: 'https://www.rikertoutdoor.com/',
         distance: '10 min drive',
       },
       {
         name: 'Henry Sheldon Museum',
         kind: 'museum',
-        what: 'Vermont history museum in a historic house in downtown Middlebury.',
+        what: 'Local history museum in downtown Middlebury.',
         url: 'https://www.henrysheldonmuseum.org/',
         distance: '25 min drive',
       },
       {
-        name: 'Otter Creek Brewing',
-        kind: 'drink',
-        what: 'Longtime Middlebury brewery with a taproom.',
-        url: 'https://ottercreekbrewing.com/',
-        distance: '25 min drive',
+        name: 'Waybury Inn restaurant',
+        kind: 'eat',
+        what: 'Relaxed fine dining in a 200-year-old inn on the road down from the mountain.',
+        url: 'https://www.wayburyinn.com/',
+        distance: '15 min drive',
       },
     ],
     apres: [
-      { name: 'Waybury Inn pub', what: 'Cozy pub in the old inn on Route 125, the first stop down the mountain.', url: 'https://www.wayburyinn.com/' },
       { name: 'Two Brothers Tavern', what: 'Lively bar and grill on Main Street in Middlebury.', url: 'https://www.twobrotherstavern.com/' },
+      { name: 'Otter Creek Brewing', what: 'Longtime Middlebury brewery with a taproom on Exchange Street.', url: 'https://ottercreekbrewing.com/' },
     ],
     events: [
       {

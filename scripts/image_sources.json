@@ -569,15 +569,7 @@
    "sources": [
     {
      "category": "Category:Sunrise_Park_Resort",
-     "depth": 1
-    },
-    {
-     "search": "Sunrise Park Resort Arizona",
-     "limit": 30
-    },
-    {
-     "search": "Sunrise ski area White Mountains Arizona",
-     "limit": 30
+     "depth": 0
     },
     {
      "openverse": "Sunrise Park ski",
@@ -609,15 +601,7 @@
    "sources": [
     {
      "category": "Category:Mount_Lemmon_Ski_Valley",
-     "depth": 1
-    },
-    {
-     "search": "Mount Lemmon Ski Valley",
-     "limit": 30
-    },
-    {
-     "search": "Mount Lemmon snow Summerhaven",
-     "limit": 30
+     "depth": 0
     },
     {
      "openverse": "Mount Lemmon ski",
@@ -648,8 +632,8 @@
    "count": 3,
    "sources": [
     {
-     "search": "\"Big Sky Resort\"",
-     "limit": 30
+     "category": "Category:Big Sky Resort",
+     "depth": 0
     },
     {
      "openverse": "Big Sky ski",
@@ -680,15 +664,7 @@
    "sources": [
     {
      "category": "Category:Mount Sunapee",
-     "depth": 1
-    },
-    {
-     "search": "Mount Sunapee ski",
-     "limit": 30
-    },
-    {
-     "search": "Mount Sunapee Resort Newbury",
-     "limit": 30
+     "depth": 0
     },
     {
      "openverse": "Mount Sunapee ski",
@@ -719,15 +695,7 @@
    "sources": [
     {
      "category": "Category:Gunstock Mountain Resort Gilford New Hampshire",
-     "depth": 1
-    },
-    {
-     "search": "Gunstock Mountain Resort",
-     "limit": 30
-    },
-    {
-     "search": "Gunstock ski Gilford",
-     "limit": 30
+     "depth": 0
     },
     {
      "openverse": "Gunstock ski",
@@ -759,15 +727,7 @@
    "sources": [
     {
      "category": "Category:Ragged Mountain (New Hampshire)",
-     "depth": 1
-    },
-    {
-     "search": "Ragged Mountain Resort Danbury",
-     "limit": 30
-    },
-    {
-     "search": "Ragged Mountain New Hampshire ski",
-     "limit": 30
+     "depth": 0
     },
     {
      "openverse": "Ragged ski",
@@ -799,11 +759,7 @@
    "sources": [
     {
      "search": "Pats Peak",
-     "limit": 30
-    },
-    {
-     "search": "Pats Peak Henniker ski",
-     "limit": 30
+     "limit": 25
     },
     {
      "openverse": "Pats Peak ski",
@@ -834,15 +790,7 @@
    "sources": [
     {
      "category": "Category:Crotched Mountain Ski & Ride",
-     "depth": 1
-    },
-    {
-     "search": "Crotched Mountain ski",
-     "limit": 30
-    },
-    {
-     "search": "Crotched Mountain Bennington",
-     "limit": 30
+     "depth": 0
     },
     {
      "openverse": "Crotched ski",
@@ -874,11 +822,7 @@
    "sources": [
     {
      "search": "Whaleback Mountain Enfield",
-     "limit": 30
-    },
-    {
-     "search": "Whaleback ski area New Hampshire",
-     "limit": 30
+     "limit": 25
     },
     {
      "openverse": "Whaleback ski",
@@ -910,15 +854,7 @@
    "sources": [
     {
      "category": "Category:Killington_Ski_Resort",
-     "depth": 1
-    },
-    {
-     "search": "Killington ski resort Vermont",
-     "limit": 30
-    },
-    {
-     "search": "Killington Peak winter",
-     "limit": 30
+     "depth": 0
     },
     {
      "openverse": "Killington ski",
@@ -949,11 +885,7 @@
    "sources": [
     {
      "search": "Pico Mountain ski Vermont",
-     "limit": 30
-    },
-    {
-     "search": "Pico Peak Killington winter",
-     "limit": 30
+     "limit": 25
     },
     {
      "openverse": "Pico ski",
@@ -985,15 +917,7 @@
    "sources": [
     {
      "category": "Category:Okemo_Mountain",
-     "depth": 1
-    },
-    {
-     "search": "Okemo Mountain Resort ski",
-     "limit": 30
-    },
-    {
-     "search": "Okemo Ludlow Vermont winter",
-     "limit": 30
+     "depth": 0
     },
     {
      "openverse": "Okemo ski",
@@ -1025,11 +949,7 @@
    "sources": [
     {
      "search": "Mount Snow ski resort Vermont",
-     "limit": 30
-    },
-    {
-     "search": "Mount Snow West Dover winter",
-     "limit": 30
+     "limit": 25
     },
     {
      "openverse": "Mount Snow ski",
@@ -1060,15 +980,7 @@
    "sources": [
     {
      "category": "Category:Stratton_Mountain_Resort",
-     "depth": 1
-    },
-    {
-     "search": "Stratton Mountain ski resort Vermont",
-     "limit": 30
-    },
-    {
-     "search": "Stratton Village Vermont winter",
-     "limit": 30
+     "depth": 0
     },
     {
      "openverse": "Stratton ski",
@@ -1099,15 +1011,7 @@
    "sources": [
     {
      "category": "Category:Bromley_Mountain_Ski_Resort",
-     "depth": 1
-    },
-    {
-     "search": "Bromley Mountain ski Vermont",
-     "limit": 30
-    },
-    {
-     "search": "Bromley Mountain Peru Vermont winter",
-     "limit": 30
+     "depth": 0
     },
     {
      "openverse": "Bromley ski",
@@ -1139,15 +1043,7 @@
    "sources": [
     {
      "category": "Category:Magic_Mountain_Ski_Area",
-     "depth": 1
-    },
-    {
-     "search": "Magic Mountain ski area Londonderry Vermont",
-     "limit": 30
-    },
-    {
-     "search": "Magic Mountain Vermont ski",
-     "limit": 30
+     "depth": 0
     },
     {
      "openverse": "Magic ski",
@@ -1179,11 +1075,7 @@
    "sources": [
     {
      "search": "Suicide Six ski area Woodstock Vermont",
-     "limit": 30
-    },
-    {
-     "search": "Saskadena Six ski",
-     "limit": 30
+     "limit": 25
     },
     {
      "openverse": "Saskadena Six ski",
@@ -1199,6 +1091,292 @@
     "ski",
     "winter",
     "saskadena six"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "seven-springs": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Seven_Springs_Mountain_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Seven Springs ski",
+     "must": [
+      "seven springs",
+      "seven springs mountain resort",
+      "champion"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "seven springs"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "hidden-valley-pa": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Hidden_Valley_Resort_(Pennsylvania)",
+     "depth": 0
+    },
+    {
+     "openverse": "Hidden Valley ski",
+     "must": [
+      "hidden valley",
+      "hidden valley resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "hidden valley"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "laurel-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Laurel Mountain ski Pennsylvania",
+     "limit": 25
+    },
+    {
+     "openverse": "Laurel ski",
+     "must": [
+      "laurel",
+      "laurel mountain",
+      "ligonier"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "laurel"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "blue-knob": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Blue_Knob_Ski_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Blue Knob All Seasons ski",
+     "must": [
+      "blue knob all seasons",
+      "blue knob all seasons resort",
+      "claysburg"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "blue knob all seasons"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "whitetail": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Whitetail_Mountain_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Whitetail ski",
+     "must": [
+      "whitetail",
+      "whitetail resort",
+      "mercersburg"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "whitetail"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "liberty-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Liberty_Mountain_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Liberty ski",
+     "must": [
+      "liberty",
+      "liberty mountain resort",
+      "carroll valley"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "liberty"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "roundtop": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Ski_Roundtop",
+     "depth": 0
+    },
+    {
+     "openverse": "Roundtop ski",
+     "must": [
+      "roundtop",
+      "roundtop mountain resort",
+      "lewisberry"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "roundtop"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "ski-sawmill": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "Ski Sawmill Morris Pennsylvania",
+     "limit": 25
+    },
+    {
+     "openverse": "Ski Sawmill ski",
+     "must": [
+      "ski sawmill",
+      "morris"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "ski sawmill"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "tussey-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Tussey_Mountain_(ski_resort)",
+     "depth": 0
+    },
+    {
+     "openverse": "Tussey ski",
+     "must": [
+      "tussey",
+      "tussey mountain",
+      "boalsburg"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "tussey"
    ],
    "include": [],
    "exclude": [],

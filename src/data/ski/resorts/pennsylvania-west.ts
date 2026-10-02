@@ -135,7 +135,7 @@ const resorts: Resort[] = [
     coords: [40.1639, -79.1654],
     size: 'local',
     tagline: 'Old-school steeps and Ligonier Valley views',
-    summary: 'A historic state-owned ski area from 1940, run by Vail, with one quad chair and the steepest pitch in the Laurel Highlands on Lower Wildcat. It’s a day trip for confident skiers who like character over crowds; there’s no lodging on site.',
+    summary: 'A historic state-owned ski area from 1940, run by Vail, with one quad chair and the narrow, north-facing double black Lower Wildcat. It’s a day trip for confident skiers who like character over crowds; there’s no lodging on site.',
     ...vail(LM),
     passes: ['epic'],
     season: { opens: '2026-12-19', closes: '2027-03-14', note: 'Not announced yet. Usually opens mid to late December, conditions permitting. Lift tickets are capped, so buy ahead.' },
@@ -202,7 +202,7 @@ const resorts: Resort[] = [
     ],
     thingsToDo: [
       { name: 'Blue Knob Nordic Center', kind: 'nordic', what: '10 km of gentle wooded trails on top of the mountain, with ski and snowshoe rentals.', url: 'https://blueknob.com/cross-country-skiing-snowshoeing/', distance: 'On site' },
-      { name: 'Blue Knob State Park', kind: 'snowmobiling', what: 'Eight miles of marked snowmobile trails from late December to April 1, plus backcountry ski and snowshoe routes.', url: `${pa('blue-knob-state-park')}/winter`, distance: 'Next door' },
+      { name: 'Blue Knob State Park', kind: 'snowmobiling', what: 'Eight miles of marked snowmobile trails from late December to April 1, plus cross-country ski and snowshoe trails.', url: `${pa('blue-knob-state-park')}/winter`, distance: 'Next door' },
       { name: 'Railroaders Memorial Museum and Horseshoe Curve', kind: 'museum', what: 'Altoona’s railroad museum and the famous curve on the main line. Check hours before you go.', url: 'https://www.railroadcity.org/', distance: '~40 min' },
       { name: 'Railroad City Brewing', kind: 'drink', what: 'Handcrafted ales in historic downtown Altoona.', url: 'https://railroadcitybrewing.com/', distance: '~40 min' },
     ],
@@ -248,7 +248,7 @@ const resorts: Resort[] = [
     ],
     thingsToDo: [
       { name: 'Snow tubing', kind: 'tubing', what: 'Tubing park with its own enclosed carpet lift and lodge.', url: `https://${WT}/explore-the-resort/activities-and-events/snow-tubing.aspx`, distance: 'On site' },
-      { name: 'Byron’s at the Mercersburg Inn', kind: 'eat', what: 'Fine dining in a 1909 mansion, the best dinner near the mountain.', url: 'https://www.mercersburginn.com/', distance: '15 min' },
+      { name: 'Byron’s at the Mercersburg Inn', kind: 'eat', what: 'Fine dining in the inn’s historic mansion, the best dinner near the mountain.', url: 'https://www.mercersburginn.com/', distance: '15 min' },
       { name: 'Fort Frederick State Park', kind: 'museum', what: 'Stone fort from the French and Indian War, just over the Maryland line.', url: 'https://dnr.maryland.gov/publiclands/Pages/western/fortfrederick.aspx', distance: '~25 min' },
       { name: 'Antietam National Battlefield', kind: 'museum', what: 'Civil War battlefield with a driving tour and visitor center.', url: 'https://www.nps.gov/anti/', distance: '~50 min' },
     ],
@@ -295,14 +295,14 @@ const resorts: Resort[] = [
     lodging: [
       { name: 'Alpine Lodge', kind: 'slopeside', what: 'Units as close to the slopes as Liberty gets.', url: libLodging, distance: 'Slopeside' },
       { name: 'Highland Lodge', kind: 'condo', what: 'Popular vacation rentals with easy slope access.', url: libLodging, distance: 'Steps away' },
-      { name: 'Fairway Hotel', kind: 'hotel', what: 'The resort’s hotel, across the street from the slopes, with the Eagle & The Owl restaurant.', url: libLodging, distance: 'Across the street' },
+      { name: 'Fairway Hotel', kind: 'hotel', what: 'The resort’s hotel, across the street from the slopes.', url: libLodging, distance: 'Across the street' },
       { name: 'Dobbin House Tavern', kind: 'b&b', what: 'Bed-and-breakfast rooms at a 1776 tavern in Gettysburg.', url: 'https://www.dobbinhouse.com/', distance: '20 min drive' },
     ],
     thingsToDo: [
       { name: 'Snow tubing', kind: 'tubing', what: 'The resort’s tube park, next to the ski slopes.', url: `https://${LB}/explore-the-resort/activities-and-events/winter-activities/snow-tubing.aspx`, distance: 'On site' },
-      { name: 'Gettysburg National Military Park', kind: 'museum', what: 'Drive or walk the 1863 battlefield; the museum and visitor center are open year-round.', url: 'https://www.nps.gov/gett/', distance: '~20 min' },
+      { name: 'Gettysburg National Military Park', kind: 'museum', what: 'Drive or walk the 1863 battlefield, then visit the museum and visitor center.', url: 'https://www.nps.gov/gett/', distance: '~20 min' },
       { name: 'Mason-Dixon Distillery', kind: 'drink', what: 'Craft distillery with a tasting room and restaurant in Gettysburg.', url: 'https://masondixondistillery.com/', distance: '~20 min' },
-      { name: 'Dobbin House Tavern', kind: 'eat', what: 'Candlelit dinner in Gettysburg’s oldest house.', url: 'https://www.dobbinhouse.com/', distance: '~20 min' },
+      { name: 'Dobbin House Tavern', kind: 'eat', what: 'Candlelit dinner in a tavern dating to 1776.', url: 'https://www.dobbinhouse.com/', distance: '~20 min' },
     ],
     apres: [
       { name: 'Eagle & The Owl', what: 'Views of the slopes, a winter menu and games on TV.', url: `https://${LB}/explore-the-resort/during-your-stay/dining.aspx` },
@@ -351,7 +351,7 @@ const resorts: Resort[] = [
       { name: 'The Hotel Hershey', kind: 'hotel', what: 'Grand hilltop hotel with a well-known spa, for a splurge.', url: 'https://www.thehotelhershey.com/', distance: '40 min drive' },
     ],
     thingsToDo: [
-      { name: 'Snow tubing', kind: 'tubing', what: 'Tubing lanes on a covered carpet lift, with a snack bar nearby.', url: `https://${RT}/explore-the-resort/activities-and-events/snow-tubing.aspx`, distance: 'On site' },
+      { name: 'Snow tubing', kind: 'tubing', what: 'Tubing park with its own carpet lift; the Mountain View Lodge next to it has snacks and cocoa.', url: `https://${RT}/explore-the-resort/activities-and-events/snow-tubing.aspx`, distance: 'On site' },
       { name: 'Gifford Pinchot State Park', kind: 'nordic', what: 'Marked cross-country ski and snowshoe trails, and skating and ice fishing on the lake when the ice is thick enough.', url: `${pa('gifford-pinchot-state-park')}/winter`, distance: '~15 min' },
       { name: 'Hershey’s Chocolate World', kind: 'other', what: 'The free chocolate-tour ride and tastings.', url: 'https://www.chocolateworld.com/', distance: '~35 min' },
       { name: 'The Hershey Story', kind: 'museum', what: 'Museum about Milton Hershey and the town, open daily.', url: 'https://hersheystory.org/', distance: '~35 min' },
@@ -418,7 +418,7 @@ const resorts: Resort[] = [
       { name: 'Penn Wells Lounge', what: 'The bar in Wellsboro’s historic hotel, a short drive from the hill.', url: 'https://www.pennwells.com/' },
     ],
     events: [
-      { name: 'Dickens of a Christmas', kind: 'christmas', date: '2026-12-05', when: 'Sat, Dec 5, from 9 am', what: 'The 42nd annual Victorian Christmas market on Wellsboro’s closed-off Main Street, with food, crafts, carolers and street performers.', url: 'https://www.wellsboropa.com/dickens-of-a-christmas-celebration', confirmed: true },
+      { name: 'Dickens of a Christmas', kind: 'christmas', date: '2026-12-05', when: 'Sat, Dec 5, from 9 am', what: 'The 42nd annual Victorian Christmas market on Wellsboro’s closed-off Main Street, with food, crafts, musicians, singers and street performers.', url: 'https://www.wellsboropa.com/dickens-of-a-christmas-celebration', confirmed: true },
       { name: 'New Year’s Eve at the Penn Wells', kind: 'new-years', date: '2026-12-31', when: 'Dec 31', what: 'The Wellsboro hotel’s New Year’s Eve party and stay package.', url: 'https://www.pennwells.com/', confirmed: false },
     ],
     getting: {
@@ -467,7 +467,7 @@ const resorts: Resort[] = [
     ],
     apres: [
       { name: 'Tussey Bar', what: 'Winter-only bar and restaurant at the base, with comfort food, hot drinks and cold beer.', url: 'https://tusseymountain.com/tussey-bar-kitchen' },
-      { name: 'Zeno’s Pub', what: 'Long-running downtown beer bar under Hotel State College.', url: 'https://www.hotelstatecollege.com/' },
+      { name: 'Zeno’s Pub', what: 'Downtown beer bar, one of the venues at Hotel State College.', url: 'https://www.hotelstatecollege.com/' },
     ],
     events: [
       { name: 'Oktoberfest', kind: 'festival', date: '2026-10-02', when: 'Fri, Oct 2, from noon', what: 'Fall party at the mountain’s beer garden before the ski season.', url: 'https://tusseymountain.com/events', confirmed: true },
