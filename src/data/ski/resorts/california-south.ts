@@ -55,23 +55,23 @@ const resorts: Resort[] = [
       { name: 'Juniper Springs Resort', kind: 'ski-in/ski-out', what: 'Family-friendly condos with kitchens and a heated pool at Eagle Lodge, with ski-in, ski-out access.', url: `${MM}/plan-your-trip/mammoth-hotels/juniper-springs-resort`, distance: 'Slopeside at Eagle Lodge' },
       { name: 'Mammoth Mountain Inn', kind: 'slopeside', what: 'Hotel across from Main Lodge and the Panorama Gondola, with a heated pool and the mountain’s activities next door.', url: `${MM}/plan-your-trip/mammoth-hotels/mammoth-mountain-inn`, distance: 'Slopeside at Main Lodge' },
       { name: 'The Village Lodge', kind: 'base village', what: 'Condo-style suites in The Village, steps from shops and restaurants and the gondola up to Canyon Lodge.', url: villageLodge, distance: 'Village Gondola' },
-      { name: 'The Westin Monache Resort', kind: 'hotel', what: 'Full-service hotel in The Village with suites, a pool and easy access to the gondola.', url: 'https://www.marriott.com/en-us/hotels/mmhwi-the-westin-monache-resort-mammoth/overview/', distance: 'In The Village' },
+      { name: 'The Westin Monache Resort', kind: 'hotel', what: 'Full-service hotel in The Village, a short walk from the gondola.', url: 'https://www.marriott.com/en-us/hotels/mmhwi-the-westin-monache-resort-mammoth/overview/', distance: 'In The Village' },
       { name: 'Tamarack Lodge', kind: 'lodge', what: 'Historic lodge and cabins in the Lakes Basin, with the cross-country trails right outside.', url: `${MM}/plan-your-trip/mammoth-hotels/tamarack-lodge`, distance: '10 min drive' },
       { name: 'Davison St. Guest House', kind: 'hostel', what: 'A-frame ski chalet that runs as a hostel, with dorm beds, private rooms and a shared kitchen. Hostel bookings open two weeks out.', url: 'https://www.mammoth-guest.com/', distance: 'Walk to Canyon Lodge' },
     ],
     thingsToDo: [
       { name: 'Mammoth Snowmobile Adventures', kind: 'snowmobiling', what: 'Guided snowmobile tours into the Inyo National Forest, run daily by the resort.', url: `${MM}/things-to-do/activities/snowmobile-adventures`, distance: 'Main Lodge' },
       { name: 'Woolly’s Adventure Summit', kind: 'tubing', what: 'Tube park, mountain coaster, zip line and snow play in one spot. An Adventure Pass covers the rides.', url: `${MM}/things-to-do/woollys-adventure-summit`, distance: 'Between The Village and Main Lodge' },
-      { name: 'Panorama Gondola scenic ride', kind: 'scenic-lift', what: 'Ride to the 11,053-ft summit for views across the Sierra crest and the Owens Valley.', url: `${MM}/things-to-do/activities/scenic-gondola`, distance: 'Main Lodge' },
+      { name: 'Panorama Gondola scenic ride', kind: 'scenic-lift', what: 'Non-skiers can ride to the 11,053-ft summit for big views across the Sierra.', url: `${MM}/things-to-do/activities/scenic-gondola`, distance: 'Main Lodge' },
       { name: 'Tamarack Cross-Country Ski Center', kind: 'nordic', what: 'More than 19 miles of groomed cross-country and snowshoe trails in the Lakes Basin, with rentals and lessons.', url: `${MM}/things-to-do/activities/tamarack-cross-country-ski-center`, distance: '10 min drive' },
-      { name: 'Dog sledding with Mammoth Dog Teams', kind: 'dog-sledding', what: 'Sled-dog rides on the packed trails around town, a nod to the dog teams that hauled mail here in the 1920s.', url: 'https://www.mammothtrails.org/activity/37/dog-sledding/', distance: 'Mammoth Lakes' },
+      { name: 'Dog sledding with Mammoth Dog Teams', kind: 'dog-sledding', what: 'Sled-dog rides on the packed trails around town, a nod to the dog teams that carried passengers and freight here in the 1920s.', url: 'https://www.mammothtrails.org/activity/37/dog-sledding/', distance: 'Mammoth Lakes' },
       { name: 'LA Kings Ice at Mammoth Lakes', kind: 'ice-skating', what: 'Indoor Olympic-size rink with daily public skate sessions and rentals, October to April.', url: 'https://www.lakingsicemammothlakes.com/', distance: '10 min drive' },
-      { name: 'Mammoth Brewing Company', kind: 'drink', what: 'The town’s brewery and taproom, with food from The EATery.', url: 'https://mammothbrewingco.com/', distance: '10 min drive' },
+      { name: 'Mammoth Brewing Company', kind: 'drink', what: 'The town’s brewery, with a tasting room, beer garden and food from The EATery.', url: 'https://mammothbrewingco.com/', distance: '10 min drive' },
     ],
     apres: [
       { name: 'Yodler Restaurant & Bar', what: 'Chalet-style slopeside bar across from Main Lodge, a Mammoth institution.' },
-      { name: 'Lincoln Bar', what: 'Ski-in indoor and outdoor bar at Canyon Lodge, home of the weekend après parties.' },
-      { name: 'Clocktower Cellar', what: 'Cozy basement pub near The Village with a long beer list.', url: 'https://www.clocktowercellar.com/' },
+      { name: 'Lincoln Bar', what: 'Ski-in indoor and outdoor bar at Canyon Lodge, where the weekend après parties happen.' },
+      { name: 'Clocktower Cellar', what: 'Locals’ pub under the Alpenhof Lodge clock tower, across from the Village Gondola, with a big draft list.', url: 'https://www.clocktowercellar.com/' },
     ],
     events: [
       { name: 'Opening Day', kind: 'opening', date: '2026-11-13', when: 'Nov 13, lifts at 8:30 am', what: 'First chairs of the 2026–27 season, conditions permitting.', url: `${MM}/things-to-do/events/opening-day`, confirmed: true },
@@ -132,7 +132,7 @@ const resorts: Resort[] = [
     apres: [
       { name: 'Antler Bar', what: 'The bar at the June Meadows Chalet, mid-mountain.' },
       { name: 'Tiger Bar', what: 'Saloon from 1932 with one of the oldest liquor licenses in California, serving bar food with Mexican options.' },
-      { name: 'June Lake Brewing', what: 'Small-town brewery taproom; bring food in from the spots nearby.', url: 'https://www.junelakebrewing.com/' },
+      { name: 'June Lake Brewing', what: 'Small-town brewery taproom with food from La Parrilla.', url: 'https://www.junelakebrewing.com/' },
     ],
     events: [
       { name: 'Opening Day', kind: 'opening', date: '2026-12-19', when: 'Dec 19, J1 opens 7:30 am', what: 'First-chair banner breakthrough at J2 with Bucky the mascot at 8:30 am, then a winter toast at the Chalet.', url: `${JM}/things-to-do/opening-day`, confirmed: true },
@@ -177,20 +177,20 @@ const resorts: Resort[] = [
     lodging: [
       { name: 'Snow Summit Townhouses', kind: 'condo', what: 'Individually owned townhouse rentals for up to 10 at the base of Snow Summit.', url: 'https://www.snowsummittownhouses.com/', distance: 'Slopeside at Snow Summit' },
       { name: 'Chateau Big Bear', kind: 'hotel', what: 'Renovated boutique hotel half a mile from Snow Summit, with Tiffany’s Bistro on site.', url: 'https://chateaubigbear.com/', distance: '5 min drive' },
-      { name: 'The Lodge at Big Bear Lake (Northwoods Resort)', kind: 'lodge', what: 'Large rustic-style hotel on Village Drive with a restaurant and suites for families.', url: northwoods, distance: '5 min drive' },
+      { name: 'The Lodge at Big Bear Lake (Northwoods Resort)', kind: 'lodge', what: 'Rustic-style hotel on Village Drive with a restaurant and family suites.', url: northwoods, distance: '5 min drive' },
       { name: 'Big Bear Hostel', kind: 'hostel', what: 'Dorm beds and budget private rooms near the lake and village. Reservations required.', url: bigBearHostel, distance: '5 min drive' },
     ],
     thingsToDo: [
-      { name: 'Alpine Slide at Magic Mountain', kind: 'mountain-coaster', what: 'Mineshaft Coaster and a snow play hill on Big Bear Boulevard.', url: alpineSlide, distance: '5 min drive' },
+      { name: 'Alpine Slide at Magic Mountain', kind: 'mountain-coaster', what: 'Mineshaft Coaster and a snow play hill in town.', url: alpineSlide, distance: '5 min drive' },
       { name: 'Big Bear Snow Play', kind: 'tubing', what: 'Snow tubing, including evening glow tubing, plus go-karts and a ropes course.', url: 'https://bigbearsnowplay.com/', distance: '10 min drive' },
-      { name: 'Big Bear Zoo', kind: 'other', what: 'Rescue zoo for injured and orphaned mountain wildlife, including bears.', url: 'https://bigbearzoo.org/', distance: '5 min drive' },
-      { name: 'Big Bear Lake Brewing Company', kind: 'drink', what: 'Long-running brewpub on Big Bear Boulevard for a post-ski pint and pub food.', distance: '5 min drive' },
+      { name: 'Big Bear Alpine Zoo', kind: 'other', what: 'Small zoo that also takes in injured and orphaned local wildlife.', url: 'https://bigbearzoo.org/', distance: '5 min drive' },
+      { name: 'Big Bear Lake Brewing Company', kind: 'drink', what: 'Local brewery in Big Bear Lake for a post-ski pint.', distance: '5 min drive' },
     ],
     apres: [
       { name: 'Laybacks Bar', what: 'Bear Mountain’s sun-deck bar and the center of its après scene.' },
       { name: 'Hog on the Rocks', what: 'At 8,200 ft on top of Snow Summit, the highest bar in Southern California.' },
-      { name: 'Tommi’s', what: 'Full-service bar at the Snow Summit base, named for the resort’s founder.' },
-      { name: 'Murray’s Saloon & Eatery', what: 'Village dive bar and breakfast spot open until 2 am.', url: 'https://murrayssaloonandeatery.com/' },
+      { name: 'Tommi’s', what: 'Full-service Snow Summit bar named for founder Tommi Tyndall.' },
+      { name: 'Murray’s Saloon & Eatery', what: 'Saloon near the village, open from breakfast until 2 am.', url: 'https://murrayssaloonandeatery.com/' },
     ],
     events: [
       { name: 'Holiday period', kind: 'christmas', date: '2026-12-19', end: '2027-01-03', when: 'Dec 19 – Jan 3', what: 'Extended hours, 8:30 am to 8:30 pm, with daily Night Sessions at Snow Summit and Snow Valley.', url: bbHolidays, confirmed: true },
@@ -216,7 +216,7 @@ const resorts: Resort[] = [
     size: 'local',
     tagline: 'Closest snow to LA, lit up most nights',
     summary:
-      'Southern California’s closest ski area, about 90 minutes from downtown Los Angeles with no winding mountain road. The West Resort has the main terrain park and night skiing until 10 pm in peak season; the East Resort, a mile away, has the longer runs, the Grand View Lodge at 8,200 ft and Yeti’s Snow Play for tubing. Snowmaking covers about 80% of the hill.',
+      'Southern California’s closest ski area, about 90 minutes from downtown Los Angeles with no winding mountain road. The West Resort has the main terrain park and night skiing until 10 pm in peak season; the East Resort, a mile away, has the longer runs, the Grand View Lodge up top and Yeti’s Snow Play for tubing. Snowmaking covers about 80% of the hill.',
     url: 'https://www.mthigh.com/',
     snowReportUrl: `${MH}/trails-and-conditions/conditions/snow-and-weather-report`,
     trailMapUrl: `${MH}/mountain/mountain-info/interactive-trailmap.html`,
@@ -290,7 +290,7 @@ const resorts: Resort[] = [
     activities: ['night-skiing', 'terrain-park', 'tubing', 'scenic-lift', 'kids'],
     lodging: [
       { name: 'Lake Arrowhead Resort & Spa', kind: 'hotel', what: 'Lakeside resort hotel with a private beach, lake-view suites and a spa.', url: 'https://www.lakearrowheadresort.com/', distance: '25 min drive' },
-      { name: 'The Lodge at Big Bear Lake (Northwoods Resort)', kind: 'lodge', what: 'Large rustic-style hotel in Big Bear Lake, handy if you also want to ski Snow Summit and Bear Mountain.', url: northwoods, distance: '30 min drive' },
+      { name: 'The Lodge at Big Bear Lake (Northwoods Resort)', kind: 'lodge', what: 'Rustic-style hotel in Big Bear Lake, handy if you also want to ski Snow Summit and Bear Mountain.', url: northwoods, distance: '30 min drive' },
       { name: 'Big Bear Hostel', kind: 'hostel', what: 'Dorm beds and budget private rooms near Big Bear’s lake and village.', url: bigBearHostel, distance: '30 min drive' },
     ],
     thingsToDo: [
@@ -346,12 +346,12 @@ const resorts: Resort[] = [
     activities: ['terrain-park', 'nordic', 'snowshoeing', 'kids'],
     lodging: [
       { name: 'Bear Valley Lodge', kind: 'lodge', what: 'Rustic, historic lodge in Bear Valley village with Sky High Pizza, a general store and pet-friendly rooms. $20 nightly resort fee.', url: `${BV}/lodging`, distance: '5 min drive' },
-      { name: 'Arnold Timberline Lodge', kind: 'lodge', what: 'Simple lodge on Highway 4 in Arnold, a resort lodging partner.', url: 'https://www.arnoldtimberlinelodge.com/', distance: '35 min drive' },
+      { name: 'Arnold Timberline Lodge', kind: 'lodge', what: 'Lodge on Highway 4 in Arnold; a Bear Valley lodging partner.', url: 'https://www.arnoldtimberlinelodge.com/', distance: '35 min drive' },
       { name: 'Black Bear Inn', kind: 'b&b', what: 'Five-room inn on 1.5 acres of gardens and sequoias in Arnold.', url: 'https://www.arnoldblackbearinn.com/', distance: '40 min drive' },
       { name: 'Murphys Historic Hotel', kind: 'hotel', what: 'Gold Rush hotel from 1856 on Main Street in Murphys, near the tasting rooms.', url: 'https://murphyshotel.com/', distance: '55 min drive' },
     ],
     thingsToDo: [
-      { name: 'Bear Valley Adventure Company', kind: 'nordic', what: 'About 65 km of groomed skate and classic trails with warming huts, rentals and snowshoe routes.', url: 'https://www.bvadventures.com/', distance: 'Bear Valley village' },
+      { name: 'Bear Valley Adventure Company', kind: 'nordic', what: 'About 65 km of groomed skate and classic trails with a trailside café and three warming huts.', url: 'https://www.bvadventures.com/', distance: 'Bear Valley village' },
       { name: 'Calaveras Big Trees State Park', kind: 'snowshoeing', what: 'Giant sequoia groves near Arnold; good for a snowy forest walk on a rest day.', url: 'https://www.parks.ca.gov/?page_id=551', distance: '40 min drive' },
       { name: 'Sky High Pizza', kind: 'eat', what: 'Pizza, salads and a full bar inside Bear Valley Lodge.', url: `${BV}/food-beverage`, distance: 'Bear Valley village' },
       { name: 'Murphys Main Street', kind: 'drink', what: 'Gold Rush town lined with wine tasting rooms, a good stop on the drive down Highway 4.', distance: '55 min drive' },
@@ -401,13 +401,13 @@ const resorts: Resort[] = [
     activities: ['terrain-park', 'tubing', 'ice-skating', 'kids'],
     lodging: [
       { name: 'Pinecrest Chalet', kind: 'cabin', what: 'Chalets with full kitchens that sleep up to 14, plus cozy cottages and a guest den. Two-night weekend minimum.', url: 'https://pinecrestchalet.com/', distance: '5 min drive' },
-      { name: 'Rivers Resort Rentals', kind: 'cabin', what: 'Cabin rentals in Strawberry along the Stanislaus River.', url: 'https://riversresortrentals.com/', distance: '10 min drive' },
-      { name: 'The Long Barn Lodge', kind: 'lodge', what: 'Retro 20-room motel and 10 cabins in the forest, with an outdoor ice rink in winter.', url: 'https://thelongbarnlodge.com/', distance: '20 min drive' },
+      { name: 'Rivers Resort Rentals', kind: 'cabin', what: 'Cabin rentals in Strawberry, a few miles down Highway 108.', url: 'https://riversresortrentals.com/', distance: '10 min drive' },
+      { name: 'The Long Barn Lodge', kind: 'lodge', what: 'Retro 20-room motel and 10 cabins in the forest, with an ice rink in winter.', url: 'https://thelongbarnlodge.com/', distance: '20 min drive' },
       { name: 'McCaffrey House', kind: 'b&b', what: 'Bed and breakfast in the pines at Twain Harte.', url: 'https://mccaffreyhouse.com/', distance: '30 min drive' },
       { name: 'Hotel Lumberjack', kind: 'hotel', what: 'Remade Americana motel in historic downtown Sonora, steps from shops and restaurants.', url: 'https://www.hotellumberjack.com/', distance: '45 min drive' },
     ],
     thingsToDo: [
-      { name: 'Long Barn Lodge Ice Rink', kind: 'ice-skating', what: 'Outdoor rink in the forest; it closes for the season on March 1.', url: 'https://thelongbarnlodge.com/', distance: '20 min drive' },
+      { name: 'Long Barn Lodge Ice Rink', kind: 'ice-skating', what: 'Winter ice rink at the Long Barn Lodge; last season it closed March 1.', url: 'https://thelongbarnlodge.com/', distance: '20 min drive' },
       { name: 'Pinecrest Lake', kind: 'other', what: 'Snowy shoreline walks around the lake just below the resort.', distance: '5 min drive' },
       { name: 'Columbia State Historic Park', kind: 'museum', what: 'Preserved Gold Rush town with shops, stagecoach and old storefronts.', url: 'https://www.parks.ca.gov/?page_id=552', distance: '50 min drive' },
       { name: 'Historic downtown Sonora', kind: 'shop', what: 'Gold Country main street with shops, restaurants and tasting rooms.', url: 'https://www.visittuolumne.com/things-to-do', distance: '45 min drive' },
@@ -468,7 +468,7 @@ const resorts: Resort[] = [
     apres: [
       { name: 'Buckhorn Bar & Grill', what: 'Mid-mountain bar at the bottom of Chair 2 with beer on tap and a big screen.' },
       { name: 'JW’s Original Bar', what: 'Cocktails and appetizers at the Inn at China Peak.' },
-      { name: 'Sully’s Pub', what: 'Pub upstairs in the base Daylodge with the game on.' },
+      { name: 'Sully’s Pub', what: 'Pub at the base Daylodge with the game on the big screen.' },
     ],
     events: [],
     getting: { airport: 'Fresno Yosemite International', code: 'FAT', driveMin: 90, from: [{ city: 'Los Angeles', hours: 4.5 }, { city: 'San Francisco', hours: 4.5 }] },
@@ -507,13 +507,13 @@ const resorts: Resort[] = [
     activities: ['night-skiing', 'terrain-park', 'tubing', 'nordic', 'snowshoeing', 'kids'],
     lodging: [
       { name: 'McCloud Mercantile Hotel', kind: 'hotel', what: 'Boutique hotel in a landmark building on the National Register of Historic Places, in the old mill town of McCloud.', url: 'https://www.mccloudmercantile.com/', distance: '20 min drive' },
-      { name: 'Inn at Mount Shasta', kind: 'inn', what: 'Well-reviewed small inn in the center of Mount Shasta city; ask about Ski Park guest rates.', url: 'https://www.innatmountshasta.com/', distance: '20 min drive' },
+      { name: 'Inn at Mount Shasta', kind: 'inn', what: 'Inn in the heart of Mount Shasta city; ask about special rates for Ski Park guests.', url: 'https://www.innatmountshasta.com/', distance: '20 min drive' },
       { name: 'Mount Shasta Resort', kind: 'condo', what: 'Fully equipped chalets in the forest at the edge of Lake Siskiyou; the Ski Park’s preferred lodging partner.', url: 'https://www.mountshastaresort.com/', distance: '25 min drive' },
-      { name: 'Best Western Plus Tree House', kind: 'hotel', what: 'Dependable hotel at the Mount Shasta exit off I-5.', url: 'https://www.bestwestern.com/en_US/book/hotels-in-mount-shasta/best-western-plus-tree-house/propertyCode.05243.html', distance: '20 min drive' },
+      { name: 'Best Western Plus Tree House', kind: 'hotel', what: 'Chain hotel at the gateway to Mount Shasta city.', url: 'https://www.bestwestern.com/en_US/book/hotels-in-mount-shasta/best-western-plus-tree-house/propertyCode.05243.html', distance: '20 min drive' },
     ],
     thingsToDo: [
       { name: 'Mt. Shasta Nordic', kind: 'nordic', what: 'Community-run center with 23.5 km of groomed skate and classic trails, a 2.5 km snowshoe loop, rentals and a new lodge.', url: 'https://www.mtshastanordic.org/' },
-      { name: 'Backcountry cabins', kind: 'other', what: 'Overnight in two rustic cabins in the Ski Park’s 250-acre backcountry, reached by lift and a tour. Guided orientation available.', url: `${MS}/backcountry`, distance: 'From the Douglas lift' },
+      { name: 'Backcountry cabins', kind: 'other', what: 'Overnight in two rustic cabins in the Ski Park’s 250-acre backcountry, reached via the Douglas lift and a ski tour. Guided orientation available.', url: `${MS}/backcountry`, distance: 'From the Douglas lift' },
       { name: 'Tubing hill', kind: 'tubing', what: 'Side-by-side tubing lanes on weekends, two-hour sessions with tube included.', url: `${MS}/winter/tubing`, distance: 'At the base' },
       { name: 'Dunsmuir Brewery Works', kind: 'drink', what: 'Small brewpub with house ales and good food in the railroad town of Dunsmuir.', url: 'https://www.dunsmuirbreweryworks.com/', distance: '35 min drive' },
     ],

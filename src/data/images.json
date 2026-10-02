@@ -1,4 +1,68 @@
 {
+  "arizona-snowbowl": [
+    {
+      "alt": "Fall color at the Arizona Snowbowl, October 5, 2016.",
+      "author": "Coconino National Forest",
+      "file": "src/assets/places/arizona-snowbowl/1.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_the_Arizona_Snowbowl_(29530992623).jpg",
+      "title": "File:View from the Arizona Snowbowl (29530992623).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Fall color at Aspen Corner on Snowbowl Road, October 5, 2016.",
+      "author": "Coconino National Forest",
+      "file": "src/assets/places/arizona-snowbowl/2.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowbowl_Road_Aspen_Corner_(29530983353).jpg",
+      "title": "File:Snowbowl Road Aspen Corner (29530983353).jpg",
+      "width": 1280
+    }
+  ],
+  "beaver-creek": [
+    {
+      "alt": "500px provided description: Beaver Creek, Colorado.",
+      "author": "Ryan Karlstad",
+      "file": "src/assets/places/beaver-creek/1.jpg",
+      "height": 988,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaver_Creek_Co_(93256489).jpeg",
+      "title": "File:Beaver Creek Co (93256489).jpeg",
+      "width": 1280
+    },
+    {
+      "alt": "Skiers on the trail of Beaver Creek Ski Resort in Beaver Creek, Colorado (CO), United States (USA).",
+      "author": "Joe Lin from New York, NY, USA",
+      "file": "src/assets/places/beaver-creek/2.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaver_Creek_Resort_I_(32899538373).jpg",
+      "title": "File:Beaver Creek Resort I (32899538373).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Birds of prey, waiting",
+      "author": "Rudi Riet from Washington, DC, United States",
+      "file": "src/assets/places/beaver-creek/3.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Birds_of_Prey_(ski_course),_Beaver_Creek.jpg",
+      "title": "File:Birds of Prey (ski course), Beaver Creek.jpg",
+      "width": 1280
+    }
+  ],
   "big-sky": [
     {
       "alt": "This is the Lone Peak Tram in January of 2018.",
@@ -77,6 +141,21 @@
       "width": 1280
     }
   ],
+  "camelback": [],
+  "crotched-mountain": [
+    {
+      "alt": "Groomed Trails",
+      "author": "Accidental Nomad",
+      "file": "src/assets/places/crotched-mountain/1.jpg",
+      "height": 684,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/49333279@N04/54272570124",
+      "title": "Openverse:180ee8c4-9b63-4f70-b50c-c578213611dd",
+      "width": 1024
+    }
+  ],
   "cypress-mountain": [
     {
       "alt": "Cypress Mountain, a day snow shoeing.",
@@ -102,6 +181,20 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diamond_Peak_Ski_Resort_at_Incline_Village_Lake_Tahoe_by_Don_Ramey_Logan.jpg",
       "title": "File:Diamond Peak Ski Resort at Incline Village Lake Tahoe by Don Ramey Logan.jpg",
+      "width": 1280
+    }
+  ],
+  "eldora": [
+    {
+      "alt": "View of the beginners' area at the base of Eldora Mountain Resort",
+      "author": "KamenG",
+      "file": "src/assets/places/eldora/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eldora_Mountain_Ski_Resort_beginners'_area.jpg",
+      "title": "File:Eldora Mountain Ski Resort beginners' area.jpg",
       "width": 1280
     }
   ],
@@ -519,6 +612,7 @@
       "width": 1280
     }
   ],
+  "king-pine": [],
   "kirkwood": [
     {
       "alt": "Snowboarder and skier from a ski lift, Kirkwood, California, 2009",
@@ -555,6 +649,110 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowshoeing_in_Kirkwood,_Alpine_County,_California.jpg",
       "title": "File:Snowshoeing in Kirkwood, Alpine County, California.jpg",
       "width": 1280
+    }
+  ],
+  "laurel-mountain": [
+    {
+      "alt": "Laurel mountain ski area",
+      "author": "Ron Shawley",
+      "file": "src/assets/places/laurel-mountain/1.jpg",
+      "height": 853,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laurel_mountain_ski_area_-_panoramio_(1).jpg",
+      "title": "File:Laurel mountain ski area - panoramio (1).jpg",
+      "width": 1280
+    }
+  ],
+  "liberty-mountain": [
+    {
+      "alt": "Boulder Ridge Snow Tubing at Liberty Mountain Resort",
+      "author": "LibertyMtn",
+      "file": "src/assets/places/liberty-mountain/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:LibertyMountainResort_SnowTubing.jpg",
+      "title": "File:LibertyMountainResort SnowTubing.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Skiing at Liberty Mountain Resort",
+      "author": "LibertyMtn",
+      "file": "src/assets/places/liberty-mountain/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:LibertyMountainResort_skiing.jpg",
+      "title": "File:LibertyMountainResort skiing.jpg",
+      "width": 1280
+    }
+  ],
+  "loon": [
+    {
+      "alt": "loon mountain ski resort sarsaparilla New Hampshire 2010",
+      "author": "chensiyuan",
+      "file": "src/assets/places/loon/1.jpg",
+      "height": 621,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Loon_mountain_sarsaparilla.JPG",
+      "title": "File:Loon mountain sarsaparilla.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "View from Loon Mountain's north peak.",
+      "author": "Own work",
+      "file": "src/assets/places/loon/2.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Loonmtn_northpeak.JPG",
+      "title": "File:Loonmtn northpeak.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Historic logging train at loon mountain / lincoln / new hampshire /USA",
+      "author": "AK-Bino",
+      "file": "src/assets/places/loon/3.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dampflokomotive_in_den_White_Mountains.jpg",
+      "title": "File:Dampflokomotive in den White Mountains.jpg",
+      "width": 1280
+    }
+  ],
+  "magic-mountain": [
+    {
+      "alt": "Magic Mountain Ski Area",
+      "author": "Roadgeek Adam",
+      "file": "src/assets/places/magic-mountain/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/9962140@N02/16970880242",
+      "title": "Openverse:0c3ae430-99d2-4e71-8a56-ea3f6b6ca5ad",
+      "width": 1024
+    },
+    {
+      "alt": "Magic Mountain Ski Area",
+      "author": "Roadgeek Adam",
+      "file": "src/assets/places/magic-mountain/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/9962140@N02/16972074985",
+      "title": "Openverse:2e3eef07-284c-4b45-ae7d-94083b2eee40",
+      "width": 1024
     }
   ],
   "montage-mountain": [
@@ -633,6 +831,32 @@
       "width": 1600
     }
   ],
+  "mount-sunapee": [
+    {
+      "alt": "Mount Sunapee .",
+      "author": "User:Josephbrophy",
+      "file": "src/assets/places/mount-sunapee/1.jpg",
+      "height": 851,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MountSunapeefromLake.jpg",
+      "title": "File:MountSunapeefromLake.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mount Sunapee.",
+      "author": "User:Josephbrophy",
+      "file": "src/assets/places/mount-sunapee/2.jpg",
+      "height": 851,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MountSunapeeWinter.jpg",
+      "title": "File:MountSunapeeWinter.jpg",
+      "width": 1280
+    }
+  ],
   "mt-lemmon": [
     {
       "alt": "Early winter Mt Lemmon ski lift (2,791m/9,157ft) waiting for snowpack",
@@ -644,6 +868,32 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Early_winter_Mt_Lemmon_ski_lift_(2,791m-9,157ft)_waiting_for_snowpack_-_panoramio.jpg",
       "title": "File:Early winter Mt Lemmon ski lift (2,791m-9,157ft) waiting for snowpack - panoramio.jpg",
+      "width": 1280
+    }
+  ],
+  "mt-rose": [
+    {
+      "alt": "Fresh snow at Mount Rose Ski.",
+      "author": "Jrmichae",
+      "file": "src/assets/places/mt-rose/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Rose_Ski_-_Blazing_Zepyr_Six.JPG",
+      "title": "File:Mount Rose Ski - Blazing Zepyr Six.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Fresh snow at Mount Rose Ski.",
+      "author": "Jrmichae",
+      "file": "src/assets/places/mt-rose/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Rose_Ski_-_Northwest_Magnum_6.JPG",
+      "title": "File:Mount Rose Ski - Northwest Magnum 6.JPG",
       "width": 1280
     }
   ],
@@ -1065,6 +1315,44 @@
       "width": 1280
     }
   ],
+  "sugarbush": [
+    {
+      "alt": "Upper Jester Ski trail, Sugarbush Resort, Warren",
+      "author": "bill-now",
+      "file": "src/assets/places/sugarbush/1.jpg",
+      "height": 722,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Upper_Jester_Ski_trail,_Sugarbush_Resort,_Warren_-_panoramio.jpg",
+      "title": "File:Upper Jester Ski trail, Sugarbush Resort, Warren - panoramio.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Spring Skiing",
+      "author": "sf-dvs",
+      "file": "src/assets/places/sugarbush/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/46207792@N00/14961111",
+      "title": "Openverse:9233b7ce-1689-4aab-8476-0c2d884d9952",
+      "width": 1024
+    },
+    {
+      "alt": "Ascending the Summit Quad at Mt.",
+      "author": "Ams100272",
+      "file": "src/assets/places/sugarbush/3.jpg",
+      "height": 960,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Summit-quad-sugarbush-dec-2010.jpg",
+      "title": "File:Summit-quad-sugarbush-dec-2010.jpg",
+      "width": 1280
+    }
+  ],
   "sun-peaks": [
     {
       "alt": "Sun Peaks Ski Resort...amongst the snow ghosts",
@@ -1100,6 +1388,32 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sun_Peaks_Ski_Resort_-_incredible_snow_crystals_(sustained_cold_weather)_(13653330933).jpg",
       "title": "File:Sun Peaks Ski Resort - incredible snow crystals (sustained cold weather) (13653330933).jpg",
+      "width": 1280
+    }
+  ],
+  "sunrise-park": [
+    {
+      "alt": "Top of the ski lift on Sunrise Peak at Sunrise Park Resort in summer.",
+      "author": "Dbferal",
+      "file": "src/assets/places/sunrise-park/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_peak_lift.jpg",
+      "title": "File:Sunrise peak lift.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "A platform along the zip line course at Sunrise Park Resort",
+      "author": "Mtntas12",
+      "file": "src/assets/places/sunrise-park/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SPR_Summer_Activities-6.jpg",
+      "title": "File:SPR Summer Activities-6.jpg",
       "width": 1280
     }
   ],
@@ -1163,6 +1477,20 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rainbow_Falls_Glen_of_Pools_Watkins_Glen_State_Park,_Watkins_Glen_NY_2494.jpg",
       "title": "File:Rainbow Falls Glen of Pools Watkins Glen State Park, Watkins Glen NY 2494.jpg",
       "width": 1600
+    }
+  ],
+  "whaleback": [
+    {
+      "alt": "Whaleback summit",
+      "author": "ihamr",
+      "file": "src/assets/places/whaleback/1.jpg",
+      "height": 556,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/163621777@N08/54036978237",
+      "title": "Openverse:6c1c95ac-687f-4766-aff3-9f71608a5c78",
+      "width": 1024
     }
   ],
   "whistler-blackcomb": [
