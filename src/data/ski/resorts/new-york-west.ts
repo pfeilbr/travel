@@ -117,20 +117,20 @@ const resorts: Resort[] = [
     ticket: { from: 55, note: '2025-26 weekday all-area; weekends $65, Thu/Fri nights $35' },
     activities: ['night-skiing', 'terrain-park', 'snowmobiling', 'kids'],
     lodging: [
-      { name: 'Towpath Restaurant & Lodge', kind: 'lodge', what: 'Rooms and a restaurant in Turin, a short walk from the hill.', url: 'http://towpathinn.com/', distance: 'Next door' },
-      { name: 'West Wind Motel & Townhouses', kind: 'hotel', what: 'Simple motel rooms and townhouses in Turin; it also rents snowmobiles.', url: 'http://www.westwindmotelturinny.com/', distance: '2 min drive' },
+      { name: 'Towpath Restaurant & Lodge', kind: 'lodge', what: 'Rooms and a restaurant in Turin, a short walk from the hill.', url: 'https://towpathinn.com/', distance: 'Next door' },
+      { name: 'West Wind Motel & Townhouses', kind: 'hotel', what: 'Simple motel rooms and townhouses in Turin; it also rents snowmobiles.', url: 'https://www.westwindmotelturinny.com/', distance: '2 min drive' },
       { name: 'Florissante The Mansion', kind: 'inn', what: 'Historic mansion in Lyons Falls with guest rooms and an event venue.', url: 'https://florissantethemansion.com/', distance: '10 min drive' },
       { name: 'The Lodge at Headwaters', kind: 'hotel', what: 'Boonville hotel with a Snow Ridge ski-and-stay deal (10% off rooms and discounted lift tickets).', url: 'https://www.thelodgeatheadwaters.com/', distance: '20 min drive' },
     ],
     thingsToDo: [
-      { name: 'Snowmobile rentals at West Wind', kind: 'snowmobiling', what: 'Rent a sled in Turin and ride the Tug Hill trail network, one of the busiest in the state.', url: 'http://www.westwindmotelturinny.com/', distance: '2 min drive' },
+      { name: 'Snowmobile rentals at West Wind', kind: 'snowmobiling', what: 'Rent a sled in Turin and ride the Tug Hill trail network, one of the busiest in the state.', url: 'https://www.westwindmotelturinny.com/', distance: '2 min drive' },
       { name: 'Whetstone Gulf State Park', kind: 'snowshoeing', what: 'Snowshoeing and cross-country skiing around a deep gorge, mid-December to mid-March.', url: 'https://parks.ny.gov/parks/whetstonegulf/', distance: '20 min drive' },
       { name: 'Tug Hill Estate', kind: 'drink', what: 'Winery and tasting room outside Lowville.', url: 'https://www.tughillvineyards.com/', distance: '25 min drive' },
-      { name: 'Towpath Restaurant', kind: 'eat', what: 'Comfort food in Turin after a day on the hill or the sled trails.', url: 'http://towpathinn.com/', distance: 'Next door' },
+      { name: 'Towpath Restaurant', kind: 'eat', what: 'Comfort food in Turin after a day on the hill or the sled trails.', url: 'https://towpathinn.com/', distance: 'Next door' },
     ],
     apres: [
       { name: 'Tavern230', what: 'Slopeside bar and restaurant with a fire, hill views and cocktails made with 10th Mountain spirits.', url: 'https://snowridge.com/dining/' },
-      { name: 'Towpath Restaurant & Lodge', what: 'Turin’s local spot for dinner and a drink with skiers and snowmobilers.', url: 'http://towpathinn.com/' },
+      { name: 'Towpath Restaurant & Lodge', what: 'Turin’s local spot for dinner and a drink with skiers and snowmobilers.', url: 'https://towpathinn.com/' },
     ],
     events: [
       { name: 'Ski Movie Hype Night', kind: 'other', date: '2026-11-14', when: 'Nov 14, 7–9 pm', what: 'Ski films in the Wax House Lodge to kick off the season.', url: 'https://snowridge.com/event/ski-movie-hype-night/', confirmed: true },
