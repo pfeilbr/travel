@@ -599,7 +599,7 @@ const resorts: Resort[] = [
         name: 'Marcus Daly Motel',
         kind: 'inn',
         what: 'Simple Anaconda motel with ski-season room rates and $5 off Discovery tickets.',
-        url: 'http://www.marcusdaly.com/',
+        url: 'https://www.marcusdaly.com/',
         distance: '30 min drive',
       },
       {

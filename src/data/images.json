@@ -1,30 +1,4 @@
 {
-  "arizona-snowbowl": [
-    {
-      "alt": "Fall color at the Arizona Snowbowl, October 5, 2016.",
-      "author": "Coconino National Forest",
-      "file": "src/assets/places/arizona-snowbowl/1.jpg",
-      "height": 853,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_the_Arizona_Snowbowl_(29530992623).jpg",
-      "title": "File:View from the Arizona Snowbowl (29530992623).jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Fall color at Aspen Corner on Snowbowl Road, October 5, 2016.",
-      "author": "Coconino National Forest",
-      "file": "src/assets/places/arizona-snowbowl/2.jpg",
-      "height": 853,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowbowl_Road_Aspen_Corner_(29530983353).jpg",
-      "title": "File:Snowbowl Road Aspen Corner (29530983353).jpg",
-      "width": 1280
-    }
-  ],
   "big-sky": [
     {
       "alt": "This is the Lone Peak Tram in January of 2018.",
@@ -63,18 +37,44 @@
       "width": 1280
     }
   ],
-  "crotched-mountain": [
+  "bolton-valley": [
     {
-      "alt": "Top of the Lift",
-      "author": "Accidental Nomad",
-      "file": "src/assets/places/crotched-mountain/1.jpg",
-      "height": 718,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "alt": "The Bolton Valley Ski Resort Lodge.",
+      "author": "Gopats92",
+      "file": "src/assets/places/bolton-valley/1.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/49333279@N04/54272324696",
-      "title": "Openverse:9bf0b61e-48bb-469c-8a34-9ac2e12b9f63",
-      "width": 1024
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BoltonValleyLodge.jpg",
+      "title": "File:BoltonValleyLodge.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "160109-Z-QI027-364 ()",
+      "author": "U.S. Department of Defense Current Photos Pvt. Avery Cunningham/172nd Public Affairs Detachment",
+      "file": "src/assets/places/bolton-valley/2.jpg",
+      "height": 914,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:160109-Z-QI027-364_(24064324320).jpg",
+      "title": "File:160109-Z-QI027-364 (24064324320).jpg",
+      "width": 1280
+    }
+  ],
+  "boreal": [
+    {
+      "alt": "Ski lodge in Boreal, California",
+      "author": "Brocken Inaglory",
+      "file": "src/assets/places/boreal/1.jpg",
+      "height": 538,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ski_lodge_in_Boreal.jpg",
+      "title": "File:Ski lodge in Boreal.jpg",
+      "width": 1280
     }
   ],
   "cypress-mountain": [
@@ -317,6 +317,44 @@
       "width": 1280
     }
   ],
+  "heavenly": [
+    {
+      "alt": "Heavenly Mountain Resort is a ski resort located on the California-Nevada border in South Lake Tahoe.",
+      "author": "Ken Lund from Reno, Nevada, USA",
+      "file": "src/assets/places/heavenly/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heavenly_Mountain_Resort,_Lake_Tahoe,_Nevada_(21581093841).jpg",
+      "title": "File:Heavenly Mountain Resort, Lake Tahoe, Nevada (21581093841).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Powderbowl Express at Heavenly Ski Resort in South Lake Tahoe, CA.",
+      "author": "Gbtahoe",
+      "file": "src/assets/places/heavenly/2.jpg",
+      "height": 960,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Powderbowl_Express.jpg",
+      "title": "File:Powderbowl Express.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Heavenly Ski Resort ski lift , with base at 9136 foot (2785 m) elevation.",
+      "author": "The original uploader was ChrisRuvolo at English Wikipedia .",
+      "file": "src/assets/places/heavenly/3.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heavenly_Lift.jpg",
+      "title": "File:Heavenly Lift.jpg",
+      "width": 1280
+    }
+  ],
   "hero": [
     {
       "alt": "Taughannock Falls framed by peak fall foliage",
@@ -365,32 +403,6 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_over_Seneca_Lake_-_New_York_-_US.jpg",
       "title": "File:Sunrise over Seneca Lake - New York - US.jpg",
       "width": 1600
-    }
-  ],
-  "hidden-valley-pa": [
-    {
-      "alt": "Hidden Valley Grooming",
-      "author": "LValleyGirl26",
-      "file": "src/assets/places/hidden-valley-pa/1.jpg",
-      "height": 853,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hidden_Valley_Grooming.jpg",
-      "title": "File:Hidden Valley Grooming.jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Tyrol Lodge, Hidden Valley, 1947",
-      "author": "Darchitectbuff",
-      "file": "src/assets/places/hidden-valley-pa/2.jpg",
-      "height": 813,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:TyrolLodge.jpg",
-      "title": "File:TyrolLodge.jpg",
-      "width": 1280
     }
   ],
   "homewood": [
@@ -507,6 +519,20 @@
       "width": 1280
     }
   ],
+  "montage-mountain": [
+    {
+      "alt": "View of lodge and Montage ski mountain",
+      "author": "Ekem",
+      "file": "src/assets/places/montage-mountain/1.jpg",
+      "height": 903,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montage.mountain.ski.3.JPG",
+      "title": "File:Montage.mountain.ski.3.JPG",
+      "width": 1280
+    }
+  ],
   "moreau-lake": [
     {
       "alt": "Geese on the grassy shore of Moreau Lake in summer",
@@ -567,32 +593,6 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saratoga_Spa_State_Park2.jpg",
       "title": "File:Saratoga Spa State Park2.jpg",
       "width": 1600
-    }
-  ],
-  "mount-sunapee": [
-    {
-      "alt": "Mount Sunapee .",
-      "author": "User:Josephbrophy",
-      "file": "src/assets/places/mount-sunapee/1.jpg",
-      "height": 851,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MountSunapeefromLake.jpg",
-      "title": "File:MountSunapeefromLake.jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Mount Sunapee.",
-      "author": "User:Josephbrophy",
-      "file": "src/assets/places/mount-sunapee/2.jpg",
-      "height": 851,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MountSunapeeWinter.jpg",
-      "title": "File:MountSunapeeWinter.jpg",
-      "width": 1280
     }
   ],
   "mt-lemmon": [
@@ -761,20 +761,7 @@
       "width": 1280
     }
   ],
-  "pats-peak": [
-    {
-      "alt": "NOIRLab Director Pat McCarthy speaking (4W8A5975-CC)",
-      "author": "NOIRLab/NSF/AURA/R. Sparks",
-      "file": "src/assets/places/pats-peak/1.jpg",
-      "height": 853,
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NOIRLab_Director_Pat_McCarthy_speaking_(4W8A5975-CC).jpg",
-      "title": "File:NOIRLab Director Pat McCarthy speaking (4W8A5975-CC).jpg",
-      "width": 1280
-    }
-  ],
+  "pats-peak": [],
   "ragged-mountain": [
     {
       "alt": "Southward view of Orange Mountain and Ragged Mountain from Cardigan Mountain in New Hampshire.",
@@ -988,57 +975,79 @@
       "width": 1600
     }
   ],
-  "stratton": [
+  "silverstar": [
     {
-      "alt": "Outside the Starting Gate Ski Shop in Wardsboro, VT, was this pile of old ski boots.",
-      "author": "Rudi Riet from Washington, DC, United States",
-      "file": "src/assets/places/stratton/1.jpg",
-      "height": 960,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stack_of_boots_(3074940137).jpg",
-      "title": "File:Stack of boots (3074940137).jpg",
-      "width": 1280
-    }
-  ],
-  "sunrise-park": [
-    {
-      "alt": "Top of the ski lift on Sunrise Peak at Sunrise Park Resort in summer.",
-      "author": "Dbferal",
-      "file": "src/assets/places/sunrise-park/1.jpg",
+      "alt": "Ski Lift at Silver Star Resort in summer 2013",
+      "author": "Accuruss",
+      "file": "src/assets/places/silverstar/1.jpg",
       "height": 853,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_peak_lift.jpg",
-      "title": "File:Sunrise peak lift.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ski_Lift_at_Silver_Star_Resort_in_summer_2013.JPG",
+      "title": "File:Ski Lift at Silver Star Resort in summer 2013.JPG",
       "width": 1280
     },
     {
-      "alt": "3D Archery at Sunrise Park Resort",
-      "author": "Mtntas12",
-      "file": "src/assets/places/sunrise-park/2.jpg",
+      "alt": "Hooter Hotel",
+      "author": "Jack Borno",
+      "file": "src/assets/places/silverstar/2.jpg",
       "height": 854,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SPR_Summer_Activities-57.jpg",
-      "title": "File:SPR Summer Activities-57.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hooter_Hotel_-_panoramio.jpg",
+      "title": "File:Hooter Hotel - panoramio.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Silver Star Moountain",
+      "author": "Jack Borno",
+      "file": "src/assets/places/silverstar/3.jpg",
+      "height": 854,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Silver_Star_Moountain_-_panoramio.jpg",
+      "title": "File:Silver Star Moountain - panoramio.jpg",
       "width": 1280
     }
   ],
-  "tussey-mountain": [
+  "sun-peaks": [
     {
-      "alt": "2024-09-04 17 13 01 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania",
-      "author": "Famartin",
-      "file": "src/assets/places/tussey-mountain/1.jpg",
-      "height": 960,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Sun Peaks Ski Resort...amongst the snow ghosts",
+      "author": "Murray Foubister",
+      "file": "src/assets/places/sun-peaks/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-09-04_17_13_01_View_towards_the_Tussey_Mountain_Ski_Area_from_the_Blue_Trail_between_station_7_and_station_8_within_the_Mount_Nittany_Conservancy_in_College_Township,_Centre_County,_Pennsylvania.jpg",
-      "title": "File:2024-09-04 17 13 01 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sun_Peaks_Ski_Resort_-_amongst_the_snow_ghosts_(13653293305).jpg",
+      "title": "File:Sun Peaks Ski Resort - amongst the snow ghosts (13653293305).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Sun Peaks Ski Resort...amongst the snow ghosts",
+      "author": "Murray Foubister",
+      "file": "src/assets/places/sun-peaks/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sun_Peaks_Ski_Resort_-_amongst_the_snow_ghosts_(13653299205).jpg",
+      "title": "File:Sun Peaks Ski Resort - amongst the snow ghosts (13653299205).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Sun Peaks Ski Resort...incredible snow crystals (sustained cold weather)",
+      "author": "Murray Foubister",
+      "file": "src/assets/places/sun-peaks/3.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sun_Peaks_Ski_Resort_-_incredible_snow_crystals_(sustained_cold_weather)_(13653330933).jpg",
+      "title": "File:Sun Peaks Ski Resort - incredible snow crystals (sustained cold weather) (13653330933).jpg",
       "width": 1280
     }
   ],
@@ -1102,58 +1111,6 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rainbow_Falls_Glen_of_Pools_Watkins_Glen_State_Park,_Watkins_Glen_NY_2494.jpg",
       "title": "File:Rainbow Falls Glen of Pools Watkins Glen State Park, Watkins Glen NY 2494.jpg",
       "width": 1600
-    }
-  ],
-  "whaleback": [
-    {
-      "alt": "Whaleback summit",
-      "author": "ihamr",
-      "file": "src/assets/places/whaleback/1.jpg",
-      "height": 556,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/163621777@N08/54036978237",
-      "title": "Openverse:6c1c95ac-687f-4766-aff3-9f71608a5c78",
-      "width": 1024
-    }
-  ],
-  "whistler-blackcomb": [
-    {
-      "alt": "MSH: My winter is your summer.",
-      "author": "Ruth Hartnup from Vancouver, Canada",
-      "file": "src/assets/places/whistler-blackcomb/1.jpg",
-      "height": 960,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_loneliness_of_the_long_distance_snowboarder_(2575684626).jpg",
-      "title": "File:The loneliness of the long distance snowboarder (2575684626).jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Four weeks ago this was covered in snow.",
-      "author": "Ruth Hartnup from Vancouver, Canada",
-      "file": "src/assets/places/whistler-blackcomb/2.jpg",
-      "height": 960,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Start_of_a_summer_skiing_day_(2572297071).jpg",
-      "title": "File:Start of a summer skiing day (2572297071).jpg",
-      "width": 1280
-    },
-    {
-      "alt": "October snow, Whistler Peak",
-      "author": "Ruth Hartnup from Vancouver, Canada",
-      "file": "src/assets/places/whistler-blackcomb/3.jpg",
-      "height": 960,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:October_snow,_Whistler_Peak_(3987455206).jpg",
-      "title": "File:October snow, Whistler Peak (3987455206).jpg",
-      "width": 1280
     }
   ],
   "whitetail": [

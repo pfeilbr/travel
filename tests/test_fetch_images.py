@@ -197,6 +197,11 @@ class OpenverseTest(unittest.TestCase):
         self.assertFalse(fi.mentions(p, ["stowe"]))
         self.assertTrue(fi.mentions(p, []))
 
+    def test_is_wintery_reads_title_and_description_not_categories(self):
+        self.assertTrue(fi.is_wintery(page(title="File:Skiers on Lone Peak.jpg", description="")))
+        self.assertTrue(fi.is_wintery(page(title="File:x.jpg", description="Fresh snow on the summit")))
+        self.assertFalse(fi.is_wintery(page(title="File:Aspens in fall.jpg", description="", categories="Ski areas in Arizona")))
+
     def test_winter_scoring(self):
         snowy = page(title="File:Ski slopes in snow.jpg", description="Skiers on the slope", categories="")
         self.assertGreater(fi.score(snowy, winter=True), fi.score(snowy))

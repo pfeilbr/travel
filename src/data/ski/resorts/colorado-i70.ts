@@ -35,7 +35,7 @@ const resorts: Resort[] = [
       { name: 'Lion Square Lodge', kind: 'slopeside', what: 'Long-running condo lodge right on the slope in Lionshead, a short walk from the gondola.', url: 'https://lionsquarelodge.com/', distance: 'Slopeside, Lionshead' },
       { name: 'The Sebastian Vail', kind: 'hotel', what: 'Polished boutique hotel in Vail Village, a short walk to Gondola One.', url: 'https://www.thesebastianvail.com/', distance: 'Vail Village' },
       { name: 'Antlers at Vail', kind: 'condo', what: 'Family-friendly condos with kitchens on Gore Creek in Lionshead.', url: 'https://www.antlersvail.com/', distance: 'Lionshead, short walk to lifts' },
-      { name: 'Evergreen Lodge', kind: 'hotel', what: 'One of the better-value hotels in town, between Vail Village and Lionshead.', url: 'https://www.evergreenvail.com/', distance: 'Short walk or free bus' },
+      { name: 'Evergreen Lodge', kind: 'hotel', what: 'One of the better-value hotels in town, between Vail Village and Lionshead.', url: 'https://evergreenvail.com/', distance: 'Short walk or free bus' },
       { name: 'Highline Vail', kind: 'hotel', what: 'A DoubleTree in West Vail with simpler rooms and lower rates than the villages.', url: 'https://www.hilton.com/en/hotels/egevcdt-highline-vail/', distance: '5 min drive or bus' },
     ],
     thingsToDo: [
@@ -103,7 +103,7 @@ const resorts: Resort[] = [
     ],
     apres: [
       { name: 'Coyote Cafe', what: 'The village’s casual, locals-friendly bar with Tex-Mex food.', url: 'https://www.coyotecafe.net/' },
-      { name: 'Dusty Boot Saloon', what: 'Western-themed saloon for burgers, margaritas and a lively après crowd.', url: 'https://dustybootbeavercreek.com/' },
+      { name: 'Dusty Boot Saloon', what: 'Western-themed saloon for burgers, margaritas and a lively après crowd.' },
     ],
     events: [
       { name: 'Opening day', kind: 'opening', date: '2026-11-25', when: 'Nov 25', what: 'Beaver Creek’s announced first day, the day before Thanksgiving.', confirmed: true },
@@ -139,7 +139,7 @@ const resorts: Resort[] = [
     activities: ['terrain-park', 'ice-skating', 'snowmobiling', 'dog-sledding', 'sleigh-rides', 'nordic', 'snowshoeing', 'mountain-coaster', 'nightlife', 'kids'],
     lodging: [
       { name: 'One Ski Hill Place', kind: 'ski-in/ski-out', what: 'Upscale condos at the base of Peak 8 with pools and the slopes out the door.', url: 'https://www.breckenridge.com/plan-your-trip/stay/one-ski-hill-place.aspx', distance: 'Slopeside, Peak 8' },
-      { name: 'Beaver Run Resort', kind: 'slopeside', what: 'Large condo resort on Peak 9 with its own chairlift, indoor-outdoor pools and an easy walk to town.', url: 'https://beaverrun.com/', distance: 'Slopeside, Peak 9' },
+      { name: 'Beaver Run Resort', kind: 'slopeside', what: 'Large condo resort at the base of Peak 9 with pools and hot tubs and an easy walk to Main Street.', url: 'https://beaverrun.com/', distance: 'Slopeside, Peak 9' },
       { name: 'Gravity Haus Breckenridge', kind: 'hotel', what: 'Modern hotel with a gym, hot pools and a social lobby near the Peak 9 base.', url: 'https://gravityhaus.com/locations/gravity-haus-breck/', distance: 'Short walk to Peak 9 lifts' },
       { name: 'Fireside Inn', kind: 'b&b', what: 'Small inn in the historic district with cozy B&B rooms plus cheaper Base Camp rooms.', url: 'https://www.firesideinn.com/', distance: 'In town, free bus to lifts' },
       { name: 'The Bivvi', kind: 'hostel', what: 'Social mountain hostel with bunk rooms and private rooms just south of town.', url: 'https://www.thebivvi.com/', distance: '5 min drive' },
@@ -149,7 +149,7 @@ const resorts: Resort[] = [
       { name: 'Good Times dog sledding', kind: 'dog-sledding', what: 'The same outfitter runs husky sled rides through the forest.', url: 'https://goodtimesadventures.com/', distance: '~20 min drive' },
       { name: 'Two Below Zero dinner sleigh rides', kind: 'sleigh-rides', what: 'Sleigh ride to a hearty family-style dinner and a live music and comedy show, running since 1983.', url: 'https://www.dinnersleighrides.com/', distance: 'Frisco, ~15 min' },
       { name: 'Breckenridge Nordic Center', kind: 'nordic', what: 'Groomed cross-country and snowshoe trails in the trees between town and Peak 8.', url: 'https://www.breckenridgenordic.com/', distance: '5 min drive' },
-      { name: 'Stephen C. West Ice Arena', kind: 'ice-skating', what: 'Town rink with public skating sessions and rentals.', url: 'https://www.breckenridgerecreation.com/rates/locations/stephen-c-west-ice-arena', distance: 'In town' },
+      { name: 'Stephen C. West Ice Arena', kind: 'ice-skating', what: 'Town rink with public skating sessions and rentals.', distance: 'In town' },
       { name: 'Gold Runner Coaster', kind: 'mountain-coaster', what: 'Alpine coaster through the trees at the Peak 8 base.', distance: 'Peak 8 base' },
       { name: 'Breckenridge Distillery', kind: 'drink', what: 'Bourbon distillery with a tasting room and restaurant.', url: 'https://www.breckenridgedistillery.com/', distance: 'Edge of town' },
     ],
@@ -209,7 +209,7 @@ const resorts: Resort[] = [
       { name: 'Dillon Dam Brewery', kind: 'drink', what: 'Big, busy brewpub in Dillon, a local après standby.', url: 'https://www.dambrewery.com/', distance: '10 min drive' },
     ],
     apres: [
-      { name: 'Kickapoo Tavern', what: 'River Run log-cabin tavern with a sunny patio at the bottom of the gondola.', url: 'https://www.kickapootavern.com/' },
+      { name: 'Kickapoo Tavern', what: 'River Run log-cabin tavern with a sunny patio at the bottom of the gondola.' },
       { name: 'Snake River Saloon', what: 'Long-running steakhouse and bar with live music on US-6.', url: 'https://www.snakeriversaloon.com/' },
     ],
     events: [

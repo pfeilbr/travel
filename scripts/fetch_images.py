@@ -252,6 +252,18 @@ def openverse_page(r: dict) -> dict | None:
     }
 
 
+SNOW_WORDS = ("snow", "snowy", "ski", "skiing", "skier", "skiers", "winter", "powder", "snowboard",
+              "snowboarding", "snowboarder", "groomed", "groomer", "freeride", "slalom")
+
+
+def is_wintery(page: dict) -> bool:
+    """True if the title or description (not inherited category names) talks about snow or skiing."""
+    info = (page.get("imageinfo") or [{}])[0]
+    ext = info.get("extmetadata") or {}
+    text = " ".join((page.get("title", ""), page.get("label", ""), strip_html(_meta(ext, "ImageDescription"))))
+    return bool(_words(text.replace("_", " ")) & set(SNOW_WORDS))
+
+
 def mentions(page: dict, words: list[str]) -> bool:
     """True if the title, label, description or tags mention any of `words` (case-insensitive)."""
     if not words:
@@ -484,6 +496,7 @@ def gather(place: dict) -> tuple[dict[str, dict], list[str], dict[str, str | Non
     order: list[str] = []
     skip = tuple(w for w in SKIP_SUBCATS if w not in place.get("keep_subcats", []))
     sources = place.get("sources", [])
+    searched: set[str] = set()  # titles that came from free-text search (need to mention the place)
     for src in sources:
         if "openverse" in src:
             continue
@@ -491,6 +504,7 @@ def gather(place: dict) -> tuple[dict[str, dict], list[str], dict[str, str | Non
             titles = _commons(category_files, src["category"], int(src.get("depth", 1)), None, skip) or []
         else:
             titles = _commons(search_files, src["search"], int(src.get("limit", 50))) or []
+            searched.update(titles)
         for t in titles:
             if t not in origin:
                 origin[t] = src.get("nearby")
@@ -502,8 +516,14 @@ def gather(place: dict) -> tuple[dict[str, dict], list[str], dict[str, str | Non
         if item["title"] not in order:
             order.append(item["title"])
     pages: dict[str, dict] = (_commons(image_infos, order) or {}) if order else {}
+    must = place.get("must", [])
+    if must:  # search hits are noisy ("Pats Peak" finds Kitt Peak); keep only those that name the place
+        pinned = {i["title"] for i in include}
+        pages = {t: p for t, p in pages.items() if t not in searched or t in pinned or mentions(p, must)}
     min_width = int(place.get("min_width", MIN_WIDTH))
-    have = sum(1 for t in order if t in pages and is_candidate(pages[t], min_width=min_width))
+    winter = bool(place.get("winter"))
+    have = sum(1 for t in order if t in pages and is_candidate(pages[t], min_width=min_width)
+               and (not winter or is_wintery(pages[t])))
     count = int(place.get("count", DEFAULT_COUNT))
     for src in sources:
         if "openverse" not in src or (src.get("fallback") and have >= count):
@@ -513,17 +533,18 @@ def gather(place: dict) -> tuple[dict[str, dict], list[str], dict[str, str | Non
         except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError) as e:
             print(f"  warning: Openverse query failed ({e})", file=sys.stderr)
             continue
-        must = src.get("must", place.get("must", []))
+        ov_must = src.get("must", must)
         for p in found:
-            if mentions(p, must) and p["title"] not in pages:
+            if mentions(p, ov_must) and p["title"] not in pages:
                 pages[p["title"]] = p
                 origin.setdefault(p["title"], src.get("nearby"))
                 order.append(p["title"])
     prefer = place.get("prefer", [])
-    winter = bool(place.get("winter"))
     cands = [t for t in order if t in pages and is_candidate(pages[t], min_width=min_width)]
-    # Primary-place photos rank above nearby fallbacks; ties broken by title for determinism.
-    ranked = sorted(cands, key=lambda t: (origin.get(t) is not None, -score(pages[t], prefer, winter), t))
+    # Primary-place photos rank above nearby fallbacks, winter places put snow photos first;
+    # ties broken by title for determinism.
+    ranked = sorted(cands, key=lambda t: (origin.get(t) is not None, winter and not is_wintery(pages[t]),
+                                          -score(pages[t], prefer, winter), t))
     # Pinned includes only need a free license / JPEG (they were picked by a human).
     pinned_ok = {i["title"] for i in include
                  if i["title"] in pages and is_candidate(pages[i["title"]], min_width=min(min_width, 1000),
