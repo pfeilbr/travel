@@ -5333,6 +5333,372 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "whiteface": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "whiteface",
+    "whiteface mountain",
+    "wilmington (lake placid)"
+   ],
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Whiteface_Mountain",
+     "depth": 0
+    },
+    {
+     "openverse": "Whiteface ski",
+     "must": [
+      "whiteface",
+      "whiteface mountain",
+      "wilmington (lake placid)"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "whiteface"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "gore-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "gore",
+    "gore mountain",
+    "north creek"
+   ],
+   "count": 3,
+   "sources": [
+    {
+     "category": "Category:Gore_Mountain_(ski_resort)",
+     "depth": 0
+    },
+    {
+     "openverse": "Gore ski",
+     "must": [
+      "gore",
+      "gore mountain",
+      "north creek"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "gore"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "west-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "west",
+    "west mountain",
+    "queensbury"
+   ],
+   "count": 1,
+   "sources": [
+    {
+     "search": "West Mountain ski Queensbury",
+     "limit": 25
+    },
+    {
+     "openverse": "West ski",
+     "must": [
+      "west",
+      "west mountain",
+      "queensbury"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "west"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "titus-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "titus",
+    "titus mountain",
+    "malone"
+   ],
+   "count": 1,
+   "sources": [
+    {
+     "search": "Titus Mountain Malone ski",
+     "limit": 25
+    },
+    {
+     "openverse": "Titus ski",
+     "must": [
+      "titus",
+      "titus mountain",
+      "malone"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "titus"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mccauley-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "mccauley",
+    "mccauley mountain",
+    "old forge"
+   ],
+   "count": 1,
+   "sources": [
+    {
+     "search": "McCauley Mountain Old Forge",
+     "limit": 25
+    },
+    {
+     "openverse": "McCauley ski",
+     "must": [
+      "mccauley",
+      "mccauley mountain",
+      "old forge"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "mccauley"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "oak-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "oak",
+    "oak mountain",
+    "speculator"
+   ],
+   "count": 1,
+   "sources": [
+    {
+     "search": "Oak Mountain Speculator ski",
+     "limit": 25
+    },
+    {
+     "openverse": "Oak ski",
+     "must": [
+      "oak",
+      "oak mountain",
+      "speculator"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "oak"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "hunter-mountain": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "hunter",
+    "hunter mountain"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Hunter_Mountain",
+     "depth": 0
+    },
+    {
+     "openverse": "Hunter ski",
+     "must": [
+      "hunter",
+      "hunter mountain"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "hunter"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "windham": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "windham",
+    "windham mountain club"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "search": "Windham Mountain ski",
+     "limit": 25
+    },
+    {
+     "openverse": "Windham ski",
+     "must": [
+      "windham",
+      "windham mountain club"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "windham"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "belleayre": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "belleayre",
+    "belleayre mountain",
+    "highmount"
+   ],
+   "count": 2,
+   "sources": [
+    {
+     "search": "Belleayre Mountain ski",
+     "limit": 25
+    },
+    {
+     "openverse": "Belleayre ski",
+     "must": [
+      "belleayre",
+      "belleayre mountain",
+      "highmount"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "belleayre"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "plattekill": {
+   "winter": true,
+   "keep_subcats": [
+    "ski"
+   ],
+   "min_width": 1000,
+   "must": [
+    "plattekill",
+    "plattekill mountain",
+    "roxbury"
+   ],
+   "count": 1,
+   "sources": [
+    {
+     "search": "Plattekill Mountain ski",
+     "limit": 25
+    },
+    {
+     "openverse": "Plattekill ski",
+     "must": [
+      "plattekill",
+      "plattekill mountain",
+      "roxbury"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "ski",
+    "winter",
+    "plattekill"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }

@@ -429,7 +429,7 @@ const resorts: Resort[] = [
     ],
     apres: [
       { name: 'The West Mountain Bar & Eatery', what: 'Sit-down bar and restaurant on the second floor of the main lodge, open during the ski season.' },
-      { name: 'Davidson Brothers', what: 'Downtown Glens Falls brewpub with house beers and pub food.', url: 'http://www.davidsonbrothers.com/' },
+      { name: 'Davidson Brothers', what: 'Downtown Glens Falls brewpub with house beers and pub food.', url: 'https://www.davidsonbrothers.com/' },
     ],
     events: [
       {
@@ -657,7 +657,7 @@ const resorts: Resort[] = [
         name: 'Adirondack Lodge Old Forge',
         kind: 'lodge',
         what: 'Budget-friendly motel-style lodge in Old Forge.',
-        url: 'http://www.adirondacklodgeoldforge.com/',
+        url: 'https://www.adirondacklodgeoldforge.com/',
         distance: '5 min drive',
       },
       {
@@ -708,14 +708,14 @@ const resorts: Resort[] = [
         name: 'Fulton Chain Craft Brewery',
         kind: 'drink',
         what: 'Local brewery and taproom in Old Forge. Closed Tuesdays and Wednesdays.',
-        url: 'http://www.fccbrewery.com/',
+        url: 'https://www.fccbrewery.com/',
         distance: '5 min drive',
       },
     ],
     apres: [
       { name: 'Slickers', what: 'Longtime Old Forge tavern with pub food; closed Tuesdays and Wednesdays.', url: 'http://www.slickerstavern.com/' },
-      { name: 'Back Door Bar', what: 'Busy Main Street bar behind the Front Door Diner, serving food until 9.', url: 'http://www.backdoorfrontdoor.com/' },
-      { name: 'Fulton Chain Craft Brewery', what: 'Local pints after the lifts close.', url: 'http://www.fccbrewery.com/' },
+      { name: 'Back Door Bar', what: 'Busy Main Street bar behind the Front Door Diner, serving food until 9.', url: 'https://www.backdoorfrontdoor.com/' },
+      { name: 'Fulton Chain Craft Brewery', what: 'Local pints after the lifts close.', url: 'https://www.fccbrewery.com/' },
     ],
     events: [
       {

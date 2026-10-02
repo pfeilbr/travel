@@ -131,7 +131,7 @@ const resorts: Resort[] = [
     ],
     apres: [
       { name: 'Antler Bar', what: 'The bar at the June Meadows Chalet, mid-mountain.' },
-      { name: 'Tiger Bar', what: 'Saloon from 1932 with one of the oldest liquor licenses in California, serving bar food with Mexican options.', url: 'https://www.tigerbarcafe.com/' },
+      { name: 'Tiger Bar', what: 'Saloon from 1932 with one of the oldest liquor licenses in California, serving bar food with Mexican options.' },
       { name: 'June Lake Brewing', what: 'Small-town brewery taproom; bring food in from the spots nearby.', url: 'https://www.junelakebrewing.com/' },
     ],
     events: [
@@ -464,7 +464,6 @@ const resorts: Resort[] = [
       { name: 'JW’s Bar & Grill', kind: 'eat', what: 'Sit-down dinners of steak, fish, pasta and burgers at the Inn, with homemade soups.', url: `${CP}/dining`, distance: 'At the base' },
       { name: 'Lakeshore Resort Saloon', kind: 'drink', what: 'Lakeside saloon in Lakeshore for a drink after the lifts close.', url: 'https://www.lakeshoreresort.com/', distance: '5 min drive' },
       { name: 'Huntington Lake', kind: 'other', what: 'The lake below the resort; quiet, snowy forest walks on a rest day.', url: 'https://huntingtonlake.com/', distance: '5 min drive' },
-      { name: 'The Hungry Hut', kind: 'eat', what: 'Casual food to go on Tollhouse Road, with online ordering.', url: 'https://order.toasttab.com/online/the-hungry-hut-42008-tollhouse-rd', distance: '30 min drive' },
     ],
     apres: [
       { name: 'Buckhorn Bar & Grill', what: 'Mid-mountain bar at the bottom of Chair 2 with beer on tap and a big screen.' },
