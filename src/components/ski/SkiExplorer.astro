@@ -93,7 +93,7 @@ const regionChips = region ? [] : skiRegions.filter((g) => resorts.some((r) => r
 <script>
   import { inches, matchesSki, parseSkiFilters, serializeSkiFilters, sortResorts, type SkiFilters, type SkiRow, type SkiSort } from '../../lib/ski';
   import { loadSnow } from '../../lib/ski-live';
-  import { esc, setupListMap, type MapRow } from '../../lib/listmap';
+  import { esc, offeredOnly, setupListMap, type MapRow } from '../../lib/listmap';
   import { wireCarousels } from '../../lib/carousel';
   import { wireHearts } from '../../lib/wishlist';
 
@@ -110,7 +110,10 @@ const regionChips = region ? [] : skiRegions.filter((g) => resorts.some((r) => r
     wireHearts(root);
 
     let { filters, sort } = parseSkiFilters(new URLSearchParams(location.search));
-    if (fixedRegion) filters.regions = [];
+    filters = {
+      regions: fixedRegion ? [] : offeredOnly(root, 'region', filters.regions), passes: offeredOnly(root, 'pass', filters.passes),
+      activities: offeredOnly(root, 'activity', filters.activities), sizes: offeredOnly(root, 'size', filters.sizes),
+    };
 
     const pinLabel = (d: R) => `${esc(d.pin)}${snow.get(d.id) ? `<b>❄${esc(inches(snow.get(d.id)!))}</b>` : ''}`;
     const rows: (MapRow & { d: R })[] = data.map((d) => ({

@@ -14,6 +14,12 @@ export interface MapRow {
 
 export const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
 
+/** Keep only the values some chip in `root` offers for `data-<attr>`, so stale or mistyped links don't empty the list. */
+export function offeredOnly<T extends string>(root: HTMLElement, attr: string, values: T[]): T[] {
+  const ok = new Set([...root.querySelectorAll<HTMLElement>(`[data-${attr}]`)].map((b) => b.getAttribute(`data-${attr}`)));
+  return values.filter((v) => ok.has(v));
+}
+
 const isDark = () => document.documentElement.dataset.theme === 'dark'
   || (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
 

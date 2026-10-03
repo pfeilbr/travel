@@ -84,7 +84,7 @@ const featureChips = p.features.filter((f) => spots.some((s) => s.features.inclu
 
 <script>
   import { matchesSpot, parseSpotFilters, serializeSpotFilters, sortSpots, type SpotFilters, type SpotRow, type SpotSort } from '../../lib/outdoors';
-  import { esc, setupListMap, type MapRow } from '../../lib/listmap';
+  import { esc, offeredOnly, setupListMap, type MapRow } from '../../lib/listmap';
   import { wireCarousels } from '../../lib/carousel';
   import { wireHearts } from '../../lib/wishlist';
 
@@ -106,6 +106,10 @@ const featureChips = p.features.filter((f) => spots.some((s) => s.features.inclu
     const lm = setupListMap(root, rows, cards);
 
     let { filters, sort } = parseSpotFilters(new URLSearchParams(location.search));
+    filters = {
+      regions: offeredOnly(root, 'region', filters.regions), kinds: offeredOnly(root, 'kind', filters.kinds),
+      features: offeredOnly(root, 'feature', filters.features), sizes: offeredOnly(root, 'size', filters.sizes),
+    };
 
     function render() {
       const visible = sortSpots(data.filter((r) => matchesSpot(r, filters)), sort);
