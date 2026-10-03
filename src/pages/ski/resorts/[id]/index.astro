@@ -55,7 +55,7 @@ const statRows = [
       <h1>{r.name}</h1>
       <div class="sub">
         {r.google && <a class="rating" href={r.google.url} rel="noopener" title="Read reviews on Google Maps"><Icon name="star" size={14} />{r.google.rating.toFixed(1)} <span class="u">on Google</span></a>}
-        {r.google && <span aria-hidden="true">·</span>}
+        {r.google && <span class="dot" aria-hidden="true">·</span>}
         <span>{r.town} · {r.area}</span>
         <span class="spacer"></span>
         <button class="act" data-share><Icon name="share" size={16} /><span>Share</span></button>
@@ -264,6 +264,7 @@ const statRows = [
   .title h1 { font-size: clamp(24px, 3vw, 30px); margin-bottom: 6px; }
   .sub { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 15px; margin-bottom: 20px; }
   .sub .rating { text-decoration: none; }
+  @media (max-width: 560px) { .sub .dot { display: none; } }
   .sub .u { text-decoration: underline; font-weight: 600; margin-left: 2px; }
   .spacer { flex: 1; }
   .act { display: inline-flex; align-items: center; gap: 6px; border: 0; background: none; padding: 8px 10px; border-radius: 8px; text-decoration: underline; font-weight: 600; font-size: 14px; cursor: pointer; }
