@@ -1848,6 +1848,44 @@
       "width": 1280
     }
   ],
+  "mont-tremblant-park": [
+    {
+      "alt": "The following is the author's description of the photograph quoted directly from the photograph's Flickr page.",
+      "author": "Dick Rochester",
+      "file": "src/assets/places/mont-tremblant-park/1.jpg",
+      "height": 857,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rural_bridge_in_the_Mont-Tremblant_area_of_Quebec.jpg",
+      "title": "File:Rural bridge in the Mont-Tremblant area of Quebec.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Long exposure and HDR photo of Chutes du Diable in Parc National du Mont-Tremblant, Quebec (Canada).",
+      "author": "Nicolas Raymond from Bethesda, Maryland, USA",
+      "file": "src/assets/places/mont-tremblant-park/2.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chutes_du_Diable_Waterfall_-_HDR_(15953332725).jpg",
+      "title": "File:Chutes du Diable Waterfall - HDR (15953332725).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mont-Tremblant",
+      "author": "ericahan.38",
+      "file": "src/assets/places/mont-tremblant-park/3.jpg",
+      "height": 720,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont-Tremblant-1.jpg",
+      "title": "File:Mont-Tremblant-1.jpg",
+      "width": 1280
+    }
+  ],
   "montage-mountain": [
     {
       "alt": "View of lodge and Montage ski mountain",
