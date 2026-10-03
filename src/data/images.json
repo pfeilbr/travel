@@ -1485,6 +1485,20 @@
     }
   ],
   "kissing-bridge": [],
+  "labrador-mountain": [
+    {
+      "alt": "Skiing near Burgeo",
+      "author": "Derrick Glenn Mercer",
+      "file": "src/assets/places/labrador-mountain/1.jpg",
+      "height": 784,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/23009796@N00/4397565857",
+      "title": "Openverse:78b23f8d-c411-4388-862d-a43bac62cf83",
+      "width": 1024
+    }
+  ],
   "laurel-mountain": [
     {
       "alt": "Laurel mountain ski area",
