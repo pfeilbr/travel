@@ -92,7 +92,6 @@ const spots: Spot[] = [
         name: 'Mike’s Tiki Bar',
         kind: 'drink',
         what: 'Outdoor gathering spot with 30 drafts and food trucks, open nightly May to October; also a trailhead parking lot.',
-        url: 'http://www.mikestikibar.com/',
         distance: 'In East Burke',
       },
       {
@@ -152,7 +151,7 @@ const spots: Spot[] = [
     size: 'major',
     tagline: 'The biggest lift-served bike park in New England',
     summary:
-      'Killington runs 36 trails and more than 30 miles of lift-served riding off three lifts, with nearly 2,000 feet of vertical from the K-1 Gondola. Terrain runs from mellow flow off Snowshed to steep, rooty freeride up top, and the new Side Quest trail adds flow off Ramshead. First-timers get a lesson, rental and ticket package; experienced riders get long, rough laps that rival anything in the East.',
+      'Killington runs 36 trails and more than 30 miles of lift-served riding off three lifts, with nearly 2,000 feet of vertical. Terrain runs from flow trails to technical freeride, and the new Side Quest trail adds another option off the Ramshead Quad. First-timers get a lesson, rental and ticket package; experienced riders get long laps from the K-1 Gondola.',
     url: 'https://killington.com/bike-park-tickets',
     bookingUrl: 'https://killington.com/mountain-bike-rentals',
     mapUrl: 'https://killington.com/bike-trail-map',
@@ -197,28 +196,28 @@ const spots: Spot[] = [
       {
         name: 'Killington Grand Resort Hotel',
         kind: 'slopeside',
-        what: 'The resort’s own hotel at the Snowshed base, steps from the bike park lifts.',
+        what: 'The resort’s full-service hotel, with a heated outdoor pool, the Grand Spa and a restaurant, close to the bike park lifts.',
         url: 'https://killington.com/killington-grand-hotel',
         distance: 'At the base',
       },
       {
         name: 'Cascades Lodge',
         kind: 'lodge',
-        what: 'Casual lodge near the Snowshed base with an indoor pool and restaurant.',
+        what: 'Small hotel near Snowshed with an indoor pool, sauna and hot tub, and a pub.',
         url: 'https://www.cascadeslodge.com/',
         distance: '5 min walk',
       },
       {
         name: 'Birch Ridge Inn',
         kind: 'inn',
-        what: 'Small inn on Killington Road with a well-regarded dinner restaurant.',
+        what: 'A refined, quiet country inn close to the Killington access road.',
         url: 'https://www.birchridge.com/',
         distance: '5 min drive',
       },
       {
         name: 'Inn at Long Trail',
         kind: 'inn',
-        what: 'Old-school inn on Route 4 with McGrath’s Irish Pub, right where the Long Trail crosses.',
+        what: 'Classic lodge open since 1938, with breakfast included and McGrath’s Irish Pub downstairs.',
         url: 'https://www.innatlongtrail.com/',
         distance: '10 min drive',
       },
@@ -478,7 +477,7 @@ const spots: Spot[] = [
       {
         name: 'Highland Pub',
         kind: 'eat',
-        what: 'Burgers and beer in the base lodge, with an outdoor bar by the lift.',
+        what: 'Food and drinks in the base lodge, plus the Exit 19 outdoor bar by the lift.',
         url: 'https://highlandmountain.com/highland-pub/',
         distance: 'At the base',
       },
@@ -676,7 +675,7 @@ const spots: Spot[] = [
       {
         name: 'Bear Brook campground and Bear Hill cabins',
         kind: 'cabin',
-        what: 'The park’s own 101-site campground at Beaver Pond and rustic cabins at Bear Hill Pond, booked through NH State Parks.',
+        what: 'The park’s own 101-site campground at Beaver Pond and cabins at Bear Hill Pond, booked through NH State Parks.',
         url: 'https://www.nhstateparks.org/visit/state-parks/bear-brook-state-park',
         distance: 'In the park',
       },
@@ -733,7 +732,7 @@ const spots: Spot[] = [
     size: 'major',
     tagline: 'Adirondack singletrack and a World Cup weekend',
     summary:
-      'The Barkeater Trails Alliance builds and looks after a dozen networks around Wilmington, Lake Placid, Saranac Lake, Keene and Elizabethtown. The Flume network has the most mileage, smooth low down and increasingly technical on Marble Mountain, while Hardy Road’s 11 miles sit in Whiteface’s rain shadow and dry out first. Mt Van Hoevenberg, the Olympic venue, hosts a World Cup cross-country race each fall, with downhill at Whiteface.',
+      'The Barkeater Trails Alliance builds and looks after a dozen networks around Wilmington, Lake Placid, Saranac Lake, Keene and Elizabethtown. The Flume network has the most mileage, smooth low down and increasingly technical on Marble Mountain, while Hardy Road’s 11 miles sit in Whiteface’s rain shadow and dry out first. Mt Van Hoevenberg, the Olympic venue, hosts World Cup cross-country racing, with downhill at Whiteface.',
     url: 'https://www.betatrails.org/',
     mapUrl: 'https://www.greengoatmaps.com/product-page/beta-mt-bike-map',
     conditionsUrl: 'https://www.betatrails.org/bike-trail-conditions.html',
@@ -759,12 +758,12 @@ const spots: Spot[] = [
     outfitters: [
       {
         name: 'High Peaks Cyclery',
-        what: 'Lake Placid bike shop and guide service for rentals, repairs and local beta.',
+        what: 'Lake Placid shop and guide service with mountain, road and rail-trail bike rentals and Adirondack Rail Trail shuttles.',
         url: 'http://www.highpeakscyclery.com/',
       },
       {
         name: 'Placid Planet Bicycles',
-        what: 'Long-running Lake Placid bike shop on Saranac Avenue.',
+        what: 'Lake Placid bike shop on Saranac Avenue for service and gear.',
         url: 'http://www.placidplanet.com/',
       },
       {
@@ -864,7 +863,7 @@ const spots: Spot[] = [
     size: 'mid',
     tagline: 'Two lift-served hills and 35 miles of state forest',
     summary:
-      'Holiday Valley loads bikes on its Spruce Lake chair on summer weekends for laps on the upper-mountain trails, and its resort trails connect straight into about 35 miles of cross-country singletrack in McCarty Hill State Forest, built and mapped by the Western New York Mountain Bicycling Association. Next door, HoliMont runs its own lift-served bike park with 25 trails. Ellicottville’s brewpub and bars are five minutes away, which makes it an easy weekend for mixed groups.',
+      'Holiday Valley loads bikes on its Spruce Lake chair on summer weekends for laps on the upper-mountain trails, and its resort trails connect straight into about 35 miles of cross-country singletrack in McCarty Hill State Forest, mapped by the Western New York Mountain Bicycling Association. Next door, HoliMont runs its own lift-served bike park with 25 trails. Ellicottville’s brewpub and bars are five minutes away, which makes it an easy weekend for mixed groups.',
     url: 'https://www.holidayvalley.com/activities/mountain-biking/',
     mapUrl: 'https://wnymba.org/trails/',
     season: {
@@ -893,7 +892,7 @@ const spots: Spot[] = [
       },
       {
         name: 'Western New York Mountain Bicycling Association (WNYMBA)',
-        what: 'Builds and maps the Ellicottville trails; its paper map is sold at the Holiday Valley Main Lodge.',
+        what: 'The regional trail group; its official Ellicottville trail map is sold at the Holiday Valley Main Lodge.',
         url: 'https://wnymba.org/trails/',
       },
     ],
@@ -980,7 +979,7 @@ const spots: Spot[] = [
     size: 'local',
     tagline: 'Free hilltop singletrack south of Syracuse',
     summary:
-      'Onondaga County’s oldest park covers more than six square miles of hilly forest, with about 20 miles of trails that mix mountain trail, fire lanes and park roads. It is a local favorite under an hour from Verona, with real climbs by Central New York standards and quiet woods. Riding is free; sign in at Skyline Lodge, and note the mountain bike season ends September 30.',
+      'Onondaga County’s oldest park covers more than six square miles of hilly forest, with about 20 miles of trails that mix mountain trail, fire lanes and park roads. It is a local favorite under an hour from Verona, with rugged, hilly terrain and quiet woods. Riding is free; sign in at Skyline Lodge, and note the mountain bike season ends September 30.',
     url: 'https://www.onondagacountyparks.com/parks/highland-forest/',
     season: {
       from: 'May',
@@ -1003,12 +1002,12 @@ const spots: Spot[] = [
     outfitters: [
       {
         name: 'Syracuse Bicycle',
-        what: 'Big bike shop on Erie Boulevard East for service, parts and new bikes.',
+        what: 'Bike shop on Erie Boulevard East for service, parts and new bikes.',
         url: 'http://www.syracusebicycle.com/',
       },
       {
         name: 'Mello Velo Bicycle Shop',
-        what: 'Bike shop and café near Syracuse University.',
+        what: 'Bike shop on Canal Street in Syracuse.',
         url: 'https://www.mellovelobicycles.com/',
       },
     ],
@@ -1046,7 +1045,7 @@ const spots: Spot[] = [
       {
         name: 'Pratt’s Falls Park',
         kind: 'other',
-        what: 'County park with a 137-foot waterfall and short trails.',
+        what: 'County park with a tall waterfall and short trails.',
         url: 'https://onondagacountyparks.com/parks/pratts-falls-park',
         distance: '15 min drive',
       },
@@ -1139,7 +1138,7 @@ const spots: Spot[] = [
       {
         name: 'Chittenango Landing Canal Boat Museum',
         kind: 'museum',
-        what: 'Restored 1850s dry docks and a working canal boat shop right on the towpath.',
+        what: 'Canal museum right on the towpath in Chittenango, about the canal’s boat-building days.',
         url: 'https://chittenangolanding.org/',
         distance: 'On the trail',
       },
@@ -1195,7 +1194,7 @@ const spots: Spot[] = [
     size: 'mid',
     tagline: 'Rocky Pocono downhill close to Philly and NYC',
     summary:
-      'The mountain with Pennsylvania’s biggest ski vertical runs a downhill park on Fridays to weekends, with more than 30 trails off the Comet quad, from the green Shakedown Street and a pump track to rocky expert lines like Chunkleberry and Fear & Loaming. The resort is frank that even its greens have roots, rocks and steep pitches, so a full-suspension bike helps. It is the closest serious bike park to Philadelphia and New York City.',
+      'The mountain with Pennsylvania’s biggest ski vertical runs a downhill park Friday through Sunday, with more than 30 trails off the Comet quad, from the green Shakedown Street and a pump track to rocky expert lines like Chunkleberry and Fear & Loaming. The resort is frank that even its greens have roots, rocks and steep pitches, so a full-suspension bike helps. It is the closest serious bike park to Philadelphia and New York City.',
     url: 'https://www.skibluemt.com/outdoor/mountain-biking/',
     bookingUrl: 'https://www.skibluemt.com/mtb-tickets-and-rentals/',
     mapUrl: 'https://www.skibluemt.com/mountain-biking/trail-map/',
@@ -1351,13 +1350,6 @@ const spots: Spot[] = [
     ],
     lodging: [
       {
-        name: 'Seven Points Campground',
-        kind: 'cabin',
-        what: 'Army Corps campground on the lake near the trailheads, booked on Recreation.gov.',
-        url: 'https://www.recreation.gov/camping/campgrounds/233626',
-        distance: '5 min drive',
-      },
-      {
         name: 'Lake Raystown Resort',
         kind: 'lodge',
         what: 'Lakeside resort with a lodge, villas, cabins, yurts and campsites, plus a small waterpark.',
@@ -1458,7 +1450,7 @@ const spots: Spot[] = [
       {
         name: 'Penn Wells Hotel & Lodge',
         kind: 'hotel',
-        what: 'Historic hotel on Main Street in Wellsboro, with a newer lodge nearby.',
+        what: 'Historic hotel on Main Street in Wellsboro, with a sister lodge.',
         url: 'https://www.pennwells.com/',
         distance: 'Wellsboro',
       },

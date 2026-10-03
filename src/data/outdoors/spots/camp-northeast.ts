@@ -522,7 +522,7 @@ const spots: Spot[] = [
     coords: [44.3326, -71.2193],
     kind: 'National forest',
     size: 'major',
-    tagline: 'The national forest’s biggest campground, below Mount Washington',
+    tagline: 'The White Mountains’ biggest campground, by Mount Washington',
     summary:
       'The largest campground in the White Mountain National Forest, spread over wooded loops along the Peabody River at the base of Mount Washington. Some sites have electric hookups, and trails into the Great Gulf Wilderness and the Presidential and Carter ranges start nearby. A good pick for RV campers and families who want big-mountain hiking, the Auto Road and Gorham’s diners close at hand.',
     url: 'https://www.fs.usda.gov/r09/whitemountain/recreation/dolly-copp-campground',

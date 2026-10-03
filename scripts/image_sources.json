@@ -9657,6 +9657,482 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "gifford-woods": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "gifford",
+    "kent pond",
+    "gifford woods state park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Gifford_Woods_State_Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Gifford Woods State Park camping",
+     "must": [
+      "gifford",
+      "kent pond",
+      "gifford woods state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "little-river": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "little river",
+    "waterbury",
+    "little river state park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Little_River_State_Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Little River State Park camping",
+     "must": [
+      "little river",
+      "waterbury",
+      "little river state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "burton-island": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "burton",
+    "burton island state park"
+   ],
+   "sources": [
+    {
+     "search": "Burton Island State Park Vermont",
+     "limit": 25
+    },
+    {
+     "openverse": "Burton Island State Park camping",
+     "must": [
+      "burton",
+      "burton island state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "lafayette-place": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "lafayette",
+    "franconia",
+    "lafayette place campground"
+   ],
+   "sources": [
+    {
+     "category": "Category:Franconia_Notch_State_Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Lafayette Place Campground camping",
+     "must": [
+      "lafayette",
+      "franconia",
+      "lafayette place campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "dolly-copp": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "dolly copp",
+    "peabody",
+    "dolly copp campground"
+   ],
+   "sources": [
+    {
+     "search": "Dolly Copp campground",
+     "limit": 25
+    },
+    {
+     "openverse": "Dolly Copp Campground camping",
+     "must": [
+      "dolly copp",
+      "peabody",
+      "dolly copp campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "white-lake-nh": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "white lake",
+    "white lake state park"
+   ],
+   "sources": [
+    {
+     "search": "White Lake State Park New Hampshire",
+     "limit": 25
+    },
+    {
+     "openverse": "White Lake State Park camping",
+     "must": [
+      "white lake",
+      "white lake state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "fish-creek-pond": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "fish creek",
+    "square pond",
+    "fish creek pond campground"
+   ],
+   "sources": [
+    {
+     "search": "Fish Creek Pond campground Adirondack",
+     "limit": 25
+    },
+    {
+     "openverse": "Fish Creek Pond Campground camping",
+     "must": [
+      "fish creek",
+      "square pond",
+      "fish creek pond campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "north-south-lake": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "north lake",
+    "south lake",
+    "north-south",
+    "kaaterskill",
+    "north-south lake campground"
+   ],
+   "sources": [
+    {
+     "category": "Category:North-South_Lake",
+     "depth": 0
+    },
+    {
+     "openverse": "North-South Lake Campground camping",
+     "must": [
+      "north lake",
+      "south lake",
+      "north-south",
+      "kaaterskill",
+      "north-south lake campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "letchworth": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "letchworth",
+    "genesee",
+    "letchworth state park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Letchworth_State_Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Letchworth State Park camping",
+     "must": [
+      "letchworth",
+      "genesee",
+      "letchworth state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "verona-beach": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "verona beach",
+    "verona beach state park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Verona_Beach_State_Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Verona Beach State Park camping",
+     "must": [
+      "verona beach",
+      "verona beach state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "delta-lake": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "delta lake",
+    "delta reservoir",
+    "delta lake state park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Delta_Lake_State_Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Delta Lake State Park camping",
+     "must": [
+      "delta lake",
+      "delta reservoir",
+      "delta lake state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "ricketts-glen": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "ricketts",
+    "ganoga",
+    "lake jean",
+    "ricketts glen state park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Ricketts_Glen_State_Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Ricketts Glen State Park camping",
+     "must": [
+      "ricketts",
+      "ganoga",
+      "lake jean",
+      "ricketts glen state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "cherry-springs": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "cherry springs",
+    "cherry springs state park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Cherry_Springs_State_Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Cherry Springs State Park camping",
+     "must": [
+      "cherry springs",
+      "cherry springs state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "ohiopyle-kentuck": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "ohiopyle",
+    "kentuck",
+    "youghiogheny",
+    "ohiopyle state park: kentuck campground"
+   ],
+   "sources": [
+    {
+     "category": "Category:Ohiopyle_State_Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Ohiopyle State Park: Kentuck Campground camping",
+     "must": [
+      "ohiopyle",
+      "kentuck",
+      "youghiogheny",
+      "ohiopyle state park: kentuck campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }
