@@ -1525,6 +1525,44 @@
       "width": 1280
     }
   ],
+  "little-valley-pickleball": [
+    {
+      "alt": "View of St.",
+      "author": "MojaveNC",
+      "file": "src/assets/places/little-valley-pickleball/1.jpg",
+      "height": 853,
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:St._George,_Utah.jpg",
+      "title": "File:St. George, Utah.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Verdin, Slick Rock Park, St.",
+      "author": "Bureau of Land Management",
+      "file": "src/assets/places/little-valley-pickleball/2.jpg",
+      "height": 781,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:My_Public_Lands_Magazine,_Spring_2015_(16627591481).jpg",
+      "title": "File:My Public Lands Magazine, Spring 2015 (16627591481).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "atop the 'Dixie Sugarloaf' on the outskirts of St.",
+      "author": "Murray Foubister",
+      "file": "src/assets/places/little-valley-pickleball/3.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atop_the_'Dixie_Sugarloaf'_on_the_outskirts_of_St._George,_Utah_-_spectacular_sunset_colours_-_(22418616399).jpg",
+      "title": "File:Atop the 'Dixie Sugarloaf' on the outskirts of St. George, Utah - spectacular sunset colours - (22418616399).jpg",
+      "width": 1280
+    }
+  ],
   "loon": [
     {
       "alt": "Loon Mountain Ski Resort Lincoln New Hampshire",
@@ -1743,6 +1781,32 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont_Sainte-Anne_(cropped).jpg",
       "title": "File:Mont Sainte-Anne (cropped).jpg",
+      "width": 1280
+    }
+  ],
+  "mont-sutton": [
+    {
+      "alt": "Winter snow storm at ski Chalet at Mont SUTTON Quebec Canada",
+      "author": "MontSutton",
+      "file": "src/assets/places/mont-sutton/1.jpg",
+      "height": 701,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chalet_Alt._400_m_SUTTON.jpg",
+      "title": "File:Chalet Alt. 400 m SUTTON.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mont SUTTON panorama Winter ski",
+      "author": "MontSutton",
+      "file": "src/assets/places/mont-sutton/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paysage_nature_Mont_SUTTON.jpg",
+      "title": "File:Paysage nature Mont SUTTON.jpg",
       "width": 1280
     }
   ],
@@ -3107,6 +3171,20 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-09-04_17_13_05_View_towards_the_Tussey_Mountain_Ski_Area_from_the_Blue_Trail_between_station_7_and_station_8_within_the_Mount_Nittany_Conservancy_in_College_Township,_Centre_County,_Pennsylvania.jpg",
       "title": "File:2024-09-04 17 13 05 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania.jpg",
+      "width": 1280
+    }
+  ],
+  "val-saint-come": [
+    {
+      "alt": "Vie de haut de la station",
+      "author": "Maxlegros",
+      "file": "src/assets/places/val-saint-come/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ski_Val_Saint-C%C3%B4me.jpg",
+      "title": "File:Ski Val Saint-Côme.jpg",
       "width": 1280
     }
   ],

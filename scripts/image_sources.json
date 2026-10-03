@@ -7318,6 +7318,418 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "emerald-bay": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "emerald",
+    "fannette",
+    "emerald bay"
+   ],
+   "sources": [
+    {
+     "category": "Category:Emerald_Bay_State_Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Emerald Bay kayaking",
+     "must": [
+      "emerald",
+      "fannette",
+      "emerald bay"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "sand-harbor": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "sand harbor",
+    "sand harbor and the east shore"
+   ],
+   "sources": [
+    {
+     "search": "Sand Harbor Lake Tahoe",
+     "limit": 25
+    },
+    {
+     "openverse": "Sand Harbor and the East Shore kayaking",
+     "must": [
+      "sand harbor",
+      "sand harbor and the east shore"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mono-lake": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "mono",
+    "tufa",
+    "mono lake"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mono_Lake",
+     "depth": 0
+    },
+    {
+     "openverse": "Mono Lake kayaking",
+     "must": [
+      "mono",
+      "tufa",
+      "mono lake"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "elkhorn-slough": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "elkhorn",
+    "elkhorn slough"
+   ],
+   "sources": [
+    {
+     "category": "Category:Elkhorn_Slough",
+     "depth": 0
+    },
+    {
+     "openverse": "Elkhorn Slough kayaking",
+     "must": [
+      "elkhorn",
+      "elkhorn slough"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "tomales-bay": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "tomales",
+    "tomales bay"
+   ],
+   "sources": [
+    {
+     "category": "Category:Tomales_Bay",
+     "depth": 0
+    },
+    {
+     "openverse": "Tomales Bay kayaking",
+     "must": [
+      "tomales",
+      "tomales bay"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "channel-islands-sea-caves": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "scorpion",
+    "santa cruz island",
+    "sea cave",
+    "santa cruz island sea caves"
+   ],
+   "sources": [
+    {
+     "category": "Category:Santa_Cruz_Island",
+     "depth": 0
+    },
+    {
+     "openverse": "Santa Cruz Island sea caves kayaking",
+     "must": [
+      "scorpion",
+      "santa cruz island",
+      "sea cave",
+      "santa cruz island sea caves"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "la-jolla-sea-caves": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "la jolla",
+    "cave",
+    "la jolla sea caves"
+   ],
+   "sources": [
+    {
+     "category": "Category:La_Jolla_Caves",
+     "depth": 0
+    },
+    {
+     "openverse": "La Jolla sea caves kayaking",
+     "must": [
+      "la jolla",
+      "cave",
+      "la jolla sea caves"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "black-canyon-water-trail": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "black canyon",
+    "emerald cave",
+    "willow beach",
+    "black canyon water trail"
+   ],
+   "sources": [
+    {
+     "category": "Category:Black_Canyon_of_the_Colorado",
+     "depth": 0
+    },
+    {
+     "openverse": "Black Canyon Water Trail kayaking",
+     "must": [
+      "black canyon",
+      "emerald cave",
+      "willow beach",
+      "black canyon water trail"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "horseshoe-bend-kayak": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "horseshoe",
+    "glen canyon",
+    "lees ferry",
+    "horseshoe bend by kayak"
+   ],
+   "sources": [
+    {
+     "category": "Category:Horseshoe_Bend_(Arizona)",
+     "depth": 0
+    },
+    {
+     "openverse": "Horseshoe Bend by kayak kayaking",
+     "must": [
+      "horseshoe",
+      "glen canyon",
+      "lees ferry",
+      "horseshoe bend by kayak"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "antelope-canyon-kayak": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "antelope",
+    "antelope canyon by kayak"
+   ],
+   "sources": [
+    {
+     "search": "Antelope Canyon Lake Powell kayak",
+     "limit": 25
+    },
+    {
+     "openverse": "Antelope Canyon by kayak kayaking",
+     "must": [
+      "antelope",
+      "antelope canyon by kayak"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "saguaro-lake": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "saguaro lake"
+   ],
+   "sources": [
+    {
+     "category": "Category:Saguaro_Lake_(Arizona)",
+     "depth": 0
+    },
+    {
+     "openverse": "Saguaro Lake kayaking",
+     "must": [
+      "saguaro lake"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "topock-gorge": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "topock",
+    "topock gorge"
+   ],
+   "sources": [
+    {
+     "category": "Category:Topock_Gorge",
+     "depth": 0
+    },
+    {
+     "openverse": "Topock Gorge kayaking",
+     "must": [
+      "topock",
+      "topock gorge"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }
