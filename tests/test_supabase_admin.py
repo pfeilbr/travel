@@ -4,7 +4,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
-from supabase_admin import anon_key_from, auth_payload, redacted  # noqa: E402
+from supabase_admin import (  # noqa: E402
+    anon_key_from, auth_payload, migration_sql, parse_migration, pending_migrations, redacted,
+)
 
 
 class AuthPayloadTest(unittest.TestCase):
@@ -51,6 +53,29 @@ class AnonKeyTest(unittest.TestCase):
         self.assertEqual(anon_key_from([{"name": "service_role", "api_key": "svc"}, {"type": "publishable", "api_key": "pub"}]), "pub")
         with self.assertRaises(LookupError):
             anon_key_from([{"name": "service_role", "api_key": "svc"}])
+
+
+class MigrateTest(unittest.TestCase):
+    def test_parse_migration(self):
+        self.assertEqual(parse_migration(Path("20261001120000_init.sql")), ("20261001120000", "init"))
+        with self.assertRaises(ValueError):
+            parse_migration(Path("init.sql"))
+
+    def test_pending_is_sorted_and_skips_applied(self):
+        files = [Path("20261003000000_b.sql"), Path("20261001120000_init.sql"), Path("20261002000000_a.sql")]
+        todo = pending_migrations(files, {"20261001120000"})
+        self.assertEqual([v for v, _, _ in todo], ["20261002000000", "20261003000000"])
+
+    def test_migration_sql_is_atomic_and_tracked(self):
+        sql = migration_sql("20261001120000", "init", "create table t (x int);\n")
+        self.assertTrue(sql.startswith("begin;"))
+        self.assertTrue(sql.endswith("commit;"))
+        self.assertIn("create table t (x int);", sql)
+        self.assertIn("values ('20261001120000', 'init')", sql)
+
+    def test_real_migrations_parse(self):
+        root = Path(__file__).resolve().parents[1] / "supabase" / "migrations"
+        self.assertTrue(pending_migrations(sorted(root.glob("*.sql")), set()))
 
 
 if __name__ == "__main__":

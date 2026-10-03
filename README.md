@@ -81,14 +81,13 @@ Push to `main`:
 
 - **Deploy to GitHub Pages:** type-check, tests, build, link check, deploy. It gets the browser Supabase key from the
   `SUPABASE_PROJECT_REF` variable and the `SUPABASE_ACCESS_TOKEN` secret.
-- **Database:** pgTAP tests on a throwaway Supabase, then `supabase db push` and the auth settings
+- **Database:** pgTAP tests on a throwaway Supabase, then migrations (`scripts/supabase_admin.py migrate`, via the Management API) and the auth settings
   (`scripts/supabase_admin.py auth-config`) applied to the hosted project.
 
 | Actions setting | Kind | Purpose |
 |---|---|---|
 | `SUPABASE_PROJECT_REF` | variable | hosted project |
-| `SUPABASE_ACCESS_TOKEN` | secret | Management API / CLI |
-| `SUPABASE_DB_PASSWORD` | secret | `supabase db push` |
+| `SUPABASE_ACCESS_TOKEN` | secret | Management API: migrations, auth settings, browser key (the only Supabase secret) |
 | `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` | variable / secret | Google sign-in |
 | `APPLE_CLIENT_ID` / `APPLE_CLIENT_SECRET` | variable / secret | Apple sign-in (needs an Apple Developer account) |
 | `SMTP_HOST`, `SMTP_USER`, `SMTP_SENDER_EMAIL` / `SMTP_PASS` | variables / secret | sending email to real users (e.g. Resend) |

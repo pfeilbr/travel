@@ -6,6 +6,9 @@ Subcommands
                 email + magic link, and Google / Apple / custom SMTP when their
                 secrets are present (providers without secrets are left disabled).
   anon-key      Print the project's public anon (publishable) key, for the build.
+  migrate       Apply pending supabase/migrations/*.sql through the Management API
+                (token only, no DB password). Applied versions are recorded in
+                supabase_migrations.schema_migrations, the same table the Supabase CLI uses.
 
 Environment
   SUPABASE_ACCESS_TOKEN   personal access token (required)
@@ -15,7 +18,8 @@ Environment
   APPLE_CLIENT_ID / APPLE_CLIENT_SECRET
   SMTP_HOST / SMTP_PORT / SMTP_USER / SMTP_PASS / SMTP_SENDER_EMAIL / SMTP_SENDER_NAME
 
-Usage: python3 scripts/supabase_admin.py auth-config [--dry-run]
+Usage: python3 scripts/supabase_admin.py migrate [--dry-run]
+       python3 scripts/supabase_admin.py auth-config [--dry-run]
        python3 scripts/supabase_admin.py anon-key
 """
 
@@ -23,8 +27,10 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 import urllib.request
+from pathlib import Path
 
 API = "https://api.supabase.com/v1"
 DEFAULT_SITE = "https://pfeilbr.github.io/travel/"
@@ -80,6 +86,40 @@ def anon_key_from(keys: list[dict]) -> str:
     raise LookupError("no anon/publishable key found")
 
 
+MIGRATIONS_DIR = Path("supabase/migrations")
+TRACKING_DDL = (
+    "create schema if not exists supabase_migrations; "
+    "create table if not exists supabase_migrations.schema_migrations "
+    "(version text primary key, statements text[], name text);"
+)
+
+
+def parse_migration(path: Path) -> tuple[str, str]:
+    """`20261001120000_init.sql` -> ("20261001120000", "init")."""
+    m = re.fullmatch(r"(\d{14})_([a-z0-9_]+)\.sql", path.name)
+    if not m:
+        raise ValueError(f"bad migration filename: {path.name}")
+    return m.group(1), m.group(2)
+
+
+def pending_migrations(files: list[Path], applied: set[str]) -> list[tuple[str, str, Path]]:
+    """Local migrations not yet applied, oldest first."""
+    rows = sorted((*parse_migration(f), f) for f in files)
+    return [r for r in rows if r[0] not in applied]
+
+
+def migration_sql(version: str, name: str, sql: str) -> str:
+    """One atomic batch: the migration plus its tracking row."""
+    safe = name.replace("'", "''")
+    return (f"begin;\n{sql.rstrip().rstrip(';')};\n"
+            f"insert into supabase_migrations.schema_migrations (version, name) values ('{version}', '{safe}');\n"
+            "commit;")
+
+
+def _query(ref: str, token: str, sql: str):
+    return _request("POST", f"/projects/{ref}/database/query", token, {"query": sql})
+
+
 def _request(method: str, path: str, token: str, body: dict | None = None):
     req = urllib.request.Request(
         API + path, method=method,
@@ -92,7 +132,7 @@ def _request(method: str, path: str, token: str, body: dict | None = None):
 
 
 def main(argv: list[str]) -> int:
-    if len(argv) < 2 or argv[1] not in ("auth-config", "anon-key"):
+    if len(argv) < 2 or argv[1] not in ("auth-config", "anon-key", "migrate"):
         print(__doc__)
         return 2
     env = dict(os.environ)
@@ -103,6 +143,16 @@ def main(argv: list[str]) -> int:
     if not token or not ref:
         print("SUPABASE_ACCESS_TOKEN and SUPABASE_PROJECT_REF are required", file=sys.stderr)
         return 1
+    if argv[1] == "migrate":
+        _query(ref, token, TRACKING_DDL)
+        rows = _query(ref, token, "select version from supabase_migrations.schema_migrations") or []
+        todo = pending_migrations(sorted(MIGRATIONS_DIR.glob("*.sql")), {r["version"] for r in rows})
+        for version, name, path in todo:
+            print(f"{'would apply' if '--dry-run' in argv else 'applying'} {version}_{name}")
+            if "--dry-run" not in argv:
+                _query(ref, token, migration_sql(version, name, path.read_text(encoding="utf-8")))
+        print(f"migrations: {len(todo)} pending, {len(rows)} already applied")
+        return 0
     if argv[1] == "anon-key":
         print(anon_key_from(_request("GET", f"/projects/{ref}/api-keys?reveal=true", token)))
         return 0
