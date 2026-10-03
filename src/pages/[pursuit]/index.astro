@@ -22,7 +22,8 @@ export function getStaticPaths() {
 const { pursuit: p } = Astro.props as { pursuit: Pursuit };
 const list = spotsFor(p.id);
 const ranked = sortSpots(list, 'recommended');
-const heroImg = imagesFor(`hero-${p.slug}`)[0] ?? ranked.map((s) => imagesFor(s.id)[0]).find(Boolean);
+const pinned = p.hero && imagesFor(p.hero.spot).find((i) => i.title === p.hero!.title);
+const heroImg = imagesFor(`hero-${p.slug}`)[0] ?? (pinned && { ...pinned, alt: p.hero!.alt }) ?? ranked.map((s) => imagesFor(s.id)[0]).find(Boolean);
 const regions = skiRegions.filter((r) => list.some((s) => s.region === r.id));
 const regionImg = (id: string) => sortSpots(list.filter((s) => s.region === id), 'recommended').map((s) => imagesFor(s.id)[0]).find(Boolean);
 const count = (id: string) => list.filter((s) => s.region === id).length;

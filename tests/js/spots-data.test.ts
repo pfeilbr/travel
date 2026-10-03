@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { spots, pursuitById } from '../../src/data/outdoors';
+import { spots, pursuits, pursuitById } from '../../src/data/outdoors';
 import { resorts, resortById, skiRegionById } from '../../src/data/ski';
 import { places } from '../../src/data/places';
 
@@ -49,5 +49,14 @@ describe('spots', () => {
       expect(s.google.url).toMatch(/^https:\/\/maps\.google\.com\/\?cid=\d+$/);
     }
     expect(s.getting.code).toMatch(/^[A-Z]{3}$/);
+  });
+});
+
+describe('pursuits', () => {
+  it('a pinned hub hero names a spot of that pursuit', () => {
+    for (const p of pursuits.filter((x) => x.hero)) {
+      expect(spots.find((s) => s.id === p.hero!.spot)?.pursuit, p.id).toBe(p.id);
+      expect(p.hero!.title).toMatch(/^(File|Openverse):/);
+    }
   });
 });

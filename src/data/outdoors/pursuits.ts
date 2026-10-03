@@ -17,6 +17,8 @@ export interface Pursuit {
   features: Feature[];
   /** Label for Spot.price, e.g. "Day ticket". */
   priceLabel: string;
+  /** Hub hero: a specific spot photo (by source title), used when there is no hero-<slug> entry. */
+  hero?: { spot: string; title: string; alt: string };
 }
 
 export const pursuits: Pursuit[] = [
@@ -89,6 +91,7 @@ export const pursuits: Pursuit[] = [
   },
   {
     id: 'camp', slug: 'camping', name: 'Camping', short: 'Camping', icon: 'tent', noun: ['campground', 'campgrounds'],
+    hero: { spot: 'garibaldi-lake', title: 'Openverse:b6cdf87d-7af8-45a9-ad8c-00530a40b353', alt: 'A tent pitched above Garibaldi Lake, below the glaciers' },
     title: 'Sleep outside.',
     tagline: 'State and national park campgrounds, cabins, yurts and glamping',
     blurb: 'Lakeside state parks, national park classics, paddle-in sites and heated cabins, from the Adirondacks to the Sea to Sky. Each campground lists sites, cabins, when reservations open and what it costs.',
