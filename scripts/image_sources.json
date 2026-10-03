@@ -597,7 +597,8 @@
    "include": [],
    "exclude": [
     "File:Sunrise peak lift.jpg",
-    "File:SPR Summer Activities-6.jpg"
+    "File:SPR Summer Activities-6.jpg",
+    "File:SPR Summer Activities-57.jpg"
    ],
    "alt": {},
    "must": [
@@ -1055,7 +1056,8 @@
    ],
    "include": [],
    "exclude": [
-    "File:Mt Snow ski lift.JPG"
+    "File:Mt Snow ski lift.JPG",
+    "File:Popping the question @MountSnow (video) (4412081158).jpg"
    ],
    "alt": {},
    "must": [
@@ -1092,7 +1094,8 @@
    ],
    "include": [],
    "exclude": [
-    "File:Stack of boots (3074940137).jpg"
+    "File:Stack of boots (3074940137).jpg",
+    "Openverse:28d9811b-099d-4153-9e69-c4ffd091a340"
    ],
    "alt": {},
    "must": [
@@ -1130,7 +1133,8 @@
    ],
    "include": [],
    "exclude": [
-    "File:Bromley Mountain 071506 020.jpg"
+    "File:Bromley Mountain 071506 020.jpg",
+    "Openverse:2a125b1c-3c28-4861-b828-f69758b28b40"
    ],
    "alt": {},
    "must": [
@@ -1169,7 +1173,9 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:2e3eef07-284c-4b45-ae7d-94083b2eee40"
+    "Openverse:2e3eef07-284c-4b45-ae7d-94083b2eee40",
+    "Openverse:fbaf0c5e-8e82-4f4f-94e5-11d670b10692",
+    "Openverse:eaf563c8-f852-414c-9f63-f493689a3465"
    ],
    "alt": {},
    "must": [
@@ -1253,7 +1259,8 @@
    "include": [],
    "exclude": [
     "File:Seven Springs Resort viewed from the ski lodge.jpg",
-    "File:Seven Springs PA lodge 2009.jpg"
+    "File:Seven Springs PA lodge 2009.jpg",
+    "File:Seven Springs Winter 1.jpg"
    ],
    "alt": {},
    "must": [
@@ -1291,7 +1298,8 @@
    ],
    "include": [],
    "exclude": [
-    "File:TyrolLodge.jpg"
+    "File:TyrolLodge.jpg",
+    "Openverse:85069634-f885-49d8-bfb3-9d6b2d79e38b"
    ],
    "alt": {},
    "must": [
@@ -1499,7 +1507,7 @@
      "limit": 25
     },
     {
-     "openverse": "Ski Sawmill skiing",
+     "openverse": "Ski Sawmill",
      "must": [
       "ski sawmill",
       "morris"
@@ -1664,7 +1672,9 @@
     "grouse"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:051310b2-7d6e-4bfb-810f-c8ccfd2ef218"
+   ],
    "alt": {},
    "must": [
     "grouse",
@@ -2031,7 +2041,8 @@
    ],
    "include": [],
    "exclude": [
-    "File:Bear Valley, Kirkwood, Tahoe near season open 2017 (cropped).jpg"
+    "File:Bear Valley, Kirkwood, Tahoe near season open 2017 (cropped).jpg",
+    "File:Bear Valley, Kirkwood, Tahoe near season open 2017.jpg"
    ],
    "alt": {},
    "must": [
@@ -2193,7 +2204,7 @@
      "limit": 25
     },
     {
-     "openverse": "Diamond Peak skiing",
+     "openverse": "Diamond Peak",
      "must": [
       "diamond peak",
       "incline village"
@@ -2209,7 +2220,8 @@
    ],
    "include": [],
    "exclude": [
-    "File:Diamond Peak Ski Resort at Incline Village Lake Tahoe by Don Ramey Logan.jpg"
+    "File:Diamond Peak Ski Resort at Incline Village Lake Tahoe by Don Ramey Logan.jpg",
+    "Openverse:04f9c46d-70e9-4615-a543-13f29cfb8ab7"
    ],
    "alt": {},
    "must": [
@@ -2334,7 +2346,9 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:0cc63471-40cf-4ffb-ae3e-e5c48f047ab0"
+    "Openverse:0cc63471-40cf-4ffb-ae3e-e5c48f047ab0",
+    "Openverse:290c83d8-3eda-4f50-b4b2-ab3b908aa565",
+    "Openverse:39654d3e-ac1c-4e36-8dab-79e8f31106d7"
    ],
    "alt": {},
    "must": [
@@ -2391,7 +2405,7 @@
      "limit": 25
     },
     {
-     "openverse": "Big Boulder skiing",
+     "openverse": "Big Boulder",
      "must": [
       "big boulder",
       "lake harmony"
@@ -2406,7 +2420,9 @@
     "big boulder"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:20b9068a-8a7b-4116-8256-80d2fa04fdcf"
+   ],
    "alt": {},
    "must": [
     "big boulder",
@@ -2479,7 +2495,9 @@
     "elk"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:9376190c-9c9e-48c5-b33d-866f7a277f0c"
+   ],
    "alt": {},
    "must": [
     "elk",
@@ -2598,7 +2616,10 @@
    "exclude": [
     "File:2017-09-11 13 10 01 View east-southeast towards Stowe Ski Resort from the Long Trail between the Nose and the Chin of Mount Mansfield within Mount Mansfield State Forest in Stowe, Lamoille County, Vermont.jpg",
     "Openverse:04f20556-9927-4a74-86eb-4b6a388ebd66",
-    "Openverse:a9035165-8fdc-4ee7-86d9-0df5be013520"
+    "Openverse:a9035165-8fdc-4ee7-86d9-0df5be013520",
+    "File:Snow in Quebec, Canada and the Northeastern United States (MODIS 2025-11-23).jpg",
+    "File:Team U.S.A. Prepares for Edelweiss Raid 2023 (230107-A-BA489-014).jpg",
+    "File:Units saluting (15210888202).jpg"
    ],
    "alt": {},
    "must": [
@@ -2819,7 +2840,8 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:c4c34633-92ae-4d4e-bf26-9af9c8681413"
+    "Openverse:c4c34633-92ae-4d4e-bf26-9af9c8681413",
+    "Openverse:72feb276-d96c-4f52-a051-a25f25756a67"
    ],
    "alt": {},
    "must": [
@@ -2841,7 +2863,7 @@
      "limit": 25
     },
     {
-     "openverse": "Middlebury College Snow Bowl skiing",
+     "openverse": "Middlebury College Snow Bowl",
      "must": [
       "middlebury college snow bowl",
       "hancock"
@@ -2893,7 +2915,8 @@
    ],
    "include": [],
    "exclude": [
-    "File:Dampflokomotive in den White Mountains.jpg"
+    "File:Dampflokomotive in den White Mountains.jpg",
+    "Openverse:da366a2e-28cc-4eff-aa0c-c25c755290a6"
    ],
    "alt": {},
    "must": [
@@ -3222,7 +3245,9 @@
     "snowbasin"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:4438d811-e87b-4b01-92c5-6cf14acabcdb"
+   ],
    "alt": {},
    "must": [
     "snowbasin",
@@ -3279,7 +3304,7 @@
      "limit": 25
     },
     {
-     "openverse": "Nordic Valley skiing",
+     "openverse": "Nordic Valley",
      "must": [
       "nordic valley",
       "eden"
@@ -3351,7 +3376,7 @@
      "limit": 25
     },
     {
-     "openverse": "Cherry Peak skiing",
+     "openverse": "Cherry Peak",
      "must": [
       "cherry peak",
       "cherry peak resort",
@@ -3367,7 +3392,9 @@
     "cherry peak"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:6326052a-00a3-4cf5-90de-a489ce303600"
+   ],
    "alt": {},
    "must": [
     "cherry peak",
@@ -3423,7 +3450,7 @@
      "limit": 25
     },
     {
-     "openverse": "Woodward Park City skiing",
+     "openverse": "Woodward Park City",
      "must": [
       "woodward park city",
       "park city"
@@ -3702,7 +3729,9 @@
    ],
    "include": [],
    "exclude": [
-    "File:San Juan Mountains East of Ouray, Colorado (14201247002).jpg"
+    "File:San Juan Mountains East of Ouray, Colorado (14201247002).jpg",
+    "File:San Juan Mountains East of Ouray, Colorado (14201246362).jpg",
+    "File:San Juan Mountains North of Telluride, Colorado (14017067499).jpg"
    ],
    "alt": {},
    "must": [
@@ -3911,7 +3940,8 @@
    ],
    "include": [],
    "exclude": [
-    "File:Arapahoe Basin summer 2026.jpg"
+    "File:Arapahoe Basin summer 2026.jpg",
+    "File:Heres Looking at You Kid (4482287341).jpg"
    ],
    "alt": {},
    "must": [
@@ -4128,7 +4158,10 @@
     "bridger bowl"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Brickellia grandiflora - tasselflower brickellbush - 52960607217.jpg",
+    "File:Brickellia grandiflora - tasselflower brickellbush - 52960607737.jpg"
+   ],
    "alt": {},
    "must": [
     "bridger bowl",
@@ -4163,7 +4196,9 @@
     "red lodge"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Burn Scars in Montana (MODIS 2021-06-20).jpg"
+   ],
    "alt": {},
    "must": [
     "red lodge",
@@ -4199,7 +4234,8 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:3eb571fd-2311-4783-82dc-057facff31e5"
+    "Openverse:3eb571fd-2311-4783-82dc-057facff31e5",
+    "Openverse:c695385b-aed9-4c0a-b9df-56df85f8e245"
    ],
    "alt": {},
    "must": [
@@ -4236,7 +4272,10 @@
     "discovery"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:3f700b80-7774-43bc-b395-80c25863f1a3",
+    "Openverse:a2808a59-0c66-4490-ab4a-8d2fa146b826"
+   ],
    "alt": {},
    "must": [
     "discovery",
@@ -4294,7 +4333,7 @@
      "limit": 25
     },
     {
-     "openverse": "Great Divide skiing",
+     "openverse": "Great Divide",
      "must": [
       "great divide",
       "great divide ski area",
@@ -4310,7 +4349,9 @@
     "great divide"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:60451c4c-47af-42e8-9865-f0d275cb06a6"
+   ],
    "alt": {},
    "must": [
     "great divide",
@@ -4331,7 +4372,7 @@
      "limit": 25
     },
     {
-     "openverse": "Showdown Montana skiing",
+     "openverse": "Showdown Montana",
      "must": [
       "showdown montana",
       "neihart"
@@ -4403,7 +4444,7 @@
      "limit": 25
     },
     {
-     "openverse": "Woods Valley skiing",
+     "openverse": "Woods Valley",
      "must": [
       "woods valley",
       "woods valley ski area",
@@ -4440,7 +4481,7 @@
      "limit": 25
     },
     {
-     "openverse": "Snow Ridge skiing",
+     "openverse": "Snow Ridge",
      "must": [
       "snow ridge",
       "snow ridge ski resort",
@@ -4456,7 +4497,9 @@
     "snow ridge"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:c5f56031-99d9-4299-b612-3123e19335ab"
+   ],
    "alt": {},
    "must": [
     "snow ridge",
@@ -4493,7 +4536,9 @@
     "song"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:950aa641-a6dc-40a7-a45b-72a6b49026c6"
+   ],
    "alt": {},
    "must": [
     "song",
@@ -4530,7 +4575,9 @@
     "labrador"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:78b23f8d-c411-4388-862d-a43bac62cf83"
+   ],
    "alt": {},
    "must": [
     "labrador",
@@ -4551,7 +4598,7 @@
      "limit": 25
     },
     {
-     "openverse": "Greek Peak skiing",
+     "openverse": "Greek Peak",
      "must": [
       "greek peak",
       "greek peak mountain resort",
@@ -4660,7 +4707,7 @@
      "limit": 25
     },
     {
-     "openverse": "Peek’n Peak skiing",
+     "openverse": "Peek’n Peak",
      "must": [
       "peek’n peak",
       "peek’n peak resort",
@@ -4697,7 +4744,7 @@
      "limit": 25
     },
     {
-     "openverse": "Swain skiing",
+     "openverse": "Swain",
      "must": [
       "swain",
       "swain resort"
@@ -4712,7 +4759,9 @@
     "swain"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:2f0e62de-e882-45b5-a1fe-bd932d35ccd5"
+   ],
    "alt": {},
    "must": [
     "swain",
@@ -4732,7 +4781,7 @@
      "limit": 25
     },
     {
-     "openverse": "Kissing Bridge skiing",
+     "openverse": "Kissing Bridge",
      "must": [
       "kissing bridge",
       "glenwood"
@@ -4747,7 +4796,9 @@
     "kissing bridge"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:04afa260-b37e-4e9b-b156-75279f400e3b"
+   ],
    "alt": {},
    "must": [
     "kissing bridge",
@@ -4782,7 +4833,10 @@
     "park city"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:da112e85-549b-4ded-bbea-f8c1cc9d9d04",
+    "Openverse:09e4bcec-5a28-4e35-afbe-0586c01bce36"
+   ],
    "alt": {},
    "must": [
     "park city",
@@ -4818,7 +4872,9 @@
     "deer valley"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:01e74a69-4db4-48e9-acdc-46f4d34d6204"
+   ],
    "alt": {},
    "must": [
     "deer valley",
@@ -4994,7 +5050,9 @@
     "sundance"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Sundance Resort at night, Jan 17.jpg"
+   ],
    "alt": {},
    "must": [
     "sundance",
@@ -5033,7 +5091,10 @@
     "aspen"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:6adacb55-e81e-437d-89af-13a79349a64c",
+    "Openverse:4c38ed48-f839-4f6f-85c0-baa9b28a8f46"
+   ],
    "alt": {}
   },
   "aspen-highlands": {
@@ -5069,7 +5130,9 @@
    ],
    "include": [],
    "exclude": [
-    "File:ALL THE LIFTS AT ASPEN ARE CHAIRLIFTS. THIS ONE IS GOING UP 11,800 FEET ON ASPEN HIGHLANDS MOUNTAIN, HIGHEST SKI AREA... - NARA - 554248.jpg"
+    "File:ALL THE LIFTS AT ASPEN ARE CHAIRLIFTS. THIS ONE IS GOING UP 11,800 FEET ON ASPEN HIGHLANDS MOUNTAIN, HIGHEST SKI AREA... - NARA - 554248.jpg",
+    "Openverse:43b83561-8be5-4518-9392-233e1b505f49",
+    "Openverse:71e57613-17fd-4e59-97d5-cc020cd73381"
    ],
    "alt": {}
   },
@@ -5177,7 +5240,10 @@
     "sunlight"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:a9c634dd-56d3-47d4-a86f-b59ec827abba",
+    "Openverse:50657d9f-76d9-4b1e-8436-7f6766d31f83"
+   ],
    "alt": {}
   },
   "steamboat": {
@@ -5247,7 +5313,9 @@
     "revelstoke"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:479acd4e-2bfd-4b60-8283-cdad6c1588d8"
+   ],
    "alt": {}
   },
   "kicking-horse": {
@@ -5377,7 +5445,7 @@
      "limit": 25
     },
     {
-     "openverse": "Whitewater skiing",
+     "openverse": "Whitewater",
      "must": [
       "whitewater",
       "whitewater mountain resort",
@@ -5394,7 +5462,9 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:7c6584c8-4217-4138-a677-e1d531bcee60"
+    "Openverse:7c6584c8-4217-4138-a677-e1d531bcee60",
+    "Openverse:0dfd83f6-43d6-4cbd-95e1-53bdbfd0c79d",
+    "Openverse:1684b1cb-496c-4144-8f42-b8539b7aafee"
    ],
    "alt": {}
   },
@@ -5539,7 +5609,11 @@
     "gore"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:a34ff260-c531-4c06-91f4-2d14b4b9c1a6",
+    "Openverse:7cce2867-ef52-42c6-9aab-ac6613f6eb02",
+    "Openverse:b26feda1-e082-419c-8be1-7f95c9577861"
+   ],
    "alt": {}
   },
   "west-mountain": {
@@ -5599,7 +5673,7 @@
      "limit": 25
     },
     {
-     "openverse": "Titus skiing",
+     "openverse": "Titus",
      "must": [
       "titus",
       "titus mountain",
@@ -5615,7 +5689,9 @@
     "titus"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:3ad8ee9c-11a3-4246-8d4d-3f6aa2a12bfe"
+   ],
    "alt": {}
   },
   "mccauley-mountain": {
@@ -5636,7 +5712,7 @@
      "limit": 25
     },
     {
-     "openverse": "McCauley skiing",
+     "openverse": "McCauley",
      "must": [
       "mccauley",
       "mccauley mountain",
@@ -5652,7 +5728,9 @@
     "mccauley"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:2f70b58a-961d-43a7-b60f-3b07ca6aa97d"
+   ],
    "alt": {}
   },
   "oak-mountain": {
@@ -5673,7 +5751,7 @@
      "limit": 25
     },
     {
-     "openverse": "Oak skiing",
+     "openverse": "Oak",
      "must": [
       "oak",
       "oak mountain",
@@ -5689,7 +5767,9 @@
     "oak"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:113989e6-9693-49ac-8545-352108c21297"
+   ],
    "alt": {}
   },
   "hunter-mountain": {
@@ -6001,7 +6081,7 @@
      "depth": 0
     },
     {
-     "openverse": "Snow Valley skiing",
+     "openverse": "Snow Valley",
      "must": [
       "snow valley",
       "running springs"
@@ -6016,7 +6096,9 @@
     "snow valley"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:c2bbfdde-78d1-4cb4-a3d3-19c00be8aa57"
+   ],
    "alt": {}
   },
   "bear-valley": {
@@ -6035,7 +6117,7 @@
      "depth": 0
     },
     {
-     "openverse": "Bear Valley skiing",
+     "openverse": "Bear Valley",
      "must": [
       "bear valley"
      ],
@@ -6049,7 +6131,10 @@
     "bear valley"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:13861e20-38e2-4eda-b929-0fdc1e118871",
+    "Openverse:189be59d-4118-41ad-bfda-9eba7a32fb56"
+   ],
    "alt": {}
   },
   "dodge-ridge": {
@@ -6069,7 +6154,7 @@
      "limit": 25
     },
     {
-     "openverse": "Dodge Ridge skiing",
+     "openverse": "Dodge Ridge",
      "must": [
       "dodge ridge",
       "pinecrest"
@@ -6246,7 +6331,7 @@
      "depth": 0
     },
     {
-     "openverse": "Le Massif de Charlevoix skiing",
+     "openverse": "Le Massif de Charlevoix",
      "must": [
       "le massif de charlevoix",
       "petite-rivière-saint-françois"
@@ -6351,7 +6436,7 @@
      "depth": 0
     },
     {
-     "openverse": "Bromont, montagne d’expériences skiing",
+     "openverse": "Bromont, montagne d’expériences",
      "must": [
       "bromont, montagne d’expériences",
       "bromont"
@@ -6386,7 +6471,7 @@
      "limit": 25
     },
     {
-     "openverse": "Owl’s Head skiing",
+     "openverse": "Owl’s Head",
      "must": [
       "owl’s head",
       "mansonville"
@@ -6421,7 +6506,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mont-Orford skiing",
+     "openverse": "Mont-Orford",
      "must": [
       "mont-orford",
       "orford"
@@ -6436,7 +6521,9 @@
     "mont-orford"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:5b0373db-2935-4e0f-a67d-fb567749d7be"
+   ],
    "alt": {}
   },
   "sommet-saint-sauveur": {
@@ -6456,7 +6543,7 @@
      "depth": 0
     },
     {
-     "openverse": "Sommet Saint-Sauveur skiing",
+     "openverse": "Sommet Saint-Sauveur",
      "must": [
       "sommet saint-sauveur",
       "saint-sauveur"
@@ -6471,7 +6558,9 @@
     "sommet saint-sauveur"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:87d318ff-1e07-4ec6-9b53-26fdd6036aa2"
+   ],
    "alt": {}
   },
   "mont-blanc": {
@@ -6506,7 +6595,9 @@
     "mont blanc"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:b0a3b4c2-4092-413e-9862-b9afd6ac66c4"
+   ],
    "alt": {}
   },
   "val-saint-come": {
@@ -6579,7 +6670,7 @@
      "depth": 0
     },
     {
-     "openverse": "Little Valley Pickleball Complex pickleball",
+     "openverse": "Little Valley Pickleball Complex",
      "must": [
       "st. george",
       "pickleball",
@@ -6612,7 +6703,7 @@
      "depth": 0
     },
     {
-     "openverse": "Black Desert Resort pickleball courts pickleball",
+     "openverse": "Black Desert Resort pickleball courts",
      "must": [
       "ivins",
       "black desert",
@@ -6644,7 +6735,7 @@
      "depth": 0
     },
     {
-     "openverse": "PC MARC (Park City Municipal Athletic & Recreation Center) pickleball",
+     "openverse": "PC MARC",
      "must": [
       "park city",
       "pc marc (park city municipal athletic & recreation center)"
@@ -6674,7 +6765,7 @@
      "depth": 0
     },
     {
-     "openverse": "The Picklr Salt Lake City pickleball",
+     "openverse": "The Picklr Salt Lake City",
      "must": [
       "sugar house",
       "the picklr salt lake city"
@@ -6705,7 +6796,7 @@
      "depth": 0
     },
     {
-     "openverse": "Golden Peak Pickleball Center pickleball",
+     "openverse": "Golden Peak Pickleball Center",
      "must": [
       "golden peak",
       "vail",
@@ -6737,7 +6828,7 @@
      "depth": 0
     },
     {
-     "openverse": "Steamboat Tennis and Pickleball Complex pickleball",
+     "openverse": "Steamboat Tennis",
      "must": [
       "steamboat",
       "werner",
@@ -6768,7 +6859,7 @@
      "depth": 0
     },
     {
-     "openverse": "Carter Park pickleball courts pickleball",
+     "openverse": "Carter Park pickleball courts",
      "must": [
       "breckenridge",
       "carter park pickleball courts"
@@ -6798,7 +6889,7 @@
      "limit": 25
     },
     {
-     "openverse": "Mile Hi City Pickleball pickleball",
+     "openverse": "Mile Hi City Pickleball",
      "must": [
       "denver",
       "mile hi city pickleball"
@@ -6829,7 +6920,7 @@
      "depth": 0
     },
     {
-     "openverse": "The Picklr Bozeman pickleball",
+     "openverse": "The Picklr Bozeman",
      "must": [
       "bozeman",
       "gallatin",
@@ -6861,7 +6952,7 @@
      "depth": 0
     },
     {
-     "openverse": "Dancu Community Courts, Big Sky Community Park pickleball",
+     "openverse": "Dancu Community Courts, Big Sky Community Park",
      "must": [
       "big sky",
       "lone peak",
@@ -6892,7 +6983,7 @@
      "depth": 0
     },
     {
-     "openverse": "Fort Missoula Regional Park pickleball courts pickleball",
+     "openverse": "Fort Missoula Regional Park pickleball courts",
      "must": [
       "missoula",
       "fort missoula regional park pickleball courts"
@@ -6954,7 +7045,7 @@
      "depth": 0
     },
     {
-     "openverse": "Porteau Cove Provincial Park camping",
+     "openverse": "Porteau Cove Provincial Park",
      "must": [
       "porteau",
       "porteau cove provincial park"
@@ -7020,7 +7111,7 @@
      "depth": 0
     },
     {
-     "openverse": "Green Point Campground camping",
+     "openverse": "Green Point Campground",
      "must": [
       "long beach",
       "green point",
@@ -7055,7 +7146,7 @@
      "depth": 0
     },
     {
-     "openverse": "E.C. Manning Provincial Park camping",
+     "openverse": "E.C. Manning Provincial Park",
      "must": [
       "manning",
       "lightning lake",
@@ -7090,7 +7181,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mount Robson Provincial Park camping",
+     "openverse": "Mount Robson Provincial Park",
      "must": [
       "robson",
       "berg lake",
@@ -7126,7 +7217,7 @@
      "depth": 0
     },
     {
-     "openverse": "Parc national du Mont-Tremblant camping",
+     "openverse": "Parc national du Mont-Tremblant",
      "must": [
       "tremblant",
       "monroe",
@@ -7161,7 +7252,7 @@
      "depth": 0
     },
     {
-     "openverse": "Parc national de la Jacques-Cartier camping",
+     "openverse": "Parc national de la Jacques-Cartier",
      "must": [
       "jacques-cartier",
       "jacques cartier",
@@ -7196,7 +7287,7 @@
      "depth": 0
     },
     {
-     "openverse": "Parc national du Mont-Orford camping",
+     "openverse": "Parc national du Mont-Orford",
      "must": [
       "orford",
       "stukely",
@@ -7232,7 +7323,7 @@
      "depth": 0
     },
     {
-     "openverse": "Forillon National Park camping",
+     "openverse": "Forillon National Park",
      "must": [
       "forillon",
       "cap gaspé",
@@ -7266,7 +7357,7 @@
      "depth": 0
     },
     {
-     "openverse": "Parc national d’Oka camping",
+     "openverse": "Parc national d’Oka",
      "must": [
       "oka",
       "parc national d’oka"
@@ -7299,7 +7390,7 @@
      "depth": 0
     },
     {
-     "openverse": "Parc national des Hautes-Gorges-de-la-Rivière-Malbaie camping",
+     "openverse": "Parc national des Hautes-Gorges-de-la-Rivière-Malbaie",
      "must": [
       "hautes-gorges",
       "malbaie",
@@ -7351,7 +7442,9 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:e099b1ab-9a50-4fd7-a664-a6a1091d092b"
+   ],
    "alt": {}
   },
   "sand-harbor": {
@@ -7367,7 +7460,7 @@
      "limit": 25
     },
     {
-     "openverse": "Sand Harbor and the East Shore kayaking",
+     "openverse": "Sand Harbor",
      "must": [
       "sand harbor",
       "sand harbor and the east shore"
@@ -7485,7 +7578,9 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:aac09764-2ef3-4ed6-b067-7ce7409528b8"
+   ],
    "alt": {}
   },
   "channel-islands-sea-caves": {
@@ -7557,7 +7652,9 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:df04dfbb-6a97-47a5-a1f0-99df12a3c70c"
+   ],
    "alt": {}
   },
   "black-canyon-water-trail": {
@@ -7647,7 +7744,7 @@
      "limit": 25
     },
     {
-     "openverse": "Antelope Canyon by kayak kayaking",
+     "openverse": "Antelope Canyon by kayak",
      "must": [
       "antelope",
       "antelope canyon by kayak"
@@ -7711,7 +7808,7 @@
      "depth": 0
     },
     {
-     "openverse": "Topock Gorge kayaking",
+     "openverse": "Topock Gorge",
      "must": [
       "topock",
       "topock gorge"
@@ -7728,7 +7825,9 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:05b0dce0-1c7e-4247-aa18-86619816cead"
+   ],
    "alt": {}
   },
   "whistler-racket-club": {
@@ -7744,7 +7843,7 @@
      "depth": 0
     },
     {
-     "openverse": "Whistler Racket Club pickleball",
+     "openverse": "Whistler Racket Club",
      "must": [
       "whistler",
       "whistler racket club"
@@ -7775,7 +7874,7 @@
      "depth": 0
     },
     {
-     "openverse": "Fairgrounds Racket Club Capilano pickleball",
+     "openverse": "Fairgrounds Racket Club Capilano",
      "must": [
       "capilano",
       "vancouver",
@@ -7839,7 +7938,7 @@
      "depth": 0
     },
     {
-     "openverse": "Penticton Pickleball Club, South Main Courts pickleball",
+     "openverse": "Penticton Pickleball Club, South Main Courts",
      "must": [
       "skaha",
       "penticton",
@@ -7871,7 +7970,7 @@
      "depth": 0
     },
     {
-     "openverse": "Victoria Pickleball Centre pickleball",
+     "openverse": "Victoria Pickleball Centre",
      "must": [
       "langford",
       "westshore",
@@ -7904,7 +8003,7 @@
      "depth": 0
     },
     {
-     "openverse": "Centre Pickle pickleball",
+     "openverse": "Centre Pickle",
      "must": [
       "pickleball",
       "hochelaga",
@@ -7937,7 +8036,7 @@
      "depth": 0
     },
     {
-     "openverse": "Centre de tennis Synex Assurance – Université Laval pickleball",
+     "openverse": "Centre de tennis Synex Assurance – Université Laval",
      "must": [
       "laval",
       "peps",
@@ -7969,7 +8068,7 @@
      "depth": 0
     },
     {
-     "openverse": "Îlot sportif Erik Guay Pickleball Courts pickleball",
+     "openverse": "Îlot sportif Erik Guay Pickleball Courts",
      "must": [
       "tremblant",
       "jovite",
@@ -8000,7 +8099,7 @@
      "depth": 0
     },
     {
-     "openverse": "Campus Germain-Désourdy Pickleball Courts pickleball",
+     "openverse": "Campus Germain-Désourdy Pickleball Courts",
      "must": [
       "bromont",
       "campus germain-désourdy pickleball courts"
@@ -8031,7 +8130,7 @@
      "limit": 25
     },
     {
-     "openverse": "Pickleball Kingdom Chandler pickleball",
+     "openverse": "Pickleball Kingdom Chandler",
      "must": [
       "pickleball kingdom",
       "indoor pickleball",
@@ -8063,7 +8162,7 @@
      "limit": 25
     },
     {
-     "openverse": "Kino Sports Complex pickleball courts pickleball",
+     "openverse": "Kino Sports Complex pickleball courts",
      "must": [
       "kino",
       "tucson",
@@ -8095,7 +8194,7 @@
      "limit": 25
     },
     {
-     "openverse": "Posse Grounds Park pickleball courts pickleball",
+     "openverse": "Posse Grounds Park pickleball courts",
      "must": [
       "posse grounds",
       "sedona",
@@ -8127,7 +8226,7 @@
      "limit": 25
     },
     {
-     "openverse": "Bushmaster Park pickleball courts pickleball",
+     "openverse": "Bushmaster Park pickleball courts",
      "must": [
       "bushmaster",
       "flagstaff",
@@ -8159,7 +8258,7 @@
      "limit": 25
     },
     {
-     "openverse": "Barnes Tennis Center pickleball",
+     "openverse": "Barnes Tennis Center",
      "must": [
       "barnes",
       "point loma",
@@ -8190,7 +8289,7 @@
      "limit": 25
     },
     {
-     "openverse": "Pickle Alley pickleball",
+     "openverse": "Pickle Alley",
      "must": [
       "pickle alley",
       "boyle heights"
@@ -8221,7 +8320,7 @@
      "limit": 25
     },
     {
-     "openverse": "Demuth Park pickleball courts pickleball",
+     "openverse": "Demuth Park pickleball courts",
      "must": [
       "demuth",
       "palm springs",
@@ -8252,7 +8351,7 @@
      "depth": 0
     },
     {
-     "openverse": "Incline Village Tennis & Pickleball Center pickleball",
+     "openverse": "Incline Village Tennis & Pickleball Center",
      "must": [
       "incline",
       "incline village tennis & pickleball center"
@@ -8282,7 +8381,7 @@
      "depth": 0
     },
     {
-     "openverse": "Truckee River Regional Park pickleball pickleball",
+     "openverse": "Truckee River Regional Park pickleball",
      "must": [
       "truckee",
       "truckee river regional park pickleball"
@@ -8312,7 +8411,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mammoth Lakes Pickleball Complex pickleball",
+     "openverse": "Mammoth Lakes Pickleball Complex",
      "must": [
       "mammoth",
       "mammoth lakes pickleball complex"
@@ -8442,7 +8541,7 @@
      "depth": 0
     },
     {
-     "openverse": "North Shore (Fromme, Seymour, Cypress) mountain biking",
+     "openverse": "North Shore",
      "must": [
       "seymour",
       "fromme",
@@ -8460,7 +8559,10 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:1d18c5ab-dcd6-4aa7-ab9f-57f1c49699ab",
+    "Openverse:3e1413ce-bf9f-461a-a98a-da712e04d71a"
+   ],
    "alt": {}
   },
   "sun-peaks-bike-park": {
@@ -8509,7 +8611,7 @@
      "depth": 0
     },
     {
-     "openverse": "SilverStar Bike Park mountain biking",
+     "openverse": "SilverStar Bike Park",
      "must": [
       "silver star",
       "silverstar",
@@ -8542,7 +8644,7 @@
      "depth": 0
     },
     {
-     "openverse": "Kicking Horse Bike Park mountain biking",
+     "openverse": "Kicking Horse Bike Park",
      "must": [
       "kicking horse",
       "kicking horse bike park"
@@ -8639,7 +8741,7 @@
      "depth": 0
     },
     {
-     "openverse": "Bromont Bike Park mountain biking",
+     "openverse": "Bromont Bike Park",
      "must": [
       "bromont",
       "brome",
@@ -8673,7 +8775,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mont-Sainte-Anne mountain biking",
+     "openverse": "Mont-Sainte-Anne",
      "must": [
       "sainte-anne",
       "sainte anne",
@@ -8708,7 +8810,7 @@
      "depth": 0
     },
     {
-     "openverse": "Sentiers du Moulin mountain biking",
+     "openverse": "Sentiers du Moulin",
      "must": [
       "moulin",
       "lac-beauport",
@@ -8743,7 +8845,7 @@
      "limit": 25
     },
     {
-     "openverse": "Vallée Bras-du-Nord mountain biking",
+     "openverse": "Vallée Bras-du-Nord",
      "must": [
       "bras-du-nord",
       "bras du nord",
@@ -8776,7 +8878,7 @@
      "depth": 0
     },
     {
-     "openverse": "Sutton trails (Plein air Sutton) mountain biking",
+     "openverse": "Sutton trails",
      "must": [
       "sutton",
       "sutton trails (plein air sutton)"
@@ -8810,7 +8912,7 @@
      "depth": 0
     },
     {
-     "openverse": "Devils Garden Campground, Arches National Park camping",
+     "openverse": "Devils Garden Campground, Arches National Park",
      "must": [
       "devils garden",
       "campground",
@@ -8845,7 +8947,7 @@
      "depth": 0
     },
     {
-     "openverse": "Watchman Campground, Zion National Park camping",
+     "openverse": "Watchman Campground, Zion National Park",
      "must": [
       "watchman",
       "zion",
@@ -8878,7 +8980,7 @@
      "limit": 25
     },
     {
-     "openverse": "North Campground, Bryce Canyon National Park camping",
+     "openverse": "North Campground, Bryce Canyon National Park",
      "must": [
       "bryce",
       "north campground, bryce canyon national park"
@@ -8911,7 +9013,7 @@
      "depth": 0
     },
     {
-     "openverse": "Fruita Campground, Capitol Reef National Park camping",
+     "openverse": "Fruita Campground, Capitol Reef National Park",
      "must": [
       "fruita",
       "capitol reef",
@@ -8944,7 +9046,7 @@
      "depth": 0
     },
     {
-     "openverse": "Dead Horse Point State Park campgrounds and yurts camping",
+     "openverse": "Dead Horse Point State Park campgrounds",
      "must": [
       "dead horse",
       "dead horse point state park campgrounds and yurts"
@@ -8976,7 +9078,7 @@
      "depth": 0
     },
     {
-     "openverse": "Goblin Valley State Park campground and yurts camping",
+     "openverse": "Goblin Valley State Park campground",
      "must": [
       "goblin",
       "goblin valley state park campground and yurts"
@@ -9042,7 +9144,7 @@
      "depth": 0
     },
     {
-     "openverse": "Piñon Flats Campground, Great Sand Dunes National Park camping",
+     "openverse": "Piñon Flats Campground, Great Sand Dunes National Park",
      "must": [
       "pinon",
       "piñon",
@@ -9076,7 +9178,7 @@
      "depth": 0
     },
     {
-     "openverse": "Maroon Bells campgrounds (Silver Bar, Silver Bell, Silver Queen) camping",
+     "openverse": "Maroon Bells campgrounds",
      "must": [
       "maroon",
       "maroon bells campgrounds (silver bar, silver bell, silver queen)"
@@ -9109,7 +9211,7 @@
      "limit": 25
     },
     {
-     "openverse": "Morefield Campground, Mesa Verde National Park camping",
+     "openverse": "Morefield Campground, Mesa Verde National Park",
      "must": [
       "morefield",
       "mesa verde",
@@ -9143,7 +9245,7 @@
      "depth": 0
     },
     {
-     "openverse": "Many Glacier Campground, Glacier National Park camping",
+     "openverse": "Many Glacier Campground, Glacier National Park",
      "must": [
       "swiftcurrent",
       "many glacier",
@@ -9160,7 +9262,9 @@
     "tent"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:fcd3c2f9-d1fe-4e1a-aa92-661f8a7f01c9"
+   ],
    "alt": {}
   },
   "apgar-campground": {
@@ -9211,7 +9315,7 @@
      "depth": 0
     },
     {
-     "openverse": "Hood Creek Campground, Hyalite Canyon camping",
+     "openverse": "Hood Creek Campground, Hyalite Canyon",
      "must": [
       "hood creek",
       "hyalite",
@@ -9260,7 +9364,9 @@
     "tent"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:736b1acc-d357-42a3-9f76-9c596c43d0ed"
+   ],
    "alt": {}
   },
   "bowron-lake-circuit": {
@@ -9278,7 +9384,7 @@
      "depth": 0
     },
     {
-     "openverse": "Bowron Lake Canoe Circuit kayaking",
+     "openverse": "Bowron Lake Canoe Circuit",
      "must": [
       "bowron",
       "isaac lake",
@@ -9315,7 +9421,7 @@
      "depth": 0
     },
     {
-     "openverse": "Desolation Sound Marine Park kayaking",
+     "openverse": "Desolation Sound Marine Park",
      "must": [
       "desolation",
       "prideaux",
@@ -9498,7 +9604,7 @@
      "depth": 0
     },
     {
-     "openverse": "Saguenay Fjord National Park kayaking",
+     "openverse": "Saguenay Fjord National Park",
      "must": [
       "saguenay",
       "éternité",
@@ -9534,7 +9640,7 @@
      "depth": 0
     },
     {
-     "openverse": "Lac Wapizagonke, La Mauricie National Park kayaking",
+     "openverse": "Lac Wapizagonke, La Mauricie National Park",
      "must": [
       "wapizagonke",
       "mauricie",
@@ -9570,7 +9676,7 @@
      "depth": 0
     },
     {
-     "openverse": "Rivière du Diable, Mont-Tremblant National Park kayaking",
+     "openverse": "Rivière du Diable, Mont-Tremblant National Park",
      "must": [
       "diable",
       "tremblant",
@@ -9605,7 +9711,7 @@
      "depth": 0
     },
     {
-     "openverse": "Bic National Park kayaking",
+     "openverse": "Bic National Park",
      "must": [
       "bic",
       "bic national park"
@@ -9638,7 +9744,7 @@
      "depth": 0
     },
     {
-     "openverse": "Rouge River (Seven Sisters) kayaking",
+     "openverse": "Rouge River",
      "must": [
       "rouge",
       "rouge river (seven sisters)"
@@ -9655,7 +9761,10 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:07ded7bf-5a9d-408a-bcca-b5a73b4eb829",
+    "Openverse:2d87b4f1-8e2b-466d-95de-a25e6b41077a"
+   ],
    "alt": {}
   },
   "gifford-woods": {
@@ -9672,7 +9781,7 @@
      "depth": 0
     },
     {
-     "openverse": "Gifford Woods State Park camping",
+     "openverse": "Gifford Woods State Park",
      "must": [
       "gifford",
       "kent pond",
@@ -9706,7 +9815,7 @@
      "depth": 0
     },
     {
-     "openverse": "Little River State Park camping",
+     "openverse": "Little River State Park",
      "must": [
       "little river",
       "waterbury",
@@ -9739,7 +9848,7 @@
      "limit": 25
     },
     {
-     "openverse": "Burton Island State Park camping",
+     "openverse": "Burton Island State Park",
      "must": [
       "burton",
       "burton island state park"
@@ -9772,7 +9881,7 @@
      "depth": 0
     },
     {
-     "openverse": "Lafayette Place Campground camping",
+     "openverse": "Lafayette Place Campground",
      "must": [
       "lafayette",
       "franconia",
@@ -9806,7 +9915,7 @@
      "limit": 25
     },
     {
-     "openverse": "Dolly Copp Campground camping",
+     "openverse": "Dolly Copp Campground",
      "must": [
       "dolly copp",
       "peabody",
@@ -9839,7 +9948,7 @@
      "limit": 25
     },
     {
-     "openverse": "White Lake State Park camping",
+     "openverse": "White Lake State Park",
      "must": [
       "white lake",
       "white lake state park"
@@ -9872,7 +9981,7 @@
      "limit": 25
     },
     {
-     "openverse": "Fish Creek Pond Campground camping",
+     "openverse": "Fish Creek Pond Campground",
      "must": [
       "fish creek",
       "square pond",
@@ -9908,7 +10017,7 @@
      "depth": 0
     },
     {
-     "openverse": "North-South Lake Campground camping",
+     "openverse": "North-South Lake Campground",
      "must": [
       "north lake",
       "south lake",
@@ -9927,7 +10036,10 @@
     "tent"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:750098a8-d0b7-435c-886c-aaadc82742c2",
+    "Openverse:f2dc6bf7-852d-4303-8a89-76c21c24225b"
+   ],
    "alt": {}
   },
   "letchworth": {
@@ -9977,7 +10089,7 @@
      "depth": 0
     },
     {
-     "openverse": "Verona Beach State Park camping",
+     "openverse": "Verona Beach State Park",
      "must": [
       "verona beach",
       "verona beach state park"
@@ -10010,7 +10122,7 @@
      "depth": 0
     },
     {
-     "openverse": "Delta Lake State Park camping",
+     "openverse": "Delta Lake State Park",
      "must": [
       "delta lake",
       "delta reservoir",
@@ -10079,7 +10191,7 @@
      "depth": 0
     },
     {
-     "openverse": "Cherry Springs State Park camping",
+     "openverse": "Cherry Springs State Park",
      "must": [
       "cherry springs",
       "cherry springs state park"
@@ -10113,7 +10225,7 @@
      "depth": 0
     },
     {
-     "openverse": "Ohiopyle State Park: Kentuck Campground camping",
+     "openverse": "Ohiopyle State Park: Kentuck Campground",
      "must": [
       "ohiopyle",
       "kentuck",
@@ -10195,7 +10307,9 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:1d9b143d-7a2d-41e7-82d6-5d1c9be816ac"
+   ],
    "alt": {}
   },
   "snow-summit-bike-park": {
@@ -10212,7 +10326,7 @@
      "depth": 0
     },
     {
-     "openverse": "Snow Summit Bike Park mountain biking",
+     "openverse": "Snow Summit Bike Park",
      "must": [
       "snow summit",
       "big bear",
@@ -10259,7 +10373,11 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:072977fa-307c-418e-8570-27254205d940",
+    "Openverse:2339f506-0e58-45fb-af08-0c4dcf882a8d",
+    "Openverse:a943a3a4-a47a-4a8c-871b-bed064847613"
+   ],
    "alt": {}
   },
   "tahoe-flume-trail": {
@@ -10277,7 +10395,7 @@
      "limit": 25
     },
     {
-     "openverse": "Flume Trail and Tahoe Rim Trail mountain biking",
+     "openverse": "Flume Trail",
      "must": [
       "flume",
       "marlette",
@@ -10295,7 +10413,11 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:0624e6d3-c303-4d65-bacc-428cc1462ab3",
+    "Openverse:22ed9743-e54e-4c54-900e-0c661ab5067b",
+    "Openverse:291e6b3a-e27f-41c2-b291-095d4da02f05"
+   ],
    "alt": {}
   },
   "south-lake-tahoe-trails": {
@@ -10313,7 +10435,7 @@
      "limit": 25
     },
     {
-     "openverse": "South Lake Tahoe trails mountain biking",
+     "openverse": "South Lake Tahoe trails",
      "must": [
       "toad",
       "freel",
@@ -10397,7 +10519,9 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:57ce6182-e9eb-4fef-b380-c11e7d654b66"
+   ],
    "alt": {}
   },
   "prescott-trails": {
@@ -10431,7 +10555,10 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:9130f443-9e88-4d5e-804f-32412a77ddca",
+    "Openverse:f2fa0e89-65a4-43ae-a4af-2991af4dfe38"
+   ],
    "alt": {}
   },
   "tucson-mountain-park": {
@@ -10448,7 +10575,7 @@
      "depth": 0
     },
     {
-     "openverse": "Tucson Mountain Park and Sweetwater Preserve mountain biking",
+     "openverse": "Tucson Mountain Park",
      "must": [
       "tucson mountain",
       "sweetwater",
@@ -10481,7 +10608,7 @@
      "depth": 0
     },
     {
-     "openverse": "South Mountain Park and Preserve mountain biking",
+     "openverse": "South Mountain Park",
      "must": [
       "south mountain",
       "south mountain park and preserve"
@@ -10531,7 +10658,9 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:2adfe33e-b058-441e-a2c2-48a6a76ee5ea"
+   ],
    "alt": {}
   },
   "smugglers-notch-pickleball": {
@@ -10549,7 +10678,7 @@
      "limit": 25
     },
     {
-     "openverse": "Smugglers’ Notch Tennis & Pickleball pickleball",
+     "openverse": "Smugglers’ Notch Tennis & Pickleball",
      "must": [
       "smugglers",
       "smuggs",
@@ -10581,7 +10710,7 @@
      "depth": 0
     },
     {
-     "openverse": "Woodstock Athletic Club pickleball",
+     "openverse": "Woodstock Athletic Club",
      "must": [
       "woodstock",
       "woodstock athletic club"
@@ -10611,7 +10740,7 @@
      "depth": 0
     },
     {
-     "openverse": "Sugarbush Health & Recreation Center pickleball",
+     "openverse": "Sugarbush Health & Recreation Center",
      "must": [
       "sugarbush",
       "sugarbush health & recreation center"
@@ -10643,7 +10772,7 @@
      "limit": 25
     },
     {
-     "openverse": "Owl’s Nest Resort pickleball",
+     "openverse": "Owl’s Nest Resort",
      "must": [
       "owl's nest",
       "owls nest",
@@ -10676,7 +10805,7 @@
      "limit": 25
     },
     {
-     "openverse": "South Mill Pond courts pickleball",
+     "openverse": "South Mill Pond courts",
      "must": [
       "south mill pond",
       "mill pond",
@@ -10707,7 +10836,7 @@
      "depth": 0
     },
     {
-     "openverse": "Mohonk Mountain House pickleball",
+     "openverse": "Mohonk Mountain House",
      "must": [
       "mohonk",
       "mohonk mountain house"
@@ -10721,7 +10850,9 @@
     "park"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:601a2ca7-6f1a-46d2-9ba1-db992063e942"
+   ],
    "alt": {}
   },
   "east-side-rec-saratoga": {
@@ -10737,7 +10868,7 @@
      "limit": 25
     },
     {
-     "openverse": "East Side Rec courts pickleball",
+     "openverse": "East Side Rec courts",
      "must": [
       "saratoga",
       "east side rec courts"
@@ -10767,7 +10898,7 @@
      "depth": 0
     },
     {
-     "openverse": "Sportsplex at Turning Stone pickleball",
+     "openverse": "Sportsplex at Turning Stone",
      "must": [
       "turning stone",
       "sportsplex at turning stone"
@@ -10798,7 +10929,7 @@
      "limit": 25
     },
     {
-     "openverse": "Erie Canal Pickleball Center pickleball",
+     "openverse": "Erie Canal Pickleball Center",
      "must": [
       "dewitt",
       "syracuse",
@@ -10829,7 +10960,7 @@
      "limit": 25
     },
     {
-     "openverse": "Skytop Lodge pickleball",
+     "openverse": "Skytop Lodge",
      "must": [
       "skytop",
       "skytop lodge"
@@ -10843,7 +10974,9 @@
     "park"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:043028bf-3050-4fd6-a9ce-bc6c2f528c8f"
+   ],
    "alt": {}
   },
   "pickleball-warehouse": {
@@ -10860,7 +10993,7 @@
      "limit": 25
     },
     {
-     "openverse": "The Pickleball Warehouse pickleball",
+     "openverse": "The Pickleball Warehouse",
      "must": [
       "pickleball warehouse",
       "wheel mill",
@@ -10911,7 +11044,9 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:50b7fb8b-4071-4b1d-87bd-98e91f2f2376"
+   ],
    "alt": {}
   },
   "killington-bike-park": {
@@ -10927,7 +11062,7 @@
      "limit": 25
     },
     {
-     "openverse": "Killington Bike Park mountain biking",
+     "openverse": "Killington Bike Park",
      "must": [
       "killington",
       "killington bike park"
@@ -10960,7 +11095,7 @@
      "limit": 25
     },
     {
-     "openverse": "Stowe trails and Cady Hill Forest mountain biking",
+     "openverse": "Stowe trails",
      "must": [
       "cady hill",
       "stowe",
@@ -10977,7 +11112,10 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:5dcfdbd7-a3e1-46dc-96e3-0316c831eff9",
+    "Openverse:5eeaf13f-f3ad-4ee0-8c8f-58fa0a203131"
+   ],
    "alt": {}
   },
   "highland-mountain-bike-park": {
@@ -11009,7 +11147,9 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:7c17a383-bfc3-44ae-b79f-3b980cefdd69"
+   ],
    "alt": {}
   },
   "loon-bike-park": {
@@ -11025,7 +11165,7 @@
      "depth": 0
     },
     {
-     "openverse": "Loon Mountain Bike Park mountain biking",
+     "openverse": "Loon Mountain Bike Park",
      "must": [
       "loon",
       "loon mountain bike park"
@@ -11059,7 +11199,7 @@
      "depth": 0
     },
     {
-     "openverse": "Bear Brook State Park mountain biking",
+     "openverse": "Bear Brook State Park",
      "must": [
       "bear brook",
       "catamount",
@@ -11096,7 +11236,7 @@
      "limit": 25
     },
     {
-     "openverse": "Wilmington and Lake Placid trails mountain biking",
+     "openverse": "Wilmington",
      "must": [
       "wilmington",
       "hoevenberg",
@@ -11115,7 +11255,11 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:54123777-33a3-4fa9-a8b1-bbaa7fd66b25",
+    "Openverse:aa3ced26-b62e-47be-ab1e-bdb0497303d6",
+    "Openverse:b850b57a-d116-4e2a-84e9-771795cc08b1"
+   ],
    "alt": {}
   },
   "ellicottville-trails": {
@@ -11134,7 +11278,7 @@
      "limit": 25
     },
     {
-     "openverse": "Ellicottville bike parks and trails mountain biking",
+     "openverse": "Ellicottville bike parks",
      "must": [
       "holiday valley",
       "ellicottville",
@@ -11168,7 +11312,7 @@
      "depth": 0
     },
     {
-     "openverse": "Highland Forest mountain biking",
+     "openverse": "Highland Forest",
      "must": [
       "highland forest"
      ],
@@ -11183,7 +11327,9 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:90e82ecc-44a8-456c-978f-fd33c5e6c00c"
+   ],
    "alt": {}
   },
   "old-erie-canal": {
@@ -11202,7 +11348,7 @@
      "depth": 0
     },
     {
-     "openverse": "Old Erie Canal State Historic Park mountain biking",
+     "openverse": "Old Erie Canal State Historic Park",
      "must": [
       "erie canal",
       "old erie",
@@ -11238,7 +11384,7 @@
      "limit": 25
     },
     {
-     "openverse": "Blue Mountain Bike Park mountain biking",
+     "openverse": "Blue Mountain Bike Park",
      "must": [
       "palmerton",
       "blue mountain resort",
@@ -11272,7 +11418,7 @@
      "depth": 0
     },
     {
-     "openverse": "Allegrippis Trails mountain biking",
+     "openverse": "Allegrippis Trails",
      "must": [
       "allegrippis",
       "raystown",
@@ -11305,7 +11451,7 @@
      "depth": 0
     },
     {
-     "openverse": "Pine Creek Rail Trail mountain biking",
+     "openverse": "Pine Creek Rail Trail",
      "must": [
       "pine creek",
       "pine creek rail trail"
@@ -11338,7 +11484,7 @@
      "depth": 0
     },
     {
-     "openverse": "Upper Pines Campground camping",
+     "openverse": "Upper Pines Campground",
      "must": [
       "pines",
       "yosemite",
@@ -11355,7 +11501,9 @@
     "tent"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:f8d052d2-3d78-425b-a05c-d1fec7217013"
+   ],
    "alt": {}
   },
   "jumbo-rocks": {
@@ -11406,7 +11554,7 @@
      "depth": 0
     },
     {
-     "openverse": "D. L. Bliss State Park camping",
+     "openverse": "D. L. Bliss State Park",
      "must": [
       "bliss",
       "rubicon",
@@ -11457,7 +11605,10 @@
     "tent"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:1aad6527-2e19-47e3-a416-2b5543892524",
+    "Openverse:1254d3e4-3462-4d2b-9d2d-8080a0f0d390"
+   ],
    "alt": {}
   },
   "twin-lakes-mammoth": {
@@ -11489,7 +11640,9 @@
     "tent"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:087264e6-69a3-4053-9e5e-66517468b37b"
+   ],
    "alt": {}
   },
   "borrego-palm-canyon": {
@@ -11521,7 +11674,10 @@
     "tent"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:1c2d23ac-85b9-41ff-b683-4bb7324b06de",
+    "Openverse:1e9de6b0-1f9c-4904-a614-6787ce96e8c0"
+   ],
    "alt": {}
   },
   "jedediah-smith": {
@@ -11539,7 +11695,7 @@
      "depth": 0
     },
     {
-     "openverse": "Jedediah Smith Campground camping",
+     "openverse": "Jedediah Smith Campground",
      "must": [
       "jedediah",
       "stout",
@@ -11640,7 +11796,7 @@
      "depth": 0
     },
     {
-     "openverse": "Lost Dutchman State Park camping",
+     "openverse": "Lost Dutchman State Park",
      "must": [
       "dutchman",
       "superstition",
@@ -11673,7 +11829,7 @@
      "depth": 0
     },
     {
-     "openverse": "Wahweap RV & Campground camping",
+     "openverse": "Wahweap RV & Campground",
      "must": [
       "wahweap",
       "wahweap rv & campground"
@@ -11705,7 +11861,7 @@
      "depth": 0
     },
     {
-     "openverse": "Catalina State Park camping",
+     "openverse": "Catalina State Park",
      "must": [
       "catalina",
       "catalina state park"
@@ -11772,7 +11928,7 @@
      "limit": 25
     },
     {
-     "openverse": "Fulton Chain of Lakes kayaking",
+     "openverse": "Fulton Chain of Lakes",
      "must": [
       "fulton",
       "fourth lake",
@@ -11809,7 +11965,7 @@
      "depth": 0
     },
     {
-     "openverse": "Lake George Narrows and Islands kayaking",
+     "openverse": "Lake George Narrows",
      "must": [
       "lake george",
       "narrows",
@@ -11828,7 +11984,9 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:ad478784-8a09-41cc-bd39-e9efef9fece3"
+   ],
    "alt": {}
   },
   "cayuga-lake": {
@@ -11846,7 +12004,7 @@
      "depth": 0
     },
     {
-     "openverse": "Cayuga Lake at Ithaca kayaking",
+     "openverse": "Cayuga Lake at Ithaca",
      "must": [
       "cayuga",
       "taughannock",
@@ -11884,7 +12042,7 @@
      "depth": 0
     },
     {
-     "openverse": "Oneida Lake and Fish Creek kayaking",
+     "openverse": "Oneida Lake",
      "must": [
       "oneida",
       "sylvan",
@@ -11904,7 +12062,9 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:5eacf35b-dda9-4e83-91b8-697001becb32"
+   ],
    "alt": {}
   },
   "lake-champlain-paddlers-trail": {
@@ -11921,7 +12081,7 @@
      "limit": 25
     },
     {
-     "openverse": "Burton Island and the Lake Champlain Paddlers’ Trail kayaking",
+     "openverse": "Burton Island",
      "must": [
       "burton",
       "champlain",
@@ -11955,7 +12115,7 @@
      "limit": 25
     },
     {
-     "openverse": "Green River Reservoir kayaking",
+     "openverse": "Green River Reservoir",
      "must": [
       "green river",
       "green river reservoir"
@@ -11988,7 +12148,7 @@
      "depth": 0
     },
     {
-     "openverse": "Lake Willoughby kayaking",
+     "openverse": "Lake Willoughby",
      "must": [
       "willoughby",
       "lake willoughby"
@@ -12005,7 +12165,9 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:5147f95b-901a-4435-bbf1-0c5346e981d5"
+   ],
    "alt": {}
   },
   "squam-lake": {
@@ -12038,7 +12200,9 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:fa6b93cb-6bf3-47d4-9a69-f12f02803ea9"
+   ],
    "alt": {}
   },
   "lake-umbagog": {
@@ -12087,7 +12251,7 @@
      "depth": 0
     },
     {
-     "openverse": "Saco River kayaking",
+     "openverse": "Saco River",
      "must": [
       "saco",
       "saco river"
@@ -12104,7 +12268,9 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:66c912b7-984c-41e7-8d07-5df7d6acab33"
+   ],
    "alt": {}
   },
   "middle-delaware-river": {
@@ -12139,7 +12305,9 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:2cb3c623-2364-40d4-baf3-81b46977649b"
+   ],
    "alt": {}
   },
   "lehigh-gorge": {
@@ -12155,7 +12323,7 @@
      "depth": 0
     },
     {
-     "openverse": "Lehigh River Gorge kayaking",
+     "openverse": "Lehigh River Gorge",
      "must": [
       "lehigh",
       "lehigh river gorge"
@@ -12277,7 +12445,10 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:01e74a69-4db4-48e9-acdc-46f4d34d6204",
+    "Openverse:2b4a2277-8b86-4ca6-96d3-f9372de52f30"
+   ],
    "alt": {}
   },
   "deer-valley-bike-park": {
@@ -12293,7 +12464,7 @@
      "limit": 25
     },
     {
-     "openverse": "Deer Valley Bike Park mountain biking",
+     "openverse": "Deer Valley Bike Park",
      "must": [
       "deer valley",
       "deer valley bike park"
@@ -12359,7 +12530,7 @@
      "limit": 25
     },
     {
-     "openverse": "Snowbasin Bike Park mountain biking",
+     "openverse": "Snowbasin Bike Park",
      "must": [
       "snowbasin",
       "snowbasin bike park"
@@ -12473,7 +12644,9 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:764e9784-0db6-4df2-a1bf-4a3f484b16da"
+   ],
    "alt": {}
   },
   "snowmass-bike-park": {
@@ -12537,7 +12710,10 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:13ca18e0-f6a3-4fc5-bf01-271bbd9605a9",
+    "Openverse:1db25faa-14d3-4fc2-9463-bb925113a75c"
+   ],
    "alt": {}
   },
   "salida-trails": {
@@ -12586,7 +12762,7 @@
      "limit": 25
     },
     {
-     "openverse": "Big Sky Bike Park mountain biking",
+     "openverse": "Big Sky Bike Park",
      "must": [
       "big sky",
       "lone peak",
@@ -12620,7 +12796,7 @@
      "limit": 25
     },
     {
-     "openverse": "Whitefish Bike Park and Whitefish Trail mountain biking",
+     "openverse": "Whitefish Bike Park",
      "must": [
       "whitefish",
       "big mountain",
@@ -12637,7 +12813,10 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:02752e94-175d-4bf6-b0ea-c52a899fed82",
+    "Openverse:6457d0c8-4a50-4fa6-9ffa-d037f2cba1a6"
+   ],
    "alt": {}
   },
   "bozeman-trails": {
@@ -12654,7 +12833,7 @@
      "limit": 25
     },
     {
-     "openverse": "Bozeman mountain biking",
+     "openverse": "Bozeman",
      "must": [
       "bozeman",
       "bangtail",
@@ -12671,7 +12850,10 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:f310deca-649b-4511-af9a-ea5449ab840b",
+    "Openverse:0e926973-fa69-4790-a358-e6519bf56629"
+   ],
    "alt": {}
   },
   "labyrinth-canyon": {
@@ -12688,7 +12870,7 @@
      "depth": 0
     },
     {
-     "openverse": "Labyrinth Canyon (Green River) kayaking",
+     "openverse": "Labyrinth Canyon",
      "must": [
       "labyrinth",
       "bowknot",
@@ -12706,7 +12888,10 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:89a6ba36-e359-4f40-97ed-818b21ed54a1",
+    "Openverse:d776a9ca-ebae-46c5-bdf4-f20f6ad8ee5f"
+   ],
    "alt": {}
   },
   "moab-daily": {
@@ -12724,7 +12909,7 @@
      "depth": 0
     },
     {
-     "openverse": "Moab Daily (Colorado River) kayaking",
+     "openverse": "Moab Daily",
      "must": [
       "fisher towers",
       "castle valley",
@@ -12760,7 +12945,7 @@
      "depth": 0
     },
     {
-     "openverse": "Lake Powell at Lone Rock kayaking",
+     "openverse": "Lake Powell at Lone Rock",
      "must": [
       "lone rock",
       "wahweap",
@@ -12796,7 +12981,7 @@
      "depth": 0
     },
     {
-     "openverse": "Flaming Gorge and the Green River kayaking",
+     "openverse": "Flaming Gorge",
      "must": [
       "flaming gorge",
       "little hole",
@@ -12866,7 +13051,7 @@
      "depth": 0
     },
     {
-     "openverse": "Upper Colorado River at Pumphouse kayaking",
+     "openverse": "Upper Colorado River at Pumphouse",
      "must": [
       "pumphouse",
       "radium",
@@ -12901,7 +13086,7 @@
      "depth": 0
     },
     {
-     "openverse": "Dillon Reservoir kayaking",
+     "openverse": "Dillon Reservoir",
      "must": [
       "dillon",
       "dillon reservoir"
@@ -12918,7 +13103,9 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:4ad80ed4-9c99-44ab-96a0-d24cceca8f9e"
+   ],
    "alt": {}
   },
   "grand-lake": {
@@ -12988,7 +13175,10 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:80424e05-f93a-458f-80c8-403081da6153",
+    "Openverse:a8c5c16a-6727-49a6-bbaa-50ff3079b966"
+   ],
    "alt": {}
   },
   "lake-mcdonald": {
@@ -13005,7 +13195,7 @@
      "depth": 0
     },
     {
-     "openverse": "Lake McDonald and Bowman Lake kayaking",
+     "openverse": "Lake McDonald",
      "must": [
       "mcdonald",
       "bowman",
@@ -13077,7 +13267,7 @@
      "limit": 25
     },
     {
-     "openverse": "Alberton Gorge (Clark Fork) kayaking",
+     "openverse": "Alberton Gorge",
      "must": [
       "alberton",
       "clark fork",
@@ -13095,6 +13285,26 @@
     "river"
    ],
    "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "hero-pickleball": {
+   "min_width": 1000,
+   "count": 1,
+   "width": 1920,
+   "sources": [
+    {
+     "search": "\"Pickleballs\"",
+     "limit": 5
+    }
+   ],
+   "prefer": [],
+   "include": [
+    {
+     "title": "File:Pickleballs.jpg",
+     "alt": "Pickleballs scattered on a court"
+    }
+   ],
    "exclude": [],
    "alt": {}
   }

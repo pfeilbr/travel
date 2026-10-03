@@ -51,56 +51,106 @@
       "width": 1280
     }
   ],
-  "apex-mountain": [
+  "antelope-canyon-kayak": [
     {
-      "alt": "APEX and snowy Chajnantor",
-      "author": "Carlos A. Durán/ESO",
-      "file": "src/assets/places/apex-mountain/1.jpg",
-      "height": 639,
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "alt": "Paved road surrounding by rocky desert that ends near waters edge.",
+      "author": "NPS",
+      "file": "src/assets/places/antelope-canyon-kayak/1.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=58813720",
-      "title": "Openverse:8f6c4d6f-3dd4-4553-bf65-4d2fcd1dd764",
-      "width": 960
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antelope_Point_Public_Launch,_April_16,_2023_(c04ffbd7-cf70-400b-b892-fa0a4bcb054c).JPG",
+      "title": "File:Antelope Point Public Launch, April 16, 2023 (c04ffbd7-cf70-400b-b892-fa0a4bcb054c).JPG",
+      "width": 1280
     },
     {
-      "alt": "APEX and snowy Chajnantor",
-      "author": "European Southern Observatory",
-      "file": "src/assets/places/apex-mountain/2.jpg",
-      "height": 682,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "alt": "Paved road surrounding by rocky desert that ends near waters edge.",
+      "author": "NPS",
+      "file": "src/assets/places/antelope-canyon-kayak/2.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/51207680@N04/34612518785",
-      "title": "Openverse:909a62e2-f4ec-4720-b6ba-82f50ce79da2",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antelope_Point_Public_Launch,_May_12,_2023_(af2ad554-6950-43e1-a65e-cc2752f03bb5).JPG",
+      "title": "File:Antelope Point Public Launch, May 12, 2023 (af2ad554-6950-43e1-a65e-cc2752f03bb5).JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Trucks unloading kayaks on a barricaded launch ramp as visitors descend a rocky shoreline.",
+      "author": "NPS",
+      "file": "src/assets/places/antelope-canyon-kayak/3.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antelope_Point_Public_Launch_June_2021_(3d40e45c-27a0-4ad9-b38f-0f4aee83032b).JPG",
+      "title": "File:Antelope Point Public Launch June 2021 (3d40e45c-27a0-4ad9-b38f-0f4aee83032b).JPG",
+      "width": 1280
+    }
+  ],
+  "apgar-campground": [
+    {
+      "alt": "A Tent on a pad in the Apgar Campground",
+      "author": "GlacierNPS",
+      "file": "src/assets/places/apgar-campground/1.jpg",
+      "height": 683,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/43288043@N04/55445507967",
+      "title": "Openverse:d002bf58-1a0f-42b1-8a18-fda95c39c241",
+      "width": 1024
+    },
+    {
+      "alt": "Using a Bear Box in the Apgar Campground",
+      "author": "GlacierNPS",
+      "file": "src/assets/places/apgar-campground/2.jpg",
+      "height": 683,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/43288043@N04/55446862780",
+      "title": "Openverse:6d8f4a5e-9cab-4304-ae2b-fc47983fbd0e",
       "width": 1024
     }
   ],
-  "arapahoe-basin": [
+  "arches-devils-garden": [
     {
-      "alt": "Skiers ski past the Zuma ski lift in the Montezuma Bowl area at Arapahoe Basin Ski Area in Colorado.",
-      "author": "Runningonbrains",
-      "file": "src/assets/places/arapahoe-basin/1.jpg",
-      "height": 960,
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "alt": "Looking Towards Devils Garden Campground, Arches National Park, Utah",
+      "author": "Ken Lund",
+      "file": "src/assets/places/arches-devils-garden/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arapahoe_Basin_Montezuma_Bowl.jpg",
-      "title": "File:Arapahoe Basin Montezuma Bowl.jpg",
-      "width": 1280
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/2439619000",
+      "title": "Openverse:3324abd7-8784-41e8-83bf-9b7a940979d2",
+      "width": 1024
     },
     {
-      "alt": "Heres Looking at You Kid ()",
-      "author": "Zach Dischner",
-      "file": "src/assets/places/arapahoe-basin/2.jpg",
-      "height": 851,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "alt": "View from Double O Arch, Devils Garden Trail, Arches National Park, Moab, Utah",
+      "author": "Ken Lund",
+      "file": "src/assets/places/arches-devils-garden/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heres_Looking_at_You_Kid_(4482287341).jpg",
-      "title": "File:Heres Looking at You Kid (4482287341).jpg",
-      "width": 1280
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/9101920410",
+      "title": "Openverse:05e2ffb8-abd1-4004-a6ec-e1f3fc1a8d82",
+      "width": 1024
+    },
+    {
+      "alt": "Devils Garden Trail, Arches National Park, Moab, Utah",
+      "author": "Ken Lund",
+      "file": "src/assets/places/arches-devils-garden/3.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/9101929744",
+      "title": "Openverse:059567bd-b756-4290-91cc-fd7617ce22e8",
+      "width": 1024
     }
   ],
   "arizona-snowbowl": [
@@ -129,82 +179,6 @@
       "width": 1280
     }
   ],
-  "aspen-highlands": [
-    {
-      "alt": "snow at aspen highlands",
-      "author": "silbatron",
-      "file": "src/assets/places/aspen-highlands/1.jpg",
-      "height": 768,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/26143743@N00/4348464983",
-      "title": "Openverse:0093e98b-1839-4ad8-a902-034bbfd2f40e",
-      "width": 1024
-    },
-    {
-      "alt": "Aspen Highlands",
-      "author": "jfdervin",
-      "file": "src/assets/places/aspen-highlands/2.jpg",
-      "height": 746,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/56156808@N00/12081200613",
-      "title": "Openverse:43b83561-8be5-4518-9392-233e1b505f49",
-      "width": 1024
-    },
-    {
-      "alt": "Aspen Highlands",
-      "author": "jfdervin",
-      "file": "src/assets/places/aspen-highlands/3.jpg",
-      "height": 683,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/56156808@N00/12080891265",
-      "title": "Openverse:71e57613-17fd-4e59-97d5-cc020cd73381",
-      "width": 1024
-    }
-  ],
-  "aspen-mountain": [
-    {
-      "alt": "Cross-Country Skiing Near Aspen Colorado - Snowmass Course Hills",
-      "author": "richpalpine",
-      "file": "src/assets/places/aspen-mountain/1.jpg",
-      "height": 768,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/76081760@N03/12107868624",
-      "title": "Openverse:6adacb55-e81e-437d-89af-13a79349a64c",
-      "width": 1024
-    },
-    {
-      "alt": "Vicky skiing in Aspen",
-      "author": "Upsilon Andromedae",
-      "file": "src/assets/places/aspen-mountain/2.jpg",
-      "height": 768,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/35261188@N00/213398303",
-      "title": "Openverse:2f8fac88-c9b0-4db2-a6a2-5c0959d5add5",
-      "width": 1024
-    },
-    {
-      "alt": "Fairview Canyon Cross Country Skiing - April 19 2008",
-      "author": "a4gpa",
-      "file": "src/assets/places/aspen-mountain/3.jpg",
-      "height": 680,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/94833286@N00/2428016609",
-      "title": "Openverse:4c38ed48-f839-4f6f-85c0-baa9b28a8f46",
-      "width": 1024
-    }
-  ],
   "attitash": [
     {
       "alt": "Attitash",
@@ -231,6 +205,33 @@
       "width": 1024
     }
   ],
+  "barnes-pickleball": [],
+  "bear-brook": [
+    {
+      "alt": "Bear Brook Waterfall",
+      "author": "ihamr",
+      "file": "src/assets/places/bear-brook/1.jpg",
+      "height": 575,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/163621777@N08/49764613918",
+      "title": "Openverse:aca5c87c-fc9d-4844-a9b9-a13f80f2b71b",
+      "width": 1024
+    },
+    {
+      "alt": "Bear Brook State Park",
+      "author": "ihamr",
+      "file": "src/assets/places/bear-brook/2.jpg",
+      "height": 575,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/163621777@N08/49765463987",
+      "title": "Openverse:13928dbf-03cd-401b-bae7-198c0f054eeb",
+      "width": 1024
+    }
+  ],
   "bear-creek": [
     {
       "alt": "Bear Creek Mountain Resort Ski Lodge Bear Creek Village Near Macungie, PA",
@@ -245,7 +246,6 @@
       "width": 1280
     }
   ],
-  "bear-valley": [],
   "beaver-creek": [
     {
       "alt": "500px provided description: Beaver Creek, Colorado.",
@@ -338,7 +338,6 @@
       "width": 1280
     }
   ],
-  "big-boulder": [],
   "big-sky": [
     {
       "alt": "This is the Lone Peak Tram in January of 2018.",
@@ -377,6 +376,20 @@
       "width": 1280
     }
   ],
+  "big-sky-bike-park": [
+    {
+      "alt": "Big Sky by SJC",
+      "author": "Richard Masoner / Cyclelicious",
+      "file": "src/assets/places/big-sky-bike-park/1.jpg",
+      "height": 730,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/99247795@N00/21092058545",
+      "title": "Openverse:068d7e58-a640-4b58-a2f6-00295ba9c3ca",
+      "width": 1024
+    }
+  ],
   "big-white": [
     {
       "alt": "Big White Ski Village",
@@ -413,6 +426,20 @@
       "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=9583084",
       "title": "Openverse:8f973703-d461-4fdd-8afa-92d4e4bf4624",
       "width": 960
+    }
+  ],
+  "black-canyon-water-trail": [
+    {
+      "alt": "Black Canyon Wilderness Area",
+      "author": "Lake Mead National Recreation Area",
+      "file": "src/assets/places/black-canyon-water-trail/1.jpg",
+      "height": 680,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/30839029@N05/15620760406",
+      "title": "Openverse:c85a6590-d21d-4185-94fb-eaf50b2f6d17",
+      "width": 1024
     }
   ],
   "black-desert-pickleball": [],
@@ -470,32 +497,6 @@
       "width": 1280
     }
   ],
-  "blue-mountain-pa": [
-    {
-      "alt": "Nothing But Blue Skies Do I See",
-      "author": "katerha",
-      "file": "src/assets/places/blue-mountain-pa/1.jpg",
-      "height": 768,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/8489692@N03/5697050218",
-      "title": "Openverse:290c83d8-3eda-4f50-b4b2-ab3b908aa565",
-      "width": 1024
-    },
-    {
-      "alt": "Blue Skies of Scottsdale",
-      "author": "Dru Bloomfield - At Home in Scottsdale",
-      "file": "src/assets/places/blue-mountain-pa/2.jpg",
-      "height": 768,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/14544437@N07/3247600618",
-      "title": "Openverse:39654d3e-ac1c-4e36-8dab-79e8f31106d7",
-      "width": 1024
-    }
-  ],
   "bolton-valley": [
     {
       "alt": "The Bolton Valley Ski Resort Lodge.",
@@ -534,6 +535,20 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ski_lodge_in_Boreal.jpg",
       "title": "File:Ski lodge in Boreal.jpg",
       "width": 1280
+    }
+  ],
+  "bowron-lake-circuit": [
+    {
+      "alt": "On the Bowron Lakes circuit",
+      "author": "gordonhunter",
+      "file": "src/assets/places/bowron-lake-circuit/1.jpg",
+      "height": 759,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/12448447@N06/4652198582",
+      "title": "Openverse:8192f96b-eac2-4f8a-b747-23d05d54b360",
+      "width": 1022
     }
   ],
   "breckenridge": [
@@ -638,32 +653,6 @@
       "width": 1280
     }
   ],
-  "bridger-bowl": [
-    {
-      "alt": "Brickellia grandiflora growing on the talus slopes of North Bowl, Bridger Bowl ski area, Bridger Range, Gallatin County, Montana.",
-      "author": "Matt Lavin",
-      "file": "src/assets/places/bridger-bowl/1.jpg",
-      "height": 960,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brickellia_grandiflora_-_tasselflower_brickellbush_-_52960607217.jpg",
-      "title": "File:Brickellia grandiflora - tasselflower brickellbush - 52960607217.jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Brickellia grandiflora growing on the talus slopes of North Bowl, Bridger Bowl ski area, Bridger Range, Gallatin County, Montana.",
-      "author": "Matt Lavin",
-      "file": "src/assets/places/bridger-bowl/2.jpg",
-      "height": 960,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brickellia_grandiflora_-_tasselflower_brickellbush_-_52960607737.jpg",
-      "title": "File:Brickellia grandiflora - tasselflower brickellbush - 52960607737.jpg",
-      "width": 1280
-    }
-  ],
   "brighton": [
     {
       "alt": "Brighton Resort, Brighton, United States",
@@ -716,47 +705,112 @@
       "width": 1280
     }
   ],
-  "bromley": [
+  "broken-group-islands": [
     {
-      "alt": "Will Bromley No.1",
-      "author": "Avery Studio",
-      "file": "src/assets/places/bromley/1.jpg",
-      "height": 768,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/78147513@N00/2254295432",
-      "title": "Openverse:2a125b1c-3c28-4861-b828-f69758b28b40",
-      "width": 1024
-    }
-  ],
-  "bromont": [],
-  "burke": [
-    {
-      "alt": "View from the ski run on Burke during sunset.",
-      "author": "BurkeCoquitlam",
-      "file": "src/assets/places/burke/1.jpg",
-      "height": 720,
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=31345153",
-      "title": "Openverse:cf3834a5-e1b1-49fe-9d67-ce617aaedabf",
-      "width": 960
-    },
-    {
-      "alt": "Willoughby from Burke ski lift",
-      "author": "jcantroot",
-      "file": "src/assets/places/burke/2.jpg",
+      "alt": "Kelp in the Broken Group Islands",
+      "author": "roy.luck",
+      "file": "src/assets/places/broken-group-islands/1.jpg",
       "height": 683,
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/32304041@N07/3846896517",
-      "title": "Openverse:c4c34633-92ae-4d4e-bf26-9af9c8681413",
+      "sourceUrl": "https://www.flickr.com/photos/21550937@N03/5946366048",
+      "title": "Openverse:11f2c9aa-1942-495e-94aa-21daa79344b8",
       "width": 1024
     }
   ],
+  "bromont": [
+    {
+      "alt": "Crête Street, Shefford, Quebec.",
+      "author": "Gabriel Picard",
+      "file": "src/assets/places/bromont/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rue_de_la_Cr%C3%AAte_Shefford_2024.jpg",
+      "title": "File:Rue de la Crête Shefford 2024.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mount Brome seen from Mount Shefford, Quebec.",
+      "author": "Gabriel Picard",
+      "file": "src/assets/places/bromont/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont_Brome_vu_depuis_le_mont_Shefford_(1).jpg",
+      "title": "File:Mont Brome vu depuis le mont Shefford (1).jpg",
+      "width": 1280
+    }
+  ],
+  "bromont-pickleball": [],
+  "browns-canyon": [
+    {
+      "alt": "Browns Canyon National Monument",
+      "author": "BLM-Colorado",
+      "file": "src/assets/places/browns-canyon/1.jpg",
+      "height": 683,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/50212228@N08/49757440526",
+      "title": "Openverse:052abbdf-a069-4ed0-897e-ec8b4a72cf85",
+      "width": 1024
+    },
+    {
+      "alt": "Browns Canyon National Monument",
+      "author": "BLM-Colorado",
+      "file": "src/assets/places/browns-canyon/2.jpg",
+      "height": 683,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/50212228@N08/49757439501",
+      "title": "Openverse:3bdecf03-7713-42bf-bdb3-52367425780c",
+      "width": 1024
+    },
+    {
+      "alt": "Browns Canyon National Monument",
+      "author": "BLM-Colorado",
+      "file": "src/assets/places/browns-canyon/3.jpg",
+      "height": 683,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/50212228@N08/49757518926",
+      "title": "Openverse:5d5e547e-1925-4ff7-b9dc-1cea00cd905c",
+      "width": 1024
+    }
+  ],
+  "bryce-north-campground": [
+    {
+      "alt": "Castilleja linariifolia",
+      "author": "brewbooks",
+      "file": "src/assets/places/bryce-north-campground/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/93452909@N00/3770503901",
+      "title": "Openverse:b3f4af5f-c385-4ae9-97bd-f4e614669229",
+      "width": 1024
+    },
+    {
+      "alt": "Bryce Canyon National Park",
+      "author": "Josh Parrish",
+      "file": "src/assets/places/bryce-north-campground/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/44466030@N00/2488099155",
+      "title": "Openverse:e0006a3b-957e-4675-845f-ac297f7f0f80",
+      "width": 1024
+    }
+  ],
+  "bushmaster-park-pickleball": [],
   "buttermilk": [
     {
       "alt": "View from Buttermilk, near Aspen, Colorado, in winter.",
@@ -835,8 +889,152 @@
       "width": 1280
     }
   ],
+  "capitol-reef-fruita": [
+    {
+      "alt": "Fruita Campground",
+      "author": "exit78",
+      "file": "src/assets/places/capitol-reef-fruita/1.jpg",
+      "height": 683,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/28826830@N00/28713224244",
+      "title": "Openverse:2cf84a55-3601-451c-a923-d2a3428d32cd",
+      "width": 1024
+    }
+  ],
   "carter-park-pickleball": [],
-  "cherry-peak": [],
+  "catalina-state-park": [
+    {
+      "alt": "Catalina State Park",
+      "author": "Max Richard2",
+      "file": "src/assets/places/catalina-state-park/1.jpg",
+      "height": 578,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/77823393@N03/27144972368",
+      "title": "Openverse:289457e9-d491-4257-8401-13a69f493dd2",
+      "width": 1024
+    },
+    {
+      "alt": "2019.04.07 Catalina State Park",
+      "author": "Max Richard2",
+      "file": "src/assets/places/catalina-state-park/2.jpg",
+      "height": 576,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/77823393@N03/32632750817",
+      "title": "Openverse:4e8909d2-8c69-41c4-ac27-0d4722066810",
+      "width": 1024
+    }
+  ],
+  "cave-springs": [
+    {
+      "alt": "Cave Springs Campground",
+      "author": "Coconino NF Photography",
+      "file": "src/assets/places/cave-springs/1.jpg",
+      "height": 683,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/42034606@N05/37931094401",
+      "title": "Openverse:09628f0b-6409-493e-b031-72b61b648c3d",
+      "width": 1024
+    },
+    {
+      "alt": "Cave Springs Campground",
+      "author": "Coconino NF Photography",
+      "file": "src/assets/places/cave-springs/2.jpg",
+      "height": 683,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/42034606@N05/37221706744",
+      "title": "Openverse:18bb5266-aebf-4efc-a8f7-e300c0314c45",
+      "width": 1024
+    }
+  ],
+  "cayuga-lake": [
+    {
+      "alt": "Stewart Park at Sunset - South end of Cayuga Lake in Ithaca NY",
+      "author": "jmenard48",
+      "file": "src/assets/places/cayuga-lake/1.jpg",
+      "height": 683,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/19966030@N00/3713135143",
+      "title": "Openverse:76bedb5b-9e90-4718-b8c2-749515efb4de",
+      "width": 1024
+    },
+    {
+      "alt": "Cayuga Lake at Ithaca.",
+      "author": "andyarthur",
+      "file": "src/assets/places/cayuga-lake/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/45846171@N04/5175998337",
+      "title": "Openverse:2eab9c4d-0274-4a47-900b-95874414a826",
+      "width": 1024
+    }
+  ],
+  "centre-pickle": [],
+  "channel-islands-sea-caves": [
+    {
+      "alt": "Tribal Youth Explore Santa Cruz Island",
+      "author": "USFWS Pacific Southwest Region",
+      "file": "src/assets/places/channel-islands-sea-caves/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/54430347@N04/16849852837",
+      "title": "Openverse:0b4e3241-10b4-4e8a-b73c-824c55007405",
+      "width": 1024
+    }
+  ],
+  "cherry-springs": [
+    {
+      "alt": "Cherry Springs State Park sky 5",
+      "author": "jcantroot",
+      "file": "src/assets/places/cherry-springs/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/32304041@N07/19162138885",
+      "title": "Openverse:1b31a8a9-ad09-4c02-9f81-8e1a1f891ac6",
+      "width": 1024
+    },
+    {
+      "alt": "Cherry Springs State Park sky 2",
+      "author": "jcantroot",
+      "file": "src/assets/places/cherry-springs/2.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/32304041@N07/18541538923",
+      "title": "Openverse:500eaaae-d89c-4e51-bc9e-38be5bb6f606",
+      "width": 1024
+    },
+    {
+      "alt": "Cherry Springs State Park sky 1",
+      "author": "jcantroot",
+      "file": "src/assets/places/cherry-springs/3.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/32304041@N07/18974573718",
+      "title": "Openverse:566ccc66-3141-4c2a-8436-6ceec6a80798",
+      "width": 1024
+    }
+  ],
   "china-peak": [
     {
       "alt": "\"Indian Pools\" near china peak ski resort",
@@ -851,41 +1049,41 @@
       "width": 1280
     }
   ],
-  "copper-mountain": [
+  "clayoquot-sound": [
     {
-      "alt": "File:Copper Peak Ski Flying Hill.JPG",
-      "author": "Cbradshaw (talk)",
-      "file": "src/assets/places/copper-mountain/1.jpg",
-      "height": 720,
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "alt": "Tofino Seas",
+      "author": "www.wbayer.com - www.facebook.com/wbayercom",
+      "file": "src/assets/places/clayoquot-sound/1.jpg",
+      "height": 576,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=4867860",
-      "title": "Openverse:08526671-99e9-4156-81c7-08d7f2263a6f",
-      "width": 960
-    },
-    {
-      "alt": "Copper Moon - No Plane",
-      "author": "makelessnoise",
-      "file": "src/assets/places/copper-mountain/2.jpg",
-      "height": 640,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/13447091@N00/145036473",
-      "title": "Openverse:1bb09db4-8f6c-4cce-a18e-217defd042a7",
+      "sourceUrl": "https://www.flickr.com/photos/76319087@N08/37100532963",
+      "title": "Openverse:0e78cbe7-388f-47d7-9c87-43454bd38288",
       "width": 1024
     },
     {
-      "alt": "Copper Haze",
-      "author": "Zach Dischner",
-      "file": "src/assets/places/copper-mountain/3.jpg",
-      "height": 681,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "alt": "Tofino Seas",
+      "author": "www.wbayer.com - www.facebook.com/wbayercom",
+      "file": "src/assets/places/clayoquot-sound/2.jpg",
+      "height": 576,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/35557234@N07/6803591218",
-      "title": "Openverse:211d9f59-a81d-4ddd-9256-ceb8745a1c94",
+      "sourceUrl": "https://www.flickr.com/photos/76319087@N08/37770623841",
+      "title": "Openverse:2413ec00-b725-4b70-a354-69d7c93f0324",
+      "width": 1024
+    },
+    {
+      "alt": "Tofino Seas",
+      "author": "www.wbayer.com - www.facebook.com/wbayercom",
+      "file": "src/assets/places/clayoquot-sound/3.jpg",
+      "height": 576,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/76319087@N08/37100535263",
+      "title": "Openverse:2681837d-dd1d-47d9-84ca-e7026350a2aa",
       "width": 1024
     }
   ],
@@ -953,6 +1151,44 @@
       "width": 1280
     }
   ],
+  "crested-butte-trails": [
+    {
+      "alt": "Mountain Bike The Dyke Trail, Crested Butte, CO, USA",
+      "author": "TRAILSOURCE.COM",
+      "file": "src/assets/places/crested-butte-trails/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/69742158@N00/4790258266",
+      "title": "Openverse:00019eda-49b5-4923-84a1-3c177d86e9d2",
+      "width": 1024
+    },
+    {
+      "alt": "Mountain Bike The Dyke Trail, Crested Butte, CO, USA",
+      "author": "TRAILSOURCE.COM",
+      "file": "src/assets/places/crested-butte-trails/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/69742158@N00/4790259238",
+      "title": "Openverse:0ff6e8f7-80f7-4518-ad0c-34e938ac25e0",
+      "width": 1024
+    },
+    {
+      "alt": "Mountain Bike 401 Trail, Crested Butte, CO, USA",
+      "author": "TRAILSOURCE.COM",
+      "file": "src/assets/places/crested-butte-trails/3.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/69742158@N00/4765224993",
+      "title": "Openverse:193b7372-4b7b-4224-a105-1f0d0ee38340",
+      "width": 1024
+    }
+  ],
   "crotched-mountain": [
     {
       "alt": "Crotched Mountain Sunset (IMG 0776)",
@@ -982,72 +1218,48 @@
     }
   ],
   "dancu-community-courts": [],
-  "deer-valley": [
+  "delta-lake": [
     {
-      "alt": "Park City Deer Valley Ski",
-      "author": "the-unwinder",
-      "file": "src/assets/places/deer-valley/1.jpg",
-      "height": 768,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/159657296@N06/41245814674",
-      "title": "Openverse:ea047656-073f-418b-a870-a720fcb9eba8",
-      "width": 1024
-    },
-    {
-      "alt": "Park City Ski Resort",
-      "author": "InSapphoWeTrust",
-      "file": "src/assets/places/deer-valley/2.jpg",
-      "height": 634,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/56619626@N05/6856251934",
-      "title": "Openverse:3f473c9d-55b8-47f3-a1eb-09d2e63d40bd",
-      "width": 1024
-    },
-    {
-      "alt": "Main Street, Park City, Utah",
-      "author": "Ken Lund",
-      "file": "src/assets/places/deer-valley/3.jpg",
-      "height": 768,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/9387932067",
-      "title": "Openverse:01e74a69-4db4-48e9-acdc-46f4d34d6204",
-      "width": 1024
-    }
-  ],
-  "diamond-peak": [],
-  "discovery-montana": [
-    {
-      "alt": "Kiwi Discovery Ski Accessories 2012 (3)",
-      "author": "Kiwi Discovery",
-      "file": "src/assets/places/discovery-montana/1.jpg",
+      "alt": "Delta Lake State Park",
+      "author": "nick.hepler",
+      "file": "src/assets/places/delta-lake/1.jpg",
       "height": 768,
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/60910972@N07/7552817378",
-      "title": "Openverse:3f700b80-7774-43bc-b395-80c25863f1a3",
-      "width": 1024
-    },
-    {
-      "alt": "Kiwi Discovery Ski Accessories 2012 (sm)",
-      "author": "Kiwi Discovery",
-      "file": "src/assets/places/discovery-montana/2.jpg",
-      "height": 768,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/60910972@N07/7552817062",
-      "title": "Openverse:a2808a59-0c66-4490-ab4a-8d2fa146b826",
+      "sourceUrl": "https://www.flickr.com/photos/46451630@N03/20848477148",
+      "title": "Openverse:206ee95e-37eb-445a-9212-f18ff31d65c3",
       "width": 1024
     }
   ],
-  "dodge-ridge": [],
+  "demuth-park-pickleball": [],
+  "dl-bliss": [
+    {
+      "alt": "Derrick in front of Lake Tahoe at D.",
+      "author": "MarkDoliner",
+      "file": "src/assets/places/dl-bliss/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/19714819@N00/10285146425",
+      "title": "Openverse:a4fae45c-7e48-42a7-a756-f5de980b7594",
+      "width": 1024
+    },
+    {
+      "alt": "Lake Tahoe from D.",
+      "author": "MarkDoliner",
+      "file": "src/assets/places/dl-bliss/2.jpg",
+      "height": 512,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/19714819@N00/10285131235",
+      "title": "Openverse:1c2296e2-d44b-4faa-b673-4db2fc543b63",
+      "width": 1024
+    }
+  ],
+  "east-side-rec-saratoga": [],
   "eldora": [
     {
       "alt": "View of the beginners' area at the base of Eldora Mountain Resort",
@@ -1062,58 +1274,45 @@
       "width": 1280
     }
   ],
-  "elk-mountain": [
+  "elkhorn-slough": [
     {
-      "alt": "Views of Jackson, Ski Runs, & Miller House on the National Elk Refuge",
-      "author": "USFWS Mountain Prairie",
-      "file": "src/assets/places/elk-mountain/1.jpg",
-      "height": 683,
-      "license": "Public domain",
-      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/51986662@N05/54188004664",
-      "title": "Openverse:9376190c-9c9e-48c5-b33d-866f7a277f0c",
-      "width": 1024
-    }
-  ],
-  "emerald-bay": [
-    {
-      "alt": "Scouts Kayaking at Emerald Bay Scout Camp, Catalina CA",
-      "author": "GraceFamily",
-      "file": "src/assets/places/emerald-bay/1.jpg",
+      "alt": "Kayaking Moss Landing",
+      "author": "jumpyjodes",
+      "file": "src/assets/places/elkhorn-slough/1.jpg",
       "height": 768,
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/59518841@N00/418492441",
-      "title": "Openverse:c22eba13-2013-4a92-831d-bcb3aff5000b",
+      "sourceUrl": "https://www.flickr.com/photos/24649496@N00/2720912022",
+      "title": "Openverse:5e51ee73-d08c-431d-8038-040da81bdb82",
       "width": 1024
     },
     {
-      "alt": "Edwin Kayaking at Emerald Bay Scout Camp, Catalina",
-      "author": "GraceFamily",
-      "file": "src/assets/places/emerald-bay/2.jpg",
+      "alt": "Kayaking Moss Landing",
+      "author": "jumpyjodes",
+      "file": "src/assets/places/elkhorn-slough/2.jpg",
+      "height": 765,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/24649496@N00/2720912568",
+      "title": "Openverse:a1adbd9c-66ed-4b1e-ae12-a63e042e4b7f",
+      "width": 1024
+    },
+    {
+      "alt": "Kayaking Moss Landing",
+      "author": "jumpyjodes",
+      "file": "src/assets/places/elkhorn-slough/3.jpg",
       "height": 768,
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/59518841@N00/418493055",
-      "title": "Openverse:e099b1ab-9a50-4fd7-a664-a6a1091d092b",
-      "width": 1024
-    },
-    {
-      "alt": "Fannette Island, Emerald Bay State Park, Lake Tahoe, California",
-      "author": "Ken Lund",
-      "file": "src/assets/places/emerald-bay/3.jpg",
-      "height": 768,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/28773865430",
-      "title": "Openverse:13dfe251-4b3e-42d8-aae8-282f5cebdc1b",
+      "sourceUrl": "https://www.flickr.com/photos/24649496@N00/2720093229",
+      "title": "Openverse:ba754ea9-d3d4-4942-976a-c3c6500f7f38",
       "width": 1024
     }
   ],
+  "erie-canal-pickleball": [],
   "fernie": [
     {
       "alt": "Fernie Ski Hill",
@@ -1149,6 +1348,20 @@
       "nearby": false,
       "sourceUrl": "https://www.flickr.com/photos/95142644@N00/35842037",
       "title": "Openverse:d49416be-ec04-4443-808c-4c85af13b436",
+      "width": 1024
+    }
+  ],
+  "fernie-trails": [
+    {
+      "alt": "bike trail",
+      "author": "A tea but no e",
+      "file": "src/assets/places/fernie-trails/1.jpg",
+      "height": 690,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/89324753@N00/3860016153",
+      "title": "Openverse:f6ee7eb5-42d6-42b4-a1ce-9cc698b6481c",
       "width": 1024
     }
   ],
@@ -1214,8 +1427,97 @@
       "width": 1600
     }
   ],
-  "forillon-park": [],
+  "flaming-gorge": [
+    {
+      "alt": "Green River Near Flaming Gorge Dam, Utah",
+      "author": "Ken Lund",
+      "file": "src/assets/places/flaming-gorge/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/68789475",
+      "title": "Openverse:45abe5d7-e2e0-4d70-83c3-b0666f17e544",
+      "width": 1024
+    },
+    {
+      "alt": "Flaming Gorge Dam, Green River, Utah",
+      "author": "Ken Lund",
+      "file": "src/assets/places/flaming-gorge/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/68798659",
+      "title": "Openverse:6905a9aa-bbff-48a2-880a-287c195b6573",
+      "width": 1024
+    }
+  ],
   "fort-missoula-pickleball": [],
+  "fruita-trails": [
+    {
+      "alt": "Mountain Biking The North Fruita Desert Trails, Colorado",
+      "author": "TRAILSOURCE.COM",
+      "file": "src/assets/places/fruita-trails/1.jpg",
+      "height": 769,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/69742158@N00/8684121199",
+      "title": "Openverse:0113d4c0-99db-45ba-93f9-7057f8c48120",
+      "width": 1024
+    },
+    {
+      "alt": "Mountain Bike Horsethief Bench, Fruita, Colorado, USA",
+      "author": "TRAILSOURCE.COM",
+      "file": "src/assets/places/fruita-trails/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/69742158@N00/4433932250",
+      "title": "Openverse:572c27e3-e591-4d9d-996d-6eb97e50c587",
+      "width": 1024
+    },
+    {
+      "alt": "Mountain Bike Horsethief Bench, Fruita, Colorado, USA",
+      "author": "TRAILSOURCE.COM",
+      "file": "src/assets/places/fruita-trails/3.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/69742158@N00/4433162471",
+      "title": "Openverse:ad88f2be-5184-43f2-b3ae-23bc0dbe8c8b",
+      "width": 1024
+    }
+  ],
+  "fulton-chain-of-lakes": [
+    {
+      "alt": "Fulton Chain of Lakes at Moose River Plains",
+      "author": "andyarthur",
+      "file": "src/assets/places/fulton-chain-of-lakes/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/45846171@N04/4822002766",
+      "title": "Openverse:b2b099a5-9c32-4a02-9f29-3190fee553ad",
+      "width": 1024
+    },
+    {
+      "alt": "THE PERGOLA 7TH LAKE ISLAND FULTON CHAIN OF LAKES ADIRONDACKS",
+      "author": "Creative Commons Gems",
+      "file": "src/assets/places/fulton-chain-of-lakes/2.jpg",
+      "height": 644,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/137098240@N07/23166001322",
+      "title": "Openverse:155cb523-aa7d-4d79-b0f1-4252ba7b0807",
+      "width": 1024
+    }
+  ],
   "garibaldi-lake": [
     {
       "alt": "Meilleur emplacement de camping ?",
@@ -1317,46 +1619,58 @@
     }
   ],
   "golden-peak-pickleball": [],
-  "gore-mountain": [
+  "gooseberry-mesa": [
     {
-      "alt": "Don Gore, Davos ski area scrambles..Late 1960's",
-      "author": "mcdolan79",
-      "file": "src/assets/places/gore-mountain/1.jpg",
-      "height": 687,
+      "alt": "Gooseberry Trails in Utah",
+      "author": "mypubliclands",
+      "file": "src/assets/places/gooseberry-mesa/1.jpg",
+      "height": 731,
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/141509577@N05/46800754494",
-      "title": "Openverse:a34ff260-c531-4c06-91f4-2d14b4b9c1a6",
+      "sourceUrl": "https://www.flickr.com/photos/91981596@N06/20706014388",
+      "title": "Openverse:1ac35af0-8225-4584-9472-73237bce41c0",
       "width": 1024
     },
     {
-      "alt": "Redi-Rock_limestone-gravity-commercial-RRNE-JacksonGoreSkiLodge4",
-      "author": "redirockphotodatabase",
-      "file": "src/assets/places/gore-mountain/2.jpg",
-      "height": 743,
+      "alt": "Gooseberry Mesa and Hurricane Cliffs in Utah",
+      "author": "mypubliclands",
+      "file": "src/assets/places/gooseberry-mesa/2.jpg",
+      "height": 682,
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/122995539@N03/25105719789",
-      "title": "Openverse:7cce2867-ef52-42c6-9aab-ac6613f6eb02",
+      "sourceUrl": "https://www.flickr.com/photos/91981596@N06/20929331932",
+      "title": "Openverse:0d8868da-e01f-4a30-9329-8943c25553a6",
       "width": 1024
     },
     {
-      "alt": "Redi-Rock_limestone-gravity-commercial-RRNE-JacksonGoreSkiLodge7",
-      "author": "redirockphotodatabase",
-      "file": "src/assets/places/gore-mountain/3.jpg",
-      "height": 728,
+      "alt": "Gooseberry Mesa and Hurricane Cliffs in Utah",
+      "author": "mypubliclands",
+      "file": "src/assets/places/gooseberry-mesa/3.jpg",
+      "height": 731,
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/122995539@N03/24846558233",
-      "title": "Openverse:b26feda1-e082-419c-8be1-7f95c9577861",
+      "sourceUrl": "https://www.flickr.com/photos/91981596@N06/20912836236",
+      "title": "Openverse:2f483c7e-9a1f-4668-8a0c-13252ac3d17b",
       "width": 1024
     }
   ],
-  "great-divide": [],
-  "greek-peak": [],
+  "grand-lake": [
+    {
+      "alt": "Andrew Kayaking Shadow Mountain Lake Colorado August 2007",
+      "author": "wordcat57",
+      "file": "src/assets/places/grand-lake/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/94553668@N00/1165704787",
+      "title": "Openverse:94d7204c-5212-4d1c-bf68-b4f2afd2b4a6",
+      "width": 1024
+    }
+  ],
   "green-lakes": [
     {
       "alt": "Fall foliage reflected in Round Lake at Green Lakes State Park",
@@ -1419,18 +1733,67 @@
       "width": 1600
     }
   ],
-  "green-point": [],
-  "grouse-mountain": [
+  "green-point": [
     {
-      "alt": "Grouse on the ski run",
-      "author": "Ruth and Dave",
-      "file": "src/assets/places/grouse-mountain/1.jpg",
+      "alt": "Silhouettes at Sunset in Long beach, Tofino, Vancouver Island, Canada",
+      "author": "Buiobuione",
+      "file": "src/assets/places/green-point/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Silhouettes_at_Sunset_in_Long_beach.jpg",
+      "title": "File:Silhouettes at Sunset in Long beach.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Sunset at Long beach, Tofino, Vancouver Island, Canada",
+      "author": "Buiobuione",
+      "file": "src/assets/places/green-point/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunset_at_Long_beach_-_Tofino_-_Vancouver_Island_-_Canada.jpg",
+      "title": "File:Sunset at Long beach - Tofino - Vancouver Island - Canada.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Pacific Rim National Park",
+      "author": "Sapphire51",
+      "file": "src/assets/places/green-point/3.jpg",
+      "height": 720,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunset_on_Long_Beach.jpg",
+      "title": "File:Sunset on Long Beach.jpg",
+      "width": 1280
+    }
+  ],
+  "green-river-reservoir": [
+    {
+      "alt": "Green River Reservoir State Park Beach",
+      "author": "AmiCalmant",
+      "file": "src/assets/places/green-river-reservoir/1.jpg",
       "height": 768,
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/95142644@N00/52127928996",
-      "title": "Openverse:051310b2-7d6e-4bfb-810f-c8ccfd2ef218",
+      "sourceUrl": "https://www.flickr.com/photos/77613812@N00/22156099466",
+      "title": "Openverse:2a5284e8-9809-41e2-98e9-a3522de8643e",
+      "width": 1024
+    },
+    {
+      "alt": "Green River Reservoir, VT",
+      "author": "AmiCalmant",
+      "file": "src/assets/places/green-river-reservoir/2.jpg",
+      "height": 768,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/77613812@N00/22182230065",
+      "title": "Openverse:4698451a-ad10-4e20-a7b7-5b1ffb51a531",
       "width": 1024
     }
   ],
@@ -1460,7 +1823,70 @@
       "width": 1280
     }
   ],
-  "hautes-gorges-park": [],
+  "hautes-gorges-park": [
+    {
+      "alt": "Parc national des Hautes-Gorges-de-la-Rivière-Malbaie, Canada",
+      "author": "dconvertini",
+      "file": "src/assets/places/hautes-gorges-park/1.jpg",
+      "height": 683,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/42477684@N08/33893605408",
+      "title": "Openverse:010047c1-8a26-417b-a752-9680e7124035",
+      "width": 1024
+    },
+    {
+      "alt": "Parc national des Hautes-Gorges-de-la-Rivière-Malbaie, Canada",
+      "author": "dconvertini",
+      "file": "src/assets/places/hautes-gorges-park/2.jpg",
+      "height": 683,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/42477684@N08/46854232155",
+      "title": "Openverse:03679654-01cf-4236-b1b6-49e89c0638f3",
+      "width": 1024
+    },
+    {
+      "alt": "Parc national des Hautes-Gorges-de-la-Rivière-Malbaie, Canada",
+      "author": "dconvertini",
+      "file": "src/assets/places/hautes-gorges-park/3.jpg",
+      "height": 683,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/42477684@N08/46981450174",
+      "title": "Openverse:06e9b4ab-4bf2-449a-9356-86f6cb1de62f",
+      "width": 1024
+    }
+  ],
+  "havre-du-bic": [
+    {
+      "alt": "268 - Parc national du Bic : Le Tour Cap-à-l'Orignal",
+      "author": "Arfphandal Forfal Forphan",
+      "file": "src/assets/places/havre-du-bic/1.jpg",
+      "height": 768,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/136572437@N06/28997703124",
+      "title": "Openverse:0b421a0d-2aa0-4004-a42b-4e8d571f0b50",
+      "width": 1024
+    },
+    {
+      "alt": "243 - Parc national du Bic : Le Chemin-du-Nord",
+      "author": "Arfphandal Forfal Forphan",
+      "file": "src/assets/places/havre-du-bic/2.jpg",
+      "height": 768,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/136572437@N06/28999503453",
+      "title": "Openverse:10719e99-5866-4168-8b18-d038d74df654",
+      "width": 1024
+    }
+  ],
   "heavenly": [
     {
       "alt": "Powderbowl Express at Heavenly Ski Resort in South Lake Tahoe, CA.",
@@ -1551,27 +1977,27 @@
   ],
   "hidden-valley-pa": [
     {
-      "alt": "Small Pond @ Hidden Valley Ski Resort",
-      "author": "Apuch",
-      "file": "src/assets/places/hidden-valley-pa/1.jpg",
-      "height": 768,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/31397006@N00/50297992621",
-      "title": "Openverse:85069634-f885-49d8-bfb3-9d6b2d79e38b",
-      "width": 1024
-    },
-    {
       "alt": "Hidden Valley Grooming",
       "author": "LValleyGirl26",
-      "file": "src/assets/places/hidden-valley-pa/2.jpg",
+      "file": "src/assets/places/hidden-valley-pa/1.jpg",
       "height": 853,
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hidden_Valley_Grooming.jpg",
       "title": "File:Hidden Valley Grooming.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "From the Hidden Valley (Pennsylvania) Cornbread 2014 Cardboard Sled Race",
+      "author": "David F. Clark, Jr. from St. Louis, MO",
+      "file": "src/assets/places/hidden-valley-pa/2.jpg",
+      "height": 855,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hidden_Valley_PA_sledding_2.jpg",
+      "title": "File:Hidden Valley PA sledding 2.jpg",
       "width": 1280
     }
   ],
@@ -1627,6 +2053,20 @@
       "width": 1024
     }
   ],
+  "horseshoe-bend-kayak": [
+    {
+      "alt": "Horsehoe Bend",
+      "author": "seantoyer",
+      "file": "src/assets/places/horseshoe-bend-kayak/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/16143699@N00/3695632367",
+      "title": "Openverse:7a261ae9-ea9d-4ea0-b03c-ea99b4641497",
+      "width": 1024
+    }
+  ],
   "hunter-mountain": [
     {
       "alt": "Trail to Hunter Ski Resort at Hunter Mountain.",
@@ -1653,6 +2093,21 @@
       "width": 1024
     }
   ],
+  "incline-village-pickleball": [],
+  "indian-arm": [
+    {
+      "alt": "Kayaking Indian Arm",
+      "author": "Harold Cecchetti",
+      "file": "src/assets/places/indian-arm/1.jpg",
+      "height": 765,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/37215449@N02/16789075709",
+      "title": "Openverse:063e430f-454b-4f3a-9316-849e0e5efe17",
+      "width": 1024
+    }
+  ],
   "jack-frost": [
     {
       "alt": "Skiing @ Jack Frost Mountain in the Poconos:",
@@ -1667,7 +2122,32 @@
       "width": 1024
     }
   ],
-  "jacques-cartier-park": [],
+  "jacques-cartier-park": [
+    {
+      "alt": "Parc National de la Jacques-Cartier, Quebec, Canada",
+      "author": "pabsanch",
+      "file": "src/assets/places/jacques-cartier-park/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/58668786@N00/3154613846",
+      "title": "Openverse:a7eaba4d-f493-49c5-b51c-f674697deb13",
+      "width": 1024
+    },
+    {
+      "alt": "Parc national de la Jacques-Cartier",
+      "author": "Michael Tieso",
+      "file": "src/assets/places/jacques-cartier-park/2.jpg",
+      "height": 683,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/135601827@N02/21740309231",
+      "title": "Openverse:d0a2973e-1531-457f-9f69-928bffa5607a",
+      "width": 1024
+    }
+  ],
   "jay-peak": [
     {
       "alt": "Photographer: HanumanIX",
@@ -1703,6 +2183,58 @@
       "nearby": false,
       "sourceUrl": "https://www.flickr.com/photos/163621777@N08/49606666461",
       "title": "Openverse:40759789-b7db-40c9-86c0-67f1824239fd",
+      "width": 1024
+    }
+  ],
+  "johnstone-strait": [
+    {
+      "alt": "Kayaking on the Johnstone Strait",
+      "author": "natalielucier",
+      "file": "src/assets/places/johnstone-strait/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/36121888@N08/4708483436",
+      "title": "Openverse:96a2a4e0-dea0-4c4d-a7c3-65ba2b40eef4",
+      "width": 1024
+    }
+  ],
+  "jumbo-rocks": [
+    {
+      "alt": "Jumbo Rocks Campground",
+      "author": "Joshua Tree National Park",
+      "file": "src/assets/places/jumbo-rocks/1.jpg",
+      "height": 683,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/115357548@N08/12620241274",
+      "title": "Openverse:18b6a55f-d2ab-4abb-8294-bb008f0e1d69",
+      "width": 1024
+    },
+    {
+      "alt": "Jumbo Rocks Campground",
+      "author": "Joshua Tree National Park",
+      "file": "src/assets/places/jumbo-rocks/2.jpg",
+      "height": 683,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/115357548@N08/12620303784",
+      "title": "Openverse:39189d3f-79c0-48fc-962b-7e43d43ead90",
+      "width": 1024
+    },
+    {
+      "alt": "Jumbo Rocks Campground",
+      "author": "Joshua Tree National Park",
+      "file": "src/assets/places/jumbo-rocks/3.jpg",
+      "height": 683,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/115357548@N08/12620255594",
+      "title": "Openverse:5cf69a55-fba0-46f1-bf60-c5be907c5535",
       "width": 1024
     }
   ],
@@ -1924,6 +2456,7 @@
       "width": 1024
     }
   ],
+  "kino-pickleball": [],
   "kirkwood": [
     {
       "alt": "Snowboarder and skier from a ski lift, Kirkwood, California, 2009",
@@ -1938,21 +2471,9 @@
       "width": 1280
     },
     {
-      "alt": "Bear Valley, Kirkwood, Tahoe near season open 2017",
-      "author": "Dicklyon",
-      "file": "src/assets/places/kirkwood/2.jpg",
-      "height": 733,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bear_Valley,_Kirkwood,_Tahoe_near_season_open_2017.jpg",
-      "title": "File:Bear Valley, Kirkwood, Tahoe near season open 2017.jpg",
-      "width": 1280
-    },
-    {
       "alt": "Party snowshoeing in Kirkwood Mountain Resort, facing northeast towards Caples Lake, Alpine County, California.",
       "author": "ilya_ktsn from Sunnyvale, USA",
-      "file": "src/assets/places/kirkwood/3.jpg",
+      "file": "src/assets/places/kirkwood/2.jpg",
       "height": 851,
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -1960,20 +2481,147 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowshoeing_in_Kirkwood,_Alpine_County,_California.jpg",
       "title": "File:Snowshoeing in Kirkwood, Alpine County, California.jpg",
       "width": 1280
+    },
+    {
+      "alt": "Timber Creek Express Lift At Kirkwood",
+      "author": "Gabeguss",
+      "file": "src/assets/places/kirkwood/3.jpg",
+      "height": 925,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:TimberCreekExpressLift_KirkwoodMountainResort_Feb2012.jpg",
+      "title": "File:TimberCreekExpressLift KirkwoodMountainResort Feb2012.jpg",
+      "width": 1280
     }
   ],
-  "kissing-bridge": [],
-  "labrador-mountain": [
+  "la-jolla-sea-caves": [
     {
-      "alt": "Skiing near Burgeo",
-      "author": "Derrick Glenn Mercer",
-      "file": "src/assets/places/labrador-mountain/1.jpg",
-      "height": 784,
+      "alt": "Cliff jumping near the big cave at La Jolla Cove , with La Jolla Shores in the background.",
+      "author": "Jarek Tuszyński",
+      "file": "src/assets/places/la-jolla-sea-caves/1.jpg",
+      "height": 945,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Jolla_Cove_cliff_diving_-_02.jpg",
+      "title": "File:La Jolla Cove cliff diving - 02.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Snowy egret ( Egretta thula ) at the beach in La Jolla , California.",
+      "author": "Jarek Tuszyński",
+      "file": "src/assets/places/la-jolla-sea-caves/2.jpg",
+      "height": 850,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowy_egret_at_La_Jolla_Cave_area_-_02.jpg",
+      "title": "File:Snowy egret at La Jolla Cave area - 02.jpg",
+      "width": 1280
+    }
+  ],
+  "lafayette-place": [
+    {
+      "alt": "I-93 South - Exit for Lafayette Place Campground",
+      "author": "formulanone",
+      "file": "src/assets/places/lafayette-place/1.jpg",
+      "height": 683,
       "license": "CC BY-SA 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/23009796@N00/4397565857",
-      "title": "Openverse:78b23f8d-c411-4388-862d-a43bac62cf83",
+      "sourceUrl": "https://www.flickr.com/photos/30552029@N00/53735783254",
+      "title": "Openverse:2fbf13e6-f73f-4b93-b11d-ce31c8e72132",
+      "width": 1024
+    }
+  ],
+  "lake-mcdonald": [
+    {
+      "alt": "Lake McDonald Lodge Shore",
+      "author": "GlacierNPS",
+      "file": "src/assets/places/lake-mcdonald/1.jpg",
+      "height": 683,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/43288043@N04/21097230875",
+      "title": "Openverse:723b8900-469b-4a6f-a6e9-01f4434de1e9",
+      "width": 1024
+    },
+    {
+      "alt": "Ryan Beach-Meadow, Lake McDonald - 3 [Near the West Entrance to the park.]",
+      "author": "GlacierNPS",
+      "file": "src/assets/places/lake-mcdonald/2.jpg",
+      "height": 683,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/43288043@N04/7536253704",
+      "title": "Openverse:c2ca6345-d80d-47d2-ab7e-3f2a86a87d46",
+      "width": 1024
+    },
+    {
+      "alt": "The view of Lake McDonald from Apgar",
+      "author": "GlacierNPS",
+      "file": "src/assets/places/lake-mcdonald/3.jpg",
+      "height": 681,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/43288043@N04/12092155856",
+      "title": "Openverse:ce745aa4-7422-457a-a87b-b61222db7180",
+      "width": 1024
+    }
+  ],
+  "lake-powell-lone-rock": [
+    {
+      "alt": "Lone Rock Beach, Lake Powell, Page",
+      "author": "travelourplanet.com",
+      "file": "src/assets/places/lake-powell-lone-rock/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/63503049@N03/21009053198",
+      "title": "Openverse:31d1c3f7-56ae-48cd-bab2-4796e471df26",
+      "width": 1024
+    },
+    {
+      "alt": "Lone Rock Beach, Lake Powell, Page",
+      "author": "travelourplanet.com",
+      "file": "src/assets/places/lake-powell-lone-rock/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/63503049@N03/21205189191",
+      "title": "Openverse:55e82d31-85dc-4e04-bf94-f1b9b3a49036",
+      "width": 1024
+    },
+    {
+      "alt": "Lone Rock Beach, Lake Powell, Page",
+      "author": "travelourplanet.com",
+      "file": "src/assets/places/lake-powell-lone-rock/3.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/63503049@N03/21170583176",
+      "title": "Openverse:6b3e569b-b193-4db7-a820-89ed616f286b",
+      "width": 1024
+    }
+  ],
+  "lake-umbagog": [
+    {
+      "alt": "2. Celebrating 50 years of the Land and Water Conservation Fund: Umbagog National Wildlife Refuge, NH and ME",
+      "author": "U. S. Fish and Wildlife Service - Northeast Region",
+      "file": "src/assets/places/lake-umbagog/1.jpg",
+      "height": 636,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/43322816@N08/15031466921",
+      "title": "Openverse:a9c1a3d8-d999-4d95-a8f6-a08b7cf50ba0",
       "width": 1024
     }
   ],
@@ -1991,7 +2639,70 @@
       "width": 1280
     }
   ],
-  "le-massif": [],
+  "lehigh-gorge": [
+    {
+      "alt": "Lehigh_River_Gorge",
+      "author": "Michael M Stokes",
+      "file": "src/assets/places/lehigh-gorge/1.jpg",
+      "height": 681,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/138425397@N05/50001323361",
+      "title": "Openverse:c40f6a03-c556-43e7-b4db-61fafe949c1b",
+      "width": 1024
+    },
+    {
+      "alt": "Lehigh River near the Turn Hole Tunnel",
+      "author": "chris.rycroft",
+      "file": "src/assets/places/lehigh-gorge/2.jpg",
+      "height": 635,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/193316968@N06/54444337989",
+      "title": "Openverse:1c13f1e2-7470-4ae3-9a8f-92a0b7bd5123",
+      "width": 1024
+    }
+  ],
+  "letchworth": [
+    {
+      "alt": "Letchworth upper falls",
+      "author": "RLHyde",
+      "file": "src/assets/places/letchworth/1.jpg",
+      "height": 576,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/36655009@N05/5910217884",
+      "title": "Openverse:2041e30b-66c3-4536-85f8-e95e0e6d530f",
+      "width": 1024
+    },
+    {
+      "alt": "Letchworth middle falls",
+      "author": "RLHyde",
+      "file": "src/assets/places/letchworth/2.jpg",
+      "height": 576,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/36655009@N05/5910218260",
+      "title": "Openverse:abeb3f1a-c8f7-4fb7-9bd4-940311be7aef",
+      "width": 1024
+    },
+    {
+      "alt": "Night burns.",
+      "author": "Ryan Hallock",
+      "file": "src/assets/places/letchworth/3.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/72791630@N00/43295920154",
+      "title": "Openverse:ff3e0616-f616-4d68-b69b-7302f34f7e60",
+      "width": 1024
+    }
+  ],
   "liberty-mountain": [
     {
       "alt": "Boulder Ridge Snow Tubing at Liberty Mountain Resort",
@@ -2016,6 +2727,20 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:LibertyMountainResort_skiing.jpg",
       "title": "File:LibertyMountainResort skiing.jpg",
       "width": 1280
+    }
+  ],
+  "little-river": [
+    {
+      "alt": "Little River State Park.",
+      "author": "dopaminergic",
+      "file": "src/assets/places/little-river/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/92514058@N00/14348687531",
+      "title": "Openverse:646719a6-b558-48cc-8e0f-5576bd00e3b3",
+      "width": 1024
     }
   ],
   "little-valley-pickleball": [],
@@ -2045,15 +2770,41 @@
       "width": 1280
     },
     {
-      "alt": "Peninsula and Jet Ski",
-      "author": "Eric Kilby",
+      "alt": "View from Loon Mountain's north peak.",
+      "author": "Own work",
       "file": "src/assets/places/loon/3.jpg",
-      "height": 682,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/8749778@N06/37338466595",
-      "title": "Openverse:da366a2e-28cc-4eff-aa0c-c25c755290a6",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Loonmtn_northpeak.JPG",
+      "title": "File:Loonmtn northpeak.JPG",
+      "width": 1280
+    }
+  ],
+  "lost-dutchman": [
+    {
+      "alt": "Lost Dutchman State Park",
+      "author": "midiman",
+      "file": "src/assets/places/lost-dutchman/1.jpg",
+      "height": 685,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/41611970@N00/4457870904",
+      "title": "Openverse:033bd8f9-484b-4dbf-9095-b640b7d6c710",
+      "width": 1024
+    },
+    {
+      "alt": "At the Lost Dutchman State Park in Arizona",
+      "author": "terryballard",
+      "file": "src/assets/places/lost-dutchman/2.jpg",
+      "height": 576,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/50631360@N00/10387034913",
+      "title": "Openverse:0b7d8a24-f00b-4bf9-8e4d-12380eb219da",
       "width": 1024
     }
   ],
@@ -2111,32 +2862,6 @@
       "width": 1024
     }
   ],
-  "magic-mountain": [
-    {
-      "alt": "Magical skies on Christmas Eve - geograph.org.uk - 7948197",
-      "author": "Linda Billinger",
-      "file": "src/assets/places/magic-mountain/1.jpg",
-      "height": 640,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=170608547",
-      "title": "Openverse:fbaf0c5e-8e82-4f4f-94e5-11d670b10692",
-      "width": 960
-    },
-    {
-      "alt": "Magical skies (3275812817)",
-      "author": "dying_grotesque from Richards Bay, South Africa",
-      "file": "src/assets/places/magic-mountain/2.jpg",
-      "height": 721,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=22966226",
-      "title": "Openverse:eaf563c8-f852-414c-9f63-f493689a3465",
-      "width": 960
-    }
-  ],
   "mammoth": [
     {
       "alt": "Tamarack Lodge & Resort at Twin Lakes at Mammoth Mountain in Mammoth Lakes .",
@@ -2175,10 +2900,201 @@
       "width": 1280
     }
   ],
-  "manning-park": [],
-  "mccauley-mountain": [],
+  "mammoth-lakes-pickleball": [],
+  "manning-park": [
+    {
+      "alt": "British Columbia-E.C Manning Provincial Park-Cascade Lookout-IMG_20170817_114235_HDR",
+      "author": "mmmmngai@rogers.com",
+      "file": "src/assets/places/manning-park/1.jpg",
+      "height": 576,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/12720221@N08/36484865520",
+      "title": "Openverse:1f25b91c-010f-400a-8cc9-4af6620483d6",
+      "width": 1024
+    },
+    {
+      "alt": "British Columbia-E.C Manning Provincial Park-Cascade Lookout-P1260122",
+      "author": "mmmmngai@rogers.com",
+      "file": "src/assets/places/manning-park/2.jpg",
+      "height": 684,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/12720221@N08/36881242245",
+      "title": "Openverse:b1626b57-646e-45cd-aa41-f4bad18646e5",
+      "width": 1024
+    },
+    {
+      "alt": "British Columbia-E.C Manning Provincial Park-Cascade Lookout-P1040825",
+      "author": "mmmmngai@rogers.com",
+      "file": "src/assets/places/manning-park/3.jpg",
+      "height": 683,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/12720221@N08/36072708803",
+      "title": "Openverse:b9c70e94-8917-43ac-81a4-6e350c478893",
+      "width": 1024
+    }
+  ],
+  "maroon-bells-campgrounds": [
+    {
+      "alt": "Maroon Lake",
+      "author": "snowpeak",
+      "file": "src/assets/places/maroon-bells-campgrounds/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/53986933@N00/8029560398",
+      "title": "Openverse:92eeb66e-9f27-4f59-902e-2a508dea4bde",
+      "width": 1024
+    }
+  ],
+  "mather-campground": [
+    {
+      "alt": "Winter Camping in Mather Campground, Grand Canyon National Park 0151",
+      "author": "Grand Canyon NPS",
+      "file": "src/assets/places/mather-campground/1.jpg",
+      "height": 680,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/50693818@N08/30358941184",
+      "title": "Openverse:1e65f383-e7e7-4433-b147-1f2e4bc111a7",
+      "width": 1024
+    },
+    {
+      "alt": "Winter Camping in Mather Campground, Grand Canyon National Park 0101",
+      "author": "Grand Canyon NPS",
+      "file": "src/assets/places/mather-campground/2.jpg",
+      "height": 680,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/50693818@N08/31144468266",
+      "title": "Openverse:2eef11ed-d11e-42cc-a856-715adbac25e7",
+      "width": 1024
+    },
+    {
+      "alt": "Winter Camping in Mather Campground, Grand Canyon National Park 0103",
+      "author": "Grand Canyon NPS",
+      "file": "src/assets/places/mather-campground/3.jpg",
+      "height": 680,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/50693818@N08/31180232545",
+      "title": "Openverse:bccd517f-be99-4ac4-b979-1d37c4b46e20",
+      "width": 1024
+    }
+  ],
   "middlebury-snow-bowl": [],
   "mile-hi-pickleball": [],
+  "missouri-breaks": [
+    {
+      "alt": "Upper Missouri Wild and Scenic River",
+      "author": "mypubliclands",
+      "file": "src/assets/places/missouri-breaks/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/91981596@N06/35818133424",
+      "title": "Openverse:08be9fc0-c28d-404f-ac81-d5e22d58648f",
+      "width": 1024
+    },
+    {
+      "alt": "Upper Missouri Wild and Scenic River",
+      "author": "mypubliclands",
+      "file": "src/assets/places/missouri-breaks/2.jpg",
+      "height": 692,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/91981596@N06/35818131844",
+      "title": "Openverse:1595d5b7-7237-4cd8-8e07-a1e4f70b3c17",
+      "width": 1024
+    },
+    {
+      "alt": "Upper Missouri Wild and Scenic River, Montana",
+      "author": "mypubliclands",
+      "file": "src/assets/places/missouri-breaks/3.jpg",
+      "height": 682,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/91981596@N06/35817451854",
+      "title": "Openverse:1e430691-f37c-4629-a9c9-e65346e03c2c",
+      "width": 1024
+    }
+  ],
+  "moab-daily": [
+    {
+      "alt": "Rocky Rapid, Colorado River, Near Moab, Utah",
+      "author": "Ken Lund",
+      "file": "src/assets/places/moab-daily/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/9099802511",
+      "title": "Openverse:01097ad3-543c-4776-903c-eb6c593d6fa8",
+      "width": 1024
+    },
+    {
+      "alt": "Rocky Rapid, Colorado River, Near Moab, Utah",
+      "author": "Ken Lund",
+      "file": "src/assets/places/moab-daily/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/9099799003",
+      "title": "Openverse:20bc065f-96b3-4256-8f80-a22be1c53940",
+      "width": 1024
+    }
+  ],
+  "moab-trails": [
+    {
+      "alt": "This Way to Slickrock Bike Trail, Moab, Utah",
+      "author": "Ken Lund",
+      "file": "src/assets/places/moab-trails/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/9101993996",
+      "title": "Openverse:7b12ae3b-d50d-4a55-815c-60e143694442",
+      "width": 1024
+    },
+    {
+      "alt": "Slickrock Bike Trail, Moab, Utah, USA",
+      "author": "TRAILSOURCE.COM",
+      "file": "src/assets/places/moab-trails/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/69742158@N00/6449555513",
+      "title": "Openverse:af3194a6-019b-4277-af17-3f1c8c9bc315",
+      "width": 1024
+    },
+    {
+      "alt": "Sand Flats Recreation Area, Moab, Utah, Home of Utah's Slickrock Trail",
+      "author": "Ken Lund",
+      "file": "src/assets/places/moab-trails/3.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/6845708926",
+      "title": "Openverse:3907d5a5-fd2a-427a-9419-aedc08af7d93",
+      "width": 1024
+    }
+  ],
   "monarch-mountain": [
     {
       "alt": "Airmen ride snowmobiles at Monarch mountain (5938574)",
@@ -2205,22 +3121,32 @@
       "width": 1280
     }
   ],
-  "mont-blanc": [
+  "mono-lake": [
     {
-      "alt": "1000meters To Mt Blanc Tunnel and Onto Ravenna Italy With Chamonix-Mont-Blanc Ski Resort in the Back Ground .",
-      "author": "Rab .",
-      "file": "src/assets/places/mont-blanc/1.jpg",
-      "height": 683,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "alt": "Eastern Sierra Nevada June 2017",
+      "author": "lovz2hike",
+      "file": "src/assets/places/mono-lake/1.jpg",
+      "height": 576,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/58739232@N07/46787744335",
-      "title": "Openverse:b0a3b4c2-4092-413e-9862-b9afd6ac66c4",
+      "sourceUrl": "https://www.flickr.com/photos/143392630@N04/35532772196",
+      "title": "Openverse:1c1dd28b-22be-4468-84d7-378032dcfe89",
+      "width": 1024
+    },
+    {
+      "alt": "Eastern Sierra Nevada June 2017",
+      "author": "lovz2hike",
+      "file": "src/assets/places/mono-lake/2.jpg",
+      "height": 576,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/143392630@N04/34730461874",
+      "title": "Openverse:299f1f31-70be-4a7f-bae3-798c1ad5fe46",
       "width": 1024
     }
   ],
-  "mont-orford": [],
-  "mont-orford-park": [],
   "mont-sainte-anne": [
     {
       "alt": "QMT 2018",
@@ -2285,7 +3211,45 @@
       "width": 1280
     }
   ],
-  "mont-tremblant-park": [],
+  "mont-tremblant-park": [
+    {
+      "alt": "Bokeh Rainbow Falls",
+      "author": "Bold Frontiers",
+      "file": "src/assets/places/mont-tremblant-park/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/82955120@N05/15952744992",
+      "title": "Openverse:0ba0a3d7-7aba-49f8-9161-30879100ad5b",
+      "width": 1024
+    },
+    {
+      "alt": "Chutes du Diable Waterfall",
+      "author": "Bold Frontiers",
+      "file": "src/assets/places/mont-tremblant-park/2.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/82955120@N05/15953332725",
+      "title": "Openverse:aafe8c59-4376-424c-93e2-57900651c4f7",
+      "width": 1024
+    },
+    {
+      "alt": "Lac au parc du Mt Tremblant",
+      "author": "Guillaume Cattiaux",
+      "file": "src/assets/places/mont-tremblant-park/3.jpg",
+      "height": 718,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/20879422@N05/15539630336",
+      "title": "Openverse:903f6145-2531-42b6-acf4-050b5981ee20",
+      "width": 1024
+    }
+  ],
+  "mont-tremblant-pickleball": [],
   "montage-mountain": [
     {
       "alt": "View of lodge and Montage ski mountain",
@@ -2300,29 +3264,17 @@
       "width": 1280
     }
   ],
-  "montana-snowbowl": [
+  "moraine-park": [
     {
-      "alt": "Snowbowl Ski Area - Lolo NF 2020 Annual Report ()",
-      "author": "Forest Service - Northern Region",
-      "file": "src/assets/places/montana-snowbowl/1.jpg",
-      "height": 941,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "alt": "camp",
+      "author": "Christian Collins",
+      "file": "src/assets/places/moraine-park/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowbowl_Ski_Area_-_Lolo_NF_2020_Annual_Report_(50825423716).jpg",
-      "title": "File:Snowbowl Ski Area - Lolo NF 2020 Annual Report (50825423716).jpg",
-      "width": 1280
-    },
-    {
-      "alt": "2010. Balsam woolly adelgid damage. High elevation five-needle pines (High Five) symposium field trip. Montana Snowbowl ski area, Missoula, Montana.",
-      "author": "USDA Forest Service",
-      "file": "src/assets/places/montana-snowbowl/2.jpg",
-      "height": 680,
-      "license": "Public domain",
-      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/151887236@N05/42995961330",
-      "title": "Openverse:3eb571fd-2311-4783-82dc-057facff31e5",
+      "sourceUrl": "https://www.flickr.com/photos/17094005@N00/37529463572",
+      "title": "Openverse:7ac30923-4432-48d4-99e5-5993cb014527",
       "width": 1024
     }
   ],
@@ -2388,43 +3340,42 @@
       "width": 1600
     }
   ],
-  "mount-robson": [],
-  "mount-snow": [
+  "mount-robson": [
     {
-      "alt": "From a trail at Mount Snow, Vermont.",
-      "author": "Vermont",
-      "file": "src/assets/places/mount-snow/1.jpg",
-      "height": 960,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Entrance to Mount Robson Provincial Park - Rocky Mountains - BC - Canada - 02",
+      "author": "Adam Jones, Ph.D. - Global Photo Archive",
+      "file": "src/assets/places/mount-robson/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winter_on_a_trail_at_Mount_Snow,_Vermont.jpg",
-      "title": "File:Winter on a trail at Mount Snow, Vermont.jpg",
-      "width": 1280
+      "sourceUrl": "https://www.flickr.com/photos/41000732@N04/52093750012",
+      "title": "Openverse:1438237d-b876-4d3f-8a1a-0431117ab2c0",
+      "width": 1024
     },
     {
-      "alt": "Mount Snow Winter",
-      "author": "Mount Snow",
-      "file": "src/assets/places/mount-snow/2.jpg",
-      "height": 831,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Entrance to Mount Robson Provincial Park - Rocky Mountains - BC - Canada - 01",
+      "author": "Adam Jones, Ph.D. - Global Photo Archive",
+      "file": "src/assets/places/mount-robson/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MountSnowWinter.jpg",
-      "title": "File:MountSnowWinter.jpg",
-      "width": 1280
+      "sourceUrl": "https://www.flickr.com/photos/41000732@N04/52094775431",
+      "title": "Openverse:1cc27d28-631c-4d2b-b5f7-6c23ac1fee2d",
+      "width": 1024
     },
     {
-      "alt": "I ask liz to marry me at the top of the mountain at Mount Snow",
-      "author": "William J Sisti from Morristown, NJ, USA",
-      "file": "src/assets/places/mount-snow/3.jpg",
-      "height": 720,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "alt": "20240130 13 Mount Robson Provincial Park, BC",
+      "author": "davidwilson1949",
+      "file": "src/assets/places/mount-robson/3.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Popping_the_question_%40MountSnow_(video)_(4412081158).jpg",
-      "title": "File:Popping the question @MountSnow (video) (4412081158).jpg",
-      "width": 1280
+      "sourceUrl": "https://www.flickr.com/photos/32693718@N07/53834428082",
+      "title": "Openverse:ac2782f7-b5ae-45ec-a866-21fbea966e55",
+      "width": 1024
     }
   ],
   "mount-sunapee": [
@@ -2451,32 +3402,6 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:MtSunapeeataDistance.jpg",
       "title": "File:MtSunapeeataDistance.jpg",
       "width": 1280
-    }
-  ],
-  "mount-washington-bc": [
-    {
-      "alt": "Mount Washington Skiing (5556047971)",
-      "author": "Doug Hay",
-      "file": "src/assets/places/mount-washington-bc/1.jpg",
-      "height": 720,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=179698439",
-      "title": "Openverse:fdbe3551-7a03-4c4d-9273-ade95e921f24",
-      "width": 960
-    },
-    {
-      "alt": "Mount Washington Skiing",
-      "author": "Doug Hay",
-      "file": "src/assets/places/mount-washington-bc/2.jpg",
-      "height": 768,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/7671700@N08/5556047971",
-      "title": "Openverse:35434970-e042-4829-935d-04794521b019",
-      "width": 1024
     }
   ],
   "mountain-high": [
@@ -2662,8 +3587,32 @@
       "width": 1280
     }
   ],
-  "oak-mountain": [],
-  "oka-park": [],
+  "northstar-bike-park": [
+    {
+      "alt": "Cristy092808 082",
+      "author": "dhReno",
+      "file": "src/assets/places/northstar-bike-park/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/62132340@N00/2899913866",
+      "title": "Openverse:64662915-0226-42e9-b986-e235781dc7bc",
+      "width": 1024
+    },
+    {
+      "alt": "Cristy092808 083",
+      "author": "dhReno",
+      "file": "src/assets/places/northstar-bike-park/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/62132340@N00/2899072231",
+      "title": "Openverse:71d7f808-cac9-4719-926d-18ad9f0db605",
+      "width": 1024
+    }
+  ],
   "okemo": [
     {
       "alt": "Okemo, peak",
@@ -2702,7 +3651,47 @@
       "width": 1280
     }
   ],
-  "owls-head": [],
+  "old-erie-canal": [
+    {
+      "alt": "Old Erie Canal State Historic Park - DeWitt, New York",
+      "author": "Dougtone",
+      "file": "src/assets/places/old-erie-canal/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/7327243@N05/6670824371",
+      "title": "Openverse:0a2ff11a-1f1a-4225-925c-47cedeca92d7",
+      "width": 1024
+    }
+  ],
+  "owls-head": [
+    {
+      "alt": "View of fall colours from Owl's Head ski hill near Mansonville, Eastern Townships, Quebec, October 2009",
+      "author": "Kevstan",
+      "file": "src/assets/places/owls-head/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chairlift_at_Owls_head_Quebec.JPG",
+      "title": "File:Chairlift at Owls head Quebec.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "View of fall colours from Owl's Head ski hill near Mansonville, Eastern Townships, Quebec, October 2009",
+      "author": "Kevstan",
+      "file": "src/assets/places/owls-head/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fall_Colours_-_View_from_Owl's_Head.JPG",
+      "title": "File:Fall Colours - View from Owl's Head.JPG",
+      "width": 1280
+    }
+  ],
+  "owls-nest-resort": [],
   "palisades-tahoe": [
     {
       "alt": "Gondel zum Winter Olympics High Camp von 1960 im Palisades Tahoe Ferienort in Kalifornien.",
@@ -2779,44 +3768,6 @@
       "width": 1024
     }
   ],
-  "park-city": [
-    {
-      "alt": "Blowing Snow at Park City Ski Resort",
-      "author": "vxla",
-      "file": "src/assets/places/park-city/1.jpg",
-      "height": 768,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/14812197@N00/5415396018",
-      "title": "Openverse:da112e85-549b-4ded-bbea-f8c1cc9d9d04",
-      "width": 1024
-    },
-    {
-      "alt": "Three Kings Lift at base of Park City Ski area",
-      "author": "akasped",
-      "file": "src/assets/places/park-city/2.jpg",
-      "height": 768,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/26736723@N00/3963762555",
-      "title": "Openverse:73a47789-9795-4531-8b63-6110e8eb5aba",
-      "width": 1024
-    },
-    {
-      "alt": "Up at 10,000 feet in Park City ski area",
-      "author": "akasped",
-      "file": "src/assets/places/park-city/3.jpg",
-      "height": 768,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/26736723@N00/3963729071",
-      "title": "Openverse:09e4bcec-5a28-4e35-afbe-0586c01bce36",
-      "width": 1024
-    }
-  ],
   "parkinson-pickleball-courts": [
     {
       "alt": "Knox Mountain Park",
@@ -2871,8 +3822,10 @@
   ],
   "pc-marc-pickleball": [],
   "peek-n-peak": [],
-  "picklr-bozeman": [],
-  "picklr-salt-lake-city": [],
+  "penticton-pickleball": [],
+  "pickle-alley-la": [],
+  "pickleball-kingdom-chandler": [],
+  "pickleball-warehouse": [],
   "pico": [
     {
       "alt": "View from the top of Killington Peak looking straight at Pico Peak",
@@ -2885,6 +3838,58 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Killington_Peak_looking_at_Pico_Peak.jpg",
       "title": "File:View from Killington Peak looking at Pico Peak.jpg",
       "width": 1280
+    }
+  ],
+  "pine-creek-rail-trail": [
+    {
+      "alt": "Pine Creek rail trail traveling north.",
+      "author": "fishhawk",
+      "file": "src/assets/places/pine-creek-rail-trail/1.jpg",
+      "height": 576,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/16502322@N03/4037863531",
+      "title": "Openverse:0a9e9754-a42a-4f9f-8f05-b30bfb443f8d",
+      "width": 1024
+    },
+    {
+      "alt": "The Pine Creek rail trail for bicycles",
+      "author": "fishhawk",
+      "file": "src/assets/places/pine-creek-rail-trail/2.jpg",
+      "height": 576,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/16502322@N03/4038662392",
+      "title": "Openverse:0b97448f-f680-4259-9c4d-1844fb26c340",
+      "width": 1024
+    },
+    {
+      "alt": "Pine Creek Rail Trail",
+      "author": "fishhawk",
+      "file": "src/assets/places/pine-creek-rail-trail/3.jpg",
+      "height": 576,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/16502322@N03/3895183692",
+      "title": "Openverse:1d61cac6-1d48-435f-ac18-fbbaf5d71432",
+      "width": 1024
+    }
+  ],
+  "pinon-flats": [
+    {
+      "alt": "Mule Deer in Piñon Flats Campground",
+      "author": "Great Sand Dunes National Park and Preserve",
+      "file": "src/assets/places/pinon-flats/1.jpg",
+      "height": 768,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/94707653@N06/34761807615",
+      "title": "Openverse:d5a1b30b-26ec-403f-aad6-d8dfe33e5853",
+      "width": 1024
     }
   ],
   "plattekill": [
@@ -2901,7 +3906,33 @@
       "width": 1024
     }
   ],
-  "porteau-cove": [],
+  "porteau-cove": [
+    {
+      "alt": "Porteau Cove Provincial Park *",
+      "author": "Kyla Duhamel",
+      "file": "src/assets/places/porteau-cove/1.jpg",
+      "height": 732,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/31119510@N06/5923069787",
+      "title": "Openverse:343e8d56-c7f8-4009-bf4b-51f654da6e43",
+      "width": 1024
+    },
+    {
+      "alt": "Porteau Cove Provincial Park",
+      "author": "Kyla Duhamel",
+      "file": "src/assets/places/porteau-cove/2.jpg",
+      "height": 732,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/31119510@N06/5923637136",
+      "title": "Openverse:3dac004e-bba0-4924-a05c-cae3092a233b",
+      "width": 1024
+    }
+  ],
+  "posse-grounds-pickleball": [],
   "powder-mountain": [
     {
       "alt": "View of Paradise quad chair at Powder Mountain ski resort",
@@ -2938,32 +3969,6 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Powder_Mountain_Hidden_Lake_Lodge.JPG",
       "title": "File:Powder Mountain Hidden Lake Lodge.JPG",
       "width": 1280
-    }
-  ],
-  "powderhorn": [
-    {
-      "alt": "BLM Winter Bucket List #17: Powderhorn Wilderness, Colorado, for Cross-Country Skiing across Alpine Tundra",
-      "author": "mypubliclands",
-      "file": "src/assets/places/powderhorn/1.jpg",
-      "height": 683,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/91981596@N06/15637189204",
-      "title": "Openverse:0d9cc496-9f0b-4fff-a1c9-73f5b7b686b1",
-      "width": 1024
-    },
-    {
-      "alt": "BLM Winter Bucket List #17: Powderhorn Wilderness, Colorado, for Cross-Country Skiing across Alpine Tundra",
-      "author": "mypubliclands",
-      "file": "src/assets/places/powderhorn/2.jpg",
-      "height": 722,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/91981596@N06/16072232450",
-      "title": "Openverse:79d057d5-2185-4b13-94b4-e0e72ce59518",
-      "width": 1024
     }
   ],
   "purgatory": [
@@ -3018,32 +4023,6 @@
       "width": 960
     }
   ],
-  "red-lodge-mountain": [
-    {
-      "alt": "Burn Scars in Montana (MODIS 2021-06-20)",
-      "author": "MODIS Land Rapid Response Team, NASA GSFC",
-      "file": "src/assets/places/red-lodge-mountain/1.jpg",
-      "height": 1020,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Burn_Scars_in_Montana_(MODIS_2021-06-20).jpg",
-      "title": "File:Burn Scars in Montana (MODIS 2021-06-20).jpg",
-      "width": 1280
-    },
-    {
-      "alt": "w:Red Lodge Mountain Resort , looking at the Palisades area on the north end of the ski area.",
-      "author": "Elkman",
-      "file": "src/assets/places/red-lodge-mountain/2.jpg",
-      "height": 960,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Lodge_Palisades.jpg",
-      "title": "File:Red Lodge Palisades.jpg",
-      "width": 1280
-    }
-  ],
   "red-mountain": [
     {
       "alt": "View from Red Mountain Ski Resort",
@@ -3082,41 +4061,17 @@
       "width": 1280
     }
   ],
-  "revelstoke": [
+  "ricketts-glen": [
     {
-      "alt": "Kokanee Bowl Cat Skiing Area",
-      "author": "keepitsurreal",
-      "file": "src/assets/places/revelstoke/1.jpg",
+      "alt": "Ricketts Glen Big Loop Campsite #52",
+      "author": "daveynin",
+      "file": "src/assets/places/ricketts-glen/1.jpg",
       "height": 768,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/14558526@N03/4364532860",
-      "title": "Openverse:479acd4e-2bfd-4b60-8283-cdad6c1588d8",
-      "width": 1024
-    },
-    {
-      "alt": "Snowy Mountains",
-      "author": "keepitsurreal",
-      "file": "src/assets/places/revelstoke/2.jpg",
-      "height": 768,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/14558526@N03/4364528360",
-      "title": "Openverse:496187a2-d4b3-42c0-8727-83881e91adf4",
-      "width": 1024
-    },
-    {
-      "alt": "revelstoke 031",
-      "author": "keepitsurreal",
-      "file": "src/assets/places/revelstoke/3.jpg",
-      "height": 768,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/14558526@N03/4364494906",
-      "title": "Openverse:3827e2d3-12a4-4163-aa5f-71987da57748",
+      "sourceUrl": "https://www.flickr.com/photos/44124370018@N01/52269057361",
+      "title": "Openverse:b29c53ff-4973-4ee1-a9fe-7925e74d8cde",
       "width": 1024
     }
   ],
@@ -3182,6 +4137,20 @@
       "width": 1600
     }
   ],
+  "rossland-trails": [
+    {
+      "alt": "Mountain Biking in Rossland, BC",
+      "author": "keepitsurreal",
+      "file": "src/assets/places/rossland-trails/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/14558526@N03/15366846570",
+      "title": "Openverse:b50d9bcc-e3a5-46f7-91a5-0d9c20f22f6b",
+      "width": 1024
+    }
+  ],
   "roundtop": [
     {
       "alt": "2008 03 02 - Ski Roundtop 1",
@@ -3194,6 +4163,72 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_03_02_-_Ski_Roundtop_1.JPG",
       "title": "File:2008 03 02 - Ski Roundtop 1.JPG",
       "width": 1280
+    }
+  ],
+  "saguaro-lake": [
+    {
+      "alt": "Kayaking on Saguaro Lake",
+      "author": "Atomic Taco",
+      "file": "src/assets/places/saguaro-lake/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/25443792@N05/40939442603",
+      "title": "Openverse:b76b2bd8-ca3f-4a50-92d6-61462ec5fbaa",
+      "width": 1024
+    }
+  ],
+  "saguenay-fjord": [
+    {
+      "alt": "saguenay fjord",
+      "author": "ken ratcliff",
+      "file": "src/assets/places/saguenay-fjord/1.jpg",
+      "height": 427,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/95212304@N00/37701434704",
+      "title": "Openverse:1d1eefa4-fe95-4a84-a6f6-b331dd3c825f",
+      "width": 1024
+    },
+    {
+      "alt": "Saguenay Fjord",
+      "author": "ken ratcliff",
+      "file": "src/assets/places/saguenay-fjord/2.jpg",
+      "height": 456,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/95212304@N00/37701435384",
+      "title": "Openverse:ebcdb48c-36bb-4eaa-8e4b-4232c62a0d97",
+      "width": 1024
+    }
+  ],
+  "salida-trails": [
+    {
+      "alt": "Salida Trails in Colorado",
+      "author": "mypubliclands",
+      "file": "src/assets/places/salida-trails/1.jpg",
+      "height": 731,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/91981596@N06/20271386844",
+      "title": "Openverse:a05e71e6-b3e7-4e0b-8455-191d62e9d513",
+      "width": 1024
+    },
+    {
+      "alt": "Salida Mountain Trails in Colorado",
+      "author": "mypubliclands",
+      "file": "src/assets/places/salida-trails/2.jpg",
+      "height": 731,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/91981596@N06/20753132289",
+      "title": "Openverse:bdd67f06-9dc5-451b-b0ed-525f08517735",
+      "width": 1024
     }
   ],
   "sampson": [
@@ -3258,7 +4293,44 @@
       "width": 1600
     }
   ],
-  "sand-harbor": [],
+  "sand-harbor": [
+    {
+      "alt": "Kayaks in Sand Harbor, Lake Tahoe 9-10",
+      "author": "inkknife_2000 (11.5 million views)",
+      "file": "src/assets/places/sand-harbor/1.jpg",
+      "height": 696,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/23155134@N06/14659751550",
+      "title": "Openverse:d7dbdd8a-6893-4cc4-b5d4-cea00a7afefc",
+      "width": 1024
+    },
+    {
+      "alt": "Lake Tahoe, NV, Sand Harbor (2) 9-2010",
+      "author": "inkknife_2000 (11 million views)",
+      "file": "src/assets/places/sand-harbor/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/23155134@N06/5759049867",
+      "title": "Openverse:05f4489a-cf99-4ce8-a2ad-d44108769eab",
+      "width": 1024
+    },
+    {
+      "alt": "Sand Harbor, Lake Tahoe 9-10",
+      "author": "inkknife_2000 (11.5 million views)",
+      "file": "src/assets/places/sand-harbor/3.jpg",
+      "height": 597,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/23155134@N06/14574825236",
+      "title": "Openverse:162b53b9-e576-4777-b601-bfb5c1c69f0f",
+      "width": 1024
+    }
+  ],
   "saskadena-six": [
     {
       "alt": "Inside the base lodge at Saskadena Six (formerly Suicide Six)",
@@ -3271,6 +4343,44 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suicide_Six_ski_resort_base_lodge_interior.jpg",
       "title": "File:Suicide Six ski resort base lodge interior.jpg",
       "width": 1280
+    }
+  ],
+  "sedona-trails": [
+    {
+      "alt": "Munds Mountain Trail",
+      "author": "Coconino NF Photography",
+      "file": "src/assets/places/sedona-trails/1.jpg",
+      "height": 683,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/42034606@N05/38822498332",
+      "title": "Openverse:09a01973-fb82-45cc-98c1-6c9ba79443c3",
+      "width": 1024
+    },
+    {
+      "alt": "Munds Mountain Trail",
+      "author": "Coconino NF Photography",
+      "file": "src/assets/places/sedona-trails/2.jpg",
+      "height": 683,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/42034606@N05/27076955039",
+      "title": "Openverse:169d6a0f-b53d-444d-a365-0aaf2dc94204",
+      "width": 1024
+    },
+    {
+      "alt": "Munds Mountain Trail",
+      "author": "Coconino NF Photography",
+      "file": "src/assets/places/sedona-trails/3.jpg",
+      "height": 683,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/42034606@N05/23988411527",
+      "title": "Openverse:538bfc00-5fe6-4bc9-b0c1-bf051fed7186",
+      "width": 1024
     }
   ],
   "selkirk-shores": [
@@ -3333,44 +4443,6 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Selkirk_Light_(37601775685).jpg",
       "title": "File:Selkirk Light (37601775685).jpg",
       "width": 1600
-    }
-  ],
-  "seven-springs": [
-    {
-      "alt": "Night skiing at Seven Springs Mountain Resort",
-      "author": "The93owner ( talk )",
-      "file": "src/assets/places/seven-springs/1.jpg",
-      "height": 960,
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SevenSpringsNight.JPG",
-      "title": "File:SevenSpringsNight.JPG",
-      "width": 1280
-    },
-    {
-      "alt": "Seven Springs Winter 1",
-      "author": "LValleyGirl26",
-      "file": "src/assets/places/seven-springs/2.jpg",
-      "height": 960,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seven_Springs_Winter_1.jpg",
-      "title": "File:Seven Springs Winter 1.jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Seven Springs Mountain Resort viewed from the summit at dusk before the 4th of July fireworks.",
-      "author": "Baron Maddock",
-      "file": "src/assets/places/seven-springs/3.jpg",
-      "height": 606,
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seven_Springs_Resort_on_4th_of_July_at_dusk_viewed_from_the_summit_pre_fireworks.jpg",
-      "title": "File:Seven Springs Resort on 4th of July at dusk viewed from the summit pre fireworks.jpg",
-      "width": 1280
     }
   ],
   "shawnee-mountain": [
@@ -3440,30 +4512,42 @@
       "width": 1280
     }
   ],
-  "silverton-mountain": [
+  "silverstar-bike-park": [
     {
-      "alt": "San Juan Mountains East of Ouray, Colorado ()",
-      "author": "Ken Lund from Reno, Nevada, USA",
-      "file": "src/assets/places/silverton-mountain/1.jpg",
-      "height": 960,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "alt": "Silverstar Bike Park",
+      "author": "Sébastien Launay",
+      "file": "src/assets/places/silverstar-bike-park/1.jpg",
+      "height": 682,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Juan_Mountains_East_of_Ouray,_Colorado_(14201246362).jpg",
-      "title": "File:San Juan Mountains East of Ouray, Colorado (14201246362).jpg",
-      "width": 1280
+      "sourceUrl": "https://www.flickr.com/photos/56212573@N02/12942894393",
+      "title": "Openverse:bf7ec8d6-7c47-4f12-b250-dcc39a708d04",
+      "width": 1024
     },
     {
-      "alt": "San Juan Mountains North of Telluride, Colorado ()",
-      "author": "Ken Lund from Reno, Nevada, USA",
-      "file": "src/assets/places/silverton-mountain/2.jpg",
-      "height": 960,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "alt": "Silverstar Bike Park - LTG",
+      "author": "Sébastien Launay",
+      "file": "src/assets/places/silverstar-bike-park/2.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Juan_Mountains_North_of_Telluride,_Colorado_(14017067499).jpg",
-      "title": "File:San Juan Mountains North of Telluride, Colorado (14017067499).jpg",
-      "width": 1280
+      "sourceUrl": "https://www.flickr.com/photos/56212573@N02/14582603153",
+      "title": "Openverse:d6e8a5d2-7639-4f66-b4e0-009c6b8b5267",
+      "width": 1024
+    },
+    {
+      "alt": "Martin on Double Dog wall ride",
+      "author": "Sébastien Launay",
+      "file": "src/assets/places/silverstar-bike-park/3.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/56212573@N02/14616873612",
+      "title": "Openverse:62299aaf-55f4-4b73-9b37-da955c8b3e6b",
+      "width": 1024
     }
   ],
   "ski-cooper": [
@@ -3509,43 +4593,18 @@
       "width": 1280
     }
   ],
-  "snow-ridge": [],
-  "snow-valley": [],
-  "snowbasin": [
+  "smugglers-notch-pickleball": [],
+  "snow-summit-bike-park": [
     {
-      "alt": "Men's Super G, Snowbasin, 2002 Winter Olympics Skiier Crossing Finish Line",
-      "author": "Ken Lund",
-      "file": "src/assets/places/snowbasin/1.jpg",
-      "height": 683,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/2518175797",
-      "title": "Openverse:597856f7-b93e-4793-b666-3cadecda8e2d",
-      "width": 1024
-    },
-    {
-      "alt": "Men's Super G, Snowbasin, 2002 Winter Olympics 3",
-      "author": "Ken Lund",
-      "file": "src/assets/places/snowbasin/2.jpg",
+      "alt": "Snow Summit Bike Park",
+      "author": "gibffe",
+      "file": "src/assets/places/snow-summit-bike-park/1.jpg",
       "height": 682,
       "license": "CC BY-SA 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/2518991794",
-      "title": "Openverse:4438d811-e87b-4b01-92c5-6cf14acabcdb",
-      "width": 1024
-    },
-    {
-      "alt": "Men's Super G, Snowbasin, 2002 Winter Olympics 5",
-      "author": "Ken Lund",
-      "file": "src/assets/places/snowbasin/3.jpg",
-      "height": 682,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/2518184411",
-      "title": "Openverse:4e2c3a0c-cd04-4937-96fa-eb6690052405",
+      "sourceUrl": "https://www.flickr.com/photos/10991567@N02/16536884067",
+      "title": "Openverse:784bcbbb-0ea4-43da-b33c-548ba98a18e3",
       "width": 1024
     }
   ],
@@ -3625,6 +4684,32 @@
       "width": 1024
     }
   ],
+  "snowmass-bike-park": [
+    {
+      "alt": "Mountain Bike Government Trail, Aspen, CO, USA",
+      "author": "TRAILSOURCE.COM",
+      "file": "src/assets/places/snowmass-bike-park/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/69742158@N00/4814216352",
+      "title": "Openverse:96464b09-33a6-438e-9c67-c186bb28a1a6",
+      "width": 1024
+    },
+    {
+      "alt": "Mountain Bike Government Trail, Aspen, CO, USA",
+      "author": "TRAILSOURCE.COM",
+      "file": "src/assets/places/snowmass-bike-park/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/69742158@N00/4814216722",
+      "title": "Openverse:982f3181-4cfb-4869-8502-25abf624fe7f",
+      "width": 1024
+    }
+  ],
   "solitude": [
     {
       "alt": "500px provided description: Cold morning at spruces camp ground just west of Solitude Ski Resort in Big Cottonwood Canyon.",
@@ -3651,18 +4736,82 @@
       "width": 1280
     }
   ],
-  "sommet-saint-sauveur": [],
-  "song-mountain": [
+  "south-mill-pond": [],
+  "south-mountain-park": [
     {
-      "alt": "Blue Skies",
-      "author": "zenera",
-      "file": "src/assets/places/song-mountain/1.jpg",
-      "height": 740,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "alt": "National Trail in South Mountain Park",
+      "author": "kevin dooley",
+      "file": "src/assets/places/south-mountain-park/1.jpg",
+      "height": 446,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/35237098471@N01/391150010",
-      "title": "Openverse:950aa641-a6dc-40a7-a45b-72a6b49026c6",
+      "sourceUrl": "https://www.flickr.com/photos/12836528@N00/4199975645",
+      "title": "Openverse:52f2b0e5-d7df-4542-850a-9e87db431648",
+      "width": 1024
+    },
+    {
+      "alt": "View in South Mountain Park",
+      "author": "chris.rycroft",
+      "file": "src/assets/places/south-mountain-park/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/193316968@N06/51743769925",
+      "title": "Openverse:845e8664-aca9-414c-b62f-ff3e9505981c",
+      "width": 1024
+    }
+  ],
+  "squamish": [
+    {
+      "alt": "Lava Flow trail day",
+      "author": "kcxd",
+      "file": "src/assets/places/squamish/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/26786061@N00/15793103798",
+      "title": "Openverse:1a0ff9ef-bcff-4724-a121-7a40813bb99b",
+      "width": 1024
+    },
+    {
+      "alt": "Lava Flow trail day",
+      "author": "kcxd",
+      "file": "src/assets/places/squamish/2.jpg",
+      "height": 758,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/26786061@N00/15980496035",
+      "title": "Openverse:84746bc8-f3cf-4b67-b42e-829148a5bb8d",
+      "width": 1024
+    },
+    {
+      "alt": "Baking trail day",
+      "author": "kcxd",
+      "file": "src/assets/places/squamish/3.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/26786061@N00/14634090591",
+      "title": "Openverse:d2ffaff2-6517-45ce-9c40-55b5930a2726",
+      "width": 1024
+    }
+  ],
+  "st-regis-canoe-area": [
+    {
+      "alt": "Long Pond Entrance at Fish Creek Ponds.",
+      "author": "andyarthur",
+      "file": "src/assets/places/st-regis-canoe-area/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/45846171@N04/4910136487",
+      "title": "Openverse:a8f86311-8bee-412f-8583-062534d03b28",
       "width": 1024
     }
   ],
@@ -3719,44 +4868,6 @@
       "width": 1024
     }
   ],
-  "stowe": [
-    {
-      "alt": "The first snowstorm of the season walloped Canada’s Quebec Province on November 10-11.",
-      "author": "MODIS Land Rapid Response Team, NASA GSFC",
-      "file": "src/assets/places/stowe/1.jpg",
-      "height": 959,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snow_in_Quebec,_Canada_and_the_Northeastern_United_States_(MODIS_2025-11-23).jpg",
-      "title": "File:Snow in Quebec, Canada and the Northeastern United States (MODIS 2025-11-23).jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Team U.S.A. Prepares for Edelweiss Raid 2023 (230107-A-BA489-014)",
-      "author": "Staff Sgt. Barbara Pendl",
-      "file": "src/assets/places/stowe/2.jpg",
-      "height": 853,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Team_U.S.A._Prepares_for_Edelweiss_Raid_2023_(230107-A-BA489-014).jpg",
-      "title": "File:Team U.S.A. Prepares for Edelweiss Raid 2023 (230107-A-BA489-014).jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Units saluting ()",
-      "author": "The U.S. Army Staff Sgt. Nathan Rivard/Joint Force Headquarters, Vermont National Guard Public Affairs",
-      "file": "src/assets/places/stowe/3.jpg",
-      "height": 850,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Units_saluting_(15210888202).jpg",
-      "title": "File:Units saluting (15210888202).jpg",
-      "width": 1280
-    }
-  ],
   "stratton": [
     {
       "alt": "stratton mountain vermont ski trails",
@@ -3783,15 +4894,15 @@
       "width": 1024
     },
     {
-      "alt": "Season Pass Poker: 25 old passes (plus one wild card = Stratton Expert Park pass).",
-      "author": "dpstyles™",
+      "alt": "Jill & Jon Top of Stratton",
+      "author": "Avery Studio",
       "file": "src/assets/places/stratton/3.jpg",
       "height": 768,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/77725780@N00/3170929488",
-      "title": "Openverse:28d9811b-099d-4153-9e69-c4ffd091a340",
+      "sourceUrl": "https://www.flickr.com/photos/78147513@N00/2254296770",
+      "title": "Openverse:e659f30b-0134-4536-96be-15ff90b572f1",
       "width": 1024
     }
   ],
@@ -3854,11 +4965,12 @@
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/46207792@N00/14961111",
-      "title": "Openverse:9233b7ce-1689-4aab-8476-0c2d884d9952",
+      "sourceUrl": "https://www.flickr.com/photos/46207792@N00/15499626",
+      "title": "Openverse:ceb4dda5-dbc6-4d25-9880-ef03b79eee9d",
       "width": 1024
     }
   ],
+  "sugarbush-sharc": [],
   "sun-peaks": [
     {
       "alt": "Sun Peaks Ski Resort...amongst the snow ghosts",
@@ -3897,75 +5009,25 @@
       "width": 1280
     }
   ],
-  "sundance": [
+  "sun-peaks-bike-park": [
     {
-      "alt": "Night skiing at Sundance Resort, as viewed from Utah State Route 92 (Alpine Scenic Loop Backway) in Utah County, Utah, January 2017",
-      "author": "An Errant Knight",
-      "file": "src/assets/places/sundance/1.jpg",
-      "height": 960,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sundance_Resort_at_night,_Jan_17.jpg",
-      "title": "File:Sundance Resort at night, Jan 17.jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Mount timpanogos from the perspective of sundance ski resort",
-      "author": "dtsears",
-      "file": "src/assets/places/sundance/2.jpg",
-      "height": 1536,
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "nearby": false,
-      "sourceUrl": "https://wordpress.org/photos/photo/99566f7171/",
-      "title": "Openverse:53871c4a-1479-4521-b7dd-022fc7f3d280",
-      "width": 2048
-    }
-  ],
-  "sunlight": [
-    {
-      "alt": "Port Sunlight Village, Wirral",
-      "author": "menu4340",
-      "file": "src/assets/places/sunlight/1.jpg",
-      "height": 703,
+      "alt": "Sun Peaks biking",
+      "author": "kcxd",
+      "file": "src/assets/places/sun-peaks-bike-park/1.jpg",
+      "height": 758,
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/50785190@N07/6144778231",
-      "title": "Openverse:a9c634dd-56d3-47d4-a86f-b59ec827abba",
-      "width": 1024
-    },
-    {
-      "alt": "Clear skies ahead",
-      "author": "pfarrell95",
-      "file": "src/assets/places/sunlight/2.jpg",
-      "height": 768,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/65005341@N03/6644683795",
-      "title": "Openverse:50657d9f-76d9-4b1e-8436-7f6766d31f83",
+      "sourceUrl": "https://www.flickr.com/photos/26786061@N00/15124189420",
+      "title": "Openverse:c2a8b21e-ff3f-4250-a915-5543565e0d4d",
       "width": 1024
     }
   ],
   "sunrise-park": [
     {
-      "alt": "3D Archery at Sunrise Park Resort",
-      "author": "Mtntas12",
-      "file": "src/assets/places/sunrise-park/1.jpg",
-      "height": 854,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SPR_Summer_Activities-57.jpg",
-      "title": "File:SPR Summer Activities-57.jpg",
-      "width": 1280
-    },
-    {
       "alt": "High-speed quad chairlift on Sunrise Peak.",
       "author": "Meiguoren ( talk ) ( Uploads )",
-      "file": "src/assets/places/sunrise-park/2.jpg",
+      "file": "src/assets/places/sunrise-park/1.jpg",
       "height": 960,
       "license": "Public domain",
       "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
@@ -3973,9 +5035,34 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apache_lift.jpg",
       "title": "File:Apache lift.jpg",
       "width": 1280
+    },
+    {
+      "alt": "Triple chairlift on Apache Peak.",
+      "author": "Meiguoren ( talk ) ( Uploads )",
+      "file": "src/assets/places/sunrise-park/2.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apache_double.jpg",
+      "title": "File:Apache double.jpg",
+      "width": 1280
     }
   ],
-  "swain": [],
+  "sutton-trails": [
+    {
+      "alt": "Sutton Trails",
+      "author": "dogplusplus",
+      "file": "src/assets/places/sutton-trails/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/96626920@N08/42773041995",
+      "title": "Openverse:42d8e2b0-e55f-470e-b764-c536c8274357",
+      "width": 1024
+    }
+  ],
   "telluride": [
     {
       "alt": "Telluride Ski Resort, Col.",
@@ -4014,7 +5101,6 @@
       "width": 1280
     }
   ],
-  "titus-mountain": [],
   "tremblant": [
     {
       "alt": "Mt. Tremblant Ski Runs",
@@ -4053,6 +5139,34 @@
       "width": 1024
     }
   ],
+  "truckee-regional-park-pickleball": [],
+  "tucson-mountain-park": [
+    {
+      "alt": "Tucson Mountain Park 15",
+      "author": "Dave Bezaire",
+      "file": "src/assets/places/tucson-mountain-park/1.jpg",
+      "height": 685,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75988799@N00/6768346395",
+      "title": "Openverse:0d083fd8-3a85-46b8-a0a5-df0d853b6252",
+      "width": 1024
+    },
+    {
+      "alt": "Tucson Mountain Park 12",
+      "author": "Dave Bezaire",
+      "file": "src/assets/places/tucson-mountain-park/2.jpg",
+      "height": 636,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75988799@N00/6768343845",
+      "title": "Openverse:21b633b1-3c14-45f4-b7a4-d9ebf1fc67e9",
+      "width": 1024
+    }
+  ],
+  "turning-stone-sportsplex": [],
   "tussey-mountain": [
     {
       "alt": "2024-09-04 17 13 05 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania",
@@ -4067,6 +5181,7 @@
       "width": 1280
     }
   ],
+  "universite-laval-pickleball": [],
   "vail": [
     {
       "alt": "Vail Skiing 2010",
@@ -4119,6 +5234,21 @@
       "width": 1280
     }
   ],
+  "vallee-bras-du-nord": [
+    {
+      "alt": "Vallée du Bras-du-nord",
+      "author": "photoslyben",
+      "file": "src/assets/places/vallee-bras-du-nord/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/27386469@N06/22761047240",
+      "title": "Openverse:7544f8a0-e7fa-4ba7-ad3d-abe5f78a747f",
+      "width": 1024
+    }
+  ],
+  "victoria-pickleball-centre": [],
   "waterville-valley": [
     {
       "alt": "Clouds behind Green Peak at Waterville Valley.",
@@ -4221,20 +5351,6 @@
       "width": 1024
     }
   ],
-  "whaleback": [
-    {
-      "alt": "Whaleback summit",
-      "author": "ihamr",
-      "file": "src/assets/places/whaleback/1.jpg",
-      "height": 556,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/163621777@N08/54036978237",
-      "title": "Openverse:6c1c95ac-687f-4766-aff3-9f71608a5c78",
-      "width": 1024
-    }
-  ],
   "whistler-blackcomb": [
     {
       "alt": "October snow, Whistler Peak",
@@ -4271,6 +5387,59 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_sight_for_sore_eyes_(16359467984).jpg",
       "title": "File:A sight for sore eyes (16359467984).jpg",
       "width": 1280
+    }
+  ],
+  "whistler-mountain-bike-park": [
+    {
+      "alt": "Alpine view, Whistler Bike Park",
+      "author": "Ruth and Dave",
+      "file": "src/assets/places/whistler-mountain-bike-park/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/95142644@N00/52457399883",
+      "title": "Openverse:227d9945-adf6-459b-8219-c8c3f5347bfb",
+      "width": 1024
+    },
+    {
+      "alt": "Tiny whip on Crank It Up, Whistler Bike Park",
+      "author": "Sébastien Launay",
+      "file": "src/assets/places/whistler-mountain-bike-park/2.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/56212573@N02/14926444053",
+      "title": "Openverse:4236e69d-f640-4e3c-a7ff-eb2175e07572",
+      "width": 1024
+    },
+    {
+      "alt": "There is more than the bike park in Whistler",
+      "author": "Sébastien Launay",
+      "file": "src/assets/places/whistler-mountain-bike-park/3.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/56212573@N02/14783341132",
+      "title": "Openverse:874668b1-a105-4749-98b3-cff30758d175",
+      "width": 1024
+    }
+  ],
+  "whistler-racket-club": [],
+  "whistler-valley-trails": [
+    {
+      "alt": "Top of the World mountain bike trail",
+      "author": "Ruth and Dave",
+      "file": "src/assets/places/whistler-valley-trails/1.jpg",
+      "height": 467,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/95142644@N00/14684942448",
+      "title": "Openverse:845aea1a-156e-43ed-aed4-523096b156ca",
+      "width": 1024
     }
   ],
   "whiteface": [
@@ -4375,7 +5544,6 @@
       "width": 1280
     }
   ],
-  "whitewater": [],
   "wildcat": [
     {
       "alt": "Wildcat Ski Resort",
@@ -4493,5 +5661,70 @@
     }
   ],
   "woods-valley": [],
-  "woodward-park-city": []
+  "woodstock-athletic-club": [],
+  "woodward-park-city": [],
+  "youghiogheny-river": [
+    {
+      "alt": "kayakin' on class I and II at Middle Yough River",
+      "author": "daveynin",
+      "file": "src/assets/places/youghiogheny-river/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/44124370018@N01/7687860716",
+      "title": "Openverse:8cac1368-2141-40b8-82b5-ffa8dd73a013",
+      "width": 1024
+    },
+    {
+      "alt": "Kayak sail on Youghiogheny river",
+      "author": "daveynin",
+      "file": "src/assets/places/youghiogheny-river/2.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/44124370018@N01/15651637421",
+      "title": "Openverse:d0fde86e-25ec-4619-bf70-687b3abee58f",
+      "width": 1024
+    },
+    {
+      "alt": "Me on inflatable orange kayak",
+      "author": "daveynin",
+      "file": "src/assets/places/youghiogheny-river/3.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/44124370018@N01/7687912656",
+      "title": "Openverse:0ae9eed6-58f3-4ed7-9fd4-aae3aa8d6711",
+      "width": 1024
+    }
+  ],
+  "zion-watchman": [
+    {
+      "alt": "Watchman Near Sunset",
+      "author": "brewbooks",
+      "file": "src/assets/places/zion-watchman/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/93452909@N00/5148264211",
+      "title": "Openverse:323f34e5-51dd-4397-8ace-2910795aeb3a",
+      "width": 1024
+    },
+    {
+      "alt": "Watchman at Sunset",
+      "author": "brewbooks",
+      "file": "src/assets/places/zion-watchman/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/93452909@N00/5148869458",
+      "title": "Openverse:60a242c6-40ae-4ac0-9ff7-ab142737d7e4",
+      "width": 1024
+    }
+  ]
 }
