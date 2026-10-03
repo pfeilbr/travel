@@ -556,7 +556,10 @@
     "arizona snowbowl"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:View from the Arizona Snowbowl (29530992623).jpg",
+    "File:Snowbowl Road Aspen Corner (29530983353).jpg"
+   ],
    "alt": {},
    "must": [
     "arizona snowbowl",
@@ -592,7 +595,10 @@
     "sunrise park"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Sunrise peak lift.jpg",
+    "File:SPR Summer Activities-6.jpg"
+   ],
    "alt": {},
    "must": [
     "sunrise park",
@@ -700,7 +706,9 @@
     "mount sunapee"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:MountSunapeeWinter.jpg"
+   ],
    "alt": {},
    "must": [
     "mount sunapee",
@@ -773,7 +781,9 @@
     "ragged"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Ragged Mountain (New Hampshire) east side from Elbow Pond.jpg"
+   ],
    "alt": {},
    "must": [
     "ragged",
@@ -856,7 +866,9 @@
     "crotched"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:180ee8c4-9b63-4f70-b50c-c578213611dd"
+   ],
    "alt": {},
    "must": [
     "crotched",
@@ -893,7 +905,9 @@
     "whaleback"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:6c1c95ac-687f-4766-aff3-9f71608a5c78"
+   ],
    "alt": {},
    "must": [
     "whaleback",
@@ -945,15 +959,14 @@
    "count": 2,
    "sources": [
     {
-     "search": "Pico Mountain ski Vermont",
-     "limit": 25
+     "search": "Pico Mountain Killington Vermont",
+     "limit": 30
     },
     {
-     "openverse": "Pico skiing",
+     "openverse": "Pico Mountain Vermont skiing",
      "must": [
-      "pico",
       "pico mountain",
-      "killington"
+      "pico peak"
      ],
      "fallback": true
     }
@@ -965,11 +978,14 @@
     "pico"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Montanha do Pico, aspectos 5 ilha do Pico, Açores, Portugal.JPG",
+    "File:The Peak Where The Sun Touches (Pico Mountain).jpg"
+   ],
    "alt": {},
    "must": [
-    "pico",
     "pico mountain",
+    "pico peak",
     "killington"
    ]
   },
@@ -1038,7 +1054,9 @@
     "mount snow"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Mt Snow ski lift.JPG"
+   ],
    "alt": {},
    "must": [
     "mount snow",
@@ -1073,7 +1091,9 @@
     "stratton"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Stack of boots (3074940137).jpg"
+   ],
    "alt": {},
    "must": [
     "stratton",
@@ -1109,7 +1129,9 @@
     "bromley"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Bromley Mountain 071506 020.jpg"
+   ],
    "alt": {},
    "must": [
     "bromley",
@@ -1146,7 +1168,9 @@
     "magic"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:2e3eef07-284c-4b45-ae7d-94083b2eee40"
+   ],
    "alt": {},
    "must": [
     "magic",
@@ -1227,7 +1251,10 @@
     "seven springs"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Seven Springs Resort viewed from the ski lodge.jpg",
+    "File:Seven Springs PA lodge 2009.jpg"
+   ],
    "alt": {},
    "must": [
     "seven springs",
@@ -1263,7 +1290,9 @@
     "hidden valley"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:TyrolLodge.jpg"
+   ],
    "alt": {},
    "must": [
     "hidden valley",
@@ -1299,7 +1328,9 @@
     "laurel"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Laurel mountain ski area - panoramio (1).jpg"
+   ],
    "alt": {},
    "must": [
     "laurel",
@@ -1519,7 +1550,9 @@
     "tussey"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:2024-09-04 17 13 01 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania.jpg"
+   ],
    "alt": {},
    "must": [
     "tussey",
@@ -1555,7 +1588,10 @@
     "whistler blackcomb"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:The loneliness of the long distance snowboarder (2575684626).jpg",
+    "File:Start of a summer skiing day (2572297071).jpg"
+   ],
    "alt": {},
    "must": [
     "whistler blackcomb",
@@ -1664,7 +1700,9 @@
     "mt seymour"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Runner Peak and Mount Elsay.jpg"
+   ],
    "alt": {},
    "must": [
     "mt seymour",
@@ -1700,7 +1738,9 @@
     "mount washington"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:35434970-e042-4829-935d-04794521b019"
+   ],
    "alt": {},
    "must": [
     "mount washington",
@@ -1846,7 +1886,9 @@
     "apex"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:909a62e2-f4ec-4720-b6ba-82f50ce79da2"
+   ],
    "alt": {},
    "must": [
     "apex",
@@ -1952,7 +1994,9 @@
     "heavenly"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Heavenly Mountain Resort, Lake Tahoe, Nevada (21581093841).jpg"
+   ],
    "alt": {},
    "must": [
     "heavenly",
@@ -1986,7 +2030,9 @@
     "kirkwood"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Bear Valley, Kirkwood, Tahoe near season open 2017 (cropped).jpg"
+   ],
    "alt": {},
    "must": [
     "kirkwood"
@@ -2055,7 +2101,9 @@
     "sugar bowl"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Sugar Bowl Ski Resort 1 2018-02-28.jpg"
+   ],
    "alt": {},
    "must": [
     "sugar bowl",
@@ -2160,7 +2208,9 @@
     "diamond peak"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Diamond Peak Ski Resort at Incline Village Lake Tahoe by Don Ramey Logan.jpg"
+   ],
    "alt": {},
    "must": [
     "diamond peak",
@@ -2283,7 +2333,9 @@
     "blue"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:0cc63471-40cf-4ffb-ae3e-e5c48f047ab0"
+   ],
    "alt": {},
    "must": [
     "blue",
@@ -2501,7 +2553,9 @@
     "bear creek"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Bear-creek.JPG"
+   ],
    "alt": {},
    "must": [
     "bear creek",
@@ -2518,14 +2572,18 @@
    "count": 3,
    "sources": [
     {
-     "category": "Category:Stowe_Mountain_Resort",
-     "depth": 0
+     "category": "Category:Stowe Mountain Resort",
+     "depth": 1
     },
     {
-     "openverse": "Stowe skiing",
+     "search": "Mount Mansfield ski Stowe",
+     "limit": 30
+    },
+    {
+     "openverse": "Stowe Mountain Resort skiing",
      "must": [
       "stowe",
-      "stowe mountain resort"
+      "mansfield"
      ],
      "fallback": true
     }
@@ -2537,11 +2595,15 @@
     "stowe"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:2017-09-11 13 10 01 View east-southeast towards Stowe Ski Resort from the Long Trail between the Nose and the Chin of Mount Mansfield within Mount Mansfield State Forest in Stowe, Lamoille County, Vermont.jpg",
+    "Openverse:04f20556-9927-4a74-86eb-4b6a388ebd66",
+    "Openverse:a9035165-8fdc-4ee7-86d9-0df5be013520"
+   ],
    "alt": {},
    "must": [
     "stowe",
-    "stowe mountain resort"
+    "mansfield"
    ]
   },
   "smugglers-notch": {
@@ -2647,7 +2709,9 @@
     "sugarbush"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:9233b7ce-1689-4aab-8476-0c2d884d9952"
+   ],
    "alt": {},
    "must": [
     "sugarbush",
@@ -2754,7 +2818,9 @@
     "burke"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:c4c34633-92ae-4d4e-bf26-9af9c8681413"
+   ],
    "alt": {},
    "must": [
     "burke",
@@ -2826,7 +2892,9 @@
     "loon"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Dampflokomotive in den White Mountains.jpg"
+   ],
    "alt": {},
    "must": [
     "loon",
@@ -3042,7 +3110,9 @@
     "cranmore"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Cranmore Mountain Resort.jpg"
+   ],
    "alt": {},
    "must": [
     "cranmore",
@@ -3476,7 +3546,9 @@
     "purgatory"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Aspens at Sunset, Purgatory.jpg"
+   ],
    "alt": {},
    "must": [
     "purgatory",
@@ -3513,7 +3585,10 @@
     "wolf creek"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Wolf Creek Ski Area.JPG",
+    "File:Cold...and Then Some (5566372882).jpg"
+   ],
    "alt": {},
    "must": [
     "wolf creek",
@@ -3587,7 +3662,10 @@
     "powderhorn"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:0d9cc496-9f0b-4fff-a1c9-73f5b7b686b1",
+    "Openverse:79d057d5-2185-4b13-94b4-e0e72ce59518"
+   ],
    "alt": {},
    "must": [
     "powderhorn",
@@ -3623,7 +3701,9 @@
     "silverton"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:San Juan Mountains East of Ouray, Colorado (14201247002).jpg"
+   ],
    "alt": {},
    "must": [
     "silverton",
@@ -3792,7 +3872,10 @@
     "copper"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:08526671-99e9-4156-81c7-08d7f2263a6f",
+    "Openverse:1bb09db4-8f6c-4cce-a18e-217defd042a7"
+   ],
    "alt": {},
    "must": [
     "copper",
@@ -3827,7 +3910,9 @@
     "arapahoe basin"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Arapahoe Basin summer 2026.jpg"
+   ],
    "alt": {},
    "must": [
     "arapahoe basin",
@@ -3985,6 +4070,10 @@
      "depth": 0
     },
     {
+     "search": "Whitefish Mountain Resort ski Big Mountain",
+     "limit": 30
+    },
+    {
      "openverse": "Whitefish skiing",
      "must": [
       "whitefish",
@@ -4000,7 +4089,11 @@
     "whitefish"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:The Summit Nature Center (7563586976).jpg",
+    "File:The Summit Nature Center (7563587690).jpg",
+    "File:The Summit Nature Center (7563588470).jpg"
+   ],
    "alt": {},
    "must": [
     "whitefish",
@@ -4105,7 +4198,9 @@
     "montana snowbowl"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:3eb571fd-2311-4783-82dc-057facff31e5"
+   ],
    "alt": {},
    "must": [
     "montana snowbowl",
@@ -4827,7 +4922,9 @@
     "brighton"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Brighton Skii lodge Lake Mary dam and reservoir DSC 0502 (22783476930).jpg"
+   ],
    "alt": {},
    "must": [
     "brighton",
@@ -4971,7 +5068,9 @@
     "aspen highlands"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:ALL THE LIFTS AT ASPEN ARE CHAIRLIFTS. THIS ONE IS GOING UP 11,800 FEET ON ASPEN HIGHLANDS MOUNTAIN, HIGHEST SKI AREA... - NARA - 554248.jpg"
+   ],
    "alt": {}
   },
   "buttermilk": {
@@ -5294,7 +5393,9 @@
     "whitewater"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:7c6584c8-4217-4138-a677-e1d531bcee60"
+   ],
    "alt": {}
   },
   "panorama": {
@@ -5475,7 +5576,9 @@
     "west"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "Openverse:8247a6d0-5a45-4d4b-b154-e591875ceaac"
+   ],
    "alt": {}
   },
   "titus-mountain": {
@@ -6440,6 +6543,27 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "ski-hero": {
+   "winter": true,
+   "min_width": 1000,
+   "count": 1,
+   "sources": [
+    {
+     "search": "\"Washeshu Peak\"",
+     "limit": 5
+    }
+   ],
+   "prefer": [],
+   "include": [
+    {
+     "title": "File:Washeshu Peak.jpg",
+     "alt": "Bluebird day over the bowls at Palisades Tahoe"
+    }
+   ],
+   "exclude": [],
+   "alt": {},
+   "width": 1920
   }
  }
 }

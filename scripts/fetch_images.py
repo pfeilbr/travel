@@ -451,12 +451,12 @@ def search_files(query: str, limit: int = 50) -> list[str]:
     return [r["title"] for r in d.get("query", {}).get("search", [])]
 
 
-def image_infos(titles: list[str]) -> dict[str, dict]:
+def image_infos(titles: list[str], width: int = THUMB_WIDTH) -> dict[str, dict]:
     out: dict[str, dict] = {}
     uniq = list(dict.fromkeys(titles))
     for i in range(0, len(uniq), 50):
         d = api(action="query", titles="|".join(uniq[i:i + 50]), prop="imageinfo",
-                iiprop="url|extmetadata|size|mime", iiurlwidth=str(THUMB_WIDTH),
+                iiprop="url|extmetadata|size|mime", iiurlwidth=str(width),
                 iiextmetadatafilter=EXTMETA_FIELDS, iiextmetadatalanguage="en")
         for p in d.get("query", {}).get("pages", []):
             if p.get("imageinfo"):
@@ -527,7 +527,8 @@ def gather(place: dict) -> tuple[dict[str, dict], list[str], dict[str, str | Non
             origin[item["title"]] = item.get("nearby")
         if item["title"] not in order:
             order.append(item["title"])
-    pages: dict[str, dict] = (_commons(image_infos, order) or {}) if order else {}
+    # "width" (a standard size: 1280 default, 1920 for full-bleed heroes) picks the thumbnail to download.
+    pages: dict[str, dict] = (_commons(image_infos, order, int(place.get("width", THUMB_WIDTH))) or {}) if order else {}
     must = place.get("must", [])
     if must:  # search hits are noisy ("Pats Peak" finds Kitt Peak); keep only those that name the place
         pinned = {i["title"] for i in include}
