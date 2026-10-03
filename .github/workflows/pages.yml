@@ -29,16 +29,26 @@ jobs:
         with:
           python-version: "3.12"
       - run: npm ci
+      # Optimized images are cached between runs (npm ci clears node_modules, so restore after it).
+      - uses: actions/cache@v4
+        with:
+          path: node_modules/.astro
+          key: astro-assets-${{ hashFiles('src/assets/**', 'package-lock.json') }}
+          restore-keys: astro-assets-
       - name: Public Supabase config for the browser (skipped until the project exists)
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
         run: |
           set -euo pipefail
           if [ -n "${SUPABASE_PROJECT_REF:-}" ] && [ -n "${SUPABASE_ACCESS_TOKEN:-}" ]; then
-            key=$(python3 scripts/supabase_admin.py anon-key)   # fails the build on a bad token
-            echo "PUBLIC_SUPABASE_URL=https://$SUPABASE_PROJECT_REF.supabase.co" >> "$GITHUB_ENV"
-            echo "PUBLIC_SUPABASE_ANON_KEY=$key" >> "$GITHUB_ENV"
-            echo "Sign-in enabled for $SUPABASE_PROJECT_REF"
+            # A bad or expired token shouldn't block the deploy: the site works signed out, so warn loudly instead.
+            if key=$(python3 scripts/supabase_admin.py anon-key); then
+              echo "PUBLIC_SUPABASE_URL=https://$SUPABASE_PROJECT_REF.supabase.co" >> "$GITHUB_ENV"
+              echo "PUBLIC_SUPABASE_ANON_KEY=$key" >> "$GITHUB_ENV"
+              echo "Sign-in enabled for $SUPABASE_PROJECT_REF"
+            else
+              echo "::warning title=Sign-in disabled::Supabase anon key lookup failed (check the SUPABASE_ACCESS_TOKEN secret); building with sign-in disabled."
+            fi
           else
             echo "Supabase not configured yet; building with sign-in disabled."
           fi

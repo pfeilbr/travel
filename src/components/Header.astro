@@ -1,18 +1,31 @@
 ---
 import Logo from './Logo.astro';
+import Icon from './Icon.astro';
 import { url } from '../lib/paths';
 interface Props { overlay?: boolean }
 const { overlay = false } = Astro.props;
+// Airbnb-style activity tabs. Camping covers the live-checked trips and places too.
+const path = Astro.url.pathname;
+const modes = [
+  { href: 'camping/', icon: 'tent', label: 'Camping', match: ['camping', 'explore', 'places', 'trips'] },
+  { href: 'ski/', icon: 'snowflake', label: 'Ski', match: ['ski'] },
+  { href: 'bike/', icon: 'biking', label: 'Biking', match: ['bike'] },
+  { href: 'kayak/', icon: 'kayaking', label: 'Kayaking', match: ['kayak'] },
+  { href: 'pickleball/', icon: 'pickleball', label: 'Pickleball', match: ['pickleball'] },
+];
+const active = modes.find((m) => m.match.some((p) => path.startsWith(url(p + '/'))))?.href;
 ---
 <header class:list={['site-header', { overlay }]} data-header>
   <div class="container bar">
     <Logo />
-    <nav class="primary" aria-label="Primary">
-      <a href={url('explore/')}>Explore</a>
-      <a href={url('trips/')}>Trips</a>
-      <a href={url('wishlists/')}>Wishlists</a>
+    <nav class="modes" aria-label="Activities">
+      {modes.map((m) => <a href={url(m.href)} aria-current={active === m.href ? 'page' : undefined}><Icon name={m.icon} size={20} /><span>{m.label}</span></a>)}
     </nav>
     <div class="right">
+      <nav class="primary" aria-label="Primary">
+        <a href={url('trips/')}>Trips</a>
+        <a href={url('wishlists/')}>Wishlists</a>
+      </nav>
       <div class="menu-wrap">
         <button class="user-btn" aria-haspopup="menu" aria-expanded="false" data-menu-btn aria-label="Account menu">
           <svg viewBox="0 0 32 32" width="16" height="16" aria-hidden="true"><path d="M2 16h28M2 24h28M2 8h28" stroke="currentColor" stroke-width="3" fill="none"/></svg>
@@ -32,7 +45,13 @@ const { overlay = false } = Astro.props;
             <a role="menuitem" href={url('account/')}>Account</a>
           </div>
           <hr />
-          <a role="menuitem" href={url('explore/')}>Explore places</a>
+          <a role="menuitem" href={url('camping/')}>Camping</a>
+          <a role="menuitem" href={url('explore/')}>Live availability</a>
+          <a role="menuitem" href={url('ski/')}>Ski resorts</a>
+          <a role="menuitem" href={url('ski/holidays/')}>Holidays on the mountain</a>
+          <a role="menuitem" href={url('bike/')}>Mountain biking</a>
+          <a role="menuitem" href={url('kayak/')}>Kayaking</a>
+          <a role="menuitem" href={url('pickleball/')}>Pickleball</a>
           <button role="menuitem" data-theme-toggle>Toggle dark mode</button>
           <button role="menuitem" data-signed-in hidden data-sign-out>Log out</button>
         </div>
@@ -46,7 +65,13 @@ const { overlay = false } = Astro.props;
   .site-header.overlay { position: absolute; left: 0; right: 0; background: transparent; border-bottom-color: transparent; color: #fff; }
   .site-header.overlay.scrolled { position: fixed; background: var(--bg); color: var(--ink); border-bottom-color: var(--rule); }
   .site-header.overlay:not(.scrolled) :global(.logo) { color: #fff; }
-  .bar { display: flex; align-items: center; justify-content: space-between; height: 80px; gap: 16px; }
+  .bar { display: flex; align-items: center; justify-content: space-between; height: var(--header-h); gap: 16px; }
+  .modes { display: flex; gap: 2px; margin: 0 auto; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+  .modes::-webkit-scrollbar { display: none; }
+  .modes a { flex: none; display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 12px; border-radius: var(--radius-pill); text-decoration: none; font-weight: 600; font-size: 15px; color: inherit; opacity: .72; position: relative; }
+  .modes a:hover { opacity: 1; background: color-mix(in srgb, currentColor 8%, transparent); }
+  .modes a[aria-current="page"] { opacity: 1; }
+  .modes a[aria-current="page"]::after { content: ""; position: absolute; left: 12px; right: 12px; bottom: 2px; height: 2px; border-radius: 2px; background: currentColor; }
   .primary { display: flex; gap: 4px; }
   .primary a { text-decoration: none; padding: 10px 16px; border-radius: var(--radius-pill); font-weight: 500; font-size: 15px; }
   .primary a:hover { background: color-mix(in srgb, currentColor 8%, transparent); }
@@ -63,7 +88,22 @@ const { overlay = false } = Astro.props;
   .menu .strong { font-weight: 600; }
   .menu hr { border: 0; border-top: 1px solid var(--rule); margin: 8px 0; }
   .who { padding: 8px 16px 10px; font-size: 13px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  @media (max-width: 760px) { .primary { display: none; } .bar { height: 64px; } }
+  @media (max-width: 1180px) { .primary { display: none; } }
+  @media (max-width: 900px) {
+    .bar { gap: 8px; }
+    .modes a { flex-direction: column; justify-content: center; gap: 2px; height: 54px; padding: 0 8px; font-size: 11px; border-radius: 10px; }
+    .modes a[aria-current="page"]::after { left: 8px; right: 8px; bottom: 0; }
+  }
+  @media (max-width: 560px) {
+    .modes a { padding: 0 6px; }
+    .user-btn { padding: 0 4px; gap: 0; height: 40px; }
+    .user-btn > svg { display: none; }
+  }
+  @media (max-width: 420px) {
+    .bar { gap: 4px; }
+    .modes a { padding: 0 3px; font-size: 10px; letter-spacing: -0.01em; }
+    .modes a[aria-current="page"]::after { left: 3px; right: 3px; }
+  }
 </style>
 
 <script>

@@ -1,0 +1,19 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import RegionTabs from '../../../components/ski/RegionTabs.astro';
+import SkiExplorer from '../../../components/ski/SkiExplorer.astro';
+import { resorts, skiRegions } from '../../../data/ski';
+---
+<Layout title="All ski resorts" description={`Compare ${resorts.length} ski resorts across ${skiRegions.length} regions: vertical, snowfall, passes, lift prices, live snow forecasts and things to do.`}>
+  <RegionTabs active="all" />
+  <section class="container head">
+    <h1>All ski resorts</h1>
+    <p class="muted">{resorts.length} resorts in {skiRegions.length} regions. Filter by pass, activity or size, sort by vertical or new snow, and open any resort for lodging, events and the live forecast.</p>
+  </section>
+  <SkiExplorer resorts={resorts} />
+</Layout>
+<style>
+  .head { padding-top: 24px; padding-bottom: 4px; }
+  .head h1 { font-size: 28px; margin-bottom: 4px; }
+  .head p { margin: 0; font-size: 15px; }
+</style>

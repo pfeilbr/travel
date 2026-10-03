@@ -3,6 +3,8 @@ import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import { allCredits } from '../../lib/images';
 import { placeById } from '../../data/places';
+import { resortById } from '../../data/ski';
+import { spotById } from '../../data/outdoors';
 const groups = allCredits();
 ---
 <Layout title="Photo credits">
@@ -12,7 +14,7 @@ const groups = allCredits();
     {groups.length === 0 && <p>No photos yet.</p>}
     {groups.map((g) => (
       <section>
-        <h2>{placeById[g.id]?.name ?? (g.id === 'hero' ? 'Homepage' : g.id)}</h2>
+        <h2>{placeById[g.id]?.name ?? resortById[g.id]?.name ?? spotById[g.id]?.name ?? ({ hero: 'Homepage', 'ski-hero': 'Ski homepage' } as Record<string, string>)[g.id] ?? g.id}</h2>
         <ul>
           {g.images.map((img) => (
             <li>

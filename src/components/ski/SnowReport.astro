@@ -1,0 +1,199 @@
+---
+// Live snow & weather from Open-Meteo (model forecast at base / mid / summit), plus the resort's own reports.
+import Icon from '../Icon.astro';
+import type { Resort } from '../../data/ski/types';
+import { skiRegionById } from '../../data/ski/regions';
+import { ft, shortDate } from '../../lib/ski';
+
+interface Props { resort: Resort }
+const { resort: r } = Astro.props;
+const mid = Math.round((r.stats.summitFt + r.stats.baseFt) / 2 / 10) * 10;
+const levels = [
+  { key: 'base', label: 'Base', ft: r.stats.baseFt },
+  { key: 'mid', label: 'Mid', ft: mid },
+  { key: 'summit', label: 'Summit', ft: r.stats.summitFt },
+];
+const region = skiRegionById[r.region];
+---
+<section class="snow" id="snow" data-snow data-lat={r.coords[0]} data-lng={r.coords[1]} data-opens={r.season.opens} data-closes={r.season.closes}>
+  <div class="head">
+    <h2>Snow &amp; weather</h2>
+    <div class="seg" role="group" aria-label="Forecast elevation">
+      {levels.map((l) => <button data-level={l.ft} aria-pressed={l.key === 'mid' ? 'true' : 'false'} title={ft(l.ft)}>{l.label}</button>)}
+    </div>
+  </div>
+  <p class="muted status" data-status>Loading the live forecast for {ft(mid)}…</p>
+  <noscript><p class="muted">Turn on JavaScript for the live forecast, or use the official snow report below.</p></noscript>
+
+  <div class="live" data-live hidden>
+    <div class="now">
+      <span class="now-ic" data-now-icon></span>
+      <div>
+        <div class="temp"><b data-temp></b><span data-cond></span></div>
+        <p class="muted" data-now-line></p>
+      </div>
+    </div>
+    <div class="tiles">
+      <div class="tile"><span class="k">Last 7 days</span><b data-past></b><span class="muted">new snow</span></div>
+      <div class="tile accent"><span class="k">Next 7 days</span><b data-next></b><span class="muted">forecast</span></div>
+      <div class="tile" data-open-tile><span class="k" data-open-k>Opening day</span><b data-open-v>{shortDate(r.season.opens)}</b><span class="muted" data-open-sub>target</span></div>
+    </div>
+
+    <figure class="chart">
+      <figcaption class="sr-only">Daily snowfall in inches, past 7 days and next 7 days</figcaption>
+      <div class="plot" data-plot></div>
+      <div class="axis"><span>Past 7 days</span><span>Today and next 6 days</span></div>
+      <div class="tip" data-tip hidden></div>
+    </figure>
+
+    <ol class="days" data-days aria-label="7-day forecast"></ol>
+    <p class="fine muted" data-fine></p>
+  </div>
+
+  <div class="links">
+    <a class="btn btn-primary btn-sm" href={r.snowReportUrl} rel="noopener"><Icon name="snowflake" size={16} />Official snow report</a>
+    {r.trailMapUrl && <a class="btn btn-outline btn-sm" href={r.trailMapUrl} rel="noopener"><Icon name="map" size={16} />Trail map</a>}
+    {r.webcamUrl && <a class="btn btn-outline btn-sm" href={r.webcamUrl} rel="noopener"><Icon name="camera" size={16} />Webcams</a>}
+    <a class="btn btn-ghost btn-sm" href={region.reportUrl} rel="noopener">All {region.name} conditions <Icon name="ext" size={14} /></a>
+  </div>
+
+  {['sun', 'cloud-sun', 'cloud', 'rain', 'snowflake'].map((n) => <template data-icon={n}><Icon name={n} size={22} /></template>)}
+</section>
+
+<style>
+  .head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .head h2 { margin: 0; }
+  .seg { display: inline-flex; padding: 3px; border-radius: var(--radius-pill); background: var(--surface); border: 1px solid var(--rule); }
+  .seg button { border: 0; background: none; padding: 6px 14px; border-radius: var(--radius-pill); font-size: 13px; font-weight: 600; cursor: pointer; color: var(--muted); }
+  .seg button[aria-pressed="true"] { background: var(--surface-2); color: var(--ink); box-shadow: var(--shadow-sm); }
+  .status { margin: 14px 0 0; }
+  .now { display: flex; gap: 16px; align-items: center; margin: 18px 0; }
+  .now-ic { width: 56px; height: 56px; border-radius: 16px; background: var(--snow-soft); color: var(--snow-ink); display: grid; place-items: center; flex: none; }
+  .now-ic :global(svg) { width: 30px; height: 30px; }
+  .temp { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .temp b { font-size: 34px; line-height: 1; letter-spacing: -0.02em; }
+  .temp span { font-weight: 600; }
+  .now p { margin: 4px 0 0; font-size: 14px; }
+  .tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .tile { border: 1px solid var(--rule); border-radius: var(--radius); padding: 14px 16px; display: grid; gap: 2px; }
+  .tile .k { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  .tile b { font-size: 26px; line-height: 1.1; }
+  .tile .muted { font-size: 13px; }
+  .tile.accent { background: var(--snow-soft); border-color: transparent; }
+  .tile.accent b, .tile.accent .k { color: var(--snow-ink); }
+  @media (max-width: 520px) { .tiles { grid-template-columns: 1fr 1fr; } .tile[data-open-tile] { grid-column: span 2; } }
+
+  .chart { position: relative; margin: 22px 0 6px; }
+  .plot { height: 120px; display: grid; grid-template-columns: repeat(14, minmax(0, 1fr)); align-items: end; border-bottom: 1px solid var(--rule); }
+  .plot :global(.col) { position: relative; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; outline: none; cursor: default; }
+  .plot :global(.col.today) { border-left: 1px solid var(--rule-strong); }
+  .plot :global(.bar) { width: min(24px, 60%); background: var(--snow); border-radius: 4px 4px 0 0; min-height: 0; }
+  .plot :global(.col.past .bar) { opacity: .45; }
+  .plot :global(.col:hover .bar), .plot :global(.col:focus-visible .bar) { opacity: 1; filter: brightness(1.1); }
+  .plot :global(.cap) { font-size: 12px; font-weight: 700; margin-bottom: 3px; color: var(--ink); white-space: nowrap; }
+  .plot :global(.d) { position: absolute; bottom: -20px; font-size: 11px; color: var(--muted); }
+  .axis { display: grid; grid-template-columns: 1fr 1fr; text-align: center; margin-top: 26px; font-size: 12px; color: var(--muted); }
+  .tip { position: absolute; top: -8px; translate: -50% -100%; background: var(--ink); color: var(--bg); font-size: 12px; font-weight: 600; padding: 6px 9px; border-radius: 8px; white-space: nowrap; pointer-events: none; box-shadow: var(--shadow); }
+
+  .days { list-style: none; padding: 0; margin: 18px 0 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+  .days :global(li) { display: grid; justify-items: center; gap: 4px; padding: 10px 4px; border-radius: 10px; background: var(--surface); font-size: 13px; text-align: center; }
+  .days :global(.dn) { font-weight: 700; }
+  .days :global(.hl) { color: var(--muted); }
+  .days :global(.hl b) { color: var(--ink); }
+  .days :global(.sn) { font-weight: 700; color: var(--snow-ink); min-height: 1.2em; }
+  .days :global(svg) { color: var(--ink-2); }
+  @media (max-width: 520px) { .days { grid-template-columns: repeat(4, minmax(0, 1fr)); } .days :global(li:nth-child(n+5)) { display: none; } }
+  .fine { font-size: 13px; margin: 14px 0 0; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+</style>
+
+<script>
+  import { forecastUrl, inches, shortDate, snowTotals, wmo, daysUntil } from '../../lib/ski';
+
+  document.querySelectorAll<HTMLElement>('[data-snow]').forEach((root) => {
+    const lat = Number(root.dataset.lat), lng = Number(root.dataset.lng);
+    const $ = <T extends HTMLElement = HTMLElement>(s: string) => root.querySelector<T>(s)!;
+    const icon = (name: string) => root.querySelector<HTMLTemplateElement>(`template[data-icon="${name}"]`)?.innerHTML ?? '';
+    const cache = new Map<number, unknown>();
+
+    async function load(elevFt: number) {
+      $('[data-status]').hidden = false;
+      $('[data-status]').textContent = `Loading the live forecast for ${elevFt.toLocaleString('en-US')} ft…`;
+      try {
+        const data: any = cache.get(elevFt) ?? await fetch(forecastUrl(lat, lng, elevFt)).then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.json(); });
+        cache.set(elevFt, data);
+        paint(data, elevFt);
+        $('[data-status]').hidden = true;
+        $('[data-live]').hidden = false;
+      } catch {
+        $('[data-status]').textContent = 'The live forecast is unavailable right now. The official snow report below has current conditions.';
+      }
+    }
+
+    function paint(d: any, elevFt: number) {
+      const today: string = d.daily.time[7];
+      const c = d.current;
+      const w = wmo(c.weather_code);
+      $('[data-now-icon]').innerHTML = icon(w.icon);
+      $('[data-temp]').textContent = `${Math.round(c.temperature_2m)}°F`;
+      $('[data-cond]').textContent = w.label;
+      $('[data-now-line]').textContent = `Feels like ${Math.round(c.apparent_temperature)}°F · wind ${Math.round(c.wind_speed_10m)} mph, gusts ${Math.round(c.wind_gusts_10m)} · at ${elevFt.toLocaleString('en-US')} ft`;
+      const t = snowTotals(d.daily, today);
+      $('[data-past]').textContent = inches(t.past);
+      $('[data-next]').textContent = inches(t.next);
+
+      // Opening / closing countdown, computed from the visitor's today.
+      const opens = root.dataset.opens!, closes = root.dataset.closes!;
+      const toOpen = daysUntil(opens, today), toClose = daysUntil(closes, today);
+      if (toOpen > 0) { $('[data-open-k]').textContent = 'Opening day'; $('[data-open-v]').textContent = shortDate(opens); $('[data-open-sub]').textContent = `target · in ${toOpen} day${toOpen === 1 ? '' : 's'}`; }
+      else if (toClose >= 0) { $('[data-open-k]').textContent = 'Season'; $('[data-open-v]').textContent = 'Open'; $('[data-open-sub]').textContent = `targets closing ${shortDate(closes)}`; }
+      else { $('[data-open-k]').textContent = 'Season'; $('[data-open-v]').textContent = 'Closed'; $('[data-open-sub]').textContent = `closed ${shortDate(closes)}`; }
+
+      // 14 daily columns: one hue, past dimmed; label only the biggest forecast day.
+      const vals: number[] = d.daily.snowfall_sum.map((v: number | null) => v ?? 0);
+      const max = Math.max(1, ...vals);
+      const peak = vals.slice(7).reduce((m, v, i, a) => (v > a[m] ? i : m), 0) + 7;
+      const plot = $('[data-plot]');
+      plot.innerHTML = '';
+      d.daily.time.forEach((day: string, i: number) => {
+        const col = document.createElement('div');
+        col.className = `col${i < 7 ? ' past' : ''}${i === 7 ? ' today' : ''}`;
+        col.tabIndex = 0;
+        const label = `${new Date(day + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })} · ${inches(vals[i])} ${i < 7 ? 'fell' : 'forecast'}`;
+        col.setAttribute('aria-label', label);
+        col.dataset.tip = label;
+        if (i === peak && vals[i] >= 0.5) col.insertAdjacentHTML('beforeend', `<span class="cap">${inches(vals[i])}</span>`);
+        col.insertAdjacentHTML('beforeend', `<span class="bar" style="height:${(vals[i] / max) * 100}%"></span><span class="d">${new Date(day + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'narrow' })}</span>`);
+        plot.append(col);
+      });
+
+      // 7-day strip doubles as the table view of the forecast.
+      $('[data-days]').innerHTML = d.daily.time.slice(7).map((day: string, j: number) => {
+        const i = j + 7, wd = wmo(d.daily.weather_code[i]);
+        const name = j === 0 ? 'Today' : new Date(day + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short' });
+        return `<li><span class="dn">${name}</span>${icon(wd.icon)}<span class="hl"><b>${Math.round(d.daily.temperature_2m_max[i])}°</b> ${Math.round(d.daily.temperature_2m_min[i])}°</span><span class="sn">${vals[i] >= 0.1 ? '❄ ' + inches(vals[i]) : ''}</span></li>`;
+      }).join('');
+      $('[data-fine]').textContent = `Model forecast from Open-Meteo for this mountain at ${elevFt.toLocaleString('en-US')} ft, updated ${new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })}. It is not a measured snow report. Use the official report for base depth and open trails.`;
+    }
+
+    // Hover / focus tooltip for the bars.
+    const tip = $('[data-tip]');
+    const show = (e: Event) => {
+      const col = (e.target as HTMLElement).closest<HTMLElement>('.col');
+      if (!col) return;
+      tip.textContent = col.dataset.tip!;
+      tip.style.left = `${col.offsetLeft + col.offsetWidth / 2}px`;
+      tip.hidden = false;
+    };
+    $('[data-plot]').addEventListener('mouseover', show);
+    $('[data-plot]').addEventListener('focusin', show);
+    $('[data-plot]').addEventListener('mouseleave', () => (tip.hidden = true));
+    $('[data-plot]').addEventListener('focusout', () => (tip.hidden = true));
+
+    root.querySelectorAll<HTMLButtonElement>('[data-level]').forEach((b) => b.addEventListener('click', () => {
+      root.querySelectorAll('[data-level]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      load(Number(b.dataset.level));
+    }));
+    load(Number(root.querySelector<HTMLElement>('[data-level][aria-pressed="true"]')!.dataset.level));
+  });
+</script>

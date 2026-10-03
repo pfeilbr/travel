@@ -15,6 +15,9 @@
   --pine-soft: #e3f1ea;
   --gold: #f5a524;
   --danger: #c13515;
+  --snow: #2f6fdb;            /* snowfall marks and badges */
+  --snow-soft: #e8f1fb;
+  --snow-ink: #1d4f80;
   --shadow-sm: 0 1px 2px rgba(0,0,0,.08);
   --shadow: 0 6px 16px rgba(0,0,0,.12);
   --shadow-lg: 0 16px 48px rgba(0,0,0,.18);
@@ -25,6 +28,7 @@
   --font-display: "Fraunces", Georgia, serif;
   --gutter: clamp(16px, 4vw, 40px);
   --max: 1360px;
+  --header-h: 80px;          /* sticky offsets below the site header */
   color-scheme: light;
 }
 
@@ -43,6 +47,9 @@
     --accent-hover: #ff9370;
     --pine: #5cc597;
     --pine-soft: #183026;
+    --snow: #5296ea;
+    --snow-soft: #172a40;
+    --snow-ink: #a9cdf5;
     --shadow: 0 6px 16px rgba(0,0,0,.5);
     --shadow-lg: 0 16px 48px rgba(0,0,0,.6);
     color-scheme: dark;
@@ -62,10 +69,15 @@
   --accent-hover: #ff9370;
   --pine: #5cc597;
   --pine-soft: #183026;
+  --snow: #5296ea;
+  --snow-soft: #172a40;
+  --snow-ink: #a9cdf5;
   --shadow: 0 6px 16px rgba(0,0,0,.5);
   --shadow-lg: 0 16px 48px rgba(0,0,0,.6);
   color-scheme: dark;
 }
+
+@media (max-width: 900px) { :root { --header-h: 64px; } }
 
 *, *::before, *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }

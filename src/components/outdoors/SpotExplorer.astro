@@ -1,0 +1,158 @@
+---
+import { getImage } from 'astro:assets';
+import SpotCard from './SpotCard.astro';
+import Icon from '../Icon.astro';
+import type { Spot } from '../../data/outdoors/types';
+import type { Pursuit } from '../../data/outdoors/pursuits';
+import { skiRegionById, skiRegions } from '../../data/ski/regions';
+import { trips } from '../../data/trips';
+import { imagesFor } from '../../lib/images';
+import { miles } from '../../lib/ski';
+import { SPOT_SIZE_LABEL, priceText, sortSpots, type SpotRow } from '../../lib/outdoors';
+import { url } from '../../lib/paths';
+import '../../styles/listmap.css';
+
+interface Props { pursuit: Pursuit; spots: Spot[] }
+const { pursuit: p, spots } = Astro.props;
+const home = trips[0]?.origin ?? { name: 'Verona, NY', coords: [43.138, -75.571] as [number, number] };
+const rows = sortSpots(spots.map((s) => ({ ...s, miles: miles(home.coords, s.coords) })), 'recommended');
+
+type ClientRow = SpotRow & { coords: [number, number]; href: string; thumb: string | null; pin: string; line: string };
+const data: ClientRow[] = await Promise.all(rows.map(async (s) => {
+  const first = imagesFor(s.id)[0];
+  const thumb = first ? (await getImage({ src: first.src, width: 480, format: 'webp' })).src : null;
+  const cur = skiRegionById[s.region].currency;
+  return {
+    id: s.id, name: s.name, region: s.region, kind: s.kind, size: s.size, features: s.features,
+    google: s.google && { rating: s.google.rating }, price: s.price && { from: s.price.from }, miles: Math.round(s.miles),
+    coords: s.coords, href: url(`${p.slug}/${s.id}/`), thumb,
+    pin: s.price ? (s.price.from === 0 ? 'Free' : priceText({ ...s.price, unit: '' }, cur)) : s.google ? `★ ${s.google.rating.toFixed(1)}` : s.name.split(' ')[0],
+    line: `${s.kind} · ${s.area}`,
+  };
+}));
+
+const regionChips = skiRegions.filter((g) => spots.some((s) => s.region === g.id));
+const kindChips = p.kinds.filter((k) => spots.some((s) => s.kind === k));
+const featureChips = p.features.filter((f) => spots.some((s) => s.features.includes(f.id)));
+---
+<section class="explorer lm" id="explore" data-spot-explorer data-noun={JSON.stringify(p.noun)}>
+  <div class="filters">
+    <div class="container filter-row">
+      <div class="chips" role="group" aria-label="Filters">
+        {regionChips.map((g) => <button class="chip" data-region={g.id} aria-pressed="false">{g.name}</button>)}
+        {kindChips.length > 1 && <span class="sep" aria-hidden="true"></span>}
+        {kindChips.length > 1 && kindChips.map((k) => <button class="chip" data-kind={k} aria-pressed="false">{k}</button>)}
+        <span class="sep" aria-hidden="true"></span>
+        {featureChips.map((f) => <button class="chip" data-feature={f.id} aria-pressed="false"><Icon name={f.icon} size={16} />{f.label}</button>)}
+        <span class="sep" aria-hidden="true"></span>
+        {(['major', 'mid', 'local'] as const).map((s) => <button class="chip" data-size={s} aria-pressed="false">{SPOT_SIZE_LABEL[s]}</button>)}
+      </div>
+      <label class="sort">
+        <span class="sr-only">Sort</span>
+        <select data-sort>
+          <option value="recommended">Recommended</option>
+          <option value="near">Closest to {home.name}</option>
+          <option value="rating">Highest rated</option>
+          <option value="price">Lowest price</option>
+          <option value="name">A–Z</option>
+        </select>
+      </label>
+      <button class="btn btn-outline btn-sm map-toggle-desk" data-map-toggle aria-pressed="true"><Icon name="map" size={16} /><span>Hide map</span></button>
+    </div>
+  </div>
+
+  <div class="split" data-split>
+    <div class="list">
+      <p class="count"><span data-count aria-live="polite">{rows.length} {rows.length === 1 ? p.noun[0] : p.noun[1]}</span></p>
+      <div class="grid" data-grid>
+        {rows.map((s, i) => <SpotCard spot={s} eager={i < 3} />)}
+      </div>
+      <div class="empty" data-empty hidden>
+        <h3>No exact matches</h3>
+        <p class="muted">Try removing some filters.</p>
+        <button class="btn btn-outline" data-clear>Clear all filters</button>
+      </div>
+    </div>
+    <aside class="map-pane">
+      <div class="map" data-map role="region" aria-label={`Map of ${p.name.toLowerCase()} spots`}></div>
+    </aside>
+  </div>
+
+  <button class="map-fab" data-map-fab><span data-fab-label>Map</span><Icon name="map" size={16} /></button>
+  <script type="application/json" data-rows set:html={JSON.stringify(data)} />
+</section>
+
+<script>
+  import { matchesSpot, parseSpotFilters, serializeSpotFilters, sortSpots, type SpotFilters, type SpotRow, type SpotSort } from '../../lib/outdoors';
+  import { esc, offeredOnly, setupListMap, type MapRow } from '../../lib/listmap';
+  import { wireCarousels } from '../../lib/carousel';
+  import { wireHearts } from '../../lib/wishlist';
+
+  type R = SpotRow & { coords: [number, number]; href: string; thumb: string | null; pin: string; line: string };
+
+  document.querySelectorAll<HTMLElement>('[data-spot-explorer]').forEach((root) => {
+    const data: R[] = JSON.parse(root.querySelector('[data-rows]')!.textContent!);
+    const [one, many] = JSON.parse(root.dataset.noun!) as [string, string];
+    const grid = root.querySelector<HTMLElement>('[data-grid]')!;
+    const cards = new Map([...grid.querySelectorAll<HTMLElement>('[data-card]')].map((c) => [c.dataset.card!, c]));
+
+    wireCarousels(root);
+    wireHearts(root);
+
+    const rows: MapRow[] = data.map((d) => ({
+      id: d.id, coords: d.coords, pin: esc(d.pin), major: d.size === 'major',
+      popup: () => `<a class="mini" href="${d.href}">${d.thumb ? `<img src="${d.thumb}" alt="">` : ''}<div><b>${esc(d.name)}</b><span class="m">${d.google ? `★ ${d.google.rating.toFixed(1)} · ` : ''}${esc(d.line)}</span></div></a>`,
+    }));
+    const lm = setupListMap(root, rows, cards);
+
+    let { filters, sort } = parseSpotFilters(new URLSearchParams(location.search));
+    filters = {
+      regions: offeredOnly(root, 'region', filters.regions), kinds: offeredOnly(root, 'kind', filters.kinds),
+      features: offeredOnly(root, 'feature', filters.features), sizes: offeredOnly(root, 'size', filters.sizes),
+    };
+
+    function render() {
+      const visible = sortSpots(data.filter((r) => matchesSpot(r, filters)), sort);
+      const ids = new Set(visible.map((r) => r.id));
+      visible.forEach((r) => grid.append(cards.get(r.id)!));
+      cards.forEach((c, id) => (c.hidden = !ids.has(id)));
+      root.querySelector('[data-count]')!.textContent = `${ids.size} ${ids.size === 1 ? one : many}`;
+      root.querySelector<HTMLElement>('[data-empty]')!.hidden = ids.size > 0;
+      lm.show(ids);
+      sync();
+      history.replaceState(null, '', location.pathname + serializeSpotFilters(filters, sort) + location.hash);
+    }
+
+    const pressed = (sel: string, key: string, list: string[]) =>
+      root.querySelectorAll<HTMLElement>(sel).forEach((b) => b.setAttribute('aria-pressed', String(list.includes(b.dataset[key]!))));
+    function sync() {
+      pressed('[data-region]', 'region', filters.regions);
+      pressed('[data-kind]', 'kind', filters.kinds);
+      pressed('[data-feature]', 'feature', filters.features);
+      pressed('[data-size]', 'size', filters.sizes);
+      root.querySelector<HTMLSelectElement>('[data-sort]')!.value = sort;
+    }
+
+    const toggle = <T,>(arr: T[], v: T) => (arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
+    const wire = (sel: string, key: string, field: keyof SpotFilters) =>
+      root.querySelectorAll<HTMLElement>(sel).forEach((b) => b.addEventListener('click', () => {
+        filters = { ...filters, [field]: toggle(filters[field] as string[], b.dataset[key]!) } as SpotFilters;
+        render();
+      }));
+    wire('[data-region]', 'region', 'regions');
+    wire('[data-kind]', 'kind', 'kinds');
+    wire('[data-feature]', 'feature', 'features');
+    wire('[data-size]', 'size', 'sizes');
+    root.querySelector<HTMLSelectElement>('[data-sort]')!.addEventListener('change', (e) => { sort = (e.target as HTMLSelectElement).value as SpotSort; render(); });
+    root.querySelector('[data-clear]')!.addEventListener('click', () => { filters = { regions: [], kinds: [], features: [], sizes: [] }; render(); });
+    // Region tiles and links elsewhere on the page can set the region filter without a reload.
+    document.querySelectorAll<HTMLAnchorElement>('a[data-set-region]').forEach((a) => a.addEventListener('click', (e) => {
+      e.preventDefault();
+      filters = { ...filters, regions: [a.dataset.setRegion as SpotFilters['regions'][number]] };
+      render();
+      root.scrollIntoView({ behavior: 'smooth' });
+    }));
+
+    render();
+  });
+</script>

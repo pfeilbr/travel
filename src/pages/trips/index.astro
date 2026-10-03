@@ -4,6 +4,8 @@ import Layout from '../../layouts/Layout.astro';
 import Icon from '../../components/Icon.astro';
 import { trips } from '../../data/trips';
 import { places, placeById } from '../../data/places';
+import { resorts, skiRegions } from '../../data/ski';
+import { pursuits, spots } from '../../data/outdoors';
 import { imagesFor } from '../../lib/images';
 import { dateRange } from '../../lib/format';
 import { url } from '../../lib/paths';
@@ -43,14 +45,23 @@ const sorted = [...trips].sort((a, b) => b.start.localeCompare(a.start));
           <label>End<input type="date" name="end_date" /></label>
         </div>
         <label>Where
-          <select name="place_id"><option value="">Not decided</option>{places.map((p) => <option value={p.id}>{p.name}</option>)}</select>
+          <select name="place_id">
+            <option value="">Not decided</option>
+            <optgroup label="Camping and cabins">{places.map((p) => <option value={p.id}>{p.name}</option>)}</optgroup>
+            {skiRegions.filter((g) => resorts.some((r) => r.region === g.id)).map((g) => (
+              <optgroup label={`Ski · ${g.name}`}>{resorts.filter((r) => r.region === g.id).map((r) => <option value={r.id}>{r.name}</option>)}</optgroup>
+            ))}
+            {pursuits.filter((pu) => spots.some((sp) => sp.pursuit === pu.id)).map((pu) => (
+              <optgroup label={pu.name}>{spots.filter((sp) => sp.pursuit === pu.id).map((sp) => <option value={sp.id}>{sp.name}</option>)}</optgroup>
+            ))}
+          </select>
         </label>
         <label>Notes<textarea name="notes" rows="3" maxlength="5000" placeholder="Cabin #003, bring sleeping bags, dinner at Moosewood…"></textarea></label>
         <p class="error" data-error hidden></p>
         <div class="row"><button class="btn btn-primary">Save plan</button><button type="button" class="btn btn-ghost" data-cancel>Cancel</button></div>
       </form>
       <ul class="plan-list" data-list></ul>
-      <script type="application/json" data-names set:html={JSON.stringify(Object.fromEntries(places.map((p) => [p.id, p.name])))} />
+      <script type="application/json" data-names set:html={JSON.stringify(Object.fromEntries([...places.map((p) => [p.id, [p.name, `places/${p.id}/`]]), ...resorts.map((r) => [r.id, [r.name, `ski/resorts/${r.id}/`]]), ...spots.map((sp) => [sp.id, [sp.name, `${pursuits.find((pu) => pu.id === sp.pursuit)!.slug}/${sp.id}/`]])]))} />
     </div>
   </section>
 </Layout>
@@ -87,7 +98,7 @@ const sorted = [...trips].sort((a, b) => b.start.localeCompare(a.start));
   const form = root.querySelector<HTMLFormElement>('[data-form]')!;
   const list = root.querySelector<HTMLElement>('[data-list]')!;
   const err = root.querySelector<HTMLElement>('[data-error]')!;
-  const names: Record<string, string> = JSON.parse(root.querySelector('[data-names]')!.textContent!);
+  const names: Record<string, [name: string, path: string]> = JSON.parse(root.querySelector('[data-names]')!.textContent!);
   const base = import.meta.env.BASE_URL;
   const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
   const fmt = (d: string | null) => d ? new Date(d + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
@@ -97,7 +108,7 @@ const sorted = [...trips].sort((a, b) => b.start.localeCompare(a.start));
     root.querySelector<HTMLElement>('[data-out]')!.hidden = !!getUser();
     if (!sb || !getUser()) { list.innerHTML = ''; return; }
     const { data } = await sb.from('trip_plans').select('*').order('start_date', { ascending: true, nullsFirst: false });
-    list.innerHTML = (data ?? []).map((p) => `<li><div><b>${esc(p.title)}</b><div class="pm">${[p.start_date && `${fmt(p.start_date)}${p.end_date ? ' – ' + fmt(p.end_date) : ''}`, p.place_id && `<a href="${base}places/${p.place_id}/">${esc(names[p.place_id] ?? p.place_id)}</a>`].filter(Boolean).join(' · ')}</div>${p.notes ? `<p class="pn">${esc(p.notes)}</p>` : ''}</div><button data-del="${p.id}">Delete</button></li>`).join('')
+    list.innerHTML = (data ?? []).map((p) => `<li><div><b>${esc(p.title)}</b><div class="pm">${[p.start_date && `${fmt(p.start_date)}${p.end_date ? ' – ' + fmt(p.end_date) : ''}`, p.place_id && (names[p.place_id] ? `<a href="${base}${names[p.place_id][1]}">${esc(names[p.place_id][0])}</a>` : esc(p.place_id))].filter(Boolean).join(' · ')}</div>${p.notes ? `<p class="pn">${esc(p.notes)}</p>` : ''}</div><button data-del="${p.id}">Delete</button></li>`).join('')
       || '<li class="muted">No plans yet.</li>';
     list.querySelectorAll<HTMLButtonElement>('[data-del]').forEach((b) => b.addEventListener('click', async () => {
       if (!confirm('Delete this plan?')) return;

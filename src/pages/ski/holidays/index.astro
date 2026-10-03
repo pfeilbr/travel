@@ -1,0 +1,144 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../../layouts/Layout.astro';
+import Icon from '../../../components/Icon.astro';
+import RegionTabs from '../../../components/ski/RegionTabs.astro';
+import { resorts, skiRegionById, skiRegions } from '../../../data/ski';
+import { imagesFor } from '../../../lib/images';
+import { EVENT_ICON, EVENT_LABEL, eventsOf } from '../../../lib/ski';
+import { url } from '../../../lib/paths';
+
+const rows = eventsOf(resorts);
+const holidayCount = rows.filter((r) => r.event.kind === 'christmas' || r.event.kind === 'new-years').length;
+const regionsWith = skiRegions.filter((g) => rows.some((r) => r.resort.region === g.id));
+const monthKey = (iso: string) => iso.slice(0, 7);
+const monthName = (k: string) => new Date(k + '-15T12:00:00Z').toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+const months = [...new Set(rows.map((r) => monthKey(r.event.date)))];
+const d = (iso: string) => new Date(iso + 'T12:00:00Z');
+---
+<Layout title="Holidays on the mountain" description={`Christmas Eve torchlight parades, New Year’s fireworks and the season’s big events at ${resorts.length} ski resorts.`}>
+  <RegionTabs active="holidays" />
+  <section class="container page" data-holidays>
+    <header class="head">
+      <h1>Holidays on the mountain</h1>
+      <p class="muted">{holidayCount} Christmas and New Year’s events, from torchlight parades and Santa on skis to midnight fireworks, plus the rest of the 2026–27 calendar. Dates marked “usually” follow past years until the resort posts this season’s schedule.</p>
+    </header>
+
+    <div class="bar">
+      <div class="seg" role="group" aria-label="Event type">
+        <button data-kind="holidays" aria-pressed="true"><Icon name="tree" size={16} />Christmas &amp; New Year’s</button>
+        <button data-kind="christmas" aria-pressed="false">Christmas</button>
+        <button data-kind="new-years" aria-pressed="false">New Year’s</button>
+        <button data-kind="all" aria-pressed="false">All events</button>
+      </div>
+      <div class="chips" role="group" aria-label="Regions">
+        {regionsWith.map((g) => <button class="chip" data-region={g.id} aria-pressed="false">{g.name}</button>)}
+      </div>
+    </div>
+
+    <p class="count" data-count aria-live="polite"></p>
+
+    {months.map((m) => (
+      <section class="month" data-month>
+        <h2>{monthName(m)}</h2>
+        <ol class="events">
+          {rows.filter((r) => monthKey(r.event.date) === m).map(({ resort, event }) => {
+            const img = imagesFor(resort.id)[0];
+            return (
+              <li data-ev data-kind={event.kind} data-region={resort.region}>
+                <div class="date"><span class="dow">{d(event.date).toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' })}</span><b>{d(event.date).getUTCDate()}</b><span class="mon">{d(event.date).toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' })}</span></div>
+                <a class="thumb" href={url(`ski/resorts/${resort.id}/#events`)} tabindex="-1" aria-hidden="true">
+                  {img ? <Image src={img.src} alt="" widths={[240]} sizes="120px" /> : <span class="ph"><Icon name="mountain" size={24} /></span>}
+                </a>
+                <div class="body">
+                  <div class="tags">
+                    <span class:list={['kind', event.kind]}><Icon name={EVENT_ICON[event.kind]} size={13} />{EVENT_LABEL[event.kind]}</span>
+                    <span class="when">{event.when}</span>
+                    {!event.confirmed && <span class="usually">Usually</span>}
+                  </div>
+                  <h3>{event.url ? <a href={event.url} rel="noopener">{event.name}</a> : event.name}</h3>
+                  <p class="where"><a href={url(`ski/resorts/${resort.id}/`)}>{resort.name}</a> <span class="muted">· {resort.town} · {skiRegionById[resort.region].short}</span></p>
+                  <p class="muted what">{event.what}</p>
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      </section>
+    ))}
+    <div class="empty" data-empty hidden>
+      <h3>No events match</h3>
+      <p class="muted">Try another region or event type.</p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page { padding-top: 24px; }
+  .head h1 { font-family: var(--font-display); font-size: clamp(30px, 4vw, 44px); margin-bottom: 6px; }
+  .head p { max-width: 760px; }
+  .bar { position: sticky; top: var(--header-h); z-index: 30; background: var(--bg); padding: 12px 0; display: grid; gap: 10px; border-bottom: 1px solid var(--rule); }
+  .seg { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+  .seg button { flex: none; display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 16px; border-radius: var(--radius-pill); border: 1px solid var(--rule-strong); background: var(--surface-2); font-weight: 600; font-size: 14px; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding: 2px; }
+  .count { font-weight: 600; margin: 20px 0 0; }
+  .month h2 { font-size: 22px; margin: 28px 0 12px; }
+  .events { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .events li { display: grid; grid-template-columns: 56px 120px minmax(0, 1fr); gap: 16px; align-items: start; padding: 14px; border: 1px solid var(--rule); border-radius: var(--radius); }
+  .date { display: grid; justify-items: center; line-height: 1.1; padding-top: 4px; }
+  .date b { font-size: 26px; }
+  .dow, .mon { font-size: 12px; font-weight: 700; text-transform: uppercase; color: var(--muted); }
+  .thumb { display: block; width: 120px; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: var(--surface); }
+  .thumb :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  .ph { display: grid; place-items: center; height: 100%; color: #fff; background: linear-gradient(160deg, #6f9fc9, #2f5f8a 55%, #1d3550); }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12px; font-weight: 700; }
+  .kind { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 6px; background: var(--surface); color: var(--ink-2); text-transform: uppercase; letter-spacing: .03em; }
+  .kind.christmas, .kind.new-years { background: color-mix(in srgb, var(--accent) 14%, var(--surface-2)); color: var(--accent); }
+  .usually { font-weight: 600; color: var(--muted); border: 1px solid var(--rule-strong); border-radius: 6px; padding: 0 6px; }
+  .body h3 { font-size: 17px; margin: 6px 0 2px; }
+  .body h3 a, .where a { text-decoration: none; }
+  .body h3 a:hover, .where a:hover { text-decoration: underline; }
+  .where { margin: 0; font-size: 14px; font-weight: 600; }
+  .what { margin: 4px 0 0; font-size: 14px; }
+  .empty { text-align: center; padding: 64px 0; }
+  @media (max-width: 760px) {
+    .events li { grid-template-columns: 48px minmax(0, 1fr); }
+    .thumb { display: none; }
+  }
+</style>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-holidays]')!;
+  const q = new URLSearchParams(location.search);
+  let kind = q.get('kind') || 'holidays';
+  let regions = (q.get('region') || '').split(',').filter(Boolean);
+  const evs = [...root.querySelectorAll<HTMLElement>('[data-ev]')];
+
+  function render() {
+    let n = 0;
+    evs.forEach((e) => {
+      const k = e.dataset.kind!;
+      const okKind = kind === 'all' || (kind === 'holidays' ? k === 'christmas' || k === 'new-years' : k === kind);
+      const ok = okKind && (!regions.length || regions.includes(e.dataset.region!));
+      e.hidden = !ok;
+      if (ok) n++;
+    });
+    root.querySelectorAll<HTMLElement>('[data-month]').forEach((m) => (m.hidden = !m.querySelector('[data-ev]:not([hidden])')));
+    root.querySelector('[data-count]')!.textContent = `${n} event${n === 1 ? '' : 's'}`;
+    root.querySelector<HTMLElement>('[data-empty]')!.hidden = n > 0;
+    root.querySelectorAll<HTMLElement>('[data-kind]').forEach((b) => b.tagName === 'BUTTON' && b.setAttribute('aria-pressed', String(b.dataset.kind === kind)));
+    root.querySelectorAll<HTMLElement>('button[data-region]').forEach((b) => b.setAttribute('aria-pressed', String(regions.includes(b.dataset.region!))));
+    const p = new URLSearchParams();
+    if (kind !== 'holidays') p.set('kind', kind);
+    if (regions.length) p.set('region', regions.join(','));
+    history.replaceState(null, '', location.pathname + (p.toString() ? `?${p}` : ''));
+  }
+  root.querySelectorAll<HTMLButtonElement>('button[data-kind]').forEach((b) => b.addEventListener('click', () => { kind = b.dataset.kind!; render(); }));
+  root.querySelectorAll<HTMLButtonElement>('button[data-region]').forEach((b) => b.addEventListener('click', () => {
+    const id = b.dataset.region!;
+    regions = regions.includes(id) ? regions.filter((r) => r !== id) : [...regions, id];
+    render();
+  }));
+  render();
+</script>

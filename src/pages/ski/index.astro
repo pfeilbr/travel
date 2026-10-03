@@ -1,0 +1,286 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+import Icon from '../../components/Icon.astro';
+import RegionTabs from '../../components/ski/RegionTabs.astro';
+import ResortCard from '../../components/ski/ResortCard.astro';
+import { resorts, skiGroups, skiRegions, skiRegionById } from '../../data/ski';
+import { trips } from '../../data/trips';
+import type { SkiActivity } from '../../data/ski/types';
+import { imagesFor } from '../../lib/images';
+import { ACTIVITY, EVENT_LABEL, HOLIDAY_KINDS, PASSES, PASS_LABEL, eventsOf, miles, plural, sortResorts } from '../../lib/ski';
+import { url } from '../../lib/paths';
+
+const ranked = sortResorts(resorts, 'recommended');
+const heroImg = imagesFor('ski-hero')[0] ?? ranked.map((r) => imagesFor(r.id)[0]).find(Boolean);
+const regionImg = (id: string) => sortResorts(resorts.filter((r) => r.region === id), 'recommended').map((r) => imagesFor(r.id)[0]).find(Boolean);
+const count = (id: string) => resorts.filter((r) => r.region === id).length;
+
+const holidays = eventsOf(resorts, HOLIDAY_KINDS);
+// Feature a spread: big resorts first, one per resort, Christmas and NYE mixed.
+const featured = (() => {
+  const seen = new Set<string>();
+  const order = [...holidays].sort((a, b) => (a.resort.size === 'major' ? 0 : 1) - (b.resort.size === 'major' ? 0 : 1) || Number(b.event.confirmed) - Number(a.event.confirmed));
+  const out: typeof holidays = [];
+  for (const kind of ['christmas', 'new-years', 'christmas', 'new-years', 'christmas', 'new-years'] as const) {
+    const pick = order.find((r) => r.event.kind === kind && !seen.has(r.resort.id));
+    if (pick) { seen.add(pick.resort.id); out.push(pick); }
+  }
+  return out.sort((a, b) => a.event.date.localeCompare(b.event.date));
+})();
+
+const home = trips[0]?.origin ?? { name: 'Verona, NY', coords: [43.138, -75.571] as [number, number] };
+const nearHome = [...resorts].map((r) => ({ r, d: miles(home.coords, r.coords) })).filter((x) => x.d < 160).sort((a, b) => a.d - b.d).slice(0, 8).map((x) => x.r);
+const openingFirst = sortResorts(resorts.filter((r) => r.size !== 'local'), 'opening').slice(0, 8);
+const biggest = sortResorts(resorts, 'vertical').slice(0, 8);
+const passCounts = PASSES.map((p) => ({ p, n: resorts.filter((r) => r.passes.includes(p)).length })).filter((x) => x.n > 0);
+const wants: SkiActivity[] = ['sleigh-rides', 'snowmobiling', 'ice-skating', 'scenic-lift', 'night-skiing', 'nightlife', 'tubing', 'dog-sledding', 'spa', 'hot-springs'];
+const wantCounts = wants.map((a) => ({ a, n: resorts.filter((r) => r.activities.includes(a)).length })).filter((x) => x.n > 0);
+const liveRows = resorts.map((r) => ({ id: r.id, name: r.name, region: skiRegionById[r.region].short, href: url(`ski/resorts/${r.id}/`), lat: r.coords[0], lng: r.coords[1], elevationFt: Math.round((r.stats.summitFt + r.stats.baseFt) / 2) }));
+const d = (iso: string) => new Date(iso + 'T12:00:00Z');
+---
+<Layout title="Ski season 2026–27" overlayHeader description={`${resorts.length} ski resorts across Vermont, New Hampshire, New York, Pennsylvania, Utah, Colorado, Montana, California, Arizona, Québec and British Columbia, with live snow forecasts, lodging, things to do and holiday events.`} image={heroImg?.src.src}>
+  <section class="hero">
+    {heroImg ? <Image class="hero-img" src={heroImg.src} alt={heroImg.alt} widths={[960, 1600]} sizes="100vw" loading="eager" fetchpriority="high" /> : <div class="hero-img fallback"></div>}
+    <div class="shade"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow"><span class="flake"><Icon name="snowflake" size={14} /></span> Ski season 2026–27 · live snow forecasts</p>
+      <h1>Find your<br />mountain.</h1>
+      <p class="lede">{resorts.length} resorts from Vermont to Whistler. Compare vertical, passes and lift prices, see where it’s snowing, and plan the stay, the après and the holiday fireworks.</p>
+      <form class="search" action={url('ski/explore/')} method="get" data-search>
+        <label class="seg"><span>Where</span>
+          <select name="region">
+            <option value="">Anywhere</option>
+            {skiGroups.map((g) => <optgroup label={g}>{skiRegions.filter((r) => r.group === g).map((r) => <option value={r.id}>{r.name}</option>)}</optgroup>)}
+          </select>
+        </label>
+        <label class="seg"><span>Pass</span>
+          <select name="pass">
+            <option value="">Any pass</option>
+            {PASSES.map((p) => <option value={p}>{PASS_LABEL[p]}</option>)}
+          </select>
+        </label>
+        <label class="seg"><span>Also want</span>
+          <select name="do">
+            <option value="">Anything</option>
+            {wantCounts.map((x) => <option value={x.a}>{ACTIVITY[x.a].label}</option>)}
+          </select>
+        </label>
+        <button class="go" aria-label="Search"><Icon name="search" size={18} /><span>Search</span></button>
+      </form>
+      {heroImg && <p class="credit">Photo: {heroImg.alt}, {heroImg.author} ({heroImg.license})</p>}
+    </div>
+  </section>
+
+  <RegionTabs />
+
+  <section class="container">
+    <div class="sec-head"><h2>Pick a region</h2><a href={url('ski/explore/')}>All {plural(resorts.length, 'resort')}</a></div>
+    {skiGroups.map((g) => (
+      <div class="group">
+        <h3 class="gname">{g}</h3>
+        <div class="regions">
+          {skiRegions.filter((r) => r.group === g).map((r) => {
+            const img = regionImg(r.id);
+            return (
+              <a class="region" href={url(`ski/${r.id}/`)}>
+                {img ? <Image src={img.src} alt="" widths={[480, 800]} sizes="(max-width: 760px) 80vw, 25vw" /> : <div class="rfill"></div>}
+                <div class="rtext"><span class="n">{plural(count(r.id), 'resort')}</span><b>{r.name}</b><span>{r.tagline}</span></div>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    ))}
+  </section>
+
+  <section class="container live" data-live-snow>
+    <div class="sec-head"><h2><Icon name="snowflake" size={22} /> Where it’s snowing</h2><span class="muted small">Model forecast, next 7 days</span></div>
+    <ol class="snow-list" data-snow-list><li class="muted">Loading the live forecast…</li></ol>
+    <script type="application/json" data-rows set:html={JSON.stringify(liveRows)} />
+  </section>
+
+  {featured.length > 0 && (
+    <section class="container">
+      <div class="holiday-band">
+        <div class="hb-copy">
+          <span class="badge badge-pine"><Icon name="tree" size={13} /> Christmas &amp; New Year’s</span>
+          <h2>Holidays on the mountain</h2>
+          <p>Torchlight parades on Christmas Eve, Santa on skis, and fireworks at midnight. {plural(holidays.length, 'holiday event')} across every region.</p>
+          <a class="btn btn-primary" href={url('ski/holidays/')}>See the holiday calendar <Icon name="chev-right" size={16} /></a>
+        </div>
+        <ol class="hb-list">
+          {featured.map(({ resort, event }) => (
+            <li>
+              <div class="hd"><b>{d(event.date).getUTCDate()}</b><span>{d(event.date).toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' })}</span></div>
+              <div><span class="hk">{EVENT_LABEL[event.kind]}{!event.confirmed && ' · usually'}</span><a href={url(`ski/resorts/${resort.id}/#events`)}><b>{event.name}</b></a><span class="muted"> · {resort.name}, {skiRegionById[resort.region].short}</span></div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )}
+
+  {nearHome.length > 0 && (
+    <section class="container">
+      <div class="sec-head"><h2>Close to {home.name}</h2><a href={url('ski/new-york/')}>All New York</a></div>
+      <div class="rail">{nearHome.map((r) => <ResortCard resort={r} />)}</div>
+    </section>
+  )}
+
+  <section class="container">
+    <div class="sec-head"><h2>Opening first</h2><a href={url('ski/explore/?sort=opening')}>Show all</a></div>
+    <div class="rail">{openingFirst.map((r) => <ResortCard resort={r} badge={`Opens ${d(r.season.opens).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })}`} />)}</div>
+  </section>
+
+  <section class="container">
+    <div class="sec-head"><h2>Biggest vertical</h2><a href={url('ski/explore/?sort=vertical')}>Show all</a></div>
+    <div class="rail">{biggest.map((r) => <ResortCard resort={r} badge={`${r.stats.verticalFt.toLocaleString('en-US')} ft`} />)}</div>
+  </section>
+
+  <section class="container">
+    <div class="sec-head"><h2>More than skiing</h2></div>
+    <div class="wants">
+      {wantCounts.map((x) => (
+        <a class="want" href={url(`ski/explore/?do=${x.a}`)}><span class="wi"><Icon name={ACTIVITY[x.a].icon} size={24} /></span><b>{ACTIVITY[x.a].label}</b><span class="muted">{plural(x.n, 'resort')}</span></a>
+      ))}
+    </div>
+  </section>
+
+  <section class="container passes">
+    {passCounts.map((x) => (
+      <a href={url(`ski/explore/?pass=${x.p}`)}><span class="wi"><Icon name="ticket" size={24} /></span><h3>{PASS_LABEL[x.p]}</h3><p class="muted">{plural(x.n, 'resort')} here {x.n === 1 ? 'takes' : 'take'} the {PASS_LABEL[x.p]} pass in 2026–27.</p></a>
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .hero { position: relative; min-height: min(86vh, 760px); display: flex; align-items: flex-end; color: #fff; overflow: hidden; }
+  .hero :global(.hero-img) { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: drift 24s ease-out both; }
+  .fallback { background: linear-gradient(160deg, #6f9fc9 0%, #2f5f8a 55%, #1d3550 100%); }
+  @keyframes drift { from { transform: scale(1.08); } to { transform: scale(1); } }
+  @media (prefers-reduced-motion: reduce) { .hero :global(.hero-img) { animation: none; } }
+  .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,.05) 35%, rgba(0,0,0,.25) 60%, rgba(0,0,0,.72) 100%); }
+  .hero-inner { position: relative; width: 100%; padding-top: 140px; padding-bottom: 48px; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; background: rgba(255,255,255,.16); backdrop-filter: blur(8px); padding: 6px 12px; border-radius: var(--radius-pill); }
+  .flake { display: inline-grid; place-items: center; animation: spin 12s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .flake { animation: none; } }
+  .hero h1 { font-family: var(--font-display); font-size: clamp(42px, 7vw, 84px); line-height: 1; letter-spacing: -0.02em; margin: 18px 0 16px; text-shadow: 0 2px 24px rgba(0,0,0,.25); }
+  .lede { font-size: clamp(16px, 1.6vw, 19px); max-width: 600px; opacity: .95; }
+  .search { display: flex; align-items: center; background: var(--surface-2); color: var(--ink); border-radius: var(--radius-pill); box-shadow: var(--shadow-lg); padding: 8px; max-width: 800px; margin-top: 28px; }
+  .seg { flex: 1; display: block; padding: 6px 22px; border-right: 1px solid var(--rule); border-radius: var(--radius-pill); cursor: pointer; min-width: 0; }
+  .seg:hover { background: var(--surface); }
+  .seg:nth-of-type(3) { border-right: 0; }
+  .seg span { display: block; font-size: 12px; font-weight: 700; }
+  .seg select { width: 100%; border: 0; background: transparent; color: var(--muted); font: inherit; font-size: 14px; padding: 0; appearance: none; cursor: pointer; outline: none; }
+  .go { flex: none; height: 52px; min-width: 52px; padding: 0 22px; border: 0; border-radius: var(--radius-pill); background: var(--accent); color: var(--accent-ink); display: inline-flex; align-items: center; gap: 8px; font-weight: 700; cursor: pointer; }
+  .go:hover { background: var(--accent-hover); }
+  .credit { position: absolute; right: var(--gutter); bottom: 40px; font-size: 11px; opacity: .7; margin: 0; max-width: 40ch; text-align: right; }
+  @media (max-width: 760px) {
+    .search { flex-direction: column; align-items: stretch; border-radius: var(--radius-lg); padding: 10px; }
+    .seg { border-right: 0; border-bottom: 1px solid var(--rule); border-radius: 10px; padding: 10px 14px; }
+    .seg:nth-of-type(3) { border-bottom: 0; }
+    .go { justify-content: center; margin-top: 6px; }
+    .credit { display: none; }
+  }
+
+  section.container { margin-top: 64px; }
+  .sec-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+  .sec-head h2 { margin: 0; display: inline-flex; align-items: center; gap: 10px; }
+  .sec-head a { font-weight: 600; font-size: 15px; }
+  .small { font-size: 13px; }
+  .group + .group { margin-top: 28px; }
+  .gname { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 12px; }
+  .regions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .region { position: relative; aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden; color: #fff; text-decoration: none; background: var(--surface); }
+  .region :global(img), .rfill { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+  .rfill { background: linear-gradient(160deg, #6f9fc9, #2f5f8a 55%, #1d3550); }
+  .region:hover :global(img) { transform: scale(1.05); }
+  .region::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 35%, rgba(0,0,0,.78)); }
+  .rtext { position: absolute; left: 16px; right: 16px; bottom: 14px; z-index: 1; display: grid; gap: 2px; }
+  .rtext b { font-size: 20px; }
+  .rtext span { font-size: 13px; opacity: .9; }
+  .rtext .n { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; opacity: .85; }
+  @media (max-width: 1000px) { .regions { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+  .snow-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px 24px; counter-reset: s; }
+  .snow-list :global(li) { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  .snow-list :global(a) { text-decoration: none; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .snow-list :global(a:hover) { text-decoration: underline; }
+  .snow-list :global(.amt) { font-weight: 800; color: var(--snow-ink); background: var(--snow-soft); border-radius: 8px; padding: 2px 8px; font-size: 14px; }
+  .snow-list :global(.rg) { grid-column: 1; font-size: 13px; color: var(--muted); }
+  .snow-list :global(.bar) { grid-column: 1 / -1; height: 4px; border-radius: 4px; background: var(--snow); }
+
+  .holiday-band { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 32px; padding: clamp(24px, 4vw, 44px); border-radius: var(--radius-lg); background: linear-gradient(120deg, #123a2b, #0d2a20 55%, #3b1a12); color: #fff; }
+  .hb-copy h2 { font-family: var(--font-display); font-size: clamp(26px, 3vw, 36px); margin: 14px 0 8px; }
+  .hb-copy p { opacity: .85; }
+  .hb-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .hb-list li { display: flex; gap: 14px; align-items: center; background: rgba(255,255,255,.07); border-radius: 12px; padding: 10px 14px; }
+  .hd { flex: none; width: 46px; text-align: center; line-height: 1.05; }
+  .hd b { display: block; font-size: 22px; }
+  .hd span { font-size: 11px; text-transform: uppercase; font-weight: 700; opacity: .8; }
+  .hk { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: #ffb59c; }
+  .hb-list a { color: #fff; text-decoration: none; }
+  .hb-list a:hover { text-decoration: underline; }
+  .hb-list .muted { color: rgba(255,255,255,.7); font-size: 14px; }
+  @media (max-width: 860px) { .holiday-band { grid-template-columns: 1fr; } }
+
+  .rail { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+  .rail > :global(:nth-child(n+5)) { display: none; }
+  @media (max-width: 1000px) { .rail { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 72%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; } .rail > :global(*) { scroll-snap-align: start; } .rail > :global(:nth-child(n+5)) { display: block; } }
+
+  .wants { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+  .want { display: grid; gap: 4px; padding: 18px; border: 1px solid var(--rule); border-radius: var(--radius); text-decoration: none; transition: box-shadow .15s, border-color .15s; }
+  .want:hover { box-shadow: var(--shadow); border-color: transparent; }
+  .want .muted { font-size: 13px; }
+  .wi { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background: var(--snow-soft); color: var(--snow-ink); margin-bottom: 6px; }
+  @media (max-width: 1000px) { .wants { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+  .passes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; padding-top: 48px; border-top: 1px solid var(--rule); }
+  .passes a { text-decoration: none; }
+  .passes h3 { font-size: 18px; margin-top: 4px; }
+  .passes p { font-size: 14px; }
+  @media (max-width: 860px) { .passes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>
+
+<script>
+  import { inches } from '../../lib/ski';
+  import { loadSnow } from '../../lib/ski-live';
+  import { wireCarousels } from '../../lib/carousel';
+  import { wireHearts } from '../../lib/wishlist';
+
+  wireCarousels();
+  wireHearts();
+
+  // Search: drop empty params; a lone region goes straight to its page.
+  document.querySelector<HTMLFormElement>('[data-search]')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const f = e.target as HTMLFormElement;
+    const q = new URLSearchParams();
+    new FormData(f).forEach((v, k) => { if (v) q.set(k, String(v)); });
+    const region = q.get('region');
+    if (region && [...q.keys()].length === 1) { location.href = f.action.replace(/explore\/$/, `${region}/`); return; }
+    location.href = f.action + (q.toString() ? `?${q}` : '');
+  });
+
+  // Where it's snowing: top resorts by 7-day forecast.
+  const live = document.querySelector<HTMLElement>('[data-live-snow]');
+  if (live) {
+    type Row = { id: string; name: string; region: string; href: string; lat: number; lng: number; elevationFt: number };
+    const rows: Row[] = JSON.parse(live.querySelector('[data-rows]')!.textContent!);
+    const list = live.querySelector<HTMLElement>('[data-snow-list]')!;
+    loadSnow(rows).then((totals) => {
+      const top = rows.map((r) => ({ r, t: totals.get(r.id) })).filter((x) => x.t).sort((a, b) => b.t!.next - a.t!.next).slice(0, 12);
+      if (!top.length) { list.innerHTML = '<li class="muted">The live forecast is unavailable right now.</li>'; return; }
+      if (top[0].t!.next < 0.5) {
+        const past = rows.map((r) => ({ r, t: totals.get(r.id) })).filter((x) => x.t && x.t.past >= 0.5).sort((a, b) => b.t!.past - a.t!.past).slice(0, 6);
+        list.innerHTML = `<li class="muted" style="grid-column:1/-1">No meaningful snow in the 7-day forecast yet.${past.length ? ' Recent snow:' : ''}</li>` +
+          past.map(({ r, t }) => `<li><a href="${r.href}">${r.name}</a><span class="amt">${inches(t!.past)}</span><span class="rg">${r.region} · last 7 days</span></li>`).join('');
+        return;
+      }
+      const max = top[0].t!.next;
+      list.innerHTML = top.map(({ r, t }) => `<li><a href="${r.href}">${r.name}</a><span class="amt">${inches(t!.next)}</span><span class="rg">${r.region} · next 7 days</span><span class="bar" style="width:${Math.max(4, (t!.next / max) * 100)}%"></span></li>`).join('');
+    });
+  }
+</script>

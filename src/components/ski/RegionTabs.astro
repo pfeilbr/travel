@@ -1,0 +1,41 @@
+---
+// Horizontal region switcher (Airbnb category bar): every ski region, grouped, plus "All".
+import Icon from '../Icon.astro';
+import { skiGroups, skiRegions } from '../../data/ski/regions';
+import { resorts } from '../../data/ski';
+import type { SkiRegionId } from '../../data/ski/types';
+import { url } from '../../lib/paths';
+
+interface Props { active?: SkiRegionId | 'all' | 'holidays' }
+const { active } = Astro.props;
+const count = (id: SkiRegionId) => resorts.filter((r) => r.region === id).length;
+---
+<nav class="tabs" aria-label="Ski regions">
+  <div class="track">
+    <a href={url('ski/explore/')} aria-current={active === 'all' ? 'page' : undefined}><Icon name="map" size={22} /><span>All resorts</span></a>
+    <a href={url('ski/holidays/')} aria-current={active === 'holidays' ? 'page' : undefined}><Icon name="sparkle" size={22} /><span>Holidays</span></a>
+    {skiGroups.map((g) => (
+      <>
+        <span class="group" aria-hidden="true">{g}</span>
+        {skiRegions.filter((r) => r.group === g).map((r) => (
+          <a href={url(`ski/${r.id}/`)} aria-current={active === r.id ? 'page' : undefined}>
+            <span class="abbr">{r.short}</span><span>{r.name}</span><span class="n">{count(r.id)}</span>
+          </a>
+        ))}
+      </>
+    ))}
+  </div>
+</nav>
+
+<style>
+  .tabs { border-bottom: 1px solid var(--rule); background: var(--bg); }
+  .track { display: flex; align-items: stretch; gap: 4px; overflow-x: auto; scrollbar-width: none; padding: 0 var(--gutter); max-width: var(--max); margin: 0 auto; mask-image: linear-gradient(90deg, #000 calc(100% - 32px), transparent); }
+  .track::-webkit-scrollbar { display: none; }
+  a { flex: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 12px 12px 10px; min-width: 64px; text-decoration: none; color: var(--muted); font-size: 12px; font-weight: 600; border-bottom: 2px solid transparent; white-space: nowrap; }
+  a:hover { color: var(--ink); border-bottom-color: var(--rule-strong); }
+  a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--ink); }
+  .abbr { display: grid; place-items: center; width: 30px; height: 22px; border-radius: 6px; border: 1.6px solid currentColor; font-size: 11px; font-weight: 800; letter-spacing: .02em; }
+  .n { display: none; }
+  .group { flex: none; align-self: center; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); opacity: .7; padding: 0 2px 0 14px; margin-left: 6px; border-left: 1px solid var(--rule); writing-mode: horizontal-tb; }
+  @media (max-width: 760px) { .group { display: none; } }
+</style>

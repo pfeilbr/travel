@@ -54,7 +54,7 @@ const top = images.slice(0, 5);
   .all { position: absolute; right: 16px; bottom: 16px; background: var(--surface-2); border-color: var(--ink); }
   .mosaic.empty { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: var(--muted); background: linear-gradient(135deg, var(--pine-soft), var(--surface)); }
   @media (max-width: 760px) {
-    .mosaic { margin: 0 calc(-1 * var(--gutter)); border-radius: 0; grid-template-columns: 1fr; grid-template-rows: 1fr; height: 300px; }
+    .mosaic, .mosaic[data-count] { margin: 0 calc(-1 * var(--gutter)); border-radius: 0; grid-template-columns: 1fr; grid-template-rows: 1fr; height: 300px; }
     .tile:not(.hero) { display: none; }
     .tile.hero { grid-row: auto; }
   }

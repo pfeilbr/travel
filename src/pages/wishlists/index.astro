@@ -1,6 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import PlaceCard from '../../components/PlaceCard.astro';
+import ResortCard from '../../components/ski/ResortCard.astro';
+import SpotCard from '../../components/outdoors/SpotCard.astro';
+import { spots } from '../../data/outdoors';
+import { resorts } from '../../data/ski';
 import Icon from '../../components/Icon.astro';
 import { places } from '../../data/places';
 import { trips } from '../../data/trips';
@@ -24,13 +28,15 @@ const optionFor = (id: string) => trip.options.find((o) => o.placeId === id);
       <span class="ic"><Icon name="heart" size={28} /></span>
       <h2>Create your first wishlist</h2>
       <p class="muted">As you explore, tap the heart on places you like and they'll land in Favorites.</p>
-      <a class="btn btn-primary" href={url('explore/')}>Start exploring</a>
+      <div class="ctas"><a class="btn btn-primary" href={url('camping/')}>Find a campsite</a><a class="btn btn-outline" href={url('ski/')}>Find a ski resort</a><a class="btn btn-outline" href={url('bike/')}>Find a ride</a></div>
     </div>
 
     <div data-in hidden>
       <h2 class="list-name"><Icon name="heart" size={22} /> Favorites <span class="muted" data-n></span></h2>
       <div class="grid">
         {places.map((p) => <div data-item={p.id} hidden><PlaceCard place={p} option={optionFor(p.id)} /></div>)}
+        {resorts.map((r) => <div data-item={r.id} hidden><ResortCard resort={r} /></div>)}
+        {spots.map((sp) => <div data-item={sp.id} hidden><SpotCard spot={sp} showPursuit /></div>)}
       </div>
     </div>
   </section>
@@ -40,6 +46,7 @@ const optionFor = (id: string) => trip.options.find((o) => o.placeId === id);
   .state { max-width: 480px; padding: 48px 0; }
   .ic { display: inline-grid; place-items: center; width: 56px; height: 56px; border-radius: 16px; background: var(--surface); color: var(--accent); margin-bottom: 16px; }
   .list-name { display: flex; align-items: center; gap: 10px; margin: 16px 0 24px; }
+  .ctas { display: flex; gap: 8px; flex-wrap: wrap; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 36px 24px; }
 </style>
 <script>

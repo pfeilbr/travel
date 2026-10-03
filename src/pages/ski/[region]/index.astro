@@ -1,0 +1,139 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../../layouts/Layout.astro';
+import Icon from '../../../components/Icon.astro';
+import RegionTabs from '../../../components/ski/RegionTabs.astro';
+import SkiExplorer from '../../../components/ski/SkiExplorer.astro';
+import { resortsIn, skiRegions } from '../../../data/ski';
+import type { SkiRegion } from '../../../data/ski/types';
+import { imagesFor } from '../../../lib/images';
+import { HOLIDAY_KINDS, PASSES, PASS_LABEL, eventsOf, ft, sortResorts } from '../../../lib/ski';
+import { url } from '../../../lib/paths';
+
+export function getStaticPaths() {
+  return skiRegions.map((region) => ({ params: { region: region.id }, props: { region } }));
+}
+const { region } = Astro.props as { region: SkiRegion };
+const list = resortsIn(region.id);
+const top = sortResorts(list, 'recommended');
+const hero = top.map((r) => imagesFor(r.id)[0]).find(Boolean);
+const biggest = sortResorts(list, 'vertical')[0];
+const snowiest = sortResorts(list, 'snowfall')[0];
+const holidays = eventsOf(list, HOLIDAY_KINDS);
+const passCover = PASSES.map((p) => ({ p, names: list.filter((r) => r.passes.includes(p)).map((r) => r.name) })).filter((x) => x.names.length);
+---
+<Layout title={`Skiing in ${region.name}`} description={`${region.tagline}. ${region.blurb}`} image={hero?.src.src}>
+  <section class="hero">
+    {hero ? <Image class="hero-img" src={hero.src} alt={hero.alt} widths={[960, 1600]} sizes="100vw" loading="eager" /> : <div class="hero-img fallback"></div>}
+    <div class="shade"></div>
+    <div class="container inner">
+      <a class="back" href={url('ski/')}><Icon name="chev-left" size={14} /> Ski season 2026–27</a>
+      <h1>Skiing in {region.name}</h1>
+      <p class="lede">{region.tagline}.</p>
+    </div>
+  </section>
+
+  <RegionTabs active={region.id} />
+
+  <section class="container overview">
+    <div class="copy">
+      <p class="blurb">{region.blurb}</p>
+      <ul class="facts">
+        <li><b>{list.length}</b><span>{list.length === 1 ? 'resort' : 'resorts'}</span></li>
+        {biggest && <li><b>{ft(biggest.stats.verticalFt)}</b><span>biggest vertical ({biggest.name})</span></li>}
+        {snowiest && <li><b>{snowiest.stats.snowfallIn}″</b><span>most snow/yr ({snowiest.name})</span></li>}
+        <li><b>{holidays.length}</b><span>{holidays.length === 1 ? 'holiday event' : 'holiday events'}</span></li>
+      </ul>
+      <h2>Good to know</h2>
+      <ul class="tips">{region.tips.map((t) => <li><Icon name="info" size={18} />{t}</li>)}</ul>
+      <p class="muted fly"><Icon name="plane" size={16} /> Fly into {region.gateways.map((g) => `${g.name} (${g.code})`).join(', ')}. <a href={region.reportUrl} rel="noopener">{region.name} snow report <Icon name="ext" size={12} /></a></p>
+    </div>
+    <aside class="cards">
+      {passCover.length > 0 && (
+        <div class="box">
+          <h3><Icon name="ticket" size={18} /> Which pass works here</h3>
+          <ul class="passes">{passCover.map((x) => <li><b>{PASS_LABEL[x.p]}</b><span class="muted">{x.names.join(', ')}</span></li>)}</ul>
+          <p class="muted small">2026–27 pass partners. Holiday blackouts apply on some tiers.</p>
+        </div>
+      )}
+      {holidays.length > 0 && (
+        <div class="box holiday">
+          <h3><Icon name="tree" size={18} /> Christmas and New Year’s</h3>
+          <ul class="hol">
+            {holidays.slice(0, 5).map(({ resort, event }) => (
+              <li><span class="when">{event.when}</span><a href={url(`ski/resorts/${resort.id}/#events`)}><b>{event.name}</b></a><span class="muted"> · {resort.name}{!event.confirmed && ' · usually'}</span></li>
+            ))}
+          </ul>
+          <a class="more" href={url(`ski/holidays/?region=${region.id}`)}>All {holidays.length} holiday events <Icon name="chev-right" size={14} /></a>
+        </div>
+      )}
+    </aside>
+  </section>
+
+  <SkiExplorer resorts={list} region={region.id} mapLabel={`Map of ${region.name} ski resorts`} />
+
+  <section class="container reports">
+    <details>
+      <summary><Icon name="snowflake" size={18} /> Snow reports, webcams and trail maps <span class="muted">· {list.length} {list.length === 1 ? 'resort' : 'resorts'}</span></summary>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Resort</th><th>Opens</th><th>Snow report</th><th>Webcams</th><th>Trail map</th></tr></thead>
+          <tbody>
+            {sortResorts(list, 'opening').map((r) => (
+              <tr>
+                <td><a href={url(`ski/resorts/${r.id}/`)}>{r.name}</a></td>
+                <td>{new Date(r.season.opens + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })}</td>
+                <td><a href={r.snowReportUrl} rel="noopener">Report</a></td>
+                <td>{r.webcamUrl ? <a href={r.webcamUrl} rel="noopener">Webcams</a> : <span class="muted">—</span>}</td>
+                <td>{r.trailMapUrl ? <a href={r.trailMapUrl} rel="noopener">Map</a> : <span class="muted">—</span>}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </section>
+</Layout>
+
+<style>
+  .hero { position: relative; min-height: 340px; display: flex; align-items: flex-end; color: #fff; overflow: hidden; }
+  .hero :global(.hero-img) { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .fallback { background: linear-gradient(160deg, #6f9fc9, #2f5f8a 55%, #1d3550); }
+  .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.65)); }
+  .inner { position: relative; width: 100%; padding-top: 80px; padding-bottom: 28px; }
+  .back { display: inline-flex; align-items: center; gap: 4px; color: #fff; font-size: 14px; font-weight: 600; text-decoration: none; opacity: .9; }
+  .hero h1 { font-family: var(--font-display); font-size: clamp(34px, 5vw, 56px); margin: 10px 0 6px; text-shadow: 0 2px 20px rgba(0,0,0,.3); }
+  .lede { font-size: 18px; margin: 0; opacity: .95; }
+  .overview { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 48px; padding-top: 32px; padding-bottom: 24px; }
+  .blurb { font-size: 18px; color: var(--ink-2); }
+  .facts { list-style: none; padding: 0; margin: 20px 0 28px; display: flex; flex-wrap: wrap; gap: 16px 32px; }
+  .facts b { display: block; font-size: 24px; line-height: 1.1; }
+  .facts span { font-size: 13px; color: var(--muted); }
+  .overview h2 { font-size: 20px; }
+  .tips { list-style: none; padding: 0; margin: 0 0 16px; display: grid; gap: 10px; }
+  .tips li { display: flex; gap: 10px; align-items: flex-start; color: var(--ink-2); }
+  .tips :global(svg) { flex: none; margin-top: 3px; color: var(--pine); }
+  .fly { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; font-size: 14px; }
+  .cards { display: grid; gap: 16px; align-content: start; }
+  .box { border: 1px solid var(--rule); border-radius: var(--radius); padding: 20px; }
+  .box h3 { display: flex; align-items: center; gap: 8px; font-size: 16px; }
+  .box.holiday { background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 7%, var(--surface-2)), var(--surface-2)); }
+  .passes, .hol { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; font-size: 14px; }
+  .passes li { display: grid; gap: 2px; }
+  .hol a { text-decoration: none; }
+  .hol a:hover { text-decoration: underline; }
+  .when { display: block; font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .03em; }
+  .small { font-size: 13px; margin: 10px 0 0; }
+  .more { display: inline-flex; align-items: center; gap: 4px; margin-top: 12px; font-weight: 600; font-size: 14px; }
+  @media (max-width: 900px) { .overview { grid-template-columns: 1fr; gap: 24px; } }
+  .reports { margin-top: 16px; }
+  .reports details { border: 1px solid var(--rule); border-radius: var(--radius); padding: 4px 20px; }
+  .reports summary { display: flex; align-items: center; gap: 10px; padding: 14px 0; font-weight: 700; cursor: pointer; list-style: none; }
+  .reports summary::-webkit-details-marker { display: none; }
+  .reports summary .muted { font-weight: 500; }
+  .table-wrap { overflow-x: auto; margin: 0 -20px; padding: 0 20px 16px; }
+  .reports table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 520px; }
+  .reports th { text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); }
+  .reports td { padding: 10px 12px 10px 0; border-bottom: 1px solid var(--rule); }
+  .reports tr:last-child td { border-bottom: 0; }
+</style>

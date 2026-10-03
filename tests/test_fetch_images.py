@@ -99,6 +99,13 @@ class ThumbAndEntryTest(unittest.TestCase):
         self.assertEqual(fi.thumb_info(info), ("https://u/x.jpg", 1300, 900))
         self.assertIsNone(fi.thumb_info({}))
 
+    def test_small_original_uses_standard_960_thumb(self):
+        info = {"url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Big_Sky_resort.jpg", "width": 1200, "height": 800}
+        self.assertEqual(fi.thumb_info(info), (
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Big_Sky_resort.jpg/960px-Big_Sky_resort.jpg", 960, 640))
+        small = {"url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/x.jpg", "width": 900, "height": 600}
+        self.assertEqual(fi.thumb_info(small)[1], 900)  # already below 960: original as is
+
     def test_build_entry_shape(self):
         e = fi.build_entry("robert-h-treman", 2, page())
         self.assertEqual(set(e), {"file", "title", "alt", "author", "license", "licenseUrl",
@@ -150,6 +157,10 @@ class SelectionTest(unittest.TestCase):
                               include, ["File:B.jpg"], 3)
         self.assertEqual(got, ["File:C.jpg", "File:A.jpg", "File:D.jpg"])
 
+    def test_excludes_openverse_titles(self):
+        pages = {t: {} for t in ("Openverse:a", "Openverse:b")}
+        self.assertEqual(fi.select_pages(pages, ["Openverse:a", "Openverse:b"], [], ["Openverse:a"], 2), ["Openverse:b"])
+
     def test_needs_download(self):
         with TemporaryDirectory() as d:
             dest = Path(d) / "1.jpg"
@@ -158,6 +169,65 @@ class SelectionTest(unittest.TestCase):
             self.assertFalse(fi.needs_download(dest, {"title": "File:A.jpg"}, "File:A.jpg", False))
             self.assertTrue(fi.needs_download(dest, {"title": "File:B.jpg"}, "File:A.jpg", False))
             self.assertTrue(fi.needs_download(dest, {"title": "File:A.jpg"}, "File:A.jpg", True))
+
+
+OV = {
+    "id": "abc-123", "title": "Lone Peak from the tram", "url": "https://live.staticflickr.com/1/2_b.jpg",
+    "width": 1024, "height": 683, "filetype": "jpg", "license": "by-sa", "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/", "creator": "Jim",
+    "foreign_landing_url": "https://www.flickr.com/photos/x/2", "provider": "flickr",
+    "tags": [{"name": "skiing"}, {"name": "montana"}],
+}
+
+
+class OpenverseTest(unittest.TestCase):
+    def test_license_codes(self):
+        self.assertEqual(fi.openverse_license("by-sa", "2.0"), "CC BY-SA 2.0")
+        self.assertEqual(fi.openverse_license("by", "4.0"), "CC BY 4.0")
+        self.assertEqual(fi.openverse_license("cc0", "1.0"), "CC0")
+        self.assertEqual(fi.openverse_license("pdm", None), "Public domain")
+        self.assertIsNone(fi.normalize_license(fi.openverse_license("by-nc", "2.0")))
+
+    def test_page_shape_and_entry(self):
+        p = fi.openverse_page(OV)
+        self.assertEqual(p["title"], "Openverse:abc-123")
+        self.assertTrue(fi.is_candidate(p, min_width=1000))
+        self.assertFalse(fi.is_candidate(p))  # below the Commons 1200px floor
+        e = fi.build_entry("big-sky", 1, p)
+        self.assertEqual(e["license"], "CC BY-SA 2.0")
+        self.assertEqual(e["author"], "Jim")
+        self.assertEqual(e["sourceUrl"], "https://www.flickr.com/photos/x/2")
+        self.assertEqual(e["alt"], "Lone Peak from the tram")
+        self.assertEqual((e["width"], e["height"]), (1024, 683))
+        self.assertIsNone(fi.openverse_page({**OV, "width": None}))
+
+    def test_mentions_filters_off_topic_results(self):
+        p = fi.openverse_page(OV)
+        self.assertTrue(fi.mentions(p, ["lone peak", "big sky"]))
+        self.assertTrue(fi.mentions(p, ["Montana"]))  # tags count
+        self.assertFalse(fi.mentions(p, ["stowe"]))
+        self.assertTrue(fi.mentions(p, []))
+
+    def test_avoid_drops_same_name_places(self):
+        other = {**OV, "id": "def-456", "title": "Lone Peak trail near Fossil Creek"}
+        place = {"sources": [{"openverse": "Lone Peak"}], "avoid": ["fossil creek"], "min_width": 1000}
+        saved = (fi.openverse_search, fi.OPENVERSE_FIRST)
+        fi.openverse_search = lambda q, page_size=20: [fi.openverse_page(OV), fi.openverse_page(other)]
+        fi.OPENVERSE_FIRST = True
+        try:
+            _, ranked, _ = fi.gather(place)
+        finally:
+            fi.openverse_search, fi.OPENVERSE_FIRST = saved
+        self.assertEqual(ranked, ["Openverse:abc-123"])
+
+    def test_is_wintery_reads_title_and_description_not_categories(self):
+        self.assertTrue(fi.is_wintery(page(title="File:Skiers on Lone Peak.jpg", description="")))
+        self.assertTrue(fi.is_wintery(page(title="File:x.jpg", description="Fresh snow on the summit")))
+        self.assertFalse(fi.is_wintery(page(title="File:Aspens in fall.jpg", description="", categories="Ski areas in Arizona")))
+
+    def test_winter_scoring(self):
+        snowy = page(title="File:Ski slopes in snow.jpg", description="Skiers on the slope", categories="")
+        self.assertGreater(fi.score(snowy, winter=True), fi.score(snowy))
 
 
 class OutputTest(unittest.TestCase):
@@ -174,7 +244,8 @@ class OutputTest(unittest.TestCase):
             fi.image_path(pid, 1)
             self.assertTrue(place["sources"], pid)
             for src in place["sources"]:
-                self.assertTrue(("category" in src) ^ ("search" in src), (pid, src))
+                kinds = [k for k in ("category", "search", "openverse") if k in src]
+                self.assertEqual(len(kinds), 1, (pid, src))
 
     def test_repo_images_json_matches_files(self):
         data_file = REPO / "src" / "data" / "images.json"

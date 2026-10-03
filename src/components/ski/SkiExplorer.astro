@@ -1,0 +1,179 @@
+---
+import { getImage } from 'astro:assets';
+import ResortCard from './ResortCard.astro';
+import Icon from '../Icon.astro';
+import type { Resort, SkiActivity, SkiRegionId } from '../../data/ski/types';
+import { skiRegionById, skiRegions } from '../../data/ski/regions';
+import { imagesFor } from '../../lib/images';
+import { ACTIVITY, PASSES, PASS_LABEL, SIZE_LABEL, price, sortResorts, type SkiRow } from '../../lib/ski';
+import { url } from '../../lib/paths';
+import '../../styles/listmap.css';
+
+interface Props { resorts: Resort[]; region?: SkiRegionId; mapLabel?: string }
+const { resorts, region, mapLabel = 'Map of ski resorts' } = Astro.props;
+const rows = sortResorts(resorts, 'recommended');
+
+type ClientRow = SkiRow & { coords: [number, number]; href: string; thumb: string | null; pin: string; line: string; midFt: number; pinRank: number };
+const data: ClientRow[] = await Promise.all(rows.map(async (r, i) => {
+  const first = imagesFor(r.id)[0];
+  const thumb = first ? (await getImage({ src: first.src, width: 480, format: 'webp' })).src : null;
+  const cur = skiRegionById[r.region].currency;
+  return {
+    id: r.id, name: r.name, region: r.region, size: r.size, passes: r.passes, activities: r.activities, season: r.season,
+    stats: { verticalFt: r.stats.verticalFt, acres: r.stats.acres, snowfallIn: r.stats.snowfallIn },
+    google: r.google && { rating: r.google.rating }, ticket: r.ticket && { from: r.ticket.from },
+    coords: r.coords, href: url(`ski/resorts/${r.id}/`), thumb, pinRank: i,
+    pin: r.ticket ? price(r.ticket.from, cur) : `${(r.stats.verticalFt / 1000).toFixed(1)}k ft`,
+    line: `${r.area} · ${r.stats.verticalFt.toLocaleString('en-US')} ft vertical`,
+    midFt: Math.round((r.stats.summitFt + r.stats.baseFt) / 2),
+  };
+}));
+
+// Only offer chips that would match something here.
+const has = (a: SkiActivity) => resorts.some((r) => r.activities.includes(a));
+const activityChips: SkiActivity[] = (['night-skiing', 'sleigh-rides', 'snowmobiling', 'ice-skating', 'scenic-lift', 'tubing', 'nightlife', 'dog-sledding', 'mountain-coaster', 'spa', 'hot-springs', 'indoor-waterpark', 'nordic', 'cat-skiing', 'heli-skiing'] as SkiActivity[]).filter(has);
+const passChips = PASSES.filter((p) => resorts.some((r) => r.passes.includes(p)));
+const regionChips = region ? [] : skiRegions.filter((g) => resorts.some((r) => r.region === g.id));
+---
+<section class="explorer lm" data-ski-explorer data-fixed-region={region ?? ''}>
+  <div class="filters">
+    <div class="container filter-row">
+      <div class="chips" role="group" aria-label="Filters">
+        {regionChips.map((g) => <button class="chip" data-region={g.id} aria-pressed="false">{g.name}</button>)}
+        {regionChips.length > 0 && <span class="sep" aria-hidden="true"></span>}
+        {passChips.map((p) => <button class="chip" data-pass={p} aria-pressed="false"><Icon name="ticket" size={16} />{PASS_LABEL[p]}</button>)}
+        <span class="sep" aria-hidden="true"></span>
+        {activityChips.map((a) => <button class="chip" data-activity={a} aria-pressed="false"><Icon name={ACTIVITY[a].icon} size={16} />{ACTIVITY[a].label}</button>)}
+        <span class="sep" aria-hidden="true"></span>
+        {(['major', 'mid', 'local'] as const).map((s) => <button class="chip" data-size={s} aria-pressed="false">{SIZE_LABEL[s]}</button>)}
+      </div>
+      <label class="sort">
+        <span class="sr-only">Sort</span>
+        <select data-sort>
+          <option value="recommended">Recommended</option>
+          <option value="snow">Most new snow</option>
+          <option value="vertical">Biggest vertical</option>
+          <option value="acres">Most terrain</option>
+          <option value="snowfall">Most snowfall/yr</option>
+          <option value="rating">Highest rated</option>
+          <option value="price">Lowest lift price</option>
+          <option value="opening">Opens soonest</option>
+        </select>
+      </label>
+      <button class="btn btn-outline btn-sm map-toggle-desk" data-map-toggle aria-pressed="true"><Icon name="map" size={16} /><span>Hide map</span></button>
+    </div>
+  </div>
+
+  <div class="split" data-split>
+    <div class="list">
+      <p class="count"><span data-count aria-live="polite">{rows.length} resorts</span> <span class="muted live" data-live hidden><span class="pulse"></span>Live snow forecast</span></p>
+      <div class="grid" data-grid>
+        {rows.map((r, i) => <ResortCard resort={r} eager={i < 3} showRegion={!region} />)}
+      </div>
+      <div class="empty" data-empty hidden>
+        <h3>No exact matches</h3>
+        <p class="muted">Try removing some filters.</p>
+        <button class="btn btn-outline" data-clear>Clear all filters</button>
+      </div>
+    </div>
+    <aside class="map-pane">
+      <div class="map" data-map role="region" aria-label={mapLabel}></div>
+    </aside>
+  </div>
+
+  <button class="map-fab" data-map-fab><span data-fab-label>Map</span><Icon name="map" size={16} /></button>
+  <script type="application/json" data-rows set:html={JSON.stringify(data)} />
+</section>
+
+<style>
+  .live { font-weight: 500; font-size: 13px; display: inline-flex; align-items: center; gap: 6px; }
+  .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--snow); box-shadow: 0 0 0 3px color-mix(in srgb, var(--snow) 25%, transparent); }
+</style>
+
+<script>
+  import { inches, matchesSki, parseSkiFilters, serializeSkiFilters, sortResorts, type SkiFilters, type SkiRow, type SkiSort } from '../../lib/ski';
+  import { loadSnow } from '../../lib/ski-live';
+  import { esc, offeredOnly, setupListMap, type MapRow } from '../../lib/listmap';
+  import { wireCarousels } from '../../lib/carousel';
+  import { wireHearts } from '../../lib/wishlist';
+
+  type R = SkiRow & { coords: [number, number]; href: string; thumb: string | null; pin: string; line: string; midFt: number; pinRank: number };
+
+  document.querySelectorAll<HTMLElement>('[data-ski-explorer]').forEach((root) => {
+    const data: R[] = JSON.parse(root.querySelector('[data-rows]')!.textContent!);
+    const grid = root.querySelector<HTMLElement>('[data-grid]')!;
+    const cards = new Map([...grid.querySelectorAll<HTMLElement>('[data-card]')].map((c) => [c.dataset.card!, c]));
+    const fixedRegion = root.dataset.fixedRegion || '';
+    let snow = new Map<string, number>();
+
+    wireCarousels(root);
+    wireHearts(root);
+
+    let { filters, sort } = parseSkiFilters(new URLSearchParams(location.search));
+    filters = {
+      regions: fixedRegion ? [] : offeredOnly(root, 'region', filters.regions), passes: offeredOnly(root, 'pass', filters.passes),
+      activities: offeredOnly(root, 'activity', filters.activities), sizes: offeredOnly(root, 'size', filters.sizes),
+    };
+
+    const pinLabel = (d: R) => `${esc(d.pin)}${snow.get(d.id) ? `<b>❄${esc(inches(snow.get(d.id)!))}</b>` : ''}`;
+    const rows: (MapRow & { d: R })[] = data.map((d) => ({
+      d, id: d.id, coords: d.coords, pin: pinLabel(d), major: d.size === 'major',
+      popup: () => `<a class="mini" href="${d.href}">${d.thumb ? `<img src="${d.thumb}" alt="">` : ''}<div><b>${esc(d.name)}</b><span class="m">${d.google ? `★ ${d.google.rating.toFixed(1)} · ` : ''}${esc(d.line)}</span>${snow.has(d.id) ? `<br><span class="m">❄ ${esc(inches(snow.get(d.id)!))} forecast next 7 days</span>` : ''}</div></a>`,
+    }));
+    const lm = setupListMap(root, rows, cards);
+
+    function render() {
+      const visible = sortResorts(data.filter((r) => matchesSki(r, filters)), sort, snow);
+      const ids = new Set(visible.map((r) => r.id));
+      visible.forEach((r) => grid.append(cards.get(r.id)!));
+      cards.forEach((c, id) => (c.hidden = !ids.has(id)));
+      root.querySelector('[data-count]')!.textContent = `${ids.size} ${ids.size === 1 ? 'resort' : 'resorts'}`;
+      root.querySelector<HTMLElement>('[data-empty]')!.hidden = ids.size > 0;
+      lm.show(ids);
+      sync();
+      history.replaceState(null, '', location.pathname + serializeSkiFilters(filters, sort, !!fixedRegion));
+    }
+
+    const pressed = (sel: string, key: string, list: string[]) =>
+      root.querySelectorAll<HTMLElement>(sel).forEach((b) => b.setAttribute('aria-pressed', String(list.includes(b.dataset[key]!))));
+    function sync() {
+      pressed('[data-region]', 'region', filters.regions);
+      pressed('[data-pass]', 'pass', filters.passes);
+      pressed('[data-activity]', 'activity', filters.activities);
+      pressed('[data-size]', 'size', filters.sizes);
+      root.querySelector<HTMLSelectElement>('[data-sort]')!.value = sort;
+    }
+
+    const toggle = <T,>(arr: T[], v: T) => (arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
+    const wire = (sel: string, key: string, field: keyof SkiFilters) =>
+      root.querySelectorAll<HTMLElement>(sel).forEach((b) => b.addEventListener('click', () => {
+        filters = { ...filters, [field]: toggle(filters[field] as string[], b.dataset[key]!) } as SkiFilters;
+        render();
+      }));
+    wire('[data-region]', 'region', 'regions');
+    wire('[data-pass]', 'pass', 'passes');
+    wire('[data-activity]', 'activity', 'activities');
+    wire('[data-size]', 'size', 'sizes');
+    root.querySelector<HTMLSelectElement>('[data-sort]')!.addEventListener('change', (e) => { sort = (e.target as HTMLSelectElement).value as SkiSort; render(); });
+    root.querySelector('[data-clear]')!.addEventListener('click', () => { filters = { regions: [], passes: [], activities: [], sizes: [] }; render(); });
+
+    render();
+
+    // ---- live snow: badge each card with the 7-day forecast (or last week's total)
+    loadSnow(data.map((d) => ({ id: d.id, lat: d.coords[0], lng: d.coords[1], elevationFt: d.midFt }))).then((totals) => {
+      if (!totals.size) return;
+      snow = new Map([...totals].map(([id, t]) => [id, t.next]));
+      root.querySelector<HTMLElement>('[data-live]')!.hidden = false;
+      totals.forEach((t, id) => {
+        const badge = cards.get(id)?.querySelector<HTMLElement>('[data-snow-badge]');
+        if (!badge) return;
+        const text = t.next >= 0.5 ? `${inches(t.next)} next 7 days` : t.past >= 0.5 ? `${inches(t.past)} last 7 days` : '';
+        badge.hidden = !text;
+        badge.querySelector('[data-snow-text]')!.textContent = text;
+        const row = rows.find((r) => r.id === id);
+        if (row) lm.relabel(row, pinLabel(row.d));
+      });
+      if (sort === 'snow') render();
+    });
+  });
+</script>

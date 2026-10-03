@@ -8,6 +8,10 @@ import { places, placeById } from '../data/places';
 import { imagesFor } from '../lib/images';
 import { dateRange, hasRoof } from '../lib/format';
 import { url } from '../lib/paths';
+import { resorts, skiRegions } from '../data/ski';
+import { HOLIDAY_KINDS, eventsOf, sortResorts } from '../lib/ski';
+import { pursuits, spotsFor } from '../data/outdoors';
+import { sortSpots } from '../lib/outdoors';
 
 const trip = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0];
 const heroImgs = imagesFor('hero');
@@ -17,6 +21,19 @@ const regions = [...new Set(places.map((p) => p.region))].sort();
 const openCabins = trip.options.reduce((n, o) => n + (typeof o.available.cabin === 'number' ? o.available.cabin : 0), 0);
 const roofs = trip.options.filter(hasRoof).length;
 const collage = trip.topPicks.map((p) => imagesFor(p.placeId)[0]).filter(Boolean).slice(0, 3);
+
+const skiCollage = sortResorts(resorts, 'recommended').map((r) => imagesFor(r.id)[0]).filter(Boolean).slice(0, 3);
+const skiHolidays = eventsOf(resorts, HOLIDAY_KINDS).length;
+
+// Activity tiles: camping, ski and the outdoors sections, each with its best photo and a count.
+const activities = [
+  { href: 'camping/', label: 'Camping', icon: 'tent', n: places.length + spotsFor('camp').length, noun: 'places to camp', img: imagesFor('robert-h-treman')[0] },
+  { href: 'ski/', label: 'Ski', icon: 'snowflake', n: resorts.length, noun: 'resorts', img: skiCollage[0] },
+  ...pursuits.filter((p) => p.id !== 'camp').map((p) => {
+    const list = spotsFor(p.id);
+    return { href: `${p.slug}/`, label: p.short, icon: p.icon, n: list.length, noun: p.noun[1], img: sortSpots(list, 'recommended').map((s) => imagesFor(s.id)[0]).find(Boolean) };
+  }),
+];
 
 const vibes = [
   { label: 'Cabins with heat', sub: 'Roof, bed, outlet', q: 'lodging=cabin', img: imagesFor('robert-h-treman')[1] ?? imagesFor('robert-h-treman')[0], icon: 'cabin' },
@@ -98,6 +115,42 @@ const vibes = [
   </section>
 
   <section class="container">
+    <div class="sec-head"><h2>Explore by activity</h2></div>
+    <div class="acts">
+      {activities.map((a) => (
+        <a class="act" href={url(a.href)}>
+          {a.img ? <Image src={a.img.src} alt="" widths={[400, 640]} sizes="(max-width: 760px) 50vw, 20vw" /> : <div class="afill"></div>}
+          <div class="atext"><span class="ai"><Icon name={a.icon} size={20} /></span><b>{a.label}</b><span>{a.n} {a.noun}</span></div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  {resorts.length > 0 && (
+    <section class="container">
+      <a class="feature ski" href={url('ski/')}>
+        <div class="feature-body">
+          <span class="badge snow-badge"><Icon name="snowflake" size={13} />New · Ski season 2026–27</span>
+          <h2>Ready for ski season?</h2>
+          <p class="muted">{resorts.length} resorts from Vermont and the Adirondacks to Utah, Colorado, Tahoe and Whistler: live snow forecasts, where to stay, après, sleigh rides and the Christmas and New Year’s events.</p>
+          <ul class="stats">
+            <li><b>{resorts.length}</b><span>resorts</span></li>
+            <li><b>{skiRegions.length}</b><span>regions</span></li>
+            <li><b>{skiHolidays}</b><span>holiday events</span></li>
+          </ul>
+          <span class="btn btn-primary">Explore ski resorts <Icon name="chev-right" size={16} /></span>
+        </div>
+        <div class="collage">
+          {skiCollage.length ? skiCollage.map((img) => <Image src={img!.src} alt={img!.alt} widths={[480, 800]} sizes="(max-width: 760px) 100vw, 30vw" />) : <div class="ski-fill"></div>}
+        </div>
+      </a>
+      <div class="region-chips">
+        {skiRegions.map((r) => <a class="chip" href={url(`ski/${r.id}/`)}>{r.name}</a>)}
+      </div>
+    </section>
+  )}
+
+  <section class="container">
     <div class="sec-head"><h2>Browse by vibe</h2></div>
     <div class="vibes">
       {vibes.map((v) => (
@@ -168,6 +221,25 @@ const vibes = [
   .stats span { font-size: 13px; color: var(--muted); }
   .feature:hover .btn-primary { background: var(--accent-hover); }
   @media (max-width: 860px) { .feature { grid-template-columns: 1fr; } .collage { min-height: 220px; } }
+  .feature.ski { grid-template-columns: 1fr 1.2fr; box-shadow: var(--shadow); }
+  .feature.ski .collage { grid-template-columns: 1fr 2fr; }
+  .feature.ski .collage :global(img:first-child) { grid-row: span 2; }
+  .ski-fill { grid-column: 1 / -1; grid-row: 1 / -1; background: linear-gradient(160deg, #6f9fc9, #2f5f8a 55%, #1d3550); }
+  .snow-badge { background: var(--snow-soft); color: var(--snow-ink); box-shadow: none; }
+  .region-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+  .acts { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+  .act { position: relative; aspect-ratio: 4 / 5; border-radius: var(--radius); overflow: hidden; color: #fff; text-decoration: none; background: var(--surface); }
+  .act :global(img), .afill { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+  .afill { background: linear-gradient(160deg, #6f9fc9, #2f5f8a 55%, #1d3550); }
+  .act:hover :global(img) { transform: scale(1.06); }
+  .act::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,.78)); }
+  .atext { position: absolute; left: 14px; right: 14px; bottom: 14px; z-index: 1; display: grid; gap: 2px; }
+  .atext b { font-size: 20px; }
+  .atext span { font-size: 13px; opacity: .9; }
+  .ai { display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; background: rgba(255,255,255,.18); backdrop-filter: blur(6px); margin-bottom: 6px; }
+  @media (max-width: 900px) { .acts { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 42%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; } .act { scroll-snap-align: start; } }
+  .region-chips .chip { text-decoration: none; }
+  @media (max-width: 860px) { .feature.ski { grid-template-columns: 1fr; } .feature.ski .collage { order: -1; } }
 
   section.container:not(.band):not(.why) { margin-top: 72px; }
   .sec-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }

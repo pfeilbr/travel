@@ -1,0 +1,231 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+import Icon from '../../components/Icon.astro';
+import PlaceCard from '../../components/PlaceCard.astro';
+import SpotCard from '../../components/outdoors/SpotCard.astro';
+import SpotExplorer from '../../components/outdoors/SpotExplorer.astro';
+import { pursuits, spotsFor } from '../../data/outdoors';
+import type { Pursuit } from '../../data/outdoors/pursuits';
+import { skiGroups, skiRegions, skiRegionById } from '../../data/ski/regions';
+import { trips } from '../../data/trips';
+import { placeById } from '../../data/places';
+import { imagesFor } from '../../lib/images';
+import { EVENT_LABEL, miles, plural, shortDate } from '../../lib/ski';
+import { sortSpots } from '../../lib/outdoors';
+import { dateRange } from '../../lib/format';
+import { url } from '../../lib/paths';
+
+export function getStaticPaths() {
+  return pursuits.map((pursuit) => ({ params: { pursuit: pursuit.slug }, props: { pursuit } }));
+}
+const { pursuit: p } = Astro.props as { pursuit: Pursuit };
+const list = spotsFor(p.id);
+const ranked = sortSpots(list, 'recommended');
+const pinned = p.hero && imagesFor(p.hero.spot).find((i) => i.title === p.hero!.title);
+const heroImg = imagesFor(`hero-${p.slug}`)[0] ?? (pinned && { ...pinned, alt: p.hero!.alt }) ?? ranked.map((s) => imagesFor(s.id)[0]).find(Boolean);
+const regions = skiRegions.filter((r) => list.some((s) => s.region === r.id));
+const regionImg = (id: string) => sortSpots(list.filter((s) => s.region === id), 'recommended').map((s) => imagesFor(s.id)[0]).find(Boolean);
+const count = (id: string) => list.filter((s) => s.region === id).length;
+
+const trip = p.id === 'camp' ? [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0] : undefined;
+const home = trips[0]?.origin ?? { name: 'Verona, NY', coords: [43.138, -75.571] as [number, number] };
+const nearHome = list.map((s) => ({ s, d: miles(home.coords, s.coords) })).filter((x) => x.d < 180).sort((a, b) => a.d - b.d).slice(0, 8).map((x) => x.s);
+const destinations = ranked.filter((s) => s.size === 'major').slice(0, 8);
+const today = new Date().toISOString().slice(0, 10);
+const events = list.flatMap((spot) => spot.events.map((event) => ({ spot, event })))
+  .filter(({ event }) => (event.end ?? event.date) >= today)
+  .sort((a, b) => a.event.date.localeCompare(b.event.date)).slice(0, 8);
+const d = (iso: string) => new Date(iso + 'T12:00:00Z');
+---
+<Layout title={p.name} overlayHeader description={`${p.tagline}. ${list.length} spots across ${regions.length} regions with photos, maps, prices, outfitters, where to stay and the live forecast.`} image={heroImg?.src.src}>
+  <section class="hero">
+    {heroImg ? <Image class="hero-img" src={heroImg.src} alt={heroImg.alt} widths={[960, 1600]} sizes="100vw" loading="eager" fetchpriority="high" /> : <div class:list={['hero-img', 'fallback', p.id]}></div>}
+    <div class="shade"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow"><Icon name={p.icon} size={16} /> {p.name} · {plural(list.length, p.noun[0], p.noun[1])} in {regions.length} regions</p>
+      <h1>{p.title}</h1>
+      <p class="lede">{p.blurb}</p>
+      <form class="search" action="#explore" method="get" data-search>
+        <label class="seg"><span>Where</span>
+          <select name="region">
+            <option value="">Anywhere</option>
+            {skiGroups.map((g) => <optgroup label={g}>{regions.filter((r) => r.group === g).map((r) => <option value={r.id}>{r.name}</option>)}</optgroup>)}
+          </select>
+        </label>
+        <label class="seg"><span>Type</span>
+          <select name="kind">
+            <option value="">Any type</option>
+            {p.kinds.filter((k) => list.some((s) => s.kind === k)).map((k) => <option value={k}>{k}</option>)}
+          </select>
+        </label>
+        <label class="seg"><span>Must have</span>
+          <select name="has">
+            <option value="">Anything</option>
+            {p.features.filter((f) => list.some((s) => s.features.includes(f.id))).map((f) => <option value={f.id}>{f.label}</option>)}
+          </select>
+        </label>
+        <button class="go" aria-label="Search"><Icon name="search" size={18} /><span>Search</span></button>
+      </form>
+      {heroImg && <p class="credit">Photo: {heroImg.alt}, {heroImg.author} ({heroImg.license})</p>}
+    </div>
+  </section>
+
+
+  {trip && (
+    <section class="container">
+      <div class="live-trip">
+        <div class="lt-copy">
+          <span class="badge badge-pine"><Icon name="check" size={13} />Checked live {shortDate(trip.checkedAt)}</span>
+          <h2>{trip.title}</h2>
+          <p class="muted">{trip.blurb}</p>
+          <a class="btn btn-primary" href={url(`trips/${trip.slug}/`)}>See availability for {dateRange(trip.start, trip.end)} <Icon name="chev-right" size={16} /></a>
+          <a class="more-link" href={url('explore/')}>All live-checked places <Icon name="chev-right" size={14} /></a>
+        </div>
+        <div class="lt-rail">
+          {trip.topPicks.map((tp) => placeById[tp.placeId]).filter(Boolean).slice(0, 3).map((pl) => <PlaceCard place={pl} option={trip.options.find((o) => o.placeId === pl.id)} />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {regions.length > 0 && (
+    <section class="container">
+      <div class="sec-head"><h2>Pick a region</h2><a href="#explore">All {plural(list.length, p.noun[0], p.noun[1])}</a></div>
+      <div class="regions">
+        {regions.map((r) => {
+          const img = regionImg(r.id);
+          return (
+            <a class="region" href={`?region=${r.id}#explore`} data-set-region={r.id}>
+              {img ? <Image src={img.src} alt="" widths={[480, 800]} sizes="(max-width: 760px) 80vw, 25vw" /> : <div class:list={['rfill', p.id]}></div>}
+              <div class="rtext"><span class="n">{plural(count(r.id), p.noun[0], p.noun[1])}</span><b>{r.name}</b><span>{r.group}</span></div>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  )}
+
+  {nearHome.length > 0 && (
+    <section class="container">
+      <div class="sec-head"><h2>Close to {home.name}</h2><a href="?sort=near#explore">Closest first</a></div>
+      <div class="rail">{nearHome.map((s) => <SpotCard spot={s} />)}</div>
+    </section>
+  )}
+
+  {destinations.length > 0 && (
+    <section class="container">
+      <div class="sec-head"><h2>Worth the trip</h2><a href="?size=major#explore">All destinations</a></div>
+      <div class="rail">{destinations.map((s) => <SpotCard spot={s} />)}</div>
+    </section>
+  )}
+
+  {events.length > 0 && (
+    <section class="container">
+      <div class="sec-head"><h2>Coming up</h2></div>
+      <ol class="events">
+        {events.map(({ spot, event }) => (
+          <li>
+            <div class="ed"><b>{d(event.date).getUTCDate()}</b><span>{d(event.date).toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' })}</span></div>
+            <div>
+              <span class="ek">{EVENT_LABEL[event.kind]}{!event.confirmed && ' · usually'}</span>
+              <b>{event.url ? <a href={event.url} rel="noopener">{event.name}</a> : event.name}</b>
+              <span class="muted"> · <a href={url(`${p.slug}/${spot.id}/`)}>{spot.name}</a>, {skiRegionById[spot.region].short}</span>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+
+  <section class="explore-wrap">
+    <div class="container"><h2 class="exp-h">Every {p.noun[0]}</h2></div>
+    {list.length > 0 ? <SpotExplorer pursuit={p} spots={list} /> : <p class="container muted">Research for this section is still landing. Check back soon.</p>}
+  </section>
+</Layout>
+
+<style>
+  .hero { position: relative; min-height: min(78vh, 680px); display: flex; align-items: flex-end; color: #fff; overflow: hidden; }
+  .hero :global(.hero-img) { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .fallback { background: linear-gradient(160deg, #6fa77f, #2f6f4f 55%, #183a2a); }
+  .fallback.paddle { background: linear-gradient(160deg, #6fb3c9, #2f6f8a 55%, #17394d); }
+  .fallback.pickleball { background: linear-gradient(160deg, #c9b56f, #8a7a2f 55%, #4d4217); }
+  .fallback.bike { background: linear-gradient(160deg, #c98f6f, #8a4f2f 55%, #4d2a17); }
+  .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,.05) 35%, rgba(0,0,0,.3) 60%, rgba(0,0,0,.75) 100%); }
+  .hero-inner { position: relative; width: 100%; padding-top: 130px; padding-bottom: 44px; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; background: rgba(255,255,255,.16); backdrop-filter: blur(8px); padding: 6px 12px; border-radius: var(--radius-pill); }
+  .hero h1 { font-family: var(--font-display); font-size: clamp(40px, 6.5vw, 78px); line-height: 1; letter-spacing: -0.02em; margin: 18px 0 14px; text-shadow: 0 2px 24px rgba(0,0,0,.25); }
+  .lede { font-size: clamp(16px, 1.6vw, 19px); max-width: 640px; opacity: .95; }
+  .search { display: flex; align-items: center; background: var(--surface-2); color: var(--ink); border-radius: var(--radius-pill); box-shadow: var(--shadow-lg); padding: 8px; max-width: 800px; margin-top: 26px; }
+  .seg { flex: 1; display: block; padding: 6px 22px; border-right: 1px solid var(--rule); border-radius: var(--radius-pill); cursor: pointer; min-width: 0; }
+  .seg:hover { background: var(--surface); }
+  .seg:nth-of-type(3) { border-right: 0; }
+  .seg span { display: block; font-size: 12px; font-weight: 700; }
+  .seg select { width: 100%; border: 0; background: transparent; color: var(--muted); font: inherit; font-size: 14px; padding: 0; appearance: none; cursor: pointer; outline: none; }
+  .go { flex: none; height: 52px; min-width: 52px; padding: 0 22px; border: 0; border-radius: var(--radius-pill); background: var(--accent); color: var(--accent-ink); display: inline-flex; align-items: center; gap: 8px; font-weight: 700; cursor: pointer; }
+  .go:hover { background: var(--accent-hover); }
+  .credit { position: absolute; right: var(--gutter); bottom: 36px; font-size: 11px; opacity: .7; margin: 0; max-width: 40ch; text-align: right; }
+  @media (max-width: 760px) {
+    .search { flex-direction: column; align-items: stretch; border-radius: var(--radius-lg); padding: 10px; }
+    .seg { border-right: 0; border-bottom: 1px solid var(--rule); border-radius: 10px; padding: 10px 14px; }
+    .seg:nth-of-type(3) { border-bottom: 0; }
+    .go { justify-content: center; margin-top: 6px; }
+    .credit { display: none; }
+  }
+
+  section.container { margin-top: 56px; }
+  .sec-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+  .sec-head h2 { margin: 0; }
+  .sec-head a { font-weight: 600; font-size: 15px; }
+
+  .live-trip { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 28px; padding: clamp(20px, 3vw, 32px); border-radius: var(--radius-lg); border: 1px solid var(--rule); box-shadow: var(--shadow); background: var(--surface-2); }
+  .more-link { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; font-size: 14px; }
+  .lt-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; justify-content: center; }
+  .lt-copy h2 { font-family: var(--font-display); margin: 6px 0 0; }
+  .lt-rail { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  @media (max-width: 960px) { .live-trip { grid-template-columns: 1fr; } .lt-rail { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 70%; overflow-x: auto; } }
+
+  .regions { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .region { position: relative; aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden; color: #fff; text-decoration: none; background: var(--surface); }
+  .region :global(img), .rfill { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+  .rfill { background: linear-gradient(160deg, #6fa77f, #2f6f4f 55%, #183a2a); }
+  .rfill.paddle { background: linear-gradient(160deg, #6fb3c9, #2f6f8a 55%, #17394d); }
+  .rfill.pickleball { background: linear-gradient(160deg, #c9b56f, #8a7a2f 55%, #4d4217); }
+  .rfill.bike { background: linear-gradient(160deg, #c98f6f, #8a4f2f 55%, #4d2a17); }
+  .region:hover :global(img) { transform: scale(1.05); }
+  .region::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 35%, rgba(0,0,0,.78)); }
+  .rtext { position: absolute; left: 16px; right: 16px; bottom: 14px; z-index: 1; display: grid; gap: 2px; }
+  .rtext b { font-size: 20px; }
+  .rtext span { font-size: 13px; opacity: .9; }
+  .rtext .n { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; opacity: .85; }
+
+  .rail { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+  .rail > :global(:nth-child(n+5)) { display: none; }
+  @media (max-width: 1000px) { .rail { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 72%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; } .rail > :global(*) { scroll-snap-align: start; } .rail > :global(:nth-child(n+5)) { display: block; } }
+
+  .events { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 10px 24px; }
+  .events li { display: flex; gap: 14px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  .ed { flex: none; width: 46px; text-align: center; line-height: 1.05; }
+  .ed b { display: block; font-size: 22px; }
+  .ed span { font-size: 11px; text-transform: uppercase; font-weight: 700; color: var(--muted); }
+  .ek { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--accent); }
+  .events a { text-decoration: none; }
+  .events a:hover { text-decoration: underline; }
+
+  .explore-wrap { margin-top: 64px; }
+  .exp-h { margin-bottom: 4px; }
+</style>
+
+<script>
+  import { wireCarousels } from '../../lib/carousel';
+  import { wireHearts } from '../../lib/wishlist';
+  wireCarousels();
+  wireHearts();
+  // Hero search: drop empty params, then reload onto the explorer with the filters in the URL.
+  document.querySelector<HTMLFormElement>('[data-search]')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const q = new URLSearchParams();
+    new FormData(e.target as HTMLFormElement).forEach((v, k) => { if (v) q.set(k, String(v)); });
+    location.href = location.pathname + (q.toString() ? `?${q}` : '') + '#explore';
+  });
+</script>

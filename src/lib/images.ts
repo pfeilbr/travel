@@ -2,6 +2,8 @@ import type { ImageMetadata } from 'astro';
 
 export interface PlaceImage {
   src: ImageMetadata;
+  /** Source id: a Commons "File:…" title or "Openverse:<uuid>". */
+  title: string;
   alt: string;
   author: string;
   license: string;
@@ -20,7 +22,7 @@ const meta: Record<string, Meta[]> = Object.values(metaModules)[0]?.default ?? {
 export function imagesFor(id: string): PlaceImage[] {
   return (meta[id] ?? []).flatMap((m) => {
     const mod = files['/' + m.file.replace(/^\//, '')];
-    return mod ? [{ src: mod.default, alt: m.alt, author: m.author, license: m.license, licenseUrl: m.licenseUrl, sourceUrl: m.sourceUrl, nearby: m.nearby }] : [];
+    return mod ? [{ src: mod.default, title: m.title, alt: m.alt, author: m.author, license: m.license, licenseUrl: m.licenseUrl, sourceUrl: m.sourceUrl, nearby: m.nearby }] : [];
   });
 }
 

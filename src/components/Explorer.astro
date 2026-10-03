@@ -92,7 +92,7 @@ const chips = {
 </section>
 
 <style>
-  .filters { position: sticky; top: 80px; z-index: 40; background: var(--bg); border-bottom: 1px solid var(--rule); }
+  .filters { position: sticky; top: var(--header-h); z-index: 40; background: var(--bg); border-bottom: 1px solid var(--rule); }
   .filter-row { display: flex; align-items: center; gap: 12px; padding-top: 14px; padding-bottom: 14px; max-width: none; }
   .chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; padding: 2px; mask-image: linear-gradient(90deg, #000 calc(100% - 40px), transparent); }
   .chips::-webkit-scrollbar { display: none; }
@@ -107,7 +107,7 @@ const chips = {
   .split.no-map .grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
   .grid > :global(.card.hl) :global(.media) { box-shadow: 0 0 0 3px var(--ink); }
   .empty { text-align: center; padding: 64px 0; }
-  .map-pane { position: sticky; top: 145px; height: calc(100dvh - 145px); }
+  .map-pane { position: sticky; top: calc(var(--header-h) + 65px); height: calc(100dvh - var(--header-h) - 65px); }
   .map { width: 100%; height: 100%; background: var(--surface); }
   .map-fab { display: none; }
 
@@ -131,14 +131,12 @@ const chips = {
   @media (max-width: 1127px) {
     .split, .split.no-map { grid-template-columns: 1fr; }
     .map-toggle-desk { display: none; }
-    .map-pane { display: none; position: fixed; inset: 80px 0 0 0; height: auto; z-index: 46; }
+    .map-pane { display: none; position: fixed; inset: var(--header-h) 0 0 0; height: auto; z-index: 46; }
     .split.show-map-mobile .map-pane { display: block; }
     .split.show-map-mobile .list { visibility: hidden; height: 0; overflow: hidden; padding: 0; }
     .map-fab { display: inline-flex; align-items: center; gap: 8px; position: fixed; left: 50%; bottom: 24px; translate: -50% 0; z-index: 47; height: 48px; padding: 0 20px; border: 0; border-radius: var(--radius-pill); background: var(--ink); color: var(--bg); font-weight: 600; box-shadow: var(--shadow); cursor: pointer; }
   }
   @media (max-width: 760px) {
-    .filters { top: 64px; }
-    .map-pane { inset: 64px 0 0 0; }
     .filter-row { flex-wrap: wrap; gap: 10px; }
     .chips { flex-basis: 100%; order: 2; }
   }
