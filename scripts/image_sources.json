@@ -10133,6 +10133,750 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "northstar-bike-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "northstar",
+    "northstar bike park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Northstar California",
+     "depth": 0
+    },
+    {
+     "openverse": "Northstar Bike Park mountain biking",
+     "must": [
+      "northstar",
+      "northstar bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mammoth-bike-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "mammoth",
+    "mammoth bike park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mammoth Mountain Ski Area",
+     "depth": 0
+    },
+    {
+     "openverse": "Mammoth Bike Park mountain biking",
+     "must": [
+      "mammoth",
+      "mammoth bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "snow-summit-bike-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "snow summit",
+    "big bear",
+    "snow summit bike park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Snow Summit",
+     "depth": 0
+    },
+    {
+     "openverse": "Snow Summit Bike Park mountain biking",
+     "must": [
+      "snow summit",
+      "big bear",
+      "snow summit bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "downieville": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "downieville"
+   ],
+   "sources": [
+    {
+     "category": "Category:Downieville, California",
+     "depth": 0
+    },
+    {
+     "openverse": "Downieville mountain biking",
+     "must": [
+      "downieville"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "tahoe-flume-trail": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "flume",
+    "marlette",
+    "tahoe rim",
+    "flume trail and tahoe rim trail"
+   ],
+   "sources": [
+    {
+     "search": "Flume Trail Lake Tahoe",
+     "limit": 25
+    },
+    {
+     "openverse": "Flume Trail and Tahoe Rim Trail mountain biking",
+     "must": [
+      "flume",
+      "marlette",
+      "tahoe rim",
+      "flume trail and tahoe rim trail"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "south-lake-tahoe-trails": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "toad",
+    "freel",
+    "tahoe rim",
+    "south lake tahoe trails"
+   ],
+   "sources": [
+    {
+     "search": "Mr. Toad's Wild Ride trail Tahoe",
+     "limit": 25
+    },
+    {
+     "openverse": "South Lake Tahoe trails mountain biking",
+     "must": [
+      "toad",
+      "freel",
+      "tahoe rim",
+      "south lake tahoe trails"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "sedona-trails": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "sedona",
+    "bell rock"
+   ],
+   "sources": [
+    {
+     "category": "Category:Bell Rock (Arizona)",
+     "depth": 0
+    },
+    {
+     "openverse": "Sedona mountain biking",
+     "must": [
+      "sedona",
+      "bell rock"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "flagstaff-trails": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "elden",
+    "flagstaff",
+    "schultz"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mount Elden",
+     "depth": 0
+    },
+    {
+     "openverse": "Flagstaff mountain biking",
+     "must": [
+      "elden",
+      "flagstaff",
+      "schultz"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "prescott-trails": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "prescott",
+    "thumb butte",
+    "dells"
+   ],
+   "sources": [
+    {
+     "category": "Category:Thumb Butte",
+     "depth": 0
+    },
+    {
+     "openverse": "Prescott mountain biking",
+     "must": [
+      "prescott",
+      "thumb butte",
+      "dells"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "tucson-mountain-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "tucson mountain",
+    "sweetwater",
+    "tucson mountain park and sweetwater preserve"
+   ],
+   "sources": [
+    {
+     "category": "Category:Tucson Mountain Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Tucson Mountain Park and Sweetwater Preserve mountain biking",
+     "must": [
+      "tucson mountain",
+      "sweetwater",
+      "tucson mountain park and sweetwater preserve"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "south-mountain-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "south mountain",
+    "south mountain park and preserve"
+   ],
+   "sources": [
+    {
+     "category": "Category:South Mountain Park",
+     "depth": 0
+    },
+    {
+     "openverse": "South Mountain Park and Preserve mountain biking",
+     "must": [
+      "south mountain",
+      "south mountain park and preserve"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mcdowell-sonoran-preserve": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "mcdowell",
+    "brown",
+    "mcdowell sonoran preserve"
+   ],
+   "sources": [
+    {
+     "category": "Category:McDowell Sonoran Preserve",
+     "depth": 0
+    },
+    {
+     "openverse": "McDowell Sonoran Preserve mountain biking",
+     "must": [
+      "mcdowell",
+      "brown",
+      "mcdowell sonoran preserve"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "smugglers-notch-pickleball": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "smugglers",
+    "smuggs",
+    "jeffersonville",
+    "smugglers’ notch tennis & pickleball"
+   ],
+   "sources": [
+    {
+     "search": "Smugglers' Notch Resort summer",
+     "limit": 25
+    },
+    {
+     "openverse": "Smugglers’ Notch Tennis & Pickleball pickleball",
+     "must": [
+      "smugglers",
+      "smuggs",
+      "jeffersonville",
+      "smugglers’ notch tennis & pickleball"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "woodstock-athletic-club": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "woodstock",
+    "woodstock athletic club"
+   ],
+   "sources": [
+    {
+     "category": "Category:Woodstock Inn & Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Woodstock Athletic Club pickleball",
+     "must": [
+      "woodstock",
+      "woodstock athletic club"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "sugarbush-sharc": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "sugarbush",
+    "sugarbush health & recreation center"
+   ],
+   "sources": [
+    {
+     "category": "Category:Sugarbush Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Sugarbush Health & Recreation Center pickleball",
+     "must": [
+      "sugarbush",
+      "sugarbush health & recreation center"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "owls-nest-resort": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "owl's nest",
+    "owls nest",
+    "thornton",
+    "owl’s nest resort"
+   ],
+   "sources": [
+    {
+     "search": "Owl's Nest Resort Thornton New Hampshire",
+     "limit": 25
+    },
+    {
+     "openverse": "Owl’s Nest Resort pickleball",
+     "must": [
+      "owl's nest",
+      "owls nest",
+      "thornton",
+      "owl’s nest resort"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "south-mill-pond": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "south mill pond",
+    "mill pond",
+    "south mill pond courts"
+   ],
+   "sources": [
+    {
+     "search": "South Mill Pond Portsmouth New Hampshire",
+     "limit": 25
+    },
+    {
+     "openverse": "South Mill Pond courts pickleball",
+     "must": [
+      "south mill pond",
+      "mill pond",
+      "south mill pond courts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mohonk-mountain-house": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "mohonk",
+    "mohonk mountain house"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mohonk Mountain House",
+     "depth": 0
+    },
+    {
+     "openverse": "Mohonk Mountain House pickleball",
+     "must": [
+      "mohonk",
+      "mohonk mountain house"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "east-side-rec-saratoga": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "saratoga",
+    "east side rec courts"
+   ],
+   "sources": [
+    {
+     "search": "East Side Recreation Saratoga Springs",
+     "limit": 25
+    },
+    {
+     "openverse": "East Side Rec courts pickleball",
+     "must": [
+      "saratoga",
+      "east side rec courts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "turning-stone-sportsplex": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "turning stone",
+    "sportsplex at turning stone"
+   ],
+   "sources": [
+    {
+     "category": "Category:Turning Stone Resort Casino",
+     "depth": 0
+    },
+    {
+     "openverse": "Sportsplex at Turning Stone pickleball",
+     "must": [
+      "turning stone",
+      "sportsplex at turning stone"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "erie-canal-pickleball": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "dewitt",
+    "syracuse",
+    "erie canal pickleball center"
+   ],
+   "sources": [
+    {
+     "search": "Erie Canal Pickleball DeWitt",
+     "limit": 25
+    },
+    {
+     "openverse": "Erie Canal Pickleball Center pickleball",
+     "must": [
+      "dewitt",
+      "syracuse",
+      "erie canal pickleball center"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "skytop-lodge": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "skytop",
+    "skytop lodge"
+   ],
+   "sources": [
+    {
+     "search": "Skytop Lodge Pennsylvania",
+     "limit": 25
+    },
+    {
+     "openverse": "Skytop Lodge pickleball",
+     "must": [
+      "skytop",
+      "skytop lodge"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "pickleball-warehouse": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "pickleball warehouse",
+    "wheel mill",
+    "the pickleball warehouse"
+   ],
+   "sources": [
+    {
+     "search": "Pickleball Warehouse Pittsburgh",
+     "limit": 25
+    },
+    {
+     "openverse": "The Pickleball Warehouse pickleball",
+     "must": [
+      "pickleball warehouse",
+      "wheel mill",
+      "the pickleball warehouse"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }
