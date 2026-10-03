@@ -39,7 +39,7 @@ const spots: Spot[] = [
     features: ['lift-served', 'downhill', 'flow', 'jump-lines', 'rentals', 'lessons'],
     levels: ['beginner', 'intermediate', 'advanced', 'expert'],
     outfitters: [
-      { name: 'Northstar bike rentals and lessons', what: 'Downhill bikes, pads and coaching in the village at the base of the gondola.', url: `${NS}/` },
+      { name: 'Northstar bike rentals and lessons', what: 'The resort’s own bike rentals and lessons, booked through Northstar.', url: `${NS}/` },
       { name: 'Tahoe Sports Hub', what: 'Truckee mountain shop with bike service and gear.', url: 'https://www.tahoesportshub.com/' },
       { name: 'Truckee Trails Foundation', what: 'Nonprofit that builds and looks after Truckee’s multi-use trails, a good starting point for rides off the resort.', url: 'https://truckeetrails.org/' },
     ],
@@ -213,7 +213,7 @@ const spots: Spot[] = [
     thingsToDo: [
       { name: 'Boomtown Backyard', kind: 'drink', what: 'Riverfront beer garden and music spot with sausages and craft beer, open April to October.', url: 'https://www.boomtownorbust.com/', distance: 'In town' },
       { name: 'St. Charles Place', kind: 'drink', what: 'Historic bar in an 1853 building with a back deck over the Downie River.', url: 'https://stcharlesplace.net/', distance: 'In town' },
-      { name: 'Cold Rush Café', kind: 'eat', what: 'Coffee, deli food and homemade ice cream on Main Street.', url: 'https://www.coldrushcafe.com/', distance: 'In town' },
+      { name: 'Cold Rush Café', kind: 'eat', what: 'Coffee, a quick deli and seasonal ice cream flavors.', url: 'https://www.coldrushcafe.com/', distance: 'In town' },
       { name: 'Sierra Buttes Fire Lookout', kind: 'other', what: 'A steep 5.2-mile round-trip hike, finishing on stairs, to a lookout above 8,500 ft.', distance: '40 min drive' },
       { name: 'River swimming', kind: 'other', what: 'Boulder-lined pools in the North Yuba, in town and at the campgrounds along Highway 49.', distance: 'In town' },
     ],
@@ -365,7 +365,7 @@ const spots: Spot[] = [
     ],
     thingsToDo: [
       { name: 'Sedona Bike Skills Park', kind: 'other', what: 'City skills park at Posse Grounds for warming up and practicing features.', url: 'https://www.sedonaaz.gov/your-government/departments/parks-recreation/city-parks/bike-skills-park', distance: '15 min drive' },
-      { name: 'Slide Rock State Park', kind: 'other', what: 'Natural water slide in Oak Creek Canyon. The swim area reopened October 1, 2026, after post-fire flood closures.', url: 'https://azstateparks.com/slide-rock', distance: '25 min drive' },
+      { name: 'Slide Rock State Park', kind: 'other', what: 'Natural water slide in Oak Creek Canyon. The swim area was closed until October 1, 2026, after the Pocket Fire, so check before you go.', url: 'https://azstateparks.com/slide-rock', distance: '25 min drive' },
       { name: 'Tlaquepaque', kind: 'shop', what: 'Village-style arts and crafts center with galleries and restaurants.', url: 'https://tlaq.com/', distance: '10 min drive' },
     ],
     events: [

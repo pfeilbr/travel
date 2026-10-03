@@ -9262,6 +9262,401 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "bowron-lake-circuit": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "bowron",
+    "isaac lake",
+    "lanezi",
+    "bowron lake canoe circuit"
+   ],
+   "sources": [
+    {
+     "category": "Category:Bowron Lake Provincial Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Bowron Lake Canoe Circuit kayaking",
+     "must": [
+      "bowron",
+      "isaac lake",
+      "lanezi",
+      "bowron lake canoe circuit"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "desolation-sound": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "desolation",
+    "prideaux",
+    "tenedos",
+    "desolation sound marine park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Desolation Sound",
+     "depth": 0
+    },
+    {
+     "openverse": "Desolation Sound Marine Park kayaking",
+     "must": [
+      "desolation",
+      "prideaux",
+      "tenedos",
+      "desolation sound marine park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "johnstone-strait": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "johnstone",
+    "telegraph cove",
+    "robson bight",
+    "johnstone strait"
+   ],
+   "sources": [
+    {
+     "category": "Category:Johnstone Strait",
+     "depth": 0
+    },
+    {
+     "openverse": "Johnstone Strait kayaking",
+     "must": [
+      "johnstone",
+      "telegraph cove",
+      "robson bight",
+      "johnstone strait"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "clayoquot-sound": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "clayoquot",
+    "tofino",
+    "meares",
+    "clayoquot sound"
+   ],
+   "sources": [
+    {
+     "category": "Category:Clayoquot Sound",
+     "depth": 0
+    },
+    {
+     "openverse": "Clayoquot Sound kayaking",
+     "must": [
+      "clayoquot",
+      "tofino",
+      "meares",
+      "clayoquot sound"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "broken-group-islands": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "broken group",
+    "broken islands",
+    "barkley",
+    "broken group islands"
+   ],
+   "sources": [
+    {
+     "category": "Category:Broken Group",
+     "depth": 0
+    },
+    {
+     "openverse": "Broken Group Islands kayaking",
+     "must": [
+      "broken group",
+      "broken islands",
+      "barkley",
+      "broken group islands"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "indian-arm": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "indian arm",
+    "deep cove",
+    "granite falls"
+   ],
+   "sources": [
+    {
+     "category": "Category:Indian Arm",
+     "depth": 0
+    },
+    {
+     "openverse": "Indian Arm kayaking",
+     "must": [
+      "indian arm",
+      "deep cove",
+      "granite falls"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "saguenay-fjord": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "saguenay",
+    "éternité",
+    "eternite",
+    "saguenay fjord national park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Parc national du Fjord-du-Saguenay",
+     "depth": 0
+    },
+    {
+     "openverse": "Saguenay Fjord National Park kayaking",
+     "must": [
+      "saguenay",
+      "éternité",
+      "eternite",
+      "saguenay fjord national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "wapizagonke-lake": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "wapizagonke",
+    "mauricie",
+    "lac wapizagonke, la mauricie national park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Lac Wapizagonke",
+     "depth": 0
+    },
+    {
+     "openverse": "Lac Wapizagonke, La Mauricie National Park kayaking",
+     "must": [
+      "wapizagonke",
+      "mauricie",
+      "lac wapizagonke, la mauricie national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "riviere-du-diable": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "diable",
+    "tremblant",
+    "monroe",
+    "rivière du diable, mont-tremblant national park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Parc national du Mont-Tremblant",
+     "depth": 0
+    },
+    {
+     "openverse": "Rivière du Diable, Mont-Tremblant National Park kayaking",
+     "must": [
+      "diable",
+      "tremblant",
+      "monroe",
+      "rivière du diable, mont-tremblant national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "havre-du-bic": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "bic",
+    "bic national park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Parc national du Bic",
+     "depth": 0
+    },
+    {
+     "openverse": "Bic National Park kayaking",
+     "must": [
+      "bic",
+      "bic national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "rouge-river": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "rouge",
+    "rouge river (seven sisters)"
+   ],
+   "sources": [
+    {
+     "category": "Category:Rivière Rouge (Grenville-sur-la-Rouge)",
+     "depth": 0
+    },
+    {
+     "openverse": "Rouge River (Seven Sisters) kayaking",
+     "must": [
+      "rouge",
+      "rouge river (seven sisters)"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }
