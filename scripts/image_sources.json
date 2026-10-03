@@ -10877,6 +10877,852 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "kingdom-trails": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "kingdom",
+    "burke",
+    "darling hill",
+    "kingdom trails"
+   ],
+   "sources": [
+    {
+     "category": "Category:Kingdom_Trails",
+     "depth": 0
+    },
+    {
+     "openverse": "Kingdom Trails mountain biking",
+     "must": [
+      "kingdom",
+      "burke",
+      "darling hill",
+      "kingdom trails"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "killington-bike-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "killington",
+    "killington bike park"
+   ],
+   "sources": [
+    {
+     "search": "Killington mountain bike park",
+     "limit": 25
+    },
+    {
+     "openverse": "Killington Bike Park mountain biking",
+     "must": [
+      "killington",
+      "killington bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "stowe-trails": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "cady hill",
+    "stowe",
+    "stowe trails and cady hill forest"
+   ],
+   "sources": [
+    {
+     "search": "Cady Hill Forest Stowe",
+     "limit": 25
+    },
+    {
+     "openverse": "Stowe trails and Cady Hill Forest mountain biking",
+     "must": [
+      "cady hill",
+      "stowe",
+      "stowe trails and cady hill forest"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "highland-mountain-bike-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "highland",
+    "highland mountain bike park"
+   ],
+   "sources": [
+    {
+     "search": "Highland Mountain Bike Park Northfield",
+     "limit": 25
+    },
+    {
+     "openverse": "Highland Mountain Bike Park mountain biking",
+     "must": [
+      "highland",
+      "highland mountain bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "loon-bike-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "loon",
+    "loon mountain bike park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Loon_Mountain",
+     "depth": 0
+    },
+    {
+     "openverse": "Loon Mountain Bike Park mountain biking",
+     "must": [
+      "loon",
+      "loon mountain bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bear-brook": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "bear brook",
+    "catamount",
+    "allenstown",
+    "bear brook state park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Bear_Brook_State_Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Bear Brook State Park mountain biking",
+     "must": [
+      "bear brook",
+      "catamount",
+      "allenstown",
+      "bear brook state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "wilmington-lake-placid-trails": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "wilmington",
+    "hoevenberg",
+    "whiteface",
+    "flume",
+    "wilmington and lake placid trails"
+   ],
+   "sources": [
+    {
+     "search": "Wilmington New York Ausable River",
+     "limit": 25
+    },
+    {
+     "openverse": "Wilmington and Lake Placid trails mountain biking",
+     "must": [
+      "wilmington",
+      "hoevenberg",
+      "whiteface",
+      "flume",
+      "wilmington and lake placid trails"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "ellicottville-trails": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "holiday valley",
+    "ellicottville",
+    "holimont",
+    "mccarty",
+    "ellicottville bike parks and trails"
+   ],
+   "sources": [
+    {
+     "search": "Holiday Valley Ellicottville summer",
+     "limit": 25
+    },
+    {
+     "openverse": "Ellicottville bike parks and trails mountain biking",
+     "must": [
+      "holiday valley",
+      "ellicottville",
+      "holimont",
+      "mccarty",
+      "ellicottville bike parks and trails"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "highland-forest": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "highland forest"
+   ],
+   "sources": [
+    {
+     "category": "Category:Highland_Forest",
+     "depth": 0
+    },
+    {
+     "openverse": "Highland Forest mountain biking",
+     "must": [
+      "highland forest"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "old-erie-canal": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "erie canal",
+    "old erie",
+    "chittenango",
+    "canastota",
+    "old erie canal state historic park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Old_Erie_Canal_State_Historic_Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Old Erie Canal State Historic Park mountain biking",
+     "must": [
+      "erie canal",
+      "old erie",
+      "chittenango",
+      "canastota",
+      "old erie canal state historic park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "blue-mountain-bike-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "palmerton",
+    "blue mountain resort",
+    "blue mountain bike park"
+   ],
+   "sources": [
+    {
+     "search": "Blue Mountain Resort Palmerton Pennsylvania",
+     "limit": 25
+    },
+    {
+     "openverse": "Blue Mountain Bike Park mountain biking",
+     "must": [
+      "palmerton",
+      "blue mountain resort",
+      "blue mountain bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "allegrippis-trails": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "allegrippis",
+    "raystown",
+    "allegrippis trails"
+   ],
+   "sources": [
+    {
+     "category": "Category:Raystown_Lake",
+     "depth": 0
+    },
+    {
+     "openverse": "Allegrippis Trails mountain biking",
+     "must": [
+      "allegrippis",
+      "raystown",
+      "allegrippis trails"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "pine-creek-rail-trail": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "pine creek",
+    "pine creek rail trail"
+   ],
+   "sources": [
+    {
+     "category": "Category:Pine_Creek_Rail_Trail",
+     "depth": 0
+    },
+    {
+     "openverse": "Pine Creek Rail Trail mountain biking",
+     "must": [
+      "pine creek",
+      "pine creek rail trail"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "upper-pines": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "pines",
+    "yosemite",
+    "upper pines campground"
+   ],
+   "sources": [
+    {
+     "category": "Category:Upper Pines Campground",
+     "depth": 0
+    },
+    {
+     "openverse": "Upper Pines Campground camping",
+     "must": [
+      "pines",
+      "yosemite",
+      "upper pines campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "jumbo-rocks": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "jumbo rocks",
+    "skull rock",
+    "jumbo rocks campground"
+   ],
+   "sources": [
+    {
+     "category": "Category:Jumbo Rocks Campground",
+     "depth": 0
+    },
+    {
+     "openverse": "Jumbo Rocks Campground camping",
+     "must": [
+      "jumbo rocks",
+      "skull rock",
+      "jumbo rocks campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "dl-bliss": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "bliss",
+    "rubicon",
+    "d. l. bliss state park"
+   ],
+   "sources": [
+    {
+     "category": "Category:D. L. Bliss State Park",
+     "depth": 0
+    },
+    {
+     "openverse": "D. L. Bliss State Park camping",
+     "must": [
+      "bliss",
+      "rubicon",
+      "d. l. bliss state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "lodgepole-sequoia": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "lodgepole",
+    "tokopah",
+    "lodgepole campground"
+   ],
+   "sources": [
+    {
+     "category": "Category:Lodgepole Campground",
+     "depth": 0
+    },
+    {
+     "openverse": "Lodgepole Campground camping",
+     "must": [
+      "lodgepole",
+      "tokopah",
+      "lodgepole campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "twin-lakes-mammoth": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "twin lakes",
+    "twin lakes campground"
+   ],
+   "sources": [
+    {
+     "category": "Category:Twin Lakes (Mammoth Lakes, California)",
+     "depth": 0
+    },
+    {
+     "openverse": "Twin Lakes Campground camping",
+     "must": [
+      "twin lakes",
+      "twin lakes campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "borrego-palm-canyon": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "borrego",
+    "borrego palm canyon campground"
+   ],
+   "sources": [
+    {
+     "category": "Category:Borrego Palm Canyon",
+     "depth": 0
+    },
+    {
+     "openverse": "Borrego Palm Canyon Campground camping",
+     "must": [
+      "borrego",
+      "borrego palm canyon campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "jedediah-smith": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "jedediah",
+    "stout",
+    "smith river",
+    "jedediah smith campground"
+   ],
+   "sources": [
+    {
+     "category": "Category:Jedediah Smith Redwoods State Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Jedediah Smith Campground camping",
+     "must": [
+      "jedediah",
+      "stout",
+      "smith river",
+      "jedediah smith campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mather-campground": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "mather",
+    "mather campground"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mather Campground",
+     "depth": 0
+    },
+    {
+     "openverse": "Mather Campground camping",
+     "must": [
+      "mather",
+      "mather campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "cave-springs": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "oak creek",
+    "cave spring",
+    "cave springs campground"
+   ],
+   "sources": [
+    {
+     "category": "Category:Oak Creek Canyon",
+     "depth": 0
+    },
+    {
+     "openverse": "Cave Springs Campground camping",
+     "must": [
+      "oak creek",
+      "cave spring",
+      "cave springs campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "lost-dutchman": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "dutchman",
+    "superstition",
+    "lost dutchman state park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Lost Dutchman State Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Lost Dutchman State Park camping",
+     "must": [
+      "dutchman",
+      "superstition",
+      "lost dutchman state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "wahweap": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "wahweap",
+    "wahweap rv & campground"
+   ],
+   "sources": [
+    {
+     "category": "Category:Wahweap",
+     "depth": 0
+    },
+    {
+     "openverse": "Wahweap RV & Campground camping",
+     "must": [
+      "wahweap",
+      "wahweap rv & campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "catalina-state-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "catalina",
+    "catalina state park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Catalina State Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Catalina State Park camping",
+     "must": [
+      "catalina",
+      "catalina state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }

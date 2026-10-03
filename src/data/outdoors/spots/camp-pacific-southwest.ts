@@ -1240,7 +1240,7 @@ const spots: Spot[] = [
     coords: [36.9973, -111.4991],
     kind: 'National park',
     size: 'mid',
-    tagline: 'Full-service camping at Lake Powell’s busiest marina',
+    tagline: 'Full-service camping by Wahweap Marina on Lake Powell',
     summary:
       'Lake Powell’s big full-service campground in Glen Canyon National Recreation Area, near Wahweap Marina and Lake Powell Resort a few miles from Page. Long, level hookup sites and tent loops face red buttes that glow at sunset. It’s a base for boating, kayaking into Antelope Canyon and Horseshoe Bend; the lake is a short drive from most sites, and the $30 recreation-area entrance fee is extra.',
     url: 'https://www.lakepowell.com/stay/rv-camping/wahweap-rv-campground',

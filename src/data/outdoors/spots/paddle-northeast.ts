@@ -12,7 +12,7 @@ const ADK_CANOE_CLASSIC = {
   date: '2027-09-10',
   end: '2027-09-12',
   when: 'Weekend after Labor Day (usual)',
-  what: 'Three days and 90 miles of canoe, kayak and guideboat racing from Old Forge to Saranac Lake along the Northern Forest Canoe Trail. The 2026 race ran Sept 11–13 and filled up; registration usually opens July 1.',
+  what: 'Three days and 90 miles of canoe, kayak and guideboat racing from Old Forge to Saranac Lake along the Northern Forest Canoe Trail. The 2026 race ran Sept 11–13; registration opened July 1 and filled.',
   url: 'https://www.90miler.org/',
   confirmed: false,
 };
@@ -152,8 +152,8 @@ const spots: Spot[] = [
       { label: 'Lakes', value: '8, First through Eighth Lake' },
       { label: 'Carries', value: '2: Fifth to Sixth, Seventh to Eighth Lake' },
       { label: 'Trail', value: 'Start of the 740-mile Northern Forest Canoe Trail' },
-      { label: 'Easy float', value: 'North Branch of the Moose, about 4 hr, Rondaxe Bridge to North Street' },
-      { label: 'Motors', value: 'Allowed; heavy boat traffic in summer' },
+      { label: 'Easy float', value: 'North Branch of the Moose, 2–3 hr, Rondaxe to North Street' },
+      { label: 'Motors', value: 'Allowed; busy with pontoons and motorboats in summer' },
     ],
     features: ['flatwater', 'multi-day', 'rentals', 'sup', 'fishing', 'swimming'],
     levels: ['beginner', 'intermediate'],
@@ -358,7 +358,7 @@ const spots: Spot[] = [
       { label: 'Lake', value: '38 miles long, the longest Finger Lake' },
       { label: 'Rental bases', value: '3: Stewart Park, Myers Park, Taughannock Falls SP' },
       { label: 'Sheltered water', value: 'Cayuga Inlet through Ithaca' },
-      { label: 'Waterfall', value: 'Taughannock Falls, 215 ft, by the Taughannock launch' },
+      { label: 'Waterfall', value: 'Taughannock Falls, 215 ft, a short walk from the launch' },
     ],
     features: ['flatwater', 'rentals', 'guided-tours', 'sup', 'swimming', 'fishing'],
     levels: ['beginner', 'intermediate'],
@@ -451,7 +451,7 @@ const spots: Spot[] = [
     season: {
       from: 'May',
       to: 'Oct',
-      note: 'Verona Beach State Park’s campground ran May 30–Oct 12 in 2026; the beach is staffed daily from mid-June to Labor Day.',
+      note: 'Verona Beach State Park’s campground ran May 30–Oct 12 in 2026; its beach is open daily from mid-June to Labor Day.',
     },
     facts: [
       { label: 'Lake', value: '21 miles long, about 80 sq mi, shallow' },
@@ -583,7 +583,7 @@ const spots: Spot[] = [
       {
         name: 'The North Hero House Inn & Restaurant',
         kind: 'inn',
-        what: 'Historic inn and restaurant on the water in North Hero, in the Champlain Islands.',
+        what: 'Inn and restaurant in the village of North Hero, in the Champlain Islands.',
         url: 'https://www.northherohouse.com/',
         distance: '40 min drive',
       },
@@ -663,7 +663,7 @@ const spots: Spot[] = [
       },
       {
         name: 'Friends of Green River Reservoir',
-        what: 'Volunteer group that helps protect the reservoir’s wild shoreline and campsites.',
+        what: 'Volunteer group working to preserve the reservoir’s natural heritage.',
         url: 'http://www.fgrrvt.org/',
       },
     ],
@@ -731,7 +731,7 @@ const spots: Spot[] = [
     size: 'mid',
     tagline: 'A fjord-like lake under the cliffs of Pisgah and Hor',
     summary:
-      'The cliffs of Mount Pisgah and Mount Hor drop straight into this five-mile lake, which reaches 308 feet deep, one of the deepest in the Northeast. Paddling the narrow south end under the rock walls is the reason to come, and the deep water stays cold well into summer. There’s no camping by the lake in the state forest, so stay at an inn or campground nearby and have a boat delivered.',
+      'The cliffs of Mount Pisgah and Mount Hor drop straight into this five-mile lake, which reaches 308 feet deep, one of the deepest in the Northeast. Paddling the narrow south end under the rock walls is the reason to come, and the deep water stays cold. There’s no camping by the lake in the state forest, so stay at an inn or campground nearby and have a boat delivered.',
     url: 'https://fpr.vermont.gov/willoughby-state-forest',
     bookingUrl: 'https://www.clyderiverrecreation.com/paddleboard-trips-kayak-and-canoe-rentals',
     season: {
@@ -772,7 +772,7 @@ const spots: Spot[] = [
       {
         name: 'The Wildflower Inn',
         kind: 'inn',
-        what: 'Hilltop inn and restaurant in Lyndonville, handy for Kingdom Trails too.',
+        what: 'Inn and restaurant in Lyndonville, close to Kingdom Trails.',
         url: 'https://www.wildflowerinn.com/',
         distance: '30 min drive',
       },
@@ -809,7 +809,7 @@ const spots: Spot[] = [
       {
         name: 'Hill Farmstead Brewery',
         kind: 'drink',
-        what: 'Small farm brewery in Greensboro with a cult following.',
+        what: 'Small farm brewery in Greensboro with a devoted following.',
         url: 'https://hillfarmstead.com/',
         distance: '45 min drive',
       },
@@ -841,7 +841,7 @@ const spots: Spot[] = [
     size: 'mid',
     tagline: 'The On Golden Pond lake, with island campsites',
     summary:
-      'Squam is a big, island-studded lake with long stretches of protected shoreline and quiet coves, best known as the setting of On Golden Pond. The Squam Lakes Association rents canoes, kayaks and boards at its Holderness headquarters and runs a dozen campsites on Moon and Bowman Islands and in the Chamberlain-Reynolds Forest, 45 minutes to two hours away by paddle. Add the short hike up West Rattlesnake for the classic view over the islands.',
+      'Squam is a big lake full of islands, coves and reefs with mountain views all around, best known as the setting of On Golden Pond. The Squam Lakes Association rents canoes, kayaks and boards at its Holderness headquarters and runs a dozen campsites on Moon and Bowman Islands and in the Chamberlain-Reynolds Forest, 45 minutes to two hours away by paddle. Add the short hike up West Rattlesnake for the classic view over the islands.',
     url: 'https://squamlakes.org/boat-rentals/',
     bookingUrl: 'https://squamlakes.org/camping/',
     mapUrl: 'https://squamlakes.org/campsite-info/',
@@ -1205,7 +1205,7 @@ const spots: Spot[] = [
     size: 'mid',
     tagline: 'Class II–III rafting through a deep, green gorge',
     summary:
-      'The Lehigh runs through a steep, wooded gorge from White Haven to Jim Thorpe, with Class II–III rapids that are fun in a raft and a real test in a kayak or open canoe. Scheduled releases from the F.E. Walter Dam on spring and fall weekends bring the biggest water; on other days outfitters run gentler family trips. Boats may launch only at White Haven, Rockport or Glen Onoko, and the rail trail alongside makes a good second day.',
+      'The Lehigh runs through a steep, wooded gorge from White Haven to Jim Thorpe, with Class II–III rapids that are fun in a raft and a real test in a kayak or open canoe. Scheduled releases from the F.E. Walter Dam on set weekends from May to October bring the biggest water; on other days outfitters run gentler family trips. Boats may launch only at White Haven, Rockport or Glen Onoko, and the rail trail alongside makes a good second day.',
     url: `${PA_PARKS}/lehigh-gorge-state-park/whitewater-boating`,
     bookingUrl: 'https://fareharbor.com/embeds/book/jtraft/?full-items=yes',
     mapUrl: 'https://www.wildlandspa.org/lrwt-map/',
@@ -1253,14 +1253,14 @@ const spots: Spot[] = [
         kind: 'inn',
         what: 'Built in 1849 in the middle of Jim Thorpe’s historic district, steps from restaurants and shops.',
         url: 'https://innjt.com/',
-        distance: '15 min drive',
+        distance: '20 min drive',
       },
       {
         name: 'The Harry Packer Mansion Inn',
         kind: 'b&b',
         what: 'Victorian mansion inn above Jim Thorpe, with antique-filled rooms.',
         url: 'https://www.hpmansion.com/',
-        distance: '15 min drive',
+        distance: '20 min drive',
       },
     ],
     thingsToDo: [
@@ -1276,14 +1276,14 @@ const spots: Spot[] = [
         kind: 'other',
         what: 'Train rides from Jim Thorpe along the Lehigh River.',
         url: 'https://www.lgsry.com/',
-        distance: '15 min drive',
+        distance: '20 min drive',
       },
       {
         name: 'Molly Maguire’s Irish Pub',
         kind: 'eat',
         what: 'Pub food and pints on Jim Thorpe’s main square.',
         url: 'https://www.jimthorpedining.com/',
-        distance: '15 min drive',
+        distance: '20 min drive',
       },
     ],
     events: [

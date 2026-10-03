@@ -453,7 +453,7 @@ const spots: Spot[] = [
         name: 'Black Swan Inn',
         kind: 'b&b',
         what: 'Bed and breakfast in Tilton with a special Highland rider rate.',
-        url: 'http://www.blackswaninn.net/',
+        url: 'https://www.blackswaninn.net/',
         distance: '10 min drive',
         priceFrom: 109,
         priceNote: 'Highland rider rate for two with breakfast, as listed by the park in 2026',
@@ -462,7 +462,7 @@ const spots: Spot[] = [
         name: 'Highland Lake Inn',
         kind: 'inn',
         what: 'Country inn in East Andover that gives Highland riders 10% off.',
-        url: 'http://highlandlakeinn.com/',
+        url: 'https://highlandlakeinn.com/',
         distance: '25 min drive',
       },
       {
@@ -608,7 +608,7 @@ const spots: Spot[] = [
         name: 'Lost River Gorge & Boulder Caves',
         kind: 'other',
         what: 'Boardwalks and caves to squeeze through along a glacial gorge.',
-        url: 'http://www.lostrivergorge.com/',
+        url: 'https://www.lostrivergorge.com/',
         distance: '15 min drive',
       },
     ],
@@ -759,12 +759,12 @@ const spots: Spot[] = [
       {
         name: 'High Peaks Cyclery',
         what: 'Lake Placid shop and guide service with mountain, road and rail-trail bike rentals and Adirondack Rail Trail shuttles.',
-        url: 'http://www.highpeakscyclery.com/',
+        url: 'https://www.highpeakscyclery.com/',
       },
       {
         name: 'Placid Planet Bicycles',
         what: 'Lake Placid bike shop on Saranac Avenue for service and gear.',
-        url: 'http://www.placidplanet.com/',
+        url: 'https://www.placidplanet.com/',
       },
       {
         name: 'Barkeater Trails Alliance (BETA)',
@@ -1003,7 +1003,7 @@ const spots: Spot[] = [
       {
         name: 'Syracuse Bicycle',
         what: 'Bike shop on Erie Boulevard East for service, parts and new bikes.',
-        url: 'http://www.syracusebicycle.com/',
+        url: 'https://www.syracusebicycle.com/',
       },
       {
         name: 'Mello Velo Bicycle Shop',
@@ -1016,14 +1016,14 @@ const spots: Spot[] = [
         name: 'The Brewster Inn',
         kind: 'inn',
         what: 'Lakeside mansion inn with a dining room on Cazenovia Lake.',
-        url: 'http://www.thebrewsterinn.com/',
+        url: 'https://www.thebrewsterinn.com/',
         distance: '30 min drive',
       },
       {
         name: 'Lincklaen House',
         kind: 'inn',
         what: 'Historic inn and tavern in Cazenovia village.',
-        url: 'http://www.lincklaenhouse.com/',
+        url: 'https://www.lincklaenhouse.com/',
         distance: '30 min drive',
       },
       {
@@ -1053,7 +1053,7 @@ const spots: Spot[] = [
         name: 'Critz Farms',
         kind: 'drink',
         what: 'Farm with a cidery and brewery, pick-your-own apples and fall festivals near Cazenovia.',
-        url: 'http://www.critzfarms.com/',
+        url: 'https://www.critzfarms.com/',
         distance: '20 min drive',
       },
     ],
@@ -1108,7 +1108,7 @@ const spots: Spot[] = [
       {
         name: 'Syracuse Bicycle',
         what: 'Bike shop on Erie Boulevard East, a few minutes from the DeWitt end of the trail.',
-        url: 'http://www.syracusebicycle.com/',
+        url: 'https://www.syracusebicycle.com/',
       },
     ],
     lodging: [
@@ -1130,7 +1130,7 @@ const spots: Spot[] = [
         name: 'Lincklaen House',
         kind: 'inn',
         what: 'Historic inn and tavern in Cazenovia village.',
-        url: 'http://www.lincklaenhouse.com/',
+        url: 'https://www.lincklaenhouse.com/',
         distance: '20 min drive from Chittenango',
       },
     ],
@@ -1152,7 +1152,7 @@ const spots: Spot[] = [
         name: 'Critz Farms',
         kind: 'drink',
         what: 'Farm cidery and brewery with fall festivals and pick-your-own apples.',
-        url: 'http://www.critzfarms.com/',
+        url: 'https://www.critzfarms.com/',
         distance: '20 min drive',
       },
     ],
@@ -1345,7 +1345,7 @@ const spots: Spot[] = [
       {
         name: 'Freeze Thaw Cycles',
         what: 'State College mountain bike shop, the nearest big-town shop for parts and service.',
-        url: 'http://www.freezethaw.com/',
+        url: 'https://www.freezethaw.com/',
       },
     ],
     lodging: [
@@ -1360,7 +1360,7 @@ const spots: Spot[] = [
         name: 'The Inn at Solvang',
         kind: 'b&b',
         what: 'Bed and breakfast outside Huntingdon.',
-        url: 'http://www.huntingdonbedandbreakfast.com/index.html',
+        url: 'https://www.huntingdonbedandbreakfast.com/index.html',
         distance: '20 min drive',
       },
     ],
