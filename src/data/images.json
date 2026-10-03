@@ -37,44 +37,6 @@
       "width": 1280
     }
   ],
-  "antelope-canyon-kayak": [
-    {
-      "alt": "Paved road surrounding by rocky desert that ends near waters edge.",
-      "author": "NPS",
-      "file": "src/assets/places/antelope-canyon-kayak/1.jpg",
-      "height": 853,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antelope_Point_Public_Launch,_April_16,_2023_(c04ffbd7-cf70-400b-b892-fa0a4bcb054c).JPG",
-      "title": "File:Antelope Point Public Launch, April 16, 2023 (c04ffbd7-cf70-400b-b892-fa0a4bcb054c).JPG",
-      "width": 1280
-    },
-    {
-      "alt": "Paved road surrounding by rocky desert that ends near waters edge.",
-      "author": "NPS",
-      "file": "src/assets/places/antelope-canyon-kayak/2.jpg",
-      "height": 853,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antelope_Point_Public_Launch,_May_12,_2023_(af2ad554-6950-43e1-a65e-cc2752f03bb5).JPG",
-      "title": "File:Antelope Point Public Launch, May 12, 2023 (af2ad554-6950-43e1-a65e-cc2752f03bb5).JPG",
-      "width": 1280
-    },
-    {
-      "alt": "Trucks unloading kayaks on a barricaded launch ramp as visitors descend a rocky shoreline.",
-      "author": "NPS",
-      "file": "src/assets/places/antelope-canyon-kayak/3.jpg",
-      "height": 853,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antelope_Point_Public_Launch_June_2021_(3d40e45c-27a0-4ad9-b38f-0f4aee83032b).JPG",
-      "title": "File:Antelope Point Public Launch June 2021 (3d40e45c-27a0-4ad9-b38f-0f4aee83032b).JPG",
-      "width": 1280
-    }
-  ],
   "apex-mountain": [
     {
       "alt": "APEX and snowy Chajnantor",
@@ -320,20 +282,6 @@
       "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=9583084",
       "title": "Openverse:8f973703-d461-4fdd-8afa-92d4e4bf4624",
       "width": 960
-    }
-  ],
-  "black-canyon-water-trail": [
-    {
-      "alt": "Black Canyon Wilderness Area",
-      "author": "Lake Mead National Recreation Area",
-      "file": "src/assets/places/black-canyon-water-trail/1.jpg",
-      "height": 680,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/30839029@N05/15620760406",
-      "title": "Openverse:c85a6590-d21d-4185-94fb-eaf50b2f6d17",
-      "width": 1024
     }
   ],
   "black-mountain-nh": [
@@ -876,44 +824,6 @@
       "width": 1024
     }
   ],
-  "elkhorn-slough": [
-    {
-      "alt": "California Sea Lion - Zalophus californianus, Elkhorn Slough, Moss Landing, California",
-      "author": "Judy Gallagher",
-      "file": "src/assets/places/elkhorn-slough/1.jpg",
-      "height": 853,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:California_Sea_Lion_-_Zalophus_californianus,_Elkhorn_Slough,_Moss_Landing,_California.jpg",
-      "title": "File:California Sea Lion - Zalophus californianus, Elkhorn Slough, Moss Landing, California.jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Elkhorn Slough seen from the Coast Starlight train by Amtrak",
-      "author": "Levi Meir Clancy",
-      "file": "src/assets/places/elkhorn-slough/2.jpg",
-      "height": 960,
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elkhorn_Slough_seen_from_the_Coast_Starlight_train_by_Amtrak_APC_0100.jpg",
-      "title": "File:Elkhorn Slough seen from the Coast Starlight train by Amtrak APC 0100.jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Elkhorn Slough",
-      "author": "Calbear22 at English Wikipedia",
-      "file": "src/assets/places/elkhorn-slough/3.jpg",
-      "height": 960,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elkhorn_Slough.JPG",
-      "title": "File:Elkhorn Slough.JPG",
-      "width": 1280
-    }
-  ],
   "firelight-camps": [
     {
       "alt": "Buttermilk Falls cascading into its pool in autumn (nearby Buttermilk Falls State Park)",
@@ -974,82 +884,6 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buttermilk_Falls,_Ithaca,_NY,_April.jpg",
       "title": "File:Buttermilk Falls, Ithaca, NY, April.jpg",
       "width": 1600
-    }
-  ],
-  "forillon-park": [
-    {
-      "alt": "Waterfall along the \"La Chute\" hiking trail",
-      "author": "Michel Rathwell from Cornwall, Canada",
-      "file": "src/assets/places/forillon-park/1.jpg",
-      "height": 853,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waterfalls_Forillon_National_Park_(35408828522).jpg",
-      "title": "File:Waterfalls Forillon National Park (35408828522).jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Waterfall along the \"La Chute\" hiking trail",
-      "author": "Michel Rathwell from Cornwall, Canada",
-      "file": "src/assets/places/forillon-park/2.jpg",
-      "height": 853,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waterfalls_Forillon_National_Park_(35537964806).jpg",
-      "title": "File:Waterfalls Forillon National Park (35537964806).jpg",
-      "width": 1280
-    },
-    {
-      "alt": "View of waterfall on Ruisseau du Cap-des-Rosiers, taken from \"La Chute\" hiking trail, Forillon National Park, Canada.",
-      "author": "Andre Carrotflower",
-      "file": "src/assets/places/forillon-park/3.jpg",
-      "height": 959,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Chute_-_Forillon_National_Park.jpg",
-      "title": "File:La Chute - Forillon National Park.jpg",
-      "width": 1280
-    }
-  ],
-  "garibaldi-lake": [
-    {
-      "alt": "Garibaldi Lake and Sphinx Glacier seen from Panorama Ridge.",
-      "author": "The Cosmonaut",
-      "file": "src/assets/places/garibaldi-lake/1.jpg",
-      "height": 957,
-      "license": "CC BY-SA 2.5",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garibaldi_Lake_seen_from_Panorama_Ridge3.jpg",
-      "title": "File:Garibaldi Lake seen from Panorama Ridge3.jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Trips 05 - Garibaldi Lake - 01 - Sphynx fr Campsite ()",
-      "author": "McKay Savage from London, UK",
-      "file": "src/assets/places/garibaldi-lake/2.jpg",
-      "height": 849,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trips_05_-_Garibaldi_Lake_-_01_-_Sphynx_fr_Campsite_(90974049).jpg",
-      "title": "File:Trips 05 - Garibaldi Lake - 01 - Sphynx fr Campsite (90974049).jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Trips '05 - Garibaldi Lake - 01 - Sphynx fr Campsite",
-      "author": "McKay Savage",
-      "file": "src/assets/places/garibaldi-lake/3.jpg",
-      "height": 833,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trips_'05_-_Garibaldi_Lake_-_01_-_Sphynx_fr_Campsite.jpg",
-      "title": "File:Trips '05 - Garibaldi Lake - 01 - Sphynx fr Campsite.jpg",
-      "width": 1280
     }
   ],
   "glimmerglass": [
@@ -1691,44 +1525,6 @@
       "width": 1280
     }
   ],
-  "little-valley-pickleball": [
-    {
-      "alt": "View of St.",
-      "author": "MojaveNC",
-      "file": "src/assets/places/little-valley-pickleball/1.jpg",
-      "height": 853,
-      "license": "CC BY 2.5",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:St._George,_Utah.jpg",
-      "title": "File:St. George, Utah.jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Verdin, Slick Rock Park, St.",
-      "author": "Bureau of Land Management",
-      "file": "src/assets/places/little-valley-pickleball/2.jpg",
-      "height": 781,
-      "license": "Public domain",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:My_Public_Lands_Magazine,_Spring_2015_(16627591481).jpg",
-      "title": "File:My Public Lands Magazine, Spring 2015 (16627591481).jpg",
-      "width": 1280
-    },
-    {
-      "alt": "atop the 'Dixie Sugarloaf' on the outskirts of St.",
-      "author": "Murray Foubister",
-      "file": "src/assets/places/little-valley-pickleball/3.jpg",
-      "height": 853,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atop_the_'Dixie_Sugarloaf'_on_the_outskirts_of_St._George,_Utah_-_spectacular_sunset_colours_-_(22418616399).jpg",
-      "title": "File:Atop the 'Dixie Sugarloaf' on the outskirts of St. George, Utah - spectacular sunset colours - (22418616399).jpg",
-      "width": 1280
-    }
-  ],
   "loon": [
     {
       "alt": "Loon Mountain Ski Resort Lincoln New Hampshire",
@@ -1973,44 +1769,6 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paysage_nature_Mont_SUTTON.jpg",
       "title": "File:Paysage nature Mont SUTTON.jpg",
-      "width": 1280
-    }
-  ],
-  "mont-tremblant-park": [
-    {
-      "alt": "The following is the author's description of the photograph quoted directly from the photograph's Flickr page.",
-      "author": "Dick Rochester",
-      "file": "src/assets/places/mont-tremblant-park/1.jpg",
-      "height": 857,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rural_bridge_in_the_Mont-Tremblant_area_of_Quebec.jpg",
-      "title": "File:Rural bridge in the Mont-Tremblant area of Quebec.jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Long exposure and HDR photo of Chutes du Diable in Parc National du Mont-Tremblant, Quebec (Canada).",
-      "author": "Nicolas Raymond from Bethesda, Maryland, USA",
-      "file": "src/assets/places/mont-tremblant-park/2.jpg",
-      "height": 853,
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chutes_du_Diable_Waterfall_-_HDR_(15953332725).jpg",
-      "title": "File:Chutes du Diable Waterfall - HDR (15953332725).jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Mont-Tremblant",
-      "author": "ericahan.38",
-      "file": "src/assets/places/mont-tremblant-park/3.jpg",
-      "height": 720,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont-Tremblant-1.jpg",
-      "title": "File:Mont-Tremblant-1.jpg",
       "width": 1280
     }
   ],
@@ -2489,6 +2247,32 @@
       "width": 1024
     }
   ],
+  "parkinson-pickleball-courts": [
+    {
+      "alt": "Knox Mountain Park",
+      "author": "GoToVan from Vancouver, Canada",
+      "file": "src/assets/places/parkinson-pickleball-courts/1.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kelowna_city_view_2017.jpg",
+      "title": "File:Kelowna city view 2017.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "View of Downtown Kelowna from Knox Mountain Park",
+      "author": "Gladgan",
+      "file": "src/assets/places/parkinson-pickleball-courts/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kelowna_city_view_from_Knox_Mountain.jpg",
+      "title": "File:Kelowna city view from Knox Mountain.jpg",
+      "width": 1280
+    }
+  ],
   "pats-peak": [
     {
       "alt": "Snowy Henniker, the town at the foot of Pats Peak",
@@ -2770,32 +2554,6 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_03_02_-_Ski_Roundtop_1.JPG",
       "title": "File:2008 03 02 - Ski Roundtop 1.JPG",
-      "width": 1280
-    }
-  ],
-  "saguaro-lake": [
-    {
-      "alt": "Recreational boating on Saguaro Lake, Salt River, near Phoenix, Arizona",
-      "author": "Nicholas Hartmann",
-      "file": "src/assets/places/saguaro-lake/1.jpg",
-      "height": 853,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saguaro_Lake_boating_1.jpg",
-      "title": "File:Saguaro Lake boating 1.jpg",
-      "width": 1280
-    },
-    {
-      "alt": "Recreational boating on Saguaro Lake, Salt River, near Phoenix, Arizona",
-      "author": "Nicholas Hartmann",
-      "file": "src/assets/places/saguaro-lake/2.jpg",
-      "height": 853,
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "nearby": false,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saguaro_Lake_boating_3.jpg",
-      "title": "File:Saguaro Lake boating 3.jpg",
       "width": 1280
     }
   ],
@@ -3712,5 +3470,6 @@
       "width": 1280
     }
   ],
+  "woods-valley": [],
   "woodward-park-city": []
 }

@@ -18,7 +18,7 @@ const spots: Spot[] = [
     size: 'major',
     tagline: 'Sleep on the floor of Yosemite Valley, all year',
     summary:
-      'The largest of the three Pines campgrounds on the floor of Yosemite Valley, among pines and black oaks near the Merced River, with the free Valley shuttle stopping at the entrance. The Mist Trail and the walk to Mirror Lake start nearby, and Curry Village’s showers, store and pizza deck are a short stroll away. It stays open all year, but sites are packed close together and summer dates sell out within minutes of release.',
+      'The largest of the three Pines campgrounds on the floor of Yosemite Valley, among pines and black oaks near the Merced River, with the free Valley shuttle stopping at the entrance. The Mist Trail and the walk to Mirror Lake start nearby, and Curry Village’s paid showers, store and restaurants are a short stroll away. It stays open all year, but sites are packed close together and summer dates sell out within minutes of release.',
     url: 'https://www.nps.gov/yose/planyourvisit/pinescampgrounds.htm',
     bookingUrl: recgov('232447'),
     mapUrl: 'https://www.nps.gov/yose/planyourvisit/upload/yosemitecampgroundmap2013.pdf',
@@ -95,7 +95,7 @@ const spots: Spot[] = [
       {
         name: 'The Ansel Adams Gallery',
         kind: 'shop',
-        what: 'Photography gallery and shop in Yosemite Village, with prints, books and camera walks.',
+        what: 'Photography gallery and shop in Yosemite Village, with prints and books.',
         url: 'https://www.anseladams.com/',
         distance: 'Shuttle ride',
       },
@@ -228,12 +228,12 @@ const spots: Spot[] = [
         kind: 'other',
         what: 'Short trail through a dense stand of teddybear cholla, best at sunrise or sunset.',
         url: 'https://www.nps.gov/places/cholla-cactus-garden.htm',
-        distance: '20 min drive',
+        distance: '30 min drive',
       },
       {
         name: 'Noah Purifoy Outdoor Desert Art Museum',
         kind: 'museum',
-        what: 'Ten acres of large sculptures built from found objects, open sunrise to sunset.',
+        what: 'Ten acres of large sculptures built from found objects, out in the desert.',
         url: 'https://www.noahpurifoy.com/',
         distance: '45 min drive',
       },
@@ -314,7 +314,7 @@ const spots: Spot[] = [
       {
         name: 'Tahoma Meadows Cottages',
         kind: 'cabin',
-        what: 'Cottages in the pines on the west shore, open year-round.',
+        what: 'Cottages in the pines on the west shore.',
         url: 'https://www.tahomameadows.com/',
         distance: '15 min drive',
       },
@@ -418,7 +418,7 @@ const spots: Spot[] = [
       },
       {
         name: 'Sequoia Sightseeing Tours',
-        what: 'Guided small-group tours of Sequoia and Kings Canyon.',
+        what: 'Guided tours of Sequoia and Kings Canyon.',
         url: 'https://www.sequoiatours.com/',
       },
     ],
@@ -545,7 +545,7 @@ const spots: Spot[] = [
       {
         name: 'Tamarack Lodge',
         kind: 'lodge',
-        what: 'Historic lodge and cabins on the shore of the upper Twin Lake.',
+        what: 'Historic lodge and cabins on the shore of Twin Lakes.',
         url: 'https://www.mammothmountain.com/plan-your-trip/mammoth-hotels/tamarack-lodge',
         distance: 'Walk',
       },
@@ -686,7 +686,7 @@ const spots: Spot[] = [
       {
         name: 'Galleta Meadows sculptures',
         kind: 'other',
-        what: 'More than a hundred giant metal sculptures of dinosaurs, sloths and a sea serpent scattered around Borrego Springs.',
+        what: 'Dozens of giant metal sculptures, from dinosaurs to a sea serpent, scattered across the desert around Borrego Springs.',
         distance: '10 min drive',
       },
       {
@@ -786,14 +786,14 @@ const spots: Spot[] = [
       {
         name: 'Curly Redwood Lodge',
         kind: 'inn',
-        what: 'Retro motel in Crescent City, close to the harbor.',
+        what: 'Retro motel in Crescent City.',
         url: 'https://www.curlyredwoodlodge.com/',
         distance: '15 min drive',
       },
       {
         name: 'Historic Requa Inn',
         kind: 'inn',
-        what: 'Century-old inn above the mouth of the Klamath River, with a restaurant.',
+        what: 'Historic inn overlooking the Klamath River near the coast.',
         url: 'https://www.requainn.com/',
         distance: '40 min drive',
       },
@@ -823,7 +823,7 @@ const spots: Spot[] = [
       {
         name: 'SeaQuake Brewing',
         kind: 'drink',
-        what: 'Crescent City brewpub with pizza.',
+        what: 'Crescent City brewery and restaurant.',
         url: 'https://www.seaquakebrewing.com/',
         distance: '15 min drive',
       },
@@ -916,7 +916,7 @@ const spots: Spot[] = [
       {
         name: 'Rim Trail',
         kind: 'other',
-        what: 'Mostly paved path along the rim for about 13 miles; walk any stretch and ride the shuttle back.',
+        what: 'Paved path along the rim for about 14 miles; walk any stretch and ride the shuttle back.',
         url: 'https://www.nps.gov/places/rim-trail-mather-point.htm',
         distance: '1 mi',
       },
@@ -1025,7 +1025,7 @@ const spots: Spot[] = [
       {
         name: 'Junipine Resort',
         kind: 'condo',
-        what: 'Creekside suites in the canyon with kitchens and fireplaces.',
+        what: 'Creekside resort on the banks of Oak Creek.',
         url: 'https://www.junipine.com/',
         distance: '10 min drive',
       },
@@ -1055,7 +1055,7 @@ const spots: Spot[] = [
       {
         name: 'Indian Gardens Cafe & Market',
         kind: 'eat',
-        what: 'Canyon cafe and market for breakfast, sandwiches and coffee.',
+        what: 'Cafe and market in the canyon.',
         url: 'https://www.indiangardens.com/',
         distance: '15 min drive',
       },
@@ -1158,7 +1158,7 @@ const spots: Spot[] = [
       {
         name: 'Goldfield Ghost Town',
         kind: 'other',
-        what: 'Rebuilt 1890s mining town with shops, a mine tour and old buildings on Main Street.',
+        what: 'Rebuilt 1890s mining town with shops, tours and old buildings on Main Street.',
         url: 'https://goldfieldghosttown.com/',
         distance: '5 min drive',
       },
@@ -1470,7 +1470,7 @@ const spots: Spot[] = [
         date: '2026-10-17',
         end: '2026-11-07',
         when: 'Oct 17 and Nov 7',
-        what: 'Evening concerts at the Trailhead Stage. Bring a chair, food and drinks.',
+        what: 'Concerts at the Trailhead Stage with the mountains behind. Bring a chair, food and drinks.',
         url: 'https://azstateparks.com/catalina/events/music-in-the-mountains-concert-series',
         confirmed: true,
       },
