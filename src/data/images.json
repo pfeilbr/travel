@@ -1,4 +1,5 @@
 {
+  "alberton-gorge": [],
   "alice-lake": [
     {
       "alt": "Alice Lake Provincial Park",
@@ -11,6 +12,44 @@
       "sourceUrl": "https://www.flickr.com/photos/34962573@N00/42410361505",
       "title": "Openverse:989644e5-de95-4b97-980c-4e496981c1a7",
       "width": 1024
+    }
+  ],
+  "allegrippis-trails": [
+    {
+      "alt": "Raystown lake Region late Fall",
+      "author": "Ron Shawley",
+      "file": "src/assets/places/allegrippis-trails/1.jpg",
+      "height": 853,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raystown_lake_Region_late_Fall_-_panoramio_(19).jpg",
+      "title": "File:Raystown lake Region late Fall - panoramio (19).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Raystown lake Region late Fall",
+      "author": "Ron Shawley",
+      "file": "src/assets/places/allegrippis-trails/2.jpg",
+      "height": 853,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raystown_lake_Region_late_Fall_-_panoramio_(20).jpg",
+      "title": "File:Raystown lake Region late Fall - panoramio (20).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Raystown lake Region late Fall",
+      "author": "Ron Shawley",
+      "file": "src/assets/places/allegrippis-trails/3.jpg",
+      "height": 853,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raystown_lake_Region_late_Fall_-_panoramio_(27).jpg",
+      "title": "File:Raystown lake Region late Fall - panoramio (27).jpg",
+      "width": 1280
     }
   ],
   "alta": [
@@ -89,6 +128,7 @@
       "width": 1280
     }
   ],
+  "apex-mountain": [],
   "apgar-campground": [
     {
       "alt": "A Tent on a pad in the Apgar Campground",
@@ -113,6 +153,32 @@
       "sourceUrl": "https://www.flickr.com/photos/43288043@N04/55446862780",
       "title": "Openverse:6d8f4a5e-9cab-4304-ae2b-fc47983fbd0e",
       "width": 1024
+    }
+  ],
+  "arapahoe-basin": [
+    {
+      "alt": "Skiers ski past the Zuma ski lift in the Montezuma Bowl area at Arapahoe Basin Ski Area in Colorado.",
+      "author": "Runningonbrains",
+      "file": "src/assets/places/arapahoe-basin/1.jpg",
+      "height": 960,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arapahoe_Basin_Montezuma_Bowl.jpg",
+      "title": "File:Arapahoe Basin Montezuma Bowl.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Independence Mountain in Summit County, Colorado, as seen from Arapahoe Basin Ski Area",
+      "author": "Runningonbrains",
+      "file": "src/assets/places/arapahoe-basin/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Independence_Mountain_as_seen_from_Arapahoe_Basin.jpg",
+      "title": "File:Independence Mountain as seen from Arapahoe Basin.jpg",
+      "width": 1280
     }
   ],
   "arches-devils-garden": [
@@ -176,6 +242,70 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arizona_Snowbowl_Grand_Canyon_Express_Ski_Lift_Opening_Celebration_(30763698404).jpg",
       "title": "File:Arizona Snowbowl Grand Canyon Express Ski Lift Opening Celebration (30763698404).jpg",
+      "width": 1280
+    }
+  ],
+  "aspen-highlands": [
+    {
+      "alt": "Aspen Highlands Aspen Mountain",
+      "author": "This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "file": "src/assets/places/aspen-highlands/1.jpg",
+      "height": 854,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_spring_skiing_on_Steeplechase.jpg",
+      "title": "File:Aspen Highlands spring skiing on Steeplechase.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Highland peak with Highland bowl in the Maroon Bells–Snowmass Wilderness as seen from the Loge Peak in the Aspen Highlands , Colorado.",
+      "author": "This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "file": "src/assets/places/aspen-highlands/2.jpg",
+      "height": 854,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_bowl_from_Loge_Peak_.jpg",
+      "title": "File:Aspen Highlands bowl from Loge Peak .jpg",
+      "width": 1280
+    }
+  ],
+  "aspen-mountain": [
+    {
+      "alt": "Aspen trees covered by fresh snow on Aspen Mountain .",
+      "author": "This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "file": "src/assets/places/aspen-mountain/1.jpg",
+      "height": 854,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aspen_Mountain_ski_area_aspen_trees_FIS_chair.jpg",
+      "title": "File:Aspen Mountain ski area aspen trees FIS chair.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Skiers and snowboarders ride up the iconic Lift 1A on Aspen Mountain with downtown Aspen in the background.",
+      "author": "AspenSkiingCompany",
+      "file": "src/assets/places/aspen-mountain/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lift_1A_on_Aspen_Mountain.jpg",
+      "title": "File:Lift 1A on Aspen Mountain.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Skiers on Aspen Mountain, Colorado in 1961.",
+      "author": "Buaidh",
+      "file": "src/assets/places/aspen-mountain/3.jpg",
+      "height": 946,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skiers_on_Aspen_Mountain,_Colorado_in_1961.jpg",
+      "title": "File:Skiers on Aspen Mountain, Colorado in 1961.jpg",
       "width": 1280
     }
   ],
@@ -243,6 +373,32 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bear-creek-lodge.JPG",
       "title": "File:Bear-creek-lodge.JPG",
+      "width": 1280
+    }
+  ],
+  "bear-valley": [
+    {
+      "alt": "Ebbetts Pass Scenic Byway - Downhill Skiing - NARA - 7718122",
+      "author": "Unknown author Unknown author or not provided",
+      "file": "src/assets/places/bear-valley/1.jpg",
+      "height": 847,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ebbetts_Pass_Scenic_Byway_-_Downhill_Skiing_-_NARA_-_7718122.jpg",
+      "title": "File:Ebbetts Pass Scenic Byway - Downhill Skiing - NARA - 7718122.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Ebbetts Pass Scenic Byway - Carving through Powder - NARA - 7718123",
+      "author": "Unknown author Unknown author or not provided",
+      "file": "src/assets/places/bear-valley/2.jpg",
+      "height": 849,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ebbetts_Pass_Scenic_Byway_-_Carving_through_Powder_-_NARA_-_7718123.jpg",
+      "title": "File:Ebbetts Pass Scenic Byway - Carving through Powder - NARA - 7718123.jpg",
       "width": 1280
     }
   ],
@@ -338,6 +494,7 @@
       "width": 1280
     }
   ],
+  "big-boulder": [],
   "big-sky": [
     {
       "alt": "This is the Lone Peak Tram in January of 2018.",
@@ -497,6 +654,8 @@
       "width": 1280
     }
   ],
+  "blue-mountain-bike-park": [],
+  "blue-mountain-pa": [],
   "bolton-valley": [
     {
       "alt": "The Bolton Valley Ski Resort Lodge.",
@@ -537,6 +696,32 @@
       "width": 1280
     }
   ],
+  "borrego-palm-canyon": [
+    {
+      "alt": "Borrego Palm Canyon, Anza-Borrego Desert State Park",
+      "author": "Z3lvs",
+      "file": "src/assets/places/borrego-palm-canyon/1.jpg",
+      "height": 960,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borrego_Palm_Canyon_Mountains_and_Rocks_Horizontal.jpg",
+      "title": "File:Borrego Palm Canyon Mountains and Rocks Horizontal.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Borrego Palm Canyon - Looking Back Towards The Way In",
+      "author": "Z3lvs",
+      "file": "src/assets/places/borrego-palm-canyon/2.jpg",
+      "height": 960,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borrego_Palm_Canyon_-_Looking_Back_Towards_The_Way_In.jpg",
+      "title": "File:Borrego Palm Canyon - Looking Back Towards The Way In.jpg",
+      "width": 1280
+    }
+  ],
   "bowron-lake-circuit": [
     {
       "alt": "On the Bowron Lakes circuit",
@@ -549,6 +734,20 @@
       "sourceUrl": "https://www.flickr.com/photos/12448447@N06/4652198582",
       "title": "Openverse:8192f96b-eac2-4f8a-b747-23d05d54b360",
       "width": 1022
+    }
+  ],
+  "bozeman-trails": [
+    {
+      "alt": "080510 bozeman scenery",
+      "author": "laurascudder",
+      "file": "src/assets/places/bozeman-trails/1.jpg",
+      "height": 700,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/26890781@N06/2554442889",
+      "title": "Openverse:19659bc3-3c87-45a5-abd9-1ca88eb7fdb4",
+      "width": 1024
     }
   ],
   "breckenridge": [
@@ -653,6 +852,7 @@
       "width": 1280
     }
   ],
+  "bridger-bowl": [],
   "brighton": [
     {
       "alt": "Brighton Resort, Brighton, United States",
@@ -719,6 +919,7 @@
       "width": 1024
     }
   ],
+  "bromley": [],
   "bromont": [
     {
       "alt": "Crête Street, Shefford, Quebec.",
@@ -742,6 +943,32 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont_Brome_vu_depuis_le_mont_Shefford_(1).jpg",
       "title": "File:Mont Brome vu depuis le mont Shefford (1).jpg",
+      "width": 1280
+    }
+  ],
+  "bromont-bike-park": [
+    {
+      "alt": "Mount Brome seen from Mount Shefford, Quebec.",
+      "author": "Gabriel Picard",
+      "file": "src/assets/places/bromont-bike-park/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont_Brome_vu_depuis_le_mont_Shefford_(1).jpg",
+      "title": "File:Mont Brome vu depuis le mont Shefford (1).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mount Bernard and Mount Brome, seen from the south, in Bromont, Quebec.",
+      "author": "Gabriel Picard",
+      "file": "src/assets/places/bromont-bike-park/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monts_Bernard_et_Brome_10-2025.jpg",
+      "title": "File:Monts Bernard et Brome 10-2025.jpg",
       "width": 1280
     }
   ],
@@ -810,6 +1037,33 @@
       "width": 1024
     }
   ],
+  "burke": [
+    {
+      "alt": "View from the ski run on Burke during sunset.",
+      "author": "BurkeCoquitlam",
+      "file": "src/assets/places/burke/1.jpg",
+      "height": 720,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=31345153",
+      "title": "Openverse:cf3834a5-e1b1-49fe-9d67-ce617aaedabf",
+      "width": 960
+    },
+    {
+      "alt": "Burke Mt West Peak",
+      "author": "Lee Story",
+      "file": "src/assets/places/burke/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/65691965@N00/78333030",
+      "title": "Openverse:1cb725bb-52ef-456c-a303-dc9ac3fece38",
+      "width": 1024
+    }
+  ],
+  "burton-island": [],
   "bushmaster-park-pickleball": [],
   "buttermilk": [
     {
@@ -997,6 +1251,7 @@
       "width": 1024
     }
   ],
+  "cherry-peak": [],
   "cherry-springs": [
     {
       "alt": "Cherry Springs State Park sky 5",
@@ -1084,6 +1339,44 @@
       "nearby": false,
       "sourceUrl": "https://www.flickr.com/photos/76319087@N08/37100535263",
       "title": "Openverse:2681837d-dd1d-47d9-84ca-e7026350a2aa",
+      "width": 1024
+    }
+  ],
+  "copper-mountain": [
+    {
+      "alt": "Copper Haze",
+      "author": "Zach Dischner",
+      "file": "src/assets/places/copper-mountain/1.jpg",
+      "height": 681,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/35557234@N07/6803591218",
+      "title": "Openverse:211d9f59-a81d-4ddd-9256-ceb8745a1c94",
+      "width": 1024
+    },
+    {
+      "alt": "Tempest",
+      "author": "Zach Dischner",
+      "file": "src/assets/places/copper-mountain/2.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/35557234@N07/8001699351",
+      "title": "Openverse:290e958e-8df6-4913-ba51-f5964ebb6a07",
+      "width": 1024
+    },
+    {
+      "alt": "Colorado Face Scrub",
+      "author": "Zach Dischner",
+      "file": "src/assets/places/copper-mountain/3.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/35557234@N07/12275966373",
+      "title": "Openverse:7011743a-21bd-4778-b4e1-4757f42921ea",
       "width": 1024
     }
   ],
@@ -1218,6 +1511,71 @@
     }
   ],
   "dancu-community-courts": [],
+  "dead-horse-point": [
+    {
+      "alt": "Picture from lookout point of Dead Horse Point",
+      "author": "Haleyhb20",
+      "file": "src/assets/places/dead-horse-point/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_dead_horse_point.jpg",
+      "title": "File:View of dead horse point.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Dead Horse Point , as seen from the Chicken Corners off-road trail, west of Moab, on the Colorado River.",
+      "author": "Qfl247",
+      "file": "src/assets/places/dead-horse-point/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DeadHorsePoint.JPG",
+      "title": "File:DeadHorsePoint.JPG",
+      "width": 1280
+    }
+  ],
+  "deer-valley": [
+    {
+      "alt": "Montage Deer Valley ski-in ski-out resort in Park City, Utah.",
+      "author": "Tony Webster from Laramie, Wyoming, United States",
+      "file": "src/assets/places/deer-valley/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montage_Deer_Valley_-_Ski-In_Resort_-_Park_City_-_Utah_(52769823757).jpg",
+      "title": "File:Montage Deer Valley - Ski-In Resort - Park City - Utah (52769823757).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "view from the chair lift.",
+      "author": "Steve Jurvetson from Menlo Park, USA",
+      "file": "src/assets/places/deer-valley/2.jpg",
+      "height": 872,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deer-valley-Utah_Snow.jpg",
+      "title": "File:Deer-valley-Utah Snow.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Skiing at Deer Valley Utah photo Ramey Logan",
+      "author": "Don Ramey Logan",
+      "file": "src/assets/places/deer-valley/3.jpg",
+      "height": 960,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skiing_at_Deer_Valley_Utah_photo_Ramey_Logan.jpg",
+      "title": "File:Skiing at Deer Valley Utah photo Ramey Logan.jpg",
+      "width": 1280
+    }
+  ],
+  "deer-valley-bike-park": [],
   "delta-lake": [
     {
       "alt": "Delta Lake State Park",
@@ -1233,6 +1591,85 @@
     }
   ],
   "demuth-park-pickleball": [],
+  "desolation-sound": [
+    {
+      "alt": "Kayaks in clear water",
+      "author": "Lana_aka_BADGRL from Maple Valley, WA, USA",
+      "file": "src/assets/places/desolation-sound/1.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kayaks_in_clear_water_(1368411453).jpg",
+      "title": "File:Kayaks in clear water (1368411453).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mount Denman from Desolation Sound",
+      "author": "Marcin Chady",
+      "file": "src/assets/places/desolation-sound/2.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Denman_from_Desolation_Sound.jpg",
+      "title": "File:Mount Denman from Desolation Sound.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Desolation sound 2006",
+      "author": "Unknown",
+      "file": "src/assets/places/desolation-sound/3.jpg",
+      "height": 744,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Desolation_sound_2006.jpg",
+      "title": "File:Desolation sound 2006.jpg",
+      "width": 1280
+    }
+  ],
+  "diamond-peak": [],
+  "dillon-reservoir": [
+    {
+      "alt": "Dillon Reservoir in October",
+      "author": "Hogs555",
+      "file": "src/assets/places/dillon-reservoir/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dillon_lake.jpg",
+      "title": "File:Dillon lake.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Lake Dillon",
+      "author": "Hogs555",
+      "file": "src/assets/places/dillon-reservoir/2.jpg",
+      "height": 840,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Dillon,_in_Colorado,_in_October_2011.jpg",
+      "title": "File:Lake Dillon, in Colorado, in October 2011.jpg",
+      "width": 1280
+    }
+  ],
+  "discovery-montana": [
+    {
+      "alt": "Top of Discovery Ski Basin",
+      "author": "glennharper",
+      "file": "src/assets/places/discovery-montana/1.jpg",
+      "height": 578,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/76186924@N00/15963924667",
+      "title": "Openverse:c99dcc3a-d6b4-4433-95cf-37a1ff2876b1",
+      "width": 1024
+    }
+  ],
   "dl-bliss": [
     {
       "alt": "Derrick in front of Lake Tahoe at D.",
@@ -1259,6 +1696,72 @@
       "width": 1024
     }
   ],
+  "dodge-ridge": [],
+  "dolly-copp": [],
+  "downieville": [
+    {
+      "alt": "The historic Durgan Bridge is a 1938, one-lane Pratt through truss bridge located on Nevada Street in Downieville, California.",
+      "author": "Frank Schulenburg",
+      "file": "src/assets/places/downieville/1.jpg",
+      "height": 800,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Durgan_Bridge,_Downieville_(2026)-L1000693.jpg",
+      "title": "File:Durgan Bridge, Downieville (2026)-L1000693.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "The Shoppes at Downieville (2026)-L1000676",
+      "author": "Frank Schulenburg",
+      "file": "src/assets/places/downieville/2.jpg",
+      "height": 720,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Shoppes_at_Downieville_(2026)-L1000676.jpg",
+      "title": "File:The Shoppes at Downieville (2026)-L1000676.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "The Downieville Museum, located in a stone building dating back to 1852.",
+      "author": "Frank Schulenburg",
+      "file": "src/assets/places/downieville/3.jpg",
+      "height": 1024,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Downieville_Museum_(2026)-L1000716.jpg",
+      "title": "File:Downieville Museum (2026)-L1000716.jpg",
+      "width": 1280
+    }
+  ],
+  "durango-trails": [
+    {
+      "alt": "a gold mine of mountain bike trails in Durango http://horsegulchblog.com/",
+      "author": "cogdogblog",
+      "file": "src/assets/places/durango-trails/1.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biking_Horse_Gulch_(15091480176).jpg",
+      "title": "File:Biking Horse Gulch (15091480176).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Main Avenue Historic District, Durango, Colorado",
+      "author": "Ken Lund",
+      "file": "src/assets/places/durango-trails/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/4858132142",
+      "title": "Openverse:02f354a8-e4ea-444f-bcd7-6cdbda07c389",
+      "width": 1024
+    }
+  ],
   "east-side-rec-saratoga": [],
   "eldora": [
     {
@@ -1274,6 +1777,7 @@
       "width": 1280
     }
   ],
+  "elk-mountain": [],
   "elkhorn-slough": [
     {
       "alt": "Kayaking Moss Landing",
@@ -1312,7 +1816,47 @@
       "width": 1024
     }
   ],
+  "ellicottville-trails": [],
+  "emerald-bay": [
+    {
+      "alt": "Emerald Bay State Park is a state park of California, USA, preserving Lake Tahoe's Emerald Bay, a National Natural Landmark.",
+      "author": "Ken Lund from Reno, Nevada, USA",
+      "file": "src/assets/places/emerald-bay/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emerald_Bay,_Lake_Tahoe,_Nevada_(21560966962).jpg",
+      "title": "File:Emerald Bay, Lake Tahoe, Nevada (21560966962).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "View northeast down the southeast shore of Emerald Bay at Lake Tahoe, California",
+      "author": "Famartin",
+      "file": "src/assets/places/emerald-bay/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015-11-01_10_19_10_View_northeast_down_the_southeast_shore_of_Emerald_Bay_at_Lake_Tahoe,_California.jpg",
+      "title": "File:2015-11-01 10 19 10 View northeast down the southeast shore of Emerald Bay at Lake Tahoe, California.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "View northeast down the northwest shore of Emerald Bay at Lake Tahoe, California",
+      "author": "Famartin",
+      "file": "src/assets/places/emerald-bay/3.jpg",
+      "height": 957,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015-11-01_10_19_09_View_northeast_down_the_northwest_shore_of_Emerald_Bay_at_Lake_Tahoe,_California.jpg",
+      "title": "File:2015-11-01 10 19 09 View northeast down the northwest shore of Emerald Bay at Lake Tahoe, California.jpg",
+      "width": 1280
+    }
+  ],
   "erie-canal-pickleball": [],
+  "fairgrounds-capilano": [],
   "fernie": [
     {
       "alt": "Fernie Ski Hill",
@@ -1427,6 +1971,33 @@
       "width": 1600
     }
   ],
+  "fish-creek-pond": [],
+  "flagstaff-trails": [
+    {
+      "alt": "Mid-September fall color on Mount Elden.",
+      "author": "Coconino National Forest",
+      "file": "src/assets/places/flagstaff-trails/1.jpg",
+      "height": 817,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mid-September_fall_color_on_Mount_Elden._View_of_a_western_face_from_Elden_Lookout_Rd._(29665357282).jpg",
+      "title": "File:Mid-September fall color on Mount Elden. View of a western face from Elden Lookout Rd. (29665357282).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Seen from atop Mt.",
+      "author": "Brady Smith; Coconino National Forest",
+      "file": "src/assets/places/flagstaff-trails/2.jpg",
+      "height": 812,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:East_Flagstaff_Doney_Park_(7592170636).jpg",
+      "title": "File:East Flagstaff Doney Park (7592170636).jpg",
+      "width": 1280
+    }
+  ],
   "flaming-gorge": [
     {
       "alt": "Green River Near Flaming Gorge Dam, Utah",
@@ -1451,6 +2022,82 @@
       "sourceUrl": "https://www.flickr.com/photos/75683070@N00/68798659",
       "title": "Openverse:6905a9aa-bbff-48a2-880a-287c195b6573",
       "width": 1024
+    }
+  ],
+  "flathead-lake": [
+    {
+      "alt": "Flathead River empties into the north end of Flathead Lake",
+      "author": "Katie Brady from Missoula, Montana, United States",
+      "file": "src/assets/places/flathead-lake/1.jpg",
+      "height": 715,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flathead_River,_Flathead_Lake.jpg",
+      "title": "File:Flathead River, Flathead Lake.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Flathead Lake with Wild Horse Island in the distance",
+      "author": "William Neuheisel from DC, US",
+      "file": "src/assets/places/flathead-lake/2.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Flathead_Lake_(14540687703).jpg",
+      "title": "File:View of Flathead Lake (14540687703).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Flathead Lake from Deep Bay overlook along U.S.",
+      "author": "Chris Light",
+      "file": "src/assets/places/flathead-lake/3.jpg",
+      "height": 720,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flathead_Lake_2017-09-_858.jpg",
+      "title": "File:Flathead Lake 2017-09- 858.jpg",
+      "width": 1280
+    }
+  ],
+  "forillon-park": [
+    {
+      "alt": "Waterfall along the \"La Chute\" hiking trail",
+      "author": "Michel Rathwell from Cornwall, Canada",
+      "file": "src/assets/places/forillon-park/1.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waterfalls_Forillon_National_Park_(35408828522).jpg",
+      "title": "File:Waterfalls Forillon National Park (35408828522).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Waterfall along the \"La Chute\" hiking trail",
+      "author": "Michel Rathwell from Cornwall, Canada",
+      "file": "src/assets/places/forillon-park/2.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waterfalls_Forillon_National_Park_(35537964806).jpg",
+      "title": "File:Waterfalls Forillon National Park (35537964806).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "View of waterfall on Ruisseau du Cap-des-Rosiers, taken from \"La Chute\" hiking trail, Forillon National Park, Canada.",
+      "author": "Andre Carrotflower",
+      "file": "src/assets/places/forillon-park/3.jpg",
+      "height": 959,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Chute_-_Forillon_National_Park.jpg",
+      "title": "File:La Chute - Forillon National Park.jpg",
+      "width": 1280
     }
   ],
   "fort-missoula-pickleball": [],
@@ -1556,6 +2203,32 @@
       "width": 1024
     }
   ],
+  "gifford-woods": [
+    {
+      "alt": "Gifford Woods (National Natural Landmark) (05c057e3-8925-4549-bcd1-7fec9c4b1df5)",
+      "author": "Victoria Stauffenberg",
+      "file": "src/assets/places/gifford-woods/1.jpg",
+      "height": 813,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gifford_Woods_(National_Natural_Landmark)_(05c057e3-8925-4549-bcd1-7fec9c4b1df5).jpg",
+      "title": "File:Gifford Woods (National Natural Landmark) (05c057e3-8925-4549-bcd1-7fec9c4b1df5).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Gifford Woods (National Natural Landmark) (17915f52-4997-4290-aac3-f0e4d1ce236f)",
+      "author": "Victoria Stauffenberg",
+      "file": "src/assets/places/gifford-woods/2.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gifford_Woods_(National_Natural_Landmark)_(17915f52-4997-4290-aac3-f0e4d1ce236f).jpg",
+      "title": "File:Gifford Woods (National Natural Landmark) (17915f52-4997-4290-aac3-f0e4d1ce236f).jpg",
+      "width": 1280
+    }
+  ],
   "glimmerglass": [
     {
       "alt": "Otsego Lake stretching south between wooded hills",
@@ -1618,6 +2291,32 @@
       "width": 1600
     }
   ],
+  "goblin-valley": [
+    {
+      "alt": "Goblin Valley State Park",
+      "author": "cappellacci",
+      "file": "src/assets/places/goblin-valley/1.jpg",
+      "height": 720,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_full_of_Goblins.jpg",
+      "title": "File:View full of Goblins.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Campsite, on west side of Wild Horse Butte",
+      "author": "Greg Willis from Denver, CO, usa",
+      "file": "src/assets/places/goblin-valley/2.jpg",
+      "height": 854,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Campsite,_on_west_side_of_Wild_Horse_Butte_(4058206553).jpg",
+      "title": "File:Campsite, on west side of Wild Horse Butte (4058206553).jpg",
+      "width": 1280
+    }
+  ],
   "golden-peak-pickleball": [],
   "gooseberry-mesa": [
     {
@@ -1657,6 +2356,32 @@
       "width": 1024
     }
   ],
+  "gore-mountain": [
+    {
+      "alt": "The Summit of Gore Mountain from the trail \"Uncas\".",
+      "author": "Ian Taylor Iant333",
+      "file": "src/assets/places/gore-mountain/1.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ski_003.jpg",
+      "title": "File:Ski 003.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Gore Mountain Ski Guard's Cabin",
+      "author": "Kalyan Kaza",
+      "file": "src/assets/places/gore-mountain/2.jpg",
+      "height": 850,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gore_Mountain_Ski_Guard's_Cabin_-_panoramio.jpg",
+      "title": "File:Gore Mountain Ski Guard's Cabin - panoramio.jpg",
+      "width": 1280
+    }
+  ],
   "grand-lake": [
     {
       "alt": "Andrew Kayaking Shadow Mountain Lake Colorado August 2007",
@@ -1669,6 +2394,33 @@
       "sourceUrl": "https://www.flickr.com/photos/94553668@N00/1165704787",
       "title": "Openverse:94d7204c-5212-4d1c-bf68-b4f2afd2b4a6",
       "width": 1024
+    }
+  ],
+  "great-divide": [],
+  "greek-peak": [
+    {
+      "alt": "Wide shot of the primary ski area at Greek Peak January 2026",
+      "author": "Douglas Camin",
+      "file": "src/assets/places/greek-peak/1.jpg",
+      "height": 960,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greek_Peak_Ski_Resort_2026.jpg",
+      "title": "File:Greek Peak Ski Resort 2026.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Greek Peak Ski Resort 2026",
+      "author": "Douglas Camin",
+      "file": "src/assets/places/greek-peak/2.jpg",
+      "height": 720,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=182540527",
+      "title": "Openverse:33d4bf60-7cca-4c9f-8f31-c66560616d1d",
+      "width": 960
     }
   ],
   "green-lakes": [
@@ -1797,6 +2549,7 @@
       "width": 1024
     }
   ],
+  "grouse-mountain": [],
   "gunstock": [
     {
       "alt": "Snowmaking Gunstock Mountain Resort Gilford New Hampshire",
@@ -1975,6 +2728,20 @@
       "width": 1600
     }
   ],
+  "hero-pickleball": [
+    {
+      "alt": "Pickleballs scattered on a court",
+      "author": "Stephen James Hall",
+      "file": "src/assets/places/hero-pickleball/1.jpg",
+      "height": 1080,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pickleballs.jpg",
+      "title": "File:Pickleballs.jpg",
+      "width": 1920
+    }
+  ],
   "hidden-valley-pa": [
     {
       "alt": "Hidden Valley Grooming",
@@ -2001,6 +2768,21 @@
       "width": 1280
     }
   ],
+  "highland-forest": [
+    {
+      "alt": "Highland forest cross country skiing trails",
+      "author": "Eddie891",
+      "file": "src/assets/places/highland-forest/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Highland_Forest_01.jpg",
+      "title": "File:Highland Forest 01.jpg",
+      "width": 1280
+    }
+  ],
+  "highland-mountain-bike-park": [],
   "holiday-valley": [
     {
       "alt": "the skiers",
@@ -2091,6 +2873,20 @@
       "sourceUrl": "https://www.flickr.com/photos/38699914@N00/14529515853",
       "title": "Openverse:0df5f636-1294-4963-abc2-e91e7fbb637d",
       "width": 1024
+    }
+  ],
+  "hyalite-hood-creek": [
+    {
+      "alt": "Photos taken at the Hood Creek Campground on the Custer Gallatin National Forest on July 17, 2023.",
+      "author": "Forest Service - Northern Region",
+      "file": "src/assets/places/hyalite-hood-creek/1.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hood_Creek_Campground,_Custer_Gallatin_National_Forest_(53122866752).jpg",
+      "title": "File:Hood Creek Campground, Custer Gallatin National Forest (53122866752).jpg",
+      "width": 1280
     }
   ],
   "incline-village-pickleball": [],
@@ -2184,6 +2980,32 @@
       "sourceUrl": "https://www.flickr.com/photos/163621777@N08/49606666461",
       "title": "Openverse:40759789-b7db-40c9-86c0-67f1824239fd",
       "width": 1024
+    }
+  ],
+  "jedediah-smith": [
+    {
+      "alt": "In Jedediah Smith Redwoods State Park, Del Norte County, CA",
+      "author": "Chris Rycroft from Madison, Wisconsin, United States",
+      "file": "src/assets/places/jedediah-smith/1.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Redwood_trees_on_the_Boy_Scout_Tree_Trail_-_Flickr_-_chris.rycroft.jpg",
+      "title": "File:Redwood trees on the Boy Scout Tree Trail - Flickr - chris.rycroft.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Perpendicular Fern Leaves",
+      "author": "Wingchi Poon",
+      "file": "src/assets/places/jedediah-smith/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Perpendicular_Fern_Leaves.JPG",
+      "title": "File:Perpendicular Fern Leaves.JPG",
+      "width": 1280
     }
   ],
   "johnstone-strait": [
@@ -2378,6 +3200,32 @@
       "width": 1024
     }
   ],
+  "kicking-horse-bike-park": [
+    {
+      "alt": "Gondola Ride - Kicking Horse",
+      "author": "Jack Borno",
+      "file": "src/assets/places/kicking-horse-bike-park/1.jpg",
+      "height": 848,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gondola_Ride_-_Kicking_Horse_-_panoramio.jpg",
+      "title": "File:Gondola Ride - Kicking Horse - panoramio.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Kicking Horse Mountain Resort",
+      "author": "Terry janzen",
+      "file": "src/assets/places/kicking-horse-bike-park/2.jpg",
+      "height": 670,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kicking_Horse_Mountain_Sunset.jpg",
+      "title": "File:Kicking Horse Mountain Sunset.jpg",
+      "width": 1280
+    }
+  ],
   "killington": [
     {
       "alt": "Skiers riding the ski lift up the slopes in Killington, Vermont during the winter.",
@@ -2416,6 +3264,7 @@
       "width": 1280
     }
   ],
+  "killington-bike-park": [],
   "kimberley": [
     {
       "alt": "Kimberley Alpine Resort, March 2012",
@@ -2456,6 +3305,7 @@
       "width": 1024
     }
   ],
+  "kingdom-trails": [],
   "kino-pickleball": [],
   "kirkwood": [
     {
@@ -2495,6 +3345,7 @@
       "width": 1280
     }
   ],
+  "kissing-bridge": [],
   "la-jolla-sea-caves": [
     {
       "alt": "Cliff jumping near the big cave at La Jolla Cove , with La Jolla Shores in the background.",
@@ -2521,6 +3372,45 @@
       "width": 1280
     }
   ],
+  "labrador-mountain": [],
+  "labyrinth-canyon": [
+    {
+      "alt": "Labyrinth Canyon, Green River, Tump-in-kon-tu-weap.",
+      "author": "U.S. Geological Survey",
+      "file": "src/assets/places/labyrinth-canyon/1.jpg",
+      "height": 811,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Labyrinth_Canyon,_Green_River,_Tump-in-kon-tu-weap_Utah_n_d_(16751906289).jpg",
+      "title": "File:Labyrinth Canyon, Green River, Tump-in-kon-tu-weap Utah n d (16751906289).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "gentle choppy water on the Green River in Labyrinth Canyon Photo by BLM employee Matt Blocker,",
+      "author": "BLMUtah",
+      "file": "src/assets/places/labyrinth-canyon/2.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Labyrinth_Canyon_(48373497151).jpg",
+      "title": "File:Labyrinth Canyon (48373497151).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Rock walls above the Green River Photo by BLM employee Matt Blocker,",
+      "author": "BLMUtah",
+      "file": "src/assets/places/labyrinth-canyon/3.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Labyrinth_Canyon_(48373498121).jpg",
+      "title": "File:Labyrinth Canyon (48373498121).jpg",
+      "width": 1280
+    }
+  ],
   "lafayette-place": [
     {
       "alt": "I-93 South - Exit for Lafayette Place Campground",
@@ -2533,6 +3423,45 @@
       "sourceUrl": "https://www.flickr.com/photos/30552029@N00/53735783254",
       "title": "Openverse:2fbf13e6-f73f-4b93-b11d-ce31c8e72132",
       "width": 1024
+    }
+  ],
+  "lake-champlain-paddlers-trail": [],
+  "lake-george-narrows": [
+    {
+      "alt": "Kayaking - Turtle Bay, Lake George, NY",
+      "author": "Henry Schmitt (H3nry…",
+      "file": "src/assets/places/lake-george-narrows/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kayaking_-_Turtle_Bay,_Lake_George,_NY_-_panoramio.jpg",
+      "title": "File:Kayaking - Turtle Bay, Lake George, NY - panoramio.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "A dramatic view of Lake George on Beach Road in the village of Lake George, Jan.",
+      "author": "Tyler A. McNeil",
+      "file": "src/assets/places/lake-george-narrows/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Streetlight_in_front_of_lake_and_French_Mountain_view,_Lake_George,_New_York_(winter).jpg",
+      "title": "File:Streetlight in front of lake and French Mountain view, Lake George, New York (winter).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "A lakeside sidewalk on Beach Road in the village of Lake George, Jan.",
+      "author": "Tyler A. McNeil",
+      "file": "src/assets/places/lake-george-narrows/3.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lakeside_sidewalk,_Lake_George,_New_York_(winter).jpg",
+      "title": "File:Lakeside sidewalk, Lake George, New York (winter).jpg",
+      "width": 1280
     }
   ],
   "lake-mcdonald": [
@@ -2625,6 +3554,20 @@
       "width": 1024
     }
   ],
+  "lake-willoughby": [
+    {
+      "alt": "Drone view of Lake Willoughby , Vermont , with Mount Hor on the left and Mount Pisgah on the right.",
+      "author": "King of Hearts",
+      "file": "src/assets/places/lake-willoughby/1.jpg",
+      "height": 800,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Willoughby_October_2021_003.jpg",
+      "title": "File:Lake Willoughby October 2021 003.jpg",
+      "width": 1280
+    }
+  ],
   "laurel-mountain": [
     {
       "alt": "Laurel mountain ski area",
@@ -2636,6 +3579,44 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laurel_mountain_ski_area_-_panoramio_(10).jpg",
       "title": "File:Laurel mountain ski area - panoramio (10).jpg",
+      "width": 1280
+    }
+  ],
+  "le-massif": [
+    {
+      "alt": "Vue sur le fleuve St-Laurent du sommet du Massif",
+      "author": "Clobonneau",
+      "file": "src/assets/places/le-massif/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Massif.jpg",
+      "title": "File:Le Massif.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Massif de Charlevoix, Québec, Canada",
+      "author": "Gilles Messian from Paris, France",
+      "file": "src/assets/places/le-massif/2.jpg",
+      "height": 854,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chemin_du_Massif,_Charlevoix.jpg",
+      "title": "File:Chemin du Massif, Charlevoix.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Le Massif Petite-Rivière-Saint-François",
+      "author": "4net",
+      "file": "src/assets/places/le-massif/3.jpg",
+      "height": 853,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Massif_Petite-Rivi%C3%A8re-Saint-Fran%C3%A7ois_-_panoramio_-_4net_(1).jpg",
+      "title": "File:Le Massif Petite-Rivière-Saint-François - panoramio - 4net (1).jpg",
       "width": 1280
     }
   ],
@@ -2744,6 +3725,44 @@
     }
   ],
   "little-valley-pickleball": [],
+  "lodgepole-sequoia": [
+    {
+      "alt": "Log Bridge loop campsites (f0e29a0d-1dd8-b71b-0b93-57d6cb3760a7)",
+      "author": "NPS photo",
+      "file": "src/assets/places/lodgepole-sequoia/1.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Log_Bridge_loop_campsites_(f0e29a0d-1dd8-b71b-0b93-57d6cb3760a7).jpg",
+      "title": "File:Log Bridge loop campsites (f0e29a0d-1dd8-b71b-0b93-57d6cb3760a7).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Sunny campsite surrounded by pine trees Tent, RV, and/or trailer campsite Keywords: campground; sequoia and kings canyon national parks",
+      "author": "NPS photo",
+      "file": "src/assets/places/lodgepole-sequoia/2.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tent,_RV,_andor_trailer_campsite_(f0be3097-1dd8-b71b-0b91-986836b23c59).jpg",
+      "title": "File:Tent, RV, andor trailer campsite (f0be3097-1dd8-b71b-0b91-986836b23c59).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Lodgepole is a large campground with a variety of sites that are walking distance from the market, visitor center and hiking (f0f06d36-1dd8-b71b-0b74-8131d1b67b64)",
+      "author": "NPS photo",
+      "file": "src/assets/places/lodgepole-sequoia/3.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lodgepole_is_a_large_campground_with_a_variety_of_sites_that_are_walking_distance_from_the_market,_visitor_center_and_hiking_(f0f06d36-1dd8-b71b-0b74-8131d1b67b64).jpg",
+      "title": "File:Lodgepole is a large campground with a variety of sites that are walking distance from the market, visitor center and hiking (f0f06d36-1dd8-b71b-0b74-8131d1b67b64).jpg",
+      "width": 1280
+    }
+  ],
   "loon": [
     {
       "alt": "Loon Mountain Ski Resort Lincoln New Hampshire",
@@ -2779,6 +3798,32 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Loonmtn_northpeak.JPG",
       "title": "File:Loonmtn northpeak.JPG",
+      "width": 1280
+    }
+  ],
+  "loon-bike-park": [
+    {
+      "alt": "View from Loon Mountain's north peak.",
+      "author": "Own work",
+      "file": "src/assets/places/loon-bike-park/1.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Loonmtn_northpeak.JPG",
+      "title": "File:Loonmtn northpeak.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Historic logging train at loon mountain / lincoln / new hampshire /USA",
+      "author": "AK-Bino",
+      "file": "src/assets/places/loon-bike-park/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dampflokomotive_in_den_White_Mountains.jpg",
+      "title": "File:Dampflokomotive in den White Mountains.jpg",
       "width": 1280
     }
   ],
@@ -2862,6 +3907,7 @@
       "width": 1024
     }
   ],
+  "magic-mountain": [],
   "mammoth": [
     {
       "alt": "Tamarack Lodge & Resort at Twin Lakes at Mammoth Mountain in Mammoth Lakes .",
@@ -2897,6 +3943,44 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mammoth_Mtn_ski_area_-_Scott_%26_Robin_Foubister_-_a_skiing_paradise_(16151982375).jpg",
       "title": "File:Mammoth Mtn ski area - Scott & Robin Foubister - a skiing paradise (16151982375).jpg",
+      "width": 1280
+    }
+  ],
+  "mammoth-bike-park": [
+    {
+      "alt": "Tamarack Lodge & Resort at Twin Lakes at Mammoth Mountain in Mammoth Lakes .",
+      "author": "Nandaro",
+      "file": "src/assets/places/mammoth-bike-park/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mammoth_Lakes_(January_2008)_15.JPG",
+      "title": "File:Mammoth Lakes (January 2008) 15.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Mammoth Mtn ski area",
+      "author": "Murray Foubister",
+      "file": "src/assets/places/mammoth-bike-park/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mammoth_Mtn_ski_area_(15532286723).jpg",
+      "title": "File:Mammoth Mtn ski area (15532286723).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mammoth Mtn ski area",
+      "author": "Murray Foubister",
+      "file": "src/assets/places/mammoth-bike-park/3.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mammoth_Mtn_ski_area_(16126219736).jpg",
+      "title": "File:Mammoth Mtn ski area (16126219736).jpg",
       "width": 1280
     }
   ],
@@ -2937,6 +4021,20 @@
       "sourceUrl": "https://www.flickr.com/photos/12720221@N08/36072708803",
       "title": "Openverse:b9c70e94-8917-43ac-81a4-6e350c478893",
       "width": 1024
+    }
+  ],
+  "many-glacier-campground": [
+    {
+      "alt": "A view of Altyn Peak across Swiftcurrent Lake in Glacier National Park in September 2024.",
+      "author": "Balon Greyjoy",
+      "file": "src/assets/places/many-glacier-campground/1.jpg",
+      "height": 854,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20240914_Canon_R5_Altyn_Peak-8882.jpg",
+      "title": "File:20240914 Canon R5 Altyn Peak-8882.jpg",
+      "width": 1280
     }
   ],
   "maroon-bells-campgrounds": [
@@ -2989,6 +4087,71 @@
       "sourceUrl": "https://www.flickr.com/photos/50693818@N08/31180232545",
       "title": "Openverse:bccd517f-be99-4ac4-b979-1d37c4b46e20",
       "width": 1024
+    }
+  ],
+  "mccauley-mountain": [],
+  "mcdowell-sonoran-preserve": [
+    {
+      "alt": "Landscape image of a unique looking Saguaro cactus at sunrise or dawn near a hiking trail in a Desert Preserve in Scottsdale, AZ",
+      "author": "Ray Redstone",
+      "file": "src/assets/places/mcdowell-sonoran-preserve/1.jpg",
+      "height": 876,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unique_Saguaro_Cactus_At_Sunrise_In_The_Arizona_Desert.jpg",
+      "title": "File:Unique Saguaro Cactus At Sunrise In The Arizona Desert.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "A view of Thompson Peak from the Bell Pass Trail",
+      "author": "Wiwad",
+      "file": "src/assets/places/mcdowell-sonoran-preserve/2.jpg",
+      "height": 961,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thompson_Peak_Bell_Pass.jpg",
+      "title": "File:Thompson Peak Bell Pass.jpg",
+      "width": 1280
+    }
+  ],
+  "middle-delaware-river": [
+    {
+      "alt": "delaware river from skyline drive The view from Skyline Drive near Crater Lake into the Delaware River Valley.",
+      "author": "NPS",
+      "file": "src/assets/places/middle-delaware-river/1.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Delaware_River_Valley_(1c2932c1-1dd8-b71b-0b30-3138ecdb050e).jpg",
+      "title": "File:The Delaware River Valley (1c2932c1-1dd8-b71b-0b30-3138ecdb050e).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Downriver View ()",
+      "author": "Nicholas A. Tonelli from Northeast Pennsylvania, USA",
+      "file": "src/assets/places/middle-delaware-river/2.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Downriver_View_(10369273563).jpg",
+      "title": "File:Downriver View (10369273563).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Lake Lenape in the Delaware Water Gap National Recreation Area in Delaware Water Gap, Pennsylvania viewed from the Appalachian Trail",
+      "author": "Dough4872",
+      "file": "src/assets/places/middle-delaware-river/3.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Lenape_in_Delaware_Water_Gap_National_Recreation_Area_from_Appalachian_Trail.jpeg",
+      "title": "File:Lake Lenape in Delaware Water Gap National Recreation Area from Appalachian Trail.jpeg",
+      "width": 1280
     }
   ],
   "middlebury-snow-bowl": [],
@@ -3095,6 +4258,32 @@
       "width": 1024
     }
   ],
+  "mohonk-mountain-house": [
+    {
+      "alt": "View of guest rooms that surround Lake Mohonk seen from one of many hiking trails at Mohonk Mountain House",
+      "author": "Fred Hsu on en.wikipedia",
+      "file": "src/assets/places/mohonk-mountain-house/1.jpg",
+      "height": 799,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mohonk_Mountain_House_2011_View_of_Mohonk_Guest_Rooms_from_One_Hiking_Trail_FRD_3205.jpg",
+      "title": "File:Mohonk Mountain House 2011 View of Mohonk Guest Rooms from One Hiking Trail FRD 3205.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "View of the Lake Mohonk seen from one of many hiking trails at Mohonk Mountain House",
+      "author": "Fred Hsu on en.wikipedia",
+      "file": "src/assets/places/mohonk-mountain-house/2.jpg",
+      "height": 823,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mohonk_Mountain_House_2011_View_of_Mohonk_Lake_from_One_Hiking_Trail_FRD_3247.jpg",
+      "title": "File:Mohonk Mountain House 2011 View of Mohonk Lake from One Hiking Trail FRD 3247.jpg",
+      "width": 1280
+    }
+  ],
   "monarch-mountain": [
     {
       "alt": "Airmen ride snowmobiles at Monarch mountain (5938574)",
@@ -3147,6 +4336,59 @@
       "width": 1024
     }
   ],
+  "mont-blanc": [],
+  "mont-orford": [
+    {
+      "alt": "View from Mont Orford ski hill in Winter (January), Mont Orford National Park, Quebec, Canada.",
+      "author": "Meg.jenk",
+      "file": "src/assets/places/mont-orford/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Mont_Orford_in_Winter.jpg",
+      "title": "File:View from Mont Orford in Winter.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Étang aux cerises Parc national du Mont-Orford",
+      "author": "Maxime Laterreur",
+      "file": "src/assets/places/mont-orford/2.jpg",
+      "height": 540,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=114337195",
+      "title": "Openverse:e5e7fb0d-d7a0-41aa-b923-402cc723172f",
+      "width": 960
+    }
+  ],
+  "mont-orford-park": [
+    {
+      "alt": "Mont-Orford National Park (Quebec, Canada) - August 2010 - Stukely Lake, looking west from the front of the beach at the national park.",
+      "author": "Boréal",
+      "file": "src/assets/places/mont-orford-park/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010-08_Parc_du_Mont-Orford_-_Lac_Stukely.JPG",
+      "title": "File:2010-08 Parc du Mont-Orford - Lac Stukely.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Mont-Orford National Park (Quebec, Canada) - July 2007 - Stukely Lake and Mont Chauve",
+      "author": "Boréal",
+      "file": "src/assets/places/mont-orford-park/2.jpg",
+      "height": 855,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007-07_Parc_du_Mont-Orford_-_Lac_Stukeley_et_Mont_Chauve.jpg",
+      "title": "File:2007-07 Parc du Mont-Orford - Lac Stukeley et Mont Chauve.jpg",
+      "width": 1280
+    }
+  ],
   "mont-sainte-anne": [
     {
       "alt": "QMT 2018",
@@ -3182,6 +4424,20 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont_Sainte-Anne_(cropped).jpg",
       "title": "File:Mont Sainte-Anne (cropped).jpg",
+      "width": 1280
+    }
+  ],
+  "mont-sainte-anne-bike": [
+    {
+      "alt": "QMT 2018",
+      "author": "Quebec Mega Trail",
+      "file": "src/assets/places/mont-sainte-anne-bike/1.jpg",
+      "height": 854,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Top_of_Mont-Sainte-Anne.jpg",
+      "title": "File:Top of Mont-Sainte-Anne.jpg",
       "width": 1280
     }
   ],
@@ -3264,6 +4520,20 @@
       "width": 1280
     }
   ],
+  "montana-snowbowl": [
+    {
+      "alt": "Snowbowl Ski Area - Lolo NF 2020 Annual Report ()",
+      "author": "Forest Service - Northern Region",
+      "file": "src/assets/places/montana-snowbowl/1.jpg",
+      "height": 941,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowbowl_Ski_Area_-_Lolo_NF_2020_Annual_Report_(50825423716).jpg",
+      "title": "File:Snowbowl Ski Area - Lolo NF 2020 Annual Report (50825423716).jpg",
+      "width": 1280
+    }
+  ],
   "moraine-park": [
     {
       "alt": "camp",
@@ -3340,6 +4610,7 @@
       "width": 1600
     }
   ],
+  "morefield-mesa-verde": [],
   "mount-robson": [
     {
       "alt": "Entrance to Mount Robson Provincial Park - Rocky Mountains - BC - Canada - 02",
@@ -3378,6 +4649,44 @@
       "width": 1024
     }
   ],
+  "mount-snow": [
+    {
+      "alt": "From a trail at Mount Snow, Vermont.",
+      "author": "Vermont",
+      "file": "src/assets/places/mount-snow/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winter_on_a_trail_at_Mount_Snow,_Vermont.jpg",
+      "title": "File:Winter on a trail at Mount Snow, Vermont.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mount Snow Winter",
+      "author": "Mount Snow",
+      "file": "src/assets/places/mount-snow/2.jpg",
+      "height": 831,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MountSnowWinter.jpg",
+      "title": "File:MountSnowWinter.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "More Tree skiing",
+      "author": "William J Sisti from Morristown, NJ, USA",
+      "file": "src/assets/places/mount-snow/3.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:More_Tree_skiing_(3269265197).jpg",
+      "title": "File:More Tree skiing (3269265197).jpg",
+      "width": 1280
+    }
+  ],
   "mount-sunapee": [
     {
       "alt": "Mount Sunapee .",
@@ -3401,6 +4710,32 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:MtSunapeeataDistance.jpg",
       "title": "File:MtSunapeeataDistance.jpg",
+      "width": 1280
+    }
+  ],
+  "mount-washington-bc": [
+    {
+      "alt": "Mount Washington Skiing (5556047971)",
+      "author": "Doug Hay",
+      "file": "src/assets/places/mount-washington-bc/1.jpg",
+      "height": 720,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=179698439",
+      "title": "Openverse:fdbe3551-7a03-4c4d-9273-ade95e921f24",
+      "width": 960
+    },
+    {
+      "alt": "Mount Washington from Forbidden Plateau in the Summer",
+      "author": "YubYub41",
+      "file": "src/assets/places/mount-washington-bc/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Washington_Summer.jpg",
+      "title": "File:Mount Washington Summer.jpg",
       "width": 1280
     }
   ],
@@ -3549,6 +4884,21 @@
     }
   ],
   "nordic-valley": [],
+  "north-shore": [],
+  "north-south-lake": [
+    {
+      "alt": "Looking west over North-South lake from Sunset Rocks.",
+      "author": "Mark Fickett",
+      "file": "src/assets/places/north-south-lake/1.jpg",
+      "height": 848,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012_July_06_North-South_Lake_from_Sunset_Rocks.jpg",
+      "title": "File:2012 July 06 North-South Lake from Sunset Rocks.jpg",
+      "width": 1280
+    }
+  ],
   "northstar": [
     {
       "alt": "The Summit Smokehouse, at the peak of Mt.",
@@ -3613,6 +4963,71 @@
       "width": 1024
     }
   ],
+  "oak-mountain": [],
+  "ohiopyle-kentuck": [
+    {
+      "alt": "Jonathan's Run Falls: A bit of a hike off of the main Rail trail near Ohiopyle State Park , but well worth it.",
+      "author": "Hubert Stoffels from Pittsburgh, USA",
+      "file": "src/assets/places/ohiopyle-kentuck/1.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jonathan's_Run_Falls.jpg",
+      "title": "File:Jonathan's Run Falls.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Low brace Youghiogheny River Ohiopyle, PA",
+      "author": "flickr user \"Truello\" = Andy from Pittsburgh, USA",
+      "file": "src/assets/places/ohiopyle-kentuck/2.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Low_brace_Youghiogheny_River_Ohiopyle,_PA.jpg",
+      "title": "File:Low brace Youghiogheny River Ohiopyle, PA.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Ohiopyle State Park",
+      "author": "bobistraveling",
+      "file": "src/assets/places/ohiopyle-kentuck/3.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waterfall_Kayakers_checking_the_path_over_the_falls_Ohiopyle_State_Park_PA_7656.jpg",
+      "title": "File:Waterfall Kayakers checking the path over the falls Ohiopyle State Park PA 7656.jpg",
+      "width": 1280
+    }
+  ],
+  "oka-park": [
+    {
+      "alt": "Reception desk in the Parc national d'Oka campground sector.",
+      "author": "Gaétan Veillette",
+      "file": "src/assets/places/oka-park/1.jpg",
+      "height": 575,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oka_(QC)-Poste_d'accueil_du_secteur_du_camping_du_parc_national_d'Oka-2023.jpg",
+      "title": "File:Oka (QC)-Poste d'accueil du secteur du camping du parc national d'Oka-2023.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Quebec Provincial Park - Oka",
+      "author": "Jinfeng Ni",
+      "file": "src/assets/places/oka-park/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oka_Park_in_the_fall.jpg",
+      "title": "File:Oka Park in the fall.jpg",
+      "width": 1280
+    }
+  ],
   "okemo": [
     {
       "alt": "Okemo, peak",
@@ -3663,6 +5078,20 @@
       "sourceUrl": "https://www.flickr.com/photos/7327243@N05/6670824371",
       "title": "Openverse:0a2ff11a-1f1a-4225-925c-47cedeca92d7",
       "width": 1024
+    }
+  ],
+  "oneida-lake-fish-creek": [
+    {
+      "alt": "Looking southward along the shore of Oneida Lake near the mouth of Fish Creek at Sunset Park in Sylvan Beach, New York, May 2021.",
+      "author": "Andre Carrotflower",
+      "file": "src/assets/places/oneida-lake-fish-creek/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sylvan_Beach_-_20210522_-_01.jpg",
+      "title": "File:Sylvan Beach - 20210522 - 01.jpg",
+      "width": 1280
     }
   ],
   "owls-head": [
@@ -3768,6 +5197,70 @@
       "width": 1024
     }
   ],
+  "park-city": [
+    {
+      "alt": "Park City ski lift 1010320",
+      "author": "Frypie",
+      "file": "src/assets/places/park-city/1.jpg",
+      "height": 720,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=158782458",
+      "title": "Openverse:26be9e0b-a4f9-438a-b90b-a7d9c421ad88",
+      "width": 960
+    },
+    {
+      "alt": "Three Kings Lift at base of Park City Ski area",
+      "author": "akasped",
+      "file": "src/assets/places/park-city/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/26736723@N00/3963762555",
+      "title": "Openverse:73a47789-9795-4531-8b63-6110e8eb5aba",
+      "width": 1024
+    }
+  ],
+  "park-city-trails": [
+    {
+      "alt": "Main Street, Park City, Utah",
+      "author": "Ken Lund",
+      "file": "src/assets/places/park-city-trails/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/9390710774",
+      "title": "Openverse:31d053ce-c5f8-4b3c-95fa-14e096735124",
+      "width": 1024
+    },
+    {
+      "alt": "Main Street, Park City, Utah",
+      "author": "Ken Lund",
+      "file": "src/assets/places/park-city-trails/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/9387926295",
+      "title": "Openverse:6c997e0c-8b96-47a4-b883-f84e99a00813",
+      "width": 1024
+    },
+    {
+      "alt": "Main Street, Park City, Utah",
+      "author": "Ken Lund",
+      "file": "src/assets/places/park-city-trails/3.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/9387929771",
+      "title": "Openverse:7d7ead22-f871-4624-8f75-2046e5e55dc4",
+      "width": 1024
+    }
+  ],
   "parkinson-pickleball-courts": [
     {
       "alt": "Knox Mountain Park",
@@ -3826,6 +5319,8 @@
   "pickle-alley-la": [],
   "pickleball-kingdom-chandler": [],
   "pickleball-warehouse": [],
+  "picklr-bozeman": [],
+  "picklr-salt-lake-city": [],
   "pico": [
     {
       "alt": "View from the top of Killington Peak looking straight at Pico Peak",
@@ -3971,6 +5466,33 @@
       "width": 1280
     }
   ],
+  "powderhorn": [],
+  "prescott-trails": [
+    {
+      "alt": "View from Thumb Butte",
+      "author": "Zzyzx",
+      "file": "src/assets/places/prescott-trails/1.jpg",
+      "height": 958,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Thumb_Butte_-_panoramio_-_Zzyzx.jpg",
+      "title": "File:View from Thumb Butte - panoramio - Zzyzx.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "View from Thumb Butte",
+      "author": "Zzyzx",
+      "file": "src/assets/places/prescott-trails/2.jpg",
+      "height": 958,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Thumb_Butte_-_panoramio.jpg",
+      "title": "File:View from Thumb Butte - panoramio.jpg",
+      "width": 1280
+    }
+  ],
   "purgatory": [
     {
       "alt": "Purgatory ski run...",
@@ -4023,6 +5545,20 @@
       "width": 960
     }
   ],
+  "red-lodge-mountain": [
+    {
+      "alt": "w:Red Lodge Mountain Resort , looking at the Palisades area on the north end of the ski area.",
+      "author": "Elkman",
+      "file": "src/assets/places/red-lodge-mountain/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Lodge_Palisades.jpg",
+      "title": "File:Red Lodge Palisades.jpg",
+      "width": 1280
+    }
+  ],
   "red-mountain": [
     {
       "alt": "View from Red Mountain Ski Resort",
@@ -4061,6 +5597,44 @@
       "width": 1280
     }
   ],
+  "revelstoke": [
+    {
+      "alt": "View of the Columbia Valley and Revelstoke, in winter, from the Powder Springs ski hill",
+      "author": "Mascdman",
+      "file": "src/assets/places/revelstoke/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View-of-Columbia-Valley-and-Revelstoke.jpg",
+      "title": "File:View-of-Columbia-Valley-and-Revelstoke.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "A day's skiing at spedtacular Mt Revelstoke - Noth Americas biggest vertical drop at 1713m (5620 ft) - the buried trees appear like snow ghosts - ()",
+      "author": "Murray Foubister",
+      "file": "src/assets/places/revelstoke/2.jpg",
+      "height": 854,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_day's_skiing_at_spedtacular_Mt_Revelstoke_-_Noth_Americas_biggest_vertical_drop_at_1713m_(5620_ft)_-_the_buried_trees_appear_like_snow_ghosts_-_(28287755134).jpg",
+      "title": "File:A day's skiing at spedtacular Mt Revelstoke - Noth Americas biggest vertical drop at 1713m (5620 ft) - the buried trees appear like snow ghosts - (28287755134).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "A day's skiing at spedtacular Mt Revelstoke - Noth Americas biggest vertical drop at 1713m (5620 ft) - the buried trees appear like snow ghosts - ()",
+      "author": "Murray Foubister",
+      "file": "src/assets/places/revelstoke/3.jpg",
+      "height": 854,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_day's_skiing_at_spedtacular_Mt_Revelstoke_-_Noth_Americas_biggest_vertical_drop_at_1713m_(5620_ft)_-_the_buried_trees_appear_like_snow_ghosts_-_(28287747534).jpg",
+      "title": "File:A day's skiing at spedtacular Mt Revelstoke - Noth Americas biggest vertical drop at 1713m (5620 ft) - the buried trees appear like snow ghosts - (28287747534).jpg",
+      "width": 1280
+    }
+  ],
   "ricketts-glen": [
     {
       "alt": "Ricketts Glen Big Loop Campsite #52",
@@ -4073,6 +5647,32 @@
       "sourceUrl": "https://www.flickr.com/photos/44124370018@N01/52269057361",
       "title": "Openverse:b29c53ff-4973-4ee1-a9fe-7925e74d8cde",
       "width": 1024
+    }
+  ],
+  "riviere-du-diable": [
+    {
+      "alt": "A babbling brook flows past chemin du Lac-Supérieur toward the Devil's River in Mont-Tremblant National Park.",
+      "author": "Andre Carrotflower",
+      "file": "src/assets/places/riviere-du-diable/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20181016_-_08_-_Mont-Tremblant_National_Park.jpg",
+      "title": "File:20181016 - 08 - Mont-Tremblant National Park.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Turbulent water in the Devil's River, at the base of the Chutes-Croches in Mont-Tremblant National Park.",
+      "author": "Andre Carrotflower",
+      "file": "src/assets/places/riviere-du-diable/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20181016_-_22_-_Mont-Tremblant_National_Park_-_%22Return_to_Oblivion%22.jpg",
+      "title": "File:20181016 - 22 - Mont-Tremblant National Park - \"Return to Oblivion\".jpg",
+      "width": 1280
     }
   ],
   "robert-h-treman": [
@@ -4151,6 +5751,20 @@
       "width": 1024
     }
   ],
+  "rouge-river": [
+    {
+      "alt": "View of the Rouge River in Grenville-sur-la-Rouge, from the Route 148 road bridge.",
+      "author": "Veillg1",
+      "file": "src/assets/places/rouge-river/1.jpg",
+      "height": 807,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grenville-sur-la-Rouge_(QC)-Rivi%C3%A8re_Rouge_(vue_de_l'amont_du_pont_de_la_route_148_(2022-07-31)).jpg",
+      "title": "File:Grenville-sur-la-Rouge (QC)-Rivière Rouge (vue de l'amont du pont de la route 148 (2022-07-31)).jpg",
+      "width": 1280
+    }
+  ],
   "roundtop": [
     {
       "alt": "2008 03 02 - Ski Roundtop 1",
@@ -4162,6 +5776,20 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_03_02_-_Ski_Roundtop_1.JPG",
       "title": "File:2008 03 02 - Ski Roundtop 1.JPG",
+      "width": 1280
+    }
+  ],
+  "saco-river": [
+    {
+      "alt": "Saco River Valley White Mountains North Conway New Hampshire",
+      "author": "EgorovaSvetlana",
+      "file": "src/assets/places/saco-river/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saco_River_Flows_South-Southeast_White_Mountains_North_Conway_New_Hampshire.jpg",
+      "title": "File:Saco River Flows South-Southeast White Mountains North Conway New Hampshire.jpg",
       "width": 1280
     }
   ],
@@ -4445,6 +6073,58 @@
       "width": 1600
     }
   ],
+  "sentiers-du-moulin": [
+    {
+      "alt": "The start of the snowshoeing trail.",
+      "author": "TravelingOtter from Houston, Texas, USA",
+      "file": "src/assets/places/sentiers-du-moulin/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lac_Beauport_Recreation_Area_-_Qu%C3%A9bec_(3242129333).jpg",
+      "title": "File:Lac Beauport Recreation Area - Québec (3242129333).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "One of the Snowmobile trails in the recreation area.",
+      "author": "TravelingOtter from Houston, Texas, USA",
+      "file": "src/assets/places/sentiers-du-moulin/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lac_Beauport_Recreation_Area_-_Qu%C3%A9bec_(3242962962).jpg",
+      "title": "File:Lac Beauport Recreation Area - Québec (3242962962).jpg",
+      "width": 1280
+    }
+  ],
+  "seven-springs": [
+    {
+      "alt": "Night skiing at Seven Springs Mountain Resort",
+      "author": "The93owner ( talk )",
+      "file": "src/assets/places/seven-springs/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SevenSpringsNight.JPG",
+      "title": "File:SevenSpringsNight.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Seven Springs Mountain Resort viewed from the summit at dusk before the 4th of July fireworks.",
+      "author": "Baron Maddock",
+      "file": "src/assets/places/seven-springs/2.jpg",
+      "height": 606,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seven_Springs_Resort_on_4th_of_July_at_dusk_viewed_from_the_summit_pre_fireworks.jpg",
+      "title": "File:Seven Springs Resort on 4th of July at dusk viewed from the summit pre fireworks.jpg",
+      "width": 1280
+    }
+  ],
   "shawnee-mountain": [
     {
       "alt": "An image of the Lookout and Tecumseh ski lifts at Shawnee Mountain Ski Area in the Poconos of PA.",
@@ -4550,6 +6230,32 @@
       "width": 1024
     }
   ],
+  "silverton-mountain": [
+    {
+      "alt": "San Juan Mountains West of Ouray, Colorado ()",
+      "author": "Ken Lund from Reno, Nevada, USA",
+      "file": "src/assets/places/silverton-mountain/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Juan_Mountains_West_of_Ouray,_Colorado_(14203621854).jpg",
+      "title": "File:San Juan Mountains West of Ouray, Colorado (14203621854).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Happy Face ()",
+      "author": "Zach Dischner",
+      "file": "src/assets/places/silverton-mountain/2.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Happy_Face_(16088323999).jpg",
+      "title": "File:Happy Face (16088323999).jpg",
+      "width": 1280
+    }
+  ],
   "ski-cooper": [
     {
       "alt": "Ski Cooper, Chicago Ridge snowcat",
@@ -4579,6 +6285,32 @@
     }
   ],
   "ski-sawmill": [],
+  "skytop-lodge": [
+    {
+      "alt": "Photo of a frozen over Mountain Lake at Skytop Lodge in the village of Skytop within Barrett Township , Pennsylvania .",
+      "author": "Mr. Matté (if there is an issue with this image, contact me using this image's Commons talk page , my Commons user talk page , or my English Wikipedia user talk page ; I'll know about it a lot faster)",
+      "file": "src/assets/places/skytop-lodge/1.jpg",
+      "height": 982,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Frozen_Mountain_Lake,_Skytop,_PA,_Feb._2026.jpg",
+      "title": "File:Frozen Mountain Lake, Skytop, PA, Feb. 2026.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Photo of Skytop Lodge in the village of Skytop within Barrett Township , Pennsylvania .",
+      "author": "Mr. Matté (if there is an issue with this image, contact me using this image's Commons talk page , my Commons user talk page , or my English Wikipedia user talk page ; I'll know about it a lot faster)",
+      "file": "src/assets/places/skytop-lodge/2.jpg",
+      "height": 973,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skytop_Lodge,_Skytop,_PA_(2),_Feb._2026.jpg",
+      "title": "File:Skytop Lodge, Skytop, PA (2), Feb. 2026.jpg",
+      "width": 1280
+    }
+  ],
   "smugglers-notch": [
     {
       "alt": "Soldiers climbing Smugglers' Notch",
@@ -4594,6 +6326,7 @@
     }
   ],
   "smugglers-notch-pickleball": [],
+  "snow-ridge": [],
   "snow-summit-bike-park": [
     {
       "alt": "Snow Summit Bike Park",
@@ -4606,6 +6339,59 @@
       "sourceUrl": "https://www.flickr.com/photos/10991567@N02/16536884067",
       "title": "Openverse:784bcbbb-0ea4-43da-b33c-548ba98a18e3",
       "width": 1024
+    }
+  ],
+  "snow-valley": [],
+  "snowbasin": [
+    {
+      "alt": "Sunny day in February, 2019 at Snowbasin Ski Resort in Utah",
+      "author": "Gyejournal",
+      "file": "src/assets/places/snowbasin/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Basin_1x_blue_sky.jpg",
+      "title": "File:Basin 1x blue sky.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Men's super-G at Snowbasin Resort during the 2002 Winter Olympics.",
+      "author": "Ken Lund from Las Vegas, Nevada, USA",
+      "file": "src/assets/places/snowbasin/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Super_G_at_2002_Winter_Olympics.jpg",
+      "title": "File:Super G at 2002 Winter Olympics.jpg",
+      "width": 1280
+    }
+  ],
+  "snowbasin-bike-park": [
+    {
+      "alt": "Glacier Lilies, along with Spring Beauties, are the first flowers to bloom after the snow melts in the spring and summer.",
+      "author": "Intermountain Forest Service, USDA Region 4 Photography",
+      "file": "src/assets/places/snowbasin-bike-park/1.jpg",
+      "height": 720,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:One_Strong_Lily_(11953802554).jpg",
+      "title": "File:One Strong Lily (11953802554).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Spring Beauties, along with Glacier Lilies, are the first flowers to bloom after the snow melts in the spring and summer.",
+      "author": "Intermountain Forest Service, USDA Region 4 Photography",
+      "file": "src/assets/places/snowbasin-bike-park/2.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spring_Beauty_at_Snowbasin_(11954204416).jpg",
+      "title": "File:Spring Beauty at Snowbasin (11954204416).jpg",
+      "width": 1280
     }
   ],
   "snowbird": [
@@ -4736,6 +6522,22 @@
       "width": 1280
     }
   ],
+  "sommet-saint-sauveur": [
+    {
+      "alt": "Saint-Sauveur.",
+      "author": "Capbat",
+      "file": "src/assets/places/sommet-saint-sauveur/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saint-Sauveur_(Village).JPG",
+      "title": "File:Saint-Sauveur (Village).JPG",
+      "width": 1280
+    }
+  ],
+  "song-mountain": [],
+  "south-lake-tahoe-trails": [],
   "south-mill-pond": [],
   "south-mountain-park": [
     {
@@ -4761,6 +6563,32 @@
       "sourceUrl": "https://www.flickr.com/photos/193316968@N06/51743769925",
       "title": "Openverse:845e8664-aca9-414c-b62f-ff3e9505981c",
       "width": 1024
+    }
+  ],
+  "squam-lake": [
+    {
+      "alt": "Visit www.churchisland.org for the full story.",
+      "author": "Ztaked",
+      "file": "src/assets/places/squam-lake/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Church_Island_on_Squam_Lake_01.jpg",
+      "title": "File:Church Island on Squam Lake 01.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Visit www.churchisland.org for the full story.",
+      "author": "Ztaked",
+      "file": "src/assets/places/squam-lake/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Church_Island_on_Squam_Lake_Bell_Tower.jpg",
+      "title": "File:Church Island on Squam Lake Bell Tower.jpg",
+      "width": 1280
     }
   ],
   "squamish": [
@@ -4868,6 +6696,58 @@
       "width": 1024
     }
   ],
+  "stowe": [
+    {
+      "alt": "Photograph of a Gondola lift at Stowe, Vermont",
+      "author": "Jared C. Benedict",
+      "file": "src/assets/places/stowe/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stowe_vt_gondola_20060409.jpg",
+      "title": "File:Stowe vt gondola 20060409.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "On the slopes of Stowe, December, 2007.",
+      "author": "Ams100272",
+      "file": "src/assets/places/stowe/2.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stowe-snapshot.jpg",
+      "title": "File:Stowe-snapshot.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Image taken at Stowe VT of moguls on a trail and the adjacent mountain",
+      "author": "Vermont",
+      "file": "src/assets/places/stowe/3.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stowe_VT_Moguls_2021.jpg",
+      "title": "File:Stowe VT Moguls 2021.jpg",
+      "width": 1280
+    }
+  ],
+  "stowe-trails": [
+    {
+      "alt": "Stowe Trail",
+      "author": "brettchalupa",
+      "file": "src/assets/places/stowe-trails/1.jpg",
+      "height": 523,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/51037366@N05/25034619643",
+      "title": "Openverse:f00715f3-390d-4e31-b964-68c9f563d525",
+      "width": 1024
+    }
+  ],
   "stratton": [
     {
       "alt": "stratton mountain vermont ski trails",
@@ -4891,18 +6771,6 @@
       "nearby": false,
       "sourceUrl": "https://www.flickr.com/photos/96463101@N00/119508523",
       "title": "Openverse:c3f179e9-e4f0-4483-a5a3-4ae7c0ca6b25",
-      "width": 1024
-    },
-    {
-      "alt": "Jill & Jon Top of Stratton",
-      "author": "Avery Studio",
-      "file": "src/assets/places/stratton/3.jpg",
-      "height": 768,
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "nearby": false,
-      "sourceUrl": "https://www.flickr.com/photos/78147513@N00/2254296770",
-      "title": "Openverse:e659f30b-0134-4536-96be-15ff90b572f1",
       "width": 1024
     }
   ],
@@ -5023,6 +6891,58 @@
       "width": 1024
     }
   ],
+  "sundance": [
+    {
+      "alt": "Mount timpanogos from the perspective of sundance ski resort",
+      "author": "dtsears",
+      "file": "src/assets/places/sundance/1.jpg",
+      "height": 1536,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://wordpress.org/photos/photo/99566f7171/",
+      "title": "Openverse:53871c4a-1479-4521-b7dd-022fc7f3d280",
+      "width": 2048
+    },
+    {
+      "alt": "At Sundance ski area",
+      "author": "kloeppel",
+      "file": "src/assets/places/sundance/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/76584561@N00/8737852847",
+      "title": "Openverse:3661ed1a-1fac-43f2-9cde-4c1c18481bd1",
+      "width": 1024
+    }
+  ],
+  "sunlight": [
+    {
+      "alt": "Sunlight",
+      "author": "Awitthoft",
+      "file": "src/assets/places/sunlight/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ski_Lift_Little.JPG",
+      "title": "File:Ski Lift Little.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Sunlight Ski Area, Spring 1991",
+      "author": "Xnatedawgx",
+      "file": "src/assets/places/sunlight/2.jpg",
+      "height": 557,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=6424588",
+      "title": "Openverse:a16dfcf0-fe6f-40cf-b9bf-0188c275c22d",
+      "width": 960
+    }
+  ],
   "sunrise-park": [
     {
       "alt": "High-speed quad chairlift on Sunrise Peak.",
@@ -5063,6 +6983,21 @@
       "width": 1024
     }
   ],
+  "swain": [
+    {
+      "alt": "Swain in ski country.",
+      "author": "B137",
+      "file": "src/assets/places/swain/1.jpg",
+      "height": 960,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Swain_ski_resort_March_9_2017_from_main_lift_01.jpg",
+      "title": "File:Swain ski resort March 9 2017 from main lift 01.jpg",
+      "width": 1280
+    }
+  ],
+  "tahoe-flume-trail": [],
   "telluride": [
     {
       "alt": "Telluride Ski Resort, Col.",
@@ -5098,6 +7033,71 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Telluride_Ski_Resort,_Col._(8644078093).jpg",
       "title": "File:Telluride Ski Resort, Col. (8644078093).jpg",
+      "width": 1280
+    }
+  ],
+  "titus-mountain": [],
+  "tomales-bay": [
+    {
+      "alt": "Tomales Bay as viewed from Tomales Point Trail",
+      "author": "Oleg Alexandrov",
+      "file": "src/assets/places/tomales-bay/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomales_Bay_as_viewed_from_Tomales_Point_Trail_2.JPG",
+      "title": "File:Tomales Bay as viewed from Tomales Point Trail 2.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Sandy beach flanked by steep vegetation.",
+      "author": "Ana Vila-Concejo",
+      "file": "src/assets/places/tomales-bay/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beach_in_Tomales_Bay.jpg",
+      "title": "File:Beach in Tomales Bay.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Sandy beach under a clear blue sky with steep coastal shrub on the left, calm waters on the right.",
+      "author": "Ana Vila-Concejo",
+      "file": "src/assets/places/tomales-bay/3.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sandy_Beach_in_Tomales_Bay.jpg",
+      "title": "File:Sandy Beach in Tomales Bay.jpg",
+      "width": 1280
+    }
+  ],
+  "topock-gorge": [
+    {
+      "alt": "The Colorado River near Topok.",
+      "author": "Dorian Wallender from Lake Havasu City, Arizona, USA",
+      "file": "src/assets/places/topock-gorge/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ARIZONA_(4594906126).jpg",
+      "title": "File:ARIZONA (4594906126).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "The Colorado River and Topock Canyon.",
+      "author": "Dorian Wallender from Lake Havasu City, Arizona, USA",
+      "file": "src/assets/places/topock-gorge/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arizona_(4369797932).jpg",
+      "title": "File:Arizona (4369797932).jpg",
       "width": 1280
     }
   ],
@@ -5137,6 +7137,20 @@
       "sourceUrl": "https://www.flickr.com/photos/97704803@N00/3652770",
       "title": "Openverse:bdb32d28-3369-4e23-ba5d-c3b45e42a011",
       "width": 1024
+    }
+  ],
+  "trestle-bike-park": [
+    {
+      "alt": "A photo of skiing mountains",
+      "author": "Wmclauch",
+      "file": "src/assets/places/trestle-bike-park/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountains_in_Winter_Park.jpg",
+      "title": "File:Mountains in Winter Park.jpg",
+      "width": 1280
     }
   ],
   "truckee-regional-park-pickleball": [],
@@ -5181,7 +7195,48 @@
       "width": 1280
     }
   ],
+  "twin-lakes-mammoth": [
+    {
+      "alt": "Sierra Nevada Sunrise, Mammoth Lakes, CA 9-16 ()",
+      "author": "Don Graham from Redlands, CA, USA - God bless it!",
+      "file": "src/assets/places/twin-lakes-mammoth/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sierra_Nevada_Sunrise,_Mammoth_Lakes,_CA_9-16_(29711518183).jpg",
+      "title": "File:Sierra Nevada Sunrise, Mammoth Lakes, CA 9-16 (29711518183).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Sunrise, Twin Lakes Spillway, Mammoth Lakes CA 9-16 ()",
+      "author": "inkknife_2000 (7.5 million views +)",
+      "file": "src/assets/places/twin-lakes-mammoth/2.jpg",
+      "height": 902,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise,_Twin_Lakes_Spillway,_Mammoth_Lakes_CA_9-16_(30649329321).jpg",
+      "title": "File:Sunrise, Twin Lakes Spillway, Mammoth Lakes CA 9-16 (30649329321).jpg",
+      "width": 1280
+    }
+  ],
   "universite-laval-pickleball": [],
+  "upper-colorado-pumphouse": [],
+  "upper-pines": [
+    {
+      "alt": "Yosemite - Upper Pines Campground",
+      "author": "Andrew Burnham",
+      "file": "src/assets/places/upper-pines/1.jpg",
+      "height": 720,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yosemite_-_Upper_Pines_Campground_-_panoramio.jpg",
+      "title": "File:Yosemite - Upper Pines Campground - panoramio.jpg",
+      "width": 1280
+    }
+  ],
   "vail": [
     {
       "alt": "Vail Skiing 2010",
@@ -5248,7 +7303,73 @@
       "width": 1024
     }
   ],
+  "verona-beach": [
+    {
+      "alt": "Canada Geese on Lake Oneida, at Verona Beach State Park in New York State.",
+      "author": "Geoffrey.landis at English Wikipedia",
+      "file": "src/assets/places/verona-beach/1.jpg",
+      "height": 960,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Verona_Beach.jpg",
+      "title": "File:Verona Beach.jpg",
+      "width": 1280
+    }
+  ],
   "victoria-pickleball-centre": [],
+  "wahweap": [
+    {
+      "alt": "Groups of people recreating near waters edge of small beach area.",
+      "author": "NPS",
+      "file": "src/assets/places/wahweap/1.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Swim_Beach_view_near_Wahweap_Main_Launch_Ramp,_August_2021_(81edadb3-7162-481c-95cb-5e352ae681a8).JPG",
+      "title": "File:Swim Beach view near Wahweap Main Launch Ramp, August 2021 (81edadb3-7162-481c-95cb-5e352ae681a8).JPG",
+      "width": 1280
+    },
+    {
+      "alt": "A distance view of the auxiliary launch ramp area showing length of road.",
+      "author": "NPS",
+      "file": "src/assets/places/wahweap/2.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wahweap_Auxiliary_Launch_Ramp,_August_2021_(666c3c73-b9c0-4c04-90e7-2d208728d427).JPG",
+      "title": "File:Wahweap Auxiliary Launch Ramp, August 2021 (666c3c73-b9c0-4c04-90e7-2d208728d427).JPG",
+      "width": 1280
+    }
+  ],
+  "wapizagonke-lake": [
+    {
+      "alt": "View to the South from Northern Tip of Lac Wapizagonke - Parc national de la Mauricie National Park - taken in a kayak while on the lake",
+      "author": "Keyplayer04",
+      "file": "src/assets/places/wapizagonke-lake/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_to_the_South_from_Northern_Tip_of_Lac_Wapizagonke_-_Parc_national_de_la_Mauricie_National_Park.jpg",
+      "title": "File:View to the South from Northern Tip of Lac Wapizagonke - Parc national de la Mauricie National Park.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "An autumn view of of Lac Wapizagonke in La Mauricie National Park, Quebec",
+      "author": "Kevstan",
+      "file": "src/assets/places/wapizagonke-lake/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Lake_Wapizagonke_in_La_Mauricie_National_Park_with_original_colour.JPG",
+      "title": "File:View of Lake Wapizagonke in La Mauricie National Park with original colour.JPG",
+      "width": 1280
+    }
+  ],
   "waterville-valley": [
     {
       "alt": "Clouds behind Green Peak at Waterville Valley.",
@@ -5351,6 +7472,7 @@
       "width": 1024
     }
   ],
+  "whaleback": [],
   "whistler-blackcomb": [
     {
       "alt": "October snow, Whistler Peak",
@@ -5442,6 +7564,7 @@
       "width": 1024
     }
   ],
+  "white-lake-nh": [],
   "whiteface": [
     {
       "alt": "Whiteface Lake Placid Ski Snowboard Resort",
@@ -5518,6 +7641,46 @@
       "width": 1000
     }
   ],
+  "whitefish-bike-park": [
+    {
+      "alt": "Swimming area at Whitefish Lake State Park, Montana, showing Big Mountain Ski Resort trails.",
+      "author": "John David Stutts",
+      "file": "src/assets/places/whitefish-bike-park/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitefish_Lake_State_Park_Montana.JPG",
+      "title": "File:Whitefish Lake State Park Montana.JPG",
+      "width": 1280
+    }
+  ],
+  "whitefish-lake-state-park": [
+    {
+      "alt": "Swimming area at Whitefish Lake State Park, Montana, showing Big Mountain Ski Resort trails.",
+      "author": "John David Stutts",
+      "file": "src/assets/places/whitefish-lake-state-park/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitefish_Lake_State_Park_Montana.JPG",
+      "title": "File:Whitefish Lake State Park Montana.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Whitefish Lake from State Beach looking north to Whitefish Mountain Resort in Autumn",
+      "author": "Schmiebel",
+      "file": "src/assets/places/whitefish-lake-state-park/2.jpg",
+      "height": 545,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitefish_Lake_from_State_Beach_to_Whitefish_Mountain_Resort_Autumn_Courtesy_of_Mike_Koopal.jpg",
+      "title": "File:Whitefish Lake from State Beach to Whitefish Mountain Resort Autumn Courtesy of Mike Koopal.jpg",
+      "width": 1280
+    }
+  ],
   "whitetail": [
     {
       "alt": "The mogul-filled Exhibition expert ski slope as seen from the ski lift at Whitetail Mountain Resort.",
@@ -5544,6 +7707,20 @@
       "width": 1280
     }
   ],
+  "whitewater": [
+    {
+      "alt": "Inland Temperate Spruce Rainforest near Whitewater Ski Resort in Nelson, British Columbia.",
+      "author": "Treefender K",
+      "file": "src/assets/places/whitewater/1.jpg",
+      "height": 960,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inland_Temperate_Spruce_Rainforest.jpg",
+      "title": "File:Inland Temperate Spruce Rainforest.jpg",
+      "width": 1280
+    }
+  ],
   "wildcat": [
     {
       "alt": "Wildcat Ski Resort",
@@ -5567,6 +7744,44 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wildcat_Mountain_-_Last_day_of_2010_-_panoramio.jpg",
       "title": "File:Wildcat Mountain - Last day of 2010 - panoramio.jpg",
+      "width": 1280
+    }
+  ],
+  "wilmington-lake-placid-trails": [
+    {
+      "alt": "High Falls of the Ausable river at High Falls Gorge.",
+      "author": "G. Edward Johnson",
+      "file": "src/assets/places/wilmington-lake-placid-trails/1.jpg",
+      "height": 853,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:High_Falls_waterfall_Wilmington_NY_2024-07-11_10-55-45.jpg",
+      "title": "File:High Falls waterfall Wilmington NY 2024-07-11 10-55-45.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Looking upstream on the Ausable river just above High Falls Gorge.",
+      "author": "G. Edward Johnson",
+      "file": "src/assets/places/wilmington-lake-placid-trails/2.jpg",
+      "height": 853,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Above_High_Falls_Gorge_on_the_Ausable_river_Wilmington_NY_2024-07-11_11-47-33_1.jpg",
+      "title": "File:Above High Falls Gorge on the Ausable river Wilmington NY 2024-07-11 11-47-33 1.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Looking downstream on the Ausable river just above High Falls Gorge.",
+      "author": "G. Edward Johnson",
+      "file": "src/assets/places/wilmington-lake-placid-trails/3.jpg",
+      "height": 853,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Below_High_Falls_Gorge_on_the_Ausable_river_Wilmington_NY_2024-07-11_11-14-44.jpg",
+      "title": "File:Below High Falls Gorge on the Ausable river Wilmington NY 2024-07-11 11-14-44.jpg",
       "width": 1280
     }
   ],

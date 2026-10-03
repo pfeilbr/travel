@@ -208,6 +208,18 @@ class OpenverseTest(unittest.TestCase):
         self.assertFalse(fi.mentions(p, ["stowe"]))
         self.assertTrue(fi.mentions(p, []))
 
+    def test_avoid_drops_same_name_places(self):
+        other = {**OV, "id": "def-456", "title": "Lone Peak trail near Fossil Creek"}
+        place = {"sources": [{"openverse": "Lone Peak"}], "avoid": ["fossil creek"], "min_width": 1000}
+        saved = (fi.openverse_search, fi.OPENVERSE_FIRST)
+        fi.openverse_search = lambda q, page_size=20: [fi.openverse_page(OV), fi.openverse_page(other)]
+        fi.OPENVERSE_FIRST = True
+        try:
+            _, ranked, _ = fi.gather(place)
+        finally:
+            fi.openverse_search, fi.OPENVERSE_FIRST = saved
+        self.assertEqual(ranked, ["Openverse:abc-123"])
+
     def test_is_wintery_reads_title_and_description_not_categories(self):
         self.assertTrue(fi.is_wintery(page(title="File:Skiers on Lone Peak.jpg", description="")))
         self.assertTrue(fi.is_wintery(page(title="File:x.jpg", description="Fresh snow on the summit")))

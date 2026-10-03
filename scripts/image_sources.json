@@ -1095,7 +1095,8 @@
    "include": [],
    "exclude": [
     "File:Stack of boots (3074940137).jpg",
-    "Openverse:28d9811b-099d-4153-9e69-c4ffd091a340"
+    "Openverse:28d9811b-099d-4153-9e69-c4ffd091a340",
+    "Openverse:e659f30b-0134-4536-96be-15ff90b572f1"
    ],
    "alt": {},
    "must": [
@@ -1260,13 +1261,18 @@
    "exclude": [
     "File:Seven Springs Resort viewed from the ski lodge.jpg",
     "File:Seven Springs PA lodge 2009.jpg",
-    "File:Seven Springs Winter 1.jpg"
+    "File:Seven Springs Winter 1.jpg",
+    "File:Maytag washing machines at the Seven Springs Mountain Resort Laundromat.jpg"
    ],
    "alt": {},
    "must": [
     "seven springs",
     "seven springs mountain resort",
     "champion"
+   ],
+   "avoid": [
+    "laundromat",
+    "washing machine"
    ]
   },
   "hidden-valley-pa": {
@@ -1673,13 +1679,18 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:051310b2-7d6e-4bfb-810f-c8ccfd2ef218"
+    "Openverse:051310b2-7d6e-4bfb-810f-c8ccfd2ef218",
+    "File:Grouse-Mt-forest-big-iron-thing-3656.jpg"
    ],
    "alt": {},
    "must": [
     "grouse",
     "grouse mountain",
     "north vancouver"
+   ],
+   "avoid": [
+    "engine",
+    "wreck"
    ]
   },
   "mt-seymour": {
@@ -1897,13 +1908,21 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:909a62e2-f4ec-4720-b6ba-82f50ce79da2"
+    "Openverse:909a62e2-f4ec-4720-b6ba-82f50ce79da2",
+    "Openverse:8f6c4d6f-3dd4-4553-bf65-4d2fcd1dd764",
+    "Openverse:cbfe8d8c-34f3-477f-b827-64bbe84b462b"
    ],
    "alt": {},
    "must": [
     "apex",
     "apex mountain resort",
     "penticton"
+   ],
+   "avoid": [
+    "chajnantor",
+    "canyons",
+    "telescope",
+    "chile"
    ]
   },
   "palisades-tahoe": {
@@ -2227,6 +2246,10 @@
    "must": [
     "diamond peak",
     "incline village"
+   ],
+   "avoid": [
+    "oregon",
+    "yoran"
    ]
   },
   "boreal": {
@@ -2348,13 +2371,19 @@
    "exclude": [
     "Openverse:0cc63471-40cf-4ffb-ae3e-e5c48f047ab0",
     "Openverse:290c83d8-3eda-4f50-b4b2-ab3b908aa565",
-    "Openverse:39654d3e-ac1c-4e36-8dab-79e8f31106d7"
+    "Openverse:39654d3e-ac1c-4e36-8dab-79e8f31106d7",
+    "Openverse:39c513ae-25e2-4102-8c71-99fed9d99659",
+    "Openverse:6b2b4753-c25a-4b66-ae0e-a2641176442c"
    ],
    "alt": {},
    "must": [
     "blue",
     "blue mountain resort",
     "palmerton"
+   ],
+   "avoid": [
+    "blue skies",
+    "blue sky"
    ]
   },
   "jack-frost": {
@@ -2421,12 +2450,18 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:20b9068a-8a7b-4116-8256-80d2fa04fdcf"
+    "Openverse:20b9068a-8a7b-4116-8256-80d2fa04fdcf",
+    "Openverse:06ecbc52-fbdf-4c0c-9c40-93b0a59178ec"
    ],
    "alt": {},
    "must": [
     "big boulder",
     "lake harmony"
+   ],
+   "avoid": [
+    "osby",
+    "sweden",
+    "näset"
    ]
   },
   "shawnee-mountain": {
@@ -2496,13 +2531,20 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:9376190c-9c9e-48c5-b33d-866f7a277f0c"
+    "Openverse:9376190c-9c9e-48c5-b33d-866f7a277f0c",
+    "Openverse:8cbcb416-8bad-46f7-8675-1f22346e4560"
    ],
    "alt": {},
    "must": [
     "elk",
     "elk mountain",
     "union dale"
+   ],
+   "avoid": [
+    "snow king",
+    "jackson",
+    "elk refuge",
+    "wyoming"
    ]
   },
   "montage-mountain": {
@@ -3246,7 +3288,8 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:4438d811-e87b-4b01-92c5-6cf14acabcdb"
+    "Openverse:4438d811-e87b-4b01-92c5-6cf14acabcdb",
+    "File:Snowbasin olympic stadium.jpg"
    ],
    "alt": {},
    "must": [
@@ -3393,13 +3436,19 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:6326052a-00a3-4cf5-90de-a489ce303600"
+    "Openverse:6326052a-00a3-4cf5-90de-a489ce303600",
+    "Openverse:63dc3fe2-013a-4336-a77b-e305529a43fb"
    ],
    "alt": {},
    "must": [
     "cherry peak",
     "cherry peak resort",
     "richmond"
+   ],
+   "avoid": [
+    "keller",
+    "san bernardino",
+    "snow peak"
    ]
   },
   "brian-head": {
@@ -3691,13 +3740,20 @@
    "include": [],
    "exclude": [
     "Openverse:0d9cc496-9f0b-4fff-a1c9-73f5b7b686b1",
-    "Openverse:79d057d5-2185-4b13-94b4-e0e72ce59518"
+    "Openverse:79d057d5-2185-4b13-94b4-e0e72ce59518",
+    "Openverse:7da25812-3982-46ca-8dfb-5922033cc68a",
+    "Openverse:68634c9e-2efd-45a6-a9da-a6d40353e093"
    ],
    "alt": {},
    "must": [
     "powderhorn",
     "powderhorn mountain resort",
     "mesa"
+   ],
+   "avoid": [
+    "big powderhorn",
+    "wilderness",
+    "michigan"
    ]
   },
   "silverton-mountain": {
@@ -4160,12 +4216,17 @@
    "include": [],
    "exclude": [
     "File:Brickellia grandiflora - tasselflower brickellbush - 52960607217.jpg",
-    "File:Brickellia grandiflora - tasselflower brickellbush - 52960607737.jpg"
+    "File:Brickellia grandiflora - tasselflower brickellbush - 52960607737.jpg",
+    "File:Brickellia grandiflora - tasselflower brickellbush - 52961203781.jpg",
+    "File:Brickellia grandiflora - tasselflower brickellbush - 52961204721.jpg"
    ],
    "alt": {},
    "must": [
     "bridger bowl",
     "bozeman"
+   ],
+   "avoid": [
+    "brickellia"
    ]
   },
   "red-lodge-mountain": {
@@ -4274,13 +4335,18 @@
    "include": [],
    "exclude": [
     "Openverse:3f700b80-7774-43bc-b395-80c25863f1a3",
-    "Openverse:a2808a59-0c66-4490-ab4a-8d2fa146b826"
+    "Openverse:a2808a59-0c66-4490-ab4a-8d2fa146b826",
+    "Openverse:b0fb717b-bccf-45cb-966b-c8400d8164f5"
    ],
    "alt": {},
    "must": [
     "discovery",
     "discovery ski area",
     "philipsburg"
+   ],
+   "avoid": [
+    "kiwi",
+    "accessories"
    ]
   },
   "lost-trail": {
@@ -4350,13 +4416,17 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:60451c4c-47af-42e8-9865-f0d275cb06a6"
+    "Openverse:60451c4c-47af-42e8-9865-f0d275cb06a6",
+    "Openverse:648234b0-0e46-4543-9170-5d483ebb23ad"
    ],
    "alt": {},
    "must": [
     "great divide",
     "great divide ski area",
     "marysville"
+   ],
+   "avoid": [
+    "mountain goat"
    ]
   },
   "showdown": {
@@ -4498,13 +4568,17 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:c5f56031-99d9-4299-b612-3123e19335ab"
+    "Openverse:c5f56031-99d9-4299-b612-3123e19335ab",
+    "Openverse:da692d05-2263-4225-a506-9fd56cc2f8b5"
    ],
    "alt": {},
    "must": [
     "snow ridge",
     "snow ridge ski resort",
     "turin"
+   ],
+   "avoid": [
+    "clear lake"
    ]
   },
   "song-mountain": {
@@ -4537,13 +4611,19 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:950aa641-a6dc-40a7-a45b-72a6b49026c6"
+    "Openverse:950aa641-a6dc-40a7-a45b-72a6b49026c6",
+    "Openverse:32cadd9f-da8e-47aa-b71e-c3901c1bc4f9"
    ],
    "alt": {},
    "must": [
     "song",
     "song mountain",
     "tully"
+   ],
+   "avoid": [
+    "concentrate",
+    "singer",
+    "concert"
    ]
   },
   "labrador-mountain": {
@@ -4576,13 +4656,18 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:78b23f8d-c411-4388-862d-a43bac62cf83"
+    "Openverse:78b23f8d-c411-4388-862d-a43bac62cf83",
+    "Openverse:1082fd9c-9673-4cc9-be61-a01801fa0136"
    ],
    "alt": {},
    "must": [
     "labrador",
     "labrador mountain",
     "truxton"
+   ],
+   "avoid": [
+    "burgeo",
+    "newfoundland"
    ]
   },
   "greek-peak": {
@@ -4797,12 +4882,17 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:04afa260-b37e-4e9b-b156-75279f400e3b"
+    "Openverse:04afa260-b37e-4e9b-b156-75279f400e3b",
+    "Openverse:297a661b-d343-4c0f-921f-dc1df1315c69"
    ],
    "alt": {},
    "must": [
     "kissing bridge",
     "glenwood"
+   ],
+   "avoid": [
+    "covered bridge",
+    "ontario"
    ]
   },
   "park-city": {
@@ -4835,12 +4925,17 @@
    "include": [],
    "exclude": [
     "Openverse:da112e85-549b-4ded-bbea-f8c1cc9d9d04",
-    "Openverse:09e4bcec-5a28-4e35-afbe-0586c01bce36"
+    "Openverse:09e4bcec-5a28-4e35-afbe-0586c01bce36",
+    "File:Ski Patrol Strikers at Park Avenue and Lowell Avenue.jpg"
    ],
    "alt": {},
    "must": [
     "park city",
     "park city mountain"
+   ],
+   "avoid": [
+    "picket",
+    "strike"
    ]
   },
   "deer-valley": {
@@ -5132,9 +5227,13 @@
    "exclude": [
     "File:ALL THE LIFTS AT ASPEN ARE CHAIRLIFTS. THIS ONE IS GOING UP 11,800 FEET ON ASPEN HIGHLANDS MOUNTAIN, HIGHEST SKI AREA... - NARA - 554248.jpg",
     "Openverse:43b83561-8be5-4518-9392-233e1b505f49",
-    "Openverse:71e57613-17fd-4e59-97d5-cc020cd73381"
+    "Openverse:71e57613-17fd-4e59-97d5-cc020cd73381",
+    "File:Aspen Highlands spring skiing.jpg"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "broadway"
+   ]
   },
   "buttermilk": {
    "winter": true,
@@ -5464,9 +5563,15 @@
    "exclude": [
     "Openverse:7c6584c8-4217-4138-a677-e1d531bcee60",
     "Openverse:0dfd83f6-43d6-4cbd-95e1-53bdbfd0c79d",
-    "Openverse:1684b1cb-496c-4144-8f42-b8539b7aafee"
+    "Openverse:1684b1cb-496c-4144-8f42-b8539b7aafee",
+    "Openverse:1e45ec4c-bf82-4657-8818-91e3896f87b3"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "rafting",
+    "thailand",
+    "phuket"
+   ]
   },
   "panorama": {
    "winter": true,
@@ -5612,9 +5717,13 @@
    "exclude": [
     "Openverse:a34ff260-c531-4c06-91f4-2d14b4b9c1a6",
     "Openverse:7cce2867-ef52-42c6-9aab-ac6613f6eb02",
-    "Openverse:b26feda1-e082-419c-8be1-7f95c9577861"
+    "Openverse:b26feda1-e082-419c-8be1-7f95c9577861",
+    "Openverse:2fa8506e-9309-4fd7-b405-9d2ce041be7d"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "gore range"
+   ]
   },
   "west-mountain": {
    "winter": true,
@@ -5690,9 +5799,15 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:3ad8ee9c-11a3-4246-8d4d-3f6aa2a12bfe"
+    "Openverse:3ad8ee9c-11a3-4246-8d4d-3f6aa2a12bfe",
+    "Openverse:364282b3-ba0a-40b8-a134-8f16cf93200b"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "texas",
+    "courthouse",
+    "titus county"
+   ]
   },
   "mccauley-mountain": {
    "winter": true,
@@ -5729,7 +5844,8 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:2f70b58a-961d-43a7-b60f-3b07ca6aa97d"
+    "Openverse:2f70b58a-961d-43a7-b60f-3b07ca6aa97d",
+    "File:Old Forge March 1, 2018 McCauley Mountain 2.jpg"
    ],
    "alt": {}
   },
@@ -5768,9 +5884,15 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:113989e6-9693-49ac-8545-352108c21297"
+    "Openverse:113989e6-9693-49ac-8545-352108c21297",
+    "Openverse:2772d54e-0b7a-4bdc-b0ad-8438422a182b"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "angel oak",
+    "charleston",
+    "south carolina"
+   ]
   },
   "hunter-mountain": {
    "winter": true,
@@ -6097,9 +6219,13 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:c2bbfdde-78d1-4cb4-a3d3-19c00be8aa57"
+    "Openverse:c2bbfdde-78d1-4cb4-a3d3-19c00be8aa57",
+    "File:Snow Valley Mountain (53364175057).jpg"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "centennial"
+   ]
   },
   "bear-valley": {
    "winter": true,
@@ -6596,9 +6722,17 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:b0a3b4c2-4092-413e-9862-b9afd6ac66c4"
+    "Openverse:b0a3b4c2-4092-413e-9862-b9afd6ac66c4",
+    "File:Evasion Mont Blanc, Megeve (P1070998).jpg"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "megève",
+    "megeve",
+    "evasion",
+    "france",
+    "chamonix"
+   ]
   },
   "val-saint-come": {
    "winter": true,
@@ -6779,8 +6913,13 @@
     "park"
    ],
    "include": [],
-   "exclude": [],
-   "alt": {}
+   "exclude": [
+    "File:Northeast at graffiti on Parley's Trail, Salt Lake City, Utah, Oct 16.jpg"
+   ],
+   "alt": {},
+   "avoid": [
+    "graffiti"
+   ]
   },
   "golden-peak-pickleball": {
    "min_width": 1000,
@@ -6935,8 +7074,13 @@
     "park"
    ],
    "include": [],
-   "exclude": [],
-   "alt": {}
+   "exclude": [
+    "File:Elymus albicans (21492765898).jpg"
+   ],
+   "alt": {},
+   "avoid": [
+    "elymus"
+   ]
   },
   "dancu-community-courts": {
    "min_width": 1000,
@@ -7889,8 +8033,15 @@
     "park"
    ],
    "include": [],
-   "exclude": [],
-   "alt": {}
+   "exclude": [
+    "File:Capilano Mall Food Court 2026.JPG",
+    "File:Capilano Mall 2026.JPG",
+    "File:Capilano Mall Atrium 2026.JPG"
+   ],
+   "alt": {},
+   "avoid": [
+    "mall"
+   ]
   },
   "parkinson-pickleball-courts": {
    "min_width": 1000,
@@ -8561,9 +8712,20 @@
    "include": [],
    "exclude": [
     "Openverse:1d18c5ab-dcd6-4aa7-ab9f-57f1c49699ab",
-    "Openverse:3e1413ce-bf9f-461a-a98a-da712e04d71a"
+    "Openverse:3e1413ce-bf9f-461a-a98a-da712e04d71a",
+    "File:Burns Lake bike trail wooden feature.jpg",
+    "File:Dylan at Ranch.jpg",
+    "File:Whistler Mountain (7650991204).jpg"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "burns lake",
+    "kamloops",
+    "whistler",
+    "hawaii",
+    "oahu",
+    "surf"
+   ]
   },
   "sun-peaks-bike-park": {
    "min_width": 1000,
@@ -8758,8 +8920,14 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
-   "alt": {}
+   "exclude": [
+    "File:Rue de la Crête Shefford 2024.jpg"
+   ],
+   "alt": {},
+   "avoid": [
+    "crête street",
+    "shefford"
+   ]
   },
   "mont-sainte-anne-bike": {
    "min_width": 1000,
@@ -8792,8 +8960,14 @@
     "singletrack"
    ],
    "include": [],
-   "exclude": [],
-   "alt": {}
+   "exclude": [
+    "File:Boulevard Sainte-Anne, Beaupre 01.jpg",
+    "File:Boulevard Sainte-Anne, Beaupre 02.jpg"
+   ],
+   "alt": {},
+   "avoid": [
+    "boulevard"
+   ]
   },
   "sentiers-du-moulin": {
    "min_width": 1000,
@@ -9263,7 +9437,9 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:fcd3c2f9-d1fe-4e1a-aa92-661f8a7f01c9"
+    "Openverse:fcd3c2f9-d1fe-4e1a-aa92-661f8a7f01c9",
+    "File:20240914 Canon R5 Altyn Peak-8883.jpg",
+    "File:20240914 Canon R5 Altyn Peak-8884.jpg"
    ],
    "alt": {}
   },
@@ -9763,9 +9939,17 @@
    "include": [],
    "exclude": [
     "Openverse:07ded7bf-5a9d-408a-bcca-b5a73b4eb829",
-    "Openverse:2d87b4f1-8e2b-466d-95de-a25e6b41077a"
+    "Openverse:2d87b4f1-8e2b-466d-95de-a25e6b41077a",
+    "File:River Mouth of Rouge River.jpg"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "ontario",
+    "urban park",
+    "oregon",
+    "gold beach",
+    "toronto"
+   ]
   },
   "gifford-woods": {
    "min_width": 1000,
@@ -9964,7 +10148,9 @@
     "tent"
    ],
    "include": [],
-   "exclude": [],
+   "exclude": [
+    "File:Picnic basket (Unsplash).jpg"
+   ],
    "alt": {}
   },
   "fish-creek-pond": {
@@ -10416,9 +10602,16 @@
    "exclude": [
     "Openverse:0624e6d3-c303-4d65-bacc-428cc1462ab3",
     "Openverse:22ed9743-e54e-4c54-900e-0c661ab5067b",
-    "Openverse:291e6b3a-e27f-41c2-b291-095d4da02f05"
+    "Openverse:291e6b3a-e27f-41c2-b291-095d4da02f05",
+    "Openverse:2a35add3-e20f-4174-8bb8-20c377cad3c2",
+    "Openverse:2b2e8701-ac1b-4c4e-9120-ebde319ef30a",
+    "Openverse:40ce3855-4195-4aef-b8a5-6ef61e9c164d"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "fossil creek",
+    "arizona"
+   ]
   },
   "south-lake-tahoe-trails": {
    "min_width": 1000,
@@ -11045,9 +11238,18 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:50b7fb8b-4071-4b1d-87bd-98e91f2f2376"
+    "Openverse:50b7fb8b-4071-4b1d-87bd-98e91f2f2376",
+    "Openverse:1235a921-fb6e-4bdd-819b-3a6cffd75571",
+    "Openverse:6306d1e5-631b-44f0-a7c8-163ec07440ff",
+    "Openverse:80037d97-9df8-4c84-846a-80f573fe9d1a"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "cannock",
+    "swinnerton",
+    "england",
+    "staffordshire"
+   ]
   },
   "killington-bike-park": {
    "min_width": 1000,
@@ -11114,9 +11316,17 @@
    "include": [],
    "exclude": [
     "Openverse:5dcfdbd7-a3e1-46dc-96e3-0316c831eff9",
-    "Openverse:5eeaf13f-f3ad-4ee0-8c8f-58fa0a203131"
+    "Openverse:5eeaf13f-f3ad-4ee0-8c8f-58fa0a203131",
+    "Openverse:76a9021a-ee55-4c94-b19c-dc672bf8e223",
+    "Openverse:7a0ac506-5843-4bf6-aaa1-35d70a067245"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "baldface",
+    "crystal ball",
+    "england",
+    "landscape garden"
+   ]
   },
   "highland-mountain-bike-park": {
    "min_width": 1000,
@@ -11148,9 +11358,14 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:7c17a383-bfc3-44ae-b79f-3b980cefdd69"
+    "Openverse:7c17a383-bfc3-44ae-b79f-3b980cefdd69",
+    "Openverse:8a0666f1-1178-41d2-8c0e-58dd6f1873cb"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "cape breton",
+    "nova scotia"
+   ]
   },
   "loon-bike-park": {
    "min_width": 1000,
@@ -11502,9 +11717,15 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:f8d052d2-3d78-425b-a05c-d1fec7217013"
+    "Openverse:f8d052d2-3d78-425b-a05c-d1fec7217013",
+    "File:Yosemite - Upper Pines Campground - panoramio - Andrew Burnham.jpg",
+    "Openverse:7f1d1dd1-d41f-4475-a62e-7ce42414d582"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "mammoth",
+    "crystal crag"
+   ]
   },
   "jumbo-rocks": {
    "min_width": 1000,
@@ -11609,7 +11830,10 @@
     "Openverse:1aad6527-2e19-47e3-a416-2b5543892524",
     "Openverse:1254d3e4-3462-4d2b-9d2d-8080a0f0d390"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "casper"
+   ]
   },
   "twin-lakes-mammoth": {
    "min_width": 1000,
@@ -12065,7 +12289,10 @@
    "exclude": [
     "Openverse:5eacf35b-dda9-4e83-91b8-697001becb32"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "inyo"
+   ]
   },
   "lake-champlain-paddlers-trail": {
    "min_width": 1000,
@@ -12099,8 +12326,16 @@
     "river"
    ],
    "include": [],
-   "exclude": [],
-   "alt": {}
+   "exclude": [
+    "Openverse:07ead462-abe5-46ac-8953-488a2b637c79",
+    "Openverse:3211b946-bbe1-4fb1-8002-179c29cefb8e",
+    "Openverse:49ef0dc9-fedf-4fa9-84a3-5e9f93d6105a"
+   ],
+   "alt": {},
+   "avoid": [
+    "indian river",
+    "delaware"
+   ]
   },
   "green-river-reservoir": {
    "min_width": 1000,
@@ -12166,7 +12401,8 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:5147f95b-901a-4435-bbf1-0c5346e981d5"
+    "Openverse:5147f95b-901a-4435-bbf1-0c5346e981d5",
+    "File:Lake Willoughby October 2021 001.jpg"
    ],
    "alt": {}
   },
@@ -12269,9 +12505,16 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:66c912b7-984c-41e7-8d07-5df7d6acab33"
+    "Openverse:66c912b7-984c-41e7-8d07-5df7d6acab33",
+    "File:Stone breakwater S of Saco River Maine.jpg",
+    "File:Garter Snake Thamnophis in Saco River White Mountains North Conway New Hampshire.jpg"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "breakwater",
+    "garter",
+    "snake"
+   ]
   },
   "middle-delaware-river": {
    "min_width": 1000,
@@ -12645,9 +12888,16 @@
    ],
    "include": [],
    "exclude": [
-    "Openverse:764e9784-0db6-4df2-a1bf-4a3f484b16da"
+    "Openverse:764e9784-0db6-4df2-a1bf-4a3f484b16da",
+    "File:Winter Park Town Hall.JPG",
+    "File:Winter Park, Colorado - U.S. Route 40.jpg"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "town hall",
+    "route 40",
+    "kettle valley"
+   ]
   },
   "snowmass-bike-park": {
    "min_width": 1000,
@@ -12712,7 +12962,8 @@
    "include": [],
    "exclude": [
     "Openverse:13ca18e0-f6a3-4fc5-bf01-271bbd9605a9",
-    "Openverse:1db25faa-14d3-4fc2-9463-bb925113a75c"
+    "Openverse:1db25faa-14d3-4fc2-9463-bb925113a75c",
+    "Openverse:56ae5a19-cafc-4489-b1a1-e71d422b5ef6"
    ],
    "alt": {}
   },
@@ -12815,9 +13066,15 @@
    "include": [],
    "exclude": [
     "Openverse:02752e94-175d-4bf6-b0ea-c52a899fed82",
-    "Openverse:6457d0c8-4a50-4fa6-9ffa-d037f2cba1a6"
+    "Openverse:6457d0c8-4a50-4fa6-9ffa-d037f2cba1a6",
+    "File:USFS Photo Education ranger offering a table talk on Big Mountain (50748962606).jpg"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "ranger",
+    "table talk",
+    "superior"
+   ]
   },
   "bozeman-trails": {
    "min_width": 1000,
@@ -12852,9 +13109,13 @@
    "include": [],
    "exclude": [
     "Openverse:f310deca-649b-4511-af9a-ea5449ab840b",
-    "Openverse:0e926973-fa69-4790-a358-e6519bf56629"
+    "Openverse:0e926973-fa69-4790-a358-e6519bf56629",
+    "Openverse:33d9de5a-375c-438a-9090-f41f113e4891"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "church"
+   ]
   },
   "labyrinth-canyon": {
    "min_width": 1000,
@@ -13179,7 +13440,10 @@
     "Openverse:80424e05-f93a-458f-80c8-403081da6153",
     "Openverse:a8c5c16a-6727-49a6-bbaa-50ff3079b966"
    ],
-   "alt": {}
+   "alt": {},
+   "avoid": [
+    "tally lake"
+   ]
   },
   "lake-mcdonald": {
    "min_width": 1000,

@@ -583,7 +583,11 @@ def gather(place: dict) -> tuple[dict[str, dict], list[str], dict[str, str | Non
         _openverse_pages(place, fallback, must, pages, origin, order, skip_wikimedia=False)
 
     prefer = place.get("prefer", [])
-    cands = [t for t in order if t in pages and is_candidate(pages[t], min_width=min_width)]
+    # "avoid": words that mark another place with the same name ("Fossil Creek" for the Tahoe Flume Trail).
+    avoid = place.get("avoid", [])
+    pinned_titles = {i["title"] for i in include}
+    cands = [t for t in order if t in pages and is_candidate(pages[t], min_width=min_width)
+             and not (avoid and t not in pinned_titles and mentions(pages[t], avoid))]
     # Primary-place photos rank above nearby fallbacks, winter places put snow photos first;
     # ties broken by title for determinism.
     ranked = sorted(cands, key=lambda t: (origin.get(t) is not None, winter and not is_wintery(pages[t]),
