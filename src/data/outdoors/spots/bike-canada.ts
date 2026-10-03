@@ -452,7 +452,6 @@ const spots: Spot[] = [
     ],
     events: [],
     getting: { airport: 'Spokane International', code: 'GEG', driveMin: 150, from: [{ city: 'Spokane', hours: 2.5 }, { city: 'Vancouver', hours: 7 }] },
-    google: { rating: 4.7, url: cid('4572312381559422687'), asOf: ASOF },
     resortId: 'red-mountain',
   },
   // ---------------------------------------------------------------- Québec

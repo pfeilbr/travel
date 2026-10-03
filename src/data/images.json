@@ -37,6 +37,44 @@
       "width": 1280
     }
   ],
+  "antelope-canyon-kayak": [
+    {
+      "alt": "Paved road surrounding by rocky desert that ends near waters edge.",
+      "author": "NPS",
+      "file": "src/assets/places/antelope-canyon-kayak/1.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antelope_Point_Public_Launch,_April_16,_2023_(c04ffbd7-cf70-400b-b892-fa0a4bcb054c).JPG",
+      "title": "File:Antelope Point Public Launch, April 16, 2023 (c04ffbd7-cf70-400b-b892-fa0a4bcb054c).JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Paved road surrounding by rocky desert that ends near waters edge.",
+      "author": "NPS",
+      "file": "src/assets/places/antelope-canyon-kayak/2.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antelope_Point_Public_Launch,_May_12,_2023_(af2ad554-6950-43e1-a65e-cc2752f03bb5).JPG",
+      "title": "File:Antelope Point Public Launch, May 12, 2023 (af2ad554-6950-43e1-a65e-cc2752f03bb5).JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Trucks unloading kayaks on a barricaded launch ramp as visitors descend a rocky shoreline.",
+      "author": "NPS",
+      "file": "src/assets/places/antelope-canyon-kayak/3.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antelope_Point_Public_Launch_June_2021_(3d40e45c-27a0-4ad9-b38f-0f4aee83032b).JPG",
+      "title": "File:Antelope Point Public Launch June 2021 (3d40e45c-27a0-4ad9-b38f-0f4aee83032b).JPG",
+      "width": 1280
+    }
+  ],
   "apex-mountain": [
     {
       "alt": "APEX and snowy Chajnantor",
@@ -282,6 +320,20 @@
       "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=9583084",
       "title": "Openverse:8f973703-d461-4fdd-8afa-92d4e4bf4624",
       "width": 960
+    }
+  ],
+  "black-canyon-water-trail": [
+    {
+      "alt": "Black Canyon Wilderness Area",
+      "author": "Lake Mead National Recreation Area",
+      "file": "src/assets/places/black-canyon-water-trail/1.jpg",
+      "height": 680,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/30839029@N05/15620760406",
+      "title": "Openverse:c85a6590-d21d-4185-94fb-eaf50b2f6d17",
+      "width": 1024
     }
   ],
   "black-mountain-nh": [
@@ -2718,6 +2770,32 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_03_02_-_Ski_Roundtop_1.JPG",
       "title": "File:2008 03 02 - Ski Roundtop 1.JPG",
+      "width": 1280
+    }
+  ],
+  "saguaro-lake": [
+    {
+      "alt": "Recreational boating on Saguaro Lake, Salt River, near Phoenix, Arizona",
+      "author": "Nicholas Hartmann",
+      "file": "src/assets/places/saguaro-lake/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saguaro_Lake_boating_1.jpg",
+      "title": "File:Saguaro Lake boating 1.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Recreational boating on Saguaro Lake, Salt River, near Phoenix, Arizona",
+      "author": "Nicholas Hartmann",
+      "file": "src/assets/places/saguaro-lake/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saguaro_Lake_boating_3.jpg",
+      "title": "File:Saguaro Lake boating 3.jpg",
       "width": 1280
     }
   ],

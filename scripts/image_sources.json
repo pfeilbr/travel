@@ -8328,6 +8328,940 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "whistler-mountain-bike-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "whistler",
+    "crankworx",
+    "whistler mountain bike park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mountain_biking_in_British_Columbia",
+     "depth": 0
+    },
+    {
+     "openverse": "Whistler Mountain Bike Park mountain biking",
+     "must": [
+      "whistler",
+      "crankworx",
+      "whistler mountain bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "whistler-valley-trails": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "whistler",
+    "lost lake",
+    "whistler valley trails"
+   ],
+   "sources": [
+    {
+     "search": "Lost Lake Whistler",
+     "limit": 25
+    },
+    {
+     "openverse": "Whistler valley trails mountain biking",
+     "must": [
+      "whistler",
+      "lost lake",
+      "whistler valley trails"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "squamish": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "squamish"
+   ],
+   "sources": [
+    {
+     "category": "Category:Squamish,_British_Columbia",
+     "depth": 0
+    },
+    {
+     "openverse": "Squamish mountain biking",
+     "must": [
+      "squamish"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "north-shore": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "seymour",
+    "fromme",
+    "north shore",
+    "north shore (fromme, seymour, cypress)"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mountain_biking_in_British_Columbia",
+     "depth": 0
+    },
+    {
+     "openverse": "North Shore (Fromme, Seymour, Cypress) mountain biking",
+     "must": [
+      "seymour",
+      "fromme",
+      "north shore",
+      "north shore (fromme, seymour, cypress)"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "sun-peaks-bike-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "sun peaks",
+    "sun peaks bike park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Sun_Peaks_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Sun Peaks Bike Park mountain biking",
+     "must": [
+      "sun peaks",
+      "sun peaks bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "silverstar-bike-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "silver star",
+    "silverstar",
+    "silverstar bike park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Silver_Star_Mountain_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "SilverStar Bike Park mountain biking",
+     "must": [
+      "silver star",
+      "silverstar",
+      "silverstar bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "kicking-horse-bike-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "kicking horse",
+    "kicking horse bike park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Kicking_Horse_Mountain_Resort",
+     "depth": 0
+    },
+    {
+     "openverse": "Kicking Horse Bike Park mountain biking",
+     "must": [
+      "kicking horse",
+      "kicking horse bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "fernie-trails": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "fernie"
+   ],
+   "sources": [
+    {
+     "category": "Category:Fernie,_British_Columbia",
+     "depth": 0
+    },
+    {
+     "openverse": "Fernie mountain biking",
+     "must": [
+      "fernie"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "rossland-trails": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "rossland",
+    "seven summits",
+    "rossland and the seven summits"
+   ],
+   "sources": [
+    {
+     "category": "Category:Rossland,_British_Columbia",
+     "depth": 0
+    },
+    {
+     "openverse": "Rossland and the Seven Summits mountain biking",
+     "must": [
+      "rossland",
+      "seven summits",
+      "rossland and the seven summits"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bromont-bike-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "bromont",
+    "brome",
+    "bromont bike park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mont_Brome",
+     "depth": 0
+    },
+    {
+     "openverse": "Bromont Bike Park mountain biking",
+     "must": [
+      "bromont",
+      "brome",
+      "bromont bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mont-sainte-anne-bike": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "sainte-anne",
+    "sainte anne",
+    "mont-sainte-anne"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mont_Sainte-Anne",
+     "depth": 0
+    },
+    {
+     "openverse": "Mont-Sainte-Anne mountain biking",
+     "must": [
+      "sainte-anne",
+      "sainte anne",
+      "mont-sainte-anne"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "sentiers-du-moulin": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "moulin",
+    "lac-beauport",
+    "beauport",
+    "sentiers du moulin"
+   ],
+   "sources": [
+    {
+     "category": "Category:Lac-Beauport",
+     "depth": 0
+    },
+    {
+     "openverse": "Sentiers du Moulin mountain biking",
+     "must": [
+      "moulin",
+      "lac-beauport",
+      "beauport",
+      "sentiers du moulin"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "vallee-bras-du-nord": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "bras-du-nord",
+    "bras du nord",
+    "vallée bras-du-nord"
+   ],
+   "sources": [
+    {
+     "search": "Vallée Bras-du-Nord",
+     "limit": 25
+    },
+    {
+     "openverse": "Vallée Bras-du-Nord mountain biking",
+     "must": [
+      "bras-du-nord",
+      "bras du nord",
+      "vallée bras-du-nord"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "sutton-trails": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "sutton",
+    "sutton trails (plein air sutton)"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mont_Sutton",
+     "depth": 0
+    },
+    {
+     "openverse": "Sutton trails (Plein air Sutton) mountain biking",
+     "must": [
+      "sutton",
+      "sutton trails (plein air sutton)"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "arches-devils-garden": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "devils garden",
+    "campground",
+    "arches",
+    "devils garden campground, arches national park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Devils Garden Campground",
+     "depth": 0
+    },
+    {
+     "openverse": "Devils Garden Campground, Arches National Park camping",
+     "must": [
+      "devils garden",
+      "campground",
+      "arches",
+      "devils garden campground, arches national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "zion-watchman": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "watchman",
+    "zion",
+    "watchman campground, zion national park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Watchman Campground",
+     "depth": 0
+    },
+    {
+     "openverse": "Watchman Campground, Zion National Park camping",
+     "must": [
+      "watchman",
+      "zion",
+      "watchman campground, zion national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bryce-north-campground": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "bryce",
+    "north campground, bryce canyon national park"
+   ],
+   "sources": [
+    {
+     "search": "North Campground Bryce Canyon",
+     "limit": 25
+    },
+    {
+     "openverse": "North Campground, Bryce Canyon National Park camping",
+     "must": [
+      "bryce",
+      "north campground, bryce canyon national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "capitol-reef-fruita": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "fruita",
+    "capitol reef",
+    "fruita campground, capitol reef national park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Fruita, Utah",
+     "depth": 0
+    },
+    {
+     "openverse": "Fruita Campground, Capitol Reef National Park camping",
+     "must": [
+      "fruita",
+      "capitol reef",
+      "fruita campground, capitol reef national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "dead-horse-point": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "dead horse",
+    "dead horse point state park campgrounds and yurts"
+   ],
+   "sources": [
+    {
+     "category": "Category:Dead Horse Point State Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Dead Horse Point State Park campgrounds and yurts camping",
+     "must": [
+      "dead horse",
+      "dead horse point state park campgrounds and yurts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "goblin-valley": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "goblin",
+    "goblin valley state park campground and yurts"
+   ],
+   "sources": [
+    {
+     "category": "Category:Goblin Valley State Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Goblin Valley State Park campground and yurts camping",
+     "must": [
+      "goblin",
+      "goblin valley state park campground and yurts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "moraine-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "moraine",
+    "moraine park campground, rocky mountain national park"
+   ],
+   "sources": [
+    {
+     "search": "Moraine Park Rocky Mountain National Park",
+     "limit": 25
+    },
+    {
+     "openverse": "Moraine Park Campground, Rocky Mountain National Park camping",
+     "must": [
+      "moraine",
+      "moraine park campground, rocky mountain national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "pinon-flats": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "pinon",
+    "piñon",
+    "sand dunes",
+    "piñon flats campground, great sand dunes national park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Piñon Flats Campground",
+     "depth": 0
+    },
+    {
+     "openverse": "Piñon Flats Campground, Great Sand Dunes National Park camping",
+     "must": [
+      "pinon",
+      "piñon",
+      "sand dunes",
+      "piñon flats campground, great sand dunes national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "maroon-bells-campgrounds": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "maroon",
+    "maroon bells campgrounds (silver bar, silver bell, silver queen)"
+   ],
+   "sources": [
+    {
+     "category": "Category:Maroon Bells",
+     "depth": 0
+    },
+    {
+     "openverse": "Maroon Bells campgrounds (Silver Bar, Silver Bell, Silver Queen) camping",
+     "must": [
+      "maroon",
+      "maroon bells campgrounds (silver bar, silver bell, silver queen)"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "morefield-mesa-verde": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "morefield",
+    "mesa verde",
+    "morefield campground, mesa verde national park"
+   ],
+   "sources": [
+    {
+     "search": "Morefield Campground Mesa Verde",
+     "limit": 25
+    },
+    {
+     "openverse": "Morefield Campground, Mesa Verde National Park camping",
+     "must": [
+      "morefield",
+      "mesa verde",
+      "morefield campground, mesa verde national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "many-glacier-campground": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "swiftcurrent",
+    "many glacier",
+    "many glacier campground, glacier national park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Swiftcurrent Lake",
+     "depth": 0
+    },
+    {
+     "openverse": "Many Glacier Campground, Glacier National Park camping",
+     "must": [
+      "swiftcurrent",
+      "many glacier",
+      "many glacier campground, glacier national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "apgar-campground": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "apgar",
+    "mcdonald",
+    "apgar campground, glacier national park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Apgar Campground",
+     "depth": 0
+    },
+    {
+     "openverse": "Apgar Campground, Glacier National Park camping",
+     "must": [
+      "apgar",
+      "mcdonald",
+      "apgar campground, glacier national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "hyalite-hood-creek": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "hood creek",
+    "hyalite",
+    "hood creek campground, hyalite canyon"
+   ],
+   "sources": [
+    {
+     "category": "Category:Hood Creek Campground",
+     "depth": 0
+    },
+    {
+     "openverse": "Hood Creek Campground, Hyalite Canyon camping",
+     "must": [
+      "hood creek",
+      "hyalite",
+      "hood creek campground, hyalite canyon"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "whitefish-lake-state-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "whitefish",
+    "whitefish lake state park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Whitefish Lake (Montana)",
+     "depth": 0
+    },
+    {
+     "openverse": "Whitefish Lake State Park camping",
+     "must": [
+      "whitefish",
+      "whitefish lake state park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }

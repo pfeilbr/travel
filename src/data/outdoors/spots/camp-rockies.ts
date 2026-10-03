@@ -443,7 +443,7 @@ const spots: Spot[] = [
     size: 'mid',
     tagline: 'Creekside sites on the road to the Maroon Bells',
     summary:
-      'Three small Forest Service campgrounds line Maroon Creek Road about five miles from Aspen at 8,460 feet, the only places to camp in the Maroon Bells Scenic Area. A campsite reservation lets you drive to Maroon Lake without the shuttle or parking reservation that day visitors need. With 23 sites, a five-day stay limit and no water in 2026, they suit tent campers and small rigs who plan ahead.',
+      'Three small Forest Service campgrounds line Maroon Creek Road about five miles from Aspen at 8,460 feet, the only campgrounds in the Maroon Bells Scenic Area. A campsite reservation lets you drive to Maroon Lake without the shuttle or parking reservation that day visitors need. With 23 sites, a five-day stay limit and no water in 2026, they suit tent campers and small rigs who plan ahead.',
     url: 'https://www.fs.usda.gov/r02/whiteriver/recreation/maroon-bells-scenic-area',
     bookingUrl: 'https://www.recreation.gov/camping/campgrounds/231882',
     conditionsUrl: 'https://www.visitmaroonbells.com/',
@@ -500,7 +500,7 @@ const spots: Spot[] = [
     size: 'mid',
     tagline: 'Big, easygoing base for the cliff dwellings',
     summary:
-      'Morefield fills a grassy canyon of Gambel oak four miles inside Mesa Verde, and with 267 sites you can usually find a spot without a reservation. Run by the park concessioner, it has comforts most park campgrounds lack: showers, laundry, a camp store, Wi-Fi and a pancake breakfast in summer. Use it as a base for ranger-led cliff dwelling tours and the Mesa Top Loop; deer and wild turkeys wander through camp.',
+      'Morefield fills a grassy canyon of Gambel oak four miles inside Mesa Verde, and with 267 sites, reservations are optional except for the 15 full-hookup sites. Run by the park concessioner, it has comforts most park campgrounds lack: showers, laundry, a camp store, Wi-Fi and a pancake breakfast in summer. Use it as a base for ranger-led cliff dwelling tours and the Mesa Top Loop; deer and wild turkeys wander through camp.',
     url: 'https://www.visitmesaverde.com/stay/morefield-campground',
     bookingUrl: 'https://reservations.ahlsmsworld.com/MesaVerde/Plan-Your-Trip/Accommodations/Morefield-Campground',
     mapUrl: 'https://www.nps.gov/meve/planyourvisit/maps.htm',
