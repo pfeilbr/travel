@@ -111,3 +111,10 @@ Look up only. Never book, sign in, or enter payment.
 Never commit booking/confirmation numbers, passport/ID details, loyalty numbers, phone numbers of private
 people, home addresses, or secrets. Supabase keys: only the public anon/publishable key ever reaches the browser
 (derived in CI); the access token, DB password and OAuth secrets live only in GitHub Actions secrets.
+
+## Shared Supabase platform
+
+This app's Supabase project is the shared **app-platform** project (`pfeilbr/app-platform`, `app-platform status`).
+Travel's tables live in `public` (it came first); other apps use their own schemas. Never patch auth settings
+(providers, site URL, redirect allow-list) from this repo: use `app-platform add-app`. `scripts/supabase_admin.py
+auth-config` would overwrite the shared allow-list, so don't run it.
