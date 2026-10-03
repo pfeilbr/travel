@@ -37,6 +37,98 @@
       "width": 1280
     }
   ],
+  "apex-mountain": [
+    {
+      "alt": "APEX and snowy Chajnantor",
+      "author": "Carlos A. Durán/ESO",
+      "file": "src/assets/places/apex-mountain/1.jpg",
+      "height": 639,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=58813720",
+      "title": "Openverse:8f6c4d6f-3dd4-4553-bf65-4d2fcd1dd764",
+      "width": 960
+    },
+    {
+      "alt": "APEX and snowy Chajnantor",
+      "author": "European Southern Observatory",
+      "file": "src/assets/places/apex-mountain/2.jpg",
+      "height": 682,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/51207680@N04/34612518785",
+      "title": "Openverse:909a62e2-f4ec-4720-b6ba-82f50ce79da2",
+      "width": 1024
+    }
+  ],
+  "arizona-snowbowl": [
+    {
+      "alt": "On December 10, 2016, the Arizona Snowbowl Ski Resort opened the new Grand Canyon Express ski lift.",
+      "author": "Coconino National Forest",
+      "file": "src/assets/places/arizona-snowbowl/1.jpg",
+      "height": 853,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arizona_Snowbowl_Grand_Canyon_Express_Ski_Lift_Opening_Celebration_(30763680014).jpg",
+      "title": "File:Arizona Snowbowl Grand Canyon Express Ski Lift Opening Celebration (30763680014).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "On December 10, 2016, the Arizona Snowbowl Ski Resort opened the new Grand Canyon Express ski lift.",
+      "author": "Coconino National Forest",
+      "file": "src/assets/places/arizona-snowbowl/2.jpg",
+      "height": 853,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arizona_Snowbowl_Grand_Canyon_Express_Ski_Lift_Opening_Celebration_(30763698404).jpg",
+      "title": "File:Arizona Snowbowl Grand Canyon Express Ski Lift Opening Celebration (30763698404).jpg",
+      "width": 1280
+    }
+  ],
+  "attitash": [
+    {
+      "alt": "Attitash",
+      "author": "Mt. Washington Valley Chamber of Commerce",
+      "file": "src/assets/places/attitash/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/45579262@N02/5494212725",
+      "title": "Openverse:d040850b-ee33-4d7d-b3ac-b13c5bc1e002",
+      "width": 1024
+    },
+    {
+      "alt": "Attitash, March 20, 2013",
+      "author": "Mt. Washington Valley Chamber of Commerce",
+      "file": "src/assets/places/attitash/2.jpg",
+      "height": 629,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/45579262@N02/8574635141",
+      "title": "Openverse:d78f0c84-e7c1-4e72-9dfa-48349eef0c18",
+      "width": 1024
+    }
+  ],
+  "bear-creek": [
+    {
+      "alt": "Bear Creek Mountain Resort Ski Lodge Bear Creek Village Near Macungie, PA",
+      "author": "Writerchic99 ( talk ) ( Uploads )",
+      "file": "src/assets/places/bear-creek/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bear-creek-lodge.JPG",
+      "title": "File:Bear-creek-lodge.JPG",
+      "width": 1280
+    }
+  ],
   "beaver-creek": [
     {
       "alt": "500px provided description: Beaver Creek, Colorado.",
@@ -220,6 +312,32 @@
       "width": 1280
     }
   ],
+  "blue-mountain-pa": [
+    {
+      "alt": "Nothing But Blue Skies Do I See",
+      "author": "katerha",
+      "file": "src/assets/places/blue-mountain-pa/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/8489692@N03/5697050218",
+      "title": "Openverse:290c83d8-3eda-4f50-b4b2-ab3b908aa565",
+      "width": 1024
+    },
+    {
+      "alt": "Blue Skies of Scottsdale",
+      "author": "Dru Bloomfield - At Home in Scottsdale",
+      "file": "src/assets/places/blue-mountain-pa/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/14544437@N07/3247600618",
+      "title": "Openverse:39654d3e-ac1c-4e36-8dab-79e8f31106d7",
+      "width": 1024
+    }
+  ],
   "bolton-valley": [
     {
       "alt": "The Bolton Valley Ski Resort Lodge.",
@@ -298,6 +416,70 @@
       "width": 1280
     }
   ],
+  "bretton-woods": [
+    {
+      "alt": "Bretton Woods Ski Lift",
+      "author": "Hmarmo",
+      "file": "src/assets/places/bretton-woods/1.jpg",
+      "height": 720,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=47899506",
+      "title": "Openverse:8bb6fb3b-27cf-49fe-8da3-a2eb7c0bec33",
+      "width": 960
+    },
+    {
+      "alt": "'Bretton Woods' ski resort",
+      "author": "alans1948",
+      "file": "src/assets/places/bretton-woods/2.jpg",
+      "height": 684,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/88823436@N00/8284528551",
+      "title": "Openverse:295093c9-9c79-45e9-a792-3d7ac0308bb9",
+      "width": 1024
+    },
+    {
+      "alt": "Top of the Bethlehem Express High Speed Quad at Bretton Woods Resort, NH.",
+      "author": "Storylanding",
+      "file": "src/assets/places/bretton-woods/3.jpg",
+      "height": 960,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bretton_Woods_Resort.jpg",
+      "title": "File:Bretton Woods Resort.jpg",
+      "width": 1280
+    }
+  ],
+  "brighton": [
+    {
+      "alt": "Brighton Resort, Brighton, United States",
+      "author": "Tyson Dudley ty_dudley",
+      "file": "src/assets/places/brighton/1.jpg",
+      "height": 853,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skiing_in_Utah_(Unsplash).jpg",
+      "title": "File:Skiing in Utah (Unsplash).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Ken, Lake Mary Hike, Brighton Ski Resort, Big Cottonwood Canyon, near Salt Lake City, Utah",
+      "author": "Ken Lund",
+      "file": "src/assets/places/brighton/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/68886711",
+      "title": "Openverse:220e21fe-0d5b-42c6-89f0-ec08ccc530b3",
+      "width": 1024
+    }
+  ],
   "bristol-mountain": [
     {
       "alt": "High speed chairlift at en:Bristol Mountain ski resort in NY.",
@@ -322,6 +504,46 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trails_closed_sparse_snow_at_alpine_ski_mountain_Feb_2017_NY.jpg",
       "title": "File:Trails closed sparse snow at alpine ski mountain Feb 2017 NY.jpg",
       "width": 1280
+    }
+  ],
+  "bromley": [
+    {
+      "alt": "Will Bromley No.1",
+      "author": "Avery Studio",
+      "file": "src/assets/places/bromley/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/78147513@N00/2254295432",
+      "title": "Openverse:2a125b1c-3c28-4861-b828-f69758b28b40",
+      "width": 1024
+    }
+  ],
+  "burke": [
+    {
+      "alt": "View from the ski run on Burke during sunset.",
+      "author": "BurkeCoquitlam",
+      "file": "src/assets/places/burke/1.jpg",
+      "height": 720,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=31345153",
+      "title": "Openverse:cf3834a5-e1b1-49fe-9d67-ce617aaedabf",
+      "width": 960
+    },
+    {
+      "alt": "Willoughby from Burke ski lift",
+      "author": "jcantroot",
+      "file": "src/assets/places/burke/2.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/32304041@N07/3846896517",
+      "title": "Openverse:c4c34633-92ae-4d4e-bf26-9af9c8681413",
+      "width": 1024
     }
   ],
   "buttermilk": [
@@ -403,6 +625,70 @@
     }
   ],
   "cherry-peak": [],
+  "copper-mountain": [
+    {
+      "alt": "File:Copper Peak Ski Flying Hill.JPG",
+      "author": "Cbradshaw (talk)",
+      "file": "src/assets/places/copper-mountain/1.jpg",
+      "height": 720,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=4867860",
+      "title": "Openverse:08526671-99e9-4156-81c7-08d7f2263a6f",
+      "width": 960
+    },
+    {
+      "alt": "Copper Moon - No Plane",
+      "author": "makelessnoise",
+      "file": "src/assets/places/copper-mountain/2.jpg",
+      "height": 640,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/13447091@N00/145036473",
+      "title": "Openverse:1bb09db4-8f6c-4cce-a18e-217defd042a7",
+      "width": 1024
+    },
+    {
+      "alt": "Copper Haze",
+      "author": "Zach Dischner",
+      "file": "src/assets/places/copper-mountain/3.jpg",
+      "height": 681,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/35557234@N07/6803591218",
+      "title": "Openverse:211d9f59-a81d-4ddd-9256-ceb8745a1c94",
+      "width": 1024
+    }
+  ],
+  "cranmore": [
+    {
+      "alt": "Cranmore, March 12, 2014",
+      "author": "Mt. Washington Valley Chamber of Commerce",
+      "file": "src/assets/places/cranmore/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/45579262@N02/13110290203",
+      "title": "Openverse:ceb10e9c-15aa-4e98-85e5-60fa4a5cb935",
+      "width": 1024
+    },
+    {
+      "alt": "#395",
+      "author": "Alex Kehr",
+      "file": "src/assets/places/cranmore/2.jpg",
+      "height": 685,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/52612760@N00/423166390",
+      "title": "Openverse:e8f4b29d-0405-4e4c-8d8b-5bb904fbb305",
+      "width": 1024
+    }
+  ],
   "crested-butte": [
     {
       "alt": "Crested Butte Mountain Resort is a ski resort located at Mount Crested Butte in Gunnison County, Colorado, United States.",
@@ -441,6 +727,20 @@
       "width": 1280
     }
   ],
+  "crotched-mountain": [
+    {
+      "alt": "Crotched Mountain Sunset (IMG 0776)",
+      "author": "Pretzel4",
+      "file": "src/assets/places/crotched-mountain/1.jpg",
+      "height": 540,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=40594309",
+      "title": "Openverse:f759674e-0394-4267-9357-f65ebb610629",
+      "width": 960
+    }
+  ],
   "cypress-mountain": [
     {
       "alt": "Cypress Mountain, a day snow shoeing.",
@@ -455,6 +755,7 @@
       "width": 1280
     }
   ],
+  "diamond-peak": [],
   "eldora": [
     {
       "alt": "View of the beginners' area at the base of Eldora Mountain Resort",
@@ -709,6 +1010,44 @@
       "width": 1280
     }
   ],
+  "heavenly": [
+    {
+      "alt": "Powderbowl Express at Heavenly Ski Resort in South Lake Tahoe, CA.",
+      "author": "Gbtahoe",
+      "file": "src/assets/places/heavenly/1.jpg",
+      "height": 960,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Powderbowl_Express.jpg",
+      "title": "File:Powderbowl Express.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Heavenly Ski Resort ski lift , with base at 9136 foot (2785 m) elevation.",
+      "author": "The original uploader was ChrisRuvolo at English Wikipedia .",
+      "file": "src/assets/places/heavenly/2.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heavenly_Lift.jpg",
+      "title": "File:Heavenly Lift.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Images of Heavenly Ski Resort located in South Lake Tahoe.",
+      "author": "Region 5 Photography",
+      "file": "src/assets/places/heavenly/3.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:HeavenlySkiResortLakeTahoe-LakeTahoeBasinMU-PRW-01_(52707083596).jpg",
+      "title": "File:HeavenlySkiResortLakeTahoe-LakeTahoeBasinMU-PRW-01 (52707083596).jpg",
+      "width": 1280
+    }
+  ],
   "hero": [
     {
       "alt": "Taughannock Falls framed by peak fall foliage",
@@ -759,6 +1098,32 @@
       "width": 1600
     }
   ],
+  "hidden-valley-pa": [
+    {
+      "alt": "Small Pond @ Hidden Valley Ski Resort",
+      "author": "Apuch",
+      "file": "src/assets/places/hidden-valley-pa/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/31397006@N00/50297992621",
+      "title": "Openverse:85069634-f885-49d8-bfb3-9d6b2d79e38b",
+      "width": 1024
+    },
+    {
+      "alt": "Hidden Valley Grooming",
+      "author": "LValleyGirl26",
+      "file": "src/assets/places/hidden-valley-pa/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hidden_Valley_Grooming.jpg",
+      "title": "File:Hidden Valley Grooming.jpg",
+      "width": 1280
+    }
+  ],
   "homewood": [
     {
       "alt": "Homewood, CA",
@@ -796,6 +1161,44 @@
       "nearby": false,
       "sourceUrl": "https://www.flickr.com/photos/51867225@N08/5334529366",
       "title": "Openverse:11cca778-c2eb-4d0c-b9ba-627ea1a040db",
+      "width": 1024
+    }
+  ],
+  "jay-peak": [
+    {
+      "alt": "Photographer: HanumanIX",
+      "author": "Hanumanix at English Wikipedia",
+      "file": "src/assets/places/jay-peak/1.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jay_Peak.JPG",
+      "title": "File:Jay Peak.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "'Everglade' tree trail at Jay Peak, VT",
+      "author": "ihamr",
+      "file": "src/assets/places/jay-peak/2.jpg",
+      "height": 575,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/163621777@N08/47422455331",
+      "title": "Openverse:0239ef96-6b72-4f65-ab02-8d7b53b8ff6b",
+      "width": 1024
+    },
+    {
+      "alt": "Jay Peak",
+      "author": "ihamr",
+      "file": "src/assets/places/jay-peak/3.jpg",
+      "height": 575,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/163621777@N08/49606666461",
+      "title": "Openverse:40759789-b7db-40c9-86c0-67f1824239fd",
       "width": 1024
     }
   ],
@@ -1003,7 +1406,59 @@
       "width": 1024
     }
   ],
+  "kirkwood": [
+    {
+      "alt": "Snowboarder and skier from a ski lift, Kirkwood, California, 2009",
+      "author": "glenngould",
+      "file": "src/assets/places/kirkwood/1.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowboarder_and_skier_from_a_ski_lift,_Kirkwood,_California,_2009.jpeg",
+      "title": "File:Snowboarder and skier from a ski lift, Kirkwood, California, 2009.jpeg",
+      "width": 1280
+    },
+    {
+      "alt": "Bear Valley, Kirkwood, Tahoe near season open 2017",
+      "author": "Dicklyon",
+      "file": "src/assets/places/kirkwood/2.jpg",
+      "height": 733,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bear_Valley,_Kirkwood,_Tahoe_near_season_open_2017.jpg",
+      "title": "File:Bear Valley, Kirkwood, Tahoe near season open 2017.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Party snowshoeing in Kirkwood Mountain Resort, facing northeast towards Caples Lake, Alpine County, California.",
+      "author": "ilya_ktsn from Sunnyvale, USA",
+      "file": "src/assets/places/kirkwood/3.jpg",
+      "height": 851,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowshoeing_in_Kirkwood,_Alpine_County,_California.jpg",
+      "title": "File:Snowshoeing in Kirkwood, Alpine County, California.jpg",
+      "width": 1280
+    }
+  ],
   "kissing-bridge": [],
+  "laurel-mountain": [
+    {
+      "alt": "Laurel mountain ski area",
+      "author": "Ron Shawley",
+      "file": "src/assets/places/laurel-mountain/1.jpg",
+      "height": 853,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laurel_mountain_ski_area_-_panoramio_(10).jpg",
+      "title": "File:Laurel mountain ski area - panoramio (10).jpg",
+      "width": 1280
+    }
+  ],
   "liberty-mountain": [
     {
       "alt": "Boulder Ridge Snow Tubing at Liberty Mountain Resort",
@@ -1028,6 +1483,44 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:LibertyMountainResort_skiing.jpg",
       "title": "File:LibertyMountainResort skiing.jpg",
       "width": 1280
+    }
+  ],
+  "loon": [
+    {
+      "alt": "Loon Mountain Ski Resort Lincoln New Hampshire",
+      "author": "EgorovaSvetlana",
+      "file": "src/assets/places/loon/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ski_Resort_Lincoln_New_Hampshire_Loon_Mountain.jpg",
+      "title": "File:Ski Resort Lincoln New Hampshire Loon Mountain.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "loon mountain ski resort sarsaparilla New Hampshire 2010",
+      "author": "chensiyuan",
+      "file": "src/assets/places/loon/2.jpg",
+      "height": 621,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Loon_mountain_sarsaparilla.JPG",
+      "title": "File:Loon mountain sarsaparilla.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Peninsula and Jet Ski",
+      "author": "Eric Kilby",
+      "file": "src/assets/places/loon/3.jpg",
+      "height": 682,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/8749778@N06/37338466595",
+      "title": "Openverse:da366a2e-28cc-4eff-aa0c-c25c755290a6",
+      "width": 1024
     }
   ],
   "lost-trail": [
@@ -1084,6 +1577,71 @@
       "width": 1024
     }
   ],
+  "magic-mountain": [
+    {
+      "alt": "Magical skies on Christmas Eve - geograph.org.uk - 7948197",
+      "author": "Linda Billinger",
+      "file": "src/assets/places/magic-mountain/1.jpg",
+      "height": 640,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=170608547",
+      "title": "Openverse:fbaf0c5e-8e82-4f4f-94e5-11d670b10692",
+      "width": 960
+    },
+    {
+      "alt": "Magical skies (3275812817)",
+      "author": "dying_grotesque from Richards Bay, South Africa",
+      "file": "src/assets/places/magic-mountain/2.jpg",
+      "height": 721,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=22966226",
+      "title": "Openverse:eaf563c8-f852-414c-9f63-f493689a3465",
+      "width": 960
+    }
+  ],
+  "mammoth": [
+    {
+      "alt": "Tamarack Lodge & Resort at Twin Lakes at Mammoth Mountain in Mammoth Lakes .",
+      "author": "Nandaro",
+      "file": "src/assets/places/mammoth/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mammoth_Lakes_(January_2008)_15.JPG",
+      "title": "File:Mammoth Lakes (January 2008) 15.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Snowboard at Mammoth Mountain Ski Area",
+      "author": "Carol M. Highsmith",
+      "file": "src/assets/places/mammoth/2.jpg",
+      "height": 871,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowboarder_at_Mammoth.jpg",
+      "title": "File:Snowboarder at Mammoth.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mammoth Mtn ski area...Scott & Robin Foubister...a skiing paradise",
+      "author": "Murray Foubister",
+      "file": "src/assets/places/mammoth/3.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mammoth_Mtn_ski_area_-_Scott_%26_Robin_Foubister_-_a_skiing_paradise_(16151982375).jpg",
+      "title": "File:Mammoth Mtn ski area - Scott & Robin Foubister - a skiing paradise (16151982375).jpg",
+      "width": 1280
+    }
+  ],
+  "middlebury-snow-bowl": [],
   "monarch-mountain": [
     {
       "alt": "Airmen ride snowmobiles at Monarch mountain (5938574)",
@@ -1122,6 +1680,32 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montage.mountain.ski.3.JPG",
       "title": "File:Montage.mountain.ski.3.JPG",
       "width": 1280
+    }
+  ],
+  "montana-snowbowl": [
+    {
+      "alt": "Snowbowl Ski Area - Lolo NF 2020 Annual Report ()",
+      "author": "Forest Service - Northern Region",
+      "file": "src/assets/places/montana-snowbowl/1.jpg",
+      "height": 941,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowbowl_Ski_Area_-_Lolo_NF_2020_Annual_Report_(50825423716).jpg",
+      "title": "File:Snowbowl Ski Area - Lolo NF 2020 Annual Report (50825423716).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "2010. Balsam woolly adelgid damage. High elevation five-needle pines (High Five) symposium field trip. Montana Snowbowl ski area, Missoula, Montana.",
+      "author": "USDA Forest Service",
+      "file": "src/assets/places/montana-snowbowl/2.jpg",
+      "height": 680,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/151887236@N05/42995961330",
+      "title": "Openverse:3eb571fd-2311-4783-82dc-057facff31e5",
+      "width": 1024
     }
   ],
   "moreau-lake": [
@@ -1186,6 +1770,44 @@
       "width": 1600
     }
   ],
+  "mount-snow": [
+    {
+      "alt": "From a trail at Mount Snow, Vermont.",
+      "author": "Vermont",
+      "file": "src/assets/places/mount-snow/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winter_on_a_trail_at_Mount_Snow,_Vermont.jpg",
+      "title": "File:Winter on a trail at Mount Snow, Vermont.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mount Snow Winter",
+      "author": "Mount Snow",
+      "file": "src/assets/places/mount-snow/2.jpg",
+      "height": 831,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MountSnowWinter.jpg",
+      "title": "File:MountSnowWinter.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "I ask liz to marry me at the top of the mountain at Mount Snow",
+      "author": "William J Sisti from Morristown, NJ, USA",
+      "file": "src/assets/places/mount-snow/3.jpg",
+      "height": 720,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Popping_the_question_%40MountSnow_(video)_(4412081158).jpg",
+      "title": "File:Popping the question @MountSnow (video) (4412081158).jpg",
+      "width": 1280
+    }
+  ],
   "mount-sunapee": [
     {
       "alt": "Mount Sunapee .",
@@ -1210,6 +1832,32 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:MtSunapeeataDistance.jpg",
       "title": "File:MtSunapeeataDistance.jpg",
       "width": 1280
+    }
+  ],
+  "mount-washington-bc": [
+    {
+      "alt": "Mount Washington Skiing (5556047971)",
+      "author": "Doug Hay",
+      "file": "src/assets/places/mount-washington-bc/1.jpg",
+      "height": 720,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=179698439",
+      "title": "Openverse:fdbe3551-7a03-4c4d-9273-ade95e921f24",
+      "width": 960
+    },
+    {
+      "alt": "Mount Washington Skiing",
+      "author": "Doug Hay",
+      "file": "src/assets/places/mount-washington-bc/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/7671700@N08/5556047971",
+      "title": "Openverse:35434970-e042-4829-935d-04794521b019",
+      "width": 1024
     }
   ],
   "mountain-high": [
@@ -1263,6 +1911,20 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Rose_Ski_-_Northwest_Magnum_6.JPG",
       "title": "File:Mount Rose Ski - Northwest Magnum 6.JPG",
+      "width": 1280
+    }
+  ],
+  "mt-seymour": [
+    {
+      "alt": "Clouds over Mount Seymour Provincial Park",
+      "author": "Andrew Plowright",
+      "file": "src/assets/places/mt-seymour/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cloudy_snowscape.jpg",
+      "title": "File:Cloudy snowscape.jpg",
       "width": 1280
     }
   ],
@@ -1366,6 +2028,7 @@
       "width": 1280
     }
   ],
+  "oak-mountain": [],
   "okemo": [
     {
       "alt": "Okemo, peak",
@@ -1442,6 +2105,44 @@
       "width": 1280
     }
   ],
+  "panorama": [
+    {
+      "alt": "Panorama ski resort",
+      "author": "BPLC86",
+      "file": "src/assets/places/panorama/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/138303574@N02/24308556571",
+      "title": "Openverse:1cc89d30-b143-4583-8130-78b79881e7ea",
+      "width": 1024
+    },
+    {
+      "alt": "Panorama ski resort",
+      "author": "BPLC86",
+      "file": "src/assets/places/panorama/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/138303574@N02/24391042345",
+      "title": "Openverse:5e745a05-557a-41d2-98df-53a611ff1605",
+      "width": 1024
+    },
+    {
+      "alt": "Panorama ski resort",
+      "author": "BPLC86",
+      "file": "src/assets/places/panorama/3.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/138303574@N02/24095414060",
+      "title": "Openverse:6c9eb0c0-26ab-4fd8-9d31-87777fd47466",
+      "width": 1024
+    }
+  ],
   "pats-peak": [
     {
       "alt": "Snowy Henniker, the town at the foot of Pats Peak",
@@ -1466,6 +2167,34 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Henniker_Covered_Bridge.jpg",
       "title": "File:Henniker Covered Bridge.jpg",
       "width": 1280
+    }
+  ],
+  "pico": [
+    {
+      "alt": "View from the top of Killington Peak looking straight at Pico Peak",
+      "author": "Mimicamilleri",
+      "file": "src/assets/places/pico/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Killington_Peak_looking_at_Pico_Peak.jpg",
+      "title": "File:View from Killington Peak looking at Pico Peak.jpg",
+      "width": 1280
+    }
+  ],
+  "plattekill": [
+    {
+      "alt": "Ski Plattekill",
+      "author": "ke9tv",
+      "file": "src/assets/places/plattekill/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/12834796@N00/14503345134",
+      "title": "Openverse:c0c34c69-d33f-4d8a-8649-5f958e401cc4",
+      "width": 1024
     }
   ],
   "powder-mountain": [
@@ -1504,6 +2233,84 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Powder_Mountain_Hidden_Lake_Lodge.JPG",
       "title": "File:Powder Mountain Hidden Lake Lodge.JPG",
       "width": 1280
+    }
+  ],
+  "powderhorn": [
+    {
+      "alt": "BLM Winter Bucket List #17: Powderhorn Wilderness, Colorado, for Cross-Country Skiing across Alpine Tundra",
+      "author": "mypubliclands",
+      "file": "src/assets/places/powderhorn/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/91981596@N06/15637189204",
+      "title": "Openverse:0d9cc496-9f0b-4fff-a1c9-73f5b7b686b1",
+      "width": 1024
+    },
+    {
+      "alt": "BLM Winter Bucket List #17: Powderhorn Wilderness, Colorado, for Cross-Country Skiing across Alpine Tundra",
+      "author": "mypubliclands",
+      "file": "src/assets/places/powderhorn/2.jpg",
+      "height": 722,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/91981596@N06/16072232450",
+      "title": "Openverse:79d057d5-2185-4b13-94b4-e0e72ce59518",
+      "width": 1024
+    }
+  ],
+  "purgatory": [
+    {
+      "alt": "Purgatory ski run...",
+      "author": "runnr_az",
+      "file": "src/assets/places/purgatory/1.jpg",
+      "height": 765,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/8695401@N08/6758044169",
+      "title": "Openverse:c0b3a2e8-f469-4f77-9ec8-74f456d370ad",
+      "width": 1024
+    },
+    {
+      "alt": "DurangoMountainResort",
+      "author": "Unknown",
+      "file": "src/assets/places/purgatory/2.jpg",
+      "height": 960,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DurangoMountainResort.jpg",
+      "title": "File:DurangoMountainResort.jpg",
+      "width": 1280
+    }
+  ],
+  "ragged-mountain": [
+    {
+      "alt": "Southward view of Orange Mountain and Ragged Mountain from Cardigan Mountain in New Hampshire.",
+      "author": "MConradWard",
+      "file": "src/assets/places/ragged-mountain/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orange_Mountain_%26_Ragged_Mountain_from_Cardigan_Mountain.jpg",
+      "title": "File:Orange Mountain & Ragged Mountain from Cardigan Mountain.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "On a high slope at Mt.",
+      "author": "Brent Sisson",
+      "file": "src/assets/places/ragged-mountain/2.jpg",
+      "height": 720,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=99455022",
+      "title": "Openverse:65d69d2e-1f7a-4629-8a0e-82dcc35cd328",
+      "width": 960
     }
   ],
   "red-mountain": [
@@ -1758,6 +2565,44 @@
       "width": 1600
     }
   ],
+  "seven-springs": [
+    {
+      "alt": "Night skiing at Seven Springs Mountain Resort",
+      "author": "The93owner ( talk )",
+      "file": "src/assets/places/seven-springs/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SevenSpringsNight.JPG",
+      "title": "File:SevenSpringsNight.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Seven Springs Winter 1",
+      "author": "LValleyGirl26",
+      "file": "src/assets/places/seven-springs/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seven_Springs_Winter_1.jpg",
+      "title": "File:Seven Springs Winter 1.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Seven Springs Mountain Resort viewed from the summit at dusk before the 4th of July fireworks.",
+      "author": "Baron Maddock",
+      "file": "src/assets/places/seven-springs/3.jpg",
+      "height": 606,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seven_Springs_Resort_on_4th_of_July_at_dusk_viewed_from_the_summit_pre_fireworks.jpg",
+      "title": "File:Seven Springs Resort on 4th of July at dusk viewed from the summit pre fireworks.jpg",
+      "width": 1280
+    }
+  ],
   "shawnee-mountain": [
     {
       "alt": "An image of the Lookout and Tecumseh ski lifts at Shawnee Mountain Ski Area in the Poconos of PA.",
@@ -1824,6 +2669,32 @@
       "width": 1280
     }
   ],
+  "silverton-mountain": [
+    {
+      "alt": "San Juan Mountains East of Ouray, Colorado ()",
+      "author": "Ken Lund from Reno, Nevada, USA",
+      "file": "src/assets/places/silverton-mountain/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Juan_Mountains_East_of_Ouray,_Colorado_(14201246362).jpg",
+      "title": "File:San Juan Mountains East of Ouray, Colorado (14201246362).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "San Juan Mountains North of Telluride, Colorado ()",
+      "author": "Ken Lund from Reno, Nevada, USA",
+      "file": "src/assets/places/silverton-mountain/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Juan_Mountains_North_of_Telluride,_Colorado_(14017067499).jpg",
+      "title": "File:San Juan Mountains North of Telluride, Colorado (14017067499).jpg",
+      "width": 1280
+    }
+  ],
   "ski-cooper": [
     {
       "alt": "Ski Cooper, Chicago Ridge snowcat",
@@ -1879,6 +2750,146 @@
       "width": 1280
     }
   ],
+  "stowe": [
+    {
+      "alt": "The first snowstorm of the season walloped Canada’s Quebec Province on November 10-11.",
+      "author": "MODIS Land Rapid Response Team, NASA GSFC",
+      "file": "src/assets/places/stowe/1.jpg",
+      "height": 959,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snow_in_Quebec,_Canada_and_the_Northeastern_United_States_(MODIS_2025-11-23).jpg",
+      "title": "File:Snow in Quebec, Canada and the Northeastern United States (MODIS 2025-11-23).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Team U.S.A. Prepares for Edelweiss Raid 2023 (230107-A-BA489-014)",
+      "author": "Staff Sgt. Barbara Pendl",
+      "file": "src/assets/places/stowe/2.jpg",
+      "height": 853,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Team_U.S.A._Prepares_for_Edelweiss_Raid_2023_(230107-A-BA489-014).jpg",
+      "title": "File:Team U.S.A. Prepares for Edelweiss Raid 2023 (230107-A-BA489-014).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Units saluting ()",
+      "author": "The U.S. Army Staff Sgt. Nathan Rivard/Joint Force Headquarters, Vermont National Guard Public Affairs",
+      "file": "src/assets/places/stowe/3.jpg",
+      "height": 850,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Units_saluting_(15210888202).jpg",
+      "title": "File:Units saluting (15210888202).jpg",
+      "width": 1280
+    }
+  ],
+  "stratton": [
+    {
+      "alt": "stratton mountain vermont ski trails",
+      "author": "Art01852",
+      "file": "src/assets/places/stratton/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/31491248@N00/388193674",
+      "title": "Openverse:b45e2e82-aaa4-4022-ab2d-117aee9e5d07",
+      "width": 1024
+    },
+    {
+      "alt": "Stratton, VT, from the summit of Sunapee",
+      "author": "randomduck",
+      "file": "src/assets/places/stratton/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/96463101@N00/119508523",
+      "title": "Openverse:c3f179e9-e4f0-4483-a5a3-4ae7c0ca6b25",
+      "width": 1024
+    },
+    {
+      "alt": "Season Pass Poker: 25 old passes (plus one wild card = Stratton Expert Park pass).",
+      "author": "dpstyles™",
+      "file": "src/assets/places/stratton/3.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/77725780@N00/3170929488",
+      "title": "Openverse:28d9811b-099d-4153-9e69-c4ffd091a340",
+      "width": 1024
+    }
+  ],
+  "sugar-bowl": [
+    {
+      "alt": "Sugar Bowl Ski Resort",
+      "author": "F ASTILY",
+      "file": "src/assets/places/sugar-bowl/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sugar_Bowl_Ski_Resort_1_2016-05-13.jpg",
+      "title": "File:Sugar Bowl Ski Resort 1 2016-05-13.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Sugar Bowl Ski Resort",
+      "author": "F ASTILY",
+      "file": "src/assets/places/sugar-bowl/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sugar_Bowl_Ski_Resort_2_2018-02-28.jpg",
+      "title": "File:Sugar Bowl Ski Resort 2 2018-02-28.jpg",
+      "width": 1280
+    }
+  ],
+  "sugarbush": [
+    {
+      "alt": "Upper Jester Ski trail, Sugarbush Resort, Warren",
+      "author": "bill-now",
+      "file": "src/assets/places/sugarbush/1.jpg",
+      "height": 722,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Upper_Jester_Ski_trail,_Sugarbush_Resort,_Warren_-_panoramio.jpg",
+      "title": "File:Upper Jester Ski trail, Sugarbush Resort, Warren - panoramio.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Spring Skiing",
+      "author": "sf-dvs",
+      "file": "src/assets/places/sugarbush/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/46207792@N00/15499631",
+      "title": "Openverse:23776436-1e98-4a67-a8ac-87c6ee34a4be",
+      "width": 1024
+    },
+    {
+      "alt": "Spring Skiing",
+      "author": "sf-dvs",
+      "file": "src/assets/places/sugarbush/3.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/46207792@N00/14961111",
+      "title": "Openverse:9233b7ce-1689-4aab-8476-0c2d884d9952",
+      "width": 1024
+    }
+  ],
   "sun-peaks": [
     {
       "alt": "Sun Peaks Ski Resort...amongst the snow ghosts",
@@ -1915,6 +2926,32 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sun_Peaks_Ski_Resort_-_incredible_snow_crystals_(sustained_cold_weather)_(13653330933).jpg",
       "title": "File:Sun Peaks Ski Resort - incredible snow crystals (sustained cold weather) (13653330933).jpg",
       "width": 1280
+    }
+  ],
+  "sundance": [
+    {
+      "alt": "Night skiing at Sundance Resort, as viewed from Utah State Route 92 (Alpine Scenic Loop Backway) in Utah County, Utah, January 2017",
+      "author": "An Errant Knight",
+      "file": "src/assets/places/sundance/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sundance_Resort_at_night,_Jan_17.jpg",
+      "title": "File:Sundance Resort at night, Jan 17.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mount timpanogos from the perspective of sundance ski resort",
+      "author": "dtsears",
+      "file": "src/assets/places/sundance/2.jpg",
+      "height": 1536,
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://wordpress.org/photos/photo/99566f7171/",
+      "title": "Openverse:53871c4a-1479-4521-b7dd-022fc7f3d280",
+      "width": 2048
     }
   ],
   "sunrise-park": [
@@ -1978,6 +3015,20 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Telluride_Ski_Resort,_Col._(8644078093).jpg",
       "title": "File:Telluride Ski Resort, Col. (8644078093).jpg",
+      "width": 1280
+    }
+  ],
+  "tussey-mountain": [
+    {
+      "alt": "2024-09-04 17 13 05 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania",
+      "author": "Famartin",
+      "file": "src/assets/places/tussey-mountain/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-09-04_17_13_05_View_towards_the_Tussey_Mountain_Ski_Area_from_the_Blue_Trail_between_station_7_and_station_8_within_the_Mount_Nittany_Conservancy_in_College_Township,_Centre_County,_Pennsylvania.jpg",
+      "title": "File:2024-09-04 17 13 05 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania.jpg",
       "width": 1280
     }
   ],
@@ -2083,6 +3134,82 @@
       "width": 1024
     }
   ],
+  "whistler-blackcomb": [
+    {
+      "alt": "October snow, Whistler Peak",
+      "author": "Ruth Hartnup from Vancouver, Canada",
+      "file": "src/assets/places/whistler-blackcomb/1.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:October_snow,_Whistler_Peak_(3987455206).jpg",
+      "title": "File:October snow, Whistler Peak (3987455206).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Snow-making reservoir from Peak Chair",
+      "author": "Ruth Hartnup from Vancouver, Canada",
+      "file": "src/assets/places/whistler-blackcomb/2.jpg",
+      "height": 960,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snow-making_reservoir_from_Peak_Chair_(1115552019).jpg",
+      "title": "File:Snow-making reservoir from Peak Chair (1115552019).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "It's the end of March, and winter has finally arrived.",
+      "author": "Ruth Hartnup from Vancouver, Canada",
+      "file": "src/assets/places/whistler-blackcomb/3.jpg",
+      "height": 722,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_sight_for_sore_eyes_(16359467984).jpg",
+      "title": "File:A sight for sore eyes (16359467984).jpg",
+      "width": 1280
+    }
+  ],
+  "whitefish": [
+    {
+      "alt": "Swimming area at Whitefish Lake State Park, Montana, showing Big Mountain Ski Resort trails.",
+      "author": "John David Stutts",
+      "file": "src/assets/places/whitefish/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitefish_Lake_State_Park_Montana.JPG",
+      "title": "File:Whitefish Lake State Park Montana.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Whitefish Ski Lodge",
+      "author": "anax44",
+      "file": "src/assets/places/whitefish/2.jpg",
+      "height": 578,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/72547033@N06/21812777918",
+      "title": "Openverse:88fbb369-c9e9-4e69-932c-e6225a132561",
+      "width": 1024
+    },
+    {
+      "alt": "Ski to the valley floor",
+      "author": "Slipshod Photog",
+      "file": "src/assets/places/whitefish/3.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/44182113@N03/6554065253",
+      "title": "Openverse:62ea7920-0d52-41da-a574-d048280be03a",
+      "width": 1000
+    }
+  ],
   "whitetail": [
     {
       "alt": "The mogul-filled Exhibition expert ski slope as seen from the ski lift at Whitetail Mountain Resort.",
@@ -2106,6 +3233,32 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitetail_Mountain.jpg",
       "title": "File:Whitetail Mountain.jpg",
+      "width": 1280
+    }
+  ],
+  "wildcat": [
+    {
+      "alt": "Wildcat Ski Resort",
+      "author": "tjHmmer",
+      "file": "src/assets/places/wildcat/1.jpg",
+      "height": 682,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/56732041@N06/6656623351",
+      "title": "Openverse:f711aa4e-2612-4931-810d-d874cc3f9c8d",
+      "width": 1024
+    },
+    {
+      "alt": "Wildcat Mountain - Last day of 2010",
+      "author": "matt.a",
+      "file": "src/assets/places/wildcat/2.jpg",
+      "height": 956,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wildcat_Mountain_-_Last_day_of_2010_-_panoramio.jpg",
+      "title": "File:Wildcat Mountain - Last day of 2010 - panoramio.jpg",
       "width": 1280
     }
   ],
@@ -2144,6 +3297,32 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Jane_base_2.JPG",
       "title": "File:Mary Jane base 2.JPG",
+      "width": 1280
+    }
+  ],
+  "wolf-creek": [
+    {
+      "alt": "Lets Watch Winter Roll In ()",
+      "author": "Zach Dischner",
+      "file": "src/assets/places/wolf-creek/1.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lets_Watch_Winter_Roll_In_(5386165480).jpg",
+      "title": "File:Lets Watch Winter Roll In (5386165480).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Wolf Creek Ski area in southern Colorado, east of Durango.",
+      "author": "Doc Searls from Santa Barbara, USA",
+      "file": "src/assets/places/wolf-creek/2.jpg",
+      "height": 934,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:WolfCreekSkiArea,_aerialview.jpg",
+      "title": "File:WolfCreekSkiArea, aerialview.jpg",
       "width": 1280
     }
   ],

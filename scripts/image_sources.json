@@ -6564,6 +6564,350 @@
    "exclude": [],
    "alt": {},
    "width": 1920
+  },
+  "little-valley-pickleball": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "st. george",
+    "pickleball",
+    "little valley pickleball complex"
+   ],
+   "sources": [
+    {
+     "category": "Category:St. George, Utah",
+     "depth": 0
+    },
+    {
+     "openverse": "Little Valley Pickleball Complex pickleball",
+     "must": [
+      "st. george",
+      "pickleball",
+      "little valley pickleball complex"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "black-desert-pickleball": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "ivins",
+    "black desert",
+    "snow canyon",
+    "black desert resort pickleball courts"
+   ],
+   "sources": [
+    {
+     "category": "Category:Ivins, Utah",
+     "depth": 0
+    },
+    {
+     "openverse": "Black Desert Resort pickleball courts pickleball",
+     "must": [
+      "ivins",
+      "black desert",
+      "snow canyon",
+      "black desert resort pickleball courts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "pc-marc-pickleball": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "park city",
+    "pc marc (park city municipal athletic & recreation center)"
+   ],
+   "sources": [
+    {
+     "category": "Category:Park City, Utah",
+     "depth": 0
+    },
+    {
+     "openverse": "PC MARC (Park City Municipal Athletic & Recreation Center) pickleball",
+     "must": [
+      "park city",
+      "pc marc (park city municipal athletic & recreation center)"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "picklr-salt-lake-city": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "sugar house",
+    "the picklr salt lake city"
+   ],
+   "sources": [
+    {
+     "category": "Category:Sugar House, Salt Lake City",
+     "depth": 0
+    },
+    {
+     "openverse": "The Picklr Salt Lake City pickleball",
+     "must": [
+      "sugar house",
+      "the picklr salt lake city"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "golden-peak-pickleball": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "golden peak",
+    "vail",
+    "golden peak pickleball center"
+   ],
+   "sources": [
+    {
+     "category": "Category:Vail, Colorado",
+     "depth": 0
+    },
+    {
+     "openverse": "Golden Peak Pickleball Center pickleball",
+     "must": [
+      "golden peak",
+      "vail",
+      "golden peak pickleball center"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "steamboat-tennis-pickleball": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "steamboat",
+    "werner",
+    "steamboat tennis and pickleball complex"
+   ],
+   "sources": [
+    {
+     "category": "Category:Steamboat Springs, Colorado",
+     "depth": 0
+    },
+    {
+     "openverse": "Steamboat Tennis and Pickleball Complex pickleball",
+     "must": [
+      "steamboat",
+      "werner",
+      "steamboat tennis and pickleball complex"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "carter-park-pickleball": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "breckenridge",
+    "carter park pickleball courts"
+   ],
+   "sources": [
+    {
+     "category": "Category:Breckenridge, Colorado",
+     "depth": 0
+    },
+    {
+     "openverse": "Carter Park pickleball courts pickleball",
+     "must": [
+      "breckenridge",
+      "carter park pickleball courts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mile-hi-pickleball": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "denver",
+    "mile hi city pickleball"
+   ],
+   "sources": [
+    {
+     "search": "Central Park Denver Colorado",
+     "limit": 25
+    },
+    {
+     "openverse": "Mile Hi City Pickleball pickleball",
+     "must": [
+      "denver",
+      "mile hi city pickleball"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "picklr-bozeman": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "bozeman",
+    "gallatin",
+    "the picklr bozeman"
+   ],
+   "sources": [
+    {
+     "category": "Category:Bozeman, Montana",
+     "depth": 0
+    },
+    {
+     "openverse": "The Picklr Bozeman pickleball",
+     "must": [
+      "bozeman",
+      "gallatin",
+      "the picklr bozeman"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "dancu-community-courts": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "big sky",
+    "lone peak",
+    "dancu community courts, big sky community park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Big Sky, Montana",
+     "depth": 0
+    },
+    {
+     "openverse": "Dancu Community Courts, Big Sky Community Park pickleball",
+     "must": [
+      "big sky",
+      "lone peak",
+      "dancu community courts, big sky community park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "fort-missoula-pickleball": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "missoula",
+    "fort missoula regional park pickleball courts"
+   ],
+   "sources": [
+    {
+     "category": "Category:Fort Missoula",
+     "depth": 0
+    },
+    {
+     "openverse": "Fort Missoula Regional Park pickleball courts pickleball",
+     "must": [
+      "missoula",
+      "fort missoula regional park pickleball courts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }
