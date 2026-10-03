@@ -20,7 +20,11 @@ auth (email + password, magic link, Google, Apple) and data (wishlists, reviews,
   `"keep_subcats": ["ski"]` and `"min_width": 1000`. When Commons is throttling hard (Retry-After 30s+), run
   `--openverse-first` (Openverse only, plus pinned Commons includes), then rerun the places that came up empty
   without the flag. Several fetches can run in parallel on different `--only` ids; images.json merges under a lock.
-  Curate from a contact sheet (`montage` of `src/assets/places/*/N.jpg`) and add bad titles to `exclude`.
+  Curate from a contact sheet (`montage` of `src/assets/places/*/N.jpg`) and add bad titles to `exclude`
+  (`File:…` or `Openverse:<uuid>`). Openverse name matches are often the wrong place (another "Rouge River",
+  "Stowe" in England): read the photo titles in images.json too, not just the thumbnails. Delete files that
+  images.json no longer references before committing (uncredited photos must not land in the repo).
+  Hub heroes: an `hero-<slug>` entry in image_sources.json, else `Pursuit.hero` (a spot photo by title).
 - Google ratings: record `rating`, `reviews` count, `asOf` date and a `maps.google.com/?cid=` link. Review
   themes are **our paraphrase**, never verbatim review text.
 - Client code talks to Supabase directly (`src/lib/supabase.ts`). Security is row-level security in
