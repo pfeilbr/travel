@@ -43,9 +43,9 @@ jobs:
       - name: Apply auth settings (redirects, providers, SMTP)
         if: steps.cfg.outputs.ready == 'true'
         env:
-          GOOGLE_CLIENT_ID: ${{ vars.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_ID: ${{ vars.GOOGLE_CLIENT_ID || secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-          APPLE_CLIENT_ID: ${{ vars.APPLE_CLIENT_ID }}
+          APPLE_CLIENT_ID: ${{ vars.APPLE_CLIENT_ID || secrets.APPLE_CLIENT_ID }}
           APPLE_CLIENT_SECRET: ${{ secrets.APPLE_CLIENT_SECRET }}
           SMTP_HOST: ${{ vars.SMTP_HOST }}
           SMTP_PORT: ${{ vars.SMTP_PORT }}
