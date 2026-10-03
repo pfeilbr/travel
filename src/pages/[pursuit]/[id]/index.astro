@@ -71,7 +71,7 @@ const links = [
       <div class="main">
         <section class="intro">
           <h2>{s.kind} in {s.town}</h2>
-          <p class="muted facts-line">{s.facts.slice(0, 3).map((f) => `${f.value} ${f.label.toLowerCase()}`).join(' · ')}</p>
+          <p class="muted facts-line">{s.facts.filter((f) => f.value.length <= 14).slice(0, 3).map((f) => `${f.value} ${f.label.charAt(0).toLowerCase()}${f.label.slice(1)}`).join(' · ')}</p>
         </section>
 
         <section class="highlights">

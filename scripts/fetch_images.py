@@ -544,7 +544,9 @@ def gather(place: dict) -> tuple[dict[str, dict], list[str], dict[str, str | Non
     if OPENVERSE_FIRST:
         _openverse_pages(place, sources, must, pages, origin, order, skip_wikimedia=True)
 
-    if not OPENVERSE_FIRST or usable() < count or include:
+    # Openverse-first exists because Commons is crawling; only fall back to it when Openverse found nothing usable.
+    any_ov = any(is_candidate(pages[t], min_width=min_width) for t in order if t in pages)
+    if not OPENVERSE_FIRST or not any_ov or include:
         searched: set[str] = set()  # titles from free-text search (they need to mention the place)
         commons_order: list[str] = []
         for src in sources:
