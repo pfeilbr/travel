@@ -362,7 +362,7 @@ def normalize_include(items: list) -> list[dict]:
 def select_pages(pages: dict[str, dict], ranked_titles: list[str], include: list[dict],
                  exclude: list[str], count: int) -> list[str]:
     """Pinned includes first (in order), then the best-ranked remaining candidates."""
-    excluded = {t if t.startswith("File:") else "File:" + t for t in exclude or []}
+    excluded = {t if t.startswith(("File:", "Openverse:")) else "File:" + t for t in exclude or []}
     chosen: list[str] = []
     for item in include:
         t = item["title"]

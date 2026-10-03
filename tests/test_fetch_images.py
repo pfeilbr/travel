@@ -157,6 +157,10 @@ class SelectionTest(unittest.TestCase):
                               include, ["File:B.jpg"], 3)
         self.assertEqual(got, ["File:C.jpg", "File:A.jpg", "File:D.jpg"])
 
+    def test_excludes_openverse_titles(self):
+        pages = {t: {} for t in ("Openverse:a", "Openverse:b")}
+        self.assertEqual(fi.select_pages(pages, ["Openverse:a", "Openverse:b"], [], ["Openverse:a"], 2), ["Openverse:b"])
+
     def test_needs_download(self):
         with TemporaryDirectory() as d:
             dest = Path(d) / "1.jpg"

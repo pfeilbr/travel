@@ -60,9 +60,16 @@ export function setupListMap(root: HTMLElement, rows: MapRow[], cards: Map<strin
   fab?.addEventListener('click', () => {
     const on = split.classList.toggle('show-map-mobile');
     root.querySelector('[data-fab-label]')!.textContent = on ? 'List' : 'Map';
-    window.scrollTo({ top: 0 });
+    fab.classList.remove('off');
+    root.scrollIntoView({ block: 'start' });
     setTimeout(() => { map.invalidateSize(); fit(); }, 50);
   });
+  // On pages where the explorer sits below other content, show the button only while the list is on screen.
+  if (fab && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => {
+      fab.classList.toggle('off', !e.isIntersecting && !split.classList.contains('show-map-mobile'));
+    }, { rootMargin: '0px 0px -40% 0px' }).observe(split);
+  }
 
   return {
     map,
