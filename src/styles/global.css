@@ -28,6 +28,7 @@
   --font-display: "Fraunces", Georgia, serif;
   --gutter: clamp(16px, 4vw, 40px);
   --max: 1360px;
+  --header-h: 80px;          /* sticky offsets below the site header */
   color-scheme: light;
 }
 
@@ -75,6 +76,8 @@
   --shadow-lg: 0 16px 48px rgba(0,0,0,.6);
   color-scheme: dark;
 }
+
+@media (max-width: 900px) { :root { --header-h: 64px; } }
 
 *, *::before, *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }

@@ -1,4 +1,30 @@
 {
+  "apex-mountain": [
+    {
+      "alt": "APEX and snowy Chajnantor",
+      "author": "Carlos A. Durán/ESO",
+      "file": "src/assets/places/apex-mountain/1.jpg",
+      "height": 639,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=58813720",
+      "title": "Openverse:8f6c4d6f-3dd4-4553-bf65-4d2fcd1dd764",
+      "width": 960
+    },
+    {
+      "alt": "APEX and snowy Chajnantor",
+      "author": "European Southern Observatory",
+      "file": "src/assets/places/apex-mountain/2.jpg",
+      "height": 682,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/51207680@N04/34612518785",
+      "title": "Openverse:909a62e2-f4ec-4720-b6ba-82f50ce79da2",
+      "width": 1024
+    }
+  ],
   "arapahoe-basin": [
     {
       "alt": "Skiers ski past the Zuma ski lift in the Montezuma Bowl area at Arapahoe Basin Ski Area in Colorado.",
@@ -194,6 +220,44 @@
       "width": 1280
     }
   ],
+  "big-white": [
+    {
+      "alt": "Big White Ski Village",
+      "author": "jumpyjodes",
+      "file": "src/assets/places/big-white/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/24649496@N00/122359914",
+      "title": "Openverse:80558a5a-282d-48e5-944a-e171d42cff76",
+      "width": 1024
+    },
+    {
+      "alt": "The Gem Lake Express at Big White Ski Resort",
+      "author": "Hamedog at en.wikipedia",
+      "file": "src/assets/places/big-white/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gem_Lake_Express.jpg",
+      "title": "File:Gem Lake Express.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Big White Ski Resort, Monashee Mountains",
+      "author": "The original uploader was Hamedog at English Wikipedia.",
+      "file": "src/assets/places/big-white/3.jpg",
+      "height": 637,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=9583084",
+      "title": "Openverse:8f973703-d461-4fdd-8afa-92d4e4bf4624",
+      "width": 960
+    }
+  ],
   "black-mountain-nh": [
     {
       "alt": "Black Mountain Ski Area as seen from South Doublehead Mountain",
@@ -205,6 +269,20 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blackmountainnh.jpg",
       "title": "File:Blackmountainnh.jpg",
+      "width": 1280
+    }
+  ],
+  "blacktail-mountain": [
+    {
+      "alt": "Blacktail Mountain Ski Area near Lakeside, Montana",
+      "author": "Katie Brady",
+      "file": "src/assets/places/blacktail-mountain/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blacktail_Mountain.jpg",
+      "title": "File:Blacktail Mountain.jpg",
       "width": 1280
     }
   ],
@@ -390,6 +468,32 @@
       "width": 1280
     }
   ],
+  "bromley": [
+    {
+      "alt": "Bromley Mountain",
+      "author": "Dougtone",
+      "file": "src/assets/places/bromley/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bromley_Mountain_071506_020.jpg",
+      "title": "File:Bromley Mountain 071506 020.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Will Bromley No.1",
+      "author": "Avery Studio",
+      "file": "src/assets/places/bromley/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/78147513@N00/2254295432",
+      "title": "Openverse:2a125b1c-3c28-4861-b828-f69758b28b40",
+      "width": 1024
+    }
+  ],
   "burke": [
     {
       "alt": "View from the ski run on Burke during sunset.",
@@ -492,6 +596,32 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trails_Glades_Cannon_Mountain_Ski_Area_White_Mountains_Franconia_New_Hampshire.jpg",
       "title": "File:Trails Glades Cannon Mountain Ski Area White Mountains Franconia New Hampshire.jpg",
       "width": 1280
+    }
+  ],
+  "cranmore": [
+    {
+      "alt": "Cranmore Mountain Resort (منتجع تزلج فى نيوهامشير)",
+      "author": "Davidafranklin",
+      "file": "src/assets/places/cranmore/1.jpg",
+      "height": 721,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cranmore_Mountain_Resort.jpg",
+      "title": "File:Cranmore Mountain Resort.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Cranmore, March 12, 2014",
+      "author": "Mt. Washington Valley Chamber of Commerce",
+      "file": "src/assets/places/cranmore/2.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/45579262@N02/13110290203",
+      "title": "Openverse:ceb10e9c-15aa-4e98-85e5-60fa4a5cb935",
+      "width": 1024
     }
   ],
   "crested-butte": [
@@ -942,6 +1072,46 @@
       "width": 1280
     }
   ],
+  "homewood": [
+    {
+      "alt": "Homewood, CA",
+      "author": "User:JGonera (WMF)",
+      "file": "src/assets/places/homewood/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Tahoe_in_winter_seen_from_Homewood,_California.jpg",
+      "title": "File:Lake Tahoe in winter seen from Homewood, California.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Lake Tahoe Near Homewood, California",
+      "author": "Ken Lund",
+      "file": "src/assets/places/homewood/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/93368177",
+      "title": "Openverse:18c9f1e7-f126-4c71-b9b2-b7ec5e44f22a",
+      "width": 1024
+    }
+  ],
+  "jack-frost": [
+    {
+      "alt": "Skiing @ Jack Frost Mountain in the Poconos:",
+      "author": "Rhys A.",
+      "file": "src/assets/places/jack-frost/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/51867225@N08/5334529366",
+      "title": "Openverse:11cca778-c2eb-4d0c-b9ba-627ea1a040db",
+      "width": 1024
+    }
+  ],
   "june-mountain": [
     {
       "alt": "June Mtn Ski Trip",
@@ -1210,6 +1380,20 @@
       "width": 1280
     }
   ],
+  "lost-trail": [
+    {
+      "alt": "Bitterroot Special Olympics ()",
+      "author": "Forest Service - Northern Region",
+      "file": "src/assets/places/lost-trail/1.jpg",
+      "height": 857,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bitterroot_Special_Olympics_(5512042109).jpg",
+      "title": "File:Bitterroot Special Olympics (5512042109).jpg",
+      "width": 1280
+    }
+  ],
   "mad-river-glen": [
     {
       "alt": "Mad River Glen",
@@ -1250,6 +1434,32 @@
       "width": 1024
     }
   ],
+  "monarch-mountain": [
+    {
+      "alt": "Airmen ride snowmobiles at Monarch mountain (5938574)",
+      "author": "U.S. Air Force photo by 2nd Lt. Idali Beltre Acevedo",
+      "file": "src/assets/places/monarch-mountain/1.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Airmen_ride_snowmobiles_at_Monarch_mountain_(5938574).jpg",
+      "title": "File:Airmen ride snowmobiles at Monarch mountain (5938574).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "First Lt.",
+      "author": "U.S. Air Force photo by 2nd Lt. Idali Beltre Acevedo",
+      "file": "src/assets/places/monarch-mountain/2.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Airmen_ride_snowmobiles_at_Monarch_mountain_(5938573).jpg",
+      "title": "File:Airmen ride snowmobiles at Monarch mountain (5938573).jpg",
+      "width": 1280
+    }
+  ],
   "montage-mountain": [
     {
       "alt": "View of lodge and Montage ski mountain",
@@ -1262,6 +1472,32 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montage.mountain.ski.3.JPG",
       "title": "File:Montage.mountain.ski.3.JPG",
       "width": 1280
+    }
+  ],
+  "montana-snowbowl": [
+    {
+      "alt": "Snowbowl Ski Area - Lolo NF 2020 Annual Report ()",
+      "author": "Forest Service - Northern Region",
+      "file": "src/assets/places/montana-snowbowl/1.jpg",
+      "height": 941,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowbowl_Ski_Area_-_Lolo_NF_2020_Annual_Report_(50825423716).jpg",
+      "title": "File:Snowbowl Ski Area - Lolo NF 2020 Annual Report (50825423716).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "2010. Balsam woolly adelgid damage. High elevation five-needle pines (High Five) symposium field trip. Montana Snowbowl ski area, Missoula, Montana.",
+      "author": "USDA Forest Service",
+      "file": "src/assets/places/montana-snowbowl/2.jpg",
+      "height": 680,
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/151887236@N05/42995961330",
+      "title": "Openverse:3eb571fd-2311-4783-82dc-057facff31e5",
+      "width": 1024
     }
   ],
   "moreau-lake": [
@@ -2132,6 +2368,61 @@
       "width": 1280
     }
   ],
+  "silverton-mountain": [
+    {
+      "alt": "San Juan Mountains East of Ouray, Colorado ()",
+      "author": "Ken Lund from Reno, Nevada, USA",
+      "file": "src/assets/places/silverton-mountain/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Juan_Mountains_East_of_Ouray,_Colorado_(14201246362).jpg",
+      "title": "File:San Juan Mountains East of Ouray, Colorado (14201246362).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "San Juan Mountains East of Ouray, Colorado ()",
+      "author": "Ken Lund from Reno, Nevada, USA",
+      "file": "src/assets/places/silverton-mountain/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Juan_Mountains_East_of_Ouray,_Colorado_(14201247002).jpg",
+      "title": "File:San Juan Mountains East of Ouray, Colorado (14201247002).jpg",
+      "width": 1280
+    }
+  ],
+  "ski-cooper": [
+    {
+      "alt": "Ski Cooper, Chicago Ridge snowcat",
+      "author": "Xnatedawgx",
+      "file": "src/assets/places/ski-cooper/1.jpg",
+      "height": 720,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ski_Cooper,_Chicago_Ridge_snowcat.jpg",
+      "title": "File:Ski Cooper, Chicago Ridge snowcat.jpg",
+      "width": 1280
+    }
+  ],
+  "ski-sawmill": [],
+  "smugglers-notch": [
+    {
+      "alt": "Soldiers climbing Smugglers' Notch",
+      "author": "Tech. Sgt. Sarah Mattison",
+      "file": "src/assets/places/smugglers-notch/1.jpg",
+      "height": 854,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soldiers_climbing_Smugglers'_Notch.jpg",
+      "title": "File:Soldiers climbing Smugglers' Notch.jpg",
+      "width": 1280
+    }
+  ],
   "solitude": [
     {
       "alt": "500px provided description: Cold morning at spruces camp ground just west of Solitude Ski Resort in Big Cottonwood Canyon.",
@@ -2156,6 +2447,44 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cozy_Winter_Scene_(Unsplash).jpg",
       "title": "File:Cozy Winter Scene (Unsplash).jpg",
       "width": 1280
+    }
+  ],
+  "stowe": [
+    {
+      "alt": "2017-09-11 13 10 01 View east-southeast towards Stowe Ski Resort from the Long Trail between the Nose and the Chin of Mount Mansfield within Mount Mansfield State Forest in Stowe, Lamoille County, Vermont",
+      "author": "Famartin",
+      "file": "src/assets/places/stowe/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017-09-11_13_10_01_View_east-southeast_towards_Stowe_Ski_Resort_from_the_Long_Trail_between_the_Nose_and_the_Chin_of_Mount_Mansfield_within_Mount_Mansfield_State_Forest_in_Stowe,_Lamoille_County,_Vermont.jpg",
+      "title": "File:2017-09-11 13 10 01 View east-southeast towards Stowe Ski Resort from the Long Trail between the Nose and the Chin of Mount Mansfield within Mount Mansfield State Forest in Stowe, Lamoille County, Vermont.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "2017-09-11 13 10 01 View east-southeast towards Stowe Ski Resort from the Long Trail between the Nose and the Chin of Mount Mansfield within Mount Mansfield State Forest in Stowe, Lamoille County, Vermont",
+      "author": "Famartin",
+      "file": "src/assets/places/stowe/2.jpg",
+      "height": 720,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=65581638",
+      "title": "Openverse:04f20556-9927-4a74-86eb-4b6a388ebd66",
+      "width": 960
+    },
+    {
+      "alt": "Stowe ski trails and Smuggler's nose",
+      "author": "Plutor",
+      "file": "src/assets/places/stowe/3.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/11831132@N00/5660087750",
+      "title": "Openverse:a9035165-8fdc-4ee7-86d9-0df5be013520",
+      "width": 1024
     }
   ],
   "stratton": [
@@ -2618,6 +2947,44 @@
       "sourceUrl": "https://www.flickr.com/photos/50976304@N07/53496749483",
       "title": "Openverse:7c6584c8-4217-4138-a677-e1d531bcee60",
       "width": 1024
+    }
+  ],
+  "winter-park": [
+    {
+      "alt": "The Sunnyside lift on Mary Jane at the Winter Park Ski Resort in Winter Park, Colorado.",
+      "author": "Sdgjake",
+      "file": "src/assets/places/winter-park/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winter_Park_Sunnyside_Lift.JPG",
+      "title": "File:Winter Park Sunnyside Lift.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "The bottom of the Super Gauge Express lift at the Mary Jane base at Winter Park Ski Resort in Winter Park, Colorado.",
+      "author": "Sdgjake",
+      "file": "src/assets/places/winter-park/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winter_Park_Super_Gauge_Express.jpg",
+      "title": "File:Winter Park Super Gauge Express.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "The chalet at the base of Mary Jane at the Winter Park Ski Resort in Winter Park, Colorado.",
+      "author": "Sdgjake",
+      "file": "src/assets/places/winter-park/3.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Jane_base_2.JPG",
+      "title": "File:Mary Jane base 2.JPG",
+      "width": 1280
     }
   ],
   "wolf-creek": [

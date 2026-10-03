@@ -5,6 +5,7 @@ import Icon from '../../components/Icon.astro';
 import { trips } from '../../data/trips';
 import { places, placeById } from '../../data/places';
 import { resorts, skiRegions } from '../../data/ski';
+import { pursuits, spots } from '../../data/outdoors';
 import { imagesFor } from '../../lib/images';
 import { dateRange } from '../../lib/format';
 import { url } from '../../lib/paths';
@@ -50,6 +51,9 @@ const sorted = [...trips].sort((a, b) => b.start.localeCompare(a.start));
             {skiRegions.filter((g) => resorts.some((r) => r.region === g.id)).map((g) => (
               <optgroup label={`Ski · ${g.name}`}>{resorts.filter((r) => r.region === g.id).map((r) => <option value={r.id}>{r.name}</option>)}</optgroup>
             ))}
+            {pursuits.filter((pu) => spots.some((sp) => sp.pursuit === pu.id)).map((pu) => (
+              <optgroup label={pu.name}>{spots.filter((sp) => sp.pursuit === pu.id).map((sp) => <option value={sp.id}>{sp.name}</option>)}</optgroup>
+            ))}
           </select>
         </label>
         <label>Notes<textarea name="notes" rows="3" maxlength="5000" placeholder="Cabin #003, bring sleeping bags, dinner at Moosewood…"></textarea></label>
@@ -57,7 +61,7 @@ const sorted = [...trips].sort((a, b) => b.start.localeCompare(a.start));
         <div class="row"><button class="btn btn-primary">Save plan</button><button type="button" class="btn btn-ghost" data-cancel>Cancel</button></div>
       </form>
       <ul class="plan-list" data-list></ul>
-      <script type="application/json" data-names set:html={JSON.stringify(Object.fromEntries([...places.map((p) => [p.id, [p.name, `places/${p.id}/`]]), ...resorts.map((r) => [r.id, [r.name, `ski/resorts/${r.id}/`]])]))} />
+      <script type="application/json" data-names set:html={JSON.stringify(Object.fromEntries([...places.map((p) => [p.id, [p.name, `places/${p.id}/`]]), ...resorts.map((r) => [r.id, [r.name, `ski/resorts/${r.id}/`]]), ...spots.map((sp) => [sp.id, [sp.name, `${pursuits.find((pu) => pu.id === sp.pursuit)!.slug}/${sp.id}/`]])]))} />
     </div>
   </section>
 </Layout>

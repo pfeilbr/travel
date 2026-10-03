@@ -74,7 +74,7 @@ export interface SkiThing {
   distance?: string;
 }
 
-export type EventKind = 'christmas' | 'new-years' | 'opening' | 'festival' | 'race' | 'music' | 'pond-skim' | 'other';
+export type EventKind = 'christmas' | 'new-years' | 'opening' | 'festival' | 'race' | 'tournament' | 'music' | 'pond-skim' | 'other';
 
 export interface SkiEvent {
   name: string;

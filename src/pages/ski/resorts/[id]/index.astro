@@ -5,10 +5,12 @@ import PhotoMosaic from '../../../../components/PhotoMosaic.astro';
 import CommunityReviews from '../../../../components/CommunityReviews.astro';
 import ResortCard from '../../../../components/ski/ResortCard.astro';
 import SnowReport from '../../../../components/ski/SnowReport.astro';
+import SpotCard from '../../../../components/outdoors/SpotCard.astro';
+import { spots } from '../../../../data/outdoors';
 import { resorts, skiRegionById } from '../../../../data/ski';
-import type { EventKind, LodgeKind, Resort, ThingKind } from '../../../../data/ski/types';
+import type { LodgeKind, Resort, ThingKind } from '../../../../data/ski/types';
 import { imagesFor } from '../../../../lib/images';
-import { ACTIVITY, EVENT_LABEL, HOLIDAY_KINDS, PASS_LABEL, SIZE_LABEL, ft, nearest, price, seasonLine, shortDate } from '../../../../lib/ski';
+import { ACTIVITY, EVENT_ICON, EVENT_LABEL, HOLIDAY_KINDS, PASS_LABEL, SIZE_LABEL, ft, miles, nearest, price, seasonLine, shortDate } from '../../../../lib/ski';
 import { url } from '../../../../lib/paths';
 import { drive } from '../../../../lib/format';
 
@@ -22,9 +24,11 @@ const hero = images[0];
 const cur = region.currency;
 const s = r.stats;
 const near = nearest(r, resorts, 4);
+// Off-season and nearby: bike parks, paddling, courts and campgrounds at this mountain or within ~30 miles.
+const offSeason = spots.map((sp) => ({ sp, d: sp.resortId === r.id ? -1 : miles(r.coords, sp.coords) }))
+  .filter((x) => x.d <= 30).sort((a, b) => a.d - b.d).slice(0, 8).map((x) => x.sp);
 const holiday = r.events.filter((e) => HOLIDAY_KINDS.includes(e.kind)).sort((a, b) => a.date.localeCompare(b.date));
 const other = r.events.filter((e) => !HOLIDAY_KINDS.includes(e.kind)).sort((a, b) => a.date.localeCompare(b.date));
-const EVENT_ICON: Record<EventKind, string> = { christmas: 'tree', 'new-years': 'sparkle', opening: 'flag', festival: 'sparkle', race: 'flag', music: 'music', 'pond-skim': 'swimming', other: 'calendar' };
 const THING_ICON = (k: ThingKind) => (k in ACTIVITY ? ACTIVITY[k as keyof typeof ACTIVITY].icon : ({ eat: 'restaurants', drink: 'nightlife', shop: 'bag', museum: 'history', other: 'pin' } as Record<string, string>)[k]);
 const LODGE_ORDER: LodgeKind[] = ['ski-in/ski-out', 'slopeside', 'base village', 'lodge', 'hotel', 'condo', 'inn', 'b&b', 'cabin', 'hostel'];
 const lodging = [...r.lodging].sort((a, b) => LODGE_ORDER.indexOf(a.kind) - LODGE_ORDER.indexOf(b.kind));
@@ -230,6 +234,14 @@ const statRows = [
       </aside>
     </div>
 
+    {offSeason.length > 0 && (
+      <section class="near">
+        <h2>Beyond skiing</h2>
+        <p class="muted sub-near">Bike parks, paddling, courts and campgrounds here or within about 30 miles.</p>
+        <div class="rail">{offSeason.map((sp) => <SpotCard spot={sp} showPursuit badge={sp.resortId === r.id ? 'At this mountain' : undefined} />)}</div>
+      </section>
+    )}
+
     {near.length > 0 && (
       <section class="near">
         <h2>Nearby mountains</h2>
@@ -334,6 +346,7 @@ const statRows = [
   .fine { font-size: 13px; color: var(--muted); margin: 0; text-align: center; }
   .trip-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 16px; font-size: 14px; font-weight: 600; }
   .near { margin-top: 48px; }
+  .sub-near { margin-top: -8px; }
   .rail { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
   @media (max-width: 1000px) { .rail { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 72%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; } .rail > :global(*) { scroll-snap-align: start; } }
   .mobile-book { display: none; }

@@ -19,6 +19,10 @@ with Supabase for user accounts and data.
   snowmobiling, ice skating, scenic lifts, nightlife…; sort by vertical, snowfall, price or live new snow), resort pages
   (stats and terrain mix, live snow and weather, where to stay, things to do, après, Christmas/New Year's and other events,
   getting there, reviews) and a holiday calendar (`/ski/holidays/`).
+- **Biking, kayaking, pickleball and camping (`/bike/`, `/kayak/`, `/pickleball/`, `/camping/`):** the same regions,
+  each with a hub (regions, close to home, destinations, events, filterable list + map) and spot pages (facts,
+  features, live weather, outfitters, events, lodging, nearby, and cross-links to ski resorts and other activities).
+  The header switches between Camping, Ski, Biking, Kayaking and Pickleball.
 - **Live snow:** the browser asks [Open-Meteo](https://open-meteo.com/) (free, no key) for the 7-day snowfall forecast and
   last week's snow at each mountain's elevation. It's a model forecast; each resort links its official snow report.
 - **Accounts (Supabase Auth):** email + password, magic link, Google and Apple. Users get wishlists (heart any place),
@@ -41,10 +45,12 @@ with Supabase for user accounts and data.
 src/
   pages/            routes: / explore/ trips/[slug]/ places/[id]/ wishlists/ account/ credits/ auth/callback/
                     ski/ ski/explore/ ski/holidays/ ski/[region]/ ski/resorts/[id]/
+                    [pursuit]/ [pursuit]/[id]/ (bike, kayak, pickleball, camping)
   components/       Header, AuthModal, PlaceCard, Explorer (filters + map), PhotoMosaic, CommunityReviews…
                     ski/ResortCard, ski/SkiExplorer, ski/SnowReport, ski/RegionTabs
   data/             places.ts, trips.ts (typed content), images.json (generated photo credits)
                     ski/types.ts, ski/regions.ts, ski/resorts/*.ts (one file per research batch)
+                    outdoors/types.ts, outdoors/pursuits.ts, outdoors/spots/*.ts
   lib/              supabase client, wishlist, filter/format helpers, paths
   assets/places/    downloaded photos (optimized at build)
 supabase/

@@ -1,0 +1,83 @@
+---
+// Live 7-day weather from Open-Meteo for a spot (rain chance, highs and lows, sunrise and sunset).
+import Icon from '../Icon.astro';
+
+interface Props { coords: [number, number]; name: string; links?: { label: string; url: string; icon: string }[] }
+const { coords, name, links = [] } = Astro.props;
+---
+<section class="wx" id="weather" data-wx data-lat={coords[0]} data-lng={coords[1]}>
+  <h2>Weather this week</h2>
+  <p class="muted status" data-status>Loading the live forecast for {name}…</p>
+  <noscript><p class="muted">Turn on JavaScript for the live forecast.</p></noscript>
+  <div data-live hidden>
+    <div class="now">
+      <span class="now-ic" data-now-icon></span>
+      <div>
+        <div class="temp"><b data-temp></b><span data-cond></span></div>
+        <p class="muted" data-now-line></p>
+      </div>
+    </div>
+    <ol class="days" data-days aria-label="7-day forecast"></ol>
+    <p class="fine muted" data-fine></p>
+  </div>
+  {links.length > 0 && (
+    <div class="links">
+      {links.map((l, i) => <a class:list={['btn', 'btn-sm', i === 0 ? 'btn-primary' : 'btn-outline']} href={l.url} rel="noopener"><Icon name={l.icon} size={16} />{l.label}</a>)}
+    </div>
+  )}
+  {['sun', 'cloud-sun', 'cloud', 'rain', 'snowflake'].map((n) => <template data-icon={n}><Icon name={n} size={22} /></template>)}
+</section>
+
+<style>
+  .wx h2 { margin: 0; }
+  .status { margin: 14px 0 0; }
+  .now { display: flex; gap: 16px; align-items: center; margin: 18px 0; }
+  .now-ic { width: 56px; height: 56px; border-radius: 16px; background: var(--surface); display: grid; place-items: center; flex: none; }
+  .now-ic :global(svg) { width: 30px; height: 30px; }
+  .temp { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .temp b { font-size: 34px; line-height: 1; letter-spacing: -0.02em; }
+  .temp span { font-weight: 600; }
+  .now p { margin: 4px 0 0; font-size: 14px; }
+  .days { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+  .days :global(li) { display: grid; justify-items: center; gap: 4px; padding: 10px 4px; border-radius: 10px; background: var(--surface); font-size: 13px; text-align: center; }
+  .days :global(.dn) { font-weight: 700; }
+  .days :global(.hl) { color: var(--muted); }
+  .days :global(.hl b) { color: var(--ink); }
+  .days :global(.pp) { font-weight: 700; color: var(--snow-ink); min-height: 1.2em; }
+  .days :global(svg) { color: var(--ink-2); }
+  @media (max-width: 520px) { .days { grid-template-columns: repeat(4, minmax(0, 1fr)); } .days :global(li:nth-child(n+5)) { display: none; } }
+  .fine { font-size: 13px; margin: 14px 0 0; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+</style>
+
+<script>
+  import { weatherUrl } from '../../lib/outdoors';
+  import { wmo } from '../../lib/ski';
+
+  document.querySelectorAll<HTMLElement>('[data-wx]').forEach(async (root) => {
+    const $ = (s: string) => root.querySelector<HTMLElement>(s)!;
+    const icon = (n: string) => root.querySelector<HTMLTemplateElement>(`template[data-icon="${n}"]`)?.innerHTML ?? '';
+    const time = (iso: string) => new Date(iso).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+    try {
+      const res = await fetch(weatherUrl(Number(root.dataset.lat), Number(root.dataset.lng)));
+      if (!res.ok) throw new Error(String(res.status));
+      const d = await res.json();
+      const w = wmo(d.current.weather_code);
+      $('[data-now-icon]').innerHTML = icon(w.icon);
+      $('[data-temp]').textContent = `${Math.round(d.current.temperature_2m)}°F`;
+      $('[data-cond]').textContent = w.label;
+      $('[data-now-line]').textContent = `Feels like ${Math.round(d.current.apparent_temperature)}°F · wind ${Math.round(d.current.wind_speed_10m)} mph · sunrise ${time(d.daily.sunrise[0])}, sunset ${time(d.daily.sunset[0])}`;
+      $('[data-days]').innerHTML = d.daily.time.map((day: string, i: number) => {
+        const wd = wmo(d.daily.weather_code[i]);
+        const name = i === 0 ? 'Today' : new Date(day + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short' });
+        const pp = d.daily.precipitation_probability_max[i];
+        return `<li title="${wd.label}"><span class="dn">${name}</span>${icon(wd.icon)}<span class="hl"><b>${Math.round(d.daily.temperature_2m_max[i])}°</b> ${Math.round(d.daily.temperature_2m_min[i])}°</span><span class="pp">${pp >= 20 ? `${pp}%` : ''}</span></li>`;
+      }).join('');
+      $('[data-fine]').textContent = 'Model forecast from Open-Meteo. Percentages are the chance of rain or snow.';
+      $('[data-status]').hidden = true;
+      $('[data-live]').hidden = false;
+    } catch {
+      $('[data-status]').textContent = 'The live forecast is unavailable right now.';
+    }
+  });
+</script>

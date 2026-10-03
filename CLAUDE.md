@@ -40,6 +40,19 @@ auth (email + password, magic link, Google, Apple) and data (wishlists, reviews,
 - Adding a resort: append to the right `resorts/*.ts`, add an `image_sources.json` entry (Commons category if one
   exists, plus an Openverse fallback), run `python3 scripts/fetch_images.py --only <id>` and look at the photos.
 
+## Biking, kayaking, pickleball and camping sections
+
+- Same 11 regions as ski. One shared schema: `src/data/outdoors/types.ts` (`Spot`), activity definitions with their
+  `kinds` and feature vocabularies in `pursuits.ts`, data in `spots/*.ts` (glob in `src/data/outdoors/index.ts`).
+- Routes: `/<slug>/` hub (region tiles, close-to-home and destination rails, upcoming events, list + map explorer
+  with URL filters) and `/<slug>/<id>/` spot pages (facts, features, live 7-day weather, outfitters, events,
+  lodging, nearby, reviews, map, and "make a trip of it" cross-links to nearby spots, ski resorts and places).
+  Slugs: `bike`, `kayak`, `pickleball`, `camping`. The camping hub also features the live-checked trip.
+- Spot ids share the global id namespace with places and resorts; `tests/js/spots-data.test.ts` enforces it.
+  Set `resortId` when a bike park or courts sit at a ski resort so both pages link to each other.
+- The ski and outdoors explorers share `src/lib/listmap.ts` (Leaflet list + map) and `src/styles/listmap.css`.
+  Sticky offsets use the `--header-h` token.
+
 ## Verify before every commit
 
 ```

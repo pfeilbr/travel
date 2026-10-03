@@ -7,6 +7,7 @@ import { skiRegionById, skiRegions } from '../../data/ski/regions';
 import { imagesFor } from '../../lib/images';
 import { ACTIVITY, PASSES, PASS_LABEL, SIZE_LABEL, price, sortResorts, type SkiRow } from '../../lib/ski';
 import { url } from '../../lib/paths';
+import '../../styles/listmap.css';
 
 interface Props { resorts: Resort[]; region?: SkiRegionId; mapLabel?: string }
 const { resorts, region, mapLabel = 'Map of ski resorts' } = Astro.props;
@@ -34,7 +35,7 @@ const activityChips: SkiActivity[] = (['night-skiing', 'sleigh-rides', 'snowmobi
 const passChips = PASSES.filter((p) => resorts.some((r) => r.passes.includes(p)));
 const regionChips = region ? [] : skiRegions.filter((g) => resorts.some((r) => r.region === g.id));
 ---
-<section class="explorer" data-ski-explorer data-fixed-region={region ?? ''}>
+<section class="explorer lm" data-ski-explorer data-fixed-region={region ?? ''}>
   <div class="filters">
     <div class="container filter-row">
       <div class="chips" role="group" aria-label="Filters">
@@ -85,64 +86,14 @@ const regionChips = region ? [] : skiRegions.filter((g) => resorts.some((r) => r
 </section>
 
 <style>
-  .filters { position: sticky; top: 80px; z-index: 40; background: var(--bg); border-bottom: 1px solid var(--rule); }
-  .filter-row { display: flex; align-items: center; gap: 12px; padding-top: 14px; padding-bottom: 14px; max-width: none; }
-  .chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; padding: 2px; mask-image: linear-gradient(90deg, #000 calc(100% - 40px), transparent); }
-  .chips::-webkit-scrollbar { display: none; }
-  .sep { flex: none; width: 1px; background: var(--rule); margin: 4px; }
-  .sort select { height: 36px; border-radius: var(--radius-pill); border: 1px solid var(--rule-strong); background: var(--surface-2); color: var(--ink); padding: 0 32px 0 14px; font: inherit; font-size: 14px; appearance: none; background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%); background-position: calc(100% - 17px) 15px, calc(100% - 12px) 15px; background-size: 5px 5px; background-repeat: no-repeat; cursor: pointer; }
-  .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 42%); }
-  .split.no-map { grid-template-columns: 1fr; }
-  .split.no-map .map-pane { display: none; }
-  .list { padding: 20px var(--gutter) 40px; }
-  .count { font-weight: 600; margin: 0 0 16px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
   .live { font-weight: 500; font-size: 13px; display: inline-flex; align-items: center; gap: 6px; }
   .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--snow); box-shadow: 0 0 0 3px color-mix(in srgb, var(--snow) 25%, transparent); }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 36px 24px; }
-  .split.no-map .grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
-  .grid > :global(.card.hl) :global(.media) { box-shadow: 0 0 0 3px var(--ink); }
-  .empty { text-align: center; padding: 64px 0; }
-  .map-pane { position: sticky; top: 145px; height: calc(100dvh - 145px); }
-  .map { width: 100%; height: 100%; background: var(--surface); }
-  .map-fab { display: none; }
-
-  :global(.ski-pin) { background: var(--surface-2); color: var(--ink); border-radius: var(--radius-pill); padding: 5px 9px; font: 700 13px/1 var(--font); box-shadow: 0 1px 4px rgba(0,0,0,.28), 0 0 0 1px rgba(0,0,0,.06); white-space: nowrap; transform: translate(-50%, -50%); width: max-content; transition: transform .15s; cursor: pointer; }
-  :global(.ski-pin.major) { background: var(--ink); color: var(--bg); }
-  :global(.ski-pin.active), :global(.ski-pin:hover) { background: var(--accent); color: var(--accent-ink); transform: translate(-50%, -50%) scale(1.12); z-index: 1000; }
-  :global(.ski-pin b) { margin-left: 5px; font-weight: 600; }
-  :global(.leaflet-popup-content-wrapper) { padding: 0; border-radius: var(--radius); overflow: hidden; background: var(--surface-2); color: var(--ink); }
-  :global(.leaflet-popup-content) { margin: 0; width: 260px !important; font: 14px/1.4 var(--font); }
-  :global(.leaflet-popup-tip) { background: var(--surface-2); }
-  :global(.mini) { display: block; text-decoration: none; color: inherit; }
-  :global(.mini img) { width: 100%; height: 150px; object-fit: cover; }
-  :global(.mini div) { padding: 10px 12px 12px; }
-  :global(.mini b) { display: block; font-size: 15px; }
-  :global(.mini .m) { color: var(--muted); }
-  :global(.leaflet-container) { font-family: var(--font); }
-  :global(.tiles) { filter: saturate(.75) contrast(.95); }
-  :global(.tiles-dark) { filter: invert(1) hue-rotate(180deg) brightness(.9) contrast(.9) saturate(.5); }
-
-  @media (max-width: 1127px) {
-    .split, .split.no-map { grid-template-columns: 1fr; }
-    .map-toggle-desk { display: none; }
-    .map-pane { display: none; position: fixed; inset: 80px 0 0 0; height: auto; z-index: 46; }
-    .split.show-map-mobile .map-pane { display: block; }
-    .split.show-map-mobile .list { visibility: hidden; height: 0; overflow: hidden; padding: 0; }
-    .map-fab { display: inline-flex; align-items: center; gap: 8px; position: fixed; left: 50%; bottom: 24px; translate: -50% 0; z-index: 47; height: 48px; padding: 0 20px; border: 0; border-radius: var(--radius-pill); background: var(--ink); color: var(--bg); font-weight: 600; box-shadow: var(--shadow); cursor: pointer; }
-  }
-  @media (max-width: 760px) {
-    .filters { top: 64px; }
-    .map-pane { inset: 64px 0 0 0; }
-    .filter-row { flex-wrap: wrap; gap: 10px; }
-    .chips { flex-basis: 100%; order: 2; }
-  }
 </style>
 
 <script>
-  import L from 'leaflet';
-  import 'leaflet/dist/leaflet.css';
   import { inches, matchesSki, parseSkiFilters, serializeSkiFilters, sortResorts, type SkiFilters, type SkiRow, type SkiSort } from '../../lib/ski';
   import { loadSnow } from '../../lib/ski-live';
+  import { esc, setupListMap, type MapRow } from '../../lib/listmap';
   import { wireCarousels } from '../../lib/carousel';
   import { wireHearts } from '../../lib/wishlist';
 
@@ -151,7 +102,6 @@ const regionChips = region ? [] : skiRegions.filter((g) => resorts.some((r) => r
   document.querySelectorAll<HTMLElement>('[data-ski-explorer]').forEach((root) => {
     const data: R[] = JSON.parse(root.querySelector('[data-rows]')!.textContent!);
     const grid = root.querySelector<HTMLElement>('[data-grid]')!;
-    const split = root.querySelector<HTMLElement>('[data-split]')!;
     const cards = new Map([...grid.querySelectorAll<HTMLElement>('[data-card]')].map((c) => [c.dataset.card!, c]));
     const fixedRegion = root.dataset.fixedRegion || '';
     let snow = new Map<string, number>();
@@ -162,6 +112,13 @@ const regionChips = region ? [] : skiRegions.filter((g) => resorts.some((r) => r
     let { filters, sort } = parseSkiFilters(new URLSearchParams(location.search));
     if (fixedRegion) filters.regions = [];
 
+    const pinLabel = (d: R) => `${esc(d.pin)}${snow.get(d.id) ? `<b>❄${esc(inches(snow.get(d.id)!))}</b>` : ''}`;
+    const rows: (MapRow & { d: R })[] = data.map((d) => ({
+      d, id: d.id, coords: d.coords, pin: pinLabel(d), major: d.size === 'major',
+      popup: () => `<a class="mini" href="${d.href}">${d.thumb ? `<img src="${d.thumb}" alt="">` : ''}<div><b>${esc(d.name)}</b><span class="m">${d.google ? `★ ${d.google.rating.toFixed(1)} · ` : ''}${esc(d.line)}</span>${snow.has(d.id) ? `<br><span class="m">❄ ${esc(inches(snow.get(d.id)!))} forecast next 7 days</span>` : ''}</div></a>`,
+    }));
+    const lm = setupListMap(root, rows, cards);
+
     function render() {
       const visible = sortResorts(data.filter((r) => matchesSki(r, filters)), sort, snow);
       const ids = new Set(visible.map((r) => r.id));
@@ -169,7 +126,7 @@ const regionChips = region ? [] : skiRegions.filter((g) => resorts.some((r) => r
       cards.forEach((c, id) => (c.hidden = !ids.has(id)));
       root.querySelector('[data-count]')!.textContent = `${ids.size} ${ids.size === 1 ? 'resort' : 'resorts'}`;
       root.querySelector<HTMLElement>('[data-empty]')!.hidden = ids.size > 0;
-      markers.forEach((m, id) => (ids.has(id) ? m.addTo(map) : m.remove()));
+      lm.show(ids);
       sync();
       history.replaceState(null, '', location.pathname + serializeSkiFilters(filters, sort, !!fixedRegion));
     }
@@ -197,51 +154,6 @@ const regionChips = region ? [] : skiRegions.filter((g) => resorts.some((r) => r
     root.querySelector<HTMLSelectElement>('[data-sort]')!.addEventListener('change', (e) => { sort = (e.target as HTMLSelectElement).value as SkiSort; render(); });
     root.querySelector('[data-clear]')!.addEventListener('click', () => { filters = { regions: [], passes: [], activities: [], sizes: [] }; render(); });
 
-    // ---- map
-    const dark = () => document.documentElement.dataset.theme === 'dark' || (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
-    const map = L.map(root.querySelector<HTMLElement>('[data-map]')!, { zoomControl: true, scrollWheelZoom: true });
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      maxZoom: 19, className: dark() ? 'tiles-dark' : 'tiles',
-    }).addTo(map);
-    const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
-    const markers = new Map<string, L.Marker>();
-    const pinHtml = (d: R) => `<div class="ski-pin${d.size === 'major' ? ' major' : ''}" data-pin="${d.id}">${esc(d.pin)}${snow.get(d.id) ? `<b>❄${esc(inches(snow.get(d.id)!))}</b>` : ''}</div>`;
-    const popup = (d: R) => `<a class="mini" href="${d.href}">${d.thumb ? `<img src="${d.thumb}" alt="">` : ''}<div><b>${esc(d.name)}</b><span class="m">${d.google ? `★ ${d.google.rating.toFixed(1)} · ` : ''}${esc(d.line)}</span>${snow.has(d.id) ? `<br><span class="m">❄ ${esc(inches(snow.get(d.id)!))} forecast next 7 days</span>` : ''}</div></a>`;
-    data.forEach((d) => {
-      const m = L.marker(d.coords, { icon: L.divIcon({ className: '', html: pinHtml(d), iconSize: [0, 0] }), title: d.name, riseOnHover: true, zIndexOffset: d.size === 'major' ? 100 : 0 });
-      m.bindPopup(() => popup(d), { offset: [0, -8], maxWidth: 260 });
-      markers.set(d.id, m.addTo(map));
-    });
-    const fit = () => (data.length ? map.fitBounds(L.latLngBounds(data.map((d) => d.coords)), { padding: [40, 40], maxZoom: 10 }) : map.setView([45, -100], 3));
-    fit();
-
-    const pin = (id: string) => root.querySelector<HTMLElement>(`[data-pin="${id}"]`);
-    cards.forEach((card, id) => {
-      card.addEventListener('mouseenter', () => { pin(id)?.classList.add('active'); markers.get(id)?.setZIndexOffset(1000); });
-      card.addEventListener('mouseleave', () => { pin(id)?.classList.remove('active'); markers.get(id)?.setZIndexOffset(0); });
-    });
-    markers.forEach((m, id) => {
-      m.on('mouseover', () => cards.get(id)?.classList.add('hl'));
-      m.on('mouseout', () => cards.get(id)?.classList.remove('hl'));
-    });
-
-    const deskBtn = root.querySelector<HTMLButtonElement>('[data-map-toggle]')!;
-    deskBtn.addEventListener('click', () => {
-      const hide = !split.classList.contains('no-map');
-      split.classList.toggle('no-map', hide);
-      deskBtn.querySelector('span')!.textContent = hide ? 'Show map' : 'Hide map';
-      deskBtn.setAttribute('aria-pressed', String(!hide));
-      setTimeout(() => map.invalidateSize(), 50);
-    });
-    const fab = root.querySelector<HTMLButtonElement>('[data-map-fab]')!;
-    fab.addEventListener('click', () => {
-      const on = split.classList.toggle('show-map-mobile');
-      root.querySelector('[data-fab-label]')!.textContent = on ? 'List' : 'Map';
-      window.scrollTo({ top: 0 });
-      setTimeout(() => { map.invalidateSize(); fit(); }, 50);
-    });
-
     render();
 
     // ---- live snow: badge each card with the 7-day forecast (or last week's total)
@@ -250,13 +162,13 @@ const regionChips = region ? [] : skiRegions.filter((g) => resorts.some((r) => r
       snow = new Map([...totals].map(([id, t]) => [id, t.next]));
       root.querySelector<HTMLElement>('[data-live]')!.hidden = false;
       totals.forEach((t, id) => {
-        const card = cards.get(id);
-        const badge = card?.querySelector<HTMLElement>('[data-snow-badge]');
+        const badge = cards.get(id)?.querySelector<HTMLElement>('[data-snow-badge]');
         if (!badge) return;
         const text = t.next >= 0.5 ? `${inches(t.next)} next 7 days` : t.past >= 0.5 ? `${inches(t.past)} last 7 days` : '';
         badge.hidden = !text;
         badge.querySelector('[data-snow-text]')!.textContent = text;
-        markers.get(id)?.setIcon(L.divIcon({ className: '', html: pinHtml(data.find((d) => d.id === id)!), iconSize: [0, 0] }));
+        const row = rows.find((r) => r.id === id);
+        if (row) lm.relabel(row, pinLabel(row.d));
       });
       if (sort === 'snow') render();
     });

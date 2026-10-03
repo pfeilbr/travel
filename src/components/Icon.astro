@@ -74,6 +74,7 @@ const paths: Record<string, string> = {
   vertical: '<path d="M7 3v18M7 3 4 6M7 3l3 3M7 21l-3-3M7 21l3-3M14 6h7M14 12h5M14 18h7"/>',
   expand: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
   clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  pickleball: '<rect x="3.5" y="3" width="10" height="12" rx="4.5" transform="rotate(-35 8.5 9)"/><path d="m11.6 13.6 4.4 6.3"/><circle cx="18.5" cy="6" r="2.5"/><path d="M18 5.2h.01M19.2 6.6h.01"/>',
 };
 interface Props { name: string; size?: number; class?: string; label?: string }
 const { name, size = 20, class: cls, label } = Astro.props;

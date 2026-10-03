@@ -34,7 +34,12 @@ export const ACTIVITY: Record<SkiActivity, { label: string; icon: string }> = {
 
 export const EVENT_LABEL: Record<EventKind, string> = {
   christmas: 'Christmas', 'new-years': 'New Year’s', opening: 'Opening day', festival: 'Festival',
-  race: 'Race', music: 'Music', 'pond-skim': 'Pond skim', other: 'Event',
+  race: 'Race', tournament: 'Tournament', music: 'Music', 'pond-skim': 'Pond skim', other: 'Event',
+};
+
+export const EVENT_ICON: Record<EventKind, string> = {
+  christmas: 'tree', 'new-years': 'sparkle', opening: 'flag', festival: 'sparkle', race: 'flag', tournament: 'flag',
+  music: 'music', 'pond-skim': 'swimming', other: 'calendar',
 };
 
 export const ft = (n: number) => `${n.toLocaleString('en-US')} ft`;

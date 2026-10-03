@@ -1,0 +1,371 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Icon from '../../../components/Icon.astro';
+import PhotoMosaic from '../../../components/PhotoMosaic.astro';
+import CommunityReviews from '../../../components/CommunityReviews.astro';
+import PlaceCard from '../../../components/PlaceCard.astro';
+import ResortCard from '../../../components/ski/ResortCard.astro';
+import SpotCard from '../../../components/outdoors/SpotCard.astro';
+import Forecast from '../../../components/outdoors/Forecast.astro';
+import { pursuitById, spots } from '../../../data/outdoors';
+import type { Spot } from '../../../data/outdoors/types';
+import { resortById, resorts } from '../../../data/ski';
+import { skiRegionById } from '../../../data/ski/regions';
+import { places } from '../../../data/places';
+import type { LodgeKind, ThingKind } from '../../../data/ski/types';
+import { imagesFor } from '../../../lib/images';
+import { ACTIVITY, EVENT_ICON, EVENT_LABEL, miles, price as money, shortDate } from '../../../lib/ski';
+import { SPOT_SIZE_LABEL, priceText, seasonText } from '../../../lib/outdoors';
+import { drive } from '../../../lib/format';
+import { url } from '../../../lib/paths';
+
+export function getStaticPaths() {
+  return spots.map((spot) => ({ params: { pursuit: pursuitById[spot.pursuit].slug, id: spot.id }, props: { spot } }));
+}
+const { spot: s } = Astro.props as { spot: Spot };
+const p = pursuitById[s.pursuit];
+const region = skiRegionById[s.region];
+const cur = region.currency;
+const images = imagesFor(s.id);
+const hero = images[0];
+const resort = s.resortId ? resortById[s.resortId] : undefined;
+const features = s.features.map((id) => p.features.find((f) => f.id === id)).filter((f) => f !== undefined);
+const LODGE_ORDER: LodgeKind[] = ['ski-in/ski-out', 'slopeside', 'base village', 'lodge', 'cabin', 'hotel', 'condo', 'inn', 'b&b', 'hostel'];
+const lodging = [...s.lodging].sort((a, b) => LODGE_ORDER.indexOf(a.kind) - LODGE_ORDER.indexOf(b.kind));
+const THING_ICON = (k: ThingKind) => (k in ACTIVITY ? ACTIVITY[k as keyof typeof ACTIVITY].icon : ({ eat: 'restaurants', drink: 'nightlife', shop: 'bag', museum: 'history', other: 'pin' } as Record<string, string>)[k]);
+const LEVEL: Record<string, string> = { beginner: 'Beginner', intermediate: 'Intermediate', advanced: 'Advanced', expert: 'Expert' };
+const events = [...s.events].sort((a, b) => a.date.localeCompare(b.date));
+
+// Nearby: the same activity, then everything else within ~40 miles (other activities, ski resorts, live-checked places).
+const R = 40;
+const near = <T extends { id: string; coords: [number, number] }>(list: T[]) =>
+  list.filter((x) => x.id !== s.id).map((x) => ({ x, d: miles(s.coords, x.coords) })).filter((y) => y.d <= R).sort((a, b) => a.d - b.d).map((y) => y.x);
+const sameNear = near(spots.filter((o) => o.pursuit === s.pursuit)).slice(0, 4);
+const otherNear = near(spots.filter((o) => o.pursuit !== s.pursuit)).slice(0, 4);
+const resortsNear = near(resorts).filter((r) => r.id !== s.resortId).slice(0, 4);
+const placesNear = near(places).slice(0, 4);
+const alsoCount = otherNear.length + resortsNear.length + placesNear.length + (resort ? 1 : 0);
+const links = [
+  ...(s.conditionsUrl ? [{ label: 'Current conditions', url: s.conditionsUrl, icon: 'info' }] : []),
+  ...(s.mapUrl ? [{ label: 'Map', url: s.mapUrl, icon: 'map' }] : []),
+];
+---
+<Layout title={s.name} description={`${s.tagline}. ${s.summary}`} image={hero?.src.src}>
+  <div class="container page">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href={url(`${p.slug}/`)}>{p.name}</a><Icon name="chev-right" size={12} /><a href={url(`${p.slug}/?region=${region.id}#explore`)}>{region.name}</a><Icon name="chev-right" size={12} /><span>{s.name}</span></nav>
+    <header class="title">
+      <h1>{s.name}</h1>
+      <div class="sub">
+        {s.google && <a class="rating" href={s.google.url} rel="noopener" title="Read reviews on Google Maps"><Icon name="star" size={14} />{s.google.rating.toFixed(1)} <span class="u">on Google</span></a>}
+        {s.google && <span aria-hidden="true">·</span>}
+        <span>{s.town} · {s.area}</span>
+        <span class="spacer"></span>
+        <button class="act" data-share><Icon name="share" size={16} /><span>Share</span></button>
+        <button class="act heart-act" data-save={s.id} data-name={s.name} aria-pressed="false"><Icon name="heart" size={16} /><span>Save</span></button>
+      </div>
+    </header>
+
+    <PhotoMosaic images={images} name={s.name} />
+
+    <div class="layout">
+      <div class="main">
+        <section class="intro">
+          <h2>{s.kind} in {s.town}</h2>
+          <p class="muted facts-line">{s.facts.slice(0, 3).map((f) => `${f.value} ${f.label.toLowerCase()}`).join(' · ')}</p>
+        </section>
+
+        <section class="highlights">
+          <div class="hl"><Icon name="calendar" size={24} /><div><b>In season {seasonText(s.season)}</b><p class="muted">{s.season.note ?? p.season}</p></div></div>
+          {s.price && <div class="hl"><Icon name="ticket" size={24} /><div><b>{priceText(s.price, cur)}</b>{s.price.note && <p class="muted">{s.price.note}</p>}</div></div>}
+          {resort && <div class="hl"><Icon name="snowflake" size={24} /><div><b>At {resort.name}</b><p class="muted"><a href={url(`ski/resorts/${resort.id}/`)}>See the winter side: lifts, lodging and snow</a></p></div></div>}
+        </section>
+
+        <section>
+          <p class="lead">{s.tagline}.</p>
+          <p>{s.summary}</p>
+        </section>
+
+        <section>
+          <h2>At a glance</h2>
+          <dl class="stats">
+            {s.facts.map((f) => <div><dt>{f.label}</dt><dd>{f.value}</dd></div>)}
+            {s.levels && s.levels.length > 0 && <div><dt>Good for</dt><dd>{s.levels.map((l) => LEVEL[l]).join(', ')}</dd></div>}
+          </dl>
+        </section>
+
+        {features.length > 0 && (
+          <section>
+            <h2>What’s here</h2>
+            <ul class="offers">{features.map((f) => <li><Icon name={f!.icon} size={22} />{f!.label}</li>)}</ul>
+          </section>
+        )}
+
+        <Forecast coords={s.coords} name={s.name} links={links} />
+
+        {s.outfitters.length > 0 && (
+          <section>
+            <h2>{s.pursuit === 'camp' ? 'Gear, rentals and guides' : s.pursuit === 'pickleball' ? 'Lessons, clubs and gear' : 'Rentals, guides and shops'}</h2>
+            <ul class="nearby">
+              {s.outfitters.map((o) => (
+                <li><span class="ni"><Icon name="bag" size={20} /></span><div><b>{o.url ? <a href={o.url} rel="noopener">{o.name}</a> : o.name}</b><p class="muted">{o.what}</p></div></li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {events.length > 0 && (
+          <section id="events">
+            <h2>Events</h2>
+            <p class="muted">“Usually” means the date follows past years. Confirm before you go.</p>
+            <ul class="events">
+              {events.map((e) => (
+                <li>
+                  <span class="ei"><Icon name={EVENT_ICON[e.kind]} size={20} /></span>
+                  <div>
+                    <div class="eh"><span class="kind">{EVENT_LABEL[e.kind]}</span><span class="date">{e.when}</span>{!e.confirmed && <span class="usually">Usually</span>}</div>
+                    <b>{e.url ? <a href={e.url} rel="noopener">{e.name}</a> : e.name}</b>
+                    <p class="muted">{e.what}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {lodging.length > 0 && (
+          <section id="stay">
+            <h2>Where to stay</h2>
+            <ul class="lodging">
+              {lodging.map((l) => (
+                <li>
+                  <span class="kind-tag">{l.kind}</span>
+                  <b><a href={l.url} rel="noopener">{l.name}</a></b>
+                  <p class="muted">{l.what}</p>
+                  <div class="lmeta">
+                    {l.distance && <span><Icon name="pin" size={14} />{l.distance}</span>}
+                    {l.priceFrom !== undefined && <span><b>{money(l.priceFrom, cur)}</b> / night{l.priceNote ? ` · ${l.priceNote}` : ''}</span>}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {s.thingsToDo.length > 0 && (
+          <section>
+            <h2>Nearby</h2>
+            <ul class="nearby">
+              {s.thingsToDo.map((n) => (
+                <li>
+                  <span class="ni"><Icon name={THING_ICON(n.kind)} size={20} /></span>
+                  <div><b>{n.url ? <a href={n.url} rel="noopener">{n.name}</a> : n.name}</b>{n.distance && <span class="muted"> · {n.distance}</span>}<p class="muted">{n.what}</p></div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {s.google && (
+          <section>
+            <div class="g-head"><h2><Icon name="star" size={22} /> {s.google.rating.toFixed(1)} on Google</h2><span class="muted src">read {shortDate(s.google.asOf, true)}</span></div>
+            {s.reviewThemes && (
+              <>
+                <div class="themes">
+                  <div><h3>What people love</h3><ul class="ticks">{s.reviewThemes.loved.map((t) => <li><Icon name="check" size={18} />{t}</li>)}</ul></div>
+                  <div><h3>Heads-up</h3><ul class="ticks warn">{s.reviewThemes.watchFor.map((t) => <li><Icon name="info" size={18} />{t}</li>)}</ul></div>
+                </div>
+                <p class="muted small">These themes are our summary of recent reviews, not quotes.</p>
+              </>
+            )}
+            <a class="btn btn-outline" href={s.google.url} rel="noopener">Read reviews on Google Maps</a>
+          </section>
+        )}
+
+        <section>
+          <h2>Getting there</h2>
+          <ul class="getting">
+            <li><Icon name="plane" size={20} /><span><b>{s.getting.airport} ({s.getting.code})</b> · about {drive(s.getting.driveMin)} drive</span></li>
+            {s.getting.from?.map((f) => <li><Icon name="car" size={20} /><span>{f.city} · about {f.hours} hr</span></li>)}
+          </ul>
+          <div class="mini-map" data-mini-map data-lat={s.coords[0]} data-lng={s.coords[1]} data-name={s.name}></div>
+          <p class="muted small"><a href={`https://www.google.com/maps/dir/?api=1&destination=${s.coords[0]},${s.coords[1]}`} rel="noopener">Directions in Google Maps</a></p>
+        </section>
+
+        <CommunityReviews placeId={s.id} placeName={s.name} prompt="How was it? Conditions, crowds, tips for the next visitor…" />
+
+        {images.length > 0 && (
+          <section class="credits">
+            <h3>Photo credits</h3>
+            <p class="muted small">
+              {images.map((img, i) => <>{i > 0 && ' · '}<a href={img.sourceUrl} rel="noopener">{img.author || 'Wikimedia Commons'}</a> ({img.license}){img.nearby && ', nearby'}</>)}
+              .
+            </p>
+          </section>
+        )}
+      </div>
+
+      <aside class="side">
+        <div class="book">
+          <div class="price-line">{s.price ? <strong>{priceText(s.price, cur)}</strong> : <strong>{p.name}</strong>}</div>
+          <dl class="facts-box">
+            <div><dt>Season</dt><dd>{seasonText(s.season)}</dd></div>
+            <div><dt>Type</dt><dd>{s.kind}</dd></div>
+            <div><dt>Scale</dt><dd>{SPOT_SIZE_LABEL[s.size]}</dd></div>
+            <div><dt>Region</dt><dd>{region.name}</dd></div>
+          </dl>
+          {s.bookingUrl && <a class="btn btn-primary btn-block" href={s.bookingUrl} rel="noopener">{s.pursuit === 'camp' ? 'Reserve a site' : s.pursuit === 'pickleball' ? 'Book a court' : 'Book or rent'}</a>}
+          <a class:list={['btn', 'btn-block', s.bookingUrl ? 'btn-outline' : 'btn-primary']} href={s.url} rel="noopener">Official site <Icon name="ext" size={14} /></a>
+          <div class="jump"><a href="#weather">Weather</a>{lodging.length > 0 && <a href="#stay">Where to stay</a>}{alsoCount > 0 && <a href="#also">Also nearby</a>}</div>
+          <p class="fine">Prices are typical lows in {cur === 'CAD' ? 'Canadian dollars' : 'US dollars'} and change. You won’t be charged here.</p>
+        </div>
+        <a class="trip-link" href={url(`${p.slug}/?region=${region.id}#explore`)}><Icon name="chev-left" size={14} /> All {p.name.toLowerCase()} in {region.name}</a>
+      </aside>
+    </div>
+
+    {sameNear.length > 0 && (
+      <section class="near">
+        <h2>More {p.name.toLowerCase()} nearby</h2>
+        <div class="rail">{sameNear.map((o) => <SpotCard spot={o} />)}</div>
+      </section>
+    )}
+
+    {alsoCount > 0 && (
+      <section class="near" id="also">
+        <h2>Make a trip of it</h2>
+        <p class="muted">Within about {R} miles: other things to do, places to camp and the winter side.</p>
+        <div class="rail">
+          {resort && <ResortCard resort={resort} badge="Same mountain" />}
+          {otherNear.map((o) => <SpotCard spot={o} showPursuit />)}
+          {placesNear.map((pl) => <PlaceCard place={pl} />)}
+          {resortsNear.map((r) => <ResortCard resort={r} badge="Ski" />)}
+        </div>
+      </section>
+    )}
+  </div>
+
+  <div class="mobile-book">
+    <div>{s.price ? <strong>{priceText(s.price, cur)}</strong> : <strong>{s.name}</strong>}<div class="muted small">{seasonText(s.season)}</div></div>
+    <a class="btn btn-outline" href="#weather">Weather</a>
+    <a class="btn btn-primary" href={s.bookingUrl ?? s.url} rel="noopener">{s.bookingUrl ? 'Book' : 'Website'}</a>
+  </div>
+</Layout>
+
+<style>
+  .page { padding-top: 20px; }
+  .crumbs { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); margin-bottom: 10px; flex-wrap: wrap; }
+  .crumbs a { color: inherit; }
+  .title h1 { font-size: clamp(24px, 3vw, 30px); margin-bottom: 6px; }
+  .sub { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 15px; margin-bottom: 20px; }
+  .sub .rating { text-decoration: none; }
+  .sub .u { text-decoration: underline; font-weight: 600; margin-left: 2px; }
+  .spacer { flex: 1; }
+  .act { display: inline-flex; align-items: center; gap: 6px; border: 0; background: none; padding: 8px 10px; border-radius: 8px; text-decoration: underline; font-weight: 600; font-size: 14px; cursor: pointer; }
+  .act:hover { background: var(--surface); }
+  .heart-act[aria-pressed="true"] :global(svg) { fill: var(--accent); stroke: var(--accent); }
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 372px; gap: 80px; margin-top: 40px; }
+  .main > :global(section) { padding: 32px 0; border-bottom: 1px solid var(--rule); }
+  .main > :global(section:first-child) { padding-top: 0; }
+  .intro h2 { font-size: 22px; margin-bottom: 4px; }
+  .facts-line { margin: 0; }
+  .highlights { display: grid; gap: 24px; }
+  .hl { display: flex; gap: 20px; align-items: flex-start; }
+  .hl p { margin: 2px 0 0; font-size: 14px; }
+  .lead { font-size: 18px; font-weight: 600; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0 32px; margin: 16px 0 0; }
+  .stats div { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .stats dt { color: var(--ink-2); }
+  .stats dd { margin: 0; font-weight: 700; text-align: right; }
+  .offers { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .offers li { display: flex; align-items: center; gap: 14px; }
+  .events { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 14px; }
+  .events li { display: flex; gap: 14px; padding: 16px; border: 1px solid var(--rule); border-radius: var(--radius); }
+  .ei { flex: none; width: 40px; height: 40px; border-radius: 10px; background: var(--surface); display: grid; place-items: center; }
+  .eh { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12px; font-weight: 700; margin-bottom: 2px; }
+  .kind { text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  .usually { font-weight: 600; color: var(--muted); border: 1px solid var(--rule-strong); border-radius: 6px; padding: 0 6px; }
+  .events p { margin: 2px 0 0; font-size: 14px; }
+  .events a, .lodging a, .nearby a { text-decoration: none; }
+  .events a:hover, .lodging a:hover, .nearby a:hover { text-decoration: underline; }
+  .lodging { list-style: none; padding: 0; margin: 16px 0 8px; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .lodging li { padding: 16px; border: 1px solid var(--rule); border-radius: var(--radius); display: flex; flex-direction: column; gap: 4px; }
+  .kind-tag { align-self: flex-start; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--pine); background: var(--pine-soft); padding: 2px 8px; border-radius: 6px; margin-bottom: 4px; }
+  .lodging p { margin: 0; font-size: 14px; flex: 1; }
+  .lmeta { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; color: var(--ink-2); margin-top: 8px; }
+  .lmeta span { display: inline-flex; align-items: center; gap: 4px; }
+  .small { font-size: 13px; }
+  .nearby { list-style: none; padding: 0; margin: 16px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px 32px; }
+  .nearby li { display: flex; gap: 14px; }
+  .ni { flex: none; width: 40px; height: 40px; border-radius: 10px; background: var(--surface); display: grid; place-items: center; }
+  .nearby p { margin: 2px 0 0; font-size: 14px; }
+  .g-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .g-head h2 { display: inline-flex; align-items: center; gap: 8px; margin: 0; }
+  .src { font-size: 14px; }
+  .themes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 48px; margin: 20px 0 8px; }
+  .themes h3 { font-size: 16px; }
+  .ticks { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .ticks li { display: flex; gap: 10px; align-items: flex-start; }
+  .ticks :global(svg) { flex: none; margin-top: 2px; color: var(--pine); }
+  .ticks.warn :global(svg) { color: #c26a00; }
+  .getting { list-style: none; padding: 0; margin: 12px 0; display: grid; gap: 10px; }
+  .getting li { display: flex; gap: 12px; align-items: center; }
+  .mini-map { height: 340px; border-radius: var(--radius); overflow: hidden; background: var(--surface); margin-top: 12px; }
+  .credits { border-bottom: 0 !important; }
+  .side { position: relative; }
+  .book { position: sticky; top: 112px; padding: 24px; border: 1px solid var(--rule); border-radius: var(--radius); box-shadow: var(--shadow); background: var(--surface-2); display: grid; gap: 12px; }
+  .price-line { font-size: 22px; }
+  .facts-box { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--rule-strong); border-radius: 10px; overflow: hidden; font-size: 14px; margin: 0; }
+  .facts-box div { padding: 10px 12px; border-bottom: 1px solid var(--rule-strong); }
+  .facts-box div:nth-child(odd) { border-right: 1px solid var(--rule-strong); }
+  .facts-box div:nth-last-child(-n+2) { border-bottom: 0; }
+  .facts-box dt { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
+  .facts-box dd { margin: 0; }
+  .jump { display: flex; justify-content: center; gap: 14px; font-size: 14px; font-weight: 600; flex-wrap: wrap; }
+  .fine { font-size: 13px; color: var(--muted); margin: 0; text-align: center; }
+  .trip-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 16px; font-size: 14px; font-weight: 600; }
+  .near { margin-top: 48px; }
+  .near > p { margin-top: -8px; }
+  .rail { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+  .rail > :global(:nth-child(n+5)) { display: none; }
+  @media (max-width: 1000px) { .rail { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 72%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; } .rail > :global(*) { scroll-snap-align: start; } .rail > :global(:nth-child(n+5)) { display: block; } }
+  .mobile-book { display: none; }
+  @media (max-width: 1000px) {
+    .layout { grid-template-columns: 1fr; gap: 0; }
+    .side { display: none; }
+    .mobile-book { display: flex; align-items: center; gap: 8px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; padding: 12px var(--gutter); background: var(--bg); border-top: 1px solid var(--rule); }
+    .mobile-book > div { flex: 1; min-width: 0; }
+    .mobile-book .btn { height: 44px; padding: 0 16px; }
+  }
+  @media (max-width: 560px) { .offers { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  import L from 'leaflet';
+  import 'leaflet/dist/leaflet.css';
+  import { wireHearts } from '../../../lib/wishlist';
+  import { wireCarousels } from '../../../lib/carousel';
+
+  wireHearts();
+  wireCarousels();
+
+  document.querySelector('[data-share]')?.addEventListener('click', async () => {
+    const data = { title: document.title, url: location.href };
+    try { if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(location.href); alert('Link copied'); } } catch {}
+  });
+
+  const el = document.querySelector<HTMLElement>('[data-mini-map]');
+  if (el) {
+    const ll: [number, number] = [Number(el.dataset.lat), Number(el.dataset.lng)];
+    const dark = document.documentElement.dataset.theme === 'dark' || (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+    const map = L.map(el, { scrollWheelZoom: false }).setView(ll, 11);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19, className: dark ? 'tiles-dark' : 'tiles',
+    }).addTo(map);
+    L.marker(ll, { icon: L.divIcon({ className: '', html: '<div class="ski-dot"></div>', iconSize: [0, 0] }), title: el.dataset.name }).addTo(map);
+  }
+</script>
+
+<style is:global>
+  .tiles { filter: saturate(.75) contrast(.95); }
+  .tiles-dark { filter: invert(1) hue-rotate(180deg) brightness(.9) contrast(.9) saturate(.5); }
+  .ski-dot { width: 22px; height: 22px; border-radius: 50%; background: var(--accent); border: 4px solid #fff; box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent) 25%, transparent); transform: translate(-50%, -50%); }
+</style>
