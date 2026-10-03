@@ -1,4 +1,18 @@
 {
+  "alice-lake": [
+    {
+      "alt": "Alice Lake Provincial Park",
+      "author": "Canadian Veggie",
+      "file": "src/assets/places/alice-lake/1.jpg",
+      "height": 576,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/34962573@N00/42410361505",
+      "title": "Openverse:989644e5-de95-4b97-980c-4e496981c1a7",
+      "width": 1024
+    }
+  ],
   "alta": [
     {
       "alt": "Surrounding mountains from top of Supreme lift in Alta Ski Area",
@@ -231,6 +245,7 @@
       "width": 1280
     }
   ],
+  "bear-valley": [],
   "beaver-creek": [
     {
       "alt": "500px provided description: Beaver Creek, Colorado.",
@@ -281,6 +296,20 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Logan_Canyon_Scenic_Byway_-_Lift_and_Lodge_at_Beaver_Mountain_in_Summer_-_NARA_-_7720120.jpg",
       "title": "File:Logan Canyon Scenic Byway - Lift and Lodge at Beaver Mountain in Summer - NARA - 7720120.jpg",
       "width": 1280
+    }
+  ],
+  "belleayre": [
+    {
+      "alt": "20090117 - Belleayre -8.jpg",
+      "author": "antonin_remond",
+      "file": "src/assets/places/belleayre/1.jpg",
+      "height": 680,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/27607461@N04/3230301572",
+      "title": "Openverse:ecfab310-bc8f-4010-8eb3-fa501a3cbe1c",
+      "width": 1024
     }
   ],
   "big-bear": [
@@ -386,6 +415,7 @@
       "width": 960
     }
   ],
+  "black-desert-pickleball": [],
   "black-mountain-nh": [
     {
       "alt": "Black Mountain Ski Area as seen from South Doublehead Mountain",
@@ -700,6 +730,7 @@
       "width": 1024
     }
   ],
+  "bromont": [],
   "burke": [
     {
       "alt": "View from the ski run on Burke during sunset.",
@@ -804,6 +835,7 @@
       "width": 1280
     }
   ],
+  "carter-park-pickleball": [],
   "cherry-peak": [],
   "china-peak": [
     {
@@ -949,6 +981,7 @@
       "width": 1280
     }
   ],
+  "dancu-community-courts": [],
   "deer-valley": [
     {
       "alt": "Park City Deer Valley Ski",
@@ -1014,6 +1047,7 @@
       "width": 1024
     }
   ],
+  "dodge-ridge": [],
   "eldora": [
     {
       "alt": "View of the beginners' area at the base of Eldora Mountain Resort",
@@ -1039,6 +1073,82 @@
       "nearby": false,
       "sourceUrl": "https://www.flickr.com/photos/51986662@N05/54188004664",
       "title": "Openverse:9376190c-9c9e-48c5-b33d-866f7a277f0c",
+      "width": 1024
+    }
+  ],
+  "emerald-bay": [
+    {
+      "alt": "Scouts Kayaking at Emerald Bay Scout Camp, Catalina CA",
+      "author": "GraceFamily",
+      "file": "src/assets/places/emerald-bay/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/59518841@N00/418492441",
+      "title": "Openverse:c22eba13-2013-4a92-831d-bcb3aff5000b",
+      "width": 1024
+    },
+    {
+      "alt": "Edwin Kayaking at Emerald Bay Scout Camp, Catalina",
+      "author": "GraceFamily",
+      "file": "src/assets/places/emerald-bay/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/59518841@N00/418493055",
+      "title": "Openverse:e099b1ab-9a50-4fd7-a664-a6a1091d092b",
+      "width": 1024
+    },
+    {
+      "alt": "Fannette Island, Emerald Bay State Park, Lake Tahoe, California",
+      "author": "Ken Lund",
+      "file": "src/assets/places/emerald-bay/3.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/28773865430",
+      "title": "Openverse:13dfe251-4b3e-42d8-aae8-282f5cebdc1b",
+      "width": 1024
+    }
+  ],
+  "fernie": [
+    {
+      "alt": "Fernie Ski Hill",
+      "author": "Dawn - Pink Chick",
+      "file": "src/assets/places/fernie/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/60252052@N00/2704501251",
+      "title": "Openverse:73c4f850-31d2-4e6e-ac30-aa5c1cf95aad",
+      "width": 1024
+    },
+    {
+      "alt": "cat skiing",
+      "author": "A tea but no e",
+      "file": "src/assets/places/fernie/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/89324753@N00/2101854415",
+      "title": "Openverse:da5d54a6-8514-480c-9f03-743b97eeba2f",
+      "width": 1024
+    },
+    {
+      "alt": "Pete approaches jump, Fernie",
+      "author": "Ruth and Dave",
+      "file": "src/assets/places/fernie/3.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/95142644@N00/35842037",
+      "title": "Openverse:d49416be-ec04-4443-808c-4c85af13b436",
       "width": 1024
     }
   ],
@@ -1104,6 +1214,46 @@
       "width": 1600
     }
   ],
+  "forillon-park": [],
+  "fort-missoula-pickleball": [],
+  "garibaldi-lake": [
+    {
+      "alt": "Meilleur emplacement de camping ?",
+      "author": "Sébastien Launay",
+      "file": "src/assets/places/garibaldi-lake/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/56212573@N02/8013044546",
+      "title": "Openverse:05ba4010-c847-46a3-aa0d-e8b9b94e1f0c",
+      "width": 1024
+    },
+    {
+      "alt": "Obelisks & Mountains",
+      "author": "Los Paseos",
+      "file": "src/assets/places/garibaldi-lake/2.jpg",
+      "height": 681,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/50542238@N00/6079965708",
+      "title": "Openverse:b2adee57-afe3-42f3-b469-ba760c8bf0d7",
+      "width": 1024
+    },
+    {
+      "alt": "Vu à la TV",
+      "author": "Sébastien Launay",
+      "file": "src/assets/places/garibaldi-lake/3.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/56212573@N02/8013043503",
+      "title": "Openverse:b6cdf87d-7af8-45a9-ad8c-00530a40b353",
+      "width": 1024
+    }
+  ],
   "glimmerglass": [
     {
       "alt": "Otsego Lake stretching south between wooded hills",
@@ -1164,6 +1314,45 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyde_Hall_Covered_Bridge_-_south_view.jpg",
       "title": "File:Hyde Hall Covered Bridge - south view.jpg",
       "width": 1600
+    }
+  ],
+  "golden-peak-pickleball": [],
+  "gore-mountain": [
+    {
+      "alt": "Don Gore, Davos ski area scrambles..Late 1960's",
+      "author": "mcdolan79",
+      "file": "src/assets/places/gore-mountain/1.jpg",
+      "height": 687,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/141509577@N05/46800754494",
+      "title": "Openverse:a34ff260-c531-4c06-91f4-2d14b4b9c1a6",
+      "width": 1024
+    },
+    {
+      "alt": "Redi-Rock_limestone-gravity-commercial-RRNE-JacksonGoreSkiLodge4",
+      "author": "redirockphotodatabase",
+      "file": "src/assets/places/gore-mountain/2.jpg",
+      "height": 743,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/122995539@N03/25105719789",
+      "title": "Openverse:7cce2867-ef52-42c6-9aab-ac6613f6eb02",
+      "width": 1024
+    },
+    {
+      "alt": "Redi-Rock_limestone-gravity-commercial-RRNE-JacksonGoreSkiLodge7",
+      "author": "redirockphotodatabase",
+      "file": "src/assets/places/gore-mountain/3.jpg",
+      "height": 728,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/122995539@N03/24846558233",
+      "title": "Openverse:b26feda1-e082-419c-8be1-7f95c9577861",
+      "width": 1024
     }
   ],
   "great-divide": [],
@@ -1230,6 +1419,7 @@
       "width": 1600
     }
   ],
+  "green-point": [],
   "grouse-mountain": [
     {
       "alt": "Grouse on the ski run",
@@ -1270,6 +1460,7 @@
       "width": 1280
     }
   ],
+  "hautes-gorges-park": [],
   "heavenly": [
     {
       "alt": "Powderbowl Express at Heavenly Ski Resort in South Lake Tahoe, CA.",
@@ -1436,6 +1627,32 @@
       "width": 1024
     }
   ],
+  "hunter-mountain": [
+    {
+      "alt": "Trail to Hunter Ski Resort at Hunter Mountain.",
+      "author": "andyarthur",
+      "file": "src/assets/places/hunter-mountain/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/45846171@N04/5496732587",
+      "title": "Openverse:d945a461-cb34-4fe3-aaed-c282bf395ff4",
+      "width": 1024
+    },
+    {
+      "alt": "Hunter ski area",
+      "author": "TheTurducken",
+      "file": "src/assets/places/hunter-mountain/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/38699914@N00/14529515853",
+      "title": "Openverse:0df5f636-1294-4963-abc2-e91e7fbb637d",
+      "width": 1024
+    }
+  ],
   "jack-frost": [
     {
       "alt": "Skiing @ Jack Frost Mountain in the Poconos:",
@@ -1450,6 +1667,7 @@
       "width": 1024
     }
   ],
+  "jacques-cartier-park": [],
   "jay-peak": [
     {
       "alt": "Photographer: HanumanIX",
@@ -1773,6 +1991,7 @@
       "width": 1280
     }
   ],
+  "le-massif": [],
   "liberty-mountain": [
     {
       "alt": "Boulder Ridge Snow Tubing at Liberty Mountain Resort",
@@ -1799,6 +2018,7 @@
       "width": 1280
     }
   ],
+  "little-valley-pickleball": [],
   "loon": [
     {
       "alt": "Loon Mountain Ski Resort Lincoln New Hampshire",
@@ -1955,7 +2175,10 @@
       "width": 1280
     }
   ],
+  "manning-park": [],
+  "mccauley-mountain": [],
   "middlebury-snow-bowl": [],
+  "mile-hi-pickleball": [],
   "monarch-mountain": [
     {
       "alt": "Airmen ride snowmobiles at Monarch mountain (5938574)",
@@ -1982,6 +2205,22 @@
       "width": 1280
     }
   ],
+  "mont-blanc": [
+    {
+      "alt": "1000meters To Mt Blanc Tunnel and Onto Ravenna Italy With Chamonix-Mont-Blanc Ski Resort in the Back Ground .",
+      "author": "Rab .",
+      "file": "src/assets/places/mont-blanc/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/58739232@N07/46787744335",
+      "title": "Openverse:b0a3b4c2-4092-413e-9862-b9afd6ac66c4",
+      "width": 1024
+    }
+  ],
+  "mont-orford": [],
+  "mont-orford-park": [],
   "mont-sainte-anne": [
     {
       "alt": "QMT 2018",
@@ -2046,6 +2285,7 @@
       "width": 1280
     }
   ],
+  "mont-tremblant-park": [],
   "montage-mountain": [
     {
       "alt": "View of lodge and Montage ski mountain",
@@ -2148,6 +2388,7 @@
       "width": 1600
     }
   ],
+  "mount-robson": [],
   "mount-snow": [
     {
       "alt": "From a trail at Mount Snow, Vermont.",
@@ -2306,6 +2547,20 @@
       "width": 1280
     }
   ],
+  "mt-shasta-ski-park": [
+    {
+      "alt": "Mt. Shasta Sunrise 8-13a",
+      "author": "inkknife_2000 (11.5 million views)",
+      "file": "src/assets/places/mt-shasta-ski-park/1.jpg",
+      "height": 476,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/23155134@N06/14427491567",
+      "title": "Openverse:3fc86891-e2a0-4952-b0db-10fc9e34aadb",
+      "width": 1024
+    }
+  ],
   "nicks-lake": [
     {
       "alt": "Fall color on the hills around Seventh Lake (nearby Fulton Chain of Lakes)",
@@ -2408,6 +2663,7 @@
     }
   ],
   "oak-mountain": [],
+  "oka-park": [],
   "okemo": [
     {
       "alt": "Okemo, peak",
@@ -2446,6 +2702,7 @@
       "width": 1280
     }
   ],
+  "owls-head": [],
   "palisades-tahoe": [
     {
       "alt": "Gondel zum Winter Olympics High Camp von 1960 im Palisades Tahoe Ferienort in Kalifornien.",
@@ -2612,7 +2869,10 @@
       "width": 1280
     }
   ],
+  "pc-marc-pickleball": [],
   "peek-n-peak": [],
+  "picklr-bozeman": [],
+  "picklr-salt-lake-city": [],
   "pico": [
     {
       "alt": "View from the top of Killington Peak looking straight at Pico Peak",
@@ -2641,6 +2901,7 @@
       "width": 1024
     }
   ],
+  "porteau-cove": [],
   "powder-mountain": [
     {
       "alt": "View of Paradise quad chair at Powder Mountain ski resort",
@@ -2997,6 +3258,7 @@
       "width": 1600
     }
   ],
+  "sand-harbor": [],
   "saskadena-six": [
     {
       "alt": "Inside the base lodge at Saskadena Six (formerly Suicide Six)",
@@ -3218,6 +3480,20 @@
       "width": 1280
     }
   ],
+  "ski-hero": [
+    {
+      "alt": "Bluebird day over the bowls at Palisades Tahoe",
+      "author": "John M",
+      "file": "src/assets/places/ski-hero/1.jpg",
+      "height": 1249,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Washeshu_Peak.jpg",
+      "title": "File:Washeshu Peak.jpg",
+      "width": 1920
+    }
+  ],
   "ski-sawmill": [],
   "smugglers-notch": [
     {
@@ -3234,6 +3510,7 @@
     }
   ],
   "snow-ridge": [],
+  "snow-valley": [],
   "snowbasin": [
     {
       "alt": "Men's Super G, Snowbasin, 2002 Winter Olympics Skiier Crossing Finish Line",
@@ -3374,6 +3651,7 @@
       "width": 1280
     }
   ],
+  "sommet-saint-sauveur": [],
   "song-mountain": [
     {
       "alt": "Blue Skies",
@@ -3423,6 +3701,21 @@
       "nearby": false,
       "sourceUrl": "https://www.flickr.com/photos/75683070@N00/68125667",
       "title": "Openverse:5899c05c-970d-47cd-b9cc-8442ebeabf0b",
+      "width": 1024
+    }
+  ],
+  "steamboat-tennis-pickleball": [],
+  "stoneham": [
+    {
+      "alt": "Ski à Stoneham",
+      "author": "Jean-David & Anne-Laure",
+      "file": "src/assets/places/stoneham/1.jpg",
+      "height": 685,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/25229960@N03/4282273221",
+      "title": "Openverse:0adfe258-526e-46e1-8bef-c3ea122e7288",
       "width": 1024
     }
   ],
@@ -3721,6 +4014,45 @@
       "width": 1280
     }
   ],
+  "titus-mountain": [],
+  "tremblant": [
+    {
+      "alt": "Mt. Tremblant Ski Runs",
+      "author": "randwill",
+      "file": "src/assets/places/tremblant/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/20354625@N00/3738686442",
+      "title": "Openverse:435e8fb6-8058-46c7-974b-7f9532ed9153",
+      "width": 1024
+    },
+    {
+      "alt": "Skiing - Mont Tremblant, Quebec",
+      "author": "vwcampin",
+      "file": "src/assets/places/tremblant/2.jpg",
+      "height": 576,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/125112383@N06/32718780993",
+      "title": "Openverse:8053a0fe-1d36-4ea6-a069-73b9a2fd55d1",
+      "width": 1024
+    },
+    {
+      "alt": "ski tremblant",
+      "author": "KurtVon",
+      "file": "src/assets/places/tremblant/3.jpg",
+      "height": 683,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/97704803@N00/3652770",
+      "title": "Openverse:bdb32d28-3369-4e23-ba5d-c3b45e42a011",
+      "width": 1024
+    }
+  ],
   "tussey-mountain": [
     {
       "alt": "2024-09-04 17 13 05 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania",
@@ -3875,6 +4207,20 @@
       "width": 1600
     }
   ],
+  "west-mountain": [
+    {
+      "alt": "West Skiing",
+      "author": "laffertyryan",
+      "file": "src/assets/places/west-mountain/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/12943203@N04/4424404868",
+      "title": "Openverse:7f604982-6ebc-4905-b7cd-141656842daa",
+      "width": 1024
+    }
+  ],
   "whaleback": [
     {
       "alt": "Whaleback summit",
@@ -3925,6 +4271,44 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_sight_for_sore_eyes_(16359467984).jpg",
       "title": "File:A sight for sore eyes (16359467984).jpg",
       "width": 1280
+    }
+  ],
+  "whiteface": [
+    {
+      "alt": "Whiteface Lake Placid Ski Snowboard Resort",
+      "author": "foqus",
+      "file": "src/assets/places/whiteface/1.jpg",
+      "height": 685,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/86485152@N00/6717404393",
+      "title": "Openverse:bf83c8f6-44e9-4318-81dc-c5c4d67b1c50",
+      "width": 1024
+    },
+    {
+      "alt": "Cross Country Skiing at Lake Placid",
+      "author": "foqus",
+      "file": "src/assets/places/whiteface/2.jpg",
+      "height": 685,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/86485152@N00/6717337105",
+      "title": "Openverse:18d541c8-3817-4f55-af36-20d41c5ae9be",
+      "width": 1024
+    },
+    {
+      "alt": "Whiteface Cloudsplitter gondola on left, Face Lift on right, Whiteface Lake Placid",
+      "author": "foqus",
+      "file": "src/assets/places/whiteface/3.jpg",
+      "height": 685,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/86485152@N00/6717337189",
+      "title": "Openverse:a37f1187-67bc-45ac-aa10-b5d756a006a8",
+      "width": 1024
     }
   ],
   "whitefish": [
@@ -3991,6 +4375,7 @@
       "width": 1280
     }
   ],
+  "whitewater": [],
   "wildcat": [
     {
       "alt": "Wildcat Ski Resort",
@@ -4015,6 +4400,32 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wildcat_Mountain_-_Last_day_of_2010_-_panoramio.jpg",
       "title": "File:Wildcat Mountain - Last day of 2010 - panoramio.jpg",
       "width": 1280
+    }
+  ],
+  "windham": [
+    {
+      "alt": "Ski bunny",
+      "author": "TheNickster",
+      "file": "src/assets/places/windham/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/49503073847@N01/11724983654",
+      "title": "Openverse:76b7538b-b791-41ae-9a15-b260601e8b8c",
+      "width": 1024
+    },
+    {
+      "alt": "My Feet - SKI!",
+      "author": "Studio Sarah Lou",
+      "file": "src/assets/places/windham/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/86665756@N00/4341805123",
+      "title": "Openverse:ef3818d6-4a5f-489d-b514-455df3419c64",
+      "width": 1024
     }
   ],
   "winter-park": [
