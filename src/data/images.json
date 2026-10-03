@@ -63,6 +63,32 @@
       "width": 1024
     }
   ],
+  "arapahoe-basin": [
+    {
+      "alt": "Skiers ski past the Zuma ski lift in the Montezuma Bowl area at Arapahoe Basin Ski Area in Colorado.",
+      "author": "Runningonbrains",
+      "file": "src/assets/places/arapahoe-basin/1.jpg",
+      "height": 960,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arapahoe_Basin_Montezuma_Bowl.jpg",
+      "title": "File:Arapahoe Basin Montezuma Bowl.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Heres Looking at You Kid ()",
+      "author": "Zach Dischner",
+      "file": "src/assets/places/arapahoe-basin/2.jpg",
+      "height": 851,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heres_Looking_at_You_Kid_(4482287341).jpg",
+      "title": "File:Heres Looking at You Kid (4482287341).jpg",
+      "width": 1280
+    }
+  ],
   "arizona-snowbowl": [
     {
       "alt": "On December 10, 2016, the Arizona Snowbowl Ski Resort opened the new Grand Canyon Express ski lift.",
@@ -477,6 +503,32 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bretton_Woods_Resort.jpg",
       "title": "File:Bretton Woods Resort.jpg",
+      "width": 1280
+    }
+  ],
+  "brian-head": [
+    {
+      "alt": "Brian Head in Dec 2023",
+      "author": "DarkNight0917",
+      "file": "src/assets/places/brian-head/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brian_Head_Dec_2023_01.jpg",
+      "title": "File:Brian Head Dec 2023 01.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Brian Head in Dec 2023",
+      "author": "DarkNight0917",
+      "file": "src/assets/places/brian-head/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brian_Head_Dec_2023_02.jpg",
+      "title": "File:Brian Head Dec 2023 02.jpg",
       "width": 1280
     }
   ],
@@ -2108,6 +2160,7 @@
       "width": 1600
     }
   ],
+  "nordic-valley": [],
   "northstar": [
     {
       "alt": "The Summit Smokehouse, at the peak of Mt.",
@@ -2869,6 +2922,44 @@
     }
   ],
   "snow-ridge": [],
+  "snowbasin": [
+    {
+      "alt": "Men's Super G, Snowbasin, 2002 Winter Olympics Skiier Crossing Finish Line",
+      "author": "Ken Lund",
+      "file": "src/assets/places/snowbasin/1.jpg",
+      "height": 683,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/2518175797",
+      "title": "Openverse:597856f7-b93e-4793-b666-3cadecda8e2d",
+      "width": 1024
+    },
+    {
+      "alt": "Men's Super G, Snowbasin, 2002 Winter Olympics 3",
+      "author": "Ken Lund",
+      "file": "src/assets/places/snowbasin/2.jpg",
+      "height": 682,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/2518991794",
+      "title": "Openverse:4438d811-e87b-4b01-92c5-6cf14acabcdb",
+      "width": 1024
+    },
+    {
+      "alt": "Men's Super G, Snowbasin, 2002 Winter Olympics 5",
+      "author": "Ken Lund",
+      "file": "src/assets/places/snowbasin/3.jpg",
+      "height": 682,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/2518184411",
+      "title": "Openverse:4e2c3a0c-cd04-4937-96fa-eb6690052405",
+      "width": 1024
+    }
+  ],
   "solitude": [
     {
       "alt": "500px provided description: Cold morning at spruces camp ground just west of Solitude Ski Resort in Big Cottonwood Canyon.",
@@ -3175,6 +3266,44 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-09-04_17_13_05_View_towards_the_Tussey_Mountain_Ski_Area_from_the_Blue_Trail_between_station_7_and_station_8_within_the_Mount_Nittany_Conservancy_in_College_Township,_Centre_County,_Pennsylvania.jpg",
       "title": "File:2024-09-04 17 13 05 View towards the Tussey Mountain Ski Area from the Blue Trail between station 7 and station 8 within the Mount Nittany Conservancy in College Township, Centre County, Pennsylvania.jpg",
       "width": 1280
+    }
+  ],
+  "vail": [
+    {
+      "alt": "Vail Skiing 2010",
+      "author": "jrm353",
+      "file": "src/assets/places/vail/1.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/22792502@N08/4291817799",
+      "title": "Openverse:0fc81a1f-e433-4a9d-b686-ff2a3c698a4b",
+      "width": 1024
+    },
+    {
+      "alt": "Vail Ski Resort II",
+      "author": "joeclin",
+      "file": "src/assets/places/vail/2.jpg",
+      "height": 576,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/28939240@N00/33583840531",
+      "title": "Openverse:14d90654-cdd1-4452-89ce-270cc8865a04",
+      "width": 1024
+    },
+    {
+      "alt": "Vail Skiing 2010",
+      "author": "jrm353",
+      "file": "src/assets/places/vail/3.jpg",
+      "height": 683,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/22792502@N08/4291842105",
+      "title": "Openverse:17ee5ed2-57b7-49dc-9d28-f6a53a99b3f2",
+      "width": 1024
     }
   ],
   "val-saint-come": [

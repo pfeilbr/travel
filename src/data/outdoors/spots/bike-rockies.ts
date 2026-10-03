@@ -487,7 +487,7 @@ const spots: Spot[] = [
     levels: ['beginner', 'intermediate', 'advanced', 'expert'],
     resortId: 'purgatory',
     outfitters: [
-      { name: 'Purgatory Sports', what: 'Bike rentals, demos and repairs at the resort and downtown.', url: 'https://www.purgatory.ski/mountain-bike-rentals/' },
+      { name: 'Purgatory Sports', what: 'Bike rentals, demos and repairs at the resort and downtown.', url: 'https://www.purgatory.ski/activities/mountain-biking/' },
       { name: 'Second Avenue Sports', what: 'Downtown shop with bike rentals and service.', url: 'https://www.2ndavesports.com/' },
       { name: 'Mountain Bike Specialists', what: 'Mountain bike shop with demo bikes and local group rides.', url: 'https://www.mountainbikespecialists.com/' },
     ],

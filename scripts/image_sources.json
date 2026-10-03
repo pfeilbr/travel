@@ -12211,6 +12211,892 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "moab-trails": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "slickrock",
+    "moab",
+    "porcupine"
+   ],
+   "sources": [
+    {
+     "category": "Category:Slickrock Trail",
+     "depth": 0
+    },
+    {
+     "openverse": "Moab mountain biking",
+     "must": [
+      "slickrock",
+      "moab",
+      "porcupine"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "park-city-trails": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "park city",
+    "round valley",
+    "park city trails"
+   ],
+   "sources": [
+    {
+     "search": "Park City Utah mountain biking",
+     "limit": 25
+    },
+    {
+     "openverse": "Park City trails mountain biking",
+     "must": [
+      "park city",
+      "round valley",
+      "park city trails"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "deer-valley-bike-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "deer valley",
+    "deer valley bike park"
+   ],
+   "sources": [
+    {
+     "search": "Deer Valley Resort summer",
+     "limit": 25
+    },
+    {
+     "openverse": "Deer Valley Bike Park mountain biking",
+     "must": [
+      "deer valley",
+      "deer valley bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "gooseberry-mesa": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "gooseberry",
+    "hurricane",
+    "gooseberry mesa and hurricane"
+   ],
+   "sources": [
+    {
+     "search": "Gooseberry Mesa National Recreation Trail",
+     "limit": 25
+    },
+    {
+     "openverse": "Gooseberry Mesa and Hurricane mountain biking",
+     "must": [
+      "gooseberry",
+      "hurricane",
+      "gooseberry mesa and hurricane"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "snowbasin-bike-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "snowbasin",
+    "snowbasin bike park"
+   ],
+   "sources": [
+    {
+     "search": "Snowbasin summer",
+     "limit": 25
+    },
+    {
+     "openverse": "Snowbasin Bike Park mountain biking",
+     "must": [
+      "snowbasin",
+      "snowbasin bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "fruita-trails": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "fruita",
+    "18 road",
+    "kokopelli"
+   ],
+   "sources": [
+    {
+     "search": "18 Road and Kokopelli Loops Trails in Colorado",
+     "limit": 25
+    },
+    {
+     "openverse": "Fruita mountain biking",
+     "must": [
+      "fruita",
+      "18 road",
+      "kokopelli"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "crested-butte-trails": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "crested butte"
+   ],
+   "sources": [
+    {
+     "search": "Crested Butte Biking",
+     "limit": 25
+    },
+    {
+     "openverse": "Crested Butte mountain biking",
+     "must": [
+      "crested butte"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "trestle-bike-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "trestle",
+    "winter park",
+    "trestle bike park"
+   ],
+   "sources": [
+    {
+     "search": "Trestle Bike Park",
+     "limit": 25
+    },
+    {
+     "openverse": "Trestle Bike Park mountain biking",
+     "must": [
+      "trestle",
+      "winter park",
+      "trestle bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "snowmass-bike-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "snowmass",
+    "snowmass bike park"
+   ],
+   "sources": [
+    {
+     "search": "Snowmass mountain bike",
+     "limit": 25
+    },
+    {
+     "openverse": "Snowmass Bike Park mountain biking",
+     "must": [
+      "snowmass",
+      "snowmass bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "durango-trails": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "durango",
+    "horse gulch"
+   ],
+   "sources": [
+    {
+     "search": "Biking Horse Gulch",
+     "limit": 25
+    },
+    {
+     "openverse": "Durango mountain biking",
+     "must": [
+      "durango",
+      "horse gulch"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "salida-trails": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "salida",
+    "monarch crest"
+   ],
+   "sources": [
+    {
+     "search": "Salida Colorado mountain bike",
+     "limit": 25
+    },
+    {
+     "openverse": "Salida mountain biking",
+     "must": [
+      "salida",
+      "monarch crest"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "big-sky-bike-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "big sky",
+    "lone peak",
+    "big sky bike park"
+   ],
+   "sources": [
+    {
+     "search": "Big Sky Resort summer",
+     "limit": 25
+    },
+    {
+     "openverse": "Big Sky Bike Park mountain biking",
+     "must": [
+      "big sky",
+      "lone peak",
+      "big sky bike park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "whitefish-bike-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "whitefish",
+    "big mountain",
+    "whitefish bike park and whitefish trail"
+   ],
+   "sources": [
+    {
+     "search": "Whitefish Mountain Resort summer",
+     "limit": 25
+    },
+    {
+     "openverse": "Whitefish Bike Park and Whitefish Trail mountain biking",
+     "must": [
+      "whitefish",
+      "big mountain",
+      "whitefish bike park and whitefish trail"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bozeman-trails": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "bozeman",
+    "bangtail",
+    "hyalite"
+   ],
+   "sources": [
+    {
+     "search": "Bangtail Divide",
+     "limit": 25
+    },
+    {
+     "openverse": "Bozeman mountain biking",
+     "must": [
+      "bozeman",
+      "bangtail",
+      "hyalite"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "mountain bike",
+    "mountain biking",
+    "bike",
+    "trail",
+    "singletrack"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "labyrinth-canyon": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "labyrinth",
+    "bowknot",
+    "labyrinth canyon (green river)"
+   ],
+   "sources": [
+    {
+     "category": "Category:Labyrinth_Canyon_(Green_River)",
+     "depth": 0
+    },
+    {
+     "openverse": "Labyrinth Canyon (Green River) kayaking",
+     "must": [
+      "labyrinth",
+      "bowknot",
+      "labyrinth canyon (green river)"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "moab-daily": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "fisher towers",
+    "castle valley",
+    "moab",
+    "moab daily (colorado river)"
+   ],
+   "sources": [
+    {
+     "category": "Category:Fisher_Towers",
+     "depth": 0
+    },
+    {
+     "openverse": "Moab Daily (Colorado River) kayaking",
+     "must": [
+      "fisher towers",
+      "castle valley",
+      "moab",
+      "moab daily (colorado river)"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "lake-powell-lone-rock": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "lone rock",
+    "wahweap",
+    "lake powell at lone rock"
+   ],
+   "sources": [
+    {
+     "category": "Category:Wahweap_Bay",
+     "depth": 0
+    },
+    {
+     "openverse": "Lake Powell at Lone Rock kayaking",
+     "must": [
+      "lone rock",
+      "wahweap",
+      "lake powell at lone rock"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "flaming-gorge": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "flaming gorge",
+    "little hole",
+    "red canyon",
+    "flaming gorge and the green river"
+   ],
+   "sources": [
+    {
+     "category": "Category:Flaming_Gorge_Reservoir",
+     "depth": 0
+    },
+    {
+     "openverse": "Flaming Gorge and the Green River kayaking",
+     "must": [
+      "flaming gorge",
+      "little hole",
+      "red canyon",
+      "flaming gorge and the green river"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "browns-canyon": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "browns canyon",
+    "browns canyon (arkansas river)"
+   ],
+   "sources": [
+    {
+     "category": "Category:Browns_Canyon_National_Monument",
+     "depth": 0
+    },
+    {
+     "openverse": "Browns Canyon (Arkansas River) kayaking",
+     "must": [
+      "browns canyon",
+      "browns canyon (arkansas river)"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "upper-colorado-pumphouse": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "pumphouse",
+    "radium",
+    "gore canyon",
+    "upper colorado river at pumphouse"
+   ],
+   "sources": [
+    {
+     "category": "Category:Gore_Canyon",
+     "depth": 0
+    },
+    {
+     "openverse": "Upper Colorado River at Pumphouse kayaking",
+     "must": [
+      "pumphouse",
+      "radium",
+      "gore canyon",
+      "upper colorado river at pumphouse"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "dillon-reservoir": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "dillon",
+    "dillon reservoir"
+   ],
+   "sources": [
+    {
+     "category": "Category:Dillon_Reservoir",
+     "depth": 0
+    },
+    {
+     "openverse": "Dillon Reservoir kayaking",
+     "must": [
+      "dillon",
+      "dillon reservoir"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "grand-lake": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "grand lake",
+    "shadow mountain",
+    "grand lake and shadow mountain"
+   ],
+   "sources": [
+    {
+     "category": "Category:Grand_Lake,_Colorado",
+     "depth": 0
+    },
+    {
+     "openverse": "Grand Lake and Shadow Mountain kayaking",
+     "must": [
+      "grand lake",
+      "shadow mountain",
+      "grand lake and shadow mountain"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "flathead-lake": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "flathead",
+    "wild horse island",
+    "flathead lake"
+   ],
+   "sources": [
+    {
+     "category": "Category:Flathead_Lake",
+     "depth": 0
+    },
+    {
+     "openverse": "Flathead Lake kayaking",
+     "must": [
+      "flathead",
+      "wild horse island",
+      "flathead lake"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "lake-mcdonald": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "mcdonald",
+    "bowman",
+    "lake mcdonald and bowman lake"
+   ],
+   "sources": [
+    {
+     "category": "Category:Lake_McDonald",
+     "depth": 0
+    },
+    {
+     "openverse": "Lake McDonald and Bowman Lake kayaking",
+     "must": [
+      "mcdonald",
+      "bowman",
+      "lake mcdonald and bowman lake"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "missouri-breaks": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "missouri",
+    "white cliffs",
+    "breaks",
+    "upper missouri river breaks"
+   ],
+   "sources": [
+    {
+     "category": "Category:Upper_Missouri_River_Breaks_National_Monument",
+     "depth": 0
+    },
+    {
+     "openverse": "Upper Missouri River Breaks kayaking",
+     "must": [
+      "missouri",
+      "white cliffs",
+      "breaks",
+      "upper missouri river breaks"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "alberton-gorge": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "alberton",
+    "clark fork",
+    "alberton gorge (clark fork)"
+   ],
+   "sources": [
+    {
+     "search": "Alberton Gorge Clark Fork",
+     "limit": 25
+    },
+    {
+     "openverse": "Alberton Gorge (Clark Fork) kayaking",
+     "must": [
+      "alberton",
+      "clark fork",
+      "alberton gorge (clark fork)"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }

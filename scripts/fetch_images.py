@@ -484,6 +484,7 @@ def openverse_search(query: str, page_size: int = 20) -> list[dict]:
 # --------------------------------------------------------------------------- orchestration
 
 _commons_down = False  # set after Commons fails so the rest of this place skips it quickly
+OPENVERSE_FIRST = False  # --openverse-first: try Openverse (Flickr-hosted) before Commons
 
 
 def _commons(fn, *args):
@@ -498,48 +499,10 @@ def _commons(fn, *args):
         _commons_down = True
         return None
 
-def gather(place: dict) -> tuple[dict[str, dict], list[str], dict[str, str | None]]:
-    """Return (pages, ranked candidate titles, title -> nearby label).
-
-    Commons sources run first. Openverse sources marked "fallback" only run when Commons came up
-    short of the place's count (each query spends the small anonymous daily budget).
-    """
-    origin: dict[str, str | None] = {}
-    order: list[str] = []
-    skip = tuple(w for w in SKIP_SUBCATS if w not in place.get("keep_subcats", []))
-    sources = place.get("sources", [])
-    searched: set[str] = set()  # titles that came from free-text search (need to mention the place)
+def _openverse_pages(place: dict, sources: list[dict], must: list[str], pages: dict[str, dict],
+                     origin: dict[str, str | None], order: list[str], skip_wikimedia: bool) -> None:
     for src in sources:
-        if "openverse" in src:
-            continue
-        if "category" in src:
-            titles = _commons(category_files, src["category"], int(src.get("depth", 1)), None, skip) or []
-        else:
-            titles = _commons(search_files, src["search"], int(src.get("limit", 50))) or []
-            searched.update(titles)
-        for t in titles:
-            if t not in origin:
-                origin[t] = src.get("nearby")
-                order.append(t)
-    include = normalize_include(place.get("include", []))
-    for item in include:
-        if item["title"] not in origin or "nearby" in item:
-            origin[item["title"]] = item.get("nearby")
-        if item["title"] not in order:
-            order.append(item["title"])
-    # "width" (a standard size: 1280 default, 1920 for full-bleed heroes) picks the thumbnail to download.
-    pages: dict[str, dict] = (_commons(image_infos, order, int(place.get("width", THUMB_WIDTH))) or {}) if order else {}
-    must = place.get("must", [])
-    if must:  # search hits are noisy ("Pats Peak" finds Kitt Peak); keep only those that name the place
-        pinned = {i["title"] for i in include}
-        pages = {t: p for t, p in pages.items() if t not in searched or t in pinned or mentions(p, must)}
-    min_width = int(place.get("min_width", MIN_WIDTH))
-    winter = bool(place.get("winter"))
-    have = sum(1 for t in order if t in pages and is_candidate(pages[t], min_width=min_width)
-               and (not winter or is_wintery(pages[t])))
-    count = int(place.get("count", DEFAULT_COUNT))
-    for src in sources:
-        if "openverse" not in src or (src.get("fallback") and have >= count):
+        if "openverse" not in src:
             continue
         try:
             found = openverse_search(src["openverse"])
@@ -548,10 +511,71 @@ def gather(place: dict) -> tuple[dict[str, dict], list[str], dict[str, str | Non
             continue
         ov_must = src.get("must", must)
         for p in found:
+            if skip_wikimedia and p.get("provider") == "wikimedia":
+                continue  # the same throttled host as Commons; Commons gets its own turn below
             if mentions(p, ov_must) and p["title"] not in pages:
                 pages[p["title"]] = p
                 origin.setdefault(p["title"], src.get("nearby"))
                 order.append(p["title"])
+
+
+def gather(place: dict) -> tuple[dict[str, dict], list[str], dict[str, str | None]]:
+    """Return (pages, ranked candidate titles, title -> nearby label).
+
+    Commons sources run first. Openverse sources marked "fallback" only run when Commons came up
+    short of the place's count (each query spends the small anonymous daily budget). With
+    OPENVERSE_FIRST the order flips: Openverse first, Commons only if still short.
+    """
+    origin: dict[str, str | None] = {}
+    order: list[str] = []
+    pages: dict[str, dict] = {}
+    skip = tuple(w for w in SKIP_SUBCATS if w not in place.get("keep_subcats", []))
+    sources = place.get("sources", [])
+    include = normalize_include(place.get("include", []))
+    must = place.get("must", [])
+    min_width = int(place.get("min_width", MIN_WIDTH))
+    winter = bool(place.get("winter"))
+    count = int(place.get("count", DEFAULT_COUNT))
+
+    def usable() -> int:
+        return sum(1 for t in order if t in pages and is_candidate(pages[t], min_width=min_width)
+                   and (not winter or is_wintery(pages[t])))
+
+    if OPENVERSE_FIRST:
+        _openverse_pages(place, sources, must, pages, origin, order, skip_wikimedia=True)
+
+    if not OPENVERSE_FIRST or usable() < count or include:
+        searched: set[str] = set()  # titles from free-text search (they need to mention the place)
+        commons_order: list[str] = []
+        for src in sources:
+            if "openverse" in src:
+                continue
+            if "category" in src:
+                titles = _commons(category_files, src["category"], int(src.get("depth", 1)), None, skip) or []
+            else:
+                titles = _commons(search_files, src["search"], int(src.get("limit", 50))) or []
+                searched.update(titles)
+            for t in titles:
+                if t not in origin:
+                    origin[t] = src.get("nearby")
+                    commons_order.append(t)
+        for item in include:
+            if item["title"] not in origin or "nearby" in item:
+                origin[item["title"]] = item.get("nearby")
+            if item["title"] not in commons_order:
+                commons_order.append(item["title"])
+        # "width" (a standard size: 1280 default, 1920 for full-bleed heroes) picks the thumbnail to download.
+        infos = (_commons(image_infos, commons_order, int(place.get("width", THUMB_WIDTH))) or {}) if commons_order else {}
+        if must:  # search hits are noisy ("Pats Peak" finds Kitt Peak); keep only those that name the place
+            pinned = {i["title"] for i in include}
+            infos = {t: p for t, p in infos.items() if t not in searched or t in pinned or mentions(p, must)}
+        pages.update(infos)
+        order.extend(t for t in commons_order if t not in order)
+
+    if not OPENVERSE_FIRST and usable() < count:
+        fallback = [s for s in sources if "openverse" in s]
+        _openverse_pages(place, fallback, must, pages, origin, order, skip_wikimedia=False)
+
     prefer = place.get("prefer", [])
     cands = [t for t in order if t in pages and is_candidate(pages[t], min_width=min_width)]
     # Primary-place photos rank above nearby fallbacks, winter places put snow photos first;
@@ -641,9 +665,13 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--only", help="comma-separated place ids")
     ap.add_argument("--force", action="store_true", help="re-download existing images")
     ap.add_argument("--candidates", action="store_true", help="list ranked candidates only")
+    ap.add_argument("--openverse-first", action="store_true",
+                    help="try Openverse (Flickr-hosted) before Commons; use when Commons is throttling hard")
     ap.add_argument("--config", default=str(CONFIG_PATH))
     ap.add_argument("--root", default=str(REPO))
     args = ap.parse_args(argv)
+    global OPENVERSE_FIRST
+    OPENVERSE_FIRST = args.openverse_first
 
     root = Path(args.root)
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
