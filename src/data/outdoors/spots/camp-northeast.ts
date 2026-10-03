@@ -61,21 +61,21 @@ const spots: Spot[] = [
       {
         name: 'Inn at Long Trail',
         kind: 'inn',
-        what: 'Rustic hikers’ inn on Route 4 with a boulder in the pub and an Irish bar that has fed thru-hikers for decades.',
+        what: 'Rustic hikers’ inn on Route 4 with an Irish pub that has fed Appalachian Trail and Long Trail hikers for decades.',
         url: 'https://innatlongtrail.com/',
         distance: '5 min drive',
       },
       {
         name: 'Mountain Meadows Lodge',
         kind: 'lodge',
-        what: 'Casual lodge on Kent Lake, right on the Appalachian Trail, with simple rooms and a lakeside lawn.',
+        what: 'Casual lodge on the shore of Kent Pond, with the Appalachian Trail crossing the property and boats for guests.',
         url: 'https://www.mountainmeadowslodge.com/',
         distance: '5 min drive',
       },
       {
         name: 'Killington Grand Hotel',
         kind: 'slopeside',
-        what: 'The resort’s big slopeside hotel at Snowshed, with a pool, spa and the bike park at the door.',
+        what: 'The resort’s big slopeside hotel, with a pool and spa, a short drive up the Killington Road.',
         url: 'https://www.killington.com/killington-grand-hotel',
         distance: '10 min drive',
       },
@@ -90,20 +90,20 @@ const spots: Spot[] = [
       {
         name: 'K-1 Express Gondola scenic rides',
         kind: 'scenic-lift',
-        what: 'Ride to the top of Killington Peak for views across five states, especially good in foliage season.',
+        what: 'Ride to the top of Killington Peak for long views over the Green Mountains, especially good in foliage season.',
         url: 'https://www.killington.com/scenic-gondola-rides',
         distance: '15 min drive',
       },
       {
         name: 'Kent Pond',
         kind: 'other',
-        what: 'Quiet pond across the road from the park for a paddle, a swim or casting for trout.',
+        what: 'Quiet pond across the road from the park for a paddle or an evening of fishing.',
         distance: 'Across the road',
       },
       {
         name: 'McGrath’s Irish Pub',
         kind: 'drink',
-        what: 'Guinness, stew and live Irish music at the Inn at Long Trail; a classic stop for AT hikers.',
+        what: 'Irish pub fare, Guinness and live music at the Inn at Long Trail; a classic stop for AT hikers.',
         url: 'https://innatlongtrail.com/mcgraths-irish-pub/',
         distance: '5 min drive',
       },
@@ -185,7 +185,7 @@ const spots: Spot[] = [
       },
       {
         name: 'Fellowship of the Wheel',
-        what: 'The local mountain bike club that builds and maintains trails around Waterbury, including the Little River network.',
+        what: 'The local mountain bike club behind Waterbury’s trail networks, with maps and trail conditions.',
         url: 'https://www.fotwheel.org/',
       },
       {
@@ -198,7 +198,7 @@ const spots: Spot[] = [
       {
         name: 'Old Stagecoach Inn',
         kind: 'inn',
-        what: 'Restored 1820s inn on Waterbury’s Main Street, an easy walk to the village restaurants.',
+        what: 'Restored 19th-century stagecoach inn on Waterbury’s Main Street, an easy walk to the village restaurants.',
         url: 'https://oldstagecoach.com/',
         distance: '15 min drive',
       },
@@ -323,7 +323,7 @@ const spots: Spot[] = [
       {
         name: 'North Hero House',
         kind: 'inn',
-        what: 'Lakefront inn on North Hero with rooms in several old houses and a dock on Lake Champlain.',
+        what: 'Lakefront inn and restaurant on North Hero with its own dock on Lake Champlain.',
         url: 'https://www.northherohouse.com/',
         distance: '55 min drive from Kill Kare',
       },
@@ -420,8 +420,7 @@ const spots: Spot[] = [
       unit: 'site/night',
       note: 'NH State Parks standard-site rate on ReserveAmerica for summer 2027; covers 2 adults and up to 4 kids, plus $7 reservation fee',
     },
-    features: ['tent', 'showers', 'backcountry', 'winter'],
-    levels: ['beginner', 'intermediate', 'advanced'],
+    features: ['tent', 'showers', 'winter'],
     outfitters: [
       {
         name: 'Echo Lake boat rentals',
@@ -455,7 +454,7 @@ const spots: Spot[] = [
       {
         name: 'RiverWalk Resort at Loon Mountain',
         kind: 'hotel',
-        what: 'Modern condo-style hotel in Lincoln with pools and a riverside walkway.',
+        what: 'Modern resort hotel in Lincoln with suites and pools, near the Loon Mountain base.',
         url: 'https://www.riverwalkresortatloon.com/',
         distance: '15 min drive',
       },
@@ -547,7 +546,6 @@ const spots: Spot[] = [
       note: '2026 Forest Service rate; electric adds $14, extra vehicle $6. Senior and Access pass holders get 50% off the site fee.',
     },
     features: ['tent', 'rv-hookups', 'showers', 'lakefront', 'pets'],
-    levels: ['beginner', 'intermediate', 'advanced', 'expert'],
     outfitters: [
       {
         name: 'Great Glen Trails Outdoor Center',
@@ -612,7 +610,7 @@ const spots: Spot[] = [
       {
         name: 'Libby’s Bistro & SAaLT Pub',
         kind: 'eat',
-        what: 'Chef-run bistro and pub in a former bank on Gorham’s Main Street.',
+        what: 'Chef-run bistro and casual pub on Gorham’s Main Street.',
         distance: '15 min drive',
       },
     ],
@@ -759,7 +757,7 @@ const spots: Spot[] = [
     size: 'major',
     tagline: 'Waterfront Adirondack sites in canoe country',
     summary:
-      'One of the Adirondacks’ biggest campgrounds, with most of its 355 sites right on the sandy shores of Fish Creek Pond and Square Pond. You can launch a canoe from your site and paddle toward Upper Saranac Lake or the St. Regis Canoe Area, and Rollins Pond’s quieter loops are next door. Best for paddlers and families who want to camp on the water; book early for July and August.',
+      'One of the Adirondacks’ biggest campgrounds, with most of its 355 sites right on the sandy shores of Fish Creek Pond and Square Pond. Waterfront sites let you launch a canoe from camp and paddle out toward Upper Saranac Lake, the St. Regis Canoe Area is a few miles north, and Rollins Pond’s quieter loops are next door. Best for paddlers and families who want to camp on the water; book early for July and August.',
     url: 'https://dec.ny.gov/places/fish-creek-pond-campground-day-use-area',
     bookingUrl:
       'https://newyorkstateparks.reserveamerica.com/camping/fish-creek-pond-campground/r/campgroundDetails.do?contractCode=NY&parkId=574',
@@ -774,7 +772,7 @@ const spots: Spot[] = [
       { label: 'Max RV length', value: '40 ft' },
       { label: 'Hookups', value: 'None; dump station' },
       { label: 'Amenities', value: 'Hot showers, beach, boat ramp' },
-      { label: 'Reservations', value: 'Opens 9 months ahead at 8 am (9 am weekends)' },
+      { label: 'Reservations', value: 'Opens 9 months ahead on ReserveAmerica, rolling daily' },
     ],
     price: {
       from: 22,
@@ -810,7 +808,7 @@ const spots: Spot[] = [
       {
         name: 'voco Saranac Lake Waterfront',
         kind: 'hotel',
-        what: 'Lakeside hotel on Lake Flower with its own docks and fire pits.',
+        what: 'Lakeside hotel on Lake Flower, a short walk from downtown Saranac Lake.',
         url: 'https://www.ihg.com/voco/hotels/us/en/saranac-lake/slkvo/hoteldetail',
         distance: '25 min drive',
       },
@@ -868,7 +866,7 @@ const spots: Spot[] = [
     size: 'major',
     tagline: 'Escarpment views, two beaches and Kaaterskill Falls',
     summary:
-      'The Catskills’ largest DEC campground sits on two connected, motor-free lakes on top of the Hudson Valley escarpment. Trails lead from camp to the Catskill Mountain House site, Sunset Rock and the Escarpment Trail, and Kaaterskill Falls is a short drive. It suits hikers, paddlers and families; summer weekends are busy, and fall color here is among the best in the state.',
+      'One of the Catskills’ largest campgrounds, set on two connected, motor-free lakes on top of the escarpment above the Hudson Valley. Trails lead from camp to the Catskill Mountain House site, Sunset Rock and the Escarpment Trail, and Kaaterskill Falls is a short drive. It suits hikers, paddlers and families; summer weekends are busy, and fall color here is among the best in the state.',
     url: 'https://dec.ny.gov/places/north-south-lake-campground-day-use-area',
     bookingUrl:
       'https://newyorkstateparks.reserveamerica.com/camping/north-south-lake-campground/r/campgroundDetails.do?contractCode=NY&parkId=5',
@@ -883,7 +881,7 @@ const spots: Spot[] = [
       { label: 'Beaches', value: '2, on North Lake and South Lake' },
       { label: 'Rentals', value: 'Rowboats, canoes, kayaks, SUPs and paddle boats' },
       { label: 'Hookups', value: 'None; dump station' },
-      { label: 'Reservations', value: 'Opens 9 months ahead at 8 am (9 am weekends)' },
+      { label: 'Reservations', value: 'Opens 9 months ahead on ReserveAmerica, rolling daily' },
     ],
     price: {
       from: 22,
@@ -907,7 +905,7 @@ const spots: Spot[] = [
       {
         name: 'Hotel Lilien',
         kind: 'hotel',
-        what: 'Small boutique hotel outside Tannersville with a cozy bar.',
+        what: 'Small boutique hotel on Route 23A near Tannersville.',
         url: 'https://www.hotellilien.com/',
         distance: '15 min drive',
       },
@@ -930,7 +928,7 @@ const spots: Spot[] = [
       {
         name: 'Kaaterskill Falls',
         kind: 'other',
-        what: 'New York’s tallest two-tier waterfall; the viewing platform on Laurel House Road is the easy, safe way to see it.',
+        what: 'A two-tier, 260-ft waterfall, among the tallest in New York; the viewing platform on Laurel House Road is the easy, safe way to see it.',
         distance: '5 min drive',
       },
       {
@@ -1012,12 +1010,12 @@ const spots: Spot[] = [
     outfitters: [
       {
         name: 'Adventure Calls Outfitters',
-        what: 'Guided whitewater rafting and kayaking trips through the gorge below the falls.',
+        what: 'Guided whitewater rafting trips through the gorge below the falls.',
         url: 'https://adventure-calls.com/',
       },
       {
         name: 'Balloons Over Letchworth',
-        what: 'Sunrise and evening hot-air balloon flights over the gorge, launching near the Glen Iris Inn.',
+        what: 'Hot-air balloon flights over the gorge, launching from inside the park.',
         url: 'https://balloonsoverletchworth.com/',
       },
     ],
@@ -1032,7 +1030,7 @@ const spots: Spot[] = [
       {
         name: 'Letchworth cabins',
         kind: 'cabin',
-        what: 'Park cabins in five areas, from simple one-room units to heated cabins with kitchens. Weekly rentals only in peak summer.',
+        what: 'Park cabins in five areas, from rustic one-room units to larger heated cabins. Bring linens and cookware; weekly rentals only in peak summer.',
         url: 'https://newyorkstateparks.reserveamerica.com/camping/letchworth-state-park/r/campgroundDetails.do?contractCode=NY&parkId=375',
         distance: 'In the park',
         priceFrom: 59.5,
@@ -1061,7 +1059,7 @@ const spots: Spot[] = [
       {
         name: 'Silver Lake Brewing Project',
         kind: 'drink',
-        what: 'Brewery and food in Perry, the village just north of the park.',
+        what: 'Brewery and food in Perry, the nearest village to the campground.',
         url: 'https://silverlakebrewingproject.com/',
         distance: '10 min drive',
       },
@@ -1153,7 +1151,7 @@ const spots: Spot[] = [
       {
         name: 'Eddie’s Restaurant',
         kind: 'eat',
-        what: 'Sylvan Beach family restaurant serving since 1934, known for fish fry.',
+        what: 'Sylvan Beach family restaurant, open since 1934.',
         url: 'https://www.eddies1934.com/',
         distance: '5 min drive',
       },
@@ -1247,7 +1245,7 @@ const spots: Spot[] = [
       {
         name: 'Copper City Brewing Company',
         kind: 'drink',
-        what: 'Rome brewery with a taproom and food trucks.',
+        what: 'Small Rome brewery and taproom.',
         url: 'https://coppercitybrewing.com/',
         distance: '15 min drive',
       },
@@ -1308,7 +1306,6 @@ const spots: Spot[] = [
       note: 'Non-electric site, PA residents, weeknight; $25 non-residents; Fri–Sat $24/$29. ReserveAmerica, 2026–27.',
     },
     features: ['tent', 'rv-hookups', 'cabins', 'showers', 'lakefront', 'swimming', 'pets', 'winter'],
-    levels: ['intermediate', 'advanced'],
     outfitters: [
       {
         name: 'Ricketts Glen boat rental',
@@ -1317,7 +1314,7 @@ const spots: Spot[] = [
       },
       {
         name: 'Endless Mountain Outfitters',
-        what: 'Canoe and kayak rentals and shuttles for floats on the Susquehanna’s North Branch.',
+        what: 'River trips with boat rentals and shuttles on the Susquehanna, plus kayak sales and demos.',
         url: 'https://emo444.com/',
       },
     ],
@@ -1395,7 +1392,7 @@ const spots: Spot[] = [
     size: 'major',
     tagline: 'Some of the darkest skies on the East Coast',
     summary:
-      'A remote hilltop clearing in the Susquehannock State Forest, famous among stargazers for Milky Way views so clear it casts shadows. A small rustic campground sits next to the observation fields, and there is a separate overnight astronomy field with strict no-white-light rules. Come for new-moon weekends; days are for the Lumber Museum, Lyman Run’s lake and the Pine Creek Gorge.',
+      'A remote hilltop clearing in the Susquehannock State Forest, famous among stargazers for its Milky Way views. A small rustic campground sits next to the observation fields, and there is a separate overnight astronomy field with strict no-white-light rules. Come for new-moon weekends; days are for the Lumber Museum, Lyman Run’s lake and the Pine Creek Gorge.',
     url: 'https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/cherry-springs-state-park',
     bookingUrl:
       'https://pennsylvaniastateparks.reserveamerica.com/camping/cherry-springs-state-park/r/campgroundDetails.do?contractCode=PA&parkId=880143',
@@ -1430,7 +1427,7 @@ const spots: Spot[] = [
       {
         name: 'Susquehannock Lodge',
         kind: 'lodge',
-        what: 'Friendly country lodge on Route 6 near the Lumber Museum, popular with hikers and stargazers.',
+        what: 'Country lodge on Route 6 near the Lumber Museum and the Susquehannock Trail.',
         url: 'https://susquehannock-lodge.com/',
         distance: '30 min drive',
       },
@@ -1536,12 +1533,12 @@ const spots: Spot[] = [
       },
       {
         name: 'Laurel Highlands River Tours',
-        what: 'Rafting, kayak instruction and rentals on the Yough, plus climbing and paintball outings.',
+        what: 'Guided rafting, kayak lessons and rentals on the Yough.',
         url: 'https://www.laurelhighlands.com/',
       },
       {
         name: 'Ohiopyle Trading Post',
-        what: 'Village outfitter for guided rafting and rental rafts, duckies and bikes.',
+        what: 'Village outfitter for guided and self-guided raft trips on the Yough.',
         url: 'https://www.ohiopyletradingpost.com/',
       },
       {
