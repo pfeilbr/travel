@@ -886,6 +886,44 @@
       "width": 1600
     }
   ],
+  "garibaldi-lake": [
+    {
+      "alt": "Garibaldi Lake and Sphinx Glacier seen from Panorama Ridge.",
+      "author": "The Cosmonaut",
+      "file": "src/assets/places/garibaldi-lake/1.jpg",
+      "height": 957,
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garibaldi_Lake_seen_from_Panorama_Ridge3.jpg",
+      "title": "File:Garibaldi Lake seen from Panorama Ridge3.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Trips 05 - Garibaldi Lake - 01 - Sphynx fr Campsite ()",
+      "author": "McKay Savage from London, UK",
+      "file": "src/assets/places/garibaldi-lake/2.jpg",
+      "height": 849,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trips_05_-_Garibaldi_Lake_-_01_-_Sphynx_fr_Campsite_(90974049).jpg",
+      "title": "File:Trips 05 - Garibaldi Lake - 01 - Sphynx fr Campsite (90974049).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Trips '05 - Garibaldi Lake - 01 - Sphynx fr Campsite",
+      "author": "McKay Savage",
+      "file": "src/assets/places/garibaldi-lake/3.jpg",
+      "height": 833,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trips_'05_-_Garibaldi_Lake_-_01_-_Sphynx_fr_Campsite.jpg",
+      "title": "File:Trips '05 - Garibaldi Lake - 01 - Sphynx fr Campsite.jpg",
+      "width": 1280
+    }
+  ],
   "glimmerglass": [
     {
       "alt": "Otsego Lake stretching south between wooded hills",

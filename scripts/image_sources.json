@@ -7730,6 +7730,292 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "whistler-racket-club": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "whistler",
+    "whistler racket club"
+   ],
+   "sources": [
+    {
+     "category": "Category:Whistler,_British_Columbia",
+     "depth": 0
+    },
+    {
+     "openverse": "Whistler Racket Club pickleball",
+     "must": [
+      "whistler",
+      "whistler racket club"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "fairgrounds-capilano": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "capilano",
+    "vancouver",
+    "fairgrounds racket club capilano"
+   ],
+   "sources": [
+    {
+     "category": "Category:Capilano_Mall",
+     "depth": 0
+    },
+    {
+     "openverse": "Fairgrounds Racket Club Capilano pickleball",
+     "must": [
+      "capilano",
+      "vancouver",
+      "fairgrounds racket club capilano"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "parkinson-pickleball-courts": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "kelowna",
+    "parkinson",
+    "parkinson recreation centre pickleball courts"
+   ],
+   "sources": [
+    {
+     "category": "Category:Kelowna",
+     "depth": 0
+    },
+    {
+     "openverse": "Parkinson Recreation Centre Pickleball Courts pickleball",
+     "must": [
+      "kelowna",
+      "parkinson",
+      "parkinson recreation centre pickleball courts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "penticton-pickleball": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "skaha",
+    "penticton",
+    "penticton pickleball club, south main courts"
+   ],
+   "sources": [
+    {
+     "category": "Category:Skaha_Lake",
+     "depth": 0
+    },
+    {
+     "openverse": "Penticton Pickleball Club, South Main Courts pickleball",
+     "must": [
+      "skaha",
+      "penticton",
+      "penticton pickleball club, south main courts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "victoria-pickleball-centre": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "langford",
+    "westshore",
+    "victoria pickleball centre"
+   ],
+   "sources": [
+    {
+     "category": "Category:Langford,_British_Columbia",
+     "depth": 0
+    },
+    {
+     "openverse": "Victoria Pickleball Centre pickleball",
+     "must": [
+      "langford",
+      "westshore",
+      "victoria pickleball centre"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "centre-pickle": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "pickleball",
+    "hochelaga",
+    "maisonneuve",
+    "centre pickle"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mercier–Hochelaga-Maisonneuve",
+     "depth": 0
+    },
+    {
+     "openverse": "Centre Pickle pickleball",
+     "must": [
+      "pickleball",
+      "hochelaga",
+      "maisonneuve",
+      "centre pickle"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "universite-laval-pickleball": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "laval",
+    "peps",
+    "centre de tennis synex assurance – université laval"
+   ],
+   "sources": [
+    {
+     "category": "Category:Université_Laval",
+     "depth": 0
+    },
+    {
+     "openverse": "Centre de tennis Synex Assurance – Université Laval pickleball",
+     "must": [
+      "laval",
+      "peps",
+      "centre de tennis synex assurance – université laval"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mont-tremblant-pickleball": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "tremblant",
+    "jovite",
+    "îlot sportif erik guay pickleball courts"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mont-Tremblant",
+     "depth": 0
+    },
+    {
+     "openverse": "Îlot sportif Erik Guay Pickleball Courts pickleball",
+     "must": [
+      "tremblant",
+      "jovite",
+      "îlot sportif erik guay pickleball courts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bromont-pickleball": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "bromont",
+    "campus germain-désourdy pickleball courts"
+   ],
+   "sources": [
+    {
+     "category": "Category:Bromont",
+     "depth": 0
+    },
+    {
+     "openverse": "Campus Germain-Désourdy Pickleball Courts pickleball",
+     "must": [
+      "bromont",
+      "campus germain-désourdy pickleball courts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }

@@ -138,7 +138,7 @@ const spots: Spot[] = [
     summary:
       'North Campground is across the road from the Bryce Canyon visitor center, with the Rim Trail and Fairyland Loop a few minutes’ walk through the ponderosas. Loops A and B take RVs and stay open through most of the year; C and D are tent loops that close in freezing weather. At nearly 8,000 feet the nights are cold even in summer, and the park’s dark skies and astronomy programs are a big part of the draw.',
     url: 'https://www.nps.gov/brca/planyourvisit/northcampground.htm',
-    bookingUrl: 'https://www.recreation.gov/search?q=Bryce%20Canyon%20North%20Campground',
+    bookingUrl: 'https://www.recreation.gov/camping/campgrounds/234058',
     mapUrl: 'https://www.nps.gov/brca/planyourvisit/campgrounds.htm',
     conditionsUrl: 'https://www.nps.gov/brca/planyourvisit/conditions.htm',
     season: {
