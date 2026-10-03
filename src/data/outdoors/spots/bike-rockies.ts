@@ -46,12 +46,12 @@ const spots: Spot[] = [
       { name: 'Chile Pepper Bike Shop', what: 'Mountain bike and e-bike rentals, with group discounts.', url: 'https://www.chilebikes.com/' },
       { name: 'Rim Tours', what: 'Guided day and multi-day tours, including e-bike and beginner-friendly trips.', url: 'https://www.rimtours.com/' },
       { name: 'Whole Enchilada Shuttles', what: 'Shuttles to the top of the Whole Enchilada and other point-to-point rides.', url: 'https://www.wholeenchiladashuttles.com/' },
-      { name: 'Western Spirit Cycling', what: 'Moab-based outfitter running supported multi-day mountain bike tours.', url: 'https://www.westernspirit.com/' },
+      { name: 'Western Spirit Cycling', what: 'Supported multi-day mountain bike tours, including Moab-area routes.', url: 'https://www.westernspirit.com/' },
     ],
     lodging: [
-      { name: 'Moab Springs Ranch', kind: 'condo', what: 'Bungalows and townhouses on Moab’s first ranch at the north end of town, close to Arches and the bike path to Moab Brands.', url: 'https://moabspringsranch.com/', distance: '15 min drive' },
-      { name: 'The Gonzo Inn', kind: 'hotel', what: 'Colorful downtown hotel a short walk from Main Street restaurants and bike shops.', url: 'https://www.gonzoinn.com/', distance: '10 min drive' },
-      { name: 'Red Cliffs Lodge', kind: 'lodge', what: 'Riverside lodge and cabins on the Colorado River up scenic Highway 128.', url: 'https://www.redcliffslodge.com/', distance: '30 min drive' },
+      { name: 'Moab Springs Ranch', kind: 'condo', what: 'Bungalows and townhouses on Moab’s first ranch, at the north end of town near Arches.', url: 'https://moabspringsranch.com/', distance: '15 min drive' },
+      { name: 'The Gonzo Inn', kind: 'hotel', what: 'Downtown hotel a short walk from Main Street restaurants and bike shops.', url: 'https://www.gonzoinn.com/', distance: '10 min drive' },
+      { name: 'Red Cliffs Lodge', kind: 'lodge', what: 'Riverside lodge on the Colorado River, up scenic Highway 128.', url: 'https://www.redcliffslodge.com/', distance: '30 min drive' },
     ],
     thingsToDo: [
       { name: 'Arches National Park', kind: 'other', what: 'Delicate Arch and more than 2,000 sandstone arches, just north of town. Check the park site for timed-entry rules.', url: 'https://www.nps.gov/arch/index.htm', distance: '15 min drive' },
@@ -77,12 +77,12 @@ const spots: Spot[] = [
     size: 'major',
     tagline: 'Gold-level singletrack you can ride from Main Street',
     summary:
-      'About 400 miles of free, multi-use singletrack wraps around town, from sagebrush loops at Round Valley to the high Mid Mountain and Wasatch Crest trails near 10,000 feet. It was the world’s first IMBA Gold-level Ride Center, and trails link straight into the Deer Valley and Park City resort networks. Great for every level, with bus and bike-haul options to skip the climbs.',
+      'About 400 miles of free, multi-use singletrack wraps around town, from sagebrush loops at Round Valley to the high Mid Mountain and Wasatch Crest trails near 10,000 feet. It was the world’s first IMBA Gold-level Ride Center, and several trails link into the Deer Valley bike park. Good for every level, and a transit-to-trails bus helps with point-to-point rides.',
     url: 'https://mountaintrails.org/summer-trails-overview/',
     mapUrl: 'https://mountaintrails.org/summer-interactive-map/',
     conditionsUrl: 'https://mountaintrails.org/summer-weekly-report/',
     bookingUrl: 'https://whitepinetouring.com/mountain-bike-rentals-park-city.php',
-    season: { from: 'Jun', to: 'Nov', note: 'Alpine trails usually open in June and run into early November; lower Round Valley trails dry out sooner.' },
+    season: { from: 'Jun', to: 'Nov', note: 'Alpine trails usually open in June and run into early November.' },
     facts: [
       { label: 'Singletrack', value: '400 mi' },
       { label: 'Elevation', value: '6,500–10,000 ft' },
@@ -94,17 +94,17 @@ const spots: Spot[] = [
     levels: ['beginner', 'intermediate', 'advanced', 'expert'],
     outfitters: [
       { name: 'White Pine Touring', what: 'Mountain bike rentals, guided rides and clinics in town.', url: 'https://whitepinetouring.com/guided-mountain-biking-tours-park-city.php' },
-      { name: 'JANS Mountain Outfitters', what: 'Long-running Park Avenue shop with bike rentals and service.', url: 'https://www.jans.com/' },
+      { name: 'JANS Mountain Outfitters', what: 'Park Avenue outdoor shop with bike rentals, tune-ups and guided rides.', url: 'https://www.jans.com/' },
       { name: 'Mountain Trails Foundation', what: 'The nonprofit that builds the trails; maps, the weekly trail report and an e-bike courtesy tag program.', url: 'https://mountaintrails.org/' },
     ],
     lodging: [
-      { name: 'Washington School House', kind: 'inn', what: 'Small luxury inn in a restored 1889 schoolhouse in Old Town.', url: 'https://www.washingtonschoolhouse.com/', distance: 'Old Town' },
-      { name: 'Newpark Resort', kind: 'hotel', what: 'Rooms and condos at Kimball Junction, near the Glenwild and Trailside trails and the free bus.', url: 'https://www.newparkresort.com/', distance: '10 min drive' },
-      { name: 'Hotel Park City', kind: 'hotel', what: 'Four-star hotel with an athletic club and spa, near town and Round Valley.', url: 'https://www.hotelparkcity.com/', distance: '5 min drive' },
+      { name: 'Washington School House', kind: 'inn', what: 'Twelve-room luxury inn in an 1889 schoolhouse in Old Town, with a heated pool terrace.', url: 'https://www.washingtonschoolhouse.com/', distance: 'Old Town' },
+      { name: 'Newpark Resort', kind: 'hotel', what: 'Rooms and condos at Kimball Junction, near shops and the free bus.', url: 'https://www.newparkresort.com/', distance: '10 min drive' },
+      { name: 'Hotel Park City', kind: 'hotel', what: 'Four-star hotel with an athletic club and spa, a short drive from town.', url: 'https://www.hotelparkcity.com/', distance: '5 min drive' },
       { name: 'Park City Hostel', kind: 'hostel', what: 'The budget option, on the free bus line.', url: 'https://parkcityhostel.com/', distance: 'In town' },
     ],
     thingsToDo: [
-      { name: 'Woodward Park City', kind: 'other', what: 'Small lift-served bike park with progression lines, plus summer camps.', url: 'https://www.woodwardparkcity.com/tickets/bike-park/', distance: '15 min drive' },
+      { name: 'Woodward Park City', kind: 'other', what: 'Lift-served bike park built for progression, plus summer camps.', url: 'https://www.woodwardparkcity.com/tickets/bike-park/', distance: '15 min drive' },
       { name: 'Utah Olympic Park', kind: 'museum', what: 'The 2002 Olympic venue, with free museums and summer activities.', url: 'https://utaholympiclegacy.org/', distance: '15 min drive' },
       { name: 'Park City Museum', kind: 'museum', what: 'Silver-mining and ski history on Main Street.', url: 'https://parkcityhistory.org/', distance: 'Main Street' },
       { name: 'High West Saloon', kind: 'drink', what: 'Whiskey flights and food at High West’s original Old Town saloon.', url: 'https://highwest.com/', distance: 'Old Town' },
@@ -127,7 +127,7 @@ const spots: Spot[] = [
     size: 'major',
     tagline: 'Gravity Logic flow trails off three chairlifts',
     summary:
-      'Nearly 60 miles of trail across Deer Valley’s mountains, from long Gravity Logic flow trails to rooty technical lines and cross-country links into Park City’s town network. Three chairlifts do the climbing, with up to 3,000 vertical feet per lap. Polished and well run, with lessons and rentals at the base; a good pick for progressing riders.',
+      'Nearly 60 miles of trail across Deer Valley’s mountains, from long Gravity Logic flow trails to rooty technical lines and cross-country links into Park City’s town network. Three chairlifts do the climbing, with up to 3,000 vertical feet of descent. Lessons and rentals are at the base, which makes it a good pick for progressing riders.',
     url: 'https://www.deervalley.com/things-to-do/activities/mountain-biking',
     bookingUrl: 'https://www.deervalley.com/plan-your-trip/tickets-and-passes/summer-lift-tickets',
     mapUrl: 'https://www.deervalley.com/explore-the-mountain/interactive-grooming-map',
@@ -144,18 +144,18 @@ const spots: Spot[] = [
     levels: ['beginner', 'intermediate', 'advanced', 'expert'],
     resortId: 'deer-valley',
     outfitters: [
-      { name: 'Deer Valley bike rentals', what: 'Trail and downhill bikes in kids’ and adult sizes, with half-day afternoon rates.', url: 'https://www.deervalley.com/plan-your-trip/bike-rentals' },
+      { name: 'Deer Valley bike rentals', what: 'Bikes matched to technical or flow-and-jump trails, with cheaper afternoon rates.', url: 'https://www.deervalley.com/plan-your-trip/bike-rentals' },
       { name: 'Deer Valley bike lessons', what: 'Private lessons and group clinics for first-timers through experts.', url: 'https://www.deervalley.com/plan-your-trip/bike-lessons' },
       { name: 'White Pine Touring', what: 'In-town rentals and guided rides on Park City’s trail network.', url: 'https://whitepinetouring.com/guided-mountain-biking-tours-park-city.php' },
     ],
     lodging: [
-      { name: 'Stein Eriksen Lodge', kind: 'slopeside', what: 'Five-star lodge at mid-mountain Silver Lake, on the bike park lifts.', url: 'https://www.steinlodge.com/', distance: 'Silver Lake' },
+      { name: 'Stein Eriksen Lodge', kind: 'slopeside', what: 'Five-star lodge at mid-mountain Silver Lake Village.', url: 'https://www.steinlodge.com/', distance: 'Silver Lake' },
       { name: 'Goldener Hirsch', kind: 'slopeside', what: 'Austrian-style chalet inn in Silver Lake Village.', url: 'https://aubergeresorts.com/goldenerhirsch/', distance: 'Silver Lake' },
       { name: 'The Lodges at Deer Valley', kind: 'condo', what: 'Resort-managed condo hotel near the Snow Park base.', url: 'https://www.deervalley.com/plan-your-trip/hotels-lodging/lodges-at-deer-valley', distance: 'Near Snow Park' },
       { name: 'Park City Hostel', kind: 'hostel', what: 'Budget beds in town, on the free bus line.', url: 'https://parkcityhostel.com/', distance: '10 min drive' },
     ],
     thingsToDo: [
-      { name: 'Deer Valley events', kind: 'other', what: 'Summer concerts and festivals at Snow Park; check the calendar for dates.', url: 'https://www.deervalley.com/things-to-do/events', distance: 'At the base' },
+      { name: 'Deer Valley events', kind: 'other', what: 'Summer concerts and events; check the calendar for dates.', url: 'https://www.deervalley.com/things-to-do/events', distance: 'At the base' },
       { name: 'Utah Olympic Park', kind: 'museum', what: 'The 2002 Olympic venue, with free museums and summer activities.', url: 'https://utaholympiclegacy.org/', distance: '20 min drive' },
       { name: 'Park City Museum', kind: 'museum', what: 'Mining and ski history on Main Street.', url: 'https://parkcityhistory.org/', distance: '5 min drive' },
       { name: 'High West Saloon', kind: 'drink', what: 'Whiskey and food in an Old Town saloon.', url: 'https://highwest.com/', distance: '5 min drive' },
@@ -178,7 +178,7 @@ const spots: Spot[] = [
     size: 'major',
     tagline: 'Slickrock mesa riding with Zion on the skyline',
     summary:
-      'A mesa-top maze of slickrock ledges and pinyon singletrack at 5,200 feet, with Zion’s sandstone towers across the valley and rim views that stop you mid-ride. Below it, Goosebumps and the Hurricane-area systems add flowier options, part of more than 300 miles of trail around St. George. Best for intermediate-plus riders; the riding season runs all year.',
+      'A mesa-top network of slickrock ledges and singletrack at 5,200 feet, with Zion’s sandstone towers rising to the north and big views off the rims. Below the mesa, Goosebumps rides like a roller coaster with easier side options, and the wider Greater Zion area adds more than 300 miles of trail. Best for intermediate and stronger riders; you can ride here all year.',
     url: 'https://www.blm.gov/visit/gooseberry-mesa-national-recreation-trail',
     mapUrl: 'https://www.blm.gov/sites/blm.gov/files/uploads/BLMUtahGooseberryMesaMap.pdf',
     season: { from: 'Year-round', to: 'Year-round', note: 'Spring and fall are prime. Summer days get hot, so ride early.' },
@@ -204,11 +204,11 @@ const spots: Spot[] = [
     thingsToDo: [
       { name: 'Zion National Park', kind: 'other', what: 'The Narrows, Angels Landing and canyon shuttles, a short drive east.', url: 'https://www.nps.gov/zion/index.htm', distance: '45 min drive' },
       { name: 'Sand Hollow State Park', kind: 'other', what: 'Red-rock reservoir for swimming and paddling on a hot afternoon.', url: 'https://stateparks.utah.gov/parks/sand-hollow/', distance: '30 min drive' },
-      { name: 'River Rock Roasting Co.', kind: 'eat', what: 'Coffee and pizza on a deck above the Virgin River gorge in La Verkin.', url: 'https://www.riverrockroasting.com/', distance: '25 min drive' },
+      { name: 'River Rock Roasting Co.', kind: 'eat', what: 'Coffee, breakfast and pizza in La Verkin, on the way to Zion.', url: 'https://www.riverrockroasting.com/', distance: '25 min drive' },
       { name: 'Zion Brewery', kind: 'drink', what: 'Brewpub at the Springdale park entrance.', url: 'https://www.zionbrewery.com/', distance: '50 min drive' },
     ],
     events: [
-      { name: 'Red Bull Rampage', kind: 'other', date: '2026-10-08', end: '2026-10-10', when: 'Oct 8–10, 2026 (women Oct 8, men Oct 10)', what: 'The big-mountain freeride contest on the cliffs near Virgin, a few miles from the mesa.', url: 'https://www.redbull.com/us-en/events/red-bull-rampage', confirmed: true },
+      { name: 'Red Bull Rampage', kind: 'other', date: '2026-10-08', end: '2026-10-10', when: 'Oct 8–10, 2026 (women Oct 8, men Oct 10)', what: 'The big-mountain freeride contest on the cliffs near Virgin, a short drive from Hurricane.', url: 'https://www.redbull.com/us-en/events/red-bull-rampage', confirmed: true },
     ],
     getting: { airport: 'St. George Regional', code: 'SGU', driveMin: 45, from: [{ city: 'Las Vegas', hours: 2.5 }, { city: 'Salt Lake City', hours: 4.5 }] },
     google: { rating: 4.9, url: cid('8002645099694908763'), asOf: ASOF },
@@ -250,7 +250,7 @@ const spots: Spot[] = [
       { name: 'Compass Rose Lodge', kind: 'hotel', what: 'Boutique hotel in Huntsville with its own observatory and a coffee shop.', url: 'https://www.compassroselodge.com/', distance: '15 min drive' },
       { name: 'Atomic Chalet', kind: 'b&b', what: 'European-style B&B in Huntsville for guests 15 and up, breakfast included.', url: 'https://www.atomicchalet.com/', distance: '15 min drive' },
       { name: 'Alaskan Inn and Spa', kind: 'inn', what: 'Cabins and lodge rooms in Ogden Canyon, with a spa.', url: 'https://www.alaskaninn.com/', distance: '15 min drive' },
-      { name: 'Wolf Creek Resort', kind: 'condo', what: 'Condos and townhomes in Eden near Pineview Reservoir.', url: 'https://wolfcreekresort.com/', distance: '25 min drive' },
+      { name: 'Wolf Creek Resort', kind: 'condo', what: 'Condos and townhomes in Eden.', url: 'https://wolfcreekresort.com/', distance: '25 min drive' },
     ],
     thingsToDo: [
       { name: 'Needles Gondola scenic ride', kind: 'scenic-lift', what: 'Ride up for the views and lunch at Needles Lodge.', url: 'https://www.snowbasin.com/activities/scenic-gondola-ride/', distance: 'At the base' },
@@ -292,17 +292,17 @@ const spots: Spot[] = [
     levels: ['beginner', 'intermediate', 'advanced'],
     outfitters: [
       { name: 'Over the Edge Sports Fruita', what: 'The downtown shop, with demo and rental bikes and local trail advice.', url: 'https://www.otefruita.com/' },
-      { name: 'COPMOBA', what: 'The local trail club; trail list, conditions and volunteer days.', url: 'https://copmoba.org/' },
+      { name: 'COPMOBA', what: 'The local trail club; trail list and conditions.', url: 'https://copmoba.org/' },
     ],
     lodging: [
       { name: 'Balanced Rock Inn', kind: 'hotel', what: 'Simple, clean rooms steps from downtown and minutes from the trails.', url: 'https://www.balancedrockinn.com/', distance: 'In town' },
       { name: 'La Quinta Inn Fruita', kind: 'hotel', what: 'Chain hotel by the interstate, handy for both trail systems.', url: 'https://www.wyndhamhotels.com/laquinta/fruita-colorado/la-quinta-fruita/overview', distance: 'In town' },
-      { name: 'Monument RV Resort', kind: 'cabin', what: 'RV sites and cabins near the Colorado National Monument entrance.', url: 'https://monumentrvresort.com/', distance: '10 min drive' },
+      { name: 'Monument RV Resort', kind: 'cabin', what: 'RV sites and cabins on Highway 340 near the monument’s Fruita entrance.', url: 'https://monumentrvresort.com/', distance: '10 min drive' },
     ],
     thingsToDo: [
       { name: 'Colorado National Monument', kind: 'other', what: 'Rim Rock Drive climbs 2,000 feet past red-rock canyons; a famous road ride too.', url: 'https://www.nps.gov/colm/index.htm', distance: '10 min drive' },
       { name: 'Rimrock Adventures', kind: 'other', what: 'Guided rafting and kayak, canoe and SUP rentals on the Colorado River.', url: 'https://rradventures.com/', distance: 'In town' },
-      { name: 'Hot Tomato', kind: 'eat', what: 'The riders’ pizza place downtown.', url: 'https://www.hottomatopizza.com/', distance: 'In town' },
+      { name: 'Hot Tomato', kind: 'eat', what: 'Pizza place downtown.', url: 'https://www.hottomatopizza.com/', distance: 'In town' },
       { name: 'Reckless Brewing Company', kind: 'drink', what: 'Local brewery and roadhouse for a post-ride pint.', url: 'https://www.recklessroadhouse.com/', distance: 'In town' },
     ],
     events: [
@@ -323,7 +323,7 @@ const spots: Spot[] = [
     size: 'major',
     tagline: 'High-alpine singletrack and a lift-served bike park',
     summary:
-      'Wildflower meadows, aspen forests and high passes, with classics like the 401 and Snodgrass a few minutes from the old mining town. The Gunnison Valley holds more than 800 miles of singletrack, and Crested Butte Mountain Resort adds 30-plus miles of lift-served trails off the Red Lady Express. Best for strong riders who like altitude, with easier town loops for everyone else.',
+      'Wildflower meadows, aspen forests and high passes, with classics like the 401 and Snodgrass a short drive from the old mining town. The Gunnison Valley holds more than 800 miles of singletrack, and Crested Butte Mountain Resort adds 30-plus miles of lift-served trails off the Red Lady Express. Best for strong riders who like altitude, with easier town loops for everyone else.',
     url: 'https://gunnisoncrestedbutte.com/visit/trip-planning/things-to-do/mountain-biking/',
     conditionsUrl: 'https://crestedbuttemountainbike.com/trail-information/conditions/',
     season: {
@@ -343,17 +343,17 @@ const spots: Spot[] = [
     resortId: 'crested-butte',
     outfitters: [
       { name: 'The Alpineer (Christy Sports)', what: 'Bike rentals in town alongside its ski shop.', url: 'https://www.christysports.com/store-locations/the-alpineer-crested-butte.html' },
-      { name: 'Big Al’s Bicycle Heaven', what: 'Local bike shop on the edge of town.', url: 'https://www.bigalsbicycleheaven.com/' },
-      { name: 'Crested Butte Mountain Bike Association', what: 'The trail builders; trail conditions, maps and group rides.', url: 'https://crestedbuttemountainbike.com/' },
+      { name: 'Big Al’s Bicycle Heaven', what: 'Bike shop in Crested Butte.', url: 'https://www.bigalsbicycleheaven.com/' },
+      { name: 'Crested Butte Mountain Bike Association', what: 'The local trail builders; trail conditions and trail info.', url: 'https://crestedbuttemountainbike.com/' },
     ],
     lodging: [
       { name: 'Elevation Hotel & Spa', kind: 'slopeside', what: 'Big hotel at the resort base, steps from the Red Lady Express.', url: 'https://www.elevationresort.com/', distance: 'At the bike park' },
       { name: 'Nordic Inn', kind: 'b&b', what: 'Family-run inn near the base with continental breakfast and a hot tub.', url: 'https://www.nordicinncb.com/', distance: 'Mt. Crested Butte' },
       { name: 'Elk Mountain Lodge', kind: 'b&b', what: 'Historic inn a block off Elk Avenue with a full breakfast.', url: 'https://www.elkmountainlodge.com/', distance: 'In town' },
-      { name: 'Old Town Inn', kind: 'inn', what: 'Good-value inn near the town trails, with a big continental breakfast.', url: 'https://oldtowninn.net/', distance: 'In town' },
+      { name: 'Old Town Inn', kind: 'inn', what: 'Good-value inn in town with a big continental breakfast.', url: 'https://oldtowninn.net/', distance: 'In town' },
     ],
     thingsToDo: [
-      { name: 'Hartman Rocks', kind: 'other', what: 'Rocky, technical desert riding near Gunnison when the high country is wet or snowy.', url: 'https://gunnisoncrestedbutte.com/visit/places-to-go/parks-and-outdoors/hartman-rocks-recreation-area/', distance: '40 min drive' },
+      { name: 'Hartman Rocks', kind: 'other', what: 'Rocky, technical high-desert riding near Gunnison, from the beginner Sea of Sage to expert Freefall.', url: 'https://gunnisoncrestedbutte.com/visit/places-to-go/parks-and-outdoors/hartman-rocks-recreation-area/', distance: '40 min drive' },
       { name: 'Montanya Distillers', kind: 'drink', what: 'Craft rum distillery with a cocktail bar on Elk Avenue.', url: 'https://www.montanyarum.com/', distance: 'In town' },
       { name: 'Secret Stash', kind: 'eat', what: 'Pizza and wings, a perennial local favorite.', url: 'https://www.secretstash.com/', distance: 'In town' },
     ],
@@ -373,9 +373,9 @@ const spots: Spot[] = [
     coords: [39.8868, -105.7625],
     kind: 'Lift-served bike park',
     size: 'major',
-    tagline: 'Front Range gravity hub 90 minutes from Denver',
+    tagline: '40-plus miles of downhill, 67 miles from Denver',
     summary:
-      'Colorado’s go-to downhill park, with more than 40 miles of lift-served trails at Winter Park, from smooth beginner flow to steep, rocky expert lines and big freeride jumps. The base village has rentals, lessons and a busy summer race series. It sits around 10,000 feet, so pace yourself on day one.',
+      'One of Colorado’s best-known downhill parks, with more than 40 miles of lift-served trails at Winter Park, from smooth beginner flow to steep, rocky expert lines and big freeride jumps. The base village has rentals, lessons and a busy summer race series. It sits around 10,000 feet, so pace yourself on day one.',
     url: 'https://www.trestlebikepark.com/',
     bookingUrl: 'https://www.trestlebikepark.com/daily-tickets/',
     mapUrl: 'https://www.winterparkresort.com/-/media/winter-park/summer/trestlebikeparktrailmap.pdf',
@@ -423,7 +423,7 @@ const spots: Spot[] = [
     size: 'major',
     tagline: '3,000 vertical feet of Gold-level bike park',
     summary:
-      'An IMBA Gold-level bike park with 25-plus miles of lift-accessed freeride and technical trails, from high-alpine flow above treeline to forested double blacks, all dropping 3,000 feet to Base Village. First-timers start at the Meadows learning area mid-mountain. Pair it with Aspen, the Maroon Bells and a wider Snowmass trail network.',
+      'An IMBA Gold-level bike park with 25-plus miles of lift-accessed freeride and technical trails, from high-alpine flow above treeline to feature-built freeride lines in the forest, all dropping 3,000 feet to Base Village. First-timers start at the Meadows learning area mid-mountain. Pair it with Aspen, the Maroon Bells and a wider Snowmass trail network.',
     url: 'https://www.aspensnowmass.com/visit/activities/summer/biking/snowmass-bike-park',
     bookingUrl: 'https://shop.aspensnowmass.com/s/summer-activities/all-summer-activities/',
     mapUrl: 'https://bike.gosnowmass.com/',
@@ -448,9 +448,9 @@ const spots: Spot[] = [
       { name: 'Stonebridge Inn', kind: 'hotel', what: 'Updated hotel with a heated pool, a short walk from the lifts.', url: 'https://www.stonebridgeinn.com/', distance: 'Short walk' },
     ],
     thingsToDo: [
-      { name: 'Maroon Bells', kind: 'other', what: 'Colorado’s most photographed peaks; summer access is by reservation or shuttle.', url: 'https://aspenchamber.org/things-to-do/maroon-bells/', distance: '30 min drive' },
+      { name: 'Maroon Bells', kind: 'other', what: 'Aspen’s famous twin peaks above Maroon Lake; summer visits need a reservation.', url: 'https://aspenchamber.org/things-to-do/maroon-bells/', distance: '30 min drive' },
       { name: 'Breathtaker Alpine Coaster', kind: 'mountain-coaster', what: 'Coaster at the top of the Elk Camp Gondola, part of the Lost Forest.', url: 'https://www.gosnowmass.com/activity/breathtaker-alpine-coaster-2/', distance: 'Mid-mountain' },
-      { name: 'The Lost Forest', kind: 'kids', what: 'Ropes course, climbing wall and canopy tour at Elk Camp.', url: 'https://www.gosnowmass.com/activity/the-lost-forest/', distance: 'Mid-mountain' },
+      { name: 'The Lost Forest', kind: 'kids', what: 'Challenge course and climbing wall at the top of the Elk Camp Gondola, and a base for fishing and hiking.', url: 'https://www.gosnowmass.com/activity/the-lost-forest/', distance: 'Mid-mountain' },
       { name: 'Base Camp Bar & Grill', kind: 'drink', what: 'Sunny Base Village deck for a post-ride beer.', url: 'https://www.basecampsnowmass.com/', distance: 'Base Village' },
     ],
     events: [],
@@ -489,11 +489,11 @@ const spots: Spot[] = [
     outfitters: [
       { name: 'Purgatory Sports', what: 'Bike rentals, demos and repairs at the resort and downtown.', url: 'https://www.purgatory.ski/mountain-bike-rentals/' },
       { name: 'Second Avenue Sports', what: 'Downtown shop with bike rentals and service.', url: 'https://www.2ndavesports.com/' },
-      { name: 'Mountain Bike Specialists', what: 'Long-running mountain bike shop with demo bikes and local rides.', url: 'https://www.mountainbikespecialists.com/' },
+      { name: 'Mountain Bike Specialists', what: 'Mountain bike shop with demo bikes and local group rides.', url: 'https://www.mountainbikespecialists.com/' },
     ],
     lodging: [
       { name: 'Strater Hotel', kind: 'hotel', what: 'Durango’s landmark Victorian hotel downtown.', url: 'https://strater.com/', distance: 'Downtown' },
-      { name: 'Rochester Hotel', kind: 'inn', what: 'Small boutique hotel a block off Main Avenue.', url: 'https://www.rochesterhotel.com/', distance: 'Downtown' },
+      { name: 'Rochester Hotel', kind: 'inn', what: 'Small boutique hotel downtown.', url: 'https://www.rochesterhotel.com/', distance: 'Downtown' },
       { name: 'Purgatory Lodge', kind: 'slopeside', what: 'Resort-managed condos at the bike park base.', url: 'https://www.purgatory.ski/lodging/', distance: '35 min drive' },
     ],
     thingsToDo: [
@@ -542,13 +542,13 @@ const spots: Spot[] = [
     ],
     lodging: [
       { name: 'Amigo Motor Lodge', kind: 'hotel', what: 'Restyled motel with rooms and vintage Airstreams, pet friendly.', url: 'https://amigomotorlodge.com/', distance: '5 min drive' },
-      { name: 'Simple Lodge & Hostel', kind: 'hostel', what: 'Friendly, low-cost hostel in town.', url: 'https://www.simplelodge.com/', distance: 'In town' },
-      { name: 'Mount Princeton Hot Springs Resort', kind: 'lodge', what: 'Lodge rooms and cabins with hot spring pools and creekside soaking.', url: 'https://www.mtprinceton.com/', distance: '35 min drive' },
+      { name: 'Simple Lodge & Hostel', kind: 'hostel', what: 'Low-cost lodge and hostel in town.', url: 'https://www.simplelodge.com/', distance: 'In town' },
+      { name: 'Mount Princeton Hot Springs Resort', kind: 'lodge', what: 'Rooms and cabins with hot spring pools and natural soaking along Chalk Creek.', url: 'https://www.mtprinceton.com/', distance: '35 min drive' },
     ],
     thingsToDo: [
-      { name: 'Mount Princeton Hot Springs', kind: 'hot-springs', what: 'Hot pools and natural creek soaking below the Chalk Cliffs.', url: 'https://www.mtprinceton.com/', distance: '35 min drive' },
+      { name: 'Mount Princeton Hot Springs', kind: 'hot-springs', what: 'Hot pools and natural creekside soaking below the Chalk Cliffs; day guests welcome.', url: 'https://www.mtprinceton.com/', distance: '35 min drive' },
       { name: 'Arkansas Headwaters Recreation Area', kind: 'other', what: 'Rafting, paddling and fishing on the Arkansas River, including Browns Canyon.', url: 'https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area', distance: 'In town' },
-      { name: 'Elevation Beer Co.', kind: 'drink', what: 'Respected brewery in Poncha Springs, on the way back from the Crest.', url: 'https://www.elevationbeerco.com/', distance: '10 min drive' },
+      { name: 'Elevation Beer Co.', kind: 'drink', what: 'Brewery in Poncha Springs, on the way back from the Crest.', url: 'https://www.elevationbeerco.com/', distance: '10 min drive' },
       { name: 'Moonlight Pizza', kind: 'eat', what: 'Downtown pizza and brewpub.', url: 'https://www.moonlightpizza.biz/', distance: 'In town' },
     ],
     events: [
@@ -571,7 +571,7 @@ const spots: Spot[] = [
     size: 'major',
     tagline: 'Montana’s big lift-served park under Lone Peak',
     summary:
-      'More than 50 miles of trail at Big Sky Resort, from beginner flow off the Explorer Gondola to long expert tech descents, with some of the only lift-served biking in Montana. The tram to Lone Peak’s summit makes a good rest-day ride, and Yellowstone is an hour away. Good for families and strong riders alike.',
+      'More than 50 miles of trail at Big Sky Resort, from beginner-friendly flow to expert tech trails, with some of the only lift-served biking in Montana. The tram to Lone Peak’s summit makes a good rest-day ride, and Yellowstone is an hour away. Good for families and strong riders alike.',
     url: 'https://www.bigskyresort.com/summer-activities/mountain-biking',
     bookingUrl: 'https://shop.bigskyresort.com/l/mountain-bike/tickets-and-passes/c/bike-haul-lift-ticket',
     mapUrl: 'https://www.bigskyresort.com/summer-activities/mountain-biking/bike-the-sky',
@@ -593,14 +593,14 @@ const spots: Spot[] = [
     ],
     lodging: [
       { name: 'Huntley Lodge', kind: 'slopeside', what: 'The resort’s classic hotel in Mountain Village.', url: 'https://www.bigskyresort.com/lodging/hotels/huntley-lodge', distance: 'Mountain Village' },
-      { name: 'Summit Hotel', kind: 'slopeside', what: 'Resort hotel with condo-style rooms next to the lifts.', url: 'https://www.bigskyresort.com/lodging/hotels/summit-hotel', distance: 'Mountain Village' },
+      { name: 'Summit Hotel', kind: 'slopeside', what: 'Resort hotel next to the lifts in Mountain Village.', url: 'https://www.bigskyresort.com/lodging/hotels/summit-hotel', distance: 'Mountain Village' },
       { name: 'Lone Mountain Ranch', kind: 'cabin', what: 'Historic guest ranch with log cabins on the road up to the resort.', url: 'https://lonemountainranch.com/cabins/', distance: '10 min drive' },
       { name: 'The Wilson Hotel', kind: 'hotel', what: 'Modern hotel in Big Sky Town Center.', url: 'https://thewilsonhotel.com/', distance: '15 min drive' },
     ],
     thingsToDo: [
       { name: 'Lone Peak Tram and Kircliff', kind: 'scenic-lift', what: 'Ride to 11,166 feet and step into a glass observatory with views over three states.', url: 'https://www.bigskyresort.com/kircliff', distance: 'On mountain' },
       { name: 'Yellowstone National Park', kind: 'other', what: 'The West Entrance and geyser basins, down the Gallatin Canyon.', url: 'https://www.nps.gov/yell/index.htm', distance: '1 hr drive' },
-      { name: 'Ousel Falls Trail', kind: 'other', what: 'Easy family hike to a waterfall from Town Center.', url: 'https://www.bsco.org/trails/ousel-falls-trail', distance: '15 min drive' },
+      { name: 'Ousel Falls Trail', kind: 'other', what: 'Easy family hike to a waterfall near Town Center.', url: 'https://www.bsco.org/trails/ousel-falls-trail', distance: '15 min drive' },
       { name: 'Lone Peak Brewery', kind: 'drink', what: 'Big Sky’s brewpub in town, a locals’ spot for a pint and a burger.', url: 'https://www.lonepeakbrewery.com/', distance: '15 min drive' },
     ],
     events: [
@@ -644,19 +644,19 @@ const spots: Spot[] = [
     resortId: 'whitefish',
     outfitters: [
       { name: 'Whitefish Mountain Resort bike rentals', what: 'Downhill bikes and protective gear at the base.', url: 'https://skiwhitefish.com/bike-rentals/' },
-      { name: 'Glacier Cyclery', what: 'Downtown shop with rentals, guided rides and lessons.', url: 'https://glaciercyclery.com/' },
+      { name: 'Glacier Cyclery', what: 'Whitefish shop with bike rentals, guided rides and lessons.', url: 'https://glaciercyclery.com/' },
       { name: 'Whitefish Legacy Partners', what: 'The nonprofit behind the Whitefish Trail; maps, conditions and events.', url: 'https://www.whitefishlegacy.org/the-whitefish-trail' },
     ],
     lodging: [
       { name: 'Kandahar Lodge', kind: 'slopeside', what: 'Classic lodge in the resort village, close to the bike park lifts.', url: 'https://www.kandaharlodge.com/', distance: 'Slopeside' },
-      { name: 'The Lodge at Whitefish Lake', kind: 'hotel', what: 'Lakefront resort hotel with a spa and marina.', url: 'https://lodgeatwhitefishlake.com/', distance: '15 min drive' },
+      { name: 'The Lodge at Whitefish Lake', kind: 'hotel', what: 'Lakefront resort hotel with a spa.', url: 'https://lodgeatwhitefishlake.com/', distance: '15 min drive' },
       { name: 'Firebrand Hotel', kind: 'hotel', what: 'Modern hotel in downtown Whitefish.', url: 'https://firebrandhotel.com/', distance: '15 min drive' },
-      { name: 'Grouse Mountain Lodge', kind: 'lodge', what: 'Big lodge by the golf course on the edge of town.', url: 'https://www.glacierparkcollection.com/lodging/grouse-mountain-lodge/', distance: '15 min drive' },
+      { name: 'Grouse Mountain Lodge', kind: 'lodge', what: 'Lodge on the edge of town, run by the Glacier Park Collection.', url: 'https://www.glacierparkcollection.com/lodging/grouse-mountain-lodge/', distance: '15 min drive' },
     ],
     thingsToDo: [
       { name: 'Glacier National Park', kind: 'other', what: 'Going-to-the-Sun Road, Lake McDonald and alpine hikes.', url: 'https://www.nps.gov/glac/index.htm', distance: '45 min drive' },
       { name: 'Zip line tours', kind: 'zipline', what: 'Zip lines on Big Mountain, next to the bike park.', url: 'https://skiwhitefish.com/zip-line-tours/', distance: 'At the resort' },
-      { name: 'Alpine slides', kind: 'kids', what: 'Twin alpine slides at the resort base.', url: 'https://skiwhitefish.com/alpine-slides/', distance: 'At the resort' },
+      { name: 'Alpine slides', kind: 'kids', what: 'Alpine slides at the resort.', url: 'https://skiwhitefish.com/alpine-slides/', distance: 'At the resort' },
       { name: 'Great Northern Brewing', kind: 'drink', what: 'Downtown brewery taproom.', url: 'https://greatnorthernbrewing.com/', distance: '15 min drive' },
     ],
     events: [],
@@ -679,7 +679,7 @@ const spots: Spot[] = [
     url: 'https://visit-bozeman.com/outdoors/mountain-biking',
     mapUrl: 'https://www.gvlt.org/trail-map',
     conditionsUrl: 'https://www.southwestmontanamba.org/bozeman-trails',
-    season: { from: 'May', to: 'Oct', note: 'Town trails are the quick early- and late-season option; save the Bangtail Divide and Hyalite for summer and early fall. Hyalite Canyon Road closes to cars Apr 1–May 15.' },
+    season: { from: 'May', to: 'Oct', note: 'Save the Bangtail Divide and Hyalite for summer and early fall; the Leverich trailhead lot closes in winter. Hyalite Canyon Road is closed to cars Apr 1–May 15, a traffic-free road ride.' },
     facts: [
       { label: 'Bangtail Divide', value: '~22 mi point-to-point, ~3,500 ft of climbing' },
       { label: 'Crosscut and Bridger Bowl', value: '15 mi, free in summer' },
@@ -696,9 +696,9 @@ const spots: Spot[] = [
       { name: 'Southwest Montana Mountain Bike Association', what: 'Builds and maintains most local trails; current conditions and status.', url: 'https://www.southwestmontanamba.org/' },
     ],
     lodging: [
-      { name: 'The Lark', kind: 'hotel', what: 'Design-forward motel-style hotel on Main Street.', url: 'https://www.larkbozeman.com/', distance: 'Downtown' },
-      { name: 'Kimpton Armory Hotel', kind: 'hotel', what: 'Upscale hotel in a restored downtown armory, with a rooftop bar.', url: 'https://www.armoryhotelbzn.com/', distance: 'Downtown' },
-      { name: 'Howlers Inn', kind: 'b&b', what: 'B&B in Bridger Canyon, close to Crosscut and the Bangtail trailhead.', url: 'https://www.howlersinn.com/', distance: '20 min drive' },
+      { name: 'The Lark', kind: 'hotel', what: 'Boutique hotel on Main Street.', url: 'https://www.larkbozeman.com/', distance: 'Downtown' },
+      { name: 'Kimpton Armory Hotel', kind: 'hotel', what: 'Upscale hotel in a restored downtown armory.', url: 'https://www.armoryhotelbzn.com/', distance: 'Downtown' },
+      { name: 'Howlers Inn', kind: 'b&b', what: 'B&B in Bridger Canyon, on the way to Crosscut and the Bangtail Divide.', url: 'https://www.howlersinn.com/', distance: '20 min drive' },
     ],
     thingsToDo: [
       { name: 'Hyalite Canyon', kind: 'other', what: 'Reservoir, waterfalls and more trails a short drive south of town.', url: 'https://www.hyalite.org/biking', distance: '30 min drive' },
