@@ -59,7 +59,7 @@ const spots: Spot[] = [
       {
         name: 'Basecamp Tahoe South',
         kind: 'hotel',
-        what: 'Casual, outdoorsy hotel in South Lake Tahoe with a rooftop hot tub and fire pits.',
+        what: 'Casual, outdoorsy hotel in South Lake Tahoe, about 20 minutes from the Baldwin Beach launch.',
         url: 'https://www.basecamphotels.com/tahoe-south',
         distance: '20 min drive',
       },
@@ -68,7 +68,7 @@ const spots: Spot[] = [
       {
         name: 'Vikingsholm',
         kind: 'museum',
-        what: 'Scandinavian-style 1929 summer mansion at the head of the bay. House tours run in summer and ended Sept 30 for 2026.',
+        what: 'Scandinavian-style 1920s summer mansion at the head of the bay. House tours run in summer and ended Sept 30 for 2026.',
         url: 'https://www.parks.ca.gov/?page_id=506',
         distance: 'At the bay',
       },
@@ -133,7 +133,7 @@ const spots: Spot[] = [
       { label: 'Launch', value: 'Beach launch, plus first-come kayak parking at the boat ramp' },
       { label: 'Park entry', value: '$10 Nevada / $15 out-of-state vehicles' },
       { label: 'Day-use reservations', value: 'Required May 15–Sept 30' },
-      { label: 'Start time', value: 'Launch before 10 am to beat full lots and wind' },
+      { label: 'Start time', value: 'Launch before 10 am; the lots fill fast in summer' },
     ],
     price: { from: 38, unit: 'single kayak, 1 hr', note: 'Clearly Tahoe at Sand Harbor, 2026 rates; clear-bottom kayaks from $60/hr' },
     features: ['flatwater', 'rentals', 'guided-tours', 'sup', 'swimming'],
@@ -161,7 +161,7 @@ const spots: Spot[] = [
       {
         name: 'Hyatt Regency Lake Tahoe',
         kind: 'hotel',
-        what: 'Big lakefront resort with a private beach, spa and casino in Incline Village.',
+        what: 'Big lakefront resort with a spa and casino in Incline Village.',
         url: 'https://www.hyatt.com/hyatt-regency/en-US/tvllt-hyatt-regency-lake-tahoe-resort-spa-and-casino',
         distance: '15 min drive',
       },
@@ -191,7 +191,7 @@ const spots: Spot[] = [
       {
         name: 'Tahoe East Shore Trail',
         kind: 'other',
-        what: 'Paved 3-mile path from Incline Village to Sand Harbor, with stairways down to coves along the way.',
+        what: 'Paved 3-mile path from Incline Village to Sand Harbor, with access to beaches and coves along the way.',
         distance: 'Ends at the park',
       },
     ],
@@ -262,7 +262,7 @@ const spots: Spot[] = [
     outfitters: [
       {
         name: 'Mono Lake Committee canoe tours',
-        what: 'About an hour among the South Tufa towers with a naturalist, Saturdays and Sundays at 8, 9:30 and 11 am. No kids under 4.',
+        what: 'Naturalist-led canoe tours among the South Tufa towers from Navy Beach, Saturdays and Sundays at 8, 9:30 and 11 am. No kids under 4.',
         url: 'https://www.monolake.org/visit/canoe/',
       },
       {
@@ -274,7 +274,7 @@ const spots: Spot[] = [
       {
         name: 'Lake View Lodge',
         kind: 'lodge',
-        what: 'Family-run motel and cottages in Lee Vining, open since 1932.',
+        what: 'Family-owned lodging in Lee Vining since 1932.',
         url: 'https://lakeviewlodgeyosemite.com/',
         distance: '10 min drive',
       },
@@ -404,14 +404,14 @@ const spots: Spot[] = [
       {
         name: 'Elkhorn Slough Safari',
         kind: 'other',
-        what: 'Naturalist-led pontoon boat cruises up the slough, a good option for non-paddlers.',
+        what: 'Naturalist-led boat cruises up the slough, a good option for non-paddlers.',
         url: 'https://www.elkhornslough.com/',
         distance: 'In Moss Landing',
       },
       {
         name: 'Phil’s Fish Market',
         kind: 'eat',
-        what: 'Big, casual seafood spot in Moss Landing known for cioppino.',
+        what: 'Big, casual seafood restaurant and market in Moss Landing.',
         url: 'https://philsfishmarket.com/',
         distance: 'In Moss Landing',
       },
@@ -592,7 +592,7 @@ const spots: Spot[] = [
       {
         name: 'Four Points by Sheraton Ventura Harbor Resort',
         kind: 'hotel',
-        what: 'Harbor hotel a short walk from the Island Packers dock.',
+        what: 'Harbor hotel near the Island Packers dock.',
         url: 'https://www.marriott.com/en-us/hotels/oxrfp-four-points-ventura-harbor-resort/overview/',
         distance: 'At the harbor',
       },
@@ -608,7 +608,7 @@ const spots: Spot[] = [
       {
         name: 'Channel Islands visitor center',
         kind: 'museum',
-        what: 'The park’s Robert J. Lagomarsino Visitor Center at Ventura Harbor, with exhibits and a tide pool display.',
+        what: 'The park’s Robert J. Lagomarsino Visitor Center at Ventura Harbor, with exhibits on the islands.',
         url: 'https://www.nps.gov/chis/planyourvisit/visitorcenters.htm',
         distance: 'At the harbor',
       },
@@ -622,7 +622,7 @@ const spots: Spot[] = [
       {
         name: 'Andria’s Seafood',
         kind: 'eat',
-        what: 'Long-running fish-and-chips counter in the harbor.',
+        what: 'Casual seafood restaurant and fish market in the harbor.',
         url: 'https://www.andriasseafood.com/',
         distance: 'At the harbor',
       },
@@ -734,7 +734,7 @@ const spots: Spot[] = [
       {
         name: 'Snorkel La Jolla Shores',
         kind: 'other',
-        what: 'Calm-day snorkeling over the reserve’s reefs and sand flats, often with leopard sharks.',
+        what: 'Calm-day snorkeling in the reserve, where harmless leopard sharks gather off the beach.',
         distance: 'At the launch',
       },
     ],
@@ -761,7 +761,7 @@ const spots: Spot[] = [
     size: 'major',
     tagline: 'Emerald Cave, hot springs and canyon walls below Hoover Dam',
     summary:
-      'The Colorado River below Hoover Dam runs through a sheer volcanic canyon with beaches, coves, bighorn sheep and hot springs you can only reach by water. Most people put in at Willow Beach and paddle 2 miles upstream to glowing Emerald Cave; outfitters can also launch you right at the base of the dam. It is a cool-season trip: summer heat here is dangerous.',
+      'The Colorado River below Hoover Dam runs through a sheer volcanic canyon with beaches, coves, bighorn sheep and hot springs tucked into side canyons. Most people put in at Willow Beach and paddle 2 miles upstream to glowing Emerald Cave; outfitters can also launch you right at the base of the dam. It is a cool-season trip: summer heat here is dangerous.',
     url: 'https://www.nps.gov/lake/planyourvisit/black-canyon-water-trail.htm',
     bookingUrl: 'https://www.willowbeachharbor.com/',
     mapUrl: 'https://www.nps.gov/lake/planyourvisit/maps.htm',
@@ -789,7 +789,7 @@ const spots: Spot[] = [
       },
       {
         name: 'Desert Adventures',
-        what: 'Guided kayak tours from the base of Hoover Dam, canoe and kayak rentals, and multi-day river trips.',
+        what: 'Guided Black Canyon kayak tours, canoe and kayak rentals, and multi-day river trips.',
         url: 'https://www.desert-adventures.com/',
       },
       {
@@ -809,7 +809,7 @@ const spots: Spot[] = [
       {
         name: 'Hoover Dam Lodge',
         kind: 'hotel',
-        what: 'Hotel and casino on the hill above Lake Mead, the closest big hotel to the dam.',
+        what: 'Hotel and casino on US-93, the closest big hotel to the dam.',
         url: 'https://hooverdamlodge.com/',
         distance: '30 min drive',
       },
@@ -818,7 +818,7 @@ const spots: Spot[] = [
       {
         name: 'Arizona Hot Spring',
         kind: 'hot-springs',
-        what: 'Riverside hot pools in a slot canyon, about a mile’s paddle below the dam; the hiking route closes in summer.',
+        what: 'Hot pools up a slot canyon off the river, a favorite stop on trips from the dam. The hiking route closes in summer, but you can still paddle in.',
         distance: 'On the river',
       },
       {
@@ -901,23 +901,23 @@ const spots: Spot[] = [
       {
         name: 'Lee’s Ferry Lodge at Vermilion Cliffs',
         kind: 'lodge',
-        what: 'Stone-built roadside lodge under the Vermilion Cliffs, popular with anglers and river runners.',
+        what: 'Small roadside lodge under the Vermilion Cliffs, a few miles from the Lees Ferry turnoff.',
         url: 'https://www.vermilioncliffs.com/',
-        distance: '15 min drive',
+        distance: '10 min drive',
       },
       {
         name: 'Cliff Dwellers Lodge',
         kind: 'lodge',
         what: 'Rooms, a restaurant and a general store on US-89A; home base for Kayak Horseshoe Bend.',
         url: 'https://cliffdwellerslodge.com/',
-        distance: '20 min drive',
+        distance: '15 min drive',
       },
     ],
     thingsToDo: [
       {
         name: 'Navajo Bridge',
         kind: 'museum',
-        what: 'Walk the old bridge 470 feet above the river; the interpretive center has exhibits and condor viewing.',
+        what: 'Walk the old bridge about 470 feet above the river; the interpretive center has exhibits, and condors often roost nearby.',
         url: 'https://www.nps.gov/glca/planyourvisit/visitorcenters.htm',
         distance: '10 min drive',
       },
@@ -933,7 +933,7 @@ const spots: Spot[] = [
         kind: 'eat',
         what: 'Hearty breakfasts and dinners on a remote stretch of highway.',
         url: 'https://cliffdwellerslodge.com/cliff-dwellers-restaurant/',
-        distance: '20 min drive',
+        distance: '15 min drive',
       },
     ],
     events: [],
@@ -1033,7 +1033,7 @@ const spots: Spot[] = [
       {
         name: 'Big John’s Texas BBQ',
         kind: 'eat',
-        what: 'Smoked meats and live music in a converted gas station in Page.',
+        what: 'Smoked meats and live music in Page.',
         url: 'https://www.bigjohnstexasbbq.com/',
         distance: '15 min drive',
       },
@@ -1117,14 +1117,14 @@ const spots: Spot[] = [
       {
         name: 'Desert Belle cruises',
         kind: 'other',
-        what: 'Narrated paddle-wheel boat cruises on Saguaro Lake.',
+        what: 'Narrated sightseeing cruises on Saguaro Lake.',
         url: 'https://desertbellecruises.com/',
         distance: 'At the marina',
       },
       {
         name: 'Tortilla Flat',
         kind: 'eat',
-        what: 'Old stagecoach stop on the Apache Trail with a saloon, burgers and prickly pear gelato.',
+        what: 'Old stagecoach stop on the Apache Trail with a saloon and restaurant.',
         url: 'https://www.tortillaflataz.com/',
         distance: '45 min drive',
       },
@@ -1219,7 +1219,7 @@ const spots: Spot[] = [
       {
         name: 'Bill Williams River National Wildlife Refuge',
         kind: 'other',
-        what: 'Calm, bird-rich paddle up a side river south of town, best in winter.',
+        what: 'Calm, bird-rich paddle on a side river south of town; WACKO runs trips there in winter.',
         url: 'https://www.fws.gov/refuge/bill-williams-river',
         distance: '45 min drive',
       },

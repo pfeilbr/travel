@@ -6908,6 +6908,416 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "alice-lake": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "alice lake",
+    "alice lake provincial park"
+   ],
+   "sources": [
+    {
+     "search": "Alice Lake Provincial Park Squamish",
+     "limit": 25
+    },
+    {
+     "openverse": "Alice Lake Provincial Park camping",
+     "must": [
+      "alice lake",
+      "alice lake provincial park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "porteau-cove": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "porteau",
+    "porteau cove provincial park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Porteau Cove Provincial Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Porteau Cove Provincial Park camping",
+     "must": [
+      "porteau",
+      "porteau cove provincial park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "garibaldi-lake": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "garibaldi",
+    "garibaldi lake"
+   ],
+   "sources": [
+    {
+     "category": "Category:Garibaldi Lake",
+     "depth": 0
+    },
+    {
+     "openverse": "Garibaldi Lake camping",
+     "must": [
+      "garibaldi",
+      "garibaldi lake"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "green-point": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "long beach",
+    "green point",
+    "pacific rim",
+    "green point campground"
+   ],
+   "sources": [
+    {
+     "category": "Category:Long Beach (British Columbia)",
+     "depth": 0
+    },
+    {
+     "openverse": "Green Point Campground camping",
+     "must": [
+      "long beach",
+      "green point",
+      "pacific rim",
+      "green point campground"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "manning-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "manning",
+    "lightning lake",
+    "e.c. manning provincial park"
+   ],
+   "sources": [
+    {
+     "category": "Category:E. C. Manning Provincial Park",
+     "depth": 0
+    },
+    {
+     "openverse": "E.C. Manning Provincial Park camping",
+     "must": [
+      "manning",
+      "lightning lake",
+      "e.c. manning provincial park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mount-robson": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "robson",
+    "berg lake",
+    "kinney",
+    "mount robson provincial park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mount Robson Provincial Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Mount Robson Provincial Park camping",
+     "must": [
+      "robson",
+      "berg lake",
+      "kinney",
+      "mount robson provincial park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mont-tremblant-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "tremblant",
+    "monroe",
+    "diable",
+    "parc national du mont-tremblant"
+   ],
+   "sources": [
+    {
+     "category": "Category:Parc national du Mont-Tremblant",
+     "depth": 0
+    },
+    {
+     "openverse": "Parc national du Mont-Tremblant camping",
+     "must": [
+      "tremblant",
+      "monroe",
+      "diable",
+      "parc national du mont-tremblant"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "jacques-cartier-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "jacques-cartier",
+    "jacques cartier",
+    "parc national de la jacques-cartier"
+   ],
+   "sources": [
+    {
+     "category": "Category:Parc national de la Jacques-Cartier",
+     "depth": 0
+    },
+    {
+     "openverse": "Parc national de la Jacques-Cartier camping",
+     "must": [
+      "jacques-cartier",
+      "jacques cartier",
+      "parc national de la jacques-cartier"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mont-orford-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "orford",
+    "stukely",
+    "fraser",
+    "parc national du mont-orford"
+   ],
+   "sources": [
+    {
+     "category": "Category:Parc national du Mont-Orford",
+     "depth": 0
+    },
+    {
+     "openverse": "Parc national du Mont-Orford camping",
+     "must": [
+      "orford",
+      "stukely",
+      "fraser",
+      "parc national du mont-orford"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "forillon-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "forillon",
+    "cap gaspé",
+    "cap-bon-ami",
+    "forillon national park"
+   ],
+   "sources": [
+    {
+     "category": "Category:Forillon National Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Forillon National Park camping",
+     "must": [
+      "forillon",
+      "cap gaspé",
+      "cap-bon-ami",
+      "forillon national park"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "oka-park": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "oka",
+    "parc national d’oka"
+   ],
+   "sources": [
+    {
+     "category": "Category:Parc national d'Oka",
+     "depth": 0
+    },
+    {
+     "openverse": "Parc national d’Oka camping",
+     "must": [
+      "oka",
+      "parc national d’oka"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "hautes-gorges-park": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "hautes-gorges",
+    "malbaie",
+    "parc national des hautes-gorges-de-la-rivière-malbaie"
+   ],
+   "sources": [
+    {
+     "category": "Category:Parc national des Hautes-Gorges-de-la-Rivière-Malbaie",
+     "depth": 0
+    },
+    {
+     "openverse": "Parc national des Hautes-Gorges-de-la-Rivière-Malbaie camping",
+     "must": [
+      "hautes-gorges",
+      "malbaie",
+      "parc national des hautes-gorges-de-la-rivière-malbaie"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "campground",
+    "campsite",
+    "camping",
+    "lake",
+    "tent"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }

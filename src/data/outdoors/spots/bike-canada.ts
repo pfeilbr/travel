@@ -51,12 +51,12 @@ const spots: Spot[] = [
     lodging: [
       { name: 'Pan Pacific Whistler Mountainside', kind: 'slopeside', what: 'Suites with kitchens right at the base of the Whistler Village Gondola, steps from the bike park entrance.', url: 'https://www.panpacific.com/en/hotels-and-resorts/pp-whistler-mountainside.html', distance: 'Bike park base' },
       { name: 'Aava Whistler Hotel', kind: 'hotel', what: 'A modern, mid-priced village hotel a few minutes’ roll from the lifts.', url: 'https://www.aavawhistlerhotel.com/', distance: '5 min walk' },
-      { name: 'Pangea Pod Hotel', kind: 'hotel', what: 'Private sleeping pods with shared bathrooms and secure bike storage in the heart of the village. A social budget pick.', url: 'https://www.pangeapod.com/', distance: '3 min walk' },
+      { name: 'Pangea Pod Hotel', kind: 'hotel', what: 'Private sleeping pods with shared bathrooms in the heart of the village. A social budget pick.', url: 'https://www.pangeapod.com/', distance: '3 min walk' },
       { name: 'HI Whistler', kind: 'hostel', what: 'Dorms and private rooms in the former Olympic athletes’ lodge at Cheakamus Crossing, on the bus line to the village.', url: 'https://www.hihostels.ca/en/destinations/british-columbia/hi-whistler', distance: '10 min drive' },
     ],
     thingsToDo: [
       { name: 'Summer Alpine Experience', kind: 'scenic-lift', what: 'Ride the PEAK 2 PEAK Gondola between the two summits and hike more than 50 km of alpine trails on a rest day.', url: `${WB}/explore-the-resort/activities-and-events/summer-activities/summer-alpine-experience.aspx`, distance: 'On mountain' },
-      { name: 'Scandinave Spa Whistler', kind: 'spa', what: 'Hot pools, cold plunges and saunas in the forest; bike park ticket holders have had a discount on the Thermal Journey.', url: 'https://www.scandinave.com/whistler/', distance: '5 min drive' },
+      { name: 'Scandinave Spa Whistler', kind: 'spa', what: 'Hot pools, cold plunges and saunas in the forest near Lost Lake. Tourism Whistler has offered 20% off with a bike park ticket.', url: 'https://www.scandinave.com/whistler/', distance: '5 min drive' },
       { name: 'Lost Lake Park', kind: 'other', what: 'Swimming docks, a beach and easy forest loops on the edge of the village.', url: `${WB}/explore-the-resort/activities-and-events/summer-activities/lakes-and-beaches.aspx`, distance: '10 min ride' },
       { name: 'Ziptrek Ecotours', kind: 'zipline', what: 'Zipline tours across the Fitzsimmons Creek valley between Whistler and Blackcomb.', url: 'https://www.ziptrek.com/', distance: 'Village' },
       { name: 'Audain Art Museum', kind: 'museum', what: 'British Columbia art, from Northwest Coast First Nations masks to Emily Carr, in the village.', url: 'https://www.audainartmuseum.com/', distance: 'Village' },
@@ -93,7 +93,7 @@ const spots: Spot[] = [
     facts: [
       { label: 'Paved Valley Trail', value: '40 km linking the networks' },
       { label: 'Alpine descent', value: 'Lord of the Squirrels from about 1,650 m on Sproatt' },
-      { label: 'Zones', value: 'Lost Lake, Whistler South, Westside, Whistler North' },
+      { label: 'Zones', value: 'Lost Lake, Whistler South, Whistler North, Sproatt alpine' },
       { label: 'Trail stewards', value: 'WORCA, for 35+ years' },
     ],
     price: { from: 0, unit: 'trail access', note: 'Free to ride; a WORCA membership or trail supporter pass helps pay for maintenance.' },
@@ -101,8 +101,8 @@ const spots: Spot[] = [
     levels: ['intermediate', 'advanced', 'expert'],
     outfitters: [
       { name: 'Arbutus Routes', what: 'Trail and enduro bike rentals, guided singletrack tours and service.', url: 'https://www.arbutusroutes.com/' },
-      { name: 'Evolution Whistler', what: 'Cross-country and trail bike rentals in the village.', url: 'https://www.evolutionwhistler.com/' },
-      { name: 'Comor Sports', what: 'Bike rentals, sales and service with a Whistler shop.', url: 'https://www.comorsports.com/' },
+      { name: 'Evolution Whistler', what: 'Bike rentals and repairs in the village.', url: 'https://www.evolutionwhistler.com/' },
+      { name: 'Comor Sports', what: 'Trail bike rentals in Whistler, plus sales and service.', url: 'https://www.comorsports.com/pages/whistler-bike-rental' },
       { name: 'WORCA', what: 'The local trail association: Thursday Toonie Rides, trail nights, youth camps and adult coaching.', url: 'https://www.worca.com/' },
     ],
     lodging: [
@@ -134,11 +134,10 @@ const spots: Spot[] = [
     size: 'major',
     tagline: '300 km of granite slabs, loam and flow below the Chief',
     summary:
-      'Squamish has more than 300 km of trails built over 30 years by local volunteers, from Half Nelson’s berms in Diamond Head to the slabby tech of Valleycliffe and the friendly Alice Lake loops. The town sits between Vancouver and Whistler, with breweries and the Sea to Sky Gondola for rest days. It suits trail and enduro riders of every level who like to pedal up; Miki’s Magic is the classic warm-up.',
-    url: 'https://www.sorca.ca/',
-    mapUrl: 'https://www.exploresquamish.com/things-to-do/activities-adventures/mountain-biking/',
+      'Squamish has more than 300 km of trails built over 30 years by local volunteers, from Half Nelson’s berms in Diamond Head to the rougher, less-signed Valleycliffe trails and the hand-built Alice Lake loops. The town sits between Vancouver and Whistler, with breweries and the Sea to Sky Gondola for rest days. It suits trail and enduro riders of every level who like to pedal up; Miki’s Magic is the classic warm-up.',
+    url: 'https://www.exploresquamish.com/things-to-do/activities-adventures/mountain-biking/',
     conditionsUrl: 'https://www.sorca.ca/trail-reports',
-    season: { from: 'Year-round', to: 'Year-round', note: 'Best April to October; lower trails are often rideable through the wet winter.' },
+    season: { from: 'Year-round', to: 'Year-round', note: 'Riding goes on in every season; summer and early fall are the driest.' },
     facts: [
       { label: 'Trails', value: '300+ km' },
       { label: 'Main zones', value: 'Diamond Head, Alice Lake, Valleycliffe, Brackendale' },
@@ -156,7 +155,7 @@ const spots: Spot[] = [
     lodging: [
       { name: 'Howe Sound Inn & Brewing', kind: 'inn', what: 'Rooms above Squamish’s original brewpub downtown, with views of the Chief.', url: 'https://www.howesound.com/', distance: 'Downtown' },
       { name: 'Sunwolf Riverside Resort', kind: 'cabin', what: 'Cedar cabins on the Cheakamus River in Brackendale, close to the Brackendale trails.', url: 'https://www.sunwolf.net/', distance: '10 min drive' },
-      { name: 'Alice Lake Provincial Park', kind: 'cabin', what: 'Busy BC Parks campground beside the Alice Lake trail zone; reserve early.', url: 'https://bcparks.ca/alice-lake-park/', distance: 'At the trails' },
+      { name: 'Alice Lake Provincial Park', kind: 'cabin', what: 'BC Parks campground beside the Alice Lake trail zone, with a swimming beach.', url: 'https://bcparks.ca/alice-lake-park/', distance: 'At the trails' },
     ],
     thingsToDo: [
       { name: 'Sea to Sky Gondola', kind: 'scenic-lift', what: 'Ride up to suspension bridges and lookouts over Howe Sound.', url: 'https://www.seatoskygondola.com/', distance: '10 min drive' },
@@ -196,16 +195,18 @@ const spots: Spot[] = [
     levels: ['intermediate', 'advanced', 'expert'],
     outfitters: [
       { name: 'Endless Biking', what: 'North Shore guided rides, beginner programs with bike and helmet, skills sessions and private lessons since 2004.', url: 'https://www.endlessbiking.com/' },
+      { name: 'Comor Sports', what: 'North Shore trail bike rentals, sales and service.', url: 'https://comorsports.com/pages/north-shore-bike-rental' },
       { name: 'NSMBA', what: 'Trail association: public trail days, the Fiver race series and the Women’s+ Enduro.', url: 'https://nsmba.ca/' },
     ],
     lodging: [
-      { name: 'HI Vancouver Downtown', kind: 'hostel', what: 'Budget beds downtown, about 20 minutes from the Fromme trailheads by car.', url: 'https://www.hihostels.ca/en/destinations/british-columbia/hi-vancouver-downtown', distance: '25 min drive' },
+      { name: 'Pinnacle Hotel at the Pier', kind: 'hotel', what: 'Waterfront hotel in Lower Lonsdale, North Vancouver, with the SeaBus to downtown next door.', url: 'https://www.pinnaclepierhotel.com/', distance: '15 min drive' },
+      { name: 'HI Vancouver Downtown', kind: 'hostel', what: 'Budget beds downtown, about half an hour from the Fromme trailheads by car.', url: 'https://www.hihostels.ca/en/destinations/british-columbia/hi-vancouver-downtown', distance: '30 min drive' },
     ],
     thingsToDo: [
       { name: 'Capilano Suspension Bridge Park', kind: 'other', what: 'The swaying bridge over the Capilano canyon plus treetop and cliffside walkways.', url: 'https://www.capbridge.com/', distance: '10 min drive' },
       { name: 'Grouse Mountain', kind: 'scenic-lift', what: 'Skyride gondola to city views, bears in the refuge and the Grouse Grind hike.', url: 'https://www.grousemountain.com/', distance: '10 min drive' },
       { name: 'Deep Cove Kayak', kind: 'other', what: 'Kayak and paddleboard rentals and tours on Indian Arm below Seymour.', url: 'https://www.deepcovekayak.com/', distance: '15 min drive' },
-      { name: 'Mount Seymour Provincial Park', kind: 'other', what: 'Alpine hikes to Dog Mountain and Mount Seymour’s pump peaks.', url: 'https://bcparks.ca/mount-seymour-park/', distance: '20 min drive' },
+      { name: 'Mount Seymour Provincial Park', kind: 'other', what: 'Alpine hikes to Dog Mountain and the Seymour summits.', url: 'https://bcparks.ca/mount-seymour-park/', distance: '20 min drive' },
     ],
     events: [
       { name: 'Red Bull Hardline British Columbia', kind: 'race', date: '2026-10-17', when: 'Oct 17, 2026', what: 'The first Canadian edition of the most extreme downhill race, with huge gaps and 10 m drops at Cypress Mountain. Live on Red Bull TV; spectator tickets announced later.', url: 'https://nsmba.ca/events/', confirmed: true },
@@ -271,7 +272,7 @@ const spots: Spot[] = [
     size: 'major',
     tagline: '30 years of berms, a Crankworx stop and an IMBA Epic',
     summary:
-      'SilverStar has been building trail since 1994: 69 km of downhill off the Comet chair and gondola, more than 870 berms and 400 dirt jumps, plus 70 km of cross-country including the 35 km Beowulf loop, an IMBA Epic. The colourful ski village above Vernon makes an easy base. It suits families and progressing riders as much as jump-line regulars, and it hosts a Crankworx stop each August.',
+      'SilverStar has been building trail since 1994: 69 km of downhill off the Comet chair and gondola, more than 870 berms and 400 dirt jumps, plus 70 km of cross-country including the 35 km Beowulf loop, an IMBA Epic. The colourful ski village above Vernon makes an easy base. It suits families and progressing riders as much as jump-line regulars, and it hosted a Crankworx World Tour stop in August 2026.',
     url: 'https://www.skisilverstar.com/events-activities/bike-park/',
     bookingUrl: 'https://www.skisilverstar.com/tickets-passes/summer-tickets/',
     mapUrl: 'https://cms.skisilverstar.com/sites/default/files/2026-06/2026_SSBP_SummerTrailMap_v1.pdf',
@@ -348,7 +349,7 @@ const spots: Spot[] = [
     thingsToDo: [
       { name: 'Eagle’s Eye Restaurant', kind: 'eat', what: 'Canada’s highest restaurant, at the top of the gondola.', url: 'https://kickinghorseresort.com/purchase/eagle-eye-restaurant-summer/', distance: 'Top of the gondola' },
       { name: 'Whitewater rafting', kind: 'other', what: 'Rafting trips on the Kicking Horse River, booked through the resort.', url: 'https://kickinghorseresort.com/summer-activities/whitewater-rafting/', distance: 'Golden' },
-      { name: 'Golden Skybridge', kind: 'other', what: 'Canada’s highest suspension bridges over a canyon, plus a canyon swing and zipline.', url: 'https://www.goldenskybridge.com/', distance: '20 min drive' },
+      { name: 'Golden Skybridge', kind: 'other', what: 'Canada’s highest suspension bridges, over a canyon near Golden.', url: 'https://www.goldenskybridge.com/', distance: '20 min drive' },
       { name: 'Northern Lights Wildlife Wolf Centre', kind: 'other', what: 'Meet resident wolves and learn about them.', url: 'https://northernlightswildlife.com/', distance: '15 min drive' },
       { name: 'Radium Hot Springs', kind: 'hot-springs', what: 'Parks Canada hot pools in Kootenay National Park.', url: 'https://parks.canada.ca/pn-np/bc/kootenay/sources-radium-springs', distance: '~1 hr 15 min drive' },
     ],
@@ -398,7 +399,6 @@ const spots: Spot[] = [
     thingsToDo: [
       { name: 'Fernie Brewing Co.', kind: 'drink', what: 'Tasting room pouring up to 12 of its own beers.', url: 'https://ferniebrewing.com/', distance: 'Town' },
       { name: 'Mount Fernie Provincial Park', kind: 'other', what: 'Forest trails, a creek and campsites right at the edge of town.', url: 'https://bcparks.ca/mount-fernie-park/', distance: '5 min drive' },
-      { name: 'Island Lake Lodge', kind: 'eat', what: 'Remote lodge in an old-growth valley for lunch, dinner or hiking.', url: 'https://www.islandlakelodge.com/', distance: '15 min drive' },
       { name: 'Fernie Museum', kind: 'museum', what: 'Local history and a gallery downtown.', url: 'https://ferniemuseum.com/', distance: 'Town' },
     ],
     events: [
@@ -424,7 +424,6 @@ const spots: Spot[] = [
     url: 'https://www.tourismrossland.com/collection/biking/',
     bookingUrl: 'https://www.redresort.com/bikepark/',
     mapUrl: 'https://www.kcts.ca/Trails-Overview',
-    conditionsUrl: 'https://www.kcts.ca/Trailforks',
     season: { from: 'Jul', to: 'Oct', note: 'Seven Summits is best July to early October; low south-facing trails can open in April. RED’s 2026 bike park season ended Sept 27.' },
     facts: [
       { label: 'Trails', value: '200+ km (KCTS)' },
@@ -447,7 +446,7 @@ const spots: Spot[] = [
       { name: 'Nowhere Special Lodge', kind: 'hostel', what: 'Crew-style rooms for 2 to 10 with a shared kitchen near the chair.', url: 'https://www.nowherespecialhostel.com/', distance: 'RED base' },
     ],
     thingsToDo: [
-      { name: 'Rossland Beer Company', kind: 'drink', what: 'Small local brewery on the main street.', url: 'https://www.rosslandbeer.com/', distance: '5 min drive' },
+      { name: 'Rossland Beer Company', kind: 'drink', what: 'Award-winning craft brewery in town, with live music on Friday afternoons.', url: 'https://www.rosslandbeer.com/', distance: '5 min drive' },
       { name: 'Rossland Museum & Discovery Centre', kind: 'museum', what: 'Gold-rush mining history and the visitor centre.', url: 'https://www.rosslandmuseum.ca/', distance: '5 min drive' },
       { name: 'Sightseeing and hiking at RED', kind: 'scenic-lift', what: 'Silverlode chair rides for foot passengers and a short summit hike.', url: 'https://www.redresort.com/hiking-sightseeing/', distance: 'RED base' },
     ],
@@ -492,7 +491,7 @@ const spots: Spot[] = [
     lodging: [
       { name: 'Residence Inn by Marriott Bromont', kind: 'slopeside', what: 'Base hotel with kitchenette rooms, free breakfast and outdoor pool and hot tubs.', url: 'https://www.marriott.com/en-us/hotels/yulrb-residence-inn-bromont/overview/', distance: 'Base' },
       { name: 'Domaine Château-Bromont', kind: 'hotel', what: 'Hotel with a spa a few minutes from the lifts.', url: 'https://chateaubromont.com/', distance: '2 min drive' },
-      { name: 'Nomadic camping (vanlife)', kind: 'cabin', what: 'Van and RV spots on the mountain for riders who want first chair.', url: 'https://www.bromontmontagne.com/en/nomadic-camping-vanlife/', distance: 'On site' },
+      { name: 'Nomadic camping (vanlife)', kind: 'base village', what: 'Van and RV spots on the mountain for riders who want first chair.', url: 'https://www.bromontmontagne.com/en/nomadic-camping-vanlife/', distance: 'On site' },
     ],
     thingsToDo: [
       { name: 'Bromont water park', kind: 'other', what: 'Slides and pools at the base for hot afternoons.', url: 'https://www.bromontmontagne.com/en/water-park-season-passes-and-tickets/', distance: 'Base' },
@@ -524,7 +523,7 @@ const spots: Spot[] = [
     conditionsUrl: 'https://mont-sainte-anne.com/en/summer/summer-conditions/',
     season: { from: 'Jun', to: 'Oct', note: '2026: daily June 19–Aug 30 (Fridays to 6 pm), Crankworx week Sept 2–7, then Friday to Sunday until Thanksgiving Monday, Oct 12.' },
     facts: [
-      { label: 'Downhill trails', value: '22 from the summit' },
+      { label: 'Downhill trails', value: 'About 20 named routes' },
       { label: 'Vertical', value: '2,050 ft' },
       { label: 'Signature lines', value: 'La Coupe du Monde (3 km), La Grisante (6.5 km green)' },
       { label: 'Base area', value: 'Two pump tracks, dual slalom, skills park' },
@@ -543,12 +542,12 @@ const spots: Spot[] = [
       { name: 'Auberge Internationale de Québec', kind: 'hostel', what: 'Budget hostel inside the walls of Old Québec.', url: 'https://aubergeinternationalequebec.ca/', distance: '40 min drive' },
     ],
     thingsToDo: [
-      { name: 'Canyon Sainte-Anne', kind: 'other', what: 'A 74 m waterfall and gorge with suspension bridges and via ferrata.', url: 'https://www.canyonsa.qc.ca/', distance: '10 min drive' },
+      { name: 'Canyon Sainte-Anne', kind: 'other', what: 'A 74 m waterfall and gorge crossed by suspension bridges.', url: 'https://www.canyonsa.qc.ca/', distance: '10 min drive' },
       { name: 'Sanctuaire Sainte-Anne-de-Beaupré', kind: 'museum', what: 'Huge basilica and pilgrimage site on the river road.', url: 'https://www.sanctuairesainteanne.org/', distance: '10 min drive' },
       { name: 'Strøm spa nordique Vieux-Québec', kind: 'spa', what: 'Nordic baths and saunas on the riverfront below Old Québec.', url: 'https://www.stromspa.com/pages/destinations-vieux-quebec/', distance: '35 min drive' },
     ],
     events: [
-      { name: 'Crankworx Mont-Sainte-Anne', kind: 'festival', date: '2027-09-02', end: '2027-09-06', when: 'Early September (2026: Sept 3–7)', what: 'The Crankworx World Tour Grand Final, with downhill, dual slalom, pump track and slopestyle on new permanent courses.', url: 'https://www.crankworx.com/msa/', confirmed: false },
+      { name: 'Crankworx Mont-Sainte-Anne', kind: 'festival', date: '2027-09-02', end: '2027-09-06', when: 'Early September (2026: Sept 3–7)', what: 'The Crankworx World Tour Grand Final, with downhill, slopestyle and more on new permanent courses.', url: 'https://www.crankworx.com/msa/', confirmed: false },
     ],
     getting: { airport: YQB, code: 'YQB', driveMin: 45, from: [{ city: 'Quebec City', hours: 0.75 }, { city: 'Montreal', hours: 3 }] },
     google: { rating: 4.5, url: cid('17043516295539489818'), asOf: ASOF },
@@ -596,7 +595,7 @@ const spots: Spot[] = [
       { name: 'Sentiers du Moulin hiking', kind: 'other', what: 'More than 20 km of marked hiking trails with viewpoints on the same property.', url: 'https://www.sentiersdumoulin.com/en/activity/hiking/', distance: 'On site' },
     ],
     events: [
-      { name: '24h du Lac', kind: 'race', date: '2027-08-21', end: '2027-08-22', when: 'Late August (2026: Aug 22–23)', what: 'Lac-Beauport’s 24-hour mountain bike relay, a big weekend for the local riding community.', url: 'https://www.sentiersdumoulin.com/en/news/things-to-do-at-sentiers-du-moulin-events-trails-and-activities/', confirmed: false },
+      { name: '24h du Lac', kind: 'other', date: '2027-08-21', end: '2027-08-22', when: 'Late August (2026: Aug 22–23)', what: 'A 24-hour event that fills Lac-Beauport for a weekend; Sentiers du Moulin advises planning around it.', url: 'https://www.sentiersdumoulin.com/en/news/things-to-do-at-sentiers-du-moulin-events-trails-and-activities/', confirmed: false },
     ],
     getting: { airport: YQB, code: 'YQB', driveMin: 25, from: [{ city: 'Quebec City', hours: 0.33 }, { city: 'Montreal', hours: 3 }] },
     google: { rating: 4.6, url: cid('17730632798473234077'), asOf: ASOF },
@@ -629,7 +628,7 @@ const spots: Spot[] = [
     features: ['cross-country', 'enduro', 'flow', 'jump-lines', 'e-bikes', 'rentals'],
     levels: ['beginner', 'intermediate', 'advanced', 'expert'],
     outfitters: [
-      { name: 'Vallée Bras-du-Nord rentals', what: 'Mountain bike and e-bike rentals at the Shannahan welcome centre.', url: 'https://valleebrasdunord.com/tarifs/location-de-velos/' },
+      { name: 'Vallée Bras-du-Nord rentals', what: 'Mountain bike rentals from the co-op that runs the trails.', url: 'https://valleebrasdunord.com/tarifs/location-de-velos/' },
     ],
     lodging: [
       { name: 'Vallée Bras-du-Nord yurts, refuges and chalets', kind: 'cabin', what: 'Yurts from CA$105 a night, backcountry refuges and chalets in the valley; trail access is extra.', url: 'https://valleebrasdunord.com/tarifs/hebergement/', distance: 'In the valley', priceFrom: 105, priceNote: 'Yurt, 2026; 2-night minimum on weekends' },
@@ -642,7 +641,7 @@ const spots: Spot[] = [
       { name: 'Canoe and kayak on the Bras-du-Nord', kind: 'other', what: 'Boat rentals and canoe-camping trips on the river.', url: 'https://valleebrasdunord.com/tarifs/location-embarcations/', distance: 'In the valley' },
     ],
     events: [],
-    getting: { airport: YQB, code: 'YQB', driveMin: 60, from: [{ city: 'Quebec City', hours: 0.75 }, { city: 'Montreal', hours: 3 }] },
+    getting: { airport: YQB, code: 'YQB', driveMin: 60, from: [{ city: 'Quebec City', hours: 1 }, { city: 'Montreal', hours: 3.25 }] },
     google: { rating: 4.8, url: cid('11966915796083448710'), asOf: ASOF },
   },
   {

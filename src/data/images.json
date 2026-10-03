@@ -181,6 +181,32 @@
       "width": 1280
     }
   ],
+  "big-bear": [
+    {
+      "alt": "Beautiful day for Ski & Snowboarding.",
+      "author": "Ian D. Keating",
+      "file": "src/assets/places/big-bear/1.jpg",
+      "height": 721,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_%26_White_(24090270322).jpg",
+      "title": "File:Blue & White (24090270322).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Ski lift over a snowy mountain with a forest in the background",
+      "author": "BigBearCabins",
+      "file": "src/assets/places/big-bear/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BM_SNOWY-15.jpg",
+      "title": "File:BM SNOWY-15.jpg",
+      "width": 1280
+    }
+  ],
   "big-boulder": [],
   "big-sky": [
     {
@@ -625,6 +651,20 @@
     }
   ],
   "cherry-peak": [],
+  "china-peak": [
+    {
+      "alt": "\"Indian Pools\" near china peak ski resort",
+      "author": "Camerawn",
+      "file": "src/assets/places/china-peak/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_Pools.jpg",
+      "title": "File:Indian Pools.jpg",
+      "width": 1280
+    }
+  ],
   "copper-mountain": [
     {
       "alt": "File:Copper Peak Ski Flying Hill.JPG",
@@ -1665,6 +1705,44 @@
       "nearby": false,
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Airmen_ride_snowmobiles_at_Monarch_mountain_(5938573).jpg",
       "title": "File:Airmen ride snowmobiles at Monarch mountain (5938573).jpg",
+      "width": 1280
+    }
+  ],
+  "mont-sainte-anne": [
+    {
+      "alt": "QMT 2018",
+      "author": "Quebec Mega Trail",
+      "file": "src/assets/places/mont-sainte-anne/1.jpg",
+      "height": 854,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Top_of_Mont-Sainte-Anne.jpg",
+      "title": "File:Top of Mont-Sainte-Anne.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mont-Sainte-Anne , Quebec, Canada",
+      "author": "Cephas",
+      "file": "src/assets/places/mont-sainte-anne/2.jpg",
+      "height": 717,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont_Sainte-Anne.jpg",
+      "title": "File:Mont Sainte-Anne.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Mont-Sainte-Anne , Quebec, Canada",
+      "author": "Cephas",
+      "file": "src/assets/places/mont-sainte-anne/3.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont_Sainte-Anne_(cropped).jpg",
+      "title": "File:Mont Sainte-Anne (cropped).jpg",
       "width": 1280
     }
   ],

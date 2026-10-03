@@ -487,7 +487,6 @@ const spots: Spot[] = [
     ],
     thingsToDo: [
       { name: 'Abbaye de Saint-Benoît-du-Lac', kind: 'other', what: 'Benedictine abbey on Lake Memphremagog with a shop for the monks’ cheeses and cider.', url: 'https://www.abbaye.ca/', distance: '25 min drive' },
-      { name: 'Croisière Memphrémagog', kind: 'other', what: 'Boat cruises on Lake Memphremagog from Magog.', url: 'https://www.croisiere-memphremagog.com/', distance: '15 min drive' },
       { name: 'Spa Nordic Station', kind: 'spa', what: 'Thermal baths and saunas in the woods outside Magog.', url: 'https://spanordicstation.com/en', distance: '15 min drive' },
       { name: 'La Memphré', kind: 'drink', what: 'Microbrewery and pub in downtown Magog.', url: 'https://www.microbrasserielamemphre.com/', distance: '15 min drive' },
     ],
