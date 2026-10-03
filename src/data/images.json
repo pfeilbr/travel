@@ -115,6 +115,82 @@
       "width": 1280
     }
   ],
+  "aspen-highlands": [
+    {
+      "alt": "snow at aspen highlands",
+      "author": "silbatron",
+      "file": "src/assets/places/aspen-highlands/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/26143743@N00/4348464983",
+      "title": "Openverse:0093e98b-1839-4ad8-a902-034bbfd2f40e",
+      "width": 1024
+    },
+    {
+      "alt": "Aspen Highlands",
+      "author": "jfdervin",
+      "file": "src/assets/places/aspen-highlands/2.jpg",
+      "height": 746,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/56156808@N00/12081200613",
+      "title": "Openverse:43b83561-8be5-4518-9392-233e1b505f49",
+      "width": 1024
+    },
+    {
+      "alt": "Aspen Highlands",
+      "author": "jfdervin",
+      "file": "src/assets/places/aspen-highlands/3.jpg",
+      "height": 683,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/56156808@N00/12080891265",
+      "title": "Openverse:71e57613-17fd-4e59-97d5-cc020cd73381",
+      "width": 1024
+    }
+  ],
+  "aspen-mountain": [
+    {
+      "alt": "Cross-Country Skiing Near Aspen Colorado - Snowmass Course Hills",
+      "author": "richpalpine",
+      "file": "src/assets/places/aspen-mountain/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/76081760@N03/12107868624",
+      "title": "Openverse:6adacb55-e81e-437d-89af-13a79349a64c",
+      "width": 1024
+    },
+    {
+      "alt": "Vicky skiing in Aspen",
+      "author": "Upsilon Andromedae",
+      "file": "src/assets/places/aspen-mountain/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/35261188@N00/213398303",
+      "title": "Openverse:2f8fac88-c9b0-4db2-a6a2-5c0959d5add5",
+      "width": 1024
+    },
+    {
+      "alt": "Fairview Canyon Cross Country Skiing - April 19 2008",
+      "author": "a4gpa",
+      "file": "src/assets/places/aspen-mountain/3.jpg",
+      "height": 680,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/94833286@N00/2428016609",
+      "title": "Openverse:4c38ed48-f839-4f6f-85c0-baa9b28a8f46",
+      "width": 1024
+    }
+  ],
   "attitash": [
     {
       "alt": "Attitash",
@@ -873,6 +949,44 @@
       "width": 1280
     }
   ],
+  "deer-valley": [
+    {
+      "alt": "Park City Deer Valley Ski",
+      "author": "the-unwinder",
+      "file": "src/assets/places/deer-valley/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/159657296@N06/41245814674",
+      "title": "Openverse:ea047656-073f-418b-a870-a720fcb9eba8",
+      "width": 1024
+    },
+    {
+      "alt": "Park City Ski Resort",
+      "author": "InSapphoWeTrust",
+      "file": "src/assets/places/deer-valley/2.jpg",
+      "height": 634,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/56619626@N05/6856251934",
+      "title": "Openverse:3f473c9d-55b8-47f3-a1eb-09d2e63d40bd",
+      "width": 1024
+    },
+    {
+      "alt": "Main Street, Park City, Utah",
+      "author": "Ken Lund",
+      "file": "src/assets/places/deer-valley/3.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/9387932067",
+      "title": "Openverse:01e74a69-4db4-48e9-acdc-46f4d34d6204",
+      "width": 1024
+    }
+  ],
   "diamond-peak": [],
   "discovery-montana": [
     {
@@ -1053,6 +1167,7 @@
     }
   ],
   "great-divide": [],
+  "greek-peak": [],
   "green-lakes": [
     {
       "alt": "Fall foliage reflected in Round Lake at Green Lakes State Park",
@@ -1269,6 +1384,32 @@
       "width": 1280
     }
   ],
+  "holiday-valley": [
+    {
+      "alt": "the skiers",
+      "author": "416style",
+      "file": "src/assets/places/holiday-valley/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/20532289@N00/106115505",
+      "title": "Openverse:51f17cc4-7f18-42a7-b023-d4e76d7b28be",
+      "width": 1024
+    },
+    {
+      "alt": "holiday valley",
+      "author": "416style",
+      "file": "src/assets/places/holiday-valley/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/20532289@N00/105635579",
+      "title": "Openverse:60d6f8a8-cddf-4397-bb3b-4b3bc35ba334",
+      "width": 1024
+    }
+  ],
   "homewood": [
     {
       "alt": "Homewood, CA",
@@ -1471,6 +1612,20 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Keystone_Peak(Mountain).jpg",
       "title": "File:Keystone Peak(Mountain).jpg",
       "width": 1280
+    }
+  ],
+  "kicking-horse": [
+    {
+      "alt": "Kicking Horse Ski Area",
+      "author": "NTH0RPE",
+      "file": "src/assets/places/kicking-horse/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/87973856@N04/52741912863",
+      "title": "Openverse:a92e3b5c-86a9-4d30-930a-ddf5c7492414",
+      "width": 1024
     }
   ],
   "killington": [
@@ -2367,6 +2522,44 @@
       "width": 1024
     }
   ],
+  "park-city": [
+    {
+      "alt": "Blowing Snow at Park City Ski Resort",
+      "author": "vxla",
+      "file": "src/assets/places/park-city/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/14812197@N00/5415396018",
+      "title": "Openverse:da112e85-549b-4ded-bbea-f8c1cc9d9d04",
+      "width": 1024
+    },
+    {
+      "alt": "Three Kings Lift at base of Park City Ski area",
+      "author": "akasped",
+      "file": "src/assets/places/park-city/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/26736723@N00/3963762555",
+      "title": "Openverse:73a47789-9795-4531-8b63-6110e8eb5aba",
+      "width": 1024
+    },
+    {
+      "alt": "Up at 10,000 feet in Park City ski area",
+      "author": "akasped",
+      "file": "src/assets/places/park-city/3.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/26736723@N00/3963729071",
+      "title": "Openverse:09e4bcec-5a28-4e35-afbe-0586c01bce36",
+      "width": 1024
+    }
+  ],
   "parkinson-pickleball-courts": [
     {
       "alt": "Knox Mountain Park",
@@ -2419,6 +2612,7 @@
       "width": 1280
     }
   ],
+  "peek-n-peak": [],
   "pico": [
     {
       "alt": "View from the top of Killington Peak looking straight at Pico Peak",
@@ -2625,6 +2819,44 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_short_visit_to_Rossland_BC,_and_the_Red_Mountain_Ski_Resort_-_Robin_does_his_thing_near_the_top_of_Granite_Mtn-3_-_(19692498602).jpg",
       "title": "File:A short visit to Rossland BC, and the Red Mountain Ski Resort - Robin does his thing near the top of Granite Mtn-3 - (19692498602).jpg",
       "width": 1280
+    }
+  ],
+  "revelstoke": [
+    {
+      "alt": "Kokanee Bowl Cat Skiing Area",
+      "author": "keepitsurreal",
+      "file": "src/assets/places/revelstoke/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/14558526@N03/4364532860",
+      "title": "Openverse:479acd4e-2bfd-4b60-8283-cdad6c1588d8",
+      "width": 1024
+    },
+    {
+      "alt": "Snowy Mountains",
+      "author": "keepitsurreal",
+      "file": "src/assets/places/revelstoke/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/14558526@N03/4364528360",
+      "title": "Openverse:496187a2-d4b3-42c0-8727-83881e91adf4",
+      "width": 1024
+    },
+    {
+      "alt": "revelstoke 031",
+      "author": "keepitsurreal",
+      "file": "src/assets/places/revelstoke/3.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/14558526@N03/4364494906",
+      "title": "Openverse:3827e2d3-12a4-4163-aa5f-71987da57748",
+      "width": 1024
     }
   ],
   "robert-h-treman": [
@@ -3040,6 +3272,82 @@
       "width": 1024
     }
   ],
+  "snowbird": [
+    {
+      "alt": "A View of Salt Lake City, Utah, from the Peak of Snowbird Ski Resort",
+      "author": "vxla",
+      "file": "src/assets/places/snowbird/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/14812197@N00/4266845344",
+      "title": "Openverse:da81a641-488b-4782-80f4-fb64a4aff6c5",
+      "width": 1024
+    },
+    {
+      "alt": "USA - Utah - Little Cottonwood Canyon - Snowbird Ski Resort",
+      "author": "TerryDOtt",
+      "file": "src/assets/places/snowbird/2.jpg",
+      "height": 700,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/146878425@N05/48206529021",
+      "title": "Openverse:2aa2693c-cf03-4294-a08f-94e0b93b70ee",
+      "width": 1024
+    },
+    {
+      "alt": "USA - Utah - Little Cottonwood Canyon - Snowbird Ski Resort",
+      "author": "TerryDOtt",
+      "file": "src/assets/places/snowbird/3.jpg",
+      "height": 570,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/146878425@N05/48206771556",
+      "title": "Openverse:4e03ee14-1361-4f33-b965-7374b7411652",
+      "width": 1024
+    }
+  ],
+  "snowmass": [
+    {
+      "alt": "Cross-Country Skiing Near Aspen Colorado - Snowmass Course Hills",
+      "author": "richpalpine",
+      "file": "src/assets/places/snowmass/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/76081760@N03/12107868624",
+      "title": "Openverse:6adacb55-e81e-437d-89af-13a79349a64c",
+      "width": 1024
+    },
+    {
+      "alt": "Snowmass",
+      "author": "jfdervin",
+      "file": "src/assets/places/snowmass/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/56156808@N00/12081258624",
+      "title": "Openverse:13a3b89b-9f09-42bc-9a27-344e873f701e",
+      "width": 1024
+    },
+    {
+      "alt": "Snowmass",
+      "author": "jfdervin",
+      "file": "src/assets/places/snowmass/3.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/56156808@N00/12080869225",
+      "title": "Openverse:31407004-5142-4c27-a285-84f2d4b5e3ae",
+      "width": 1024
+    }
+  ],
   "solitude": [
     {
       "alt": "500px provided description: Cold morning at spruces camp ground just west of Solitude Ski Resort in Big Cottonwood Canyon.",
@@ -3077,6 +3385,44 @@
       "nearby": false,
       "sourceUrl": "https://www.flickr.com/photos/35237098471@N01/391150010",
       "title": "Openverse:950aa641-a6dc-40a7-a45b-72a6b49026c6",
+      "width": 1024
+    }
+  ],
+  "steamboat": [
+    {
+      "alt": "Steamboat Skies",
+      "author": "Flyinace2000",
+      "file": "src/assets/places/steamboat/1.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/92455828@N00/5258743709",
+      "title": "Openverse:f68d8729-5d12-402c-9c89-7022f1ec17e6",
+      "width": 1024
+    },
+    {
+      "alt": "Steamboat Slopes",
+      "author": "stephen.butler",
+      "file": "src/assets/places/steamboat/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/91195268@N00/432920785",
+      "title": "Openverse:0a413ee5-d260-4d5c-88cb-07a0fea60813",
+      "width": 1024
+    },
+    {
+      "alt": "Steamboat Springs, Colorado",
+      "author": "Ken Lund",
+      "file": "src/assets/places/steamboat/3.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/68125667",
+      "title": "Openverse:5899c05c-970d-47cd-b9cc-8442ebeabf0b",
       "width": 1024
     }
   ],
@@ -3284,6 +3630,32 @@
       "width": 2048
     }
   ],
+  "sunlight": [
+    {
+      "alt": "Port Sunlight Village, Wirral",
+      "author": "menu4340",
+      "file": "src/assets/places/sunlight/1.jpg",
+      "height": 703,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/50785190@N07/6144778231",
+      "title": "Openverse:a9c634dd-56d3-47d4-a86f-b59ec827abba",
+      "width": 1024
+    },
+    {
+      "alt": "Clear skies ahead",
+      "author": "pfarrell95",
+      "file": "src/assets/places/sunlight/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/65005341@N03/6644683795",
+      "title": "Openverse:50657d9f-76d9-4b1e-8436-7f6766d31f83",
+      "width": 1024
+    }
+  ],
   "sunrise-park": [
     {
       "alt": "3D Archery at Sunrise Park Resort",
@@ -3310,6 +3682,7 @@
       "width": 1280
     }
   ],
+  "swain": [],
   "telluride": [
     {
       "alt": "Telluride Ski Resort, Col.",

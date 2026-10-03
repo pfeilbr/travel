@@ -411,9 +411,12 @@ def _request(url: str, tries: int = 5) -> bytes:
     raise RuntimeError("unreachable")
 
 
+API_TRIES = 5  # lowered by --openverse-first so a throttled Commons fails fast
+
+
 def api(**params) -> dict:
     params.update(format="json", formatversion="2", maxlag="5")
-    return json.loads(_request(API + "?" + urllib.parse.urlencode(params)))
+    return json.loads(_request(API + "?" + urllib.parse.urlencode(params), tries=API_TRIES))
 
 
 SKIP_SUBCATS = ("historical", "nypl", "postcard", "stereoscopic", "sanborn", "maps", "golf",
@@ -545,8 +548,9 @@ def gather(place: dict) -> tuple[dict[str, dict], list[str], dict[str, str | Non
         _openverse_pages(place, sources, must, pages, origin, order, skip_wikimedia=True)
 
     # Openverse-first exists because Commons is crawling; only fall back to it when Openverse found nothing usable.
-    any_ov = any(is_candidate(pages[t], min_width=min_width) for t in order if t in pages)
-    if not OPENVERSE_FIRST or not any_ov or include:
+    # With --openverse-first, Commons only runs for pinned includes; places Openverse can't cover get
+    # a separate (slow) Commons pass later.
+    if not OPENVERSE_FIRST or include:
         searched: set[str] = set()  # titles from free-text search (they need to mention the place)
         commons_order: list[str] = []
         for src in sources:
@@ -615,10 +619,13 @@ def process_place(place_id: str, place: dict, old: list[dict], force: bool, root
     alts = dict(place.get("alt", {}))
     alts.update({i["title"]: i["alt"] for i in include if i.get("alt")})
     entries: list[dict] = []
+    wm_failures = 0  # upload.wikimedia.org throttles hard; after two misses, skip its other candidates
     for title in chosen:
         if len(entries) >= count:
             break
         page = pages[title]
+        if wm_failures >= 2 and "upload.wikimedia.org" in (thumb_info(page["imageinfo"][0]) or ("",))[0]:
+            continue
         entry = build_entry(place_id, len(entries) + 1, page, origin.get(title), alts.get(title))
         dest = root / entry["file"]
         if needs_download(dest, old_by_file.get(entry["file"]), title, force):
@@ -627,6 +634,8 @@ def process_place(place_id: str, place: dict, old: list[dict], force: bool, root
                 data = _request(url, tries=2)
             except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as e:
                 print(f"  skip {title}: download failed ({e})", file=sys.stderr)
+                if "upload.wikimedia.org" in url:
+                    wm_failures += 1
                 continue
             if not data.startswith(b"\xff\xd8"):
                 print(f"  skip {title}: not a JPEG", file=sys.stderr)
@@ -668,12 +677,15 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--force", action="store_true", help="re-download existing images")
     ap.add_argument("--candidates", action="store_true", help="list ranked candidates only")
     ap.add_argument("--openverse-first", action="store_true",
-                    help="try Openverse (Flickr-hosted) before Commons; use when Commons is throttling hard")
+                    help="Openverse (Flickr-hosted) only, plus pinned Commons includes; use when Commons is "
+                         "throttling hard, then rerun the places that came up empty without the flag")
     ap.add_argument("--config", default=str(CONFIG_PATH))
     ap.add_argument("--root", default=str(REPO))
     args = ap.parse_args(argv)
-    global OPENVERSE_FIRST
+    global OPENVERSE_FIRST, API_TRIES
     OPENVERSE_FIRST = args.openverse_first
+    if OPENVERSE_FIRST:
+        API_TRIES = 2
 
     root = Path(args.root)
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))

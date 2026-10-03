@@ -17,7 +17,10 @@ auth (email + password, magic link, Google, Apple) and data (wishlists, reviews,
   Commons sometimes answers 429 from cloud IPs; the script backs off, and an `{"openverse": "...", "must": [...],
   "fallback": true}` source pulls CC BY/BY-SA/CC0 Flickr photos via Openverse only when Commons comes up short
   (anonymous limit ~200 queries/day). Ski entries set `"winter": true` (snow keywords rank higher),
-  `"keep_subcats": ["ski"]` and `"min_width": 1000`.
+  `"keep_subcats": ["ski"]` and `"min_width": 1000`. When Commons is throttling hard (Retry-After 30s+), run
+  `--openverse-first` (Openverse only, plus pinned Commons includes), then rerun the places that came up empty
+  without the flag. Several fetches can run in parallel on different `--only` ids; images.json merges under a lock.
+  Curate from a contact sheet (`montage` of `src/assets/places/*/N.jpg`) and add bad titles to `exclude`.
 - Google ratings: record `rating`, `reviews` count, `asOf` date and a `maps.google.com/?cid=` link. Review
   themes are **our paraphrase**, never verbatim review text.
 - Client code talks to Supabase directly (`src/lib/supabase.ts`). Security is row-level security in
