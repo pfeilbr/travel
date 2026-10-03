@@ -829,15 +829,6 @@ const spots: Spot[] = [
         url: 'https://www.lakeplacid.com/uci-mountain-bike-world-series',
         confirmed: true,
       },
-      {
-        name: 'BETA Community Bike Jam',
-        kind: 'festival',
-        date: '2026-10-02',
-        when: 'Fri, Oct 2',
-        what: 'Barkeater Trails Alliance’s community party during World Cup weekend.',
-        url: 'https://www.lakeplacid.com/events/beta-community-bike-jam',
-        confirmed: true,
-      },
     ],
     getting: {
       airport: 'Plattsburgh International',
