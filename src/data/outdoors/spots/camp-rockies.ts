@@ -58,8 +58,8 @@ const spots: Spot[] = [
     ],
     lodging: [
       { name: 'Under Canvas Moab', kind: 'lodge', what: 'Safari-style glamping tents a few minutes north of the Arches entrance.', url: 'https://www.undercanvas.com/camps/moab/', distance: '45 min drive' },
-      { name: 'Gonzo Inn', kind: 'hotel', what: 'Boutique hotel in town, an easy walk to Moab’s restaurants.', url: 'https://gonzoinn.com/', distance: '50 min drive' },
-      { name: 'Red Cliffs Lodge', kind: 'lodge', what: 'Riverside lodge on the Colorado River along Scenic Byway 128, northeast of Moab.', url: 'https://www.redcliffslodge.com/', distance: '1 hr drive' },
+      { name: 'Gonzo Inn', kind: 'hotel', what: 'Condo-style boutique hotel a block off Main Street.', url: 'https://gonzoinn.com/', distance: '50 min drive' },
+      { name: 'Red Cliff Lodge', kind: 'lodge', what: 'Lodge on the banks of the Colorado River, northeast of Moab.', url: 'https://www.redcliffslodge.com/', distance: '1 hr drive' },
     ],
     thingsToDo: [
       { name: 'Devils Garden Trail', kind: 'other', what: 'Starts just past the campground: Landscape Arch is about 2 miles round trip, and the full primitive loop is close to 8.', url: 'https://www.nps.gov/arch/planyourvisit/things2do.htm', distance: '5 min' },
@@ -217,7 +217,7 @@ const spots: Spot[] = [
       { name: 'Get in the Wild Adventures', what: 'Guided canyoneering trips and courses between Moab and Capitol Reef.', url: 'https://getinthewild.com/' },
     ],
     lodging: [
-      { name: 'Capitol Reef Resort', kind: 'hotel', what: 'Resort hotel on the edge of Torrey, the closest town to the park.', url: 'https://capitolreefresort.com/', distance: '15 min drive' },
+      { name: 'Capitol Reef Resort', kind: 'hotel', what: '58-acre resort in Torrey, about a mile from the park’s west entrance.', url: 'https://capitolreefresort.com/', distance: '15 min drive' },
       { name: 'Red Sands Hotel & Spa', kind: 'hotel', what: 'Torrey hotel with a heated indoor pool, spa and restaurant.', url: 'https://www.redsandshotel.com/', distance: '15 min drive' },
     ],
     thingsToDo: [
@@ -274,7 +274,7 @@ const spots: Spot[] = [
     ],
     lodging: [
       { name: 'Under Canvas Moab', kind: 'lodge', what: 'Safari-style glamping tents north of Moab, near the turnoff for the park.', url: 'https://www.undercanvas.com/camps/moab/', distance: '30 min drive' },
-      { name: 'Gonzo Inn', kind: 'hotel', what: 'Boutique hotel in town, an easy walk to Moab’s restaurants.', url: 'https://gonzoinn.com/', distance: '45 min drive' },
+      { name: 'Gonzo Inn', kind: 'hotel', what: 'Condo-style boutique hotel a block off Main Street.', url: 'https://gonzoinn.com/', distance: '45 min drive' },
     ],
     thingsToDo: [
       { name: 'Intrepid Trail System', kind: 'other', what: 'The park’s own singletrack loops, friendly enough for newer riders, with a spur from the Moenkopi yurts.', url: 'https://stateparks.utah.gov/parks/dead-horse-point/mixed-use-trails/', distance: 'From camp' },
@@ -417,7 +417,7 @@ const spots: Spot[] = [
       { name: 'Kristi Mountain Sports', what: 'Alamosa outdoor shop renting sandboards and bikes since 1969.', url: 'https://www.kristimountainsports.com/' },
     ],
     lodging: [
-      { name: 'Great Sand Dunes Lodge', kind: 'lodge', what: 'Motel-style lodge next to the park entrance.', url: 'https://www.gsdlodge.com/', distance: '5 min drive' },
+      { name: 'Great Sand Dunes Lodge', kind: 'lodge', what: 'Small lodge just outside the park entrance, at the foot of the Sangre de Cristos.', url: 'https://www.gsdlodge.com/', distance: '5 min drive' },
       { name: 'Great Sand Dunes Oasis', kind: 'cabin', what: 'Rooms, cabins, tent and RV sites just outside the park.', url: 'https://greatdunes.com/', distance: '5 min drive' },
     ],
     thingsToDo: [
@@ -465,7 +465,7 @@ const spots: Spot[] = [
     ],
     lodging: [
       { name: 'Mountain Chalet Aspen', kind: 'lodge', what: 'Long-running, more affordable lodge in downtown Aspen.', url: 'https://www.mountainchaletaspen.com/', distance: '15 min drive' },
-      { name: 'Limelight Hotel Aspen', kind: 'hotel', what: 'Casual, modern hotel in downtown Aspen.', url: 'https://www.limelighthotels.com/aspen', distance: '15 min drive' },
+      { name: 'Limelight Hotel Aspen', kind: 'hotel', what: 'Central Aspen hotel steps from the Silver Queen Gondola.', url: 'https://www.limelighthotels.com/aspen', distance: '15 min drive' },
       { name: 'Hotel Jerome', kind: 'hotel', what: 'Aspen’s historic 1889 hotel on Main Street.', url: 'https://auberge.com/hotel-jerome/', distance: '15 min drive' },
     ],
     thingsToDo: [
@@ -525,8 +525,8 @@ const spots: Spot[] = [
     ],
     thingsToDo: [
       { name: 'Cliff dwelling tours', kind: 'other', what: 'Ranger-led tours of Cliff Palace, Balcony House and others; tickets on Recreation.gov.', url: 'https://www.nps.gov/meve/planyourvisit/cliff_dwelling_tours.htm', distance: '40 min drive' },
-      { name: 'Mesa Top Loop', kind: 'other', what: 'Six-mile drive with short walks to pithouses and cliff dwelling overlooks.', url: 'https://www.nps.gov/meve/planyourvisit/things2do.htm', distance: '35 min drive' },
-      { name: 'Knife Edge Trail', kind: 'other', what: 'Easy walk from the campground on an old roadbed, good at sunset.', url: 'https://www.nps.gov/meve/planyourvisit/hiking.htm', distance: 'From camp' },
+      { name: 'Mesa Top Loop', kind: 'other', what: 'Scenic drive with short walks to pithouses and cliff dwelling overlooks.', url: 'https://www.nps.gov/meve/planyourvisit/things2do.htm', distance: '35 min drive' },
+      { name: 'Knife Edge Trail', kind: 'other', what: 'Easy 2-mile round trip from the campground, good at sunset.', url: 'https://www.nps.gov/meve/planyourvisit/hiking.htm', distance: 'From camp' },
       { name: 'Canyons of the Ancients', kind: 'other', what: 'National monument west of Cortez with more Ancestral Puebloan sites and fewer people.', url: 'https://www.blm.gov/programs/national-conservation-lands/colorado/canyons-of-the-ancients', distance: '45 min drive' },
     ],
     events: [],
@@ -569,7 +569,7 @@ const spots: Spot[] = [
     ],
     lodging: [
       { name: 'Swiftcurrent Motor Inn and Cabins', kind: 'cabin', what: 'Simple motel rooms and cabins next to the campground.', url: 'https://www.glaciernationalparklodges.com/properties/swiftcurrent-motor-inn-and-cabins/', distance: 'Next door' },
-      { name: 'Many Glacier Hotel', kind: 'lodge', what: 'Grand 1915 hotel on Swiftcurrent Lake; open June 3 to Sept 20 in 2027.', url: 'https://www.glaciernationalparklodges.com/lodging/many-glacier-hotel/', distance: '5 min drive' },
+      { name: 'Many Glacier Hotel', kind: 'lodge', what: 'Grand historic hotel on Swiftcurrent Lake; open June 3 to Sept 20 in 2027.', url: 'https://www.glaciernationalparklodges.com/lodging/many-glacier-hotel/', distance: '5 min drive' },
       { name: 'St. Mary Village', kind: 'hotel', what: 'Rooms from budget motel to upscale at the east end of Going-to-the-Sun Road.', url: 'https://www.glacierparkcollection.com/lodging/st-mary-village/', distance: '40 min drive' },
     ],
     thingsToDo: [
@@ -621,13 +621,13 @@ const spots: Spot[] = [
     lodging: [
       { name: 'Village Inn at Apgar', kind: 'inn', what: 'Lakefront rooms on Lake McDonald in Apgar Village; open May 19 to Oct 1 in 2027.', url: 'https://www.glaciernationalparklodges.com/lodging/village-inn-at-apgar/', distance: '5 min walk' },
       { name: 'Belton Chalet', kind: 'inn', what: 'Historic railway hotel in West Glacier, a National Historic Landmark.', url: 'https://www.glacierparkcollection.com/lodging/belton-chalet/', distance: '5 min drive' },
-      { name: 'Lake McDonald Lodge', kind: 'lodge', what: 'Historic lodge-style hotel at the upper end of the lake.', url: 'https://www.glaciernationalparklodges.com/lodging/lake-mcdonald-lodge/', distance: '20 min drive' },
+      { name: 'Lake McDonald Lodge', kind: 'lodge', what: 'Swiss chalet–style lodge on the shore of Lake McDonald, 10 miles inside the west entrance.', url: 'https://www.glaciernationalparklodges.com/lodging/lake-mcdonald-lodge/', distance: '20 min drive' },
     ],
     thingsToDo: [
       { name: 'Going-to-the-Sun Road', kind: 'other', what: 'The 50-mile alpine drive over Logan Pass, usually fully open from early July to mid-October.', url: 'https://www.nps.gov/glac/planyourvisit/goingtothesunroad.htm', distance: 'From camp' },
       { name: 'Trail of the Cedars and Avalanche Lake', kind: 'other', what: 'A boardwalk through old cedars, then about 4.5 miles round trip to a lake ringed by waterfalls.', url: 'https://www.nps.gov/glac/planyourvisit/hikingthetrails.htm', distance: '25 min drive' },
       { name: 'Paddle Lake McDonald', kind: 'other', what: 'Calm mornings over colorful stones; private boats need an invasive species inspection first.', url: 'https://www.nps.gov/glac/planyourvisit/boating.htm', distance: 'Walk from camp' },
-      { name: 'Polebridge Mercantile', kind: 'eat', what: 'Remote North Fork bakery known for its huckleberry bear claws.', url: 'https://polebridgemerc.com/', distance: '1 hr 15 min drive' },
+      { name: 'Polebridge Mercantile', kind: 'eat', what: 'Remote North Fork general store and bakery, a classic stop for pastries.', url: 'https://polebridgemerc.com/', distance: '1 hr 15 min drive' },
     ],
     events: [],
     getting: { airport: FCA, code: 'FCA', driveMin: 35, from: [{ city: 'Missoula', hours: 2.75 }, { city: 'Spokane', hours: 4.75 }] },
@@ -680,7 +680,7 @@ const spots: Spot[] = [
         date: '2026-12-09',
         end: '2026-12-13',
         when: 'Dec 9–13, 2026',
-        what: 'The 30th annual ice climbing festival in Hyalite Canyon, with clinics for all levels.',
+        what: 'The 30th annual ice climbing festival in Hyalite Canyon, with climbing clinics.',
         url: 'https://bozemanicefest.com/',
         confirmed: true,
       },
@@ -724,9 +724,9 @@ const spots: Spot[] = [
       { name: 'Whitefish Mountain Resort', what: 'Summer lift rides and lift-served mountain biking on Big Mountain.', url: 'https://skiwhitefish.com/' },
     ],
     lodging: [
-      { name: 'The Lodge at Whitefish Lake', kind: 'lodge', what: 'Lakefront resort with a marina and spa.', url: 'https://lodgeatwhitefishlake.com/', distance: '5 min drive' },
+      { name: 'The Lodge at Whitefish Lake', kind: 'lodge', what: 'Lakefront resort with a spa.', url: 'https://lodgeatwhitefishlake.com/', distance: '5 min drive' },
       { name: 'The Firebrand Hotel', kind: 'hotel', what: 'Downtown Whitefish hotel steps from shops and restaurants.', url: 'https://firebrandhotel.com/', distance: '5 min drive' },
-      { name: 'Grouse Mountain Lodge', kind: 'lodge', what: 'Lodge-style hotel beside the golf course on the edge of town.', url: 'https://www.glacierparkcollection.com/lodging/grouse-mountain-lodge/', distance: '5 min drive' },
+      { name: 'Grouse Mountain Lodge', kind: 'lodge', what: 'Lodge-style hotel with a golf course next door and a shuttle to downtown.', url: 'https://www.glacierparkcollection.com/lodging/grouse-mountain-lodge/', distance: '5 min drive' },
     ],
     thingsToDo: [
       { name: 'The Whitefish Trail', kind: 'other', what: 'Network of hiking and biking trails in the hills around the lake.', url: 'https://www.whitefishlegacy.org/the-whitefish-trail', distance: '5 min drive' },
