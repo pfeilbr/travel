@@ -532,6 +532,32 @@
       "width": 1280
     }
   ],
+  "bridger-bowl": [
+    {
+      "alt": "Brickellia grandiflora growing on the talus slopes of North Bowl, Bridger Bowl ski area, Bridger Range, Gallatin County, Montana.",
+      "author": "Matt Lavin",
+      "file": "src/assets/places/bridger-bowl/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brickellia_grandiflora_-_tasselflower_brickellbush_-_52960607217.jpg",
+      "title": "File:Brickellia grandiflora - tasselflower brickellbush - 52960607217.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Brickellia grandiflora growing on the talus slopes of North Bowl, Bridger Bowl ski area, Bridger Range, Gallatin County, Montana.",
+      "author": "Matt Lavin",
+      "file": "src/assets/places/bridger-bowl/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brickellia_grandiflora_-_tasselflower_brickellbush_-_52960607737.jpg",
+      "title": "File:Brickellia grandiflora - tasselflower brickellbush - 52960607737.jpg",
+      "width": 1280
+    }
+  ],
   "brighton": [
     {
       "alt": "Brighton Resort, Brighton, United States",
@@ -848,6 +874,32 @@
     }
   ],
   "diamond-peak": [],
+  "discovery-montana": [
+    {
+      "alt": "Kiwi Discovery Ski Accessories 2012 (3)",
+      "author": "Kiwi Discovery",
+      "file": "src/assets/places/discovery-montana/1.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/60910972@N07/7552817378",
+      "title": "Openverse:3f700b80-7774-43bc-b395-80c25863f1a3",
+      "width": 1024
+    },
+    {
+      "alt": "Kiwi Discovery Ski Accessories 2012 (sm)",
+      "author": "Kiwi Discovery",
+      "file": "src/assets/places/discovery-montana/2.jpg",
+      "height": 768,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/60910972@N07/7552817062",
+      "title": "Openverse:a2808a59-0c66-4490-ab4a-8d2fa146b826",
+      "width": 1024
+    }
+  ],
   "eldora": [
     {
       "alt": "View of the beginners' area at the base of Eldora Mountain Resort",
@@ -1000,6 +1052,7 @@
       "width": 1600
     }
   ],
+  "great-divide": [],
   "green-lakes": [
     {
       "alt": "Fall foliage reflected in Round Lake at Green Lakes State Park",
@@ -2510,6 +2563,32 @@
       "width": 960
     }
   ],
+  "red-lodge-mountain": [
+    {
+      "alt": "Burn Scars in Montana (MODIS 2021-06-20)",
+      "author": "MODIS Land Rapid Response Team, NASA GSFC",
+      "file": "src/assets/places/red-lodge-mountain/1.jpg",
+      "height": 1020,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Burn_Scars_in_Montana_(MODIS_2021-06-20).jpg",
+      "title": "File:Burn Scars in Montana (MODIS 2021-06-20).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "w:Red Lodge Mountain Resort , looking at the Palisades area on the north end of the ski area.",
+      "author": "Elkman",
+      "file": "src/assets/places/red-lodge-mountain/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Lodge_Palisades.jpg",
+      "title": "File:Red Lodge Palisades.jpg",
+      "width": 1280
+    }
+  ],
   "red-mountain": [
     {
       "alt": "View from Red Mountain Ski Resort",
@@ -2814,6 +2893,7 @@
       "width": 1280
     }
   ],
+  "showdown": [],
   "sierra-at-tahoe": [
     {
       "alt": "Sierra-at-Tahoe 2",
@@ -2984,6 +3064,20 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cozy_Winter_Scene_(Unsplash).jpg",
       "title": "File:Cozy Winter Scene (Unsplash).jpg",
       "width": 1280
+    }
+  ],
+  "song-mountain": [
+    {
+      "alt": "Blue Skies",
+      "author": "zenera",
+      "file": "src/assets/places/song-mountain/1.jpg",
+      "height": 740,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "nearby": false,
+      "sourceUrl": "https://www.flickr.com/photos/35237098471@N01/391150010",
+      "title": "Openverse:950aa641-a6dc-40a7-a45b-72a6b49026c6",
+      "width": 1024
     }
   ],
   "stowe": [
