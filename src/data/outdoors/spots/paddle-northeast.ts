@@ -664,7 +664,7 @@ const spots: Spot[] = [
       {
         name: 'Friends of Green River Reservoir',
         what: 'Volunteer group working to preserve the reservoir’s natural heritage.',
-        url: 'http://www.fgrrvt.org/',
+        url: 'https://www.fgrrvt.org/',
       },
     ],
     lodging: [

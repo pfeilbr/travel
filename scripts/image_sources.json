@@ -11723,6 +11723,494 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "st-regis-canoe-area": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "regis",
+    "saint regis canoe area"
+   ],
+   "sources": [
+    {
+     "search": "St. Regis Canoe Area",
+     "limit": 25
+    },
+    {
+     "openverse": "Saint Regis Canoe Area kayaking",
+     "must": [
+      "regis",
+      "saint regis canoe area"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "fulton-chain-of-lakes": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "fulton",
+    "fourth lake",
+    "old forge",
+    "fulton chain of lakes"
+   ],
+   "sources": [
+    {
+     "search": "Fulton Chain of Lakes",
+     "limit": 25
+    },
+    {
+     "openverse": "Fulton Chain of Lakes kayaking",
+     "must": [
+      "fulton",
+      "fourth lake",
+      "old forge",
+      "fulton chain of lakes"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "lake-george-narrows": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "lake george",
+    "narrows",
+    "bolton",
+    "lake george narrows and islands"
+   ],
+   "sources": [
+    {
+     "category": "Category:Lake George (New York)",
+     "depth": 0
+    },
+    {
+     "openverse": "Lake George Narrows and Islands kayaking",
+     "must": [
+      "lake george",
+      "narrows",
+      "bolton",
+      "lake george narrows and islands"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "cayuga-lake": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "cayuga",
+    "taughannock",
+    "ithaca",
+    "cayuga lake at ithaca"
+   ],
+   "sources": [
+    {
+     "category": "Category:Cayuga Lake",
+     "depth": 0
+    },
+    {
+     "openverse": "Cayuga Lake at Ithaca kayaking",
+     "must": [
+      "cayuga",
+      "taughannock",
+      "ithaca",
+      "cayuga lake at ithaca"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "oneida-lake-fish-creek": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "oneida",
+    "sylvan",
+    "verona beach",
+    "fish creek",
+    "oneida lake and fish creek"
+   ],
+   "sources": [
+    {
+     "category": "Category:Oneida Lake",
+     "depth": 0
+    },
+    {
+     "openverse": "Oneida Lake and Fish Creek kayaking",
+     "must": [
+      "oneida",
+      "sylvan",
+      "verona beach",
+      "fish creek",
+      "oneida lake and fish creek"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "lake-champlain-paddlers-trail": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "burton",
+    "champlain",
+    "burton island and the lake champlain paddlers’ trail"
+   ],
+   "sources": [
+    {
+     "search": "Burton Island State Park",
+     "limit": 25
+    },
+    {
+     "openverse": "Burton Island and the Lake Champlain Paddlers’ Trail kayaking",
+     "must": [
+      "burton",
+      "champlain",
+      "burton island and the lake champlain paddlers’ trail"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "green-river-reservoir": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "green river",
+    "green river reservoir"
+   ],
+   "sources": [
+    {
+     "search": "Green River Reservoir Vermont",
+     "limit": 25
+    },
+    {
+     "openverse": "Green River Reservoir kayaking",
+     "must": [
+      "green river",
+      "green river reservoir"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "lake-willoughby": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "willoughby",
+    "lake willoughby"
+   ],
+   "sources": [
+    {
+     "category": "Category:Lake Willoughby",
+     "depth": 0
+    },
+    {
+     "openverse": "Lake Willoughby kayaking",
+     "must": [
+      "willoughby",
+      "lake willoughby"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "squam-lake": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "squam",
+    "squam lake"
+   ],
+   "sources": [
+    {
+     "category": "Category:Squam Lake",
+     "depth": 0
+    },
+    {
+     "openverse": "Squam Lake kayaking",
+     "must": [
+      "squam",
+      "squam lake"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "lake-umbagog": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "umbagog",
+    "lake umbagog"
+   ],
+   "sources": [
+    {
+     "category": "Category:Umbagog Lake",
+     "depth": 0
+    },
+    {
+     "openverse": "Lake Umbagog kayaking",
+     "must": [
+      "umbagog",
+      "lake umbagog"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "saco-river": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "saco",
+    "saco river"
+   ],
+   "sources": [
+    {
+     "category": "Category:Saco River",
+     "depth": 0
+    },
+    {
+     "openverse": "Saco River kayaking",
+     "must": [
+      "saco",
+      "saco river"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "middle-delaware-river": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "delaware",
+    "water gap",
+    "delaware river in the water gap"
+   ],
+   "sources": [
+    {
+     "category": "Category:Delaware Water Gap National Recreation Area",
+     "depth": 0
+    },
+    {
+     "openverse": "Delaware River in the Water Gap kayaking",
+     "must": [
+      "delaware",
+      "water gap",
+      "delaware river in the water gap"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "lehigh-gorge": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "lehigh",
+    "lehigh river gorge"
+   ],
+   "sources": [
+    {
+     "category": "Category:Lehigh Gorge State Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Lehigh River Gorge kayaking",
+     "must": [
+      "lehigh",
+      "lehigh river gorge"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "youghiogheny-river": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "ohiopyle",
+    "youghiogheny",
+    "yough",
+    "youghiogheny river at ohiopyle"
+   ],
+   "sources": [
+    {
+     "category": "Category:Ohiopyle State Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Youghiogheny River at Ohiopyle kayaking",
+     "must": [
+      "ohiopyle",
+      "youghiogheny",
+      "yough",
+      "youghiogheny river at ohiopyle"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "kayak",
+    "kayaking",
+    "canoe",
+    "paddling",
+    "lake",
+    "river"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }
