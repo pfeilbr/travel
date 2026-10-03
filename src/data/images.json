@@ -824,6 +824,44 @@
       "width": 1024
     }
   ],
+  "elkhorn-slough": [
+    {
+      "alt": "California Sea Lion - Zalophus californianus, Elkhorn Slough, Moss Landing, California",
+      "author": "Judy Gallagher",
+      "file": "src/assets/places/elkhorn-slough/1.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:California_Sea_Lion_-_Zalophus_californianus,_Elkhorn_Slough,_Moss_Landing,_California.jpg",
+      "title": "File:California Sea Lion - Zalophus californianus, Elkhorn Slough, Moss Landing, California.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Elkhorn Slough seen from the Coast Starlight train by Amtrak",
+      "author": "Levi Meir Clancy",
+      "file": "src/assets/places/elkhorn-slough/2.jpg",
+      "height": 960,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elkhorn_Slough_seen_from_the_Coast_Starlight_train_by_Amtrak_APC_0100.jpg",
+      "title": "File:Elkhorn Slough seen from the Coast Starlight train by Amtrak APC 0100.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Elkhorn Slough",
+      "author": "Calbear22 at English Wikipedia",
+      "file": "src/assets/places/elkhorn-slough/3.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elkhorn_Slough.JPG",
+      "title": "File:Elkhorn Slough.JPG",
+      "width": 1280
+    }
+  ],
   "firelight-camps": [
     {
       "alt": "Buttermilk Falls cascading into its pool in autumn (nearby Buttermilk Falls State Park)",
@@ -884,6 +922,44 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buttermilk_Falls,_Ithaca,_NY,_April.jpg",
       "title": "File:Buttermilk Falls, Ithaca, NY, April.jpg",
       "width": 1600
+    }
+  ],
+  "forillon-park": [
+    {
+      "alt": "Waterfall along the \"La Chute\" hiking trail",
+      "author": "Michel Rathwell from Cornwall, Canada",
+      "file": "src/assets/places/forillon-park/1.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waterfalls_Forillon_National_Park_(35408828522).jpg",
+      "title": "File:Waterfalls Forillon National Park (35408828522).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Waterfall along the \"La Chute\" hiking trail",
+      "author": "Michel Rathwell from Cornwall, Canada",
+      "file": "src/assets/places/forillon-park/2.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waterfalls_Forillon_National_Park_(35537964806).jpg",
+      "title": "File:Waterfalls Forillon National Park (35537964806).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "View of waterfall on Ruisseau du Cap-des-Rosiers, taken from \"La Chute\" hiking trail, Forillon National Park, Canada.",
+      "author": "Andre Carrotflower",
+      "file": "src/assets/places/forillon-park/3.jpg",
+      "height": 959,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Chute_-_Forillon_National_Park.jpg",
+      "title": "File:La Chute - Forillon National Park.jpg",
+      "width": 1280
     }
   ],
   "garibaldi-lake": [

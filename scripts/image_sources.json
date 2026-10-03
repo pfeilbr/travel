@@ -8016,6 +8016,318 @@
    "include": [],
    "exclude": [],
    "alt": {}
+  },
+  "pickleball-kingdom-chandler": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "pickleball kingdom",
+    "indoor pickleball",
+    "pickleball kingdom chandler"
+   ],
+   "sources": [
+    {
+     "search": "Pickleball Kingdom Chandler",
+     "limit": 25
+    },
+    {
+     "openverse": "Pickleball Kingdom Chandler pickleball",
+     "must": [
+      "pickleball kingdom",
+      "indoor pickleball",
+      "pickleball kingdom chandler"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "kino-pickleball": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "kino",
+    "tucson",
+    "kino sports complex pickleball courts"
+   ],
+   "sources": [
+    {
+     "search": "Kino Sports Complex Tucson",
+     "limit": 25
+    },
+    {
+     "openverse": "Kino Sports Complex pickleball courts pickleball",
+     "must": [
+      "kino",
+      "tucson",
+      "kino sports complex pickleball courts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "posse-grounds-pickleball": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "posse grounds",
+    "sedona",
+    "posse grounds park pickleball courts"
+   ],
+   "sources": [
+    {
+     "search": "Posse Grounds Park Sedona",
+     "limit": 25
+    },
+    {
+     "openverse": "Posse Grounds Park pickleball courts pickleball",
+     "must": [
+      "posse grounds",
+      "sedona",
+      "posse grounds park pickleball courts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "bushmaster-park-pickleball": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "bushmaster",
+    "flagstaff",
+    "bushmaster park pickleball courts"
+   ],
+   "sources": [
+    {
+     "search": "Bushmaster Park Flagstaff",
+     "limit": 25
+    },
+    {
+     "openverse": "Bushmaster Park pickleball courts pickleball",
+     "must": [
+      "bushmaster",
+      "flagstaff",
+      "bushmaster park pickleball courts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "barnes-pickleball": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "barnes",
+    "point loma",
+    "barnes tennis center"
+   ],
+   "sources": [
+    {
+     "search": "Barnes Tennis Center San Diego",
+     "limit": 25
+    },
+    {
+     "openverse": "Barnes Tennis Center pickleball",
+     "must": [
+      "barnes",
+      "point loma",
+      "barnes tennis center"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "pickle-alley-la": {
+   "min_width": 1000,
+   "count": 2,
+   "must": [
+    "pickle alley",
+    "boyle heights"
+   ],
+   "sources": [
+    {
+     "search": "Pickle Alley Los Angeles",
+     "limit": 25
+    },
+    {
+     "openverse": "Pickle Alley pickleball",
+     "must": [
+      "pickle alley",
+      "boyle heights"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "demuth-park-pickleball": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "demuth",
+    "palm springs",
+    "demuth park pickleball courts"
+   ],
+   "sources": [
+    {
+     "search": "Demuth Park Palm Springs",
+     "limit": 25
+    },
+    {
+     "openverse": "Demuth Park pickleball courts pickleball",
+     "must": [
+      "demuth",
+      "palm springs",
+      "demuth park pickleball courts"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "incline-village-pickleball": {
+   "min_width": 1000,
+   "count": 3,
+   "must": [
+    "incline",
+    "incline village tennis & pickleball center"
+   ],
+   "sources": [
+    {
+     "category": "Category:Incline Village, Nevada",
+     "depth": 0
+    },
+    {
+     "openverse": "Incline Village Tennis & Pickleball Center pickleball",
+     "must": [
+      "incline",
+      "incline village tennis & pickleball center"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "truckee-regional-park-pickleball": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "truckee",
+    "truckee river regional park pickleball"
+   ],
+   "sources": [
+    {
+     "category": "Category:Truckee River Regional Park",
+     "depth": 0
+    },
+    {
+     "openverse": "Truckee River Regional Park pickleball pickleball",
+     "must": [
+      "truckee",
+      "truckee river regional park pickleball"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
+  },
+  "mammoth-lakes-pickleball": {
+   "min_width": 1000,
+   "count": 1,
+   "must": [
+    "mammoth",
+    "mammoth lakes pickleball complex"
+   ],
+   "sources": [
+    {
+     "category": "Category:Mammoth Lakes, California",
+     "depth": 0
+    },
+    {
+     "openverse": "Mammoth Lakes Pickleball Complex pickleball",
+     "must": [
+      "mammoth",
+      "mammoth lakes pickleball complex"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "pickleball",
+    "court",
+    "park"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {}
   }
  }
 }

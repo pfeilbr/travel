@@ -466,7 +466,7 @@ const spots: Spot[] = [
     lodging: [
       { name: 'Mountain Chalet Aspen', kind: 'lodge', what: 'Long-running, more affordable lodge in downtown Aspen.', url: 'https://www.mountainchaletaspen.com/', distance: '15 min drive' },
       { name: 'Limelight Hotel Aspen', kind: 'hotel', what: 'Casual, modern hotel in downtown Aspen.', url: 'https://www.limelighthotels.com/aspen', distance: '15 min drive' },
-      { name: 'Hotel Jerome', kind: 'hotel', what: 'Aspen’s historic 1889 hotel on Main Street.', url: 'https://aubergeresorts.com/hoteljerome/', distance: '15 min drive' },
+      { name: 'Hotel Jerome', kind: 'hotel', what: 'Aspen’s historic 1889 hotel on Main Street.', url: 'https://auberge.com/hotel-jerome/', distance: '15 min drive' },
     ],
     thingsToDo: [
       { name: 'Maroon Lake and Crater Lake', kind: 'other', what: 'An easy stroll around Maroon Lake, or about 3.6 miles round trip to Crater Lake below the Bells.', url: 'https://www.fs.usda.gov/r02/whiteriver/recreation/maroon-bells-scenic-area', distance: '10 min drive' },
@@ -517,7 +517,7 @@ const spots: Spot[] = [
     features: ['tent', 'rv-hookups', 'showers', 'pets'],
     outfitters: [
       { name: 'Mesa Verde Discovery Tour', what: 'The concessioner’s guided bus tour of mesa-top sites and cliff dwellings, with a walk into Cliff Palace.', url: 'https://www.visitmesaverde.com/activities/tours/700-years-tour' },
-      { name: 'Kokopelli Bike & Board', what: 'Cortez bike shop with local trail knowledge.', url: 'https://kokopellibike.com/' },
+      { name: 'Kokopelli Bike & Board', what: 'Cortez bike shop with local trail knowledge.', url: 'https://www.kokopellibike.com/' },
     ],
     lodging: [
       { name: 'Far View Lodge', kind: 'lodge', what: 'The park’s only lodge, on the mesa top with long views.', url: 'https://www.visitmesaverde.com/stay/far-view-lodge', distance: '20 min drive' },
