@@ -9,6 +9,7 @@ import type { Lodging, Place } from '../../../data/types';
 import { imagesFor } from '../../../lib/images';
 import { LODGING_LABEL, dateRange, drive, lowestPrice, money } from '../../../lib/format';
 import { url } from '../../../lib/paths';
+import { placeLd } from '../../../lib/jsonld';
 
 export function getStaticPaths() {
   return places.map((place) => ({ params: { id: place.id }, props: { place } }));
@@ -32,8 +33,9 @@ const ACT: Record<string, string> = {
 const NEARBY_ICON: Record<string, string> = { eat: 'restaurants', drink: 'nightlife', do: 'pin', hike: 'hiking', bike: 'biking', fish: 'fishing', shop: 'bag' };
 const lodgingOrder: Lodging[] = ['glamping', 'cabin', 'cottage', 'tent'];
 const hero = images[0];
+const ld = placeLd(place, new URL(Astro.url.pathname, Astro.site), hero && new URL(hero.src.src, Astro.site));
 ---
-<Layout title={place.name} description={`${place.tagline}. ${place.summary}`} image={hero?.src.src}>
+<Layout title={place.name} description={`${place.tagline}. ${place.summary}`} image={hero?.src.src} jsonLd={ld}>
   <div class="container page">
     <header class="title">
       <h1>{place.name}</h1>

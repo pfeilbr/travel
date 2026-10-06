@@ -18,6 +18,7 @@ import { ACTIVITY, EVENT_ICON, EVENT_LABEL, miles, price as money, shortDate } f
 import { SPOT_SIZE_LABEL, priceText, seasonText } from '../../../lib/outdoors';
 import { drive } from '../../../lib/format';
 import { url } from '../../../lib/paths';
+import { spotLd } from '../../../lib/jsonld';
 
 export function getStaticPaths() {
   return spots.map((spot) => ({ params: { pursuit: pursuitById[spot.pursuit].slug, id: spot.id }, props: { spot } }));
@@ -28,6 +29,7 @@ const region = skiRegionById[s.region];
 const cur = region.currency;
 const images = imagesFor(s.id);
 const hero = images[0];
+const ld = spotLd(s, p, region, new URL(Astro.url.pathname, Astro.site), hero && new URL(hero.src.src, Astro.site));
 const resort = s.resortId ? resortById[s.resortId] : undefined;
 const features = s.features.map((id) => p.features.find((f) => f.id === id)).filter((f) => f !== undefined);
 const LODGE_ORDER: LodgeKind[] = ['ski-in/ski-out', 'slopeside', 'base village', 'lodge', 'cabin', 'hotel', 'condo', 'inn', 'b&b', 'hostel'];
@@ -50,7 +52,7 @@ const links = [
   ...(s.mapUrl ? [{ label: 'Map', url: s.mapUrl, icon: 'map' }] : []),
 ];
 ---
-<Layout title={s.name} description={`${s.tagline}. ${s.summary}`} image={hero?.src.src}>
+<Layout title={s.name} description={`${s.tagline}. ${s.summary}`} image={hero?.src.src} jsonLd={ld}>
   <div class="container page">
     <nav class="crumbs" aria-label="Breadcrumb"><a href={url(`${p.slug}/`)}>{p.name}</a><Icon name="chev-right" size={12} /><a href={url(`${p.slug}/?region=${region.id}#explore`)}>{region.name}</a><Icon name="chev-right" size={12} /><span>{s.name}</span></nav>
     <header class="title">

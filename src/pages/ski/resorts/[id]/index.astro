@@ -13,6 +13,7 @@ import { imagesFor } from '../../../../lib/images';
 import { ACTIVITY, EVENT_ICON, EVENT_LABEL, HOLIDAY_KINDS, PASS_LABEL, SIZE_LABEL, ft, miles, nearest, price, seasonLine, shortDate } from '../../../../lib/ski';
 import { url } from '../../../../lib/paths';
 import { drive } from '../../../../lib/format';
+import { resortLd } from '../../../../lib/jsonld';
 
 export function getStaticPaths() {
   return resorts.map((resort) => ({ params: { id: resort.id }, props: { resort } }));
@@ -21,6 +22,7 @@ const { resort: r } = Astro.props as { resort: Resort };
 const region = skiRegionById[r.region];
 const images = imagesFor(r.id);
 const hero = images[0];
+const ld = resortLd(r, region, new URL(Astro.url.pathname, Astro.site), hero && new URL(hero.src.src, Astro.site));
 const cur = region.currency;
 const s = r.stats;
 const near = nearest(r, resorts, 4);
@@ -48,7 +50,7 @@ const statRows = [
   ...(s.snowmakingPct ? [{ icon: 'cloud', k: 'Snowmaking', v: `${s.snowmakingPct}% of terrain` }] : []),
 ];
 ---
-<Layout title={`${r.name} ski guide`} description={`${r.tagline}. ${r.summary}`} image={hero?.src.src}>
+<Layout title={`${r.name} ski guide`} description={`${r.tagline}. ${r.summary}`} image={hero?.src.src} jsonLd={ld}>
   <div class="container page">
     <nav class="crumbs" aria-label="Breadcrumb"><a href={url('ski/')}>Ski</a><Icon name="chev-right" size={12} /><a href={url(`ski/${region.id}/`)}>{region.name}</a><Icon name="chev-right" size={12} /><span>{r.name}</span></nav>
     <header class="title">
