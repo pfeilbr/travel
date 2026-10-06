@@ -17,10 +17,10 @@ const pineconeDrop: SkiEvent = {
   name: 'Great Pinecone Drop, Flagstaff',
   kind: 'new-years',
   date: '2026-12-31',
-  when: 'Dec 31: noon, 10 pm and midnight (annual)',
+  when: 'Dec 31, 2026: noon, 10 pm and midnight',
   what: 'A big lighted pinecone is lowered from the Weatherford Hotel downtown, followed by fireworks. Free in the street, with a family “Noon Year’s Eve” drop for kids.',
   url: 'https://www.flagstaffarizona.org/pineconedrop/',
-  confirmed: false,
+  confirmed: true,
 };
 
 const resorts: Resort[] = [

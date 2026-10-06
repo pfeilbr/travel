@@ -459,9 +459,9 @@ const resorts: Resort[] = [
     webcamUrl: 'https://www.holidayvalley.com/webcams/',
     passes: [],
     season: {
-      opens: '2026-12-04',
+      opens: '2026-11-27',
       closes: '2027-04-04',
-      note: 'Targets late November or early December (Dec 5 last season); usually skis into early April.',
+      note: 'Opening day announced (Fri Nov 27, weather permitting); closing not yet set, usually early April.',
     },
     stats: {
       summitFt: 2250,
@@ -500,7 +500,8 @@ const resorts: Resort[] = [
     ],
     events: [
       { name: 'Christmas Day skiing', kind: 'christmas', date: '2026-12-25', when: 'Dec 25, noon–10 pm (recent seasons)', what: 'Lifts, tubing and the coaster open at noon on Christmas Day, with skiing into the night.', url: 'https://www.holidayvalley.com/blog/christmas-week-hours/', confirmed: false },
-      { name: 'New Year’s Eve torchlight parade and fireworks', kind: 'new-years', date: '2026-12-31', when: 'Dec 31 (annual)', what: 'Groomer parade, torchlight parade and fireworks, with Cindy’s lift open until 11 pm.', url: 'https://www.holidayvalley.com/blog/christmas-week-hours/', confirmed: false },
+      { name: 'Opening day', kind: 'opening', date: '2026-11-27', when: 'Fri Nov 27 (weather permitting)', what: 'Holiday Valley’s 69th season kicks off, with lifts running 9 am–4:30 pm.', url: 'https://www.holidayvalley.com/event/opening-day-2026-27/', confirmed: true },
+      { name: 'New Year’s Eve party, torchlight parade and fireworks', kind: 'new-years', date: '2026-12-31', when: 'Thu Dec 31, 9 pm–12:30 am', what: 'Family-friendly party in the Main Lodge with a DJ, a torchlight parade down Cindy’s, fireworks and a midnight champagne toast for guests 21+.', url: 'https://www.holidayvalley.com/event/new-years-2026/', confirmed: true },
       { name: 'Beer & Wine Festival', kind: 'festival', date: '2026-11-07', when: 'Nov 7', what: 'Local beer and wine tastings with live music, the last big party before ski season.', url: 'https://www.holidayvalley.com/event/beer-and-wine-2026/', confirmed: true },
       { name: 'Winter Carnival and Mardi Gras Parade', kind: 'festival', date: '2027-03-13', end: '2027-03-14', when: 'A mid-March weekend (Mar 14–15 last season)', what: 'Costume parade, beer slalom, Dummy Downhill, a Yodeler snow bar and the Mardi Gras parade through the village.', url: 'https://www.holidayvalley.com/event/winter-carnival-2026/', confirmed: false },
     ],
