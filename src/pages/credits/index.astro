@@ -10,7 +10,7 @@ const groups = allCredits();
 <Layout title="Photo credits">
   <section class="container page">
     <h1>Photo credits</h1>
-    <p class="muted">All photos are freely licensed from Wikimedia Commons and used under their licenses. Thank you to the photographers.</p>
+    <p class="muted">All photos are freely licensed (from Wikimedia Commons, or Flickr via Openverse) and used under their licenses. Thank you to the photographers.</p>
     {groups.length === 0 && <p>No photos yet.</p>}
     {groups.map((g) => (
       <section>
@@ -34,7 +34,8 @@ const groups = allCredits();
   .page { padding-top: 32px; }
   section section { margin-top: 32px; }
   h2 { font-size: 20px; }
-  ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+  ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); gap: 16px; }
   li { display: flex; gap: 14px; align-items: center; font-size: 14px; }
+  li > div { min-width: 0; overflow-wrap: anywhere; }
   li :global(img) { width: 96px; height: 64px; object-fit: cover; border-radius: 8px; flex: none; }
 </style>
