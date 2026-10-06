@@ -25,6 +25,12 @@ with Supabase for user accounts and data.
   The header switches between Camping, Ski, Biking, Kayaking and Pickleball.
 - **Live snow:** the browser asks [Open-Meteo](https://open-meteo.com/) (free, no key) for the 7-day snowfall forecast and
   last week's snow at each mountain's elevation. It's a model forecast; each resort links its official snow report.
+- **Trips (`/trips/`):** dated live-availability checks of NY State Parks and DEC campgrounds (ReserveAmerica, Campspot),
+  with per-type counts, base rates, cabin site numbers and gotchas. Once a trip's dates pass, its page says it's a snapshot.
+- **Calendar feed:** `/ski/events.ics` holds every confirmed 2026-27 ski event as an all-day event (subscribe to it);
+  dates that only follow past years stay out until the resort posts them.
+- **Discoverability:** `sitemap.xml`, `robots.txt`, Open Graph/Twitter cards with 1200px images, schema.org JSON-LD
+  (Campground, SkiResort, Event for confirmed dates), a 404 page and a web app manifest.
 - **Accounts (Supabase Auth):** email + password, magic link, Google and Apple. Users get wishlists (heart any place),
   their own reviews, and trip plans.
 
@@ -38,6 +44,7 @@ with Supabase for user accounts and data.
 | Photos | Wikimedia Commons (free licenses, credited), fetched by `scripts/fetch_images.py`; Openverse (CC Flickr photos) as a fallback |
 | Weather | Open-Meteo forecast API, called from the browser |
 | Tests | Vitest (`tests/js`), Python unittest (`tests/*.py`), pgTAP RLS tests (`supabase/tests`) |
+| Quality bar | WCAG AA contrast (axe-clean on key pages, light and dark), 375px with no sideways scroll, visible keyboard focus |
 
 ## Layout
 
@@ -56,7 +63,7 @@ src/
 supabase/
   migrations/       schema (profiles, wishlists, reviews, trip_plans) + RLS
   tests/            pgTAP tests run in CI
-scripts/            fetch_images.py, supabase_admin.py, check_site.py
+scripts/            fetch_images.py, supabase_admin.py, check_site.py (links, titles, sitemap)
 ```
 
 ## Develop
@@ -84,6 +91,8 @@ Push to `main`:
 - **Database:** pgTAP tests on a throwaway Supabase, then migrations (`scripts/supabase_admin.py migrate`, via the Management API)
   applied to the hosted project. Auth settings (providers, redirect allow-list) belong to the shared
   [app-platform](https://github.com/pfeilbr/app-platform) project and are never changed from this repo's CI.
+- **Daily rebuild** (09:07 UTC): the Pages workflow also runs on a schedule so date-aware pages (past trips, closed
+  campgrounds, upcoming events, opening-day badges) roll over without a push.
 - **Keep-alive** (daily): one public-key request to the database API so the free Supabase project, shared by all
   apps, never pauses after 7 idle days.
 
