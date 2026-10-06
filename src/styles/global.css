@@ -143,3 +143,5 @@ p { margin: 0 0 1em; }
 .rating svg { width: 13px; height: 13px; fill: currentColor; }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+/* Controls that hide their own outline show focus on their wrapper instead (hero search fields). */
+.search .seg:focus-within { outline: 2px solid var(--accent); outline-offset: -2px; }
