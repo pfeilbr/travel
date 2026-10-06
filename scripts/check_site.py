@@ -12,6 +12,7 @@ Exits non-zero and prints each problem if anything is wrong.
 
 from __future__ import annotations
 
+import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
@@ -65,6 +66,28 @@ def check_site(site: Path, base: str = "") -> list[str]:
             target = _resolve(page, ref, site, base)
             if target is None or not target.exists():
                 problems.append(f"{rel}: broken link -> {ref}")
+    problems += check_sitemap(site, base)
+    return problems
+
+
+def check_sitemap(site: Path, base: str = "") -> list[str]:
+    """Every sitemap <loc> must exist, and every indexable page must be listed."""
+    sitemap = site / "sitemap.xml"
+    if not sitemap.exists():
+        return []
+    problems: list[str] = []
+    listed: set[Path] = set()
+    for loc in re.findall(r"<loc>(.*?)</loc>", sitemap.read_text(encoding="utf-8")):
+        path = urlparse(loc).path
+        if base and path.startswith(base):
+            path = path[len(base):]
+        target = site / path.lstrip("/") / "index.html"
+        listed.add(target)
+        if not target.exists():
+            problems.append(f"sitemap.xml: missing page -> {loc}")
+    for page in sorted(site.rglob("index.html")):
+        if page not in listed and 'name="robots" content="noindex"' not in page.read_text(encoding="utf-8"):
+            problems.append(f"sitemap.xml: page not listed -> {page.relative_to(site)}")
     return problems
 
 

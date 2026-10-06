@@ -47,6 +47,20 @@ class CheckSiteTest(unittest.TestCase):
             self.assertIn("index.html: missing <title>", problems)
             self.assertIn("index.html: broken link -> nope.html", problems)
 
+    def test_sitemap_must_match_indexable_pages(self):
+        with TemporaryDirectory() as d:
+            root = Path(d)
+            _write(root, "index.html", "<title>x</title>")
+            _write(root, "a/index.html", "<title>a</title>")
+            _write(root, "private/index.html", '<title>p</title><meta name="robots" content="noindex">')
+            _write(root, "sitemap.xml",
+                   "<urlset><url><loc>https://h.io/travel/</loc></url>"
+                   "<url><loc>https://h.io/travel/gone/</loc></url></urlset>")
+            self.assertEqual(check_site(root, "/travel"), [
+                "sitemap.xml: missing page -> https://h.io/travel/gone/",
+                "sitemap.xml: page not listed -> a/index.html",
+            ])
+
 
 if __name__ == "__main__":
     unittest.main()
