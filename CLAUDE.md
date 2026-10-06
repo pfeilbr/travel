@@ -68,7 +68,7 @@ auth (email + password, magic link, Google, Apple) and data (wishlists, reviews,
 npm test && npx astro check && npm run build && python3 -m unittest discover -s tests && python3 scripts/check_site.py dist --base /travel
 ```
 
-Preview with the `web` launch config (`npm run dev`, http://localhost:4321/travel/). Commit and push small
+(`npm run verify` runs the same chain.) Preview with the `web` launch config (`npm run dev`, http://localhost:4321/travel/). Commit and push small
 changes as you go, then confirm the Pages deploy and the Database workflow pass
 (`gh run list --repo pfeilbr/travel -L3`) and check the live URL.
 
@@ -100,6 +100,9 @@ Look up only. Never book, sign in, or enter payment.
   search_avail.click();
   ```
   Read "N site(s) available out of M" and the per-type chips. "From $X*" is the base rate before fees.
+- Cloud sessions without the built-in browser: headless Chromium (Playwright, `executablePath: '/opt/pw-browsers/chromium'`)
+  runs the same snippet with `page.evaluate` (wait ~1 s after opening the date picker). Rows under the map read
+  "<site> <loop> <type> ... available|not available ... From $X*"; count only "available" rows, and take counts from the chips.
 - A site detail page (`campsiteDetails.do?...&siteId=`) shows "Use Fees (N night)", which confirms short stays price,
   and lists cabin amenities.
 - Campspot: `https://www.campspot.com/book/<park>/search/<arrive>/<depart>/guests0,2,0/list` works directly.

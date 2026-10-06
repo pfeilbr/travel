@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "test": "vitest run"
+    "test": "vitest run",
+    "verify": "vitest run && astro check && astro build && python3 -m unittest discover -s tests && python3 scripts/check_site.py dist --base /travel"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",

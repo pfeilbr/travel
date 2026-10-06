@@ -185,7 +185,9 @@ const ld = placeLd(place, new URL(Astro.url.pathname, Astro.site), og ? new URL(
               <a class="btn btn-primary btn-block" href={place.booking.url} rel="noopener">Check &amp; book on {place.booking.label}</a>
               <p class="fine">You won't be charged here. Booking happens on {place.booking.label}.</p>
               {option.priceNote && <p class="fine">{option.priceNote}</p>}
-              <p class="fine checked"><Icon name="check" size={13} /> Checked live {checked} for {dateRange(trip!.start, trip!.end)}. Rates exclude fees.</p>
+              {Object.values(option.available).every((c) => c === 'check')
+                ? <p class="fine">Not checked live for {dateRange(trip!.start, trip!.end)}; see the note above.</p>
+                : <p class="fine checked"><Icon name="check" size={13} /> Checked live {checked} for {dateRange(trip!.start, trip!.end)}. Rates exclude fees.</p>}
             </>
           ) : (
             <>
