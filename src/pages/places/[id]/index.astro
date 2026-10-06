@@ -21,6 +21,8 @@ const trip = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt)).f
 const option = trip?.options.find((o) => o.placeId === place.id);
 const from = option ? lowestPrice(option) : null;
 const checked = trip && new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+// Evaluated at build time (every push deploys).
+const seasonOver = !!place.seasonEnds && place.seasonEnds < new Date().toISOString().slice(0, 10);
 const seasonEnds = place.seasonEnds && new Date(place.seasonEnds + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 
 const ACT: Record<string, string> = {
@@ -65,7 +67,9 @@ const hero = images[0];
           {option?.cabinSites && option.available.cabin ? (
             <div class="hl"><Icon name="cabin" size={24} /><div><b>{option.available.cabin} cabin{option.available.cabin === 1 ? '' : 's'} open on your dates</b><p class="muted">Sites #{option.cabinSites.join(', #')}.</p></div></div>
           ) : null}
-          {seasonEnds && <div class="hl"><Icon name="calendar" size={24} /><div><b>Camping open through {seasonEnds}</b><p class="muted">Book soon. The season is winding down.</p></div></div>}
+          {seasonEnds && (seasonOver
+            ? <div class="hl"><Icon name="calendar" size={24} /><div><b>Camping closed for the season</b><p class="muted">It closed {seasonEnds}. Reservations for next season open 9 months ahead.</p></div></div>
+            : <div class="hl"><Icon name="calendar" size={24} /><div><b>Camping open through {seasonEnds}</b><p class="muted">Book soon. The season is winding down.</p></div></div>)}
         </section>
 
         <section>

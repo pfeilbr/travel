@@ -5,6 +5,9 @@ on:
     branches: [main]
   # PRs (Dependabot included) run the full build + tests as a check; only main deploys.
   pull_request:
+  # Daily rebuild so date-aware pages roll over (past trips, closed campgrounds, upcoming-event rails).
+  schedule:
+    - cron: '7 9 * * *'
   workflow_dispatch:
 
 permissions:

@@ -27,6 +27,8 @@ auth (email + password, magic link, Google, Apple) and data (wishlists, reviews,
   Hub heroes: an `hero-<slug>` entry in image_sources.json, else `Pursuit.hero` (a spot photo by title).
 - Google ratings: record `rating`, `reviews` count, `asOf` date and a `maps.google.com/?cid=` link. Review
   themes are **our paraphrase**, never verbatim review text.
+- Date-aware bits (past trips, closed campgrounds, upcoming-event rails) are computed at build time; the Pages
+  workflow rebuilds daily at 09:07 UTC so they roll over without a push.
 - Client code talks to Supabase directly (`src/lib/supabase.ts`). Security is row-level security in
   `supabase/migrations`. The site must still build and work (signed out) with no Supabase env.
 - Schema changes go in new timestamped files in `supabase/migrations/`, plus pgTAP tests in `supabase/tests/`.
