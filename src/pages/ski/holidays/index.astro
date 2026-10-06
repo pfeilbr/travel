@@ -22,6 +22,7 @@ const d = (iso: string) => new Date(iso + 'T12:00:00Z');
     <header class="head">
       <h1>Holidays on the mountain</h1>
       <p class="muted">{holidayCount} Christmas and New Year’s events, from torchlight parades and Santa on skis to midnight fireworks, plus the rest of the 2026–27 calendar. Dates marked “usually” follow past years until the resort posts this season’s schedule.</p>
+      <p class="cal"><a class="btn btn-outline btn-sm" href={url('ski/events.ics')} download><Icon name="calendar" size={16} />Add confirmed dates to your calendar</a> <span class="muted">An .ics feed; subscribe to its link to get updates as resorts post dates.</span></p>
     </header>
 
     <div class="bar">
@@ -74,6 +75,7 @@ const d = (iso: string) => new Date(iso + 'T12:00:00Z');
 </Layout>
 
 <style>
+  .cal { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; font-size: 14px; margin: 4px 0 0; }
   .page { padding-top: 24px; }
   .head h1 { font-family: var(--font-display); font-size: clamp(30px, 4vw, 44px); margin-bottom: 6px; }
   .head p { max-width: 760px; }
