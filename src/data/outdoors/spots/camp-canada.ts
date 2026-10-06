@@ -284,8 +284,8 @@ const spots: Spot[] = [
       { name: 'Othello Tunnels', kind: 'other', what: 'Flat walk through old railway tunnels above the Coquihalla River canyon near Hope.', url: 'https://bcparks.ca/coquihalla-canyon-park/', distance: '1 hr drive' },
     ],
     events: [
-      { name: 'Lantern Festival', kind: 'festival', date: '2027-08-01', when: 'August (annual)', what: 'Build a lantern at a workshop, then float it across Lightning Lake at dusk.', url: 'https://manningpark.com/events/', confirmed: false },
-      { name: 'Kite Festival', kind: 'festival', date: '2027-08-15', when: 'August (annual)', what: 'Bring or build a kite for an afternoon of colour over the park.', url: 'https://manningpark.com/events/', confirmed: false },
+      { name: 'Lantern Festival', kind: 'festival', date: '2027-08-01', when: 'Early August (Aug 1 in 2026)', what: 'Build a lantern at a workshop, then float it across Lightning Lake at dusk.', url: 'https://manningpark.com/events/', confirmed: false },
+      { name: 'Kite Festival', kind: 'festival', date: '2027-09-04', when: 'Early September (Sept 5 in 2026)', what: 'Bring or build a kite for an afternoon of colour over the park.', url: 'https://manningpark.com/events/', confirmed: false },
     ],
     getting: { airport: 'Abbotsford International', code: 'YXX', driveMin: 105, from: [{ city: 'Vancouver', hours: 2.5 }, { city: 'Seattle', hours: 4 }] },
     google: { rating: 4.7, url: cid('15728033917634613653'), asOf: ASOF },

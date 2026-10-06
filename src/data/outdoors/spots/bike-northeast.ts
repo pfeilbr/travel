@@ -379,11 +379,11 @@ const spots: Spot[] = [
       {
         name: 'Leaf Blower Fall Classic',
         kind: 'festival',
-        date: '2027-10-02',
-        when: 'Usually the first Saturday of October',
+        date: '2026-10-10',
+        when: 'Sat, Oct 10',
         what: 'Stowe Trails Partnership’s season-ending ride day and fundraiser: marked loops with aid stations, then food trucks, local beer and live music.',
-        url: 'https://stowetrails.org/events/',
-        confirmed: false,
+        url: 'https://stowetrails.org/event/15th-annual-leaf-blower-fall-classic/',
+        confirmed: true,
       },
     ],
     getting: {

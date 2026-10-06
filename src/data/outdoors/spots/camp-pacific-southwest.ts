@@ -1203,10 +1203,10 @@ const spots: Spot[] = [
         kind: 'festival',
         date: '2027-02-26',
         end: '2027-02-28',
-        when: 'Usually late February',
+        when: 'Feb 26–28, 2027',
         what: 'Apache Junction’s three-day pro rodeo, parade and carnival.',
         url: 'https://www.lostdutchmandays.org/',
-        confirmed: false,
+        confirmed: true,
       },
     ],
     getting: {
