@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { url } from '../lib/paths';
+import { pursuits } from '../data/outdoors';
+
+const links = [
+  { label: 'Camping & cabins', href: url('explore/') },
+  { label: 'Ski resorts', href: url('ski/') },
+  ...pursuits.filter((p) => p.id !== 'camp').map((p) => ({ label: p.name, href: url(`${p.slug}/`) })),
+  { label: 'Trips', href: url('trips/') },
+];
+---
+<Layout title="Page not found" noindex>
+  <section class="container nf">
+    <p class="eyebrow">404</p>
+    <h1>We couldn’t find that trail.</h1>
+    <p class="muted">The page may have moved, or the link has a typo. Try one of these instead.</p>
+    <div class="chips">
+      {links.map((l) => <a class="btn btn-outline" href={l.href}>{l.label}</a>)}
+    </div>
+    <a class="btn btn-primary" href={url()}>Back to Waypoint</a>
+  </section>
+</Layout>
+<style>
+  .nf { padding-top: clamp(48px, 10vw, 120px); padding-bottom: 96px; max-width: 640px; }
+  .eyebrow { font-weight: 700; color: var(--accent); letter-spacing: .08em; margin: 0; }
+  h1 { font-family: var(--font-display); font-size: clamp(30px, 6vw, 44px); margin: 8px 0 12px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 28px; }
+</style>
