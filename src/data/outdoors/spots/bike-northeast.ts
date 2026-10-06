@@ -1312,7 +1312,7 @@ const spots: Spot[] = [
     tagline: 'Rollercoaster flow loops above Raystown Lake',
     summary:
       'A stacked-loop system of machine-built flow trails above Raystown Lake, roughly 36 miles of rollers, berms and lake views. Difficulty is mostly about distance rather than technical moves, which makes it one of the friendliest big networks in the East. Pair it with a swim, a boat on the lake or a campsite at Seven Points.',
-    url: 'https://www.raystown.org/things-to-do/outdoors/biking/',
+    url: 'https://raystown.org/things-to-do/outdoors/biking/',
     mapUrl: 'https://www.mtbproject.com/directory/8015882/allegrippis',
     season: {
       from: 'Apr',

@@ -445,7 +445,7 @@ const spots: Spot[] = [
     lodging: [
       { name: 'Hôtel Universel Montréal', kind: 'hotel', what: 'Mid-priced hotel on Sherbrooke Street East, by the Olympic Park and the Botanical Garden.', url: 'https://www.hoteluniverselmontreal.com/', distance: '5 min drive' },
       { name: 'Hotel Bonaventure Montréal', kind: 'hotel', what: 'Large downtown hotel, a good base for the city and the metro.', url: 'https://www.hotelbonaventure.com/', distance: '20 min drive' },
-      { name: 'HI Montréal', kind: 'hostel', what: 'Big downtown hostel with dorms and private rooms.', url: 'https://www.hihostels.ca/en/destinations/quebec/hi-montreal', distance: '20 min drive' },
+      { name: 'Saintlo Montréal', kind: 'hostel', what: 'Big downtown hostel (formerly HI Montréal) with dorms and private rooms.', url: 'https://saintlo.ca/en/hostels/montreal/', distance: '20 min drive' },
     ],
     thingsToDo: [
       { name: 'Montréal Botanical Garden', kind: 'other', what: 'One of the world’s great botanical gardens, with Chinese and Japanese gardens and big greenhouses.', url: 'https://espacepourlavie.ca/en/botanical-garden', distance: '5 min drive' },
