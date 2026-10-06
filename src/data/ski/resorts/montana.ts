@@ -370,7 +370,7 @@ const resorts: Resort[] = [
     season: {
       opens: '2026-11-27',
       closes: '2027-04-11',
-      note: 'Not announced yet. Typically opens the day after Thanksgiving and runs through the second Sunday in April; last season opened Dec 5.',
+      note: 'Opening day announced (Fri Nov 27), snow permitting. Closing isn’t posted yet; it’s usually the second Sunday in April.',
     },
     stats: {
       summitFt: 9416,
@@ -427,7 +427,7 @@ const resorts: Resort[] = [
       { name: 'Red Lodge Ales', what: 'Local brewery taproom in town.', url: 'https://www.redlodgeales.com/' },
     ],
     events: [
-      { name: 'Opening Day', kind: 'opening', date: '2026-11-27', when: 'Day after Thanksgiving (typical)', what: 'The usual target for the first chair, snow permitting.', url: 'https://www.redlodgemountain.com/events/', confirmed: false },
+      { name: 'Opening Day', kind: 'opening', date: '2026-11-27', when: 'Fri, Nov 27, 2026', what: 'The scheduled first chair of the season, snow permitting.', url: 'https://www.redlodgemountain.com/', confirmed: true },
       { name: 'Red Lodge Christmas Stroll', kind: 'christmas', date: '2026-12-05', when: 'First weekend of December (annual)', what: 'The town’s holiday weekend downtown.', url: 'https://redlodgechamber.org/annual-events/', confirmed: false },
       { name: 'Ski with Santa', kind: 'christmas', date: '2026-12-24', when: 'Dec 24, 10 am–1 pm (last year)', what: 'Santa skis the mountain on Christmas Eve morning.', url: 'https://www.redlodgemountain.com/events/', confirmed: false },
       { name: 'New Year’s Eve Après Party', kind: 'new-years', date: '2026-12-31', when: 'Dec 31 from 4 pm (last year)', what: 'Live music in the Bierstube, bonfires outside and s’mores.', url: 'https://www.redlodgemountain.com/events/', confirmed: false },

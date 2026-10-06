@@ -201,7 +201,7 @@ const resorts: Resort[] = [
     ],
     events: [
       { name: 'Opening Day', kind: 'opening', date: '2026-11-20', when: 'Fri, Nov 20', what: 'Scheduled start of the 2026-27 season.', url: 'https://www.purgatory.ski/mountain/lift-tickets/', confirmed: true },
-      { name: 'The Polar Express, Durango', kind: 'christmas', date: '2026-11-20', end: '2027-01-03', when: 'Select evenings, mid-Nov to early Jan (annual)', what: 'About 65 minutes on a steam train to the “North Pole” with cocoa and Santa. The railroad’s most popular event; December dates sell out first.', url: 'https://durangotrain.com/pod/the-polar-express/', confirmed: false },
+      { name: 'The Polar Express, Durango', kind: 'christmas', date: '2026-11-20', end: '2027-01-02', when: 'Select dates, Nov 20, 2026–Jan 2, 2027', what: 'About 65 minutes on a steam train to the “North Pole” with cocoa and Santa. The railroad’s most popular event; December dates sell out first.', url: 'https://durangotrain.com/events/the-polar-express-train-ride/', confirmed: true },
       { name: 'Shred With Santa', kind: 'christmas', date: '2026-12-23', when: 'Dec 23 (annual)', what: 'Santa skis around the mountain handing out gifts the day before Christmas Eve.', url: 'https://www.purgatory.ski/event/shred-with-santa/', confirmed: false },
       { name: 'New Year’s Eve Fireworks & Torchlight Parade', kind: 'new-years', date: '2026-12-31', when: 'Dec 31, about 6 pm (annual)', what: 'Purgatory’s traditional torchlight parade and fireworks over the base, with NYE dinners at Purgy’s that sell out early.', url: 'https://www.purgatory.ski/event/new-years-eve-fireworks-torchlight-parade/', confirmed: false },
       { name: 'Snowdown', kind: 'festival', date: '2027-01-29', end: '2027-02-07', when: 'Jan 29–Feb 7, 2027', what: 'Durango’s 10-day winter costume festival, themed “Chillin’ With My Villains,” with a light parade, follies shows and a ski parade at Purgatory.', url: 'https://snowdown.org/', confirmed: true },
@@ -327,7 +327,7 @@ const resorts: Resort[] = [
     ],
     events: [
       { name: 'Opening Day', kind: 'opening', date: '2026-11-20', when: 'Mid to late November (date not announced)', what: 'Monarch opens on natural snow, so the date follows the storms.', url: 'https://skimonarch.com/', confirmed: false },
-      { name: 'Christmas Mountain USA, Salida', kind: 'christmas', date: '2026-11-28', when: 'Saturday after Thanksgiving (annual)', what: 'Salida switches on a giant tree of lights on Tenderfoot Hill above town to start the holiday season.', confirmed: false },
+      { name: 'Christmas Mountain USA, Salida', kind: 'christmas', date: '2026-11-27', when: 'Day after Thanksgiving (annual)', what: 'Salida switches on a giant tree of lights on Tenderfoot Hill above town to start the holiday season.', confirmed: false },
     ],
     getting: { airport: 'Gunnison–Crested Butte Regional', code: 'GUC', driveMin: 50, from: [{ city: 'Denver', hours: 3 }, { city: 'Colorado Springs', hours: 2.5 }] },
     google: { rating: 4.7, url: cid('11274148545078138906'), asOf: ASOF },
