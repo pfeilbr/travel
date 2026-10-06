@@ -19,7 +19,7 @@ const resorts: Resort[] = [
     trailMapUrl: 'https://www.tremblant.ca/mountain-village/maps',
     webcamUrl: 'https://www.tremblant.ca/mountain-village/webcams',
     passes: ['ikon'],
-    season: { opens: '2026-11-26', closes: '2027-04-18', note: 'Targets late November; typical opening (Nov 27 in 2025). Usually skis into mid-April.' },
+    season: { opens: '2026-11-26', closes: '2027-04-18', note: 'Official 2026-27 dates: opening day Nov 26, 2026 and closing Apr 18, 2027, conditions permitting.' },
     stats: {
       summitFt: 2871, baseFt: 755, verticalFt: 2116, acres: 763, trails: 102, lifts: 14,
       snowfallIn: 156, longestRunMi: 3.7, snowmakingPct: 61,
@@ -50,8 +50,8 @@ const resorts: Resort[] = [
       { name: 'Central Tapas & Nightclub', what: 'Small plates and cocktails early, then the music goes up and it turns into a club.', url: 'https://www.tremblant.ca/things-to-do/dining/central-tapas-nightclub' },
     ],
     events: [
-      { name: 'Opening Day', kind: 'opening', date: '2026-11-26', when: 'Late November (Nov 27 in 2025)', what: '8 am kickoff at the Express Gondola with a red-carpet parade and entertainment.', url: 'https://www.tremblant.ca/things-to-do/events', confirmed: false },
-      { name: '24h Tremblant', kind: 'race', date: '2026-12-11', end: '2026-12-13', when: 'Mid-December (Dec 12–14 in 2025)', what: 'Hundreds of teams walk, run, ski or snowshoe in relay around the clock to raise money for children’s health.', url: 'https://www.24htremblant.com/en', confirmed: false },
+      { name: 'Opening Day', kind: 'opening', date: '2026-11-26', when: 'Nov 26, 2026, 8 am', what: '8 am kickoff at the Express Gondola with a red-carpet parade and entertainment.', url: 'https://www.tremblant.ca/things-to-do/events/ski-season-opening-day', confirmed: true },
+      { name: '24h Tremblant', kind: 'race', date: '2026-12-11', end: '2026-12-13', when: 'Dec 11–13, 2026', what: 'Hundreds of teams walk, run, ski or snowshoe in relay around the clock to raise money for children’s health.', url: 'https://www.24htremblant.com/en', confirmed: true },
       { name: 'Holiday Celebrations', kind: 'christmas', date: '2026-12-20', end: '2027-01-03', when: 'Dec 20–Jan 3 (2025-26 dates)', what: 'Daily fun at Place Saint-Bernard: carols, workshops, ice sculpting and snow hockey. On Dec 25 Santa and his elves parade up Rue des Remparts.', url: 'https://www.tremblant.ca/things-to-do/events', confirmed: false },
       { name: 'Luminosa', kind: 'music', date: '2026-12-19', end: '2027-01-03', when: 'Holiday weeks (Dec 19–Jan 3 in 2025-26)', what: 'Candlelit piano concerts in the small Saint-Bernard chapel. Seats are limited.', url: 'https://www.tremblant.ca/things-to-do/events', confirmed: false },
       { name: 'New Year’s Eve Party', kind: 'new-years', date: '2026-12-31', when: 'Dec 31 (annual)', what: 'Outdoor dance party at Place Saint-Bernard, a torchlight descent, a DJ countdown and a drone show at midnight; the village bars carry on late.', url: 'https://www.tremblant.ca/things-to-do/events', confirmed: false },
@@ -104,7 +104,7 @@ const resorts: Resort[] = [
     ],
     events: [
       { name: 'Opening weekend', kind: 'opening', date: '2026-11-28', when: 'Late November (typical)', what: 'The season starts when snowmaking allows; check the snow report.', url: 'https://mont-sainte-anne.com/en/alpine-skiing-snow-conditions/', confirmed: false },
-      { name: 'Quebec City German Christmas Market', kind: 'christmas', date: '2026-11-26', end: '2026-12-23', when: 'Late November to Dec 23 (annual)', what: 'Wooden stalls, mulled wine and crafts in Old Québec, 40 minutes away.', confirmed: false },
+      { name: 'Quebec City German Christmas Market', kind: 'christmas', date: '2026-11-19', end: '2026-12-23', when: 'Nov 19–Dec 23, 2026 (Thu–Sun, plus Dec 21–23)', what: 'Wooden stalls, mulled wine and crafts in Old Québec, 40 minutes away.', url: 'https://www.mnaq.ca/en/', confirmed: true },
       { name: 'Carnaval de Québec', kind: 'festival', date: '2027-02-05', end: '2027-02-14', when: 'Feb 5–14, 2027', what: 'Ten days of night parades, ice canoe races, snow sculptures and Bonhomme in Quebec City.', url: 'https://carnaval.qc.ca/en/', confirmed: true },
       { name: 'L’Évolution Express opens', kind: 'other', date: '2027-02-01', when: 'Planned for February 2027', what: 'A new high-speed six-seat bubble chair replaces L’Express du Sud and La Tortue.', url: 'https://mont-sainte-anne.com/mise-a-jour-travaux-a-la-montagne/', confirmed: false },
     ],
@@ -208,7 +208,7 @@ const resorts: Resort[] = [
     ],
     events: [
       { name: 'Opening day', kind: 'opening', date: '2026-12-04', when: 'Early December (typical)', what: 'The season starts once snowmaking covers the first trails.', url: 'https://ski-stoneham.com/en/skiing-riding/snow-report/snow-conditions/', confirmed: false },
-      { name: 'Quebec City German Christmas Market', kind: 'christmas', date: '2026-11-26', end: '2026-12-23', when: 'Late November to Dec 23 (annual)', what: 'Wooden stalls, mulled wine and crafts in Old Québec, 25 minutes away.', confirmed: false },
+      { name: 'Quebec City German Christmas Market', kind: 'christmas', date: '2026-11-19', end: '2026-12-23', when: 'Nov 19–Dec 23, 2026 (Thu–Sun, plus Dec 21–23)', what: 'Wooden stalls, mulled wine and crafts in Old Québec, 25 minutes away.', url: 'https://www.mnaq.ca/en/', confirmed: true },
       { name: 'Carnaval de Québec', kind: 'festival', date: '2027-02-05', end: '2027-02-14', when: 'Feb 5–14, 2027', what: 'Night parades, ice canoe races and Bonhomme in Quebec City.', url: 'https://carnaval.qc.ca/en/', confirmed: true },
     ],
     getting: { airport: 'Québec City Jean Lesage International', code: 'YQB', driveMin: 25, from: [{ city: 'Quebec City', hours: 0.5 }, { city: 'Montreal', hours: 2.75 }, { city: 'Boston', hours: 6.5 }] },
