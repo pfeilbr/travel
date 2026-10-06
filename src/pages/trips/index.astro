@@ -10,6 +10,7 @@ import { imagesFor } from '../../lib/images';
 import { dateRange } from '../../lib/format';
 import { url } from '../../lib/paths';
 const sorted = [...trips].sort((a, b) => b.start.localeCompare(a.start));
+const today = new Date().toISOString().slice(0, 10);
 ---
 <Layout title="Trips">
   <section class="container page">
@@ -23,7 +24,7 @@ const sorted = [...trips].sort((a, b) => b.start.localeCompare(a.start));
           <a class="trip" href={url(`trips/${t.slug}/`)}>
             {img ? <Image src={img.src} alt={img.alt} widths={[480, 800]} sizes="(max-width: 760px) 100vw, 400px" /> : <div class="fill"></div>}
             <div class="tb">
-              <span class="muted when"><Icon name="calendar" size={14} />{dateRange(t.start, t.end)}</span>
+              <span class="muted when"><Icon name="calendar" size={14} />{dateRange(t.start, t.end)}{t.end < today && <span class="past">Past</span>}</span>
               <h3>{t.title}</h3>
               <p class="muted">{t.options.length} places · top pick: {placeById[t.topPicks[0].placeId].name}</p>
             </div>
@@ -74,6 +75,7 @@ const sorted = [...trips].sort((a, b) => b.start.localeCompare(a.start));
   .trip :global(img), .fill { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: linear-gradient(135deg, var(--pine), #0f2a20); }
   .tb { padding: 16px 18px 18px; }
   .when { display: inline-flex; gap: 6px; align-items: center; font-size: 14px; }
+  .past { margin-left: 4px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--rule); font-size: 12px; }
   .tb h3 { margin: 6px 0 2px; font-size: 18px; }
   .tb p { margin: 0; font-size: 14px; }
   .plans { margin-top: 40px; padding-top: 8px; border-top: 1px solid var(--rule); }

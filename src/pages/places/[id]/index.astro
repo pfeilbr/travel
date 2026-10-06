@@ -167,9 +167,9 @@ const hero = images[0];
                   const c = option.available[k]!;
                   const open = c === 'available' || (typeof c === 'number' && c > 0);
                   return (
-                    <li class:list={{ closed: !open }}>
+                    <li class:list={{ closed: !open && c !== 'check' }}>
                       <Icon name={k} size={18} />
-                      <span>{LODGING_LABEL[k]}{typeof c === 'number' && c > 0 && <span class="muted"> · {c} open</span>}{!open && <span class="muted"> · none</span>}{c === 'available' && <span class="muted"> · open</span>}</span>
+                      <span>{LODGING_LABEL[k]}{typeof c === 'number' && c > 0 && <span class="muted"> · {c} open</span>}{!open && c !== 'check' && <span class="muted"> · none</span>}{c === 'check' && <span class="muted"> · check</span>}{c === 'available' && <span class="muted"> · open</span>}</span>
                       <b>{option.price[k] !== undefined ? money(option.price[k]!) : '—'}</b>
                     </li>
                   );

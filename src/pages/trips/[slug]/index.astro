@@ -13,6 +13,9 @@ export function getStaticPaths() {
 }
 const { trip } = Astro.props as { trip: Trip };
 const n = nights(trip.start, trip.end);
+// Evaluated at build time: a trip whose checkout date has passed is shown as a past snapshot.
+const latest = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0];
+const past = trip.end < new Date().toISOString().slice(0, 10);
 const checked = new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
 ---
 <Layout title={`${trip.title}: ${dateRange(trip.start, trip.end)}`} description={trip.blurb}>
@@ -26,6 +29,7 @@ const checked = new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US
       <span class="badge badge-pine"><Icon name="check" size={13} />Availability checked live {checked}</span>
     </div>
     <p class="muted blurb">{trip.blurb}</p>
+    {past && <p class="past-note">This trip has passed, so the availability below is a snapshot from {checked}.{latest.slug !== trip.slug && <> See <a href={url(`trips/${latest.slug}/`)}>{latest.title}</a> for the latest live check.</>}</p>}
   </section>
 
   <Explorer trip={trip} />
@@ -56,6 +60,7 @@ const checked = new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US
 
 <style>
   .trip-head { padding-top: 28px; padding-bottom: 12px; }
+  .past-note { margin: 12px 0 0; padding: 10px 14px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--rule); font-size: 14px; }
   .back { display: inline-flex; align-items: center; gap: 4px; font-size: 14px; color: var(--muted); text-decoration: none; margin-bottom: 10px; }
   .back:hover { color: var(--ink); }
   h1 { font-family: var(--font-display); font-weight: 700; margin-bottom: 12px; }
