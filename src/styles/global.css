@@ -118,7 +118,7 @@ p { margin: 0 0 1em; }
 .btn-outline:hover { background: var(--surface); }
 .btn-ghost { background: transparent; }
 .btn-ghost:hover { background: var(--surface); }
-.btn-block { width: 100%; }
+.btn-block { width: 100%; height: auto; min-height: 48px; padding-block: 10px; text-align: center; }
 .btn-sm { height: 36px; padding: 0 14px; font-size: 14px; border-radius: 8px; }
 
 /* Chips */
