@@ -1,0 +1,15 @@
+# Monthly, grouped updates (one PR per ecosystem) keep Actions minutes and PR noise low.
+# merge-bot-prs (pfeilbr/dotfiles) merges them once CI is green.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule: { interval: monthly }
+    groups:
+      npm: { patterns: ["*"] }
+    open-pull-requests-limit: 3
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: monthly }
+    groups:
+      actions: { patterns: ["*"] }
