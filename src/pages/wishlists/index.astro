@@ -13,7 +13,7 @@ import { url } from '../../lib/paths';
 const trip = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0];
 const optionFor = (id: string) => trip.options.find((o) => o.placeId === id);
 ---
-<Layout title="Wishlists">
+<Layout title="Wishlists" noindex>
   <section class="container wl" data-wl>
     <h1>Wishlists</h1>
 

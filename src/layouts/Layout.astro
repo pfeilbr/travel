@@ -9,8 +9,12 @@ interface Props {
   description?: string;
   image?: string;
   overlayHeader?: boolean;
+  /** Keep the page out of search results (404, account pages). */
+  noindex?: boolean;
+  /** schema.org JSON-LD for the page. */
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
-const { title, description = 'Trips, places and plans — camping, cabins and getaways, checked live.', image, overlayHeader = false } = Astro.props;
+const { title, description = 'Trips, places and plans — camping, cabins and getaways, checked live.', image, overlayHeader = false, noindex = false, jsonLd } = Astro.props;
 const fullTitle = title === 'Waypoint' ? title : `${title} · Waypoint`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -22,9 +26,15 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta property="og:site_name" content="Waypoint" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     {image && <meta property="og:image" content={new URL(image, Astro.site)} />}
+    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />}
     <meta name="theme-color" content="#e4572e" />
     <link rel="icon" href={import.meta.env.BASE_URL + 'favicon.svg'} type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
