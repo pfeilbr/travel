@@ -6,7 +6,7 @@ import Icon from '../components/Icon.astro';
 import { trips } from '../data/trips';
 import { places, placeById } from '../data/places';
 import { imagesFor } from '../lib/images';
-import { dateRange, hasRoof, latestTrip, tripIsPast } from '../lib/format';
+import { dateRange, hasRoof, isoToday, latestTrip, tripIsPast } from '../lib/format';
 import { url } from '../lib/paths';
 import { resorts, skiRegions } from '../data/ski';
 import { HOLIDAY_KINDS, eventsOf, sortResorts } from '../lib/ski';
@@ -14,6 +14,9 @@ import { pursuits, spotsFor } from '../data/outdoors';
 import { sortSpots } from '../lib/outdoors';
 import { ogImage } from '../lib/og';
 
+// Upstate color peaks late September to mid-October.
+const md = isoToday().slice(5);
+const foliageSub = md >= '09-20' && md <= '10-20' ? 'Peak color right now' : 'Best late Sep to mid-Oct';
 const trip = latestTrip(trips);
 const past = tripIsPast(trip);
 const heroImgs = imagesFor('hero');
@@ -43,7 +46,7 @@ const vibes = [
   { label: 'Waterfalls', sub: 'Gorges and cascades', q: 'do=waterfalls', img: imagesFor('watkins-glen')[0], icon: 'waterfalls' },
   { label: 'Fishing', sub: 'Lakes, rivers, salmon', q: 'do=fishing', img: imagesFor('selkirk-shores')[1] ?? imagesFor('selkirk-shores')[0], icon: 'fishing' },
   { label: 'Near nightlife', sub: 'Camp, then go out', q: 'do=nightlife', img: imagesFor('moreau-lake')[0], icon: 'nightlife' },
-  { label: 'Fall foliage', sub: 'Peak color right now', q: 'do=foliage', img: imagesFor('nicks-lake')[0], icon: 'foliage' },
+  { label: 'Fall foliage', sub: foliageSub, q: 'do=foliage', img: imagesFor('nicks-lake')[0], icon: 'foliage' },
 ];
 const og = await ogImage(hero?.src);
 ---
