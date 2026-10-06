@@ -8,7 +8,7 @@ import { resorts, skiGroups, skiRegions, skiRegionById } from '../../data/ski';
 import { trips } from '../../data/trips';
 import type { SkiActivity } from '../../data/ski/types';
 import { imagesFor } from '../../lib/images';
-import { ACTIVITY, EVENT_LABEL, HOLIDAY_KINDS, PASSES, PASS_LABEL, eventsOf, miles, plural, sortResorts } from '../../lib/ski';
+import { ACTIVITY, EVENT_LABEL, HOLIDAY_KINDS, PASSES, PASS_LABEL, eventsOf, miles, openingAnnounced, plural, sortResorts } from '../../lib/ski';
 import { url } from '../../lib/paths';
 
 const ranked = sortResorts(resorts, 'recommended');
@@ -32,6 +32,7 @@ const featured = (() => {
 const home = trips[0]?.origin ?? { name: 'Verona, NY', coords: [43.138, -75.571] as [number, number] };
 const nearHome = [...resorts].map((r) => ({ r, d: miles(home.coords, r.coords) })).filter((x) => x.d < 160).sort((a, b) => a.d - b.d).slice(0, 8).map((x) => x.r);
 const openingFirst = sortResorts(resorts.filter((r) => r.size !== 'local'), 'opening').slice(0, 8);
+const announced = resorts.filter(openingAnnounced).length;
 const biggest = sortResorts(resorts, 'vertical').slice(0, 8);
 const passCounts = PASSES.map((p) => ({ p, n: resorts.filter((r) => r.passes.includes(p)).length })).filter((x) => x.n > 0);
 const wants: SkiActivity[] = ['sleigh-rides', 'snowmobiling', 'ice-skating', 'scenic-lift', 'night-skiing', 'nightlife', 'tubing', 'dog-sledding', 'spa', 'hot-springs'];
@@ -130,7 +131,8 @@ const d = (iso: string) => new Date(iso + 'T12:00:00Z');
 
   <section class="container">
     <div class="sec-head"><h2>Opening first</h2><a href={url('ski/explore/?sort=opening')}>Show all</a></div>
-    <div class="rail">{openingFirst.map((r) => <ResortCard resort={r} badge={`Opens ${d(r.season.opens).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })}`} />)}</div>
+    <p class="muted small sub">{announced} of {resorts.length} resorts have announced opening day. “Targets” means a projected date until they do.</p>
+    <div class="rail">{openingFirst.map((r) => <ResortCard resort={r} badge={`${openingAnnounced(r) ? 'Opens' : 'Targets'} ${d(r.season.opens).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })}`} />)}</div>
   </section>
 
   <section class="container">
@@ -190,6 +192,7 @@ const d = (iso: string) => new Date(iso + 'T12:00:00Z');
   .sec-head h2 { margin: 0; display: inline-flex; align-items: center; gap: 10px; }
   .sec-head a { font-weight: 600; font-size: 15px; }
   .small { font-size: 13px; }
+  .sub { margin: -12px 0 16px; }
   .group + .group { margin-top: 28px; }
   .gname { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 12px; }
   .regions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }

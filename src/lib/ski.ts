@@ -61,6 +61,12 @@ export function seasonLine(s: Resort['season']): string {
   return `${shortDate(s.opens)} – ${shortDate(s.closes)}`;
 }
 
+/** True once the resort has posted this season's opening day (a confirmed opening event, or a season note saying so). */
+export function openingAnnounced(r: Pick<Resort, 'events' | 'season'>): boolean {
+  return r.events.some((e) => e.kind === 'opening' && e.confirmed)
+    || /^(projected )?opening day announced|^official 2026-27 dates|^announced by the resort/i.test(r.season.note ?? '');
+}
+
 /** Whole days from `today` to `iso` (negative once passed). */
 export function daysUntil(iso: string, today: string): number {
   return Math.round((day(iso).getTime() - day(today).getTime()) / 86_400_000);

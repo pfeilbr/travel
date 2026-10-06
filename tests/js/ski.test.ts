@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   batchSnowUrl, daysUntil, eventsOf, forecastUrl, inches, matchesSki, miles, nearest, noSkiFilters, parseSkiFilters,
   price, seasonLine, serializeSkiFilters, shortDate, snowTotals, sortResorts, wmo,
+  openingAnnounced,
 } from '../../src/lib/ski';
 import type { Resort } from '../../src/data/ski/types';
 
@@ -106,5 +107,14 @@ describe('open-meteo', () => {
   it('splits past and next snowfall around today', () => {
     const t = snowTotals({ time: ['2026-12-01', '2026-12-02', '2026-12-03', '2026-12-04'], snowfall_sum: [1.2, null, 3.04, 0.5] }, '2026-12-03');
     expect(t).toEqual({ past: 1.2, next: 3.5 });
+  });
+});
+
+describe('openingAnnounced', () => {
+  const ev = (confirmed: boolean) => ({ name: 'Opening day', kind: 'opening' as const, date: '2026-11-27', when: 'Nov 27', what: '', confirmed });
+  it('reads a confirmed opening event or an announced season note', () => {
+    expect(openingAnnounced({ events: [ev(true)], season: { opens: '2026-11-27', closes: '2027-04-04' } })).toBe(true);
+    expect(openingAnnounced({ events: [ev(false)], season: { opens: '2026-11-27', closes: '2027-04-04', note: 'Projected, not yet announced.' } })).toBe(false);
+    expect(openingAnnounced({ events: [], season: { opens: '2026-11-25', closes: '2027-04-11', note: 'Projected opening day announced (Wed Nov 25)' } })).toBe(true);
   });
 });
