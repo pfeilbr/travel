@@ -213,7 +213,7 @@ const resorts: Resort[] = [
       { name: 'Snake River Saloon', what: 'Long-running steakhouse and bar with live music on US-6.', url: 'https://www.snakeriversaloon.com/' },
     ],
     events: [
-      { name: 'New Year’s Eve fireworks', kind: 'new-years', date: '2026-12-31', when: 'Dec 31 (annual)', what: 'Keystone’s yearly fireworks show over the base area, a family-friendly way to ring in the new year.', confirmed: false },
+      { name: 'New Year’s Eve fireworks', kind: 'new-years', date: '2026-12-31', when: 'Thu, Dec 31, 7 pm', what: 'Fireworks and a torchlight parade over River Run gondola plaza, after music and night skiing from 4 to 7 pm. Free.', url: 'https://www.keystoneresort.com/explore-the-resort/activities-and-events/events-calendar.aspx', confirmed: true },
       { name: 'Springtastic Pond Skim', kind: 'pond-skim', date: '2027-04-03', when: 'Early April (annual)', what: 'Costumed skiers and riders try to skim across a slushy pond at the end of the season.', confirmed: false },
     ],
     getting: { airport: 'Denver International Airport', code: 'DEN', driveMin: 100, from: [{ city: 'Denver', hours: 1.5 }] },

@@ -148,8 +148,8 @@ const resorts: Resort[] = [
     ],
     events: [
       { name: 'Opening Day', kind: 'opening', date: '2026-11-20', when: 'Nov 20', what: 'Start of the 2026–27 season, conditions permitting.', url: `${NS}/`, confirmed: true },
-      { name: 'Winter Wonders', kind: 'christmas', date: '2026-12-19', end: '2027-01-03', when: 'Mid-Dec to early Jan (annual)', what: 'Daily holiday program in the Village: skating, s’mores by the fire pits and live music.', url: `${NS}/explore-the-resort/activities-and-events/events-calendar.aspx`, confirmed: false },
-      { name: 'New Year’s Eve in the Village', kind: 'new-years', date: '2026-12-31', when: 'Dec 31 (annual)', what: 'Winter Wonders wraps up with a New Year’s Eve celebration in the Village. Check the calendar for this year’s program.', url: `${NS}/explore-the-resort/activities-and-events/events-calendar.aspx`, confirmed: false },
+      { name: 'Winter Wonders', kind: 'christmas', date: '2026-12-18', end: '2027-01-03', when: 'Dec 18 (tree lighting) to Jan 3', what: 'Daily holiday program in the Village: skating, s’mores by the fire pits and live music.', url: `${NS}/explore-the-resort/activities-and-events/events-calendar.aspx`, confirmed: true },
+      { name: 'New Year’s Eve in the Village', kind: 'new-years', date: '2026-12-31', when: 'Thu, Dec 31', what: 'Northstar’s yearly New Year’s Eve party in the Village, with a live band on the Village stage and fireworks.', url: `${NS}/explore-the-resort/activities-and-events/events-calendar.aspx`, confirmed: true },
     ],
     getting: { airport: 'Reno-Tahoe International', code: 'RNO', driveMin: 50, from: [{ city: 'Sacramento', hours: 1.75 }, { city: 'San Francisco', hours: 3.5 }] },
     google: { rating: 4.5, url: cid('17368340445863941698'), asOf: ASOF },
