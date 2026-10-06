@@ -1,18 +1,16 @@
-import { readFileSync, readdirSync } from 'node:fs';
-import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { trips } from '../../src/data/trips';
 import { placeById } from '../../src/data/places';
 import { resorts } from '../../src/data/ski';
 import { spots } from '../../src/data/outdoors';
 import { nights, openTypes } from '../../src/lib/format';
+import imagesJson from '../../src/data/images.json';
 
-const credits = JSON.parse(readFileSync('src/data/images.json', 'utf8')) as Record<string, { file: string; license: string; author: string; sourceUrl: string }[]>;
+const credits = imagesJson as Record<string, { file: string; license: string; author: string; sourceUrl: string }[]>;
 
 describe('photos', () => {
-  const onDisk = readdirSync('src/assets/places', { withFileTypes: true })
-    .filter((d) => d.isDirectory())
-    .flatMap((d) => readdirSync(join('src/assets/places', d.name)).filter((f) => /\.(jpe?g|png|webp)$/i.test(f)).map((f) => `src/assets/places/${d.name}/${f}`));
+  // Keys only (not eager), so no image is loaded.
+  const onDisk = Object.keys(import.meta.glob('/src/assets/places/*/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG}')).map((f) => f.slice(1));
   const credited = Object.values(credits).flat();
 
   it('every photo in the repo is credited (no uncredited files)', () => {
