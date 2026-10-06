@@ -628,10 +628,10 @@ const resorts: Resort[] = [
         name: 'Mascot Day',
         kind: 'other',
         date: '2027-01-24',
-        when: 'Late January',
+        when: 'Sun Jan 24, 2027, 10 am–2 pm',
         what: 'Boris the Bear and Snowball the Snowtiger host mascots from around the state for photos.',
         url: 'https://www.patspeak.com/event/mascot-day/',
-        confirmed: false,
+        confirmed: true,
       },
       {
         name: 'Pond Skim',

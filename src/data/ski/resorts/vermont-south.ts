@@ -655,9 +655,9 @@ const resorts: Resort[] = [
     webcamUrl: 'https://www.stratton.com/the-mountain/webcams',
     passes: ['ikon'],
     season: {
-      opens: '2026-11-18',
+      opens: '2026-11-25',
       closes: '2027-04-11',
-      note: 'Projected, not yet announced. Last season ran Nov 28 to Apr 12.',
+      note: 'Projected opening day announced (Wed Nov 25, conditions permitting); closing not yet set, usually mid-April (Apr 12 last season).',
     },
     stats: {
       summitFt: 3875,
@@ -785,10 +785,10 @@ const resorts: Resort[] = [
         name: 'New Year’s Eve Celebration',
         kind: 'new-years',
         date: '2026-12-31',
-        when: 'Dec 31, evening (annual)',
+        when: 'Dec 31, 2026, from 5:30 pm; free fireworks in the base area',
         what: 'A buffet dinner and a late party with live music at Grizzly’s.',
         url: 'https://www.stratton.com/things-to-do/events/new-years-eve-celebration',
-        confirmed: false,
+        confirmed: true,
       },
       {
         name: 'Pond Skim',
@@ -1230,9 +1230,10 @@ const resorts: Resort[] = [
         kind: 'christmas',
         date: '2026-12-11',
         end: '2026-12-13',
-        when: 'A mid-December weekend (annual)',
+        when: 'Dec 11–13, 2026 (horse parade Dec 12)',
         what: 'Woodstock village’s holiday weekend, known for its horse parade, held in town 10 minutes from the hill.',
-        confirmed: false,
+        url: 'https://www.woodstockvt.com/woodstock-wassail-weekend/',
+        confirmed: true,
       },
       {
         name: 'Christmas Day skiing',

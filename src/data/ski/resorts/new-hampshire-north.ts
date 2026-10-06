@@ -141,10 +141,10 @@ const resorts: Resort[] = [
         name: 'Snowshoe & S’mores',
         kind: 'new-years',
         date: '2026-12-31',
-        when: 'Dec 31, 4 pm',
+        when: 'Dec 31, 2026, 4 pm',
         what: 'Ride the Kanc 8 up, snowshoe down to Camp III and toast marshmallows. A family option for New Year’s Eve.',
-        url: 'https://www.loonmtn.com/events/holiday-week-events',
-        confirmed: false,
+        url: 'https://www.loonmtn.com/events/snowshoe-smores',
+        confirmed: true,
       },
       {
         name: 'Bunyan’s Legendary Bash',

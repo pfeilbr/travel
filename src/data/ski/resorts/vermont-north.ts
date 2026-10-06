@@ -151,11 +151,12 @@ const resorts: Resort[] = [
       {
         name: 'A Traditional Christmas in Stowe',
         kind: 'christmas',
-        date: '2026-12-05',
+        date: '2026-12-04',
         end: '2026-12-06',
-        when: 'First weekend of December (annual)',
+        when: 'Dec 4–6, 2026',
         what: 'Village festival on Main Street: tree lightings, a children’s lantern parade, wagon rides, a holiday bazaar and visits with Santa.',
-        confirmed: false,
+        url: 'https://www.stowevibrancy.org/events/a-traditional-christmas-in-stowe/',
+        confirmed: true,
       },
       {
         name: 'Spruce Peak Lights Festival',
@@ -628,9 +629,10 @@ const resorts: Resort[] = [
         name: 'New Year’s Eve torchlight parade and fireworks',
         kind: 'new-years',
         date: '2026-12-31',
-        when: 'Dec 31 evening (annual)',
+        when: 'Dec 31, 2026, 7–7:30 pm',
         what: 'A torchlight parade down Spring Fling, then fireworks, best seen from the Lincoln Peak courtyard.',
-        confirmed: false,
+        url: 'https://www.sugarbush.com/things-to-do/events-calendar/new-years-eve-fireworks-and-torchlight-parade',
+        confirmed: true,
       },
     ],
     getting: {
