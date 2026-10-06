@@ -9,6 +9,7 @@ import type { SkiRegion } from '../../../data/ski/types';
 import { imagesFor } from '../../../lib/images';
 import { HOLIDAY_KINDS, PASSES, PASS_LABEL, eventsOf, ft, sortResorts } from '../../../lib/ski';
 import { url } from '../../../lib/paths';
+import { ogImage } from '../../../lib/og';
 
 export function getStaticPaths() {
   return skiRegions.map((region) => ({ params: { region: region.id }, props: { region } }));
@@ -21,8 +22,9 @@ const biggest = sortResorts(list, 'vertical')[0];
 const snowiest = sortResorts(list, 'snowfall')[0];
 const holidays = eventsOf(list, HOLIDAY_KINDS);
 const passCover = PASSES.map((p) => ({ p, names: list.filter((r) => r.passes.includes(p)).map((r) => r.name) })).filter((x) => x.names.length);
+const og = await ogImage(hero?.src);
 ---
-<Layout title={`Skiing in ${region.name}`} description={`${region.tagline}. ${region.blurb}`} image={hero?.src.src}>
+<Layout title={`Skiing in ${region.name}`} description={`${region.tagline}. ${region.blurb}`} image={og}>
   <section class="hero">
     {hero ? <Image class="hero-img" src={hero.src} alt={hero.alt} widths={[960, 1600]} sizes="100vw" loading="eager" /> : <div class="hero-img fallback"></div>}
     <div class="shade"></div>

@@ -12,6 +12,7 @@ import { resorts, skiRegions } from '../data/ski';
 import { HOLIDAY_KINDS, eventsOf, sortResorts } from '../lib/ski';
 import { pursuits, spotsFor } from '../data/outdoors';
 import { sortSpots } from '../lib/outdoors';
+import { ogImage } from '../lib/og';
 
 const trip = latestTrip(trips);
 const past = tripIsPast(trip);
@@ -44,8 +45,9 @@ const vibes = [
   { label: 'Near nightlife', sub: 'Camp, then go out', q: 'do=nightlife', img: imagesFor('moreau-lake')[0], icon: 'nightlife' },
   { label: 'Fall foliage', sub: 'Peak color right now', q: 'do=foliage', img: imagesFor('nicks-lake')[0], icon: 'foliage' },
 ];
+const og = await ogImage(hero?.src);
 ---
-<Layout title="Waypoint" overlayHeader description="Find your next night outside: cabins, campsites and glamping in Upstate New York, with availability checked live and real ratings." image={hero?.src.src}>
+<Layout title="Waypoint" overlayHeader description="Find your next night outside: cabins, campsites and glamping in Upstate New York, with availability checked live and real ratings." image={og}>
   <section class="hero">
     {hero ? <Image class="hero-img" src={hero.src} alt={hero.alt} widths={[960, 1600, 2400]} sizes="100vw" loading="eager" fetchpriority="high" /> : <div class="hero-img fallback"></div>}
     <div class="shade"></div>

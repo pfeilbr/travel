@@ -8,6 +8,7 @@ import { dateRange, latestTrip, nights, tripIsPast } from '../../../lib/format';
 import { url } from '../../../lib/paths';
 import { imagesFor } from '../../../lib/images';
 import type { Trip } from '../../../data/types';
+import { ogImage } from '../../../lib/og';
 
 export function getStaticPaths() {
   return trips.map((trip) => ({ params: { slug: trip.slug }, props: { trip } }));
@@ -18,8 +19,9 @@ const cover = imagesFor(trip.topPicks[0]?.placeId ?? '')[0];
 const latest = latestTrip(trips);
 const past = tripIsPast(trip);
 const checked = new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+const og = await ogImage(cover?.src);
 ---
-<Layout title={`${trip.title}: ${dateRange(trip.start, trip.end)}`} description={trip.blurb} image={cover?.src.src}>
+<Layout title={`${trip.title}: ${dateRange(trip.start, trip.end)}`} description={trip.blurb} image={og}>
   <section class="container trip-head">
     <a class="back" href={url('trips/')}><Icon name="chev-left" size={14} /> Trips</a>
     <h1>{trip.title}</h1>

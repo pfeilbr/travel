@@ -10,6 +10,7 @@ import type { SkiActivity } from '../../data/ski/types';
 import { imagesFor } from '../../lib/images';
 import { ACTIVITY, EVENT_LABEL, HOLIDAY_KINDS, PASSES, PASS_LABEL, eventsOf, miles, openingAnnounced, plural, sortResorts } from '../../lib/ski';
 import { url } from '../../lib/paths';
+import { ogImage } from '../../lib/og';
 
 const ranked = sortResorts(resorts, 'recommended');
 const heroImg = imagesFor('ski-hero')[0] ?? ranked.map((r) => imagesFor(r.id)[0]).find(Boolean);
@@ -39,8 +40,9 @@ const wants: SkiActivity[] = ['sleigh-rides', 'snowmobiling', 'ice-skating', 'sc
 const wantCounts = wants.map((a) => ({ a, n: resorts.filter((r) => r.activities.includes(a)).length })).filter((x) => x.n > 0);
 const liveRows = resorts.map((r) => ({ id: r.id, name: r.name, region: skiRegionById[r.region].short, href: url(`ski/resorts/${r.id}/`), lat: r.coords[0], lng: r.coords[1], elevationFt: Math.round((r.stats.summitFt + r.stats.baseFt) / 2) }));
 const d = (iso: string) => new Date(iso + 'T12:00:00Z');
+const og = await ogImage(heroImg?.src);
 ---
-<Layout title="Ski season 2026–27" overlayHeader description={`${resorts.length} ski resorts across Vermont, New Hampshire, New York, Pennsylvania, Utah, Colorado, Montana, California, Arizona, Québec and British Columbia, with live snow forecasts, lodging, things to do and holiday events.`} image={heroImg?.src.src}>
+<Layout title="Ski season 2026–27" overlayHeader description={`${resorts.length} ski resorts across Vermont, New Hampshire, New York, Pennsylvania, Utah, Colorado, Montana, California, Arizona, Québec and British Columbia, with live snow forecasts, lodging, things to do and holiday events.`} image={og}>
   <section class="hero">
     {heroImg ? <Image class="hero-img" src={heroImg.src} alt={heroImg.alt} widths={[960, 1600]} sizes="100vw" loading="eager" fetchpriority="high" /> : <div class="hero-img fallback"></div>}
     <div class="shade"></div>

@@ -15,6 +15,7 @@ import { EVENT_LABEL, miles, plural, shortDate } from '../../lib/ski';
 import { sortSpots } from '../../lib/outdoors';
 import { dateRange, isoToday, latestTrip } from '../../lib/format';
 import { url } from '../../lib/paths';
+import { ogImage } from '../../lib/og';
 
 export function getStaticPaths() {
   return pursuits.map((pursuit) => ({ params: { pursuit: pursuit.slug }, props: { pursuit } }));
@@ -37,8 +38,9 @@ const events = list.flatMap((spot) => spot.events.map((event) => ({ spot, event 
   .filter(({ event }) => (event.end ?? event.date) >= today)
   .sort((a, b) => a.event.date.localeCompare(b.event.date)).slice(0, 8);
 const d = (iso: string) => new Date(iso + 'T12:00:00Z');
+const og = await ogImage(heroImg?.src);
 ---
-<Layout title={p.name} overlayHeader description={`${p.tagline}. ${list.length} spots across ${regions.length} regions with photos, maps, prices, outfitters, where to stay and the live forecast.`} image={heroImg?.src.src}>
+<Layout title={p.name} overlayHeader description={`${p.tagline}. ${list.length} spots across ${regions.length} regions with photos, maps, prices, outfitters, where to stay and the live forecast.`} image={og}>
   <section class="hero">
     {heroImg ? <Image class="hero-img" src={heroImg.src} alt={heroImg.alt} widths={[960, 1600]} sizes="100vw" loading="eager" fetchpriority="high" /> : <div class:list={['hero-img', 'fallback', p.id]}></div>}
     <div class="shade"></div>
