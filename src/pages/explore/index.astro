@@ -3,16 +3,16 @@ import Layout from '../../layouts/Layout.astro';
 import Explorer from '../../components/Explorer.astro';
 import Icon from '../../components/Icon.astro';
 import { trips } from '../../data/trips';
-import { dateRange } from '../../lib/format';
+import { dateRange, latestTrip, tripIsPast } from '../../lib/format';
 import { url } from '../../lib/paths';
 
-const trip = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0];
+const trip = latestTrip(trips);
 ---
 <Layout title="Explore" description="Browse campgrounds, cabins and glamping with live availability, prices and Google ratings.">
   <section class="container head">
     <h1>Explore places</h1>
     <p class="muted">
-      <Icon name="calendar" size={15} /> Availability and prices for <a href={url(`trips/${trip.slug}/`)}>{dateRange(trip.start, trip.end)}</a>, checked live {new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}.
+      <Icon name="calendar" size={15} /> Availability and prices for <a href={url(`trips/${trip.slug}/`)}>{dateRange(trip.start, trip.end)}</a>, checked live {new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}.{tripIsPast(trip) && ' Those dates have passed, so treat it as a snapshot.'}
     </p>
   </section>
   <Explorer trip={trip} />

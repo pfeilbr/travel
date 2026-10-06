@@ -6,14 +6,15 @@ import Icon from '../components/Icon.astro';
 import { trips } from '../data/trips';
 import { places, placeById } from '../data/places';
 import { imagesFor } from '../lib/images';
-import { dateRange, hasRoof } from '../lib/format';
+import { dateRange, hasRoof, latestTrip, tripIsPast } from '../lib/format';
 import { url } from '../lib/paths';
 import { resorts, skiRegions } from '../data/ski';
 import { HOLIDAY_KINDS, eventsOf, sortResorts } from '../lib/ski';
 import { pursuits, spotsFor } from '../data/outdoors';
 import { sortSpots } from '../lib/outdoors';
 
-const trip = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0];
+const trip = latestTrip(trips);
+const past = tripIsPast(trip);
 const heroImgs = imagesFor('hero');
 const hero = heroImgs[0] ?? imagesFor('robert-h-treman')[0];
 const picks = trip.topPicks.map((p) => ({ place: placeById[p.placeId], option: trip.options.find((o) => o.placeId === p.placeId)! }));
@@ -49,7 +50,7 @@ const vibes = [
     {hero ? <Image class="hero-img" src={hero.src} alt={hero.alt} widths={[960, 1600, 2400]} sizes="100vw" loading="eager" fetchpriority="high" /> : <div class="hero-img fallback"></div>}
     <div class="shade"></div>
     <div class="container hero-inner">
-      <p class="eyebrow"><span class="dot"></span> Live availability · {dateRange(trip.start, trip.end)}</p>
+      <p class="eyebrow">{past ? <>Last live check · {dateRange(trip.start, trip.end)}</> : <><span class="dot"></span> Live availability · {dateRange(trip.start, trip.end)}</>}</p>
       <h1>Find your next<br />night outside.</h1>
       <p class="lede">Cabins, campsites and glamping across Upstate New York. We check availability live and show real ratings, so you can book in minutes.</p>
 

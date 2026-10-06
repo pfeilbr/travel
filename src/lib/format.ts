@@ -59,3 +59,23 @@ export function dateRange(start: string, end: string): string {
   const f = (s: string, o: Intl.DateTimeFormatOptions) => new Date(s + 'T12:00:00').toLocaleDateString('en-US', o);
   return `${f(start, { weekday: 'short', month: 'short', day: 'numeric' })} – ${f(end, { weekday: 'short', month: 'short', day: 'numeric' })}`;
 }
+
+/** Today's ISO date (UTC). Pages are static, so this is the build date; Pages rebuilds daily. */
+export function isoToday(): string {
+  return new Date().toISOString().slice(0, 10);
+}
+
+/** A trip is over once its checkout day arrives: the availability no longer helps anyone book. */
+export function tripIsPast(t: { end: string }, today = isoToday()): boolean {
+  return t.end <= today;
+}
+
+/** The most recently checked trip, which the home, explore and camping pages feature. */
+export function latestTrip<T extends { checkedAt: string }>(trips: T[]): T {
+  return [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0];
+}
+
+/** Camping is closed once the day after its last night (`seasonEnds`) has passed. */
+export function seasonOver(seasonEnds: string | undefined, today = isoToday()): boolean {
+  return !!seasonEnds && seasonEnds < today;
+}

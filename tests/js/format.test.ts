@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { availabilityLine, compact, dateRange, drive, hasRoof, lowestPrice, money, nights, openTypes } from '../../src/lib/format';
+import { availabilityLine, compact, dateRange, drive, hasRoof, isoToday, latestTrip, lowestPrice, money, nights, openTypes, seasonOver, tripIsPast } from '../../src/lib/format';
 import type { TripOption } from '../../src/data/types';
 
 const opt = (p: Partial<TripOption>): TripOption => ({ placeId: 'x', driveMin: 60, miles: 40, available: {}, price: {}, flags: [], notes: [], ...p });
@@ -36,5 +36,14 @@ describe('format', () => {
   it('counts nights and formats ranges', () => {
     expect(nights('2026-10-04', '2026-10-05')).toBe(1);
     expect(dateRange('2026-10-04', '2026-10-05')).toBe('Sun, Oct 4 – Mon, Oct 5');
+  });
+  it('knows when trips and seasons are over', () => {
+    expect(tripIsPast({ end: '2026-10-12' }, '2026-10-11')).toBe(false);
+    expect(tripIsPast({ end: '2026-10-12' }, '2026-10-12')).toBe(true);
+    expect(seasonOver('2026-10-11', '2026-10-11')).toBe(false);
+    expect(seasonOver('2026-10-11', '2026-10-12')).toBe(true);
+    expect(seasonOver(undefined, '2030-01-01')).toBe(false);
+    expect(latestTrip([{ checkedAt: '2026-10-01' }, { checkedAt: '2026-10-06' }]).checkedAt).toBe('2026-10-06');
+    expect(isoToday()).toMatch(/^\d{4}-\d{2}-\d{2}$/);
   });
 });

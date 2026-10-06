@@ -13,7 +13,7 @@ import { placeById } from '../../data/places';
 import { imagesFor } from '../../lib/images';
 import { EVENT_LABEL, miles, plural, shortDate } from '../../lib/ski';
 import { sortSpots } from '../../lib/outdoors';
-import { dateRange } from '../../lib/format';
+import { dateRange, isoToday, latestTrip } from '../../lib/format';
 import { url } from '../../lib/paths';
 
 export function getStaticPaths() {
@@ -28,11 +28,11 @@ const regions = skiRegions.filter((r) => list.some((s) => s.region === r.id));
 const regionImg = (id: string) => sortSpots(list.filter((s) => s.region === id), 'recommended').map((s) => imagesFor(s.id)[0]).find(Boolean);
 const count = (id: string) => list.filter((s) => s.region === id).length;
 
-const trip = p.id === 'camp' ? [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0] : undefined;
+const trip = p.id === 'camp' ? latestTrip(trips) : undefined;
 const home = trips[0]?.origin ?? { name: 'Verona, NY', coords: [43.138, -75.571] as [number, number] };
 const nearHome = list.map((s) => ({ s, d: miles(home.coords, s.coords) })).filter((x) => x.d < 180).sort((a, b) => a.d - b.d).slice(0, 8).map((x) => x.s);
 const destinations = ranked.filter((s) => s.size === 'major').slice(0, 8);
-const today = new Date().toISOString().slice(0, 10);
+const today = isoToday();
 const events = list.flatMap((spot) => spot.events.map((event) => ({ spot, event })))
   .filter(({ event }) => (event.end ?? event.date) >= today)
   .sort((a, b) => a.event.date.localeCompare(b.event.date)).slice(0, 8);

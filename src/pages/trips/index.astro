@@ -7,10 +7,9 @@ import { places, placeById } from '../../data/places';
 import { resorts, skiRegions } from '../../data/ski';
 import { pursuits, spots } from '../../data/outdoors';
 import { imagesFor } from '../../lib/images';
-import { dateRange } from '../../lib/format';
+import { dateRange, tripIsPast } from '../../lib/format';
 import { url } from '../../lib/paths';
 const sorted = [...trips].sort((a, b) => b.start.localeCompare(a.start));
-const today = new Date().toISOString().slice(0, 10);
 ---
 <Layout title="Trips">
   <section class="container page">
@@ -24,7 +23,7 @@ const today = new Date().toISOString().slice(0, 10);
           <a class="trip" href={url(`trips/${t.slug}/`)}>
             {img ? <Image src={img.src} alt={img.alt} widths={[480, 800]} sizes="(max-width: 760px) 100vw, 400px" /> : <div class="fill"></div>}
             <div class="tb">
-              <span class="muted when"><Icon name="calendar" size={14} />{dateRange(t.start, t.end)}{t.end < today && <span class="past">Past</span>}</span>
+              <span class="muted when"><Icon name="calendar" size={14} />{dateRange(t.start, t.end)}{tripIsPast(t) && <span class="past">Past</span>}</span>
               <h3>{t.title}</h3>
               <p class="muted">{t.options.length} places · top pick: {placeById[t.topPicks[0].placeId].name}</p>
             </div>

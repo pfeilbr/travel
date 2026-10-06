@@ -4,7 +4,7 @@ import Explorer from '../../../components/Explorer.astro';
 import Icon from '../../../components/Icon.astro';
 import { trips } from '../../../data/trips';
 import { placeById } from '../../../data/places';
-import { dateRange, nights } from '../../../lib/format';
+import { dateRange, latestTrip, nights, tripIsPast } from '../../../lib/format';
 import { url } from '../../../lib/paths';
 import { imagesFor } from '../../../lib/images';
 import type { Trip } from '../../../data/types';
@@ -15,9 +15,8 @@ export function getStaticPaths() {
 const { trip } = Astro.props as { trip: Trip };
 const n = nights(trip.start, trip.end);
 const cover = imagesFor(trip.topPicks[0]?.placeId ?? '')[0];
-// Evaluated at build time: a trip whose checkout date has passed is shown as a past snapshot.
-const latest = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0];
-const past = trip.end < new Date().toISOString().slice(0, 10);
+const latest = latestTrip(trips);
+const past = tripIsPast(trip);
 const checked = new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
 ---
 <Layout title={`${trip.title}: ${dateRange(trip.start, trip.end)}`} description={trip.blurb} image={cover?.src.src}>
