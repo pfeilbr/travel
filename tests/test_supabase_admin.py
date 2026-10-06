@@ -5,7 +5,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from supabase_admin import (  # noqa: E402
-    anon_key_from, auth_payload, migration_sql, parse_migration, pending_migrations, redacted,
+    anon_key_from, auth_payload, migration_sql, parse_migration, pending_migrations, redacted, shared_safe,
 )
 
 
@@ -53,6 +53,26 @@ class AnonKeyTest(unittest.TestCase):
         self.assertEqual(anon_key_from([{"name": "service_role", "api_key": "svc"}, {"type": "publishable", "api_key": "pub"}]), "pub")
         with self.assertRaises(LookupError):
             anon_key_from([{"name": "service_role", "api_key": "svc"}])
+
+
+class SharedSafeTest(unittest.TestCase):
+    CURRENT = {"site_url": "https://pfeilbr.github.io/travel/", "external_google_enabled": True,
+               "uri_allow_list": "https://pfeilbr.github.io/other/**,https://pfeilbr.github.io/travel/auth/callback/"}
+
+    def test_never_disables_providers_or_drops_other_apps(self):
+        b = shared_safe(self.CURRENT, auth_payload({}))  # no Google env: must not switch Google off
+        self.assertNotIn("external_google_enabled", b)
+        self.assertNotIn("external_apple_enabled", b)
+        urls = b["uri_allow_list"].split(",")
+        self.assertEqual(urls[0], "https://pfeilbr.github.io/other/**")
+        self.assertEqual(len(urls), len(set(urls)))
+        self.assertIn("http://localhost:4321/travel/auth/callback/", urls)
+        self.assertNotIn("site_url", b)
+
+    def test_enables_and_sets_site_url_when_absent(self):
+        b = shared_safe({}, auth_payload({"GOOGLE_CLIENT_ID": "id", "GOOGLE_CLIENT_SECRET": "s"}))
+        self.assertTrue(b["external_google_enabled"])
+        self.assertEqual(b["site_url"], "https://pfeilbr.github.io/travel/")
 
 
 class MigrateTest(unittest.TestCase):

@@ -2,7 +2,9 @@
 """Configure the hosted Supabase project from CI (deterministic, re-runnable).
 
 Subcommands
-  auth-config   PATCH the project's auth settings: site URL, redirect allow-list,
+  auth-config   Merge into the shared project's auth settings (add-only: redirect URLs are merged,
+                providers only switched on, an existing site URL kept). Prefer `app-platform add-app`.
+                Builds on: site URL, redirect allow-list,
                 email + magic link, and Google / Apple / custom SMTP when their
                 secrets are present (providers without secrets are left disabled).
   anon-key      Print the project's public anon (publishable) key, for the build.
@@ -131,6 +133,21 @@ def _request(method: str, path: str, token: str, body: dict | None = None):
         return json.loads(raw) if raw else None
 
 
+def shared_safe(current: dict, body: dict) -> dict:
+    """Make a PATCH safe for the shared app-platform project: only ever add.
+    Redirect URLs are merged into the existing allow-list, the site URL is kept if one is set,
+    and providers are only switched on (a missing secret never disables another app's sign-in)."""
+    out = {k: v for k, v in body.items() if not (k.startswith("external_") and k.endswith("_enabled") and v is False)}
+    existing = [u.strip() for u in (current.get("uri_allow_list") or "").split(",") if u.strip()]
+    for u in (body.get("uri_allow_list") or "").split(","):
+        if u.strip() and u.strip() not in existing:
+            existing.append(u.strip())
+    out["uri_allow_list"] = ",".join(existing)
+    if current.get("site_url"):
+        out.pop("site_url", None)
+    return out
+
+
 def main(argv: list[str]) -> int:
     if len(argv) < 2 or argv[1] not in ("auth-config", "anon-key", "migrate"):
         print(__doc__)
@@ -156,10 +173,10 @@ def main(argv: list[str]) -> int:
     if argv[1] == "anon-key":
         print(anon_key_from(_request("GET", f"/projects/{ref}/api-keys?reveal=true", token)))
         return 0
-    body = auth_payload(env)
+    body = shared_safe(_request("GET", f"/projects/{ref}/config/auth", token) or {}, auth_payload(env))
     _request("PATCH", f"/projects/{ref}/config/auth", token, body)
-    enabled = [p for p in ("email", "google", "apple") if p == "email" or body.get(f"external_{p}_enabled")]
-    print(f"auth config updated for {ref}: providers={','.join(enabled)} smtp={'custom' if 'smtp_host' in body else 'default'}")
+    enabled = [p for p in ("google", "apple") if body.get(f"external_{p}_enabled")]
+    print(f"auth config merged for {ref}: enabled={','.join(enabled) or 'none newly'} smtp={'custom' if 'smtp_host' in body else 'unchanged'}")
     return 0
 
 
