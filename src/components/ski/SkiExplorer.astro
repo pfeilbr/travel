@@ -66,7 +66,7 @@ const regionChips = region ? [] : skiRegions.filter((g) => resorts.some((r) => r
 
   <div class="split" data-split>
     <div class="list">
-      <p class="count"><span data-count aria-live="polite">{rows.length} resorts</span> <span class="muted live" data-live hidden><span class="pulse"></span>Live snow forecast</span></p>
+      <h2 class="count"><span data-count aria-live="polite">{rows.length} resorts</span> <span class="muted live" data-live hidden><span class="pulse"></span>Live snow forecast</span></h2>
       <div class="grid" data-grid>
         {rows.map((r, i) => <ResortCard resort={r} eager={i < 3} showRegion={!region} />)}
       </div>

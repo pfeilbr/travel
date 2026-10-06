@@ -296,8 +296,8 @@ const ld = placeLd(place, new URL(Astro.url.pathname, Astro.site), hero && new U
     const dark = document.documentElement.dataset.theme === 'dark' || (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
     const map = L.map(el, { scrollWheelZoom: false }).setView(ll, 13);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19, className: dark ? 'tiles-dark' : '' }).addTo(map);
-    L.circle(ll, { radius: 450, color: '#e4572e', weight: 2, fillOpacity: .15 }).addTo(map);
-    L.marker(ll, { icon: L.divIcon({ className: '', html: '<div style="width:44px;height:44px;border-radius:50%;background:#e4572e;display:grid;place-items:center;transform:translate(-50%,-50%);box-shadow:0 4px 12px rgba(0,0,0,.3)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 4 2.5 20h19zM12 4v16"/></svg></div>', iconSize: [0, 0] }) }).addTo(map);
+    L.circle(ll, { radius: 450, color: '#cf4720', weight: 2, fillOpacity: .15 }).addTo(map);
+    L.marker(ll, { icon: L.divIcon({ className: '', html: '<div style="width:44px;height:44px;border-radius:50%;background:#cf4720;display:grid;place-items:center;transform:translate(-50%,-50%);box-shadow:0 4px 12px rgba(0,0,0,.3)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 4 2.5 20h19zM12 4v16"/></svg></div>', iconSize: [0, 0] }) }).addTo(map);
   }
 </script>
 

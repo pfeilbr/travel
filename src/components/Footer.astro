@@ -4,31 +4,31 @@ import { url } from '../lib/paths';
 <footer class="site-footer">
   <div class="container cols">
     <div>
-      <h4>Camping</h4>
+      <h2 class="fh">Camping</h2>
       <a href={url('camping/')}>Campgrounds</a>
       <a href={url('explore/')}>Live availability</a>
       <a href={url('explore/?lodging=cabin')}>Cabins</a>
       <a href={url('explore/?lodging=glamping')}>Glamping</a>
     </div>
     <div>
-      <h4>Ski</h4>
+      <h2 class="fh">Ski</h2>
       <a href={url('ski/')}>Ski season 2026–27</a>
       <a href={url('ski/explore/')}>All ski resorts</a>
       <a href={url('ski/holidays/')}>Holidays on the mountain</a>
     </div>
     <div>
-      <h4>More outside</h4>
+      <h2 class="fh">More outside</h2>
       <a href={url('bike/')}>Mountain biking</a>
       <a href={url('kayak/')}>Kayaking</a>
       <a href={url('pickleball/')}>Pickleball</a>
     </div>
     <div>
-      <h4>Plan</h4>
+      <h2 class="fh">Plan</h2>
       <a href={url('trips/')}>Trips</a>
       <a href={url('wishlists/')}>Wishlists</a>
     </div>
     <div>
-      <h4>About</h4>
+      <h2 class="fh">About</h2>
       <a href="https://github.com/pfeilbr/travel">Source on GitHub</a>
       <a href={url('credits/')}>Photo credits</a>
     </div>
@@ -40,7 +40,7 @@ import { url } from '../lib/paths';
 <style>
   .site-footer { margin-top: 96px; background: var(--surface); border-top: 1px solid var(--rule); font-size: 14px; }
   .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; padding-top: 48px; padding-bottom: 32px; }
-  h4 { margin: 0 0 12px; font-size: 14px; }
+  .fh { margin: 0 0 12px; font-size: 14px; }
   a { display: block; text-decoration: none; color: var(--ink-2); padding: 4px 0; }
   a:hover { text-decoration: underline; }
   .legal { border-top: 1px solid var(--rule); padding-top: 20px; padding-bottom: 28px; color: var(--muted); }

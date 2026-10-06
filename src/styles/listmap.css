@@ -10,7 +10,7 @@
 .lm .split.no-map { grid-template-columns: 1fr; }
 .lm .split.no-map .map-pane { display: none; }
 .lm .list { padding: 20px var(--gutter) 40px; }
-.lm .count { font-weight: 600; margin: 0 0 16px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.lm .count { font-size: 16px; line-height: 1.5; letter-spacing: 0; font-weight: 600; margin: 0 0 16px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
 .lm .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 36px 24px; }
 .lm .split.no-map .grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
 .lm .grid > .card.hl .media { box-shadow: 0 0 0 3px var(--ink); }

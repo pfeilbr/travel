@@ -63,7 +63,7 @@ const featureChips = p.features.filter((f) => spots.some((s) => s.features.inclu
 
   <div class="split" data-split>
     <div class="list">
-      <p class="count"><span data-count aria-live="polite">{rows.length} {rows.length === 1 ? p.noun[0] : p.noun[1]}</span></p>
+      <h2 class="count"><span data-count aria-live="polite">{rows.length} {rows.length === 1 ? p.noun[0] : p.noun[1]}</span></h2>
       <div class="grid" data-grid>
         {rows.map((s, i) => <SpotCard spot={s} eager={i < 3} />)}
       </div>

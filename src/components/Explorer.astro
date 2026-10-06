@@ -72,7 +72,7 @@ const chips = {
 
   <div class="split" data-split>
     <div class="list container-ish">
-      <p class="count" data-count aria-live="polite">{rows.length} places</p>
+      <h2 class="count" data-count aria-live="polite">{rows.length} places</h2>
       <div class="grid" data-grid>
         {rows.map((r, i) => <PlaceCard place={r.place} option={r.option} badge={picks.includes(r.place.id) ? `Top pick #${picks.indexOf(r.place.id) + 1}` : undefined} eager={i < 3} />)}
       </div>
@@ -102,7 +102,7 @@ const chips = {
   .split.no-map { grid-template-columns: 1fr; }
   .split.no-map .map-pane { display: none; }
   .list { padding: 20px var(--gutter) 40px; }
-  .count { font-weight: 600; margin: 0 0 16px; }
+  .count { font-size: 16px; line-height: 1.5; letter-spacing: 0; font-weight: 600; margin: 0 0 16px; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 36px 24px; }
   .split.no-map .grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
   .grid > :global(.card.hl) :global(.media) { box-shadow: 0 0 0 3px var(--ink); }

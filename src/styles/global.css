@@ -8,9 +8,10 @@
   --muted: #6a6a6a;
   --rule: #e6e6e6;
   --rule-strong: #c9c9c9;
-  --accent: #e4572e;          /* ember */
+  --accent: #cf4720;          /* ember; white text on it passes WCAG AA (4.6:1) */
   --accent-ink: #ffffff;
-  --accent-hover: #c9431d;
+  --accent-hover: #b23a16;
+  --accent-text: #b23a16;     /* accent-colored text on tinted backgrounds */
   --pine: #1f6f50;
   --pine-soft: #e3f1ea;
   --gold: #f5a524;
@@ -45,6 +46,7 @@
     --accent: #ff7a50;
     --accent-ink: #1a0d08;
     --accent-hover: #ff9370;
+    --accent-text: #ff7a50;
     --pine: #5cc597;
     --pine-soft: #183026;
     --snow: #5296ea;
@@ -67,6 +69,7 @@
   --accent: #ff7a50;
   --accent-ink: #1a0d08;
   --accent-hover: #ff9370;
+  --accent-text: #ff7a50;
   --pine: #5cc597;
   --pine-soft: #183026;
   --snow: #5296ea;
