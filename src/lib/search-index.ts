@@ -2,10 +2,13 @@
 import { places } from '../data/places';
 import { resorts, skiRegionById } from '../data/ski';
 import { pursuitById, spots } from '../data/outdoors';
+import { trips } from '../data/trips';
+import { dateRange } from './format';
 import type { Doc } from './search';
 
 export function buildIndex(): Doc[] {
   return [
+    ...trips.map((t) => ({ t: 'Live check', n: t.title, s: `${dateRange(t.start, t.end)} · from ${t.origin.name}`, u: `trips/${t.slug}/`, k: `${t.blurb} trip availability` })),
     ...places.map((p) => ({ t: p.kind, n: p.name, s: `${p.town} · ${p.region}`, u: `places/${p.id}/`, k: `${p.tagline} ${p.lodging.join(' ')} ${p.activities.join(' ')} new york camping` })),
     ...resorts.map((r) => {
       const g = skiRegionById[r.region];

@@ -16,6 +16,7 @@ describe('search', () => {
     expect(search(index, 'okemo')[0].n).toMatch(/Okemo/);
     expect(search(index, 'watkins glen')[0].u).toBe('places/watkins-glen/');
     expect(search(index, 'tremblant ski').every((d) => d.t === 'Ski resort')).toBe(true);
+    expect(search(index, 'last weekend')[0].u).toBe('trips/2026-10-17-last-weekend/');
     expect(search(index, 'zzzz no such place')).toEqual([]);
     expect(search(index, '   ')).toEqual([]);
   });
