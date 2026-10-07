@@ -73,6 +73,16 @@ export function seasonText(s: Spot['season']): string {
   return s.from === s.to ? s.from : `${s.from} – ${s.to}`;
 }
 
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+/** Whether a spot is in season in a given month (0-11): true/false, or null when the season text isn't month names. */
+export function inSeason(s: Spot['season'], month: number): boolean | null {
+  if (/year/i.test(s.from)) return true;
+  const a = MONTHS.indexOf(s.from.slice(0, 3)), b = MONTHS.indexOf(s.to.slice(0, 3));
+  if (a < 0 || b < 0) return null;
+  return a <= b ? month >= a && month <= b : month >= a || month <= b; // wraps the new year (Nov–Mar)
+}
+
 /** "$45 day ticket", "Free drop-in", "C$38 site/night". */
 export function priceText(p: NonNullable<Spot['price']>, currency: 'USD' | 'CAD' = 'USD'): string {
   if (p.from === 0) return `Free ${p.unit}`.trim();

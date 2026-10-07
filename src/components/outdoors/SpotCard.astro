@@ -5,7 +5,7 @@ import type { Spot } from '../../data/outdoors/types';
 import { pursuitById } from '../../data/outdoors/pursuits';
 import { skiRegionById } from '../../data/ski/regions';
 import { imagesFor } from '../../lib/images';
-import { priceText, seasonText } from '../../lib/outdoors';
+import { inSeason, priceText, seasonText } from '../../lib/outdoors';
 import { url } from '../../lib/paths';
 
 interface Props { spot: Spot; badge?: string; eager?: boolean; showRegion?: boolean; showPursuit?: boolean }
@@ -48,7 +48,7 @@ const fact = s.facts[0];
       {s.google && <span class="rating" title={`${s.google.rating} on Google`}><Icon name="star" size={13} />{s.google.rating.toFixed(1)}</span>}
     </div>
     <p class="muted line">{s.kind} · {s.area}{showRegion && <> · {region.short}</>}</p>
-    <p class="muted line">{fact ? `${fact.label}: ${fact.value}` : s.tagline} · {seasonText(s.season)}</p>
+    <p class="muted line">{fact ? `${fact.label}: ${fact.value}` : s.tagline} · {seasonText(s.season)}{inSeason(s.season, new Date().getUTCMonth()) === false && ' (off season)'}</p>
     {s.price && <p class="price"><strong>{priceText(s.price, region.currency)}</strong></p>}
   </a>
 </article>

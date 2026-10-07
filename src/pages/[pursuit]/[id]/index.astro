@@ -15,7 +15,7 @@ import { places } from '../../../data/places';
 import type { LodgeKind, ThingKind } from '../../../data/ski/types';
 import { imagesFor } from '../../../lib/images';
 import { ACTIVITY, EVENT_ICON, EVENT_LABEL, eventIsPast, miles, price as money, shortDate, upcomingFirst } from '../../../lib/ski';
-import { SPOT_SIZE_LABEL, priceText, seasonText } from '../../../lib/outdoors';
+import { SPOT_SIZE_LABEL, inSeason, priceText, seasonText } from '../../../lib/outdoors';
 import { drive, isoToday } from '../../../lib/format';
 import { url } from '../../../lib/paths';
 import { spotLd } from '../../../lib/jsonld';
@@ -39,6 +39,7 @@ const lodging = [...s.lodging].sort((a, b) => LODGE_ORDER.indexOf(a.kind) - LODG
 const THING_ICON = (k: ThingKind) => (k in ACTIVITY ? ACTIVITY[k as keyof typeof ACTIVITY].icon : ({ eat: 'restaurants', drink: 'nightlife', shop: 'bag', museum: 'history', other: 'pin' } as Record<string, string>)[k]);
 const LEVEL: Record<string, string> = { beginner: 'Beginner', intermediate: 'Intermediate', advanced: 'Advanced', expert: 'Expert' };
 const today = isoToday();
+const nowInSeason = inSeason(s.season, Number(today.slice(5, 7)) - 1);
 const events = upcomingFirst(s.events, today);
 
 // Nearby: the same activity, then everything else within ~40 miles (other activities, ski resorts, live-checked places).
@@ -80,7 +81,7 @@ const links = [
         </section>
 
         <section class="highlights">
-          <div class="hl"><Icon name="calendar" size={24} /><div><b>In season {seasonText(s.season)}</b><p class="muted">{s.season.note ?? p.season}</p></div></div>
+          <div class="hl"><Icon name="calendar" size={24} /><div><b>{nowInSeason === false ? `Off season now · ${seasonText(s.season)}` : nowInSeason ? `In season now · ${seasonText(s.season)}` : `In season ${seasonText(s.season)}`}</b><p class="muted">{s.season.note ?? p.season}</p></div></div>
           {s.price && <div class="hl"><Icon name="ticket" size={24} /><div><b>{priceText(s.price, cur)}</b>{s.price.note && <p class="muted">{s.price.note}</p>}</div></div>}
           {resort && <div class="hl"><Icon name="snowflake" size={24} /><div><b>At {resort.name}</b><p class="muted"><a href={url(`ski/resorts/${resort.id}/`)}>See the winter side: lifts, lodging and snow</a></p></div></div>}
         </section>
