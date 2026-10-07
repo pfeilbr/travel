@@ -80,3 +80,12 @@ export function spotLd(s: Spot, p: Pursuit, region: SkiRegion, page: URL, image?
     event: eventsLd(s.events, { name: s.name, town: s.town, coords: s.coords, region }),
   };
 }
+
+/** BreadcrumbList from [name, absolute URL] pairs, outermost first. */
+export function breadcrumbLd(items: [name: string, url: URL][]): Ld {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map(([name, u], i) => ({ '@type': 'ListItem', position: i + 1, name, item: u.href })),
+  };
+}

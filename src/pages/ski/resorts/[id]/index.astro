@@ -13,7 +13,7 @@ import { imagesFor } from '../../../../lib/images';
 import { ACTIVITY, EVENT_ICON, EVENT_LABEL, HOLIDAY_KINDS, PASS_LABEL, SIZE_LABEL, eventIsPast, ft, miles, nearest, price, seasonLine, seasonStatus, shortDate, upcomingFirst } from '../../../../lib/ski';
 import { url } from '../../../../lib/paths';
 import { drive, isoToday } from '../../../../lib/format';
-import { resortLd } from '../../../../lib/jsonld';
+import { breadcrumbLd, resortLd } from '../../../../lib/jsonld';
 import { ogImage } from '../../../../lib/og';
 
 export function getStaticPaths() {
@@ -52,8 +52,10 @@ const statRows = [
   ...(s.longestRunMi ? [{ icon: 'ski', k: 'Longest run', v: `${s.longestRunMi} mi` }] : []),
   ...(s.snowmakingPct ? [{ icon: 'cloud', k: 'Snowmaking', v: `${s.snowmakingPct}% of terrain` }] : []),
 ];
+const abs = (path: string) => new URL(url(path), Astro.site);
+const crumbs = breadcrumbLd([['Ski', abs('ski/')], [region.name, abs(`ski/${region.id}/`)], [r.name, abs(`ski/resorts/${r.id}/`)]]);
 ---
-<Layout title={`${r.name} ski guide`} description={`${r.tagline}. ${r.summary}`} image={og} jsonLd={ld}>
+<Layout title={`${r.name} ski guide`} description={`${r.tagline}. ${r.summary}`} image={og} jsonLd={[ld, crumbs]}>
   <div class="container page">
     <nav class="crumbs" aria-label="Breadcrumb"><a href={url('ski/')}>Ski</a><Icon name="chev-right" size={12} /><a href={url(`ski/${region.id}/`)}>{region.name}</a><Icon name="chev-right" size={12} /><span>{r.name}</span></nav>
     <header class="title">

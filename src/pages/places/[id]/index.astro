@@ -9,7 +9,7 @@ import type { Lodging, Place } from '../../../data/types';
 import { imagesFor } from '../../../lib/images';
 import { LODGING_LABEL, dateRange, drive, latestTrip, lowestPrice, money, seasonOver } from '../../../lib/format';
 import { url } from '../../../lib/paths';
-import { placeLd } from '../../../lib/jsonld';
+import { breadcrumbLd, placeLd } from '../../../lib/jsonld';
 import { ogImage } from '../../../lib/og';
 
 export function getStaticPaths() {
@@ -36,8 +36,10 @@ const lodgingOrder: Lodging[] = ['glamping', 'cabin', 'cottage', 'tent'];
 const hero = images[0];
 const og = await ogImage(hero?.src);
 const ld = placeLd(place, new URL(Astro.url.pathname, Astro.site), og ? new URL(og, Astro.site) : undefined);
+const abs = (path: string) => new URL(url(path), Astro.site);
+const crumbs = breadcrumbLd([['Waypoint', abs('')], ['Explore', abs('explore/')], [place.name, abs(`places/${place.id}/`)]]);
 ---
-<Layout title={place.name} description={`${place.tagline}. ${place.summary}`} image={og} jsonLd={ld}>
+<Layout title={place.name} description={`${place.tagline}. ${place.summary}`} image={og} jsonLd={[ld, crumbs]}>
   <div class="container page">
     <header class="title">
       <h1>{place.name}</h1>

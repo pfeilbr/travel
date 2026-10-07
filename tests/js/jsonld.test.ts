@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { placeLd, resortLd, spotLd } from '../../src/lib/jsonld';
+import { breadcrumbLd, placeLd, resortLd, spotLd } from '../../src/lib/jsonld';
 import { places } from '../../src/data/places';
 import { resorts, skiRegionById } from '../../src/data/ski';
 import { pursuitById, spots } from '../../src/data/outdoors';
@@ -28,5 +28,12 @@ describe('JSON-LD', () => {
       expect(ld['@type'], s.id).toBeTruthy();
       expect(ld.address).toMatchObject({ addressLocality: s.town });
     }
+  });
+  it('numbers breadcrumbs from 1', () => {
+    const ld = breadcrumbLd([['Ski', new URL('https://x.io/ski/')], ['Okemo', new URL('https://x.io/ski/resorts/okemo/')]]);
+    expect(ld.itemListElement).toEqual([
+      { '@type': 'ListItem', position: 1, name: 'Ski', item: 'https://x.io/ski/' },
+      { '@type': 'ListItem', position: 2, name: 'Okemo', item: 'https://x.io/ski/resorts/okemo/' },
+    ]);
   });
 });

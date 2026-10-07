@@ -7,6 +7,7 @@ import { placeById } from '../../../data/places';
 import { dateRange, latestTrip, nights, tripIsPast } from '../../../lib/format';
 import { url } from '../../../lib/paths';
 import { imagesFor } from '../../../lib/images';
+import { breadcrumbLd } from '../../../lib/jsonld';
 import type { Trip } from '../../../data/types';
 import { ogImage } from '../../../lib/og';
 
@@ -20,8 +21,10 @@ const latest = latestTrip(trips);
 const past = tripIsPast(trip);
 const checked = new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
 const og = await ogImage(cover?.src);
+const abs = (path: string) => new URL(url(path), Astro.site);
+const crumbs = breadcrumbLd([['Trips', abs('trips/')], [trip.title, abs(`trips/${trip.slug}/`)]]);
 ---
-<Layout title={`${trip.title}: ${dateRange(trip.start, trip.end)}`} description={trip.blurb} image={og}>
+<Layout title={`${trip.title}: ${dateRange(trip.start, trip.end)}`} description={trip.blurb} image={og} jsonLd={crumbs}>
   <section class="container trip-head">
     <a class="back" href={url('trips/')}><Icon name="chev-left" size={14} /> Trips</a>
     <h1>{trip.title}</h1>

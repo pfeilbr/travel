@@ -18,7 +18,7 @@ import { ACTIVITY, EVENT_ICON, EVENT_LABEL, eventIsPast, miles, price as money, 
 import { SPOT_SIZE_LABEL, inSeason, priceText, seasonText } from '../../../lib/outdoors';
 import { drive, isoToday } from '../../../lib/format';
 import { url } from '../../../lib/paths';
-import { spotLd } from '../../../lib/jsonld';
+import { breadcrumbLd, spotLd } from '../../../lib/jsonld';
 import { ogImage } from '../../../lib/og';
 
 export function getStaticPaths() {
@@ -55,8 +55,10 @@ const links = [
   ...(s.conditionsUrl ? [{ label: 'Current conditions', url: s.conditionsUrl, icon: 'info' }] : []),
   ...(s.mapUrl ? [{ label: 'Map', url: s.mapUrl, icon: 'map' }] : []),
 ];
+const abs = (path: string) => new URL(url(path), Astro.site);
+const crumbs = breadcrumbLd([[p.name, abs(`${p.slug}/`)], [s.name, abs(`${p.slug}/${s.id}/`)]]);
 ---
-<Layout title={s.name} description={`${s.tagline}. ${s.summary}`} image={og} jsonLd={ld}>
+<Layout title={s.name} description={`${s.tagline}. ${s.summary}`} image={og} jsonLd={[ld, crumbs]}>
   <div class="container page">
     <nav class="crumbs" aria-label="Breadcrumb"><a href={url(`${p.slug}/`)}>{p.name}</a><Icon name="chev-right" size={12} /><a href={url(`${p.slug}/?region=${region.id}#explore`)}>{region.name}</a><Icon name="chev-right" size={12} /><span>{s.name}</span></nav>
     <header class="title">
