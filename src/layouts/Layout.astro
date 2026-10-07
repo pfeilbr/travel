@@ -13,10 +13,12 @@ interface Props {
   overlayHeader?: boolean;
   /** Keep the page out of search results (404, account pages). */
   noindex?: boolean;
+  /** Path (under the base) of a matching .ics feed, advertised for calendar apps and feed readers. */
+  calendar?: string;
   /** schema.org JSON-LD for the page. */
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
-const { title, description = 'Trips, places and plans — camping, cabins and getaways, checked live.', image, overlayHeader = false, noindex = false, jsonLd } = Astro.props;
+const { title, description = 'Trips, places and plans — camping, cabins and getaways, checked live.', image, overlayHeader = false, noindex = false, jsonLd, calendar } = Astro.props;
 const fullTitle = title === 'Waypoint' ? title : `${title} · Waypoint`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 // Pages without their own photo share the homepage hero, so links never unfurl without an image.
@@ -43,6 +45,7 @@ const shareImage = image ?? (await ogImage((imagesFor('hero')[0] ?? imagesFor('r
     <link rel="icon" href={import.meta.env.BASE_URL + 'favicon.svg'} type="image/svg+xml" />
     <link rel="apple-touch-icon" href={import.meta.env.BASE_URL + 'apple-touch-icon.png'} />
     <link rel="manifest" href={import.meta.env.BASE_URL + 'manifest.webmanifest'} />
+    {calendar && <link rel="alternate" type="text/calendar" title={`${title} (calendar)`} href={import.meta.env.BASE_URL + calendar} />}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />

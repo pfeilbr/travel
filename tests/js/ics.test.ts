@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { calendar, fold } from '../../src/lib/ics';
+import { feedEvents } from '../../src/lib/calendar-feed';
+import { spots } from '../../src/data/outdoors';
 
 describe('ics', () => {
   it('writes all-day events with an exclusive end and escaped text', () => {
@@ -17,5 +19,11 @@ describe('ics', () => {
     const lines = fold('DESCRIPTION:' + 'é'.repeat(100)).split('\r\n');
     for (const l of lines) expect(new TextEncoder().encode(l).length).toBeLessThanOrEqual(75);
     expect(lines.slice(1).every((l) => l.startsWith(' '))).toBe(true);
+  });
+  it('feeds only confirmed events, with unique ids', () => {
+    const venues = spots.map((x) => ({ ...x, path: `x/${x.id}/` }));
+    const evs = feedEvents(venues, new URL('https://h.io/travel/'));
+    expect(evs.length).toBe(spots.flatMap((x) => x.events).filter((e) => e.confirmed).length);
+    expect(new Set(evs.map((e) => e.uid)).size).toBe(evs.length);
   });
 });

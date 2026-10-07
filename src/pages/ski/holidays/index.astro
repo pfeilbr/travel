@@ -18,7 +18,7 @@ const monthName = (k: string) => new Date(k + '-15T12:00:00Z').toLocaleDateStrin
 const months = [...new Set(rows.map((r) => monthKey(r.event.date)))];
 const d = (iso: string) => new Date(iso + 'T12:00:00Z');
 ---
-<Layout title="Holidays on the mountain" description={`Christmas Eve torchlight parades, New Year’s fireworks and the season’s big events at ${resorts.length} ski resorts.`}>
+<Layout title="Holidays on the mountain" calendar="ski/events.ics" description={`Christmas Eve torchlight parades, New Year’s fireworks and the season’s big events at ${resorts.length} ski resorts.`}>
   <RegionTabs active="holidays" />
   <section class="container page" data-holidays>
     <header class="head">
