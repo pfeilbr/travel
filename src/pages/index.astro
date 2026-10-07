@@ -19,6 +19,8 @@ const md = isoToday().slice(5);
 const foliageSub = md >= '09-20' && md <= '10-20' ? 'Peak color right now' : 'Best late Sep to mid-Oct';
 const trip = latestTrip(trips);
 const past = tripIsPast(trip);
+// Other live checks whose dates haven't passed, soonest first.
+const moreTrips = trips.filter((t) => t !== trip && !tripIsPast(t)).sort((a, b) => a.start.localeCompare(b.start));
 const heroImgs = imagesFor('hero');
 const hero = heroImgs[0] ?? imagesFor('robert-h-treman')[0];
 const picks = trip.topPicks.map((p) => ({ place: placeById[p.placeId], option: trip.options.find((o) => o.placeId === p.placeId)! }));
@@ -108,6 +110,9 @@ const og = await ogImage(hero?.src);
         <span class="btn btn-primary">See all options <Icon name="chev-right" size={16} /></span>
       </div>
     </a>
+    {moreTrips.length > 0 && (
+      <p class="more-trips"><Icon name="calendar" size={15} /> Also checked live: {moreTrips.map((t, i) => <>{i > 0 && ' · '}<a href={url(`trips/${t.slug}/`)}>{t.title} ({dateRange(t.start, t.end).split(' – ')[0]})</a></>)}</p>
+    )}
   </section>
 
   <section class="container">
@@ -216,6 +221,8 @@ const og = await ogImage(hero?.src);
   }
 
   .band { margin-top: -28px; position: relative; z-index: 2; }
+  .more-trips { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 14px 4px 0; font-size: 14px; color: var(--muted); }
+  .more-trips a { font-weight: 600; color: var(--ink); }
   .feature { display: grid; grid-template-columns: 1.2fr 1fr; gap: 0; border-radius: var(--radius-lg); overflow: hidden; background: var(--surface-2); box-shadow: var(--shadow-lg); text-decoration: none; border: 1px solid var(--rule); }
   .collage { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; gap: 4px; min-height: 340px; }
   .collage :global(img) { width: 100%; height: 100%; object-fit: cover; }

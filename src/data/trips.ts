@@ -154,7 +154,7 @@ export const trips: Trip[] = [
   },
   {
     slug: '2026-10-17-last-weekend',
-    title: 'The last weekend: Sat Oct 17',
+    title: 'The last weekend',
     blurb: 'One week after Columbus Day most state park campgrounds have closed. Checked live for Sat Oct 17: where you can still pitch a tent or rent a cabin within 2.5 hours of Verona.',
     start: '2026-10-17',
     end: '2026-10-18',
