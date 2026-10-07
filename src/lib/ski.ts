@@ -61,6 +61,17 @@ export function seasonLine(s: Resort['season']): string {
   return `${shortDate(s.opens)} – ${shortDate(s.closes)}`;
 }
 
+/** "Opens in 51 days", "Opens tomorrow", "Open now (target dates)", "Season over". Opening dates are targets, so
+ *  "open now" only means the target date has passed. */
+export function seasonStatus(r: Pick<Resort, 'season' | 'events'>, today: string): string {
+  const n = daysUntil(r.season.opens, today);
+  const verb = openingAnnounced(r) ? 'Opens' : 'Targets opening';
+  if (n > 1) return `${verb} in ${n} days`;
+  if (n === 1) return `${verb} tomorrow`;
+  if (n === 0) return `${verb} today`;
+  return daysUntil(r.season.closes, today) >= 0 ? 'In season (by target dates)' : 'Season over';
+}
+
 /** An event is over once its last day has passed. */
 export function eventIsPast(e: Pick<SkiEvent, 'date' | 'end'>, today: string): boolean {
   return (e.end ?? e.date) < today;

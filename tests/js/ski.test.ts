@@ -4,6 +4,7 @@ import {
   price, seasonLine, serializeSkiFilters, shortDate, snowTotals, sortResorts, wmo,
   openingAnnounced,
   eventIsPast, upcomingFirst,
+  seasonStatus,
 } from '../../src/lib/ski';
 import type { Resort } from '../../src/data/ski/types';
 
@@ -127,5 +128,15 @@ describe('past events', () => {
     expect(eventIsPast({ date: '2026-10-07' }, '2026-10-07')).toBe(false);
     const sorted = upcomingFirst([{ date: '2026-10-02' }, { date: '2026-12-31' }, { date: '2026-11-27' }], '2026-10-07');
     expect(sorted.map((e) => e.date)).toEqual(['2026-11-27', '2026-12-31', '2026-10-02']);
+  });
+});
+
+describe('seasonStatus', () => {
+  const r = (opens: string, closes: string, confirmed = false) => ({ season: { opens, closes }, events: confirmed ? [{ name: 'Opening day', kind: 'opening' as const, date: opens, when: '', what: '', confirmed }] : [] });
+  it('counts down to opening and says when the season is over', () => {
+    expect(seasonStatus(r('2026-11-27', '2027-04-04', true), '2026-10-07')).toBe('Opens in 51 days');
+    expect(seasonStatus(r('2026-11-27', '2027-04-04'), '2026-11-26')).toBe('Targets opening tomorrow');
+    expect(seasonStatus(r('2026-11-27', '2027-04-04'), '2027-01-10')).toBe('In season (by target dates)');
+    expect(seasonStatus(r('2026-11-27', '2027-04-04'), '2027-04-05')).toBe('Season over');
   });
 });

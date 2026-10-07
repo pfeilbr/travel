@@ -10,7 +10,7 @@ import { spots } from '../../../../data/outdoors';
 import { resorts, skiRegionById } from '../../../../data/ski';
 import type { LodgeKind, Resort, ThingKind } from '../../../../data/ski/types';
 import { imagesFor } from '../../../../lib/images';
-import { ACTIVITY, EVENT_ICON, EVENT_LABEL, HOLIDAY_KINDS, PASS_LABEL, SIZE_LABEL, eventIsPast, ft, miles, nearest, price, seasonLine, shortDate, upcomingFirst } from '../../../../lib/ski';
+import { ACTIVITY, EVENT_ICON, EVENT_LABEL, HOLIDAY_KINDS, PASS_LABEL, SIZE_LABEL, eventIsPast, ft, miles, nearest, price, seasonLine, seasonStatus, shortDate, upcomingFirst } from '../../../../lib/ski';
 import { url } from '../../../../lib/paths';
 import { drive, isoToday } from '../../../../lib/format';
 import { resortLd } from '../../../../lib/jsonld';
@@ -79,7 +79,7 @@ const statRows = [
 
         <section class="highlights">
           {r.passes.length > 0 && <div class="hl"><Icon name="ticket" size={24} /><div><b>On the {r.passes.map((p) => PASS_LABEL[p]).join(' and ')} pass{r.passes.length > 1 ? 'es' : ''}</b><p class="muted">For the 2026–27 season. Check blackout dates on holiday weeks.</p></div></div>}
-          <div class="hl"><Icon name="calendar" size={24} /><div><b>Season {seasonLine(r.season)}</b><p class="muted">{r.season.note ?? 'Target dates; weather decides.'}</p></div></div>
+          <div class="hl"><Icon name="calendar" size={24} /><div><b>Season {seasonLine(r.season)}</b><p class="status">{seasonStatus(r, today)}</p><p class="muted">{r.season.note ?? 'Target dates; weather decides.'}</p></div></div>
           {holiday.length > 0 && <div class="hl"><Icon name="tree" size={24} /><div><b>{holiday.length} Christmas and New Year’s event{holiday.length > 1 ? 's' : ''}</b><p class="muted"><a href="#events">{holiday.map((e) => e.name).slice(0, 2).join(', ')}{holiday.length > 2 ? ' and more' : ''}</a></p></div></div>}
         </section>
 
@@ -303,6 +303,7 @@ const statRows = [
   .offers li { display: flex; align-items: center; gap: 14px; }
   .events { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 14px; }
   .events li { display: flex; gap: 14px; padding: 16px; border: 1px solid var(--rule); border-radius: var(--radius); }
+  .status { margin: 2px 0 4px; font-weight: 600; color: var(--snow-ink); font-size: 14px; }
   .events li.past { border-style: dashed; background: none; }
   .events li.holiday { background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 7%, var(--surface-2)), var(--surface-2)); border-color: color-mix(in srgb, var(--accent) 25%, var(--rule)); }
   .ei { flex: none; width: 40px; height: 40px; border-radius: 10px; background: var(--surface); display: grid; place-items: center; }
