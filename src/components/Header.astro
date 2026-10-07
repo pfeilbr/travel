@@ -26,6 +26,7 @@ const active = modes.find((m) => m.match.some((p) => path.startsWith(url(p + '/'
         <a href={url('trips/')}>Trips</a>
         <a href={url('wishlists/')}>Wishlists</a>
       </nav>
+      <a class="search-btn" href={url('search/')} aria-label="Search"><Icon name="search" size={18} /></a>
       <div class="menu-wrap">
         <button class="user-btn" aria-haspopup="menu" aria-expanded="false" data-menu-btn aria-label="Account menu">
           <svg viewBox="0 0 32 32" width="16" height="16" aria-hidden="true"><path d="M2 16h28M2 24h28M2 8h28" stroke="currentColor" stroke-width="3" fill="none"/></svg>
@@ -45,6 +46,7 @@ const active = modes.find((m) => m.match.some((p) => path.startsWith(url(p + '/'
             <a role="menuitem" href={url('account/')}>Account</a>
           </div>
           <hr />
+          <a role="menuitem" href={url('search/')}>Search</a>
           <a role="menuitem" href={url('camping/')}>Camping</a>
           <a role="menuitem" href={url('explore/')}>Live availability</a>
           <a role="menuitem" href={url('ski/')}>Ski resorts</a>
@@ -77,6 +79,8 @@ const active = modes.find((m) => m.match.some((p) => path.startsWith(url(p + '/'
   .primary a:hover { background: color-mix(in srgb, currentColor 8%, transparent); }
   .right { display: flex; align-items: center; gap: 8px; }
   .menu-wrap { position: relative; }
+  .search-btn { flex: none; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: inherit; }
+  .search-btn:hover { background: color-mix(in srgb, currentColor 8%, transparent); }
   .user-btn { display: flex; align-items: center; gap: 10px; height: 44px; padding: 0 6px 0 14px; border-radius: var(--radius-pill); border: 1px solid var(--rule-strong); background: var(--surface-2); color: var(--ink); cursor: pointer; }
   .user-btn:hover { box-shadow: var(--shadow); }
   .avatar { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; color: var(--muted); overflow: hidden; }
@@ -100,6 +104,7 @@ const active = modes.find((m) => m.match.some((p) => path.startsWith(url(p + '/'
     .user-btn > svg { display: none; }
   }
   @media (max-width: 420px) {
+    .search-btn { display: none; } /* Search stays in the menu; the activity tabs need the room */
     .bar { gap: 4px; }
     .modes a { padding: 0 3px; font-size: 10px; letter-spacing: -0.01em; }
     .modes a[aria-current="page"]::after { left: 3px; right: 3px; }

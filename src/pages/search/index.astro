@@ -1,0 +1,71 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Icon from '../../components/Icon.astro';
+import { buildIndex } from '../../lib/search-index';
+import { url } from '../../lib/paths';
+
+const index = buildIndex();
+---
+<Layout title="Search" description="Search campgrounds, ski resorts, bike parks, paddling spots and pickleball courts." noindex>
+  <section class="container page" data-search-page data-base={url()}>
+    <h1>Search</h1>
+    <form class="box" role="search" data-form>
+      <Icon name="search" size={20} />
+      <label class="sr-only" for="q">Search places, resorts and spots</label>
+      <input id="q" name="q" type="search" autocomplete="off" placeholder="Try “Okemo”, “Finger Lakes cabins” or “Whistler”" autofocus />
+    </form>
+    <p class="muted count" data-count aria-live="polite">{index.length} campgrounds, ski resorts and outdoor spots.</p>
+    <ol class="results" data-results></ol>
+    <script type="application/json" data-index set:html={JSON.stringify(index).replace(/</g, '\\u003c')} />
+  </section>
+</Layout>
+
+<script>
+  import { search, type Doc } from '../../lib/search';
+
+  const root = document.querySelector<HTMLElement>('[data-search-page]')!;
+  const base = root.dataset.base!;
+  const index = JSON.parse(root.querySelector('[data-index]')!.textContent!) as Doc[];
+  const input = root.querySelector<HTMLInputElement>('#q')!;
+  const list = root.querySelector('[data-results]')!;
+  const count = root.querySelector('[data-count]')!;
+  const total = count.textContent;
+
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+
+  function render(q: string) {
+    const hits = search(index, q);
+    count.textContent = q.trim() ? `${hits.length === 60 ? '60+' : hits.length} result${hits.length === 1 ? '' : 's'} for “${q.trim()}”` : total;
+    list.innerHTML = hits.map((d) => `<li><a href="${base}${d.u}"><span class="t">${esc(d.t)}</span><b>${esc(d.n)}</b><span class="s">${esc(d.s)}</span></a></li>`).join('');
+  }
+
+  input.value = new URLSearchParams(location.search).get('q') ?? '';
+  render(input.value);
+  input.addEventListener('input', () => {
+    render(input.value);
+    const u = new URL(location.href);
+    if (input.value.trim()) u.searchParams.set('q', input.value.trim()); else u.searchParams.delete('q');
+    history.replaceState(null, '', u);
+  });
+  root.querySelector('[data-form]')!.addEventListener('submit', (e) => {
+    e.preventDefault();
+    list.querySelector('a')?.click();
+  });
+</script>
+
+<style>
+  .page { padding-top: 32px; padding-bottom: 64px; max-width: 760px; }
+  .box { display: flex; align-items: center; gap: 12px; padding: 0 18px; height: 56px; border: 1px solid var(--rule-strong); border-radius: var(--radius-pill); background: var(--surface-2); box-shadow: var(--shadow-sm); }
+  .box:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .box input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; color: var(--ink); font: inherit; font-size: 17px; }
+  .count { margin: 16px 4px; font-size: 14px; }
+  .results { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+  .results :global(a) { display: grid; grid-template-columns: auto 1fr; column-gap: 12px; align-items: baseline; padding: 12px 14px; border-radius: var(--radius); text-decoration: none; color: inherit; }
+  .results :global(a:hover) { background: var(--surface); }
+  .results :global(.t) { grid-row: span 2; font-size: 12px; font-weight: 600; color: var(--muted); min-width: 0; width: 120px; overflow-wrap: anywhere; }
+  .results :global(.s) { font-size: 14px; color: var(--muted); }
+  @media (max-width: 560px) {
+    .results :global(a) { grid-template-columns: 1fr; }
+    .results :global(.t) { grid-row: auto; width: auto; }
+  }
+</style>
