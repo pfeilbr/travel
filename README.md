@@ -27,8 +27,11 @@ with Supabase for user accounts and data.
   last week's snow at each mountain's elevation. It's a model forecast; each resort links its official snow report.
 - **Trips (`/trips/`):** dated live-availability checks of NY State Parks and DEC campgrounds (ReserveAmerica, Campspot),
   with per-type counts, base rates, cabin site numbers and gotchas. Once a trip's dates pass, its page says it's a snapshot.
-- **Calendar feed:** `/ski/events.ics` holds every confirmed 2026-27 ski event as an all-day event (subscribe to it);
-  dates that only follow past years stay out until the resort posts them.
+- **Calendar feeds:** `/ski/events.ics` plus `/bike/`, `/kayak/`, `/pickleball/` and `/camping/events.ics` hold every
+  confirmed 2026-27 event as an all-day event (subscribe to them); dates that only follow past years stay out until posted.
+- **Search (`/search/`):** every campground, resort and spot, matched in the browser (accents and punctuation ignored).
+- **Date-aware pages:** past trips and events are labeled and sorted last, resorts count down to opening day, spots say
+  whether they're in season, and campgrounds say when they've closed.
 - **Discoverability:** `sitemap.xml`, `robots.txt`, Open Graph/Twitter cards with 1200px images, schema.org JSON-LD
   (Campground, SkiResort, Event for confirmed dates), a 404 page and a web app manifest.
 - **Accounts (Supabase Auth):** email + password, magic link, Google and Apple. Users get wishlists (heart any place),
@@ -93,6 +96,7 @@ Push to `main`:
   [app-platform](https://github.com/pfeilbr/app-platform) project and are never changed from this repo's CI.
 - **Daily rebuild** (09:07 UTC): the Pages workflow also runs on a schedule so date-aware pages (past trips, closed
   campgrounds, upcoming events, opening-day badges) roll over without a push.
+- **Link check** (Mondays): `scripts/check_links.py` fetches every official URL in `src/data`; a dead one fails the run.
 - **Keep-alive** (daily): one public-key request to the database API so the free Supabase project, shared by all
   apps, never pauses after 7 idle days.
 

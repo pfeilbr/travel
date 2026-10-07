@@ -27,8 +27,14 @@ auth (email + password, magic link, Google, Apple) and data (wishlists, reviews,
   Hub heroes: an `hero-<slug>` entry in image_sources.json, else `Pursuit.hero` (a spot photo by title).
 - Google ratings: record `rating`, `reviews` count, `asOf` date and a `maps.google.com/?cid=` link. Review
   themes are **our paraphrase**, never verbatim review text.
-- Date-aware bits (past trips, closed campgrounds, upcoming-event rails) are computed at build time; the Pages
-  workflow rebuilds daily at 09:07 UTC so they roll over without a push.
+- Date-aware bits (past trips and events, closed campgrounds, opening countdowns, in-season badges, the featured trip)
+  are computed at build time with helpers in `src/lib/format.ts`, `ski.ts` and `outdoors.ts`; the Pages workflow
+  rebuilds daily at 09:07 UTC so they roll over without a push.
+- Discoverability: `sitemap.xml` (check_site fails if it drifts from the indexable pages; use `noindex` on private
+  pages), JSON-LD in `src/lib/jsonld.ts`, share images via `src/lib/og.ts`, `.ics` feeds via `src/lib/calendar-feed.ts`
+  (confirmed events only), and `/search/` built from `src/lib/search-index.ts`. New data types should join the index.
+- `scripts/check_links.py` checks every data URL (weekly in CI). HEAD-only 404s and proxy resets are false alarms;
+  confirm with a GET or a headless browser before replacing a link.
 - Client code talks to Supabase directly (`src/lib/supabase.ts`). Security is row-level security in
   `supabase/migrations`. The site must still build and work (signed out) with no Supabase env.
 - Schema changes go in new timestamped files in `supabase/migrations/`, plus pgTAP tests in `supabase/tests/`.
