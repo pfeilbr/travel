@@ -1,6 +1,6 @@
 import type { Place } from './types';
 
-const ASOF = '2026-10-01';
+const ASOF = '2026-10-07';
 const cid = (n: string) => `https://maps.google.com/?cid=${n}`;
 const ra = (slug: string, id: number) =>
   `https://newyorkstateparks.reserveamerica.com/camping/${slug}/r/campgroundDetails.do?contractCode=NY&parkId=${id}`;
@@ -30,7 +30,7 @@ export const places: Place[] = [
     summary: 'Two rare meromictic lakes with startling blue-green water, a loop trail around both, mountain-bike trails and trout fishing, plus Syracuse restaurants a short drive away.',
     activities: ['biking', 'fishing', 'hiking', 'kayaking', 'restaurants', 'foliage'],
     lodging: ['tent', 'cabin'], coords: [43.0582, -75.9715],
-    google: { rating: 4.8, reviews: 7892, url: cid('2048549156781711171'), asOf: ASOF },
+    google: { rating: 4.8, reviews: 7900, url: cid('2048549156781711171'), asOf: ASOF },
     reviewThemes: {
       loved: ['The water color is the headline, often described as unreal', 'The walk around Green Lake is easy and gorgeous', 'Kayak rentals and an extensive trail network'],
       watchFor: ['The beach and lake loop get crowded on nice days'],
@@ -43,7 +43,7 @@ export const places: Place[] = [
     summary: 'Campsites and cabins on a bluff over Lake Ontario, a short drive from the Salmon River, where the fall salmon run peaks in early October.',
     activities: ['fishing', 'swimming', 'hiking', 'kayaking'],
     lodging: ['tent', 'cabin'], coords: [43.5531, -76.2056], seasonEnds: '2026-10-24',
-    google: { rating: 4.5, reviews: 1333, url: cid('3028196866094056512'), asOf: ASOF },
+    google: { rating: 4.5, reviews: 1337, url: cid('3028196866094056512'), asOf: ASOF },
     reviewThemes: {
       loved: ['Campground and cabins were remodeled in 2025', 'Clean washrooms and helpful staff and rangers', 'Sunsets over the lake'],
       watchFor: ['Some campers say there are too few showers for the number of sites'],
@@ -56,7 +56,7 @@ export const places: Place[] = [
     summary: 'A quiet shoulder-season park on Otsego Lake with a beach, trails, the historic Hyde Hall mansion and covered bridge, and Cooperstown restaurants and breweries nearby.',
     activities: ['biking', 'hiking', 'history', 'swimming', 'restaurants', 'foliage'],
     lodging: ['tent'], coords: [42.7862, -74.8646], seasonEnds: '2026-10-12',
-    google: { rating: 4.7, reviews: 1599, url: cid('11762924941079340335'), asOf: ASOF },
+    google: { rating: 4.7, reviews: 1603, url: cid('11762924941079340335'), asOf: ASOF },
     reviewThemes: {
       loved: ['Spring and fall are nearly empty and peaceful', 'Well-kept grounds and clean bathrooms', 'A three-in-one visit: beach, Hyde Hall tour and trails'],
       watchFor: ['Noise from groups on busy summer days'],
@@ -69,7 +69,7 @@ export const places: Place[] = [
     summary: 'A quiet DEC campground on a no-motor lake with a loop trail, paddling and bike trails into Old Forge. Early October is prime leaf season up here.',
     activities: ['biking', 'hiking', 'kayaking', 'fishing', 'foliage'],
     lodging: ['tent'], coords: [43.6744, -74.9869], seasonEnds: '2026-10-11',
-    google: { rating: 4.8, reviews: 337, url: cid('9913899975042193144'), asOf: ASOF },
+    google: { rating: 4.8, reviews: 339, url: cid('9913899975042193144'), asOf: ASOF },
     reviewThemes: {
       loved: ['Reviewers call it one of the best-kept state campgrounds', 'An easy, beautiful hike around the lake', 'Kayaking in autumn, and you can bike into Old Forge'],
       watchFor: ['No motorboats, which most people count as a plus', 'Colder nights than the Finger Lakes'],
@@ -82,7 +82,7 @@ export const places: Place[] = [
     summary: 'A large park on Seneca Lake with a marina, lake-trout fishing, bike-friendly loops, a museum and Seneca Lake wineries close by.',
     activities: ['fishing', 'biking', 'swimming', 'wineries', 'history'],
     lodging: ['tent', 'cottage', 'cabin'], coords: [42.7231, -76.9015], seasonEnds: '2026-10-11',
-    google: { rating: 4.6, reviews: 1795, url: cid('12136717719055424683'), asOf: ASOF },
+    google: { rating: 4.6, reviews: 1798, url: cid('12136717719055424683'), asOf: ASOF },
     reviewThemes: {
       loved: ['Clean, spacious, fairly level sites', 'Good for biking, with eagles overhead', 'Beach, mini golf and a camp store'],
       watchFor: ['Sites are open with little shade', 'Many sites have no lake view', 'Power pedestals are dated, so bring a long extension cord'],
@@ -111,7 +111,7 @@ export const places: Place[] = [
     summary: 'The Enfield Glen gorge trail passes 12 waterfalls including 115-ft Lucifer Falls. Electric, heated cabins and wooded campsites sit minutes from Ithaca restaurants and bars.',
     activities: ['hiking', 'waterfalls', 'biking', 'fishing', 'restaurants', 'nightlife', 'foliage'],
     lodging: ['tent', 'cabin'], coords: [42.3993, -76.5695], seasonEnds: '2026-11-07',
-    google: { rating: 4.8, reviews: 4412, url: cid('15210717506554966108'), asOf: ASOF },
+    google: { rating: 4.8, reviews: 4417, url: cid('15210717506554966108'), asOf: ASOF },
     reviewThemes: {
       loved: ['Gorge and waterfalls around every corner', 'The 5-mile loop is a real workout but very doable', 'Cabins are clean, with electricity and a fridge'],
       watchFor: ['Cabins have no stove, microwave or running water', 'Some steep, slippery stretches on the trail'],
@@ -132,7 +132,7 @@ export const places: Place[] = [
     summary: 'Large, fairly private wooded sites, a boat launch and bass fishing on Keuka Lake, with the Keuka Lake wine trail at your doorstep.',
     activities: ['fishing', 'kayaking', 'swimming', 'wineries', 'foliage'],
     lodging: ['tent'], coords: [42.5911, -77.1307], seasonEnds: '2026-10-11',
-    google: { rating: 4.7, reviews: 1158, url: cid('3187840499731011468'), asOf: ASOF },
+    google: { rating: 4.7, reviews: 1161, url: cid('3187840499731011468'), asOf: ASOF },
     reviewThemes: {
       loved: ['Large sites with trees between them for privacy', 'Clean bathrooms and friendly staff', 'Lovely in the fall'],
       watchFor: ['Rocky beach, so bring water shoes', 'Some loops, notably Deer, get muddy for tents after rain'],
@@ -145,7 +145,7 @@ export const places: Place[] = [
     summary: 'New York’s most famous gorge, with 19 waterfalls along a stone-stair trail, a campground on the rim, and Watkins Glen village restaurants on Seneca Lake.',
     activities: ['hiking', 'waterfalls', 'restaurants', 'wineries', 'foliage'],
     lodging: ['tent', 'cabin'], coords: [42.3672, -76.9016], seasonEnds: '2026-10-11',
-    google: { rating: 4.8, reviews: 23963, url: cid('9161238026903819998'), asOf: ASOF },
+    google: { rating: 4.8, reviews: 24029, url: cid('9161238026903819998'), asOf: ASOF },
     reviewThemes: {
       loved: ['The gorge trail and waterfalls are spectacular', 'The suspension bridge and Rainbow Falls', 'It connects to the Finger Lakes Trail'],
       watchFor: ['Very busy, and the gorge trail can be one-way and crowded', 'Wet, slippery steps'],
@@ -158,7 +158,7 @@ export const places: Place[] = [
     summary: 'A lake with sandy beaches, a nature center and Hudson River ridge trails, plus Saratoga Springs restaurants and nightlife 15 minutes away.',
     activities: ['hiking', 'kayaking', 'fishing', 'swimming', 'nightlife', 'restaurants'],
     lodging: ['tent', 'cabin', 'cottage'], coords: [43.2389, -73.7301], seasonEnds: '2026-11-28',
-    google: { rating: 4.6, reviews: 2224, url: cid('7674911075965216121'), asOf: ASOF },
+    google: { rating: 4.6, reviews: 2228, url: cid('7674911075965216121'), asOf: ASOF },
     reviewThemes: {
       loved: ['Roomy sites with vegetation for privacy', 'Sandy beach, a nature center and lots of trails', 'Good value'],
       watchFor: ['No hookups at the sites', 'Some longtime visitors say the lake shows signs of neglect'],
