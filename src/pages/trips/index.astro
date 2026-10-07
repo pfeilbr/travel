@@ -9,7 +9,8 @@ import { pursuits, spots } from '../../data/outdoors';
 import { imagesFor } from '../../lib/images';
 import { dateRange, tripIsPast } from '../../lib/format';
 import { url } from '../../lib/paths';
-const sorted = [...trips].sort((a, b) => b.start.localeCompare(a.start));
+// Upcoming trips soonest first, then past ones newest first.
+const sorted = [...trips].sort((a, b) => Number(tripIsPast(a)) - Number(tripIsPast(b)) || (tripIsPast(a) ? b.start.localeCompare(a.start) : a.start.localeCompare(b.start)));
 ---
 <Layout title="Trips">
   <section class="container page">

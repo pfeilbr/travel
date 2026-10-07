@@ -7,7 +7,7 @@ import { places } from '../../../data/places';
 import { trips } from '../../../data/trips';
 import type { Lodging, Place } from '../../../data/types';
 import { imagesFor } from '../../../lib/images';
-import { LODGING_LABEL, dateRange, drive, lowestPrice, money, seasonOver } from '../../../lib/format';
+import { LODGING_LABEL, dateRange, drive, latestTrip, lowestPrice, money, seasonOver } from '../../../lib/format';
 import { url } from '../../../lib/paths';
 import { placeLd } from '../../../lib/jsonld';
 import { ogImage } from '../../../lib/og';
@@ -19,7 +19,8 @@ const { place } = Astro.props as { place: Place };
 const images = imagesFor(place.id);
 
 // Latest trip that includes this place supplies live availability.
-const trip = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt)).find((t) => t.options.some((o) => o.placeId === place.id));
+const withPlace = trips.filter((t) => t.options.some((o) => o.placeId === place.id));
+const trip = withPlace.length ? latestTrip(withPlace) : undefined;
 const option = trip?.options.find((o) => o.placeId === place.id);
 const from = option ? lowestPrice(option) : null;
 const checked = trip && new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });

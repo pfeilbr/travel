@@ -70,9 +70,11 @@ export function tripIsPast(t: { end: string }, today = isoToday()): boolean {
   return t.end <= today;
 }
 
-/** The most recently checked trip, which the home, explore and camping pages feature. */
-export function latestTrip<T extends { checkedAt: string }>(trips: T[]): T {
-  return [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0];
+/** The trip the home, explore and camping pages feature: the next upcoming one (most recently checked first,
+ *  then soonest), falling back to the most recently checked once every trip has passed. */
+export function latestTrip<T extends { checkedAt: string; start: string; end: string }>(trips: T[], today = isoToday()): T {
+  const byCheck = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt) || a.start.localeCompare(b.start));
+  return byCheck.find((t) => !tripIsPast(t, today)) ?? byCheck[0];
 }
 
 /** Camping is closed once the day after its last night (`seasonEnds`) has passed. */

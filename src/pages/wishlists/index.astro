@@ -8,9 +8,10 @@ import { resorts } from '../../data/ski';
 import Icon from '../../components/Icon.astro';
 import { places } from '../../data/places';
 import { trips } from '../../data/trips';
+import { latestTrip } from '../../lib/format';
 import { url } from '../../lib/paths';
 
-const trip = [...trips].sort((a, b) => b.checkedAt.localeCompare(a.checkedAt))[0];
+const trip = latestTrip(trips);
 const optionFor = (id: string) => trip.options.find((o) => o.placeId === id);
 ---
 <Layout title="Wishlists" noindex>

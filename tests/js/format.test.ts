@@ -43,7 +43,11 @@ describe('format', () => {
     expect(seasonOver('2026-10-11', '2026-10-11')).toBe(false);
     expect(seasonOver('2026-10-11', '2026-10-12')).toBe(true);
     expect(seasonOver(undefined, '2030-01-01')).toBe(false);
-    expect(latestTrip([{ checkedAt: '2026-10-01' }, { checkedAt: '2026-10-06' }]).checkedAt).toBe('2026-10-06');
+    const t = (start: string, end: string, checkedAt: string) => ({ start, end, checkedAt });
+    const trips = [t('2026-10-04', '2026-10-05', '2026-10-01'), t('2026-10-11', '2026-10-12', '2026-10-07'), t('2026-10-17', '2026-10-18', '2026-10-07')];
+    expect(latestTrip(trips, '2026-10-07').start).toBe('2026-10-11');
+    expect(latestTrip(trips, '2026-10-12').start).toBe('2026-10-17');
+    expect(latestTrip(trips, '2026-11-01').start).toBe('2026-10-11');
     expect(isoToday()).toMatch(/^\d{4}-\d{2}-\d{2}$/);
   });
 });
