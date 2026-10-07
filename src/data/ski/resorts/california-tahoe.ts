@@ -522,7 +522,7 @@ const resorts: Resort[] = [
     season: {
       opens: '2026-12-03',
       closes: '2027-04-04',
-      note: 'Typically opens the first or second week of December; the date is TBD. Usually closes late March to mid-April.',
+      note: 'Opening day announced (Thu Dec 3, conditions permitting). Closing isn’t set; usually late March to mid-April.',
     },
     stats: {
       summitFt: 8540, baseFt: 6700, verticalFt: 1840, acres: 655, trails: 40, lifts: 7,
@@ -549,7 +549,7 @@ const resorts: Resort[] = [
       { name: 'Crystal Bay Casino', what: 'Live music 10 minutes away.', url: crystalBay },
     ],
     events: [
-      { name: 'Opening Day', kind: 'opening', date: '2026-12-03', when: 'Early December (TBD)', what: 'Projected start of the season; the resort posts the date in mid-November.', url: `${DP}/event/projected-opening-day/`, confirmed: false },
+      { name: 'Opening Day', kind: 'opening', date: '2026-12-03', when: 'Thu Dec 3 (conditions permitting)', what: 'Planned start of the 2026-27 season.', url: `${DP}/news/whats-new-at-diamond-peak-ski-resort-for-the-2026-27-ski-season/`, confirmed: true },
       { name: 'Santa and Penguin Pete', kind: 'christmas', date: '2026-12-24', end: '2026-12-25', when: 'Dec 24–25, 10 am–noon', what: 'Santa and the resort mascot hand out treats on the slopes and in the base area.', url: `${DP}/event/santa-penguin-pete-visit-diamond-peak/`, confirmed: true },
       { name: 'Ullr Fest', kind: 'festival', date: '2027-01-29', when: 'Jan 29, 4–8 pm', what: 'Community party with a torchlight parade, bonfire, music and raffles for the ski team. Free entry.', url: `${DP}/event/ullr-fest/`, confirmed: true },
       { name: 'Luggi Foeger Uphill/Downhill Festival', kind: 'race', date: '2027-03-20', when: 'Mar 20', what: 'Ski mountaineering race and festival, up and down under your own power.', url: `${DP}/event/luggi-foeger-uphill-downhill-festival/`, confirmed: true },
