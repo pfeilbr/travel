@@ -267,7 +267,8 @@ const crumbs = breadcrumbLd([['Waypoint', abs('')], ['Explore', abs('explore/')]
   .dates span { display: block; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
   .avail { list-style: none; padding: 0; margin: 0 0 18px; display: grid; gap: 10px; }
   .avail li { display: grid; grid-template-columns: 22px 1fr auto; gap: 10px; align-items: center; font-size: 15px; }
-  .avail li.closed { opacity: .5; }
+  .avail li.closed { color: var(--muted); }
+  .avail li.closed b { font-weight: 500; }
   .fine { font-size: 13px; color: var(--muted); text-align: center; margin: 10px 0 0; }
   .checked { display: flex; gap: 6px; justify-content: center; align-items: center; color: var(--pine); }
   .trip-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 16px; font-size: 14px; color: var(--muted); }
