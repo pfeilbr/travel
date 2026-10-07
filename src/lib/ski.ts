@@ -61,6 +61,16 @@ export function seasonLine(s: Resort['season']): string {
   return `${shortDate(s.opens)} – ${shortDate(s.closes)}`;
 }
 
+/** An event is over once its last day has passed. */
+export function eventIsPast(e: Pick<SkiEvent, 'date' | 'end'>, today: string): boolean {
+  return (e.end ?? e.date) < today;
+}
+
+/** Upcoming events first (by date), then past ones. */
+export function upcomingFirst<T extends Pick<SkiEvent, 'date' | 'end'>>(events: T[], today: string): T[] {
+  return [...events].sort((a, b) => Number(eventIsPast(a, today)) - Number(eventIsPast(b, today)) || a.date.localeCompare(b.date));
+}
+
 /** True once the resort has posted this season's opening day (a confirmed opening event, or a season note saying so). */
 export function openingAnnounced(r: Pick<Resort, 'events' | 'season'>): boolean {
   return r.events.some((e) => e.kind === 'opening' && e.confirmed)

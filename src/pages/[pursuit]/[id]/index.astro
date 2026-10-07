@@ -14,9 +14,9 @@ import { skiRegionById } from '../../../data/ski/regions';
 import { places } from '../../../data/places';
 import type { LodgeKind, ThingKind } from '../../../data/ski/types';
 import { imagesFor } from '../../../lib/images';
-import { ACTIVITY, EVENT_ICON, EVENT_LABEL, miles, price as money, shortDate } from '../../../lib/ski';
+import { ACTIVITY, EVENT_ICON, EVENT_LABEL, eventIsPast, miles, price as money, shortDate, upcomingFirst } from '../../../lib/ski';
 import { SPOT_SIZE_LABEL, priceText, seasonText } from '../../../lib/outdoors';
-import { drive } from '../../../lib/format';
+import { drive, isoToday } from '../../../lib/format';
 import { url } from '../../../lib/paths';
 import { spotLd } from '../../../lib/jsonld';
 import { ogImage } from '../../../lib/og';
@@ -38,7 +38,8 @@ const LODGE_ORDER: LodgeKind[] = ['ski-in/ski-out', 'slopeside', 'base village',
 const lodging = [...s.lodging].sort((a, b) => LODGE_ORDER.indexOf(a.kind) - LODGE_ORDER.indexOf(b.kind));
 const THING_ICON = (k: ThingKind) => (k in ACTIVITY ? ACTIVITY[k as keyof typeof ACTIVITY].icon : ({ eat: 'restaurants', drink: 'nightlife', shop: 'bag', museum: 'history', other: 'pin' } as Record<string, string>)[k]);
 const LEVEL: Record<string, string> = { beginner: 'Beginner', intermediate: 'Intermediate', advanced: 'Advanced', expert: 'Expert' };
-const events = [...s.events].sort((a, b) => a.date.localeCompare(b.date));
+const today = isoToday();
+const events = upcomingFirst(s.events, today);
 
 // Nearby: the same activity, then everything else within ~40 miles (other activities, ski resorts, live-checked places).
 const R = 40;
@@ -123,10 +124,10 @@ const links = [
             <p class="muted">“Usually” means the date follows past years. Confirm before you go.</p>
             <ul class="events">
               {events.map((e) => (
-                <li>
+                <li class:list={{ past: eventIsPast(e, today) }}>
                   <span class="ei"><Icon name={EVENT_ICON[e.kind]} size={20} /></span>
                   <div>
-                    <div class="eh"><span class="kind">{EVENT_LABEL[e.kind]}</span><span class="date">{e.when}</span>{!e.confirmed && <span class="usually">Usually</span>}</div>
+                    <div class="eh"><span class="kind">{EVENT_LABEL[e.kind]}</span><span class="date">{e.when}</span>{eventIsPast(e, today) ? <span class="usually">Past</span> : !e.confirmed && <span class="usually">Usually</span>}</div>
                     <b>{e.url ? <a href={e.url} rel="noopener">{e.name}</a> : e.name}</b>
                     <p class="muted">{e.what}</p>
                   </div>
@@ -283,6 +284,7 @@ const links = [
   .offers { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
   .offers li { display: flex; align-items: center; gap: 14px; }
   .events { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 14px; }
+  .events li.past { border-style: dashed; background: none; }
   .events li { display: flex; gap: 14px; padding: 16px; border: 1px solid var(--rule); border-radius: var(--radius); }
   .ei { flex: none; width: 40px; height: 40px; border-radius: 10px; background: var(--surface); display: grid; place-items: center; }
   .eh { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12px; font-weight: 700; margin-bottom: 2px; }

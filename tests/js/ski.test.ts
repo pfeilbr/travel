@@ -3,6 +3,7 @@ import {
   batchSnowUrl, daysUntil, eventsOf, forecastUrl, inches, matchesSki, miles, nearest, noSkiFilters, parseSkiFilters,
   price, seasonLine, serializeSkiFilters, shortDate, snowTotals, sortResorts, wmo,
   openingAnnounced,
+  eventIsPast, upcomingFirst,
 } from '../../src/lib/ski';
 import type { Resort } from '../../src/data/ski/types';
 
@@ -116,5 +117,15 @@ describe('openingAnnounced', () => {
     expect(openingAnnounced({ events: [ev(true)], season: { opens: '2026-11-27', closes: '2027-04-04' } })).toBe(true);
     expect(openingAnnounced({ events: [ev(false)], season: { opens: '2026-11-27', closes: '2027-04-04', note: 'Projected, not yet announced.' } })).toBe(false);
     expect(openingAnnounced({ events: [], season: { opens: '2026-11-25', closes: '2027-04-11', note: 'Projected opening day announced (Wed Nov 25)' } })).toBe(true);
+  });
+});
+
+describe('past events', () => {
+  it('are over after their last day and sort after upcoming ones', () => {
+    expect(eventIsPast({ date: '2026-10-02' }, '2026-10-03')).toBe(true);
+    expect(eventIsPast({ date: '2026-10-02', end: '2026-10-18' }, '2026-10-07')).toBe(false);
+    expect(eventIsPast({ date: '2026-10-07' }, '2026-10-07')).toBe(false);
+    const sorted = upcomingFirst([{ date: '2026-10-02' }, { date: '2026-12-31' }, { date: '2026-11-27' }], '2026-10-07');
+    expect(sorted.map((e) => e.date)).toEqual(['2026-11-27', '2026-12-31', '2026-10-02']);
   });
 });

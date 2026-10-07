@@ -5,10 +5,12 @@ import Icon from '../../../components/Icon.astro';
 import RegionTabs from '../../../components/ski/RegionTabs.astro';
 import { resorts, skiRegionById, skiRegions } from '../../../data/ski';
 import { imagesFor } from '../../../lib/images';
-import { EVENT_ICON, EVENT_LABEL, eventsOf } from '../../../lib/ski';
+import { EVENT_ICON, EVENT_LABEL, eventIsPast, eventsOf } from '../../../lib/ski';
+import { isoToday } from '../../../lib/format';
 import { url } from '../../../lib/paths';
 
-const rows = eventsOf(resorts);
+// Past events drop off (the page rebuilds daily); the resort pages still list them.
+const rows = eventsOf(resorts).filter((r) => !eventIsPast(r.event, isoToday()));
 const holidayCount = rows.filter((r) => r.event.kind === 'christmas' || r.event.kind === 'new-years').length;
 const regionsWith = skiRegions.filter((g) => rows.some((r) => r.resort.region === g.id));
 const monthKey = (iso: string) => iso.slice(0, 7);
