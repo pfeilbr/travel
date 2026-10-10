@@ -38,6 +38,32 @@ export const places: Place[] = [
     booking: { label: 'ReserveAmerica', url: ra('green-lakes-state-park', 165) },
   },
   {
+    id: 'verona-beach-state-park', name: 'Verona Beach State Park', town: 'Verona Beach', region: 'Central New York', kind: 'State park',
+    tagline: 'Oneida Lake beach and sunsets 17 minutes from home',
+    summary: 'A sandy swimming beach and splash pad on the east shore of Oneida Lake, 47 electric campsites (11 on the water), 14 miles of flat woods-and-wetland trails, walleye fishing and a launch for kayaks, with Sylvan Beach next door and Turning Stone 15 minutes away.',
+    activities: ['swimming', 'fishing', 'hiking', 'biking', 'kayaking', 'nightlife', 'restaurants'],
+    lodging: ['tent'], coords: [43.1767, -75.7293], seasonEnds: '2026-10-12',
+    google: { rating: 4.6, reviews: 1449, url: cid('1924360593672905752'), asOf: '2026-10-10' },
+    reviewThemes: {
+      loved: ['The shallow, sandy beach and splash pad make it an easy family day', 'Sunsets over Oneida Lake', 'Flat, paved trails that anyone can walk or roll', 'Teddy’s Treats concession for fries and ice cream'],
+      watchFor: ['Algae blooms can close the beach in late summer', 'Sites have electric only, no water or sewer, and some are tight for big trailers', 'Occasional odor near the restroom and splash pad'],
+    },
+    booking: { label: 'ReserveAmerica', url: ra('verona-beach-state-park', 170) },
+    phone: '315-762-4463',
+    nearby: {
+      title: 'Nearby at Sylvan Beach',
+      note: 'Sylvan Beach winds down after Labor Day, and Eddie’s usually closes for the season in early October, so check before you go.',
+      items: [
+        { name: 'Woods and Wetland nature trail', kind: 'hike', what: 'The park’s signature loop, part of 14 miles of flat trails through wetlands and woods, open year-round.', distance: 'In the park', url: 'https://parks.ny.gov/parks/veronabeach/maps.aspx' },
+        { name: 'Oneida Lake', kind: 'fish', what: 'One of the state’s best walleye lakes, plus bass and perch. Shore access in the park; the launch is for non-motorized boats only. NY license required.', distance: 'In the park' },
+        { name: 'Sylvan Beach pier and boardwalk', kind: 'do', what: 'Walk the canal-side pier and the beach where the Erie Canal meets Oneida Lake.', distance: '~5 min' },
+        { name: 'Eddie’s Restaurant', kind: 'eat', what: 'The Sylvan Beach institution since 1934, which started as a hot dog stand. Seasonal.', distance: '~5 min', url: 'https://sylvanbeachny.com/eddies/' },
+        { name: 'Harpoon Eddie’s', kind: 'drink', what: 'Lakefront bar and deck for a sunset drink. Seasonal.', distance: '~5 min', url: 'https://sylvanbeachny.com/harpoon-eddies-2/' },
+        { name: 'Turning Stone Resort Casino', kind: 'do', what: 'Casino, restaurants, shows and golf, back toward Verona.', distance: '~15 min', url: 'https://www.turningstone.com/' },
+      ],
+    },
+  },
+  {
     id: 'selkirk-shores', name: 'Selkirk Shores State Park', town: 'Pulaski', region: 'Lake Ontario', kind: 'State park',
     tagline: 'Lake Ontario sunsets and the Salmon River run',
     summary: 'Campsites and cabins on a bluff over Lake Ontario, a short drive from the Salmon River, where the fall salmon run peaks in early October.',
