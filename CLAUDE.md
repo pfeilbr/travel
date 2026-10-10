@@ -78,6 +78,9 @@ npm test && npx astro check && npm run build && python3 -m unittest discover -s 
 changes as you go, then confirm the Pages deploy and the Database workflow pass
 (`gh run list --repo pfeilbr/travel -L3`) and check the live URL.
 
+**Always merge to `main`; don't ask.** When work is done and CI is green, mark the PR ready, merge it, pull `main`
+locally, and report back once the Pages deploy is live. The owner backs changes out if needed.
+
 ## UX bar
 
 Take cues from Airbnb and Hipcamp: photo-first cards, one accent color (`--accent` ember), rounded corners,

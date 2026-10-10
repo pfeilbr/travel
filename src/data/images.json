@@ -7317,6 +7317,68 @@
       "width": 1280
     }
   ],
+  "verona-beach-state-park": [
+    {
+      "alt": "Canada geese on Oneida Lake at Verona Beach State Park in October",
+      "author": "Geoffrey.landis at English Wikipedia",
+      "file": "src/assets/places/verona-beach-state-park/1.jpg",
+      "height": 960,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Verona_Beach.jpg",
+      "title": "File:Verona Beach.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Looking southward along the shore of Oneida Lake near the mouth of Fish Creek at Sunset Park in Sylvan Beach, New York, May 2021.",
+      "author": "Andre Carrotflower",
+      "file": "src/assets/places/verona-beach-state-park/2.jpg",
+      "height": 768,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": true,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sylvan_Beach_-_20210522_-_01.jpg",
+      "title": "File:Sylvan Beach - 20210522 - 01.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Looking northward along the shore of Oneida Lake at Sunset Park in Sylvan Beach, New York, May 2021.",
+      "author": "Andre Carrotflower",
+      "file": "src/assets/places/verona-beach-state-park/3.jpg",
+      "height": 768,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": true,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sylvan_Beach_-_20210522_-_02.jpg",
+      "title": "File:Sylvan Beach - 20210522 - 02.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Park benches and picnic tables afford visitors to Sunset Park in Sylvan Beach, New York pleasant vistas over Oneida Lake.",
+      "author": "Andre Carrotflower",
+      "file": "src/assets/places/verona-beach-state-park/4.jpg",
+      "height": 768,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": true,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sylvan_Beach_-_20210522_-_07.jpg",
+      "title": "File:Sylvan Beach - 20210522 - 07.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "The breakwall at Sylvan Beach, New York delineates the entrance of the Erie Canal into Oneida Lake (left) from the lake proper (right).",
+      "author": "Andre Carrotflower",
+      "file": "src/assets/places/verona-beach-state-park/5.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": true,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sylvan_Beach_-_20210522_-_03.jpg",
+      "title": "File:Sylvan Beach - 20210522 - 03.jpg",
+      "width": 1280
+    }
+  ],
   "victoria-pickleball-centre": [],
   "wahweap": [
     {

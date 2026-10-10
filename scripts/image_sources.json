@@ -44,6 +44,46 @@
    "exclude": [],
    "alt": {}
   },
+  "verona-beach-state-park": {
+   "sources": [
+    {
+     "search": "\"Verona Beach State Park\""
+    },
+    {
+     "search": "Verona Beach Oneida Lake"
+    },
+    {
+     "search": "Sylvan Beach Oneida Lake",
+     "nearby": "Sylvan Beach"
+    },
+    {
+     "openverse": "Verona Beach State Park",
+     "must": [
+      "verona beach"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "verona beach",
+    "oneida lake",
+    "sunset",
+    "beach",
+    "autumn"
+   ],
+   "include": [
+    {
+     "title": "File:Verona Beach.jpg",
+     "alt": "Canada geese on Oneida Lake at Verona Beach State Park in October"
+    },
+    {
+     "title": "File:Nine acre Pond.jpg",
+     "alt": "Fall color on the trail by Nine Acre Pond in Verona Beach State Park"
+    }
+   ],
+   "exclude": [],
+   "alt": {}
+  },
   "selkirk-shores": {
    "sources": [
     {
