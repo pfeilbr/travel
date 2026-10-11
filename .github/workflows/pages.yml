@@ -53,7 +53,7 @@ jobs:
               echo "PUBLIC_SUPABASE_ANON_KEY=$key" >> "$GITHUB_ENV"
               echo "Sign-in enabled for $SUPABASE_PROJECT_REF"
             else
-              echo "::warning title=Sign-in disabled::Supabase anon key lookup failed (check the SUPABASE_ACCESS_TOKEN secret); building with sign-in disabled."
+              echo "::warning title=Sign-in disabled::Supabase anon key lookup failed (SUPABASE_ACCESS_TOKEN rejected or expired; refresh it with: app-platform push-token --repo pfeilbr/travel); building with sign-in disabled."
             fi
           else
             echo "Supabase not configured yet; building with sign-in disabled."

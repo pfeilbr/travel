@@ -148,3 +148,7 @@ This app's Supabase project is the shared **app-platform** project (`pfeilbr/app
 Travel's tables live in `public` (it came first); other apps use their own schemas. Never patch auth settings
 (providers, site URL, redirect allow-list) from this repo: use `app-platform add-app`. `scripts/supabase_admin.py
 auth-config` would overwrite the shared allow-list, so don't run it.
+
+The `SUPABASE_ACCESS_TOKEN` secret (Pages build, keep-alive, Database workflow) must be the platform token: refresh it
+with `app-platform push-token --repo pfeilbr/travel` (Keychain -> gh, value never shown). A 401 there means the secret
+is stale; on 2026-10-10 a 7-day token set on 2026-10-03 expired and the site built signed out until it was re-pushed.
