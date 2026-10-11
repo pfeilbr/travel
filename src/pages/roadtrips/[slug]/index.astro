@@ -1,0 +1,456 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../../layouts/Layout.astro';
+import Icon from '../../../components/Icon.astro';
+import PhotoMosaic from '../../../components/PhotoMosaic.astro';
+import StayCard from '../../../components/roadtrip/StayCard.astro';
+import MealCard from '../../../components/roadtrip/MealCard.astro';
+import RouteMap from '../../../components/roadtrip/RouteMap.astro';
+import Tags from '../../../components/roadtrip/Tags.astro';
+import { roadtrips, routesFor } from '../../../data/roadtrips';
+import type { Day, Plan, RoadTrip, Stay, Tag } from '../../../data/roadtrips/types';
+import { imagesFor, type PlaceImage } from '../../../lib/images';
+import { dateRange, drive, money } from '../../../lib/format';
+import { url } from '../../../lib/paths';
+import { TAG_ICON, TAG_LABEL, byId, interleave, dayLabel, dayMiles, dayMinutes, directionsUrl, nightStays, planCost, planStats, roughly, photoSpec } from '../../../lib/roadtrip';
+
+export function getStaticPaths() {
+  return roadtrips.map((trip) => ({ params: { slug: trip.slug }, props: { trip } }));
+}
+const { trip } = Astro.props as { trip: RoadTrip };
+const areas = byId(trip.areas);
+const stays = byId(trip.stays);
+const meals = byId(trip.meals);
+const routes = routesFor(trip.slug);
+const photosOf = (id: string) => interleave((areas[id]?.photos ?? [`rt-${id}`]).map(imagesFor));
+
+// Hero mosaic: the trip's hero set, topped up with the first photo of each area.
+const seen = new Set<string>();
+const heroPicks = trip.hero.map((spec) => { const { set, index } = photoSpec(spec); return imagesFor(set)[index]; });
+const heroImages: PlaceImage[] = [...heroPicks, ...trip.areas.map((a) => photosOf(a.id)[0])]
+  .filter((img): img is PlaceImage => !!img && !seen.has(img.title) && !!seen.add(img.title));
+
+const checked = new Date(trip.checkedAt + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+const usd = (n: number) => '$' + Math.round(n).toLocaleString('en-US');
+const BED: Record<string, string> = { hotel: 'hotel', inn: 'inn', resort: 'resort', cabin: 'cabin', tent: 'tent', home: 'home' };
+const bedLine = (beds: Record<string, number>) => Object.entries(beds).map(([k, n]) => `${n} ${BED[k]}${n > 1 ? 's' : ''}`).join(' · ');
+const plansInfo = trip.plans.map((p) => ({ plan: p, stats: planStats(trip, p), cost: planCost(trip, p) }));
+
+const mapStops = (plan: Plan) => {
+  const first = plan.days[0];
+  const out: { n: number; label?: string; name: string; coords: [number, number]; note: string }[] = [];
+  const route = routes[plan.id];
+  if (route?.stops[0]) out.push({ n: 0, name: route.stops[0][0], coords: [route.stops[0][1], route.stops[0][2]], note: `Start · ${dayLabel(first.date)}` });
+  // One pin per stay; back-to-back nights at the same place share it ("Nights 2–5").
+  const groups: { first: number; last: number; day: Day; stay: Stay }[] = [];
+  nightStays(trip, plan).forEach(({ day, stay }, i) => {
+    const g = groups.at(-1);
+    if (g && g.stay.id === stay.id) g.last = i + 1;
+    else groups.push({ first: i + 1, last: i + 1, day, stay });
+  });
+  groups.forEach((g) => out.push({
+    n: g.first, label: g.first === g.last ? String(g.first) : `${g.first}–${g.last}`, name: g.stay.name, coords: g.stay.coords,
+    note: `${g.first === g.last ? `Night ${g.first}` : `Nights ${g.first}–${g.last}`} · from ${dayLabel(g.day.date)} · ${areas[g.day.area].name}`,
+  }));
+  return out;
+};
+
+const allTags: Tag[] = ['flowers', 'photo', 'dress-up', 'lobster', 'lights', 'design', 'trees', 'outdoors', 'free'];
+const usedTags = allTags.filter((t) => trip.areas.some((a) => a.things.some((x) => x.tags.includes(t))));
+---
+<Layout title={trip.title} description={trip.blurb} image={heroImages[0]?.src.src} noindex>
+  <section class="container head">
+    <a class="back" href={url('trips/')}><Icon name="chev-left" size={14} /> Trips</a>
+    <p class="eyebrow">{trip.subtitle}</p>
+    <h1>{trip.title}</h1>
+    <div class="meta">
+      <span><Icon name="calendar" size={16} />{dateRange(trip.start, trip.end)}</span>
+      <span><Icon name="users" size={16} />{trip.travelers}</span>
+      <span><Icon name="car" size={16} />{trip.plans.length} ways to do it</span>
+      <button class="btn btn-ghost btn-sm share" data-share><Icon name="share" size={16} /><span data-share-label>Share</span></button>
+    </div>
+  </section>
+
+  <section class="container"><PhotoMosaic images={heroImages} name={trip.title} /></section>
+
+  <section class="container intro">
+    <p class="blurb">{trip.blurb}</p>
+    <p class="muted small">Prices and opening days checked {checked}. Hotel rates are per night for two, as Google Hotels or the hotel showed them for these exact nights; they move, so book the ones you like soon.</p>
+  </section>
+
+  <section class="container options" id="options">
+    <h2>Pick a plan</h2>
+    <div class="opt-grid" role="tablist" aria-label="Trip plans">
+      {plansInfo.map(({ plan, stats, cost }) => (
+        <button class="opt" role="tab" id={`tab-${plan.id}`} aria-controls={`plan-${plan.id}`} aria-selected={plan.id === trip.recommended ? 'true' : 'false'} data-plan-tab={plan.id}>
+          <span class="opt-top">
+            <span class="opt-letter">{plan.id.toUpperCase()}</span>
+            {plan.id === trip.recommended && <span class="badge badge-pine"><Icon name="star" size={12} />Our pick</span>}
+          </span>
+          <strong class="opt-name">{plan.name}</strong>
+          <span class="opt-tag muted">{plan.tagline}</span>
+          <span class="opt-stats">
+            <span><Icon name="moon" size={14} />{bedLine(stats.beds)}</span>
+            <span><Icon name="car" size={14} />{drive(stats.minutes)} driving · {stats.miles.toLocaleString('en-US')} mi</span>
+            <span><Icon name="ticket" size={14} />About {roughly(cost.total)} for two</span>
+          </span>
+          <span class="opt-best">Best for: {plan.bestFor}</span>
+        </button>
+      ))}
+    </div>
+  </section>
+
+  {plansInfo.map(({ plan, stats, cost }) => {
+    const route = routes[plan.id];
+    return (
+      <section class="plan" id={`plan-${plan.id}`} role="tabpanel" aria-labelledby={`tab-${plan.id}`} data-plan-panel={plan.id} hidden={plan.id !== trip.recommended}>
+        <div class="container">
+          <div class="plan-head">
+            <div>
+              <p class="eyebrow">Plan {plan.id.toUpperCase()}</p>
+              <h2>{plan.name}</h2>
+              <p class="muted">{plan.tagline}</p>
+            </div>
+          </div>
+
+          <div class="overview">
+            <RouteMap planId={plan.id} line={route?.line ?? []} stops={mapStops(plan)} />
+            <div class="glance">
+              <h3>At a glance</h3>
+              <ol class="nights">
+                {plan.days.map((d) => {
+                  const s = d.stays?.[0] ? stays[d.stays[0]] : undefined;
+                  return (
+                    <li>
+                      <a href={`#${plan.id}-${d.date}`}>
+                        <span class="n-date">{dayLabel(d.date)}</span>
+                        <span class="n-where">{areas[d.area].name}{d.birthday && <span class="bday"> · {d.birthday}</span>}</span>
+                        <span class="n-stay muted">{s ? s.name : 'Home'}</span>
+                        <span class="n-price">{s ? money(Math.round(s.price)) : ''}</span>
+                      </a>
+                    </li>
+                  );
+                })}
+              </ol>
+              <div class="pros">
+                <div><h4>Why this one</h4><ul>{plan.highlights.map((h) => <li>{h}</li>)}</ul></div>
+                <div><h4>Trade-offs</h4><ul>{plan.tradeoffs.map((h) => <li>{h}</li>)}</ul></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="days">
+            {plan.days.map((d, i) => {
+              const img = (d.photo && imagesFor(d.photo)[0]) || (photosOf(d.area)[i % 2 === 0 ? 0 : 1] ?? photosOf(d.area)[0]);
+              const mins = dayMinutes(d);
+              const dayStays = (d.stays ?? []).map((id) => stays[id]);
+              const stops = d.legs.length ? [d.legs[0].from, ...d.legs.map((l) => l.to)] : [];
+              return (
+                <article class="day" id={`${plan.id}-${d.date}`}>
+                  <div class="day-media">
+                    {img ? <Image src={img.src} alt={img.alt} widths={[480, 900]} sizes="(max-width: 900px) 100vw, 380px" loading="lazy" /> : <div class="fill"></div>}
+                    <span class="day-n">Day {i + 1}</span>
+                  </div>
+                  <div class="day-body">
+                    <p class="day-date">{dayLabel(d.date)}{d.birthday && <span class="badge bday-badge"><Icon name="heart" size={12} />{d.birthday}</span>}</p>
+                    <h3>{d.title}</h3>
+                    {d.legs.length > 0 && (
+                      <div class="drive">
+                        {d.leave && <p class="leave"><Icon name="clock" size={15} /><strong>{d.leave}</strong></p>}
+                        <ul class="legs">
+                          {d.legs.map((l) => (
+                            <li><Icon name="car" size={14} /><span><strong>{l.from} → {l.to}</strong> · {drive(l.minutes)} · {l.miles} mi{l.via && <span class="muted"> · via {l.via}</span>}{l.note && <span class="muted"> · {l.note}</span>}</span></li>
+                          ))}
+                        </ul>
+                        <p class="drive-sum muted">{drive(mins)} behind the wheel · {dayMiles(d)} mi · <a href={directionsUrl(stops)} rel="noopener">Directions<Icon name="ext" size={12} /></a></p>
+                      </div>
+                    )}
+                    <ol class="steps">
+                      {d.steps.map((s) => (
+                        <li>
+                          {s.time && <span class="st-time">{s.time}</span>}
+                          <span class="st-text">{s.url ? <a href={s.url} rel="noopener">{s.text}</a> : s.text} <Tags tags={s.tags} /></span>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                  {d.meals.length > 0 && (
+                    <div class="day-section">
+                      <h4 class="sec-h"><Icon name="restaurants" size={16} />Eat</h4>
+                      <div class="meal-grid">{d.meals.map((id) => <MealCard meal={meals[id]} />)}</div>
+                    </div>
+                  )}
+                  {dayStays.length > 0 && (
+                    <div class="day-section">
+                      <h4 class="sec-h"><Icon name="moon" size={16} />Sleep{dayStays.length > 1 && <span class="muted"> · our pick + {dayStays.length - 1} alternative{dayStays.length > 2 ? 's' : ''}</span>}</h4>
+                      <div class="stay-grid">{dayStays.map((s, j) => <StayCard stay={s} pick={j === 0} />)}</div>
+                    </div>
+                  )}
+                </article>
+              );
+            })}
+          </div>
+
+          <div class="cost">
+            <h3>What Plan {plan.id.toUpperCase()} costs</h3>
+            <p class="muted small">For two, with our picks for every night and every meal listed above. Swap in the alternatives to go up or down.</p>
+            <table>
+              <tbody>
+                <tr><th scope="row">Lodging ({stats.nights} nights)</th><td>{usd(cost.lodging)}</td></tr>
+                <tr><th scope="row">Lodging taxes (about {Math.round(trip.lodgingTax * 100)}%)</th><td>{usd(cost.tax)}</td></tr>
+                <tr><th scope="row">Dinners, lunches and treats</th><td>{usd(cost.food)}</td></tr>
+                <tr><th scope="row">Gas ({stats.miles.toLocaleString('en-US')} mi at {trip.car.mpg} mpg, ${trip.car.gas.toFixed(2)}/gal)</th><td>{usd(cost.gas)}</td></tr>
+                <tr><th scope="row">Tolls (E-ZPass)</th><td>{usd(cost.tolls)}</td></tr>
+                {plan.tickets.map((t) => <tr><th scope="row">{t.label}</th><td>{usd(t.cost)}</td></tr>)}
+                <tr class="total"><th scope="row">Total</th><td>{usd(cost.total)}</td></tr>
+              </tbody>
+            </table>
+            <p class="muted small">Per night that's about {usd(cost.total / Math.max(1, stats.nights))}. Longest driving day: {drive(stats.longestDay)}.</p>
+          </div>
+        </div>
+      </section>
+    );
+  })}
+
+  <section class="container touches">
+    <h2>Planned around Sue</h2>
+    <div class="touch-grid">
+      {trip.touches.map((t) => (
+        <div class="touch">
+          <Icon name={TAG_ICON[t.tags[0]]} size={22} />
+          <h3>{t.title}</h3>
+          <p>{t.text}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="container areas" id="areas" data-areas>
+    <h2>Where you'll be</h2>
+    <p class="muted">Every stop across all plans, with what's actually open in early December.</p>
+    <div class="chips" role="group" aria-label="Filter things to do">
+      <button class="chip" aria-pressed="true" data-tag="all">Everything</button>
+      {usedTags.map((t) => <button class="chip" aria-pressed="false" data-tag={t}><Icon name={TAG_ICON[t]} size={14} />{TAG_LABEL[t]}</button>)}
+    </div>
+    {trip.areas.map((a) => {
+      const pics = photosOf(a.id).slice(0, 3);
+      return (
+        <article class="area" id={`area-${a.id}`}>
+          <div class="area-pics" data-count={pics.length}>
+            {pics.map((p) => <figure><Image src={p.src} alt={p.alt} widths={[400, 800]} sizes="(max-width: 760px) 100vw, 33vw" loading="lazy" /><figcaption>{p.alt}</figcaption></figure>)}
+          </div>
+          <div class="area-body">
+            <div class="area-head">
+              <div>
+                <h3>{a.name}<span class="muted">, {a.state}</span></h3>
+                <p class="area-tag">{a.tagline}</p>
+              </div>
+              {a.weather && <p class="wx"><Icon name="thermo" size={16} />Early Dec: {a.weather.high}° / {a.weather.low}°F{a.weather.note && <span class="muted"> · {a.weather.note}</span>}</p>}
+            </div>
+            <p class="area-sum">{a.summary}</p>
+            <ul class="things">
+              {a.things.map((t) => (
+                <li data-tags={t.tags.join(' ')}>
+                  <div class="t-head">
+                    <strong>{t.url ? <a href={t.url} rel="noopener">{t.name}</a> : t.name}</strong>
+                    {t.price !== undefined && <span class="muted t-price">{t.price === 0 ? 'Free' : `$${t.price}`}{t.priceNote && ` ${t.priceNote}`}</span>}
+                  </div>
+                  <p>{t.what}</p>
+                  {t.when && <p class="muted t-when"><Icon name="clock" size={13} /> {t.when}</p>}
+                  <Tags tags={t.tags} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </article>
+      );
+    })}
+  </section>
+
+  <section class="container notes">
+    <div>
+      <h2>Pack for it</h2>
+      <ul>{trip.packing.map((g) => <li>{g}</li>)}</ul>
+    </div>
+    <div>
+      <h2>Good to know</h2>
+      <ul>{trip.gotchas.map((g) => <li>{g}</li>)}</ul>
+    </div>
+    <div>
+      <h2>Sources</h2>
+      <ul class="sources">{trip.sources.map((s) => <li><a href={s.url} rel="noopener">{s.label}</a></li>)}</ul>
+      <p class="muted small">Photos: Wikimedia Commons and Openverse, credited in each photo and on the <a href={url('credits/')}>credits page</a>.</p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .head { padding-top: 24px; padding-bottom: 16px; }
+  .back { display: inline-flex; align-items: center; gap: 4px; font-size: 14px; color: var(--muted); text-decoration: none; margin-bottom: 10px; }
+  .back:hover { color: var(--ink); }
+  .eyebrow { margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent-text); }
+  h1 { font-family: var(--font-display); font-weight: 700; margin: 0 0 12px; font-size: clamp(30px, 5vw, 48px); line-height: 1.1; }
+  h2 { font-family: var(--font-display); font-weight: 700; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; font-size: 15px; }
+  .meta > span { display: inline-flex; align-items: center; gap: 6px; }
+  .share { margin-left: auto; text-decoration: underline; }
+  .intro { padding-top: 24px; }
+  .blurb { font-size: 18px; max-width: 75ch; margin: 0 0 8px; color: var(--ink-2); }
+  .small { font-size: 13px; }
+
+  .options { padding-top: 32px; }
+  .opt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 14px; }
+  .opt { text-align: left; display: flex; flex-direction: column; gap: 6px; padding: 18px; border-radius: var(--radius); border: 1px solid var(--rule-strong); background: var(--surface-2); color: var(--ink); cursor: pointer; font: inherit; transition: box-shadow .15s, border-color .15s; }
+  .opt:hover { box-shadow: var(--shadow); }
+  .opt[aria-selected="true"] { border: 2px solid var(--ink); padding: 17px; box-shadow: var(--shadow); }
+  .opt-top { display: flex; justify-content: space-between; align-items: center; }
+  .opt-letter { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); font-weight: 700; }
+  .opt-name { font-size: 19px; font-family: var(--font-display); }
+  .opt-tag { font-size: 14px; }
+  .opt-stats { display: grid; gap: 4px; font-size: 14px; margin-top: 4px; }
+  .opt-stats > span { display: flex; gap: 6px; align-items: center; }
+  .opt-best { font-size: 13px; color: var(--ink-2); border-top: 1px solid var(--rule); padding-top: 8px; margin-top: 4px; }
+
+  .plan { padding-top: 40px; }
+  .plan-head h2 { margin: 0; }
+  .plan-head p { margin: 4px 0 0; }
+  .overview { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 24px; margin-top: 20px; align-items: start; }
+  .glance h3 { margin: 0 0 8px; }
+  .nights { list-style: none; padding: 0; margin: 0; border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; }
+  .nights li + li { border-top: 1px solid var(--rule); }
+  .nights a { display: grid; grid-template-columns: 92px minmax(0, 1fr) auto; grid-template-areas: 'date where price' 'date stay price'; gap: 0 10px; padding: 9px 12px; text-decoration: none; color: var(--ink); font-size: 14px; }
+  .nights a:hover { background: var(--surface); }
+  .n-date { grid-area: date; font-weight: 600; }
+  .n-where { grid-area: where; font-weight: 600; }
+  .n-stay { grid-area: stay; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .n-price { grid-area: price; align-self: center; font-weight: 600; }
+  .bday { color: var(--rose); }
+  .pros { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; font-size: 14px; }
+  .pros h4 { margin: 0 0 4px; }
+  .pros ul { margin: 0; padding-left: 18px; color: var(--ink-2); }
+  .pros li { margin-bottom: 4px; }
+
+  .days { display: grid; gap: 28px; margin-top: 36px; }
+  .day { display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 0 28px; padding-bottom: 28px; border-bottom: 1px solid var(--rule); scroll-margin-top: calc(var(--header-h) + 16px); }
+  .day-media { position: relative; grid-row: span 3; align-self: start; border-radius: var(--radius); overflow: hidden; aspect-ratio: 4 / 3; background: var(--surface); }
+  .day-media :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  .day-media .fill { height: 100%; background: linear-gradient(135deg, var(--pine-soft), var(--surface)); }
+  .day-n { position: absolute; left: 12px; top: 12px; background: var(--surface-2); color: var(--ink); padding: 4px 10px; border-radius: var(--radius-pill); font-size: 13px; font-weight: 700; box-shadow: var(--shadow-sm); }
+  .day-date { margin: 0; font-size: 14px; font-weight: 600; color: var(--muted); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .bday-badge { background: var(--rose-soft); color: var(--rose); box-shadow: none; }
+  .day h3 { margin: 2px 0 10px; font-size: 22px; font-family: var(--font-display); }
+  .drive { background: var(--surface); border-radius: var(--radius); padding: 10px 14px; margin-bottom: 12px; font-size: 14px; }
+  .leave { margin: 0 0 6px; display: flex; gap: 6px; align-items: center; }
+  .legs { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+  .legs li { display: flex; gap: 8px; align-items: baseline; }
+  .legs :global(svg) { flex: none; position: relative; top: 2px; color: var(--muted); }
+  .drive-sum { margin: 6px 0 0; font-size: 13px; }
+  .drive-sum a { display: inline-flex; gap: 3px; align-items: center; }
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .steps li { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 10px; font-size: 15px; }
+  .st-time { font-size: 13px; font-weight: 600; color: var(--muted); padding-top: 2px; }
+  .steps li:not(:has(.st-time)) .st-text { grid-column: 1 / -1; }
+  .day-section { grid-column: 2; margin-top: 18px; }
+  .sec-h { margin: 0 0 10px; display: flex; gap: 6px; align-items: center; font-size: 15px; }
+  .meal-grid, .stay-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+
+  .cost { margin-top: 32px; max-width: 640px; }
+  .cost table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .cost th { text-align: left; font-weight: 400; padding: 8px 0; border-bottom: 1px solid var(--rule); }
+  .cost td { text-align: right; padding: 8px 0; border-bottom: 1px solid var(--rule); font-variant-numeric: tabular-nums; }
+  .cost .total th, .cost .total td { font-weight: 700; font-size: 17px; border-bottom: 0; }
+
+  .touches { padding-top: 56px; }
+  .touch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .touch { padding: 18px; border-radius: var(--radius); background: var(--surface); }
+  .touch :global(svg) { color: var(--rose); }
+  .touch h3 { margin: 8px 0 4px; font-size: 17px; }
+  .touch p { margin: 0; font-size: 14px; color: var(--ink-2); }
+
+  .areas { padding-top: 56px; }
+  .chips { display: flex; gap: 8px; overflow-x: auto; padding: 4px 0 12px; scrollbar-width: none; }
+  .area { padding: 24px 0; border-bottom: 1px solid var(--rule); scroll-margin-top: calc(var(--header-h) + 16px); }
+  .area-pics { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 8px; height: 240px; border-radius: var(--radius); overflow: hidden; }
+  .area-pics[data-count="1"] { grid-template-columns: 1fr; }
+  .area-pics[data-count="2"] { grid-template-columns: 2fr 1fr; }
+  .area-pics[data-count="0"] { display: none; }
+  .area-pics figure { margin: 0; position: relative; min-width: 0; }
+  .area-pics :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  .area-pics figcaption { position: absolute; inset: auto 0 0 0; padding: 18px 10px 6px; font-size: 12px; color: #fff; background: linear-gradient(transparent, rgba(0,0,0,.6)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .area-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 14px; align-items: flex-start; }
+  .area-head h3 { margin: 0; font-size: 24px; font-family: var(--font-display); }
+  .area-tag { margin: 2px 0 0; color: var(--ink-2); }
+  .wx { margin: 0; font-size: 14px; display: flex; gap: 6px; align-items: center; }
+  .area-sum { max-width: 80ch; color: var(--ink-2); }
+  .things { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .things li { border: 1px solid var(--rule); border-radius: var(--radius); padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+  .things li[hidden] { display: none; }
+  .things p { margin: 0; font-size: 14px; color: var(--ink-2); }
+  .t-head { display: flex; justify-content: space-between; gap: 8px; }
+  .t-head a { color: var(--ink); }
+  .t-price { font-size: 13px; white-space: nowrap; }
+  .things .t-when { font-size: 13px; color: var(--muted); }
+
+  .notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; padding-top: 48px; }
+  .notes ul { padding-left: 18px; color: var(--ink-2); font-size: 15px; }
+  .notes li { margin-bottom: 8px; }
+  .sources { word-break: break-word; }
+
+  @media (max-width: 900px) {
+    .overview { grid-template-columns: 1fr; }
+    .day { grid-template-columns: 1fr; }
+    .day-media { grid-row: auto; margin-bottom: 14px; aspect-ratio: 16 / 9; }
+    .day-section { grid-column: 1; }
+  }
+  @media (max-width: 520px) {
+    .pros { grid-template-columns: 1fr; }
+    .steps li { grid-template-columns: 64px minmax(0, 1fr); }
+    .nights a { grid-template-columns: 78px minmax(0, 1fr) auto; }
+    .area-pics { grid-template-columns: 1fr; height: 200px; }
+    .area-pics figure:not(:first-child) { display: none; }
+    .share { margin-left: 0; }
+  }
+</style>
+
+<script>
+  // Plan tabs: one panel at a time, remembered in the URL hash (#plan-b) so a shared link opens it.
+  const tabs = [...document.querySelectorAll<HTMLButtonElement>('[data-plan-tab]')];
+  const panels = [...document.querySelectorAll<HTMLElement>('[data-plan-panel]')];
+  const select = (id: string, push = false) => {
+    if (!panels.some((p) => p.dataset.planPanel === id)) return;
+    tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.planTab === id)));
+    panels.forEach((p) => (p.hidden = p.dataset.planPanel !== id));
+    if (push) history.replaceState(null, '', `#plan-${id}`);
+    document.dispatchEvent(new CustomEvent('plan-change', { detail: id }));
+  };
+  tabs.forEach((t) => t.addEventListener('click', () => {
+    select(t.dataset.planTab!, true);
+    document.getElementById(`plan-${t.dataset.planTab}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }));
+  const fromHash = () => {
+    const h = location.hash.slice(1);
+    const m = h.match(/^plan-(\w+)$/) ?? h.match(/^(\w+)-\d{4}-\d{2}-\d{2}$/);
+    if (m) select(m[1]);
+    if (h && !h.startsWith('plan-')) document.getElementById(h)?.scrollIntoView();
+  };
+  fromHash();
+  addEventListener('hashchange', fromHash);
+
+  // Things-to-do filter chips.
+  const areas = document.querySelector<HTMLElement>('[data-areas]');
+  areas?.querySelectorAll<HTMLButtonElement>('[data-tag]').forEach((chip) => chip.addEventListener('click', () => {
+    const tag = chip.dataset.tag!;
+    areas.querySelectorAll('[data-tag]').forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
+    areas.querySelectorAll<HTMLElement>('[data-tags]').forEach((li) => { li.hidden = tag !== 'all' && !li.dataset.tags!.split(' ').includes(tag); });
+  }));
+
+  // Share: the native sheet on phones, else copy the link.
+  document.querySelector<HTMLButtonElement>('[data-share]')?.addEventListener('click', async () => {
+    const label = document.querySelector('[data-share-label]')!;
+    const data = { title: document.title, url: location.href };
+    try {
+      if (navigator.share) await navigator.share(data);
+      else { await navigator.clipboard.writeText(location.href); label.textContent = 'Link copied'; setTimeout(() => (label.textContent = 'Share'), 2000); }
+    } catch { /* dismissed */ }
+  });
+</script>

@@ -13611,6 +13611,587 @@
    ],
    "exclude": [],
    "alt": {}
+  },
+  "rt-boston": {
+   "count": 6,
+   "sources": [
+    {
+     "category": "Category:Acorn Street (Boston)",
+     "depth": 0
+    },
+    {
+     "search": "Acorn Street Boston"
+    },
+    {
+     "search": "Boston Public Garden winter"
+    },
+    {
+     "search": "Beacon Hill Boston snow"
+    },
+    {
+     "search": "Boston Common Christmas tree"
+    },
+    {
+     "search": "Boston skyline Charles River sunset"
+    }
+   ],
+   "prefer": [
+    "acorn",
+    "beacon hill",
+    "public garden",
+    "christmas",
+    "snow",
+    "skyline"
+   ],
+   "include": [],
+   "exclude": [
+    "File:Beacon Street library - Winter time - Late Nineteenth Century - DPLA - 42ae018dbd4608027e758b969c9a53b9.jpg"
+   ],
+   "alt": {
+    "File:Charles River Esplanade Boston May 2018 panorama.jpg": "Back Bay brownstones and the Hancock tower mirrored in the Charles River lagoon",
+    "File:North End Boston 5.JPG": "Gas lamps and brick on Acorn Street, Beacon Hill",
+    "File:Charles River (Pear Biter).jpg": "Back Bay skyline across the Charles River at night"
+   }
+  },
+  "rt-cambridge": {
+   "count": 4,
+   "sources": [
+    {
+     "category": "Category:Glass Flowers",
+     "depth": 0
+    },
+    {
+     "search": "Glass Flowers Harvard"
+    },
+    {
+     "search": "Blaschka glass flowers Harvard Museum of Natural History"
+    }
+   ],
+   "prefer": [
+    "glass",
+    "flower",
+    "blaschka"
+   ],
+   "include": [],
+   "exclude": [
+    "File:Stained glass flower.jpg"
+   ],
+   "alt": {
+    "File:Asian Rice 2.jpg": "Glass rice plant by the Blaschkas, Harvard's Glass Flowers",
+    "File:Common Wood Sorrel.jpg": "Glass wood sorrel blossoms and roots, Harvard's Glass Flowers",
+    "File:Glass Flowers (00489).jpg": "A case of glass botanical models at the Harvard Museum of Natural History",
+    "File:Banana Tree 4.jpg": "Glass banana flower model, Harvard's Glass Flowers"
+   }
+  },
+  "rt-gardner": {
+   "count": 4,
+   "sources": [
+    {
+     "category": "Category:Courtyard of the Isabella Stewart Gardner Museum",
+     "depth": 0
+    },
+    {
+     "search": "Isabella Stewart Gardner Museum courtyard"
+    },
+    {
+     "search": "Gardner Museum courtyard flowers"
+    }
+   ],
+   "prefer": [
+    "courtyard",
+    "flowers",
+    "garden"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {
+    "File:Courtyard Isabella Stewart Gardner 14.jpg": "Arches and greenery in the Gardner Museum's Venetian courtyard",
+    "File:Courtyard Isabella Stewart Gardner 16.jpg": "Seasonal flowers filling the Gardner Museum courtyard",
+    "File:Courtyard Isabella Stewart Gardner 21.jpg": "Tree ferns against the courtyard's pink palazzo walls",
+    "File:Courtyard Isabella Stewart Gardner 26.jpg": "Gothic windows above the Gardner courtyard"
+   }
+  },
+  "rt-berkshires": {
+   "count": 5,
+   "sources": [
+    {
+     "category": "Category:Red Lion Inn",
+     "depth": 0
+    },
+    {
+     "search": "Stockbridge Massachusetts Main Street"
+    },
+    {
+     "search": "Red Lion Inn Stockbridge"
+    },
+    {
+     "search": "Naumkeag Stockbridge"
+    },
+    {
+     "search": "Stockbridge Massachusetts winter"
+    },
+    {
+     "openverse": "Stockbridge Massachusetts",
+     "must": [
+      "stockbridge"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "main street",
+    "red lion",
+    "naumkeag",
+    "snow",
+    "winter"
+   ],
+   "include": [],
+   "exclude": [
+    "File:East Main Street Historic District in Statesboro, Georgia, U.S..jpg"
+   ],
+   "alt": {
+    "File:Red-lion-inn-1.jpg": "The Red Lion Inn's long front porch on Main Street, Stockbridge",
+    "File:Red-lion-inn-2.jpg": "The Red Lion Inn, a Stockbridge landmark since 1773"
+   }
+  },
+  "rt-tower-hill": {
+   "count": 4,
+   "sources": [
+    {
+     "category": "Category:Tower Hill Botanic Garden",
+     "depth": 0
+    },
+    {
+     "search": "Tower Hill Botanic Garden"
+    },
+    {
+     "search": "New England Botanic Garden Tower Hill orangerie"
+    },
+    {
+     "openverse": "Tower Hill Botanic Garden",
+     "must": [
+      "tower",
+      "hill"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "orangerie",
+    "limonaia",
+    "garden",
+    "conservatory"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {
+    "File:Tulip border.jpg": "Spring tulip border at the New England Botanic Garden at Tower Hill"
+   }
+  },
+  "rt-kennebunkport": {
+   "count": 5,
+   "sources": [
+    {
+     "category": "Category:Dock Square, Kennebunkport",
+     "depth": 0
+    },
+    {
+     "search": "Kennebunkport Dock Square"
+    },
+    {
+     "search": "Kennebunkport Maine harbor"
+    },
+    {
+     "search": "Goat Island Light Kennebunkport"
+    },
+    {
+     "search": "Kennebunkport Christmas Prelude"
+    },
+    {
+     "search": "Walker's Point Kennebunkport"
+    },
+    {
+     "openverse": "Kennebunkport",
+     "must": [
+      "kennebunkport"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "dock square",
+    "harbor",
+    "christmas",
+    "lighthouse",
+    "snow"
+   ],
+   "include": [],
+   "exclude": [
+    "File:Dock Square next to Faneuil Hall and Quincy Market, by Ernst Halberstadt, May 21, 1973, from the Digital Commonwealth - commonwealth ms35wr57c.jpg",
+    "File:DockSquare shoreline Boston 2009.JPG",
+    "File:Five Gulls (13286452303).jpg"
+   ],
+   "alt": {
+    "File:Dock Square, Kennebunkport, ME.jpg": "Shops around Dock Square, the heart of Kennebunkport",
+    "File:Goat-island-light.jpg": "Goat Island Light off Cape Porpoise",
+    "File:Dock-square-1.jpg": "Dock Square's gray-shingled shops and flower boxes"
+   }
+  },
+  "rt-ogunquit": {
+   "count": 5,
+   "sources": [
+    {
+     "category": "Category:Cape Neddick Light",
+     "depth": 0
+    },
+    {
+     "search": "Nubble Lighthouse Christmas lights"
+    },
+    {
+     "search": "Cape Neddick Nubble Light"
+    },
+    {
+     "search": "Marginal Way Ogunquit"
+    },
+    {
+     "search": "Perkins Cove Ogunquit"
+    },
+    {
+     "openverse": "Nubble Lighthouse",
+     "must": [
+      "nubble"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "nubble",
+    "christmas",
+    "lights",
+    "marginal way",
+    "perkins cove"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {
+    "File:Nubble Light (50688832832).jpg": "Nubble Light at dusk, York, Maine"
+   }
+  },
+  "rt-portland": {
+   "count": 6,
+   "sources": [
+    {
+     "category": "Category:Portland Head Light",
+     "depth": 0
+    },
+    {
+     "search": "Portland Head Light"
+    },
+    {
+     "search": "Portland Maine Old Port"
+    },
+    {
+     "search": "Portland Breakwater Light Bug Light"
+    },
+    {
+     "search": "Portland Maine waterfront"
+    },
+    {
+     "search": "Portland Head Light winter"
+    }
+   ],
+   "prefer": [
+    "head light",
+    "old port",
+    "lighthouse",
+    "snow",
+    "harbor"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {
+    "File:Portland Head Light (179426965).jpeg": "Portland Head Light on the rocks of Cape Elizabeth",
+    "File:Calm Winter Lighthouse (54238364103).jpg": "Portland Head Light on a calm winter day",
+    "File:Portland Head Light (208591325).jpeg": "Portland Head Light under a big sky"
+   }
+  },
+  "rt-boothbay": {
+   "count": 5,
+   "sources": [
+    {
+     "category": "Category:Coastal Maine Botanical Gardens",
+     "depth": 0
+    },
+    {
+     "search": "Coastal Maine Botanical Gardens"
+    },
+    {
+     "search": "Boothbay Harbor Maine"
+    },
+    {
+     "search": "Coastal Maine Botanical Gardens lights"
+    }
+   ],
+   "prefer": [
+    "garden",
+    "gardens aglow",
+    "lights",
+    "harbor",
+    "flowers"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {
+    "File:Garden Aglow (23720429790).jpg": "Lit trees reflected in a pond at Gardens Aglow, Coastal Maine Botanical Gardens",
+    "File:Garden Aglow (31468270170).jpg": "Trees wrapped in blue and white lights at Gardens Aglow",
+    "File:Gardens Aglow (23426915994).jpg": "Columns of colored lights through the woods at Gardens Aglow",
+    "File:Gardens Aglow (23946989962).jpg": "Grasses glowing red at Gardens Aglow",
+    "File:Gardens Aglow (23952029481).jpg": "A lit cottage and glowing evergreens at Gardens Aglow"
+   }
+  },
+  "rt-white-mountains": {
+   "count": 6,
+   "sources": [
+    {
+     "category": "Category:Mount Washington Hotel",
+     "depth": 0
+    },
+    {
+     "search": "Mount Washington Hotel winter"
+    },
+    {
+     "search": "Omni Mount Washington Resort"
+    },
+    {
+     "search": "Crawford Notch winter"
+    },
+    {
+     "search": "Kancamagus Highway winter"
+    },
+    {
+     "search": "Albany Covered Bridge winter"
+    },
+    {
+     "openverse": "Mount Washington Hotel",
+     "must": [
+      "washington"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "snow",
+    "winter",
+    "hotel",
+    "notch",
+    "covered bridge"
+   ],
+   "include": [],
+   "exclude": [
+    "File:Hotel Faubourg Montreal, Montreal, Quebec (29441380613).jpg"
+   ],
+   "alt": {
+    "File:Kancamagus Scenic Byway - Leaf-peepers on the Kancamagus Highway - NARA - 7719819.jpg": "A bend in the Kancamagus Highway through the White Mountains"
+   },
+   "winter": true
+  },
+  "rt-vermont": {
+   "count": 5,
+   "sources": [
+    {
+     "category": "Category:Quechee Gorge",
+     "depth": 0
+    },
+    {
+     "search": "Woodstock Vermont winter"
+    },
+    {
+     "search": "Quechee Gorge"
+    },
+    {
+     "search": "Woodstock Vermont village green"
+    },
+    {
+     "search": "Simon Pearce Quechee mill"
+    }
+   ],
+   "prefer": [
+    "snow",
+    "winter",
+    "green",
+    "gorge",
+    "covered bridge"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {
+    "File:Trees (230910057).jpeg": "Pine woods along the Quechee Gorge trail",
+    "File:WOODSTOCK VILLAGE HISTORIC DISTRICT.jpg": "An 1823 brick house on the Woodstock Green"
+   },
+   "winter": true
+  },
+  "rt-verona": {
+   "count": 1,
+   "sources": [
+    {
+     "category": "Category:Turning Stone Resort Casino",
+     "depth": 0
+    },
+    {
+     "search": "Turning Stone Resort Casino"
+    },
+    {
+     "search": "Verona New York"
+    },
+    {
+     "openverse": "Turning Stone Resort",
+     "must": [
+      "turning",
+      "stone"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "turning stone",
+    "lake",
+    "sunset"
+   ],
+   "include": [],
+   "exclude": [
+    "File:Olkhon Island, Capes at sunset, Lake Baikal, Russia.jpg",
+    "File:Olkhon Island, Capes, cliffs at sunset, Lake Baikal, Russia.jpg",
+    "File:Alexander Street & Verona Avenue in Schenectady, New York 23.jpg",
+    "File:Imlay St Verona St td (2018-07-07) 01 - New York City ePrix.jpg",
+    "File:Imlay St Verona St td (2018-07-07) 03 - New York City ePrix.jpg"
+   ],
+   "alt": {
+    "File:Verona Beach.jpg": "Oneida Lake shoreline at Verona Beach, a few miles from Verona"
+   }
+  },
+  "rt-newport": {
+   "count": 4,
+   "sources": [
+    {
+     "category": "Category:The Breakers",
+     "depth": 0
+    },
+    {
+     "search": "The Breakers Newport mansion"
+    },
+    {
+     "search": "Cliff Walk Newport Rhode Island"
+    },
+    {
+     "search": "Castle Hill Lighthouse Newport"
+    },
+    {
+     "search": "Marble House Newport"
+    },
+    {
+     "openverse": "Breakers Newport",
+     "must": [
+      "breakers"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "breakers",
+    "cliff walk",
+    "marble house",
+    "castle hill",
+    "christmas"
+   ],
+   "include": [
+    {
+     "title": "File:The Breakers garden view.jpg",
+     "alt": "The Breakers, the Vanderbilts’ 70-room “cottage” in Newport"
+    }
+   ],
+   "exclude": [
+    "File:Sunset - Cliff Walk, Newport, Rhode Island, USA - 15 Agosto 2015 - panoramio.jpg"
+   ],
+   "alt": {
+    "File:Sunset at Bailey's Beach The Cliff Walk Newport Rhode Island.jpg": "Sunset over Bailey’s Beach from the Cliff Walk",
+    "File:Sunset - Cliff Walk, Newport, Rhode Island, USA - 15 Agosto 2015.jpg": "The Cliff Walk path at sunset, mansions on the bluff",
+    "File:View from Ochre Point - Cliff Walk, Newport, Rhode Island, USA - October 1, 2023 01.jpg": "Surf below Ochre Point on the Cliff Walk"
+   }
+  },
+  "rt-newbury": {
+   "count": 1,
+   "sources": [
+    {
+     "search": "Ritz-Carlton Hotel Boston Arlington Street Newbury"
+    },
+    {
+     "search": "Taj Boston hotel"
+    },
+    {
+     "openverse": "Taj Boston",
+     "must": [
+      "taj"
+     ],
+     "fallback": true
+    }
+   ],
+   "prefer": [
+    "newbury",
+    "taj",
+    "ritz"
+   ],
+   "include": [],
+   "exclude": [
+    "File:Ritz Carlton under construction (15712532594).jpg"
+   ],
+   "alt": {
+    "File:Taj Boston Side Entrance 2017.jpg": "The Newbury’s Newbury Street side, facing the Public Garden"
+   }
+  },
+  "rt-castle-hill": {
+   "count": 2,
+   "sources": [
+    {
+     "category": "Category:Castle Hill Light",
+     "depth": 0
+    },
+    {
+     "search": "Castle Hill Inn Newport"
+    },
+    {
+     "search": "Castle Hill Light Newport"
+    }
+   ],
+   "prefer": [
+    "castle hill"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {
+    "File:Castle Hill Light, near Newport RI (8935587252).jpg": "Castle Hill Light, on the inn’s grounds",
+    "File:Castle Hill Lighthouse, Newport RI (8749605864).jpg": "Castle Hill Lighthouse at the edge of the inn’s lawn"
+   }
+  },
+  "rt-inn-by-the-sea": {
+   "count": 2,
+   "sources": [
+    {
+     "search": "Inn by the Sea Cape Elizabeth"
+    },
+    {
+     "search": "Crescent Beach State Park Maine"
+    }
+   ],
+   "prefer": [
+    "crescent beach",
+    "inn by the sea"
+   ],
+   "include": [],
+   "exclude": [],
+   "alt": {
+    "File:Crescent Beach State Park, Cape Elizabeth ME.jpg": "Crescent Beach, right behind Inn by the Sea",
+    "File:Crescent Beach State Park 01.jpg": "Crescent Beach shoreline, Cape Elizabeth"
+   }
   }
  }
 }

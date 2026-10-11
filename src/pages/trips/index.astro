@@ -9,12 +9,34 @@ import { pursuits, spots } from '../../data/outdoors';
 import { imagesFor } from '../../lib/images';
 import { dateRange, tripIsPast } from '../../lib/format';
 import { url } from '../../lib/paths';
+import { roadtrips } from '../../data/roadtrips';
+import { photoSpec } from '../../lib/roadtrip';
 // Upcoming trips soonest first, then past ones newest first.
 const sorted = [...trips].sort((a, b) => Number(tripIsPast(a)) - Number(tripIsPast(b)) || (tripIsPast(a) ? b.start.localeCompare(a.start) : a.start.localeCompare(b.start)));
 ---
 <Layout title="Trips">
   <section class="container page">
     <h1>Trips</h1>
+
+    {roadtrips.length > 0 && <>
+      <h2 class="sub">Road trips</h2>
+      <div class="cards road">
+        {roadtrips.map((t) => {
+          const hero = photoSpec(t.hero[0] ?? `rt-${t.areas[0]?.id}`);
+          const img = imagesFor(hero.set)[hero.index] ?? imagesFor(`rt-${t.areas[0]?.id}`)[0];
+          return (
+            <a class="trip" href={url(`roadtrips/${t.slug}/`)}>
+              {img ? <Image src={img.src} alt={img.alt} widths={[480, 800]} sizes="(max-width: 760px) 100vw, 400px" /> : <div class="fill"></div>}
+              <div class="tb">
+                <span class="muted when"><Icon name="calendar" size={14} />{dateRange(t.start, t.end)}</span>
+                <h3>{t.title}</h3>
+                <p class="muted">{t.plans.length} plans · {t.areas.length} stops · {t.subtitle}</p>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </>}
 
     <h2 class="sub">Checked live</h2>
     <div class="cards">
@@ -69,6 +91,7 @@ const sorted = [...trips].sort((a, b) => Number(tripIsPast(a)) - Number(tripIsPa
 <style>
   .page { padding-top: 32px; }
   .sub { font-size: 22px; margin: 28px 0 16px; }
+  .cards.road { margin-bottom: 40px; }
   .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
   .trip { display: block; border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; text-decoration: none; background: var(--surface-2); transition: box-shadow .2s; }
   .trip:hover { box-shadow: var(--shadow); }

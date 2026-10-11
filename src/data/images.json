@@ -5779,6 +5779,818 @@
       "width": 1280
     }
   ],
+  "rt-berkshires": [
+    {
+      "alt": "The Red Lion Inn's long front porch on Main Street, Stockbridge",
+      "author": "Dtobias",
+      "file": "src/assets/places/rt-berkshires/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red-lion-inn-1.jpg",
+      "title": "File:Red-lion-inn-1.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "The Red Lion Inn, a Stockbridge landmark since 1773",
+      "author": "Dtobias",
+      "file": "src/assets/places/rt-berkshires/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red-lion-inn-2.jpg",
+      "title": "File:Red-lion-inn-2.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Red Lion Inn - Stockbridge, Massachusetts, USA.",
+      "author": "Daderot",
+      "file": "src/assets/places/rt-berkshires/3.jpg",
+      "height": 853,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Interior_view_-_Red_Lion_Inn_-_Stockbridge,_Massachusetts_-_DSC05887.jpg",
+      "title": "File:Interior view - Red Lion Inn - Stockbridge, Massachusetts - DSC05887.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Red Lion Inn - Stockbridge, Massachusetts, USA.",
+      "author": "Daderot",
+      "file": "src/assets/places/rt-berkshires/4.jpg",
+      "height": 853,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Interior_view_-_Red_Lion_Inn_-_Stockbridge,_Massachusetts_-_DSC05889.jpg",
+      "title": "File:Interior view - Red Lion Inn - Stockbridge, Massachusetts - DSC05889.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "East Main Street Historic District in Statesboro, Georgia, U.S.",
+      "author": "Bubba73",
+      "file": "src/assets/places/rt-berkshires/5.jpg",
+      "height": 853,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:East_Main_Street_Historic_District_in_Statesboro,_GA,_US.jpg",
+      "title": "File:East Main Street Historic District in Statesboro, GA, US.jpg",
+      "width": 1280
+    }
+  ],
+  "rt-boothbay": [
+    {
+      "alt": "Lit trees reflected in a pond at Gardens Aglow, Coastal Maine Botanical Gardens",
+      "author": "Paul VanDerWerf from Brunswick, Maine, USA",
+      "file": "src/assets/places/rt-boothbay/1.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garden_Aglow_(23720429790).jpg",
+      "title": "File:Garden Aglow (23720429790).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Trees wrapped in blue and white lights at Gardens Aglow",
+      "author": "Paul VanDerWerf from Brunswick, Maine, USA",
+      "file": "src/assets/places/rt-boothbay/2.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garden_Aglow_(31468270170).jpg",
+      "title": "File:Garden Aglow (31468270170).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Columns of colored lights through the woods at Gardens Aglow",
+      "author": "Paul VanDerWerf from Brunswick, Maine, USA",
+      "file": "src/assets/places/rt-boothbay/3.jpg",
+      "height": 745,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gardens_Aglow_(23426915994).jpg",
+      "title": "File:Gardens Aglow (23426915994).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Grasses glowing red at Gardens Aglow",
+      "author": "Paul VanDerWerf from Brunswick, Maine, USA",
+      "file": "src/assets/places/rt-boothbay/4.jpg",
+      "height": 893,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gardens_Aglow_(23946989962).jpg",
+      "title": "File:Gardens Aglow (23946989962).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "A lit cottage and glowing evergreens at Gardens Aglow",
+      "author": "Paul VanDerWerf from Brunswick, Maine, USA",
+      "file": "src/assets/places/rt-boothbay/5.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gardens_Aglow_(23952029481).jpg",
+      "title": "File:Gardens Aglow (23952029481).jpg",
+      "width": 1280
+    }
+  ],
+  "rt-boston": [
+    {
+      "alt": "Back Bay brownstones and the Hancock tower mirrored in the Charles River lagoon",
+      "author": "King of Hearts",
+      "file": "src/assets/places/rt-boston/1.jpg",
+      "height": 720,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charles_River_Esplanade_Boston_May_2018_panorama.jpg",
+      "title": "File:Charles River Esplanade Boston May 2018 panorama.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "View down Acorn Street, Beacon Hill, Boston MA.",
+      "author": "R Boed",
+      "file": "src/assets/places/rt-boston/2.jpg",
+      "height": 847,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acorn_Street,_Beacon_Hill,_Boston.jpg",
+      "title": "File:Acorn Street, Beacon Hill, Boston.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Acorn Street, Beacon Hill, Boston, Massachusetts.",
+      "author": "Mobilus In Mobili",
+      "file": "src/assets/places/rt-boston/3.jpg",
+      "height": 720,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beacon_Hill_Boston_(49281584446).jpg",
+      "title": "File:Beacon Hill Boston (49281584446).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Gas lamps and brick on Acorn Street, Beacon Hill",
+      "author": "AlexiusHoratius",
+      "file": "src/assets/places/rt-boston/4.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_End_Boston_5.JPG",
+      "title": "File:North End Boston 5.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Boston's skyline at sunset viewed across the Charles River in January 2016",
+      "author": "Eric Moreno",
+      "file": "src/assets/places/rt-boston/5.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boston_sunset_skyline,_January_2016.jpg",
+      "title": "File:Boston sunset skyline, January 2016.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Back Bay skyline across the Charles River at night",
+      "author": "Eric Hill from Boston, MA, USA",
+      "file": "src/assets/places/rt-boston/6.jpg",
+      "height": 846,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charles_River_(Pear_Biter).jpg",
+      "title": "File:Charles River (Pear Biter).jpg",
+      "width": 1280
+    }
+  ],
+  "rt-cambridge": [
+    {
+      "alt": "Glass wood sorrel blossoms and roots, Harvard's Glass Flowers",
+      "author": "Lottsm89",
+      "file": "src/assets/places/rt-cambridge/1.jpg",
+      "height": 720,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_Wood_Sorrel.jpg",
+      "title": "File:Common Wood Sorrel.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "A case of glass botanical models at the Harvard Museum of Natural History",
+      "author": "Rhododendrites",
+      "file": "src/assets/places/rt-cambridge/2.jpg",
+      "height": 759,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glass_Flowers_(00489).jpg",
+      "title": "File:Glass Flowers (00489).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Glass banana flower model, Harvard's Glass Flowers",
+      "author": "Lottsm89",
+      "file": "src/assets/places/rt-cambridge/3.jpg",
+      "height": 720,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banana_Tree_4.jpg",
+      "title": "File:Banana Tree 4.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Harvard Museum of Natural History Glass Flowers Exhibit",
+      "author": "Lottsm89",
+      "file": "src/assets/places/rt-cambridge/4.jpg",
+      "height": 720,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_Fig.jpg",
+      "title": "File:Common Fig.jpg",
+      "width": 1280
+    }
+  ],
+  "rt-castle-hill": [
+    {
+      "alt": "Castle Hill Light, on the inn’s grounds",
+      "author": "Timothy Burling from Fall River, Massachusetts, USA",
+      "file": "src/assets/places/rt-castle-hill/1.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Castle_Hill_Light,_near_Newport_RI_(8935587252).jpg",
+      "title": "File:Castle Hill Light, near Newport RI (8935587252).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Castle Hill Lighthouse at the edge of the inn’s lawn",
+      "author": "Timothy Burling from Fall River, Massachusetts, USA",
+      "file": "src/assets/places/rt-castle-hill/2.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Castle_Hill_Lighthouse,_Newport_RI_(8749605864).jpg",
+      "title": "File:Castle Hill Lighthouse, Newport RI (8749605864).jpg",
+      "width": 1280
+    }
+  ],
+  "rt-gardner": [
+    {
+      "alt": "Arches and greenery in the Gardner Museum's Venetian courtyard",
+      "author": "Miguel Hermoso Cuesta",
+      "file": "src/assets/places/rt-gardner/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Courtyard_Isabella_Stewart_Gardner_14.jpg",
+      "title": "File:Courtyard Isabella Stewart Gardner 14.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Boston, Isabella Stewart Gardner Museum.",
+      "author": "Miguel Hermoso Cuesta",
+      "file": "src/assets/places/rt-gardner/2.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Courtyard_Isabella_Stewart_Gardner_17.jpg",
+      "title": "File:Courtyard Isabella Stewart Gardner 17.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Boston, Isabella Stewart Gardner Museum.",
+      "author": "Miguel Hermoso Cuesta",
+      "file": "src/assets/places/rt-gardner/3.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Courtyard_Isabella_Stewart_Gardner_20.jpg",
+      "title": "File:Courtyard Isabella Stewart Gardner 20.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Tree ferns against the courtyard's pink palazzo walls",
+      "author": "Miguel Hermoso Cuesta",
+      "file": "src/assets/places/rt-gardner/4.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Courtyard_Isabella_Stewart_Gardner_21.jpg",
+      "title": "File:Courtyard Isabella Stewart Gardner 21.jpg",
+      "width": 1280
+    }
+  ],
+  "rt-inn-by-the-sea": [
+    {
+      "alt": "Crescent Beach, right behind Inn by the Sea",
+      "author": "John Phelan",
+      "file": "src/assets/places/rt-inn-by-the-sea/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crescent_Beach_State_Park,_Cape_Elizabeth_ME.jpg",
+      "title": "File:Crescent Beach State Park, Cape Elizabeth ME.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Crescent Beach shoreline, Cape Elizabeth",
+      "author": "Sean Dudley",
+      "file": "src/assets/places/rt-inn-by-the-sea/2.jpg",
+      "height": 719,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crescent_Beach_State_Park_01.jpg",
+      "title": "File:Crescent Beach State Park 01.jpg",
+      "width": 1280
+    }
+  ],
+  "rt-kennebunkport": [
+    {
+      "alt": "Shops around Dock Square, the heart of Kennebunkport",
+      "author": "Upstateherd",
+      "file": "src/assets/places/rt-kennebunkport/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dock_Square,_Kennebunkport,_ME.jpg",
+      "title": "File:Dock Square, Kennebunkport, ME.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Goat Island Light off Cape Porpoise",
+      "author": "Rapidfire",
+      "file": "src/assets/places/rt-kennebunkport/2.jpg",
+      "height": 857,
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Goat-island-light.jpg",
+      "title": "File:Goat-island-light.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Dock Square - DPLA - 08f5b9f0da71aa128699c3dfeb80ccc9",
+      "author": "This file was contributed to Wikimedia Commons by Boston Public Library as part of a cooperation project. The donation was facilitated by the Digital Public Library of America , via its partner Digital Commonwealth . Record in source catalog DPLA identifier: 08f5b9f0da71aa128699c3dfeb80ccc9 Boston Public Library identifier: Local other: 08_02_003396",
+      "file": "src/assets/places/rt-kennebunkport/3.jpg",
+      "height": 938,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dock_Square_-_DPLA_-_08f5b9f0da71aa128699c3dfeb80ccc9.jpg",
+      "title": "File:Dock Square - DPLA - 08f5b9f0da71aa128699c3dfeb80ccc9.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Dock Square's gray-shingled shops and flower boxes",
+      "author": "Captain-tucker",
+      "file": "src/assets/places/rt-kennebunkport/4.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dock-square-1.jpg",
+      "title": "File:Dock-square-1.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Dock Square in Kennebunkport, Maine",
+      "author": "Captain-tucker",
+      "file": "src/assets/places/rt-kennebunkport/5.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dock-square-2.jpg",
+      "title": "File:Dock-square-2.jpg",
+      "width": 1280
+    }
+  ],
+  "rt-newbury": [
+    {
+      "alt": "The Newbury’s Newbury Street side, facing the Public Garden",
+      "author": "Whoisjohngalt",
+      "file": "src/assets/places/rt-newbury/1.jpg",
+      "height": 618,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taj_Boston_Side_Entrance_2017.jpg",
+      "title": "File:Taj Boston Side Entrance 2017.jpg",
+      "width": 1280
+    }
+  ],
+  "rt-newport": [
+    {
+      "alt": "The Breakers, the Vanderbilts’ 70-room “cottage” in Newport",
+      "author": "Skip Plitt - C'ville Photography",
+      "file": "src/assets/places/rt-newport/1.jpg",
+      "height": 853,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Breakers_garden_view.jpg",
+      "title": "File:The Breakers garden view.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Sunset over Bailey’s Beach from the Cliff Walk",
+      "author": "EgorovaSvetlana",
+      "file": "src/assets/places/rt-newport/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunset_at_Bailey's_Beach_The_Cliff_Walk_Newport_Rhode_Island.jpg",
+      "title": "File:Sunset at Bailey's Beach The Cliff Walk Newport Rhode Island.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "The Cliff Walk path at sunset, mansions on the bluff",
+      "author": "Giorgio Galeotti",
+      "file": "src/assets/places/rt-newport/3.jpg",
+      "height": 854,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunset_-_Cliff_Walk,_Newport,_Rhode_Island,_USA_-_15_Agosto_2015.jpg",
+      "title": "File:Sunset - Cliff Walk, Newport, Rhode Island, USA - 15 Agosto 2015.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Surf below Ochre Point on the Cliff Walk",
+      "author": "Giorgio Galeotti",
+      "file": "src/assets/places/rt-newport/4.jpg",
+      "height": 861,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Ochre_Point_-_Cliff_Walk,_Newport,_Rhode_Island,_USA_-_October_1,_2023_01.jpg",
+      "title": "File:View from Ochre Point - Cliff Walk, Newport, Rhode Island, USA - October 1, 2023 01.jpg",
+      "width": 1280
+    }
+  ],
+  "rt-ogunquit": [
+    {
+      "alt": "Cape Neddick Lighthouse is a lighthouse in Cape Neddick, York, Maine.",
+      "author": "Ken Lund from Reno, Nevada, USA",
+      "file": "src/assets/places/rt-ogunquit/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Neddick_Light_(The_Nubble),_York,_Maine_(66030993).jpg",
+      "title": "File:Cape Neddick Light (The Nubble), York, Maine (66030993).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Nubble Light at dusk, York, Maine",
+      "author": "Paul VanDerWerf from Brunswick, Maine, USA",
+      "file": "src/assets/places/rt-ogunquit/2.jpg",
+      "height": 859,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nubble_Light_(50688832832).jpg",
+      "title": "File:Nubble Light (50688832832).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "View of the Perkins Cove peninsula from the Marginal Way",
+      "author": "CityLimitsJunction",
+      "file": "src/assets/places/rt-ogunquit/3.jpg",
+      "height": 960,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marginal_Way,_Perkins_Cove,_Ogunquit,_ME.jpg",
+      "title": "File:Marginal Way, Perkins Cove, Ogunquit, ME.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Looking at Perkins cove from the Marginal Way in Ogunquit, Maine .",
+      "author": "Captain-tucker",
+      "file": "src/assets/places/rt-ogunquit/4.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marginal_Way_-4.JPG",
+      "title": "File:Marginal Way -4.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Looking toward the Marginal Way from Perkins Cove",
+      "author": "Captain-tucker",
+      "file": "src/assets/places/rt-ogunquit/5.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Perkins_Cove_7.jpg",
+      "title": "File:Perkins Cove 7.jpg",
+      "width": 1280
+    }
+  ],
+  "rt-portland": [
+    {
+      "alt": "Portland Head Light on the rocks of Cape Elizabeth",
+      "author": "Emiliano Carchia",
+      "file": "src/assets/places/rt-portland/1.jpg",
+      "height": 853,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portland_Head_Light_(179426965).jpeg",
+      "title": "File:Portland Head Light (179426965).jpeg",
+      "width": 1280
+    },
+    {
+      "alt": "I will add another to the encyclopedic mass of photos of this light house.",
+      "author": "Paul VanDerWerf from Brunswick, Maine, USA",
+      "file": "src/assets/places/rt-portland/2.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portland_Head_Light_(22722128439).jpg",
+      "title": "File:Portland Head Light (22722128439).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Portland Head Light on a calm winter day",
+      "author": "Eric Kilby from Somerville, MA, USA",
+      "file": "src/assets/places/rt-portland/3.jpg",
+      "height": 720,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calm_Winter_Lighthouse_(54238364103).jpg",
+      "title": "File:Calm Winter Lighthouse (54238364103).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "The Portland Head Lighthouse in Cape Elizabeth near Portland, Maine .",
+      "author": "Photo by and (c)2014 Derek Ramsey ( Ram-Man )",
+      "file": "src/assets/places/rt-portland/4.jpg",
+      "height": 848,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portland_Head_Lighthouse_Ocean_Horizontal.JPG",
+      "title": "File:Portland Head Lighthouse Ocean Horizontal.JPG",
+      "width": 1280
+    },
+    {
+      "alt": "Portland Head Light under a big sky",
+      "author": "Brian Hunter",
+      "file": "src/assets/places/rt-portland/5.jpg",
+      "height": 782,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portland_Head_Light_(208591325).jpeg",
+      "title": "File:Portland Head Light (208591325).jpeg",
+      "width": 1280
+    },
+    {
+      "alt": "North view of Portland Head Light, lighthouse and museum from 1791, at Cape Elizabeth, south of Portland, Maine USA on September 3, 2021.",
+      "author": "Gordon Leggett",
+      "file": "src/assets/places/rt-portland/6.jpg",
+      "height": 637,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-09-03_01_North_view_of_Portland_Head_Light_(1791),_at_Cape_Elizabeth,_Maine.jpg",
+      "title": "File:2021-09-03 01 North view of Portland Head Light (1791), at Cape Elizabeth, Maine.jpg",
+      "width": 1280
+    }
+  ],
+  "rt-tower-hill": [
+    {
+      "alt": "Tower Hill Botanic Garden, Boylston, Massachusetts, USA.",
+      "author": "Daderot",
+      "file": "src/assets/places/rt-tower-hill/1.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tower_Hill_Botanic_Garden_-_orangerie_(exterior).jpg",
+      "title": "File:Tower Hill Botanic Garden - orangerie (exterior).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Tower Hill Botanic Garden, Boylston, Massachusetts, USA.",
+      "author": "Daderot",
+      "file": "src/assets/places/rt-tower-hill/2.jpg",
+      "height": 960,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tower_Hill_Botanic_Garden_-_orangerie_(interior).jpg",
+      "title": "File:Tower Hill Botanic Garden - orangerie (interior).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Spring tulip border at the New England Botanic Garden at Tower Hill",
+      "author": "liz west",
+      "file": "src/assets/places/rt-tower-hill/3.jpg",
+      "height": 793,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tulip_border.jpg",
+      "title": "File:Tulip border.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Tower Hill garden",
+      "author": "liz west from Boxborough, MA, USA",
+      "file": "src/assets/places/rt-tower-hill/4.jpg",
+      "height": 872,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tower_Hill_garden_(35287175256).jpg",
+      "title": "File:Tower Hill garden (35287175256).jpg",
+      "width": 1280
+    }
+  ],
+  "rt-vermont": [
+    {
+      "alt": "Pine woods along the Quechee Gorge trail",
+      "author": "Clarise Samuels",
+      "file": "src/assets/places/rt-vermont/1.jpg",
+      "height": 960,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trees_(230910057).jpeg",
+      "title": "File:Trees (230910057).jpeg",
+      "width": 1280
+    },
+    {
+      "alt": "An 1823 brick house on the Woodstock Green",
+      "author": "JERRYE & ROY KLOTZ MD",
+      "file": "src/assets/places/rt-vermont/2.jpg",
+      "height": 851,
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:WOODSTOCK_VILLAGE_HISTORIC_DISTRICT.jpg",
+      "title": "File:WOODSTOCK VILLAGE HISTORIC DISTRICT.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Quechee, Vermont",
+      "author": "cweyant from Syracuse, United States",
+      "file": "src/assets/places/rt-vermont/3.jpg",
+      "height": 720,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quechee_Gorge_(30011534223).jpg",
+      "title": "File:Quechee Gorge (30011534223).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Quechee, Vermont",
+      "author": "cweyant from Syracuse, United States",
+      "file": "src/assets/places/rt-vermont/4.jpg",
+      "height": 720,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quechee_Gorge_(30608858166).jpg",
+      "title": "File:Quechee Gorge (30608858166).jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Taken in Quechee, Vermont",
+      "author": "cricketsblog",
+      "file": "src/assets/places/rt-vermont/5.jpg",
+      "height": 853,
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quechee_Gorge_-_48900604178.jpg",
+      "title": "File:Quechee Gorge - 48900604178.jpg",
+      "width": 1280
+    }
+  ],
+  "rt-verona": [
+    {
+      "alt": "Oneida Lake shoreline at Verona Beach, a few miles from Verona",
+      "author": "Geoffrey.landis at English Wikipedia",
+      "file": "src/assets/places/rt-verona/1.jpg",
+      "height": 960,
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Verona_Beach.jpg",
+      "title": "File:Verona Beach.jpg",
+      "width": 1280
+    }
+  ],
+  "rt-white-mountains": [
+    {
+      "alt": "A bend in the Kancamagus Highway through the White Mountains",
+      "author": "Unknown author Unknown author or not provided",
+      "file": "src/assets/places/rt-white-mountains/1.jpg",
+      "height": 850,
+      "license": "Public domain",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kancamagus_Scenic_Byway_-_Leaf-peepers_on_the_Kancamagus_Highway_-_NARA_-_7719819.jpg",
+      "title": "File:Kancamagus Scenic Byway - Leaf-peepers on the Kancamagus Highway - NARA - 7719819.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Ballroom, Mount Washington Hotel, Bretton Woods, NH",
+      "author": "w_lemay",
+      "file": "src/assets/places/rt-white-mountains/2.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ballroom,_Mount_Washington_Hotel,_Bretton_Woods,_NH_-_54305951814.jpg",
+      "title": "File:Ballroom, Mount Washington Hotel, Bretton Woods, NH - 54305951814.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Conference Room, Mount Washington Hotel, Bretton Woods, NH",
+      "author": "w_lemay",
+      "file": "src/assets/places/rt-white-mountains/3.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Conference_Room,_Mount_Washington_Hotel,_Bretton_Woods,_NH_-_54306153440.jpg",
+      "title": "File:Conference Room, Mount Washington Hotel, Bretton Woods, NH - 54306153440.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Dining Room, Mount Washington Hotel, Bretton Woods, NH",
+      "author": "w_lemay",
+      "file": "src/assets/places/rt-white-mountains/4.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dining_Room,_Mount_Washington_Hotel,_Bretton_Woods,_NH_-_54304842847.jpg",
+      "title": "File:Dining Room, Mount Washington Hotel, Bretton Woods, NH - 54304842847.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Dining Room, Mount Washington Hotel, Bretton Woods, NH",
+      "author": "w_lemay",
+      "file": "src/assets/places/rt-white-mountains/5.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dining_Room,_Mount_Washington_Hotel,_Bretton_Woods,_NH_-_54305712116.jpg",
+      "title": "File:Dining Room, Mount Washington Hotel, Bretton Woods, NH - 54305712116.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "Dining Room, Mount Washington Hotel, Bretton Woods, NH",
+      "author": "w_lemay",
+      "file": "src/assets/places/rt-white-mountains/6.jpg",
+      "height": 960,
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "nearby": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dining_Room,_Mount_Washington_Hotel,_Bretton_Woods,_NH_-_54306150330.jpg",
+      "title": "File:Dining Room, Mount Washington Hotel, Bretton Woods, NH - 54306150330.jpg",
+      "width": 1280
+    }
+  ],
   "saco-river": [
     {
       "alt": "Saco River Valley White Mountains North Conway New Hampshire",

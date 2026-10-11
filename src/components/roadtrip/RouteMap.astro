@@ -1,0 +1,55 @@
+---
+// Leaflet map of one plan's driving route and overnight stops. Hidden plans' maps are built on
+// first view (Leaflet can't size a map inside a hidden panel).
+interface Props {
+  planId: string;
+  line: [number, number][];
+  stops: { n: number; label?: string; name: string; coords: [number, number]; note: string }[];
+}
+const { planId, line, stops } = Astro.props;
+---
+<div class="route-map" data-route-map={planId} data-line={JSON.stringify(line)} data-stops={JSON.stringify(stops)} role="region" aria-label="Route map"></div>
+
+<style>
+  .route-map { height: clamp(300px, 42vw, 440px); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--rule); background: var(--surface); z-index: 0; }
+  .route-map :global(.rt-pin) { width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font: 700 12px/1 var(--font); border: 2px solid #fff; box-shadow: var(--shadow-sm); }
+  .route-map :global(.rt-pin.wide) { width: 40px; margin-left: -20px; border-radius: 13px; }
+  .route-map :global(.rt-pin.home) { background: var(--ink); color: var(--bg); }
+  .route-map :global(.tiles-dark) { filter: invert(1) hue-rotate(180deg) brightness(.9) contrast(.9); }
+</style>
+
+<script>
+  import L from 'leaflet';
+  import 'leaflet/dist/leaflet.css';
+
+  const dark = () => document.documentElement.dataset.theme === 'dark'
+    || (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+
+  function build(el: HTMLElement) {
+    if (el.dataset.built) return;
+    el.dataset.built = '1';
+    const line = JSON.parse(el.dataset.line!) as [number, number][];
+    const stops = JSON.parse(el.dataset.stops!) as { n: number; label?: string; name: string; coords: [number, number]; note: string }[];
+    const map = L.map(el, { scrollWheelZoom: false });
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 18, className: dark() ? 'tiles-dark' : 'tiles',
+    }).addTo(map);
+    const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#cf4720';
+    if (line.length) L.polyline(line, { color: accent, weight: 4, opacity: 0.85 }).addTo(map);
+    stops.forEach((s) => {
+      const icon = L.divIcon({ className: '', html: `<div class="rt-pin${s.n === 0 ? ' home' : ''}${(s.label ?? '').length > 2 ? ' wide' : ''}">${s.n === 0 ? '⌂' : esc(s.label ?? String(s.n))}</div>`, iconSize: [0, 0] });
+      L.marker(s.coords, { icon, title: s.name }).bindPopup(`<strong>${esc(s.name)}</strong><br>${esc(s.note)}`).addTo(map);
+    });
+    const pts = [...line, ...stops.map((s) => s.coords)];
+    const fit = () => { map.invalidateSize(); if (pts.length) map.fitBounds(L.latLngBounds(pts), { padding: [24, 24] }); };
+    fit();
+    // Images above can change the layout after init; refit whenever the box changes size.
+    new ResizeObserver(fit).observe(el);
+  }
+
+  const visible = () => document.querySelectorAll<HTMLElement>('[data-route-map]').forEach((el) => { if (el.offsetParent) build(el); });
+  visible();
+  document.addEventListener('plan-change', visible);
+</script>

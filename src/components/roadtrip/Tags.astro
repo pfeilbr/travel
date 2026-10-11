@@ -1,0 +1,29 @@
+---
+import Icon from '../Icon.astro';
+import { TAG_ICON, TAG_LABEL } from '../../lib/roadtrip';
+import type { Tag } from '../../data/roadtrips/types';
+
+interface Props { tags?: Tag[] }
+const { tags = [] } = Astro.props;
+---
+{tags.length > 0 && (
+  <span class="tags">
+    {tags.map((t) => <span class:list={['tag', `tag-${t}`]}><Icon name={TAG_ICON[t]} size={12} />{TAG_LABEL[t]}</span>)}
+  </span>
+)}
+
+<style>
+  .tags { display: inline-flex; flex-wrap: wrap; gap: 4px; }
+  .tag { display: inline-flex; align-items: center; gap: 3px; padding: 2px 8px; border-radius: var(--radius-pill); font-size: 12px; font-weight: 600; background: var(--surface); color: var(--ink-2); border: 1px solid var(--rule); }
+  .tag-flowers, .tag-birthday { background: var(--rose-soft); color: var(--rose); border-color: transparent; }
+  .tag-photo, .tag-design { background: var(--snow-soft); color: var(--snow-ink); border-color: transparent; }
+  .tag-dress-up, .tag-lights { background: #fbf3dc; color: #7a5600; border-color: transparent; }
+  .tag-lobster { background: #fff1e6; color: #a1410c; border-color: transparent; }
+  .tag-trees, .tag-outdoors, .tag-burmese { background: var(--pine-soft); color: var(--pine); border-color: transparent; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .tag-dress-up, :root:not([data-theme="light"]) .tag-lights { background: #3a3014; color: #f3d27a; }
+    :root:not([data-theme="light"]) .tag-lobster { background: #3a2414; color: #ffb37a; }
+  }
+  :root[data-theme="dark"] .tag-dress-up, :root[data-theme="dark"] .tag-lights { background: #3a3014; color: #f3d27a; }
+  :root[data-theme="dark"] .tag-lobster { background: #3a2414; color: #ffb37a; }
+</style>

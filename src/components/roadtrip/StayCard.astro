@@ -1,0 +1,55 @@
+---
+import { Image } from 'astro:assets';
+import Icon from '../Icon.astro';
+import { imagesFor } from '../../lib/images';
+import { money } from '../../lib/format';
+import type { Stay } from '../../data/roadtrips/types';
+
+interface Props { stay: Stay; pick?: boolean; nights?: number }
+const { stay, pick = false, nights = 1 } = Astro.props;
+// Only the stay's own photos: an area photo could show a different hotel.
+const img = imagesFor(stay.photos ?? `rt-${stay.id}`)[0];
+const KIND: Record<Stay['kind'], string> = { hotel: 'Hotel', inn: 'Inn', resort: 'Resort', cabin: 'Cabin', tent: 'Tent site', home: 'Home' };
+const asOf = new Date(stay.priceAsOf + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+---
+<article class:list={['stay', { pick }]}>
+  <div class="ph">
+    {img ? <Image src={img.src} alt={img.alt} widths={[400, 720]} sizes="(max-width: 760px) 100vw, 360px" loading="lazy" /> : <div class="fill"><Icon name={stay.kind === 'tent' ? 'tent' : stay.kind === 'cabin' ? 'cabin' : 'moon'} size={34} /></div>}
+    <span class="badge tier">{pick ? 'Our pick · ' : ''}{stay.tier}</span>
+  </div>
+  <div class="body">
+    <p class="kind muted">{KIND[stay.kind]}{stay.rating && <> · <a class="rating" href={stay.rating.url} rel="noopener"><Icon name="star" size={13} />{stay.rating.rating.toFixed(1)} ({stay.rating.reviews.toLocaleString('en-US')})</a></>}</p>
+    <h4><a href={stay.url} rel="noopener">{stay.name}</a></h4>
+    <p class="vibe">{stay.vibe}</p>
+    {stay.perks.length > 0 && <ul class="perks">{stay.perks.map((p) => <li><Icon name="check" size={13} />{p}</li>)}</ul>}
+    {stay.watchFor?.length ? <ul class="watch">{stay.watchFor.map((w) => <li><Icon name="info" size={13} />{w}</li>)}</ul> : null}
+    <div class="price-row">
+      <p><strong>{money(Math.round(stay.price))}</strong> <span class="muted">/ night{nights > 1 ? ` · ${nights} nights` : ''}</span></p>
+      <a class="btn btn-outline btn-sm" href={stay.bookUrl ?? stay.url} rel="noopener">Check dates<Icon name="ext" size={14} /></a>
+    </div>
+    <p class="src muted">{stay.priceNote ? `${stay.priceNote}. ` : ''}{stay.priceSource}, {asOf}.</p>
+  </div>
+</article>
+
+<style>
+  .stay { display: flex; flex-direction: column; border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; background: var(--surface-2); min-width: 0; }
+  .stay.pick { border-color: var(--ink); box-shadow: var(--shadow-sm); }
+  .ph { position: relative; aspect-ratio: 16 / 10; background: var(--surface); }
+  .ph :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  .fill { height: 100%; display: grid; place-items: center; color: var(--muted); background: linear-gradient(135deg, var(--pine-soft), var(--surface)); }
+  .tier { position: absolute; left: 10px; top: 10px; text-transform: capitalize; }
+  .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .kind { margin: 0; font-size: 13px; }
+  .kind a { color: inherit; text-decoration: none; }
+  h4 { margin: 0; font-size: 17px; }
+  h4 a { color: var(--ink); text-decoration: none; }
+  h4 a:hover { text-decoration: underline; }
+  .vibe { margin: 0; font-size: 14px; color: var(--ink-2); }
+  .perks, .watch { list-style: none; margin: 2px 0 0; padding: 0; display: grid; gap: 3px; font-size: 13px; color: var(--ink-2); }
+  .perks li, .watch li { display: flex; gap: 6px; align-items: flex-start; }
+  .perks :global(svg) { color: var(--pine); flex: none; margin-top: 3px; }
+  .watch :global(svg) { color: var(--accent-text); flex: none; margin-top: 3px; }
+  .price-row { margin-top: auto; padding-top: 8px; display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .price-row p { margin: 0; font-size: 16px; }
+  .src { margin: 0; font-size: 12px; }
+</style>

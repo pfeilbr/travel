@@ -1,0 +1,281 @@
+{
+ "_comment": "Input for scripts/roadtrip_routes.py: per road trip and plan, the stops in driving order as [name, lat, lng]. The first stop is the map's home pin.",
+ "boston-maine-birthdays-2026": {
+  "a": [
+   [
+    "Willow Grove, PA",
+    40.144,
+    -75.116
+   ],
+   [
+    "Verona, NY",
+    43.138,
+    -75.571
+   ],
+   [
+    "Rensselaer, NY",
+    42.648,
+    -73.739
+   ],
+   [
+    "Stockbridge, MA",
+    42.282,
+    -73.312
+   ],
+   [
+    "Boylston, MA",
+    42.371,
+    -71.733
+   ],
+   [
+    "Boston, MA",
+    42.3497,
+    -71.0765
+   ],
+   [
+    "York, ME",
+    43.165,
+    -70.591
+   ],
+   [
+    "Ogunquit, ME",
+    43.249,
+    -70.599
+   ],
+   [
+    "Kennebunkport, ME",
+    43.354,
+    -70.469
+   ],
+   [
+    "Cape Elizabeth, ME",
+    43.623,
+    -70.208
+   ],
+   [
+    "Portland, ME",
+    43.659,
+    -70.256
+   ],
+   [
+    "Boothbay, ME",
+    43.874,
+    -69.66
+   ],
+   [
+    "Portland, ME",
+    43.659,
+    -70.256
+   ],
+   [
+    "North Conway, NH",
+    44.054,
+    -71.128
+   ],
+   [
+    "Bretton Woods, NH",
+    44.257,
+    -71.439
+   ],
+   [
+    "Quechee, VT",
+    43.646,
+    -72.419
+   ],
+   [
+    "Verona, NY",
+    43.138,
+    -75.571
+   ]
+  ],
+  "b": [
+   [
+    "Willow Grove, PA",
+    40.144,
+    -75.116
+   ],
+   [
+    "Verona, NY",
+    43.138,
+    -75.571
+   ],
+   [
+    "Rensselaer, NY",
+    42.648,
+    -73.739
+   ],
+   [
+    "Charlemont, MA",
+    42.637,
+    -72.938
+   ],
+   [
+    "Boylston, MA",
+    42.371,
+    -71.733
+   ],
+   [
+    "Boston, MA",
+    42.366,
+    -71.061
+   ],
+   [
+    "Portland, ME",
+    43.651,
+    -70.266
+   ],
+   [
+    "Boothbay, ME",
+    43.874,
+    -69.66
+   ],
+   [
+    "Damariscotta, ME",
+    44.033,
+    -69.528
+   ],
+   [
+    "Portland, ME",
+    43.651,
+    -70.266
+   ],
+   [
+    "Kennebunkport, ME",
+    43.357,
+    -70.474
+   ],
+   [
+    "North Conway, NH",
+    44.054,
+    -71.128
+   ],
+   [
+    "Jackson, NH",
+    44.15,
+    -71.175
+   ],
+   [
+    "Conway, NH",
+    43.979,
+    -71.12
+   ],
+   [
+    "Kancamagus Pass, NH",
+    44.025,
+    -71.493
+   ],
+   [
+    "Conway, NH",
+    43.979,
+    -71.12
+   ],
+   [
+    "Jackson, NH",
+    44.15,
+    -71.175
+   ],
+   [
+    "Quechee, VT",
+    43.646,
+    -72.419
+   ],
+   [
+    "Verona, NY",
+    43.138,
+    -75.571
+   ]
+  ],
+  "c": [
+   [
+    "Willow Grove, PA",
+    40.144,
+    -75.116
+   ],
+   [
+    "Verona, NY",
+    43.138,
+    -75.571
+   ],
+   [
+    "Rensselaer, NY",
+    42.648,
+    -73.739
+   ],
+   [
+    "Stockbridge, MA",
+    42.282,
+    -73.312
+   ],
+   [
+    "Newport, RI",
+    41.47,
+    -71.299
+   ],
+   [
+    "Boston, MA",
+    42.353,
+    -71.072
+   ],
+   [
+    "York, ME",
+    43.165,
+    -70.591
+   ],
+   [
+    "Ogunquit, ME",
+    43.249,
+    -70.599
+   ],
+   [
+    "Kennebunkport, ME",
+    43.358,
+    -70.481
+   ],
+   [
+    "Cape Elizabeth, ME",
+    43.623,
+    -70.208
+   ],
+   [
+    "Portland, ME",
+    43.659,
+    -70.256
+   ],
+   [
+    "Boothbay, ME",
+    43.874,
+    -69.66
+   ],
+   [
+    "Portland, ME",
+    43.659,
+    -70.256
+   ],
+   [
+    "Cape Elizabeth, ME",
+    43.567,
+    -70.228
+   ],
+   [
+    "North Conway, NH",
+    44.054,
+    -71.128
+   ],
+   [
+    "Bretton Woods, NH",
+    44.257,
+    -71.439
+   ],
+   [
+    "Quechee, VT",
+    43.646,
+    -72.419
+   ],
+   [
+    "Verona, NY",
+    43.138,
+    -75.571
+   ]
+  ]
+ }
+}

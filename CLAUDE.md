@@ -68,6 +68,22 @@ auth (email + password, magic link, Google, Apple) and data (wishlists, reviews,
 - The ski and outdoors explorers share `src/lib/listmap.ts` (Leaflet list + map) and `src/styles/listmap.css`.
   Sticky offsets use the `--header-h` token.
 
+## Road trips
+
+- Multi-day drives with several alternative day-by-day plans: `src/data/roadtrips/types.ts`, one file per trip in
+  `src/data/roadtrips/trips/*.ts` (glob in `index.ts`). Areas, stays and meals are a shared pool; each `Plan` has
+  one `Day` per date (start to end, no gaps), the first stay id per night is the pick and the rest are alternatives.
+- Route `/roadtrips/<slug>/` (noindex, kept out of the sitemap: these are personal plans shared by link). Plan tabs
+  deep-link as `#plan-b`, days as `#b-2026-12-04`. Costs come from `src/lib/roadtrip.ts` (`planCost`: picked stays
+  + `lodgingTax`, every listed meal ×2, gas from `car`, tolls, `tickets` extras).
+- Map lines: list each plan's stops in `scripts/roadtrip_waypoints.json`, run `python3 scripts/roadtrip_routes.py`
+  (OSRM, simplified, writes `src/data/roadtrips/routes.json`). Add a waypoint to force the right road (e.g. Conway
+  so the Kancamagus route avoids winter-closed Bear Notch Road). Day leg times in the trip file are curated
+  (OSRM runs ~20% slow on interstates).
+- Photos are `rt-<area id>` / `rt-<stay id>` sets in `image_sources.json`. A stay card shows only the stay's own
+  photos (never another hotel's), else a placeholder. Hotel prices: Google Hotels "with fees" before tax; say which
+  sample night in `priceSource`, list parking and resort fees in `watchFor`.
+
 ## Verify before every commit
 
 ```
